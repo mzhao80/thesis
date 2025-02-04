@@ -1,0 +1,25 @@
+0	Agriculture and Food
+1	Armed Forces and National Security
+2	Civil Rights and Liberties, Minority Issues
+3	Commerce
+4	Crime and Law Enforcement
+5	Economics and Public Finance
+6	Education
+7	Emergency Management
+8	Energy
+9	Environmental Protection
+10	Finance and Financial Sector
+11	Foreign Trade and International Finance
+12	Government Operations and Politics
+13	Health
+14	Housing and Community Development
+15	Immigration
+16	International Affairs
+17	Labor and Employment
+18	Law
+19	Native Americans
+20	Public Lands and Natural Resources
+21	Science, Technology, Communications
+22	Social Welfare
+23	Taxation
+24	Transportation and Public Works

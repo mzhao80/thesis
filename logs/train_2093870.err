@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/n/home09/michaelzhao/Downloads/thesis/topicexpan/train_copy.py", line 26, in <module>
+    logger.addHandler(console_handler)
+    ^^^^^^
+NameError: name 'logger' is not defined

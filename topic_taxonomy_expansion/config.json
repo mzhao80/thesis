@@ -1,0 +1,32 @@
+{
+  "epochs": 50,
+  "arch": {
+    "doc_encoder_model": "nvidia/NV-Embed-v2",
+    "hidden_dim": 4096,
+    "num_topic_layers": 2,
+    "num_topic_heads": 4,
+    "num_decoder_layers": 6,
+    "num_decoder_heads": 8,
+    "max_phrase_length": 16,
+    "topic_feature_dim": 4096,
+    "enable_copy_mechanism": false,
+    "use_learnable_fusion": true
+  },
+  "optimizer": {
+    "lr": 1e-3,
+    "weight_decay": 1e-2,
+    "sim_loss_weight": 0.01,
+    "temperature": 1.0
+  },
+  "data": {
+    "csv_file": "topic_taxonomy_expansion/training_data.csv",
+    "batch_size": 16
+  },
+  "expansion": {
+    "depth": 3,
+    "clustering_method": "dbscan",
+    "dbscan_eps": 0.5,
+    "min_samples": 3,
+    "quality_threshold": 0.5
+  }
+}
