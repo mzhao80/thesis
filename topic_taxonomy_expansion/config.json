@@ -20,7 +20,7 @@
   },
   "data": {
     "csv_file": "topic_taxonomy_expansion/training_data.csv",
-    "batch_size": 16
+    "batch_size": 8
   },
   "expansion": {
     "depth": 3,

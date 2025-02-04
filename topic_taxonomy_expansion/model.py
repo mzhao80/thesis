@@ -8,31 +8,45 @@ import torch.utils.checkpoint as checkpoint
 import gc
 from transformers import AutoTokenizer
 
-###############################################################################
-# 1. DocumentEncoder: Returns global embedding, token-level embeddings, and input IDs.
-###############################################################################
+# -----------------------------------------------------------------------------
+# 1. DocumentEncoder
+# -----------------------------------------------------------------------------
 class DocumentEncoder(nn.Module):
     def __init__(self, encoder_model=None, model_name="nvidia/NV-Embed-v2", device="cuda"):
+        """
+        Initialize the DocumentEncoder.
+        
+        Args:
+          encoder_model: (Optional) a pretrained encoder model.
+          model_name (str): Name of the model to load if encoder_model is None.
+          device (str): The device to load the model onto.
+        """
         super(DocumentEncoder, self).__init__()
         self.device = device
         if encoder_model:
             self.model = encoder_model
         else:
             self.model = SentenceTransformer(model_name, device=device, trust_remote_code=True)
-        self.model.eval()  # set to eval and freeze parameters
+        # Freeze the document encoder parameters.
+        self.model.eval()
         for param in self.model.parameters():
             param.requires_grad = False
 
     def forward(self, doc_texts):
         """
-        Expects a list of document strings.
+        Encode a batch of document strings.
+        
+        Args:
+          doc_texts (list of str): List of document texts.
+          
         Returns:
-          - global_embeddings: [B, hidden_dim]
-          - token_embeddings: [B, seq_len, hidden_dim]
-          - input_ids: [B, seq_len]
+          tuple: (global_embeddings, token_embeddings, input_ids)
+            global_embeddings: Tensor of shape [B, hidden_dim]
+            token_embeddings: Tensor of shape [B, seq_len, hidden_dim]
+            input_ids: Tensor of shape [B, seq_len]
         """
         encoded_input = self.model.tokenize(doc_texts)
-        # If tokenization returns a list of dictionaries, combine them:
+        # Combine list of dictionaries into one dictionary if necessary.
         if isinstance(encoded_input, list):
             combined = {}
             for key in encoded_input[0]:
@@ -45,11 +59,20 @@ class DocumentEncoder(nn.Module):
             global_embeddings = outputs['sentence_embedding']
         return global_embeddings.float(), token_embeddings.float(), encoded_input['input_ids']
 
-###############################################################################
-# 2. GraphTopicEncoder: Encodes a fixed graph of parent topics using GAT layers.
-###############################################################################
+# -----------------------------------------------------------------------------
+# 2. GraphTopicEncoder
+# -----------------------------------------------------------------------------
 class GraphTopicEncoder(nn.Module):
     def __init__(self, in_dim, hidden_dim, num_layers=2, num_heads=4):
+        """
+        Initialize the GraphTopicEncoder.
+        
+        Args:
+          in_dim (int): Input dimension.
+          hidden_dim (int): Hidden dimension for each GAT layer.
+          num_layers (int): Number of GAT layers.
+          num_heads (int): Number of attention heads per layer.
+        """
         super(GraphTopicEncoder, self).__init__()
         self.num_layers = num_layers
         self.downward_layers = nn.ModuleList()
@@ -63,6 +86,16 @@ class GraphTopicEncoder(nn.Module):
         self.fc_out = nn.Linear(hidden_dim * num_heads, hidden_dim)
     
     def forward(self, downward_graph, upward_graph, sideward_graph, node_feats):
+        """
+        Encode the fixed topic graph.
+        
+        Args:
+          downward_graph, upward_graph, sideward_graph: DGLGraphs representing different relations.
+          node_feats: Initial node features (typically from the fixed topic embeddings).
+          
+        Returns:
+          Tensor of shape [num_nodes, hidden_dim] representing topic embeddings.
+        """
         h_down = node_feats
         for layer in self.downward_layers:
             h_down = layer(downward_graph, h_down)
@@ -78,17 +111,33 @@ class GraphTopicEncoder(nn.Module):
             h_side = layer(sideward_graph, h_side)
             h_side = h_side.flatten(1)
             h_side = F.elu(h_side, inplace=True)
+        # Combine the directional information.
         h = h_down + h_up - h_side
         h = self.fc_out(h)
         return h
 
-###############################################################################
-# 3. PhraseDecoder: Transformer-based decoder with optional copy mechanism.
-###############################################################################
+# -----------------------------------------------------------------------------
+# 3. PhraseDecoder
+# -----------------------------------------------------------------------------
 class PhraseDecoder(nn.Module):
     def __init__(self, vocab_size, hidden_dim, num_layers=6, num_heads=8,
                  max_length=32, pad_token_id=0, bos_token_id=101, eos_token_id=102,
                  use_checkpointing=False, enable_copy_mechanism=False):
+        """
+        Initialize the PhraseDecoder.
+        
+        Args:
+          vocab_size (int): Vocabulary size.
+          hidden_dim (int): Hidden dimension.
+          num_layers (int): Number of transformer decoder layers.
+          num_heads (int): Number of attention heads.
+          max_length (int): Maximum sequence length to generate.
+          pad_token_id (int): Padding token id.
+          bos_token_id (int): Beginning-of-sequence token id.
+          eos_token_id (int): End-of-sequence token id.
+          use_checkpointing (bool): Whether to use gradient checkpointing.
+          enable_copy_mechanism (bool): Whether to enable the copy mechanism.
+        """
         super(PhraseDecoder, self).__init__()
         self.embedding = nn.Embedding(vocab_size, hidden_dim, padding_idx=pad_token_id)
         self.positional_encoding = nn.Parameter(torch.zeros(1, max_length, hidden_dim))
@@ -107,12 +156,25 @@ class PhraseDecoder(nn.Module):
             self.doc_proj = nn.Linear(hidden_dim, hidden_dim)
 
     def forward(self, tgt, memory, doc_token_embeddings=None, doc_input_ids=None, tgt_mask=None):
+        """
+        Forward pass for the decoder.
+        
+        Args:
+          tgt: Target sequence tokens, shape [B, seq_len].
+          memory: Encoder output used as context, shape [B, 1, hidden_dim].
+          doc_token_embeddings, doc_input_ids: Optional arguments for the copy mechanism.
+          tgt_mask: Optional target mask.
+          
+        Returns:
+          logits: Output logits of shape [B, seq_len, vocab_size].
+        """
         tgt = tgt.to(self.positional_encoding.device)
         seq_len = tgt.size(1)
         if seq_len <= 0:
             raise ValueError("Target sequence is empty; cannot generate mask.")
         if tgt_mask is None:
             tgt_mask = nn.Transformer.generate_square_subsequent_mask(seq_len).to(tgt.device)
+        # Create positional encodings for the target.
         if seq_len > self.positional_encoding.size(1):
             extra_len = seq_len - self.positional_encoding.size(1)
             extra = self.positional_encoding[:, -1:, :].expand(1, extra_len, -1)
@@ -120,8 +182,9 @@ class PhraseDecoder(nn.Module):
         else:
             pos_enc = self.positional_encoding[:, :seq_len, :]
         tgt_emb = self.embedding(tgt) + pos_enc
-        tgt_emb = tgt_emb.transpose(0, 1)  # [seq_len, batch, hidden]
+        tgt_emb = tgt_emb.transpose(0, 1)  # shape: [seq_len, batch, hidden]
         memory = memory.transpose(0, 1)
+        # Use checkpointing if enabled to save memory.
         if self.use_checkpointing:
             output = tgt_emb
             for layer in self.decoder.layers:
@@ -130,6 +193,7 @@ class PhraseDecoder(nn.Module):
             output = self.decoder(tgt_emb, memory, tgt_mask=tgt_mask)
         output = output.transpose(0, 1)
         gen_logits = self.fc_out(output)
+        # If using the copy mechanism, combine the generated probabilities with copy probabilities.
         if not self.enable_copy_mechanism or doc_token_embeddings is None or doc_input_ids is None:
             return gen_logits
         else:
@@ -150,26 +214,31 @@ class PhraseDecoder(nn.Module):
             return final_log_prob
 
     def generate(self, memory, doc_token_embeddings=None, doc_input_ids=None,
-                temperature=1.0, top_p=0.9, freq_penalty=0.5, pres_penalty=0.5,
-                unwanted_penalty=1.0, tokenizer=None):
+                 temperature=1.0, top_p=0.9, freq_penalty=0.5, pres_penalty=0.5,
+                 unwanted_penalty=1.0, tokenizer=None):
         """
         Generate a sequence using nucleus (top-p) sampling with additional penalties.
         
-        Parameters:
-        temperature: scaling factor for logits.
-        top_p: nucleus sampling threshold.
-        freq_penalty: penalty for each occurrence of a token.
-        pres_penalty: additional penalty if a token has appeared.
-        unwanted_penalty: extra penalty to apply for unwanted tokens.
-        tokenizer: the tokenizer instance, used to determine which tokens are unwanted.
+        The function applies:
+          - Repetition and presence penalties (to discourage repeated tokens).
+          - Optionally, unwanted token penalties for tokens that contain non-English characters,
+            numbers, or isolated quotes (if a tokenizer is provided).
+        
+        Args:
+          memory: Conditioning context, shape [B, 1, hidden_dim].
+          doc_token_embeddings, doc_input_ids: Optional, for the copy mechanism.
+          temperature: Scaling factor for logits.
+          top_p: Nucleus sampling threshold.
+          freq_penalty: Penalty per occurrence of a token.
+          pres_penalty: Additional penalty if a token has already appeared.
+          unwanted_penalty: Extra penalty for tokens that are unwanted.
+          tokenizer: The tokenizer instance (required to decode token strings).
         
         Returns:
-        A tensor of shape [batch_size, generated_length] of generated token IDs.
+          generated: Tensor of generated token IDs of shape [B, generated_length].
         """
-        
         def apply_repetition_penalty(logits, generated, freq_penalty, pres_penalty):
-            # logits: [batch_size, vocab_size]
-            # generated: [batch_size, current_length]
+            # Apply penalties based on how many times a token appears.
             for b in range(logits.size(0)):
                 gen_tokens = generated[b].tolist()
                 for token in set(gen_tokens):
@@ -178,24 +247,21 @@ class PhraseDecoder(nn.Module):
             return logits
 
         def apply_unwanted_penalty(logits, generated, extra_penalty, tokenizer):
-            # We'll penalize tokens that are isolated quotes and also if the last generated token is whitespace,
-            # then penalize candidate tokens that decode to whitespace.
+            # Penalize tokens that are unwanted, e.g., isolated quotes and tokens containing non-English characters or numbers.
             batch_size = logits.size(0)
-            
+            # Always penalize the double-quote token.
+            quote_token_id = tokenizer.convert_tokens_to_ids('"')
             for b in range(batch_size):
-                # Always penalize the quote token.
-                logits[b, self.quote_token_id] -= extra_penalty
-                
+                logits[b, quote_token_id] -= extra_penalty
                 # Check the last generated token for whitespace.
                 last_token_id = generated[b, -1].item()
                 last_token_str = tokenizer.decode([last_token_id]).strip()
                 if last_token_str == "":
-                    # If the last token is whitespace, penalize candidate tokens that decode to only whitespace.
-                    # For each candidate token in the vocabulary:
+                    # If the last token is whitespace, then for each candidate token:
                     for token_id in range(logits.size(1)):
                         token_str = tokenizer.decode([token_id]).strip()
-                        # If token_str is empty, then it's essentially a whitespace token.
-                        if token_str == "":
+                        # Penalize if token_str is not a valid English word (contains numbers or non-English characters).
+                        if not (token_str.isalpha() or token_str.isdigit() or token_str == '"'):
                             logits[b, token_id] -= extra_penalty
             return logits
 
@@ -208,14 +274,14 @@ class PhraseDecoder(nn.Module):
             logits = self.forward(generated, memory, doc_token_embeddings, doc_input_ids, tgt_mask=tgt_mask)
             logits = logits[:, -1, :] / temperature
 
-            # Apply repetition and presence penalties.
+            # Apply repetition/presence penalties.
             logits = apply_repetition_penalty(logits, generated, freq_penalty, pres_penalty)
             
-            # Apply unwanted penalties if a tokenizer is provided.
+            # Apply unwanted penalties if tokenizer is provided.
             # if tokenizer is not None and unwanted_penalty > 0:
             #     logits = apply_unwanted_penalty(logits, generated, unwanted_penalty, tokenizer)
 
-            # Nucleus (top-p) sampling:
+            # Apply nucleus (top-p) sampling.
             sorted_logits, sorted_indices = torch.sort(logits, descending=True, dim=-1)
             sorted_probs = F.softmax(sorted_logits, dim=-1)
             cumulative_probs = torch.cumsum(sorted_probs, dim=-1)
@@ -224,6 +290,7 @@ class PhraseDecoder(nn.Module):
             sorted_indices_to_remove[..., 1:] = sorted_indices_to_remove[..., :-1].clone()
             sorted_indices_to_remove[..., 0] = 0
             sorted_logits.masked_fill_(sorted_indices_to_remove, float('-inf'))
+            # Reorder logits to original indexing.
             logits = sorted_logits.scatter(1, sorted_indices, sorted_logits)
             probs = F.softmax(logits, dim=-1)
             next_token = torch.multinomial(probs, num_samples=1)
@@ -232,9 +299,9 @@ class PhraseDecoder(nn.Module):
                 break
         return generated
 
-###############################################################################
-# 4. TopicExpanModel: Fuses document and parent embeddings (with an optional learnable fusion).
-###############################################################################
+# -----------------------------------------------------------------------------
+# 4. TopicExpanModel
+# -----------------------------------------------------------------------------
 class TopicExpanModel(nn.Module):
     def __init__(self, encoder_model, vocab_size, hidden_dim, topic_feature_dim,
                  num_topic_layers=2, num_topic_heads=4,
@@ -243,13 +310,43 @@ class TopicExpanModel(nn.Module):
                  doc_encoder_model="nvidia/NV-Embed-v2", use_checkpointing=False, 
                  enable_copy_mechanism=False, device="cuda", fixed_topic_node_feats=None,
                  use_learnable_fusion=False):
+        """
+        The main model combining:
+          - A DocumentEncoder that generates embeddings for documents.
+          - A GraphTopicEncoder that produces embeddings for fixed topics.
+          - A PhraseDecoder that generates target phrases.
+          - A similarity module to align document embeddings with parent topic embeddings.
+        
+        Args:
+          encoder_model: Pretrained document encoder model.
+          vocab_size (int): Size of the vocabulary.
+          hidden_dim (int): Hidden dimension used across modules.
+          topic_feature_dim (int): Input dimension for the topic graph.
+          num_topic_layers (int): Number of GAT layers for the topic graph.
+          num_topic_heads (int): Number of attention heads per GAT layer.
+          num_decoder_layers (int): Number of transformer decoder layers.
+          num_decoder_heads (int): Number of attention heads in the decoder.
+          max_length (int): Maximum sequence length for generation.
+          pad_token_id (int): Padding token id.
+          bos_token_id (int): Beginning-of-sequence token id.
+          eos_token_id (int): End-of-sequence token id.
+          doc_encoder_model (str): Model name for the document encoder.
+          use_checkpointing (bool): If True, use gradient checkpointing.
+          enable_copy_mechanism (bool): If True, enable the copy mechanism in the decoder.
+          device (str): Device to use for computations.
+          fixed_topic_node_feats: Precomputed fixed topic node features.
+          use_learnable_fusion (bool): If True, use a learnable fusion module to combine document and parent embeddings.
+        """
         super(TopicExpanModel, self).__init__()
         self.device = device
+        # Initialize the DocumentEncoder.
         self.document_encoder = DocumentEncoder(encoder_model, doc_encoder_model, device=device)
+        # Initialize the GraphTopicEncoder.
         self.topic_encoder = GraphTopicEncoder(in_dim=topic_feature_dim,
                                                hidden_dim=hidden_dim,
                                                num_layers=num_topic_layers,
                                                num_heads=num_topic_heads)
+        # Initialize the PhraseDecoder.
         self.phrase_decoder = PhraseDecoder(vocab_size, hidden_dim,
                                             num_layers=num_decoder_layers,
                                             num_heads=num_decoder_heads,
@@ -259,10 +356,14 @@ class TopicExpanModel(nn.Module):
                                             eos_token_id=eos_token_id,
                                             use_checkpointing=use_checkpointing,
                                             enable_copy_mechanism=enable_copy_mechanism)
+        # Similarity module to compare document embeddings and parent topic embeddings.
         self.similarity = nn.Bilinear(hidden_dim, hidden_dim, 1)
+        # Instantiate a tokenizer for internal use.
         self.tokenizer = AutoTokenizer.from_pretrained("nvidia/NV-Embed-v2", trust_remote_code=True)
         self.use_learnable_fusion = use_learnable_fusion
         if use_learnable_fusion:
+            # Learnable fusion module: concatenates document and parent embeddings,
+            # then applies a linear transformation, ReLU, dropout, and layer normalization.
             self.fusion = nn.Sequential(
                 nn.Linear(2 * hidden_dim, hidden_dim),
                 nn.ReLU(),
@@ -275,26 +376,56 @@ class TopicExpanModel(nn.Module):
             self.fixed_topic_node_feats = None
 
     def forward(self, doc_texts, downward_graph, upward_graph, sideward_graph, tgt_phrase, parent_idx):
+        """
+        Forward pass for training.
+        
+        Args:
+          doc_texts (list of str): List of input document strings.
+          downward_graph, upward_graph, sideward_graph (dgl.DGLGraph): Graphs for topic relationships.
+          tgt_phrase (Tensor): Ground-truth target phrase tokens, shape [B, seq_len].
+          parent_idx (int or Tensor): Index (or indices) of the parent topic.
+        
+        Returns:
+          sim_score: Similarity score between document and parent embeddings.
+          logits: Decoder logits for phrase generation.
+        """
+        # Get document embeddings.
         global_doc_embed, doc_token_embeddings, doc_input_ids = self.document_encoder(doc_texts)
+        # Get topic embeddings from the fixed graph.
         topic_embeddings = self.topic_encoder(downward_graph, upward_graph, sideward_graph, self.fixed_topic_node_feats)
-        # Expand parent's embedding if parent_idx is a single int.
+        # If parent_idx is a single int, expand its embedding to match batch size.
         if isinstance(parent_idx, int):
             parent_embed = topic_embeddings[parent_idx].unsqueeze(0).expand(global_doc_embed.size(0), -1)
         else:
             parent_embed = topic_embeddings.index_select(0, parent_idx)
+        # Fuse the document and parent embeddings.
         if self.use_learnable_fusion:
             fused_context = self.fusion(torch.cat([global_doc_embed, parent_embed], dim=1))
         else:
             fused_context = (global_doc_embed + parent_embed) / 2
-        memory = fused_context.unsqueeze(1)
+        memory = fused_context.unsqueeze(1)  # shape: [B, 1, hidden_dim]
+        # Decode to produce phrase logits.
         if self.phrase_decoder.enable_copy_mechanism:
             logits = self.phrase_decoder(tgt_phrase, memory, doc_token_embeddings, doc_input_ids)
         else:
             logits = self.phrase_decoder(tgt_phrase, memory)
+        # Compute similarity between document and parent embeddings.
         sim_score = self.similarity(global_doc_embed, parent_embed)
         return sim_score, logits
 
     def generate_phrase(self, doc_texts, downward_graph, upward_graph, sideward_graph, parent_idx, temperature=1.0):
+        """
+        Generate a phrase given input documents and topic information.
+        
+        Args:
+          doc_texts (list of str): List of input documents.
+          downward_graph, upward_graph, sideward_graph: Graphs representing topic relations.
+          parent_idx (int or Tensor): Index (or indices) for the parent topic.
+          temperature (float): Temperature for scaling logits.
+        
+        Returns:
+          generated (Tensor): Generated token IDs, shape [B, generated_length].
+        """
         global_doc_embed, doc_token_embeddings, doc_input_ids = self.document_encoder(doc_texts)
         topic_embeddings = self.topic_encoder(downward_graph, upward_graph, sideward_graph, self.fixed_topic_node_feats)
         if isinstance(parent_idx, int):

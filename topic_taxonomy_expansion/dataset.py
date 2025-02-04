@@ -2,31 +2,36 @@ import pandas as pd
 import torch
 from torch.utils.data import Dataset
 from transformers import AutoTokenizer
-import random
 
 class DocTopicPhraseDataset(Dataset):
     """
     Dataset for document–policy_area–subtopic–phrase triples.
-    Expects a CSV with columns: "document", "policy_area", "subtopic", "phrase".
-    For this training, we condition on the policy area.
     
-    This version groups by document and samples the first row per document,
-    ensuring that each document appears exactly once.
+    Expects a CSV with columns:
+      - "document": The full text of a document.
+      - "policy_area": The parent policy area (e.g., "Political Issue", "Economics and Public Finance", etc.) from CRS.
+      - "subtopic": (Not currently used in training - should be used later for cluster or subtopic discovery validation)
+      - "phrase": The target phrase.
+    
+    For this training procedure:
+      - The dataset groups rows by document and uses the first row for each document.
+      - This ensures that each document appears only once.
     """
     def __init__(self, csv_file):
+        # Read CSV file into a DataFrame.
         self.df = pd.read_csv(csv_file)
-        # Drop rows with missing policy areas.
+        # Drop rows where the policy area is missing.
         self.df = self.df.dropna(subset=["policy_area"])
-        # Group by document and sample one row from each group.
-        # It is guaranteed that each document has the same policy area and subtopic.
+        # Group by document and select the first row per group.
+        # It is assumed that all rows for a document share the same policy area and subtopic.
         self.df = (
             self.df.groupby("document", as_index=False)
             .first()
             .reset_index(drop=True)
         )
-        # Use the NV-Embed-v2 tokenizer.
+        # Initialize the NV-Embed-v2 tokenizer.
         self.tokenizer = AutoTokenizer.from_pretrained("nvidia/NV-Embed-v2", trust_remote_code=True)
-        # Build mapping from policy_area to index.
+        # Build a mapping from policy area to a unique index.
         unique_parents = self.df["policy_area"].unique().tolist()
         self.topic_to_index = {topic: idx for idx, topic in enumerate(unique_parents)}
     
@@ -34,16 +39,18 @@ class DocTopicPhraseDataset(Dataset):
         return len(self.df)
     
     def __getitem__(self, idx):
+        # Retrieve the row corresponding to idx.
         row = self.df.iloc[idx]
         document = row["document"]
         policy = row["policy_area"]
-        # remove leading and trailing quotation marks
+        # Preprocess the phrase by stripping any surrounding quotation marks.
         phrase = row["phrase"].strip('"')
         
-        # Tokenize without truncation or padding.
+        # Tokenize the document and the phrase without truncation or padding.
         doc_enc = self.tokenizer(document, padding=False, truncation=False, return_tensors="pt")
         phrase_enc = self.tokenizer(phrase, padding=False, truncation=False, return_tensors="pt")
         
+        # Map the policy area to its corresponding index.
         topic_idx = self.topic_to_index.get(policy)
         if topic_idx is None:
             print(idx, document, policy, phrase)
@@ -51,10 +58,10 @@ class DocTopicPhraseDataset(Dataset):
             self.topic_to_index[policy] = topic_idx
         
         return {
-            "document": document,  # raw text (for the SentenceTransformer)
+            "document": document,  # Raw document text (used by the DocumentEncoder).
             "doc_input_ids": doc_enc["input_ids"].squeeze(0),
             "doc_attention_mask": doc_enc["attention_mask"].squeeze(0),
-            "phrase": phrase,  # raw text for debugging
+            "phrase": phrase,  # Raw target phrase (for debugging).
             "phrase_input_ids": phrase_enc["input_ids"].squeeze(0),
             "topic_idx": topic_idx,
             "policy": policy
@@ -62,10 +69,17 @@ class DocTopicPhraseDataset(Dataset):
 
 def collate_fn_with_tokenizer(tokenizer):
     """
-    Returns a collate function that vectorizes a batch.
+    Collate function to vectorize a batch.
     
-    Since each document now has only one candidate phrase,
-    we simply pad the document input_ids, attention masks, and phrase input_ids.
+    Since each document now appears only once with one candidate phrase,
+    this function pads:
+      - Document input_ids,
+      - Document attention masks, and
+      - Phrase input_ids.
+      
+    Returns:
+      Tuple: (list of raw document strings, padded doc_input_ids, padded doc_attention_mask, 
+              padded phrase_input_ids, topic_idxs, policies)
     """
     from torch.nn.utils.rnn import pad_sequence
     def _collate_fn(batch):
