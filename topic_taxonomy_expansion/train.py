@@ -223,7 +223,7 @@ def main(config):
     # ----------------------------
     # Training Loop with Mixed Precision and Early Stopping (if desired)
     # ----------------------------
-    scaler = torch.cuda.GradScaler("amp")
+    scaler = torch.amp.GradScaler("cuda")
     model.train()
     batch_loss_accum = 0.0
     batch_count = 0
@@ -246,28 +246,26 @@ def main(config):
                 phrase_input_ids = phrase_input_ids.to(device)
              
             optimizer.zero_grad()
-            try:
+
+            with torch.amp.autocast("cuda"):
                 # Forward pass through the model.
                 sim_score, logits = model.forward(doc_texts,
-                                                  downward_graph,
-                                                  upward_graph,
-                                                  sideward_graph,
-                                                  phrase_input_ids,
-                                                  topic_idxs)
-            except Exception as e:
-                print("Error during forward pass:", e)
-                continue
-            # Compute similarity loss (MSE) and generation loss (cross-entropy).
-            sim_loss = F.mse_loss(sim_score, torch.ones_like(sim_score))
-            if model.phrase_decoder.enable_copy_mechanism:
-                gen_loss = F.nll_loss(logits.view(-1, logits.size(-1)),
-                                      phrase_input_ids.view(-1),
-                                      ignore_index=tokenizer.pad_token_id)
-            else:
-                gen_loss = F.cross_entropy(logits.view(-1, logits.size(-1)),
-                                           phrase_input_ids.view(-1),
-                                           ignore_index=tokenizer.pad_token_id)
-            loss = gen_loss + sim_loss_weight * sim_loss
+                                                    downward_graph,
+                                                    upward_graph,
+                                                    sideward_graph,
+                                                    phrase_input_ids,
+                                                    topic_idxs)
+                # Compute similarity loss (MSE) and generation loss (cross-entropy).
+                sim_loss = F.mse_loss(sim_score, torch.ones_like(sim_score))
+                if model.phrase_decoder.enable_copy_mechanism:
+                    gen_loss = F.nll_loss(logits.view(-1, logits.size(-1)),
+                                            phrase_input_ids.view(-1),
+                                            ignore_index=tokenizer.pad_token_id)
+                else:
+                    gen_loss = F.cross_entropy(logits.view(-1, logits.size(-1)),
+                                                phrase_input_ids.view(-1),
+                                                ignore_index=tokenizer.pad_token_id)
+                loss = gen_loss + sim_loss_weight * sim_loss
             
             # Mixed precision backward pass.
             scaler.scale(loss).backward()
