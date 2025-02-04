@@ -1,5 +1,5 @@
 {
-  "use_subtopic": true,
+  "use_subtopic": false,
   "epochs": 50,
   "arch": {
     "doc_encoder_model": "nvidia/NV-Embed-v2",

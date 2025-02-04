@@ -16,3 +16,4 @@ export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
 # Run the GPU script
 python topic_taxonomy_expansion/train.py --config topic_taxonomy_expansion/config.json
+# python topic_taxonomy_expansion/train.py --config topic_taxonomy_expansion/config_direct.json

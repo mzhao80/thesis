@@ -2,6 +2,7 @@ import pandas as pd
 import torch
 from torch.utils.data import Dataset
 from transformers import AutoTokenizer
+from torch.nn.utils.rnn import pad_sequence
 
 class DocTopicPhraseDataset(Dataset):
     """
@@ -43,11 +44,13 @@ class DocTopicPhraseDataset(Dataset):
         row = self.df.iloc[idx]
         document = row["document"]
         policy = row["policy_area"]
+        subtopic = row["subtopic"]
         # Preprocess the phrase by stripping any surrounding quotation marks.
         phrase = row["phrase"].strip('"')
         
-        # Tokenize the document and the phrase without truncation or padding.
+        # Tokenize the document, the subtopic, andthe phrase without truncation or padding.
         doc_enc = self.tokenizer(document, padding=False, truncation=False, return_tensors="pt")
+        sub_enc = self.tokenizer(subtopic, padding=False, truncation=False, return_tensors="pt")
         phrase_enc = self.tokenizer(phrase, padding=False, truncation=False, return_tensors="pt")
         
         # Map the policy area to its corresponding index.
@@ -61,6 +64,8 @@ class DocTopicPhraseDataset(Dataset):
             "document": document,  # Raw document text (used by the DocumentEncoder).
             "doc_input_ids": doc_enc["input_ids"].squeeze(0),
             "doc_attention_mask": doc_enc["attention_mask"].squeeze(0),
+            "subtopic": subtopic,
+            "subtopic_input_ids": sub_enc["input_ids"].squeeze(0),
             "phrase": phrase,  # Raw target phrase (for debugging).
             "phrase_input_ids": phrase_enc["input_ids"].squeeze(0),
             "topic_idx": topic_idx,
@@ -74,25 +79,28 @@ def collate_fn_with_tokenizer(tokenizer):
     Since each document now appears only once with one candidate phrase,
     this function pads:
       - Document input_ids,
-      - Document attention masks, and
+      - Document attention masks, 
+      - Subtopic input_ids, and
       - Phrase input_ids.
       
     Returns:
       Tuple: (list of raw document strings, padded doc_input_ids, padded doc_attention_mask, 
-              padded phrase_input_ids, topic_idxs, policies)
+              padded subtopic_input_ids, padded phrase_input_ids, topic_idxs, policies)
     """
-    from torch.nn.utils.rnn import pad_sequence
+    
     def _collate_fn(batch):
         docs = [item["document"] for item in batch]
         doc_input_ids_list = [item["doc_input_ids"] for item in batch]
         doc_attention_mask_list = [item["doc_attention_mask"] for item in batch]
+        subtopic_input_ids_list = [item["subtopic_input_ids"] for item in batch]
         phrase_input_ids_list = [item["phrase_input_ids"] for item in batch]
         topic_idxs = torch.tensor([item["topic_idx"] for item in batch], dtype=torch.long)
         policies = [item["policy"] for item in batch]
         
         docs_input_ids = pad_sequence(doc_input_ids_list, batch_first=True, padding_value=tokenizer.pad_token_id)
         docs_attention_mask = pad_sequence(doc_attention_mask_list, batch_first=True, padding_value=0)
+        subtopic_input_ids = pad_sequence(subtopic_input_ids_list, batch_first=True, padding_value=tokenizer.pad_token_id)
         phrase_input_ids = pad_sequence(phrase_input_ids_list, batch_first=True, padding_value=tokenizer.pad_token_id)
         
-        return docs, docs_input_ids, docs_attention_mask, phrase_input_ids, topic_idxs, policies
+        return docs, docs_input_ids, docs_attention_mask, subtopic_input_ids, phrase_input_ids, topic_idxs, policies
     return _collate_fn

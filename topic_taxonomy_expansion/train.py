@@ -227,8 +227,7 @@ def main(config):
     model.train()
     batch_loss_accum = 0.0
     batch_count = 0
-    # Optionally, early stopping parameters can be added here.
-    # For now, we run for a fixed number of epochs from config.
+    # Early stopping parameters here
     for epoch in range(1, config.get("epochs", 5) + 1):
         print(f"\n[INFO] Starting Epoch {epoch}")
         gc.collect()
@@ -238,9 +237,13 @@ def main(config):
         # Loop over batches.
         for batch_idx, batch in enumerate(dataloader):
             (doc_texts, docs_input_ids, docs_attention_mask, 
-             phrase_input_ids, topic_idxs, policies) = batch
+             subtopic_input_ids, phrase_input_ids, topic_idxs, policy) = batch
             topic_idxs = topic_idxs.to(device)
-            phrase_input_ids = phrase_input_ids.to(device)
+
+            if config.get("use_subtopic", False):
+                phrase_input_ids = subtopic_input_ids.to(device)
+            else:
+                phrase_input_ids = phrase_input_ids.to(device)
              
             optimizer.zero_grad()
             try:
