@@ -30,6 +30,8 @@ class DocTopicPhraseDataset(Dataset):
             .first()
             .reset_index(drop=True)
         )
+        # lowercase subtopic
+        self.df["subtopic"] = self.df["subtopic"].str.lower()
         # Initialize the NV-Embed-v2 tokenizer.
         self.tokenizer = AutoTokenizer.from_pretrained("nvidia/NV-Embed-v2", trust_remote_code=True)
         # Build a mapping from policy area to a unique index.

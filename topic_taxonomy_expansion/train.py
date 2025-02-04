@@ -223,7 +223,7 @@ def main(config):
     # ----------------------------
     # Training Loop with Mixed Precision and Early Stopping (if desired)
     # ----------------------------
-    scaler = torch.cuda.amp.GradScaler()
+    scaler = torch.cuda.GradScaler("amp")
     model.train()
     batch_loss_accum = 0.0
     batch_count = 0

@@ -6,6 +6,7 @@ import dgl
 from dgl.nn.pytorch.conv import GATConv
 import torch.utils.checkpoint as checkpoint
 import gc
+import re
 from transformers import AutoTokenizer
 
 # -----------------------------------------------------------------------------
@@ -121,7 +122,7 @@ class GraphTopicEncoder(nn.Module):
 # -----------------------------------------------------------------------------
 class PhraseDecoder(nn.Module):
     def __init__(self, vocab_size, hidden_dim, num_layers=6, num_heads=8,
-                 max_length=32, pad_token_id=0, bos_token_id=101, eos_token_id=102,
+                 max_length=16, pad_token_id=0, bos_token_id=101, eos_token_id=102,
                  use_checkpointing=False, enable_copy_mechanism=False):
         """
         Initialize the PhraseDecoder.
@@ -150,6 +151,9 @@ class PhraseDecoder(nn.Module):
         self.eos_token_id = eos_token_id
         self.use_checkpointing = use_checkpointing
         self.enable_copy_mechanism = enable_copy_mechanism
+
+        # Define allowed tokens: strings containing only lowercase letters and digits.
+        self.pattern = re.compile(r"^[a-z0-9 ,\.\-]+$")
 
         if self.enable_copy_mechanism:
             self.copy_linear = nn.Linear(hidden_dim, 1)
@@ -214,31 +218,31 @@ class PhraseDecoder(nn.Module):
             return final_log_prob
 
     def generate(self, memory, doc_token_embeddings=None, doc_input_ids=None,
-                 temperature=1.0, top_p=0.9, freq_penalty=0.5, pres_penalty=0.5,
-                 unwanted_penalty=1.0, tokenizer=None):
+                temperature=0.6, top_p=0.9, freq_penalty=0.25, pres_penalty=0.5,
+                unwanted_penalty=2.0, tokenizer=None):
         """
         Generate a sequence using nucleus (top-p) sampling with additional penalties.
         
         The function applies:
-          - Repetition and presence penalties (to discourage repeated tokens).
-          - Optionally, unwanted token penalties for tokens that contain non-English characters,
-            numbers, or isolated quotes (if a tokenizer is provided).
+        - Repetition and presence penalties (to discourage repeated tokens).
+        - Unwanted token penalties: tokens that do not conform to our expected set
+            (i.e. lowercase English letters, digits, and ( ,.) only) are penalized.
         
         Args:
-          memory: Conditioning context, shape [B, 1, hidden_dim].
-          doc_token_embeddings, doc_input_ids: Optional, for the copy mechanism.
-          temperature: Scaling factor for logits.
-          top_p: Nucleus sampling threshold.
-          freq_penalty: Penalty per occurrence of a token.
-          pres_penalty: Additional penalty if a token has already appeared.
-          unwanted_penalty: Extra penalty for tokens that are unwanted.
-          tokenizer: The tokenizer instance (required to decode token strings).
+        memory: Conditioning context, shape [B, 1, hidden_dim].
+        doc_token_embeddings, doc_input_ids: Optional, for the copy mechanism.
+        temperature: Scaling factor for logits.
+        top_p: Nucleus sampling threshold.
+        freq_penalty: Penalty per occurrence of a token.
+        pres_penalty: Additional penalty if a token has already appeared.
+        unwanted_penalty: Extra penalty for tokens that are unwanted.
+        tokenizer: The tokenizer instance (required to decode token strings).
         
         Returns:
-          generated: Tensor of generated token IDs of shape [B, generated_length].
+        generated: Tensor of generated token IDs of shape [B, generated_length].
         """
         def apply_repetition_penalty(logits, generated, freq_penalty, pres_penalty):
-            # Apply penalties based on how many times a token appears.
+            # Apply penalties based on token frequency in the generated sequence.
             for b in range(logits.size(0)):
                 gen_tokens = generated[b].tolist()
                 for token in set(gen_tokens):
@@ -246,51 +250,45 @@ class PhraseDecoder(nn.Module):
                     logits[b, token] -= freq_penalty * count + pres_penalty
             return logits
 
-        def apply_unwanted_penalty(logits, generated, extra_penalty, tokenizer):
-            # Penalize tokens that are unwanted, e.g., isolated quotes and tokens containing non-English characters or numbers.
-            batch_size = logits.size(0)
-            # Always penalize the double-quote token.
-            quote_token_id = tokenizer.convert_tokens_to_ids('"')
-            for b in range(batch_size):
-                logits[b, quote_token_id] -= extra_penalty
-                # Check the last generated token for whitespace.
-                last_token_id = generated[b, -1].item()
-                last_token_str = tokenizer.decode([last_token_id]).strip()
-                if last_token_str == "":
-                    # If the last token is whitespace, then for each candidate token:
-                    for token_id in range(logits.size(1)):
-                        token_str = tokenizer.decode([token_id]).strip()
-                        # Penalize if token_str is not a valid English word (contains numbers or non-English characters).
-                        if not (token_str.isalpha() or token_str.isdigit() or token_str == '"'):
-                            logits[b, token_id] -= extra_penalty
+        def apply_unwanted_penalty(logits, extra_penalty, tokenizer):
+            # Iterate over every token in the vocabulary.
+            for token_id in range(logits.size(1)):
+                token_str = tokenizer.decode([token_id]).strip().lower()
+                # Skip empty tokens.
+                if token_str == "":
+                    continue
+                # If the token does not fully match the allowed pattern, penalize it.
+                if not self.pattern.fullmatch(token_str):
+                    logits[:, token_id] -= extra_penalty
             return logits
 
         batch_size = memory.size(0)
         generated = torch.full((batch_size, 1), self.bos_token_id, dtype=torch.long, device=memory.device)
-        
+
         for step in range(self.max_length - 1):
             seq_len = generated.size(1)
             tgt_mask = nn.Transformer.generate_square_subsequent_mask(seq_len).to(memory.device)
             logits = self.forward(generated, memory, doc_token_embeddings, doc_input_ids, tgt_mask=tgt_mask)
+            # Use only the last token’s logits.
             logits = logits[:, -1, :] / temperature
 
             # Apply repetition/presence penalties.
             logits = apply_repetition_penalty(logits, generated, freq_penalty, pres_penalty)
             
-            # Apply unwanted penalties if tokenizer is provided.
-            # if tokenizer is not None and unwanted_penalty > 0:
-            #     logits = apply_unwanted_penalty(logits, generated, unwanted_penalty, tokenizer)
+            # Apply unwanted token penalty if a tokenizer is provided.
+            if tokenizer is not None and unwanted_penalty > 0:
+                logits = apply_unwanted_penalty(logits, unwanted_penalty, tokenizer)
 
-            # Apply nucleus (top-p) sampling.
+            # Nucleus (top-p) sampling.
             sorted_logits, sorted_indices = torch.sort(logits, descending=True, dim=-1)
             sorted_probs = F.softmax(sorted_logits, dim=-1)
             cumulative_probs = torch.cumsum(sorted_probs, dim=-1)
             sorted_indices_to_remove = cumulative_probs > top_p
-            # Shift indices so that at least one token remains.
+            # Shift indices to ensure at least one token remains.
             sorted_indices_to_remove[..., 1:] = sorted_indices_to_remove[..., :-1].clone()
             sorted_indices_to_remove[..., 0] = 0
             sorted_logits.masked_fill_(sorted_indices_to_remove, float('-inf'))
-            # Reorder logits to original indexing.
+            # Reorder the logits to the original indexing.
             logits = sorted_logits.scatter(1, sorted_indices, sorted_logits)
             probs = F.softmax(logits, dim=-1)
             next_token = torch.multinomial(probs, num_samples=1)
@@ -306,10 +304,10 @@ class TopicExpanModel(nn.Module):
     def __init__(self, encoder_model, vocab_size, hidden_dim, topic_feature_dim,
                  num_topic_layers=2, num_topic_heads=4,
                  num_decoder_layers=6, num_decoder_heads=8,
-                 max_length=32, pad_token_id=0, bos_token_id=101, eos_token_id=102,
+                 max_length=16, pad_token_id=0, bos_token_id=101, eos_token_id=102,
                  doc_encoder_model="nvidia/NV-Embed-v2", use_checkpointing=False, 
                  enable_copy_mechanism=False, device="cuda", fixed_topic_node_feats=None,
-                 use_learnable_fusion=False):
+                 use_learnable_fusion=True):
         """
         The main model combining:
           - A DocumentEncoder that generates embeddings for documents.
