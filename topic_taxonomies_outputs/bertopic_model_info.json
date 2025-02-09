@@ -1,5 +1,0 @@
-{
-  "num_topics": 331,
-  "model_type": "BERTopic",
-  "embedding_model": "all-MiniLM-L6-v2"
-}

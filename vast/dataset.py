@@ -10,6 +10,7 @@ Instead of combining document and topic into a single string, they are kept sepa
 """
 
 import pandas as pd
+from torch.utils.data import Dataset
 
 class VASTTrainDataset:
     """
@@ -65,3 +66,22 @@ class InferenceDataset:
             "document": self.documents[idx],
             "topic": self.topics[idx]
         }
+
+class EmbeddingDataset(Dataset):
+    """
+    A dataset class that holds pre-computed embeddings, labels, and the original document and topic.
+    This is useful for debugging and for training the classifier.
+    """
+    def __init__(self, embeddings, labels, documents, topics):
+        self.embeddings = embeddings
+        self.labels = labels
+        self.documents = documents
+        self.topics = topics
+
+    def __len__(self):
+        return len(self.labels)
+
+    def __getitem__(self, idx):
+        # Combine document and topic for debug printing.
+        combined_text = self.documents[idx] + " || " + self.topics[idx]
+        return self.embeddings[idx], self.labels[idx], combined_text

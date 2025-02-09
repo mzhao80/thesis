@@ -19,7 +19,7 @@ from accelerate import Accelerator, DistributedDataParallelKwargs
 import sys
 import psutil
 
-modelPath = "models"
+modelPath = "/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/models"
 torch.set_float32_matmul_precision('high')
 
 # -----------------------------------------------------------------------------
