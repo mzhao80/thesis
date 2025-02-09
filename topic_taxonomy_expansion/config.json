@@ -16,10 +16,10 @@
     "top_p": 0.9,
     "freq_penalty": 0.5,
     "pres_penalty": 0,
-    "unwanted_penalty": 3.0
+    "unwanted_penalty": 2.0
   },
   "optimizer": {
-    "lr": 1e-4,
+    "lr": 1e-2,
     "weight_decay": 1e-2,
     "sim_loss_weight": 0,
     "temperature": 1
