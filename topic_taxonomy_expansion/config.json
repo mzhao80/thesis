@@ -1,6 +1,7 @@
 {
   "use_subtopic": true,
-  "epochs": 100,
+  "bypass_graph": true,
+  "epochs": 200,
   "arch": {
     "doc_encoder_model": "nvidia/NV-Embed-v2",
     "hidden_dim": 4096,
@@ -11,17 +12,25 @@
     "max_phrase_length": 8,
     "topic_feature_dim": 4096,
     "enable_copy_mechanism": false,
-    "use_learnable_fusion": true
+    "use_learnable_fusion": true,
+    "top_p": 0.9,
+    "freq_penalty": 0.5,
+    "pres_penalty": 0,
+    "unwanted_penalty": 3.0
   },
   "optimizer": {
     "lr": 1e-4,
     "weight_decay": 1e-2,
-    "sim_loss_weight": 1,
-    "temperature": 0.6
+    "sim_loss_weight": 0,
+    "temperature": 1
   },
   "data": {
     "csv_file": "topic_taxonomy_expansion/training_data.csv",
     "batch_size": 8
+  },
+  "early_stopping": {
+    "patience": 10,
+    "min_delta": 0.01
   },
   "expansion": {
     "depth": 3,

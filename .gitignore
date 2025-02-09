@@ -1,2 +1,3 @@
 training_data/*
-
+models/*
+topic_taxonomy_expansion/models/*

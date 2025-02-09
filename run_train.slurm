@@ -5,8 +5,9 @@
 #SBATCH -p gpu_requeue
 #SBATCH -t 12:00:00
 #SBATCH -c 4
-#SBATCH --mem=80G
-#SBATCH --gres=gpu:nvidia_h100_80gb_hbm3:1
+#SBATCH --mem=64G
+#SBATCH --gres=gpu:nvidia_h100_80gb_hbm3:2
+#SBATCH --account=arielpro_lab
 
 # Load required modules
 cd ~/Downloads/thesis
@@ -15,4 +16,4 @@ module load cuda/11.8.0-fasrc01
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
 # Run the GPU script
-python topic_taxonomy_expansion/train.py --config topic_taxonomy_expansion/config.json
+accelerate launch topic_taxonomy_expansion/train_accelerate.py --config topic_taxonomy_expansion/config.json

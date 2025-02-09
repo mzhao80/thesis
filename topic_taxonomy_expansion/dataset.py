@@ -44,13 +44,15 @@ class DocTopicPhraseDataset(Dataset):
     def __getitem__(self, idx):
         # Retrieve the row corresponding to idx.
         row = self.df.iloc[idx]
-        document = row["document"]
+        #document = row["document"]
+        instruction = "Instruct: Encode the following speech from Congress for stance detection of policy topics.\nDocument: "
+        document = instruction + row["document"]
         policy = row["policy_area"]
         subtopic = row["subtopic"]
         # Preprocess the phrase by stripping any surrounding quotation marks.
         phrase = row["phrase"].strip('"')
         
-        # Tokenize the document, the subtopic, andthe phrase without truncation or padding.
+        # Tokenize the document, the subtopic, and the phrase without truncation or padding.
         doc_enc = self.tokenizer(document, padding=False, truncation=False, return_tensors="pt")
         sub_enc = self.tokenizer(subtopic, padding=False, truncation=False, return_tensors="pt")
         phrase_enc = self.tokenizer(phrase, padding=False, truncation=False, return_tensors="pt")
@@ -63,7 +65,6 @@ class DocTopicPhraseDataset(Dataset):
             self.topic_to_index[policy] = topic_idx
         
         return {
-            "document": document,  # Raw document text (used by the DocumentEncoder).
             "doc_input_ids": doc_enc["input_ids"].squeeze(0),
             "doc_attention_mask": doc_enc["attention_mask"].squeeze(0),
             "subtopic": subtopic,
@@ -86,12 +87,11 @@ def collate_fn_with_tokenizer(tokenizer):
       - Phrase input_ids.
       
     Returns:
-      Tuple: (list of raw document strings, padded doc_input_ids, padded doc_attention_mask, 
+      Tuple: (list of padded doc_input_ids, padded doc_attention_mask, 
               padded subtopic_input_ids, padded phrase_input_ids, topic_idxs, policies)
     """
     
     def _collate_fn(batch):
-        docs = [item["document"] for item in batch]
         doc_input_ids_list = [item["doc_input_ids"] for item in batch]
         doc_attention_mask_list = [item["doc_attention_mask"] for item in batch]
         subtopic_input_ids_list = [item["subtopic_input_ids"] for item in batch]
@@ -104,5 +104,5 @@ def collate_fn_with_tokenizer(tokenizer):
         subtopic_input_ids = pad_sequence(subtopic_input_ids_list, batch_first=True, padding_value=tokenizer.pad_token_id)
         phrase_input_ids = pad_sequence(phrase_input_ids_list, batch_first=True, padding_value=tokenizer.pad_token_id)
         
-        return docs, docs_input_ids, docs_attention_mask, subtopic_input_ids, phrase_input_ids, topic_idxs, policies
+        return docs_input_ids, docs_attention_mask, subtopic_input_ids, phrase_input_ids, topic_idxs, policies
     return _collate_fn

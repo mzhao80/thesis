@@ -8,6 +8,7 @@ import torch.utils.checkpoint as checkpoint
 import gc
 import re
 from transformers import AutoTokenizer
+import random
 
 # -----------------------------------------------------------------------------
 # 1. DocumentEncoder
@@ -33,20 +34,22 @@ class DocumentEncoder(nn.Module):
         for param in self.model.parameters():
             param.requires_grad = False
 
-    def forward(self, doc_texts):
+    def forward(self, doc_input_ids, doc_attention_mask):
         """
         Encode a batch of document strings.
         
         Args:
-          doc_texts (list of str): List of document texts.
-          
+          doc_input_ids (list of Tensor): List of input IDs for each document.
+          doc_attention_mask (list of Tensor): List of attention masks for each document.
+        
         Returns:
           tuple: (global_embeddings, token_embeddings, input_ids)
             global_embeddings: Tensor of shape [B, hidden_dim]
             token_embeddings: Tensor of shape [B, seq_len, hidden_dim]
             input_ids: Tensor of shape [B, seq_len]
         """
-        encoded_input = self.model.tokenize(doc_texts)
+        encoded_input = {"input_ids": doc_input_ids,
+                             "attention_mask": doc_attention_mask}
         # Combine list of dictionaries into one dictionary if necessary.
         if isinstance(encoded_input, list):
             combined = {}
@@ -218,8 +221,8 @@ class PhraseDecoder(nn.Module):
             return final_log_prob
 
     def generate(self, memory, doc_token_embeddings=None, doc_input_ids=None,
-                temperature=0.6, top_p=0.9, freq_penalty=0.25, pres_penalty=0.5,
-                unwanted_penalty=2.0, tokenizer=None):
+                temperature=0.6, top_p=0.9, freq_penalty=0, pres_penalty=0,
+                unwanted_penalty=1.0, tokenizer=None):
         """
         Generate a sequence using nucleus (top-p) sampling with additional penalties.
         
@@ -250,17 +253,72 @@ class PhraseDecoder(nn.Module):
                     logits[b, token] -= freq_penalty * count + pres_penalty
             return logits
 
-        def apply_unwanted_penalty(logits, extra_penalty, tokenizer):
-            # Iterate over every token in the vocabulary.
+        def apply_unwanted_penalty(logits, extra_penalty, tokenizer, generated):
+            """
+            Adjust the logits by applying an extra penalty to tokens that are “unwanted.”
+            
+            First, for every token in the vocabulary (except BOS, EOS, and PAD),
+            if the decoded token does not match the allowed pattern (self.pattern),
+            subtract extra_penalty from its logit.
+            
+            Then, for each example in the batch, we examine the generated sequence
+            (starting at index 1). We define an allowed ending region as a contiguous block
+            of tokens (from some index j to the end) that are allowed as sequence endings (by default, EOS and PAD).
+            For all positions before that region, if a token is one of the special tokens
+            (BOS, EOS, or PAD), we subtract extra_penalty from its logit.
+            
+            This permits the BOS token at position 0, and it permits EOS/PAD tokens if they
+            appear as the contiguous ending, but it penalizes any out‐of‐place special tokens
+            (including cases where a BOS token is produced consecutively starting at position 1).
+            
+            Args:
+            logits (Tensor): Tensor of shape [B, vocab_size] containing the logits for the current time step.
+            extra_penalty (float): The penalty value to subtract.
+            tokenizer: The tokenizer instance (which must have bos_token_id, eos_token_id, pad_token_id).
+            generated (Tensor): Tensor of shape [B, current_seq_len] containing the tokens generated so far.
+            
+            Returns:
+            Tensor: The adjusted logits.
+            """
+            bos_token_id = tokenizer.bos_token_id
+            eos_token_id = tokenizer.eos_token_id
+            pad_token_id = tokenizer.pad_token_id
+
+            # --- 1. Apply penalty to unwanted tokens (except BOS, EOS, and PAD) ---
             for token_id in range(logits.size(1)):
-                token_str = tokenizer.decode([token_id]).strip().lower()
-                # Skip empty tokens.
+                if token_id in set([bos_token_id, eos_token_id, pad_token_id]):
+                    continue  # Skip special tokens here.
+                token_str = tokenizer.decode([token_id]).strip()
                 if token_str == "":
                     continue
-                # If the token does not fully match the allowed pattern, penalize it.
                 if not self.pattern.fullmatch(token_str):
                     logits[:, token_id] -= extra_penalty
+
+            batch_size, seq_len = generated.size()
+
+            # --- 2. Penalize out-of-place special tokens individually ---
+            # We define the allowed ending region as the contiguous block at the end
+            # (starting from some index j, where j>=1) in which every token is in the set
+            # allowed_end (by default, EOS and PAD). Tokens before this region are considered
+            # "out-of-place" if they are special (BOS, EOS, or PAD).
+            allowed_end = set([eos_token_id, pad_token_id])
+            for b in range(batch_size):
+                # Determine the allowed ending start index for sample b.
+                # Initialize j to the sequence length; then iterate backwards from position 1.
+                j = seq_len  
+                for i in reversed(range(1, seq_len)):
+                    if generated[b, i].item() not in allowed_end:
+                        j = i + 1
+                        break
+                # Now, for positions 1 through j-1, if a token is special (BOS, EOS, or PAD),
+                # subtract extra_penalty from its logit.
+                for i in range(1, j):
+                    token = generated[b, i].item()
+                    if token in set([bos_token_id, eos_token_id, pad_token_id]):
+                        logits[b, token] -= extra_penalty
+
             return logits
+
 
         batch_size = memory.size(0)
         generated = torch.full((batch_size, 1), self.bos_token_id, dtype=torch.long, device=memory.device)
@@ -277,7 +335,7 @@ class PhraseDecoder(nn.Module):
             
             # Apply unwanted token penalty if a tokenizer is provided.
             if tokenizer is not None and unwanted_penalty > 0:
-                logits = apply_unwanted_penalty(logits, unwanted_penalty, tokenizer)
+                logits = apply_unwanted_penalty(logits, unwanted_penalty, tokenizer, generated)
 
             # Nucleus (top-p) sampling.
             sorted_logits, sorted_indices = torch.sort(logits, descending=True, dim=-1)
@@ -295,6 +353,7 @@ class PhraseDecoder(nn.Module):
             generated = torch.cat([generated, next_token], dim=1)
             if (next_token == self.eos_token_id).all():
                 break
+        
         return generated
 
 # -----------------------------------------------------------------------------
@@ -307,7 +366,8 @@ class TopicExpanModel(nn.Module):
                  max_length=16, pad_token_id=0, bos_token_id=101, eos_token_id=102,
                  doc_encoder_model="nvidia/NV-Embed-v2", use_checkpointing=False, 
                  enable_copy_mechanism=False, device="cuda", fixed_topic_node_feats=None,
-                 use_learnable_fusion=True):
+                 use_learnable_fusion=True, bypass_graph=False,
+                 temperature=1, top_p=0.9, freq_penalty=0, pres_penalty=0, unwanted_penalty=1.0):
         """
         The main model combining:
           - A DocumentEncoder that generates embeddings for documents.
@@ -334,6 +394,7 @@ class TopicExpanModel(nn.Module):
           device (str): Device to use for computations.
           fixed_topic_node_feats: Precomputed fixed topic node features.
           use_learnable_fusion (bool): If True, use a learnable fusion module to combine document and parent embeddings.
+          bypass_graph (bool): If True, bypass the graph topic encoder.
         """
         super(TopicExpanModel, self).__init__()
         self.device = device
@@ -359,6 +420,13 @@ class TopicExpanModel(nn.Module):
         # Instantiate a tokenizer for internal use.
         self.tokenizer = AutoTokenizer.from_pretrained("nvidia/NV-Embed-v2", trust_remote_code=True)
         self.use_learnable_fusion = use_learnable_fusion
+        self.bypass_graph = bypass_graph
+        self.top_p = top_p
+        self.temperature = temperature
+        self.freq_penalty = freq_penalty
+        self.pres_penalty = pres_penalty
+        self.unwanted_penalty = unwanted_penalty
+
         if use_learnable_fusion:
             # Learnable fusion module: concatenates document and parent embeddings,
             # then applies a linear transformation, ReLU, dropout, and layer normalization.
@@ -373,12 +441,11 @@ class TopicExpanModel(nn.Module):
         else:
             self.fixed_topic_node_feats = None
 
-    def forward(self, doc_texts, downward_graph, upward_graph, sideward_graph, tgt_phrase, parent_idx):
+    def forward(self, doc_input_ids, doc_attention_mask, downward_graph, upward_graph, sideward_graph, tgt_phrase, parent_idx):
         """
         Forward pass for training.
         
         Args:
-          doc_texts (list of str): List of input document strings.
           downward_graph, upward_graph, sideward_graph (dgl.DGLGraph): Graphs for topic relationships.
           tgt_phrase (Tensor): Ground-truth target phrase tokens, shape [B, seq_len].
           parent_idx (int or Tensor): Index (or indices) of the parent topic.
@@ -388,9 +455,20 @@ class TopicExpanModel(nn.Module):
           logits: Decoder logits for phrase generation.
         """
         # Get document embeddings.
-        global_doc_embed, doc_token_embeddings, doc_input_ids = self.document_encoder(doc_texts)
+        global_doc_embed, doc_token_embeddings, doc_input_ids = self.document_encoder(doc_input_ids, doc_attention_mask)
+        global_doc_embed = F.normalize(global_doc_embed, p=2, dim=1)
         # Get topic embeddings from the fixed graph.
-        topic_embeddings = self.topic_encoder(downward_graph, upward_graph, sideward_graph, self.fixed_topic_node_feats)
+        if self.bypass_graph:
+            # Bypass the graph: use the fixed topic embeddings directly.
+            topic_embeddings = self.fixed_topic_node_feats
+        else:
+            # Use the graph encoder.
+            topic_embeddings = self.topic_encoder(downward_graph, upward_graph, sideward_graph, self.fixed_topic_node_feats)
+            # only print with 1/200 chance
+            if random.random() < 0.005:
+                print("[DEBUG] Topic embeddings after graph encoder: mean = {:.4f}, std = {:.4f}".format(
+                    topic_embeddings.mean().item(), topic_embeddings.std().item()))
+
         # If parent_idx is a single int, expand its embedding to match batch size.
         if isinstance(parent_idx, int):
             parent_embed = topic_embeddings[parent_idx].unsqueeze(0).expand(global_doc_embed.size(0), -1)
@@ -411,12 +489,11 @@ class TopicExpanModel(nn.Module):
         sim_score = self.similarity(global_doc_embed, parent_embed)
         return sim_score, logits
 
-    def generate_phrase(self, doc_texts, downward_graph, upward_graph, sideward_graph, parent_idx, temperature=1.0):
+    def generate_phrase(self, doc_input_ids, doc_attention_mask, downward_graph, upward_graph, sideward_graph, parent_idx):
         """
         Generate a phrase given input documents and topic information.
         
         Args:
-          doc_texts (list of str): List of input documents.
           downward_graph, upward_graph, sideward_graph: Graphs representing topic relations.
           parent_idx (int or Tensor): Index (or indices) for the parent topic.
           temperature (float): Temperature for scaling logits.
@@ -424,16 +501,20 @@ class TopicExpanModel(nn.Module):
         Returns:
           generated (Tensor): Generated token IDs, shape [B, generated_length].
         """
-        global_doc_embed, doc_token_embeddings, doc_input_ids = self.document_encoder(doc_texts)
-        topic_embeddings = self.topic_encoder(downward_graph, upward_graph, sideward_graph, self.fixed_topic_node_feats)
-        if isinstance(parent_idx, int):
-            parent_embed = topic_embeddings[parent_idx].unsqueeze(0).expand(global_doc_embed.size(0), -1)
-        else:
-            parent_embed = topic_embeddings.index_select(0, parent_idx)
-        if self.use_learnable_fusion:
-            fused_context = self.fusion(torch.cat([global_doc_embed, parent_embed], dim=1))
-        else:
-            fused_context = (global_doc_embed + parent_embed) / 2
-        memory = fused_context.unsqueeze(1)
-        generated = self.phrase_decoder.generate(memory, doc_token_embeddings, doc_input_ids, temperature, tokenizer=self.tokenizer)
-        return generated
+        with torch.no_grad():
+            global_doc_embed, doc_token_embeddings, doc_input_ids = self.document_encoder(doc_input_ids, doc_attention_mask)
+            if self.bypass_graph:
+                topic_embeddings = self.fixed_topic_node_feats
+            else:
+                topic_embeddings = self.topic_encoder(downward_graph, upward_graph, sideward_graph, self.fixed_topic_node_feats)
+            if isinstance(parent_idx, int):
+                parent_embed = topic_embeddings[parent_idx].unsqueeze(0).expand(global_doc_embed.size(0), -1)
+            else:
+                parent_embed = topic_embeddings.index_select(0, parent_idx)
+            if self.use_learnable_fusion:
+                fused_context = self.fusion(torch.cat([global_doc_embed, parent_embed], dim=1))
+            else:
+                fused_context = (global_doc_embed + parent_embed) / 2
+            memory = fused_context.unsqueeze(1)
+            generated = self.phrase_decoder.generate(memory, doc_token_embeddings, doc_input_ids, self.temperature, self.top_p, self.freq_penalty, self.pres_penalty, self.unwanted_penalty, tokenizer=self.tokenizer)
+            return generated

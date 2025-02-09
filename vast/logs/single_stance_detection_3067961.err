@@ -1,0 +1,5 @@
+Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:  29%|██▊       | 2/7 [00:00<00:00, 15.03it/s]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:00<00:00, 15.08it/s]Loading checkpoint shards:  86%|████████▌ | 6/7 [00:00<00:00, 15.76it/s]Loading checkpoint shards: 100%|██████████| 7/7 [00:00<00:00, 15.78it/s]
+/n/home09/michaelzhao/.cache/huggingface/modules/transformers_modules/models/modeling_nvembed.py:349: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  'input_ids': torch.tensor(batch_dict.get('input_ids').to(batch_dict.get('input_ids')).long()),
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)

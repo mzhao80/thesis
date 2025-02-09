@@ -10,6 +10,29 @@ from optimization import AdamW, get_linear_schedule_with_warmup
 import dgl
 import torch.nn as nn
 import gc
+from sentence_transformers import SentenceTransformer
+import time
+import logging
+from datetime import datetime
+import os
+
+modelPath = "models"
+# -----------------------------------------------------------------------------
+# Setup logging to both file and terminal with timestamps.
+# -----------------------------------------------------------------------------
+log_dir = "logs"
+os.makedirs(log_dir, exist_ok=True)
+timestamp_str = datetime.now().strftime("%Y%m%d_%H%M%S")
+#log_file = os.path.join(log_dir, f"train_{timestamp_str}.txt")
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[
+        #logging.FileHandler(log_file),
+        logging.StreamHandler()
+    ]
+)
 
 # -----------------------------------------------------------------------------
 # Utility functions for debugging and GPU memory monitoring
@@ -25,7 +48,7 @@ def print_all_gpu_memory(label, device):
     for i in range(torch.cuda.device_count()):
         allocated = torch.cuda.memory_allocated(i) / (1024 ** 2)
         reserved = torch.cuda.memory_reserved(i) / (1024 ** 2)
-        print(f"[MEMORY] {label}: [GPU {i}] Allocated: {allocated:.2f} MB, Reserved: {reserved:.2f} MB")
+        logging.info(f"[MEMORY] {label}: [GPU {i}] Allocated: {allocated:.2f} MB, Reserved: {reserved:.2f} MB")
 
 def print_graph_structure(g, name="Graph"):
     """
@@ -35,14 +58,22 @@ def print_graph_structure(g, name="Graph"):
       g (dgl.DGLGraph): The graph to inspect.
       name (str): A name for the graph, printed in the header.
     """
-    print(f"\n{name} structure:")
+    logging.info(f"\n{name} structure:")
     for node in range(g.num_nodes()):
         in_deg = g.in_degrees(node)
         out_deg = g.out_degrees(node)
         # Convert tensor degrees to Python numbers if necessary.
         if isinstance(in_deg, torch.Tensor): in_deg = in_deg.item()
         if isinstance(out_deg, torch.Tensor): out_deg = out_deg.item()
-        print(f"  Node {node}: in-degree = {in_deg}, out-degree = {out_deg}")
+        logging.info(f"  Node {node}: in-degree = {in_deg}, out-degree = {out_deg}")
+
+def compute_total_grad_norm(parameters):
+    total_norm = 0.0
+    for p in parameters:
+        if p.grad is not None:
+            param_norm = p.grad.data.norm(2)
+            total_norm += param_norm.item() ** 2
+    return total_norm ** 0.5
 
 # -----------------------------------------------------------------------------
 # Build the fixed core graph representing the parent topic and core topics.
@@ -98,22 +129,25 @@ def build_core_graph(topic_list, device):
 def main(config):
     # Set device to cuda:0 if available.
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    print(f"Using device: {device}")
+    logging.info(f"Using device: {device}")
     
     # ----------------------------
     # Data Preparation
     # ----------------------------
     # Create the training dataset from CSV.
     dataset = DocTopicPhraseDataset(config["data"]["csv_file"])
+    logging.info("dataset loaded")
     # Load the NV-Embed-v2 tokenizer.
     tokenizer = AutoTokenizer.from_pretrained("nvidia/NV-Embed-v2", trust_remote_code=True)
+    logging.info("tokenizer loaded")
     # Create a collate function that pads sequences appropriately.
     collate_fn = collate_fn_with_tokenizer(tokenizer)
+    
     dataloader = DataLoader(dataset,
                             batch_size=config["data"]["batch_size"],
                             shuffle=True,
-                            num_workers=0,
                             collate_fn=collate_fn)
+    logging.info("dataloader loaded")
     
     # Define the fixed list of parent and core topics.
     fixed_parent_topics = ["Political Issue"] + [
@@ -156,9 +190,15 @@ def main(config):
     # ----------------------------
     # Load Pretrained Document Encoder (fixed, not fine-tuned)
     # ----------------------------
-    from sentence_transformers import SentenceTransformer
-    policy_encoder = SentenceTransformer(config["arch"]["doc_encoder_model"],
+    logging.info("loading model")
+    # print timestamp
+    logging.info(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+
+    policy_encoder = SentenceTransformer(modelPath,
                                          trust_remote_code=True, device=device)
+    logging.info("model loaded")
+    logging.info(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+
     policy_encoder.eval()
     for param in policy_encoder.parameters():
         param.requires_grad = False
@@ -173,16 +213,15 @@ def main(config):
     # Build Graphs
     # ----------------------------
     downward_graph, upward_graph, sideward_graph = build_core_graph(fixed_parent_topics, device)
-    print_graph_structure(downward_graph, "Downward Graph")
-    print_graph_structure(upward_graph, "Upward Graph")
-    print_graph_structure(sideward_graph, "Sideward Graph")
+    # print_graph_structure(downward_graph, "Downward Graph")
+    # print_graph_structure(upward_graph, "Upward Graph")
+    # print_graph_structure(sideward_graph, "Sideward Graph")
     print_all_gpu_memory("After graph construction", device)
     
     # ----------------------------
     # Model Initialization
     # ----------------------------
     sim_loss_weight = config["optimizer"].get("sim_loss_weight", 0.05)
-    use_learnable_fusion = config["arch"].get("use_learnable_fusion", True)
     
     # Initialize the Topic Expansion Model.
     model = TopicExpanModel(encoder_model=policy_encoder,
@@ -202,7 +241,13 @@ def main(config):
                             enable_copy_mechanism=config["arch"].get("enable_copy_mechanism", False),
                             device=device,
                             fixed_topic_node_feats=fixed_topic_node_feats,
-                            use_learnable_fusion=use_learnable_fusion)
+                            use_learnable_fusion=config["arch"].get("use_learnable_fusion", True),
+                            bypass_graph=config.get("bypass_graph", False),
+                            top_p=config["arch"].get("top_p", 0.9),
+                            temperature=config["arch"].get("temperature", 1.0),
+                            freq_penalty=config["arch"].get("freq_penalty", 0),
+                            pres_penalty=config["arch"].get("pres_penalty", 0),
+                            unwanted_penalty=config["arch"].get("unwanted_penalty", 1.0))
     
     model.to(device)
     print_all_gpu_memory("After model loading", device)
@@ -223,13 +268,14 @@ def main(config):
     # ----------------------------
     # Training Loop with Mixed Precision and Early Stopping (if desired)
     # ----------------------------
-    scaler = torch.amp.GradScaler("cuda")
+    #scaler = torch.amp.GradScaler("cuda")
     model.train()
     batch_loss_accum = 0.0
     batch_count = 0
     # Early stopping parameters here
     for epoch in range(1, config.get("epochs", 5) + 1):
-        print(f"\n[INFO] Starting Epoch {epoch}")
+        logging.info(f"\n[INFO] Starting Epoch {epoch}")
+        logging.info(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
         gc.collect()
         with torch.no_grad():
             torch.cuda.empty_cache()
@@ -247,77 +293,94 @@ def main(config):
              
             optimizer.zero_grad()
 
-            with torch.amp.autocast("cuda"):
-                # Forward pass through the model.
-                sim_score, logits = model.forward(doc_texts,
-                                                    downward_graph,
-                                                    upward_graph,
-                                                    sideward_graph,
-                                                    phrase_input_ids,
-                                                    topic_idxs)
-                # Compute similarity loss (MSE) and generation loss (cross-entropy).
-                sim_loss = F.mse_loss(sim_score, torch.ones_like(sim_score))
-                if model.phrase_decoder.enable_copy_mechanism:
-                    gen_loss = F.nll_loss(logits.view(-1, logits.size(-1)),
+            #with torch.amp.autocast("cuda"):
+            # Forward pass through the model.
+            sim_score, logits = model.forward(doc_texts,
+                                                downward_graph,
+                                                upward_graph,
+                                                sideward_graph,
+                                                phrase_input_ids,
+                                                topic_idxs)
+            # Compute similarity loss (MSE) and generation loss (cross-entropy).
+            sim_loss = F.mse_loss(sim_score, torch.ones_like(sim_score))
+            if model.phrase_decoder.enable_copy_mechanism:
+                gen_loss = F.nll_loss(logits.view(-1, logits.size(-1)),
+                                        phrase_input_ids.view(-1),
+                                        ignore_index=tokenizer.pad_token_id)
+            else:
+                gen_loss = F.cross_entropy(logits.view(-1, logits.size(-1)),
                                             phrase_input_ids.view(-1),
                                             ignore_index=tokenizer.pad_token_id)
-                else:
-                    gen_loss = F.cross_entropy(logits.view(-1, logits.size(-1)),
-                                                phrase_input_ids.view(-1),
-                                                ignore_index=tokenizer.pad_token_id)
-                loss = gen_loss + sim_loss_weight * sim_loss
+            loss = gen_loss + sim_loss_weight * sim_loss
             
-            # Mixed precision backward pass.
-            scaler.scale(loss).backward()
-            # Gradient clipping for stability.
-            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
-            scaler.step(optimizer)
-            scaler.update()
+            # # Mixed precision backward pass.
+            # scaler.scale(loss).backward()
+
+            # # Gradient clipping for stability.
+            # torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+            # scaler.step(optimizer)
+            # scaler.update()
+            # scheduler.step()
+
+            loss.backward()
+            total_grad_norm = compute_total_grad_norm(model.parameters())
+            # Apply gradient clipping
+            # torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+            optimizer.step()
             scheduler.step()
             
             batch_loss_accum += loss.item()
             batch_count += 1
             
-            # Debug output every 500 batches.
-            if batch_idx % 500 == 0:
-                grad_norm = sum(param.grad.norm().item() for param in model.parameters() if param.grad is not None)
-                print("----- DEBUG SAMPLE -----")
-                print("Target Phrase:", tokenizer.decode(phrase_input_ids[0], skip_special_tokens=True))
+            # Debug output every 200 batches.
+            if batch_idx % 200 == 0:
+                # --- Additional debug output for gradients ---
+                
+                logging.info("[DEBUG] Total gradient norm: {:.4f}".format(total_grad_norm))
+                # Optionally, print gradient norms per parameter:
+                # for name, param in model.named_parameters():
+                #     if param.grad is not None:
+                #         param_norm = param.grad.data.norm(2)
+                #         logging.info(f"[DEBUG] Gradient norm for {name}: {param_norm.item():.4f}")
+
+                logging.info("----- DEBUG SAMPLE -----")
+                # log target tokens
+                logging.info(f"Target Phrase Tokens: {phrase_input_ids[0]}")
+                logging.info(f"Target Phrase: {tokenizer.decode(phrase_input_ids[0], skip_special_tokens=True)}")
                 try:
                     parent_index = topic_idxs[0].item()
-                    temperature = config["optimizer"].get("temperature", 1.0)
                     generated_tokens = model.generate_phrase(doc_texts,
                                                              downward_graph,
                                                              upward_graph,
                                                              sideward_graph,
-                                                             parent_index,
-                                                             temperature=temperature)
+                                                             parent_index)
                     generated_phrase = tokenizer.decode(generated_tokens[0], skip_special_tokens=True)
                 except Exception as e:
-                    print("Error during generation:", e)
+                    logging.info("Error during generation:", e)
                     generated_phrase = "<error>"
-                print("Generated Phrase:", generated_phrase)
-                print("Loss:", loss.item())
-                print("Sim Loss:", sim_loss.item())
-                print("Gen Loss:", gen_loss.item())
-                print("------------------------")
+                logging.info(f"Generated Phrase: {generated_phrase}")
+                logging.info(f"Loss: {loss.item()}")
+                logging.info(f"Sim Loss: {sim_loss.item()}")
+                logging.info(f"Gen Loss: {gen_loss.item()}")
+                logging.info(f"Generated Tokens: {generated_tokens}")
+                logging.info("------------------------")
                 print_all_gpu_memory(f"After batch {batch_idx}", device)
                 gc.collect()
                 with torch.no_grad():
                     torch.cuda.empty_cache()
         avg_loss = batch_loss_accum / batch_count
-        print(f"Epoch {epoch}: Loss = {avg_loss:.4f}")
+        logging.info(f"Epoch {epoch}: Loss = {avg_loss:.4f}")
         print_all_gpu_memory(f"After epoch {epoch}", device)
     
     # ----------------------------
     # Save Model (Filtered State Dict without DocumentEncoder)
     # ----------------------------
     # Print keys for debugging.
-    print(model.state_dict().keys())
+    logging.info(model.state_dict().keys())
     # Filter out keys starting with "document_encoder" to avoid saving the pretrained encoder.
     filtered_state_dict = {k: v for k, v in model.state_dict().items() if not k.startswith("document_encoder")}
     torch.save(filtered_state_dict, "trained_topic_expan_model_filtered.pth")
-    print("Training complete and model saved.")
+    logging.info("Training complete and model saved.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
