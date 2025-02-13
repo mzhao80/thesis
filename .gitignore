@@ -1,2 +1,3 @@
 training_data/*
 topic_taxonomy_expansion/models/*
+*/api_keys.py

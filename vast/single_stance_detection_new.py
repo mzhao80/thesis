@@ -1,19 +1,18 @@
-#!/usr/bin/env python
 """
-run.py
+single_stance_detection_new.py
 
-This is the main runner script.
+This is the main runner script for joint document-topic stance detection.
 It:
-  1. Loads VAST train/dev/test data and a separate inference file.
-  2. Uses NV-Embed-v2 to separately encode documents and topics.
-  3. Trains a classifier on top of these frozen embeddings (using early stopping based on validation loss and reporting F1).
-  4. Runs inference on the inference file and saves predictions.
-  5. Evaluates the final selected model on the official VAST test set.
+  1. Loads VAST train/dev/test data and an inference file.
+  2. Uses NV-Embed-v2 to jointly encode each document and topic pair into a single 4096-dim embedding.
+     The document and topic strings are concatenated using "||" with a query prefix.
+  3. Trains a classifier on top of these frozen joint embeddings (with early stopping and F1 reporting).
+  4. Runs inference on an input file and saves predictions.
+  5. Evaluates the final model on the official VAST test set.
   
-You can choose which model architecture to use via a command-line argument:
-  --model linear       # Uses the simple linear classifier.
-  --model attention    # Uses the self-attention classifier.
-  --model cross        # Uses the cross-attention classifier.
+You can choose which classifier architecture to use via a command-line argument:
+  --model linear         # Uses a simple linear classifier.
+  --model mlp            # Uses a two-layer MLP classifier.
   
 CUDA is used if available.
 """
@@ -21,6 +20,7 @@ CUDA is used if available.
 import os
 import argparse
 import torch
+from torch import tensor
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
 import numpy as np
@@ -28,11 +28,9 @@ import pandas as pd
 import gc
 from sklearn.metrics import accuracy_score, f1_score
 
-from dataset import VASTTrainDataset, InferenceDataset,EmbeddingDataset
-
+from dataset import VASTTrainDataset, InferenceDataset, EmbeddingDataset
 from transformers import AutoModel
-
-from models import StanceClassifier, AttentionClassifier, CrossAttentionClassifier
+from models_new import JointStanceClassifier, JointMLPClassifier
 
 # -----------------
 # A. Configuration
@@ -42,65 +40,46 @@ print(f"Using device: {DEVICE}")
 
 TRAIN_FILE = "zero-shot-stance/data/VAST/vast_train.csv"
 DEV_FILE = "zero-shot-stance/data/VAST/vast_dev.csv"
-TEST_FILE = "zero-shot-stance/data/VAST/vast_test.csv"  # Official test set for evaluation
-INFERENCE_FILE = "training_data.csv"
+TEST_FILE = "zero-shot-stance/data/VAST/vast_test.csv"
+INFERENCE_FILE = "/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/training_data.csv"
 OUTPUT_PREDICTIONS = "predictions.csv"
-MODEL_PATH = "/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/models"  # Adjust as needed
+MODEL_PATH = "/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/models"
 
-# We use separate instructions for document and topic.
-DOC_PREFIX = ("Instruct: Encode the following speech from Congress for stance detection of policy topics.\n"
-              "Speech: ")
-TOPIC_PREFIX = ("Instruct: Encode the following topic for use in stance detection of Congressional speeches.\n"
-                "Topic: ")
+# Default joint query prefix and separator.
+JOINT_PREFIX = ("Instruct: Encode the following document and topic, separated by ||, jointly "
+                "for use in stance detection.\nDocument and topic: ")
+SEPARATOR = " || "
 
-# Other configuration.
-EMBED_DIM = 4096   # NV-Embed output dimension per encoding.
-BATCH_SIZE = 8
+DEFAULT_EMBED_DIM = 4096
 NUM_EPOCHS = 100
-PATIENCE = 10      # Early stopping patience.
+PATIENCE = 20
 LABEL_MAP = {0: "con", 1: "pro", 2: "neutral"}
 
 # ---------------------------
-# C. Utility to encode documents and topics separately and then concatenate
+# C. Joint Encoding Utility Function
 # ---------------------------
-def encode_documents_topics_in_batches(model, documents, topics, batch_size=32,
-                                         doc_instruction="", topic_instruction=""):
+def encode_joint_documents_topics_in_batches(model, documents, topics, batch_size=32, joint_instruction=""):
     """
-    Separately encodes a list of documents and topics using NV-Embed,
-    normalizes them, and concatenates them to form a tensor of shape [len(documents), 2*EMBED_DIM].
+    Given lists of documents and topics, create joint strings for each pair by concatenating
+    them with a separator and an optional joint_instruction prefix. Then, encode the joint strings using the provided model.
     """
     all_embeddings = []
     for start_idx in range(0, len(documents), batch_size):
         end_idx = start_idx + batch_size
         batch_docs = documents[start_idx:end_idx]
         batch_topics = topics[start_idx:end_idx]
-        # Encode documents.
-        doc_embeddings = model.encode(
-            batch_docs,
-            instruction=doc_instruction,
-        )
-        doc_embeddings = F.normalize(doc_embeddings, p=2, dim=1)
-        # Encode topics.
-        topic_embeddings = model.encode(
-            batch_topics,
-            instruction=topic_instruction,
-        )
-        topic_embeddings = F.normalize(topic_embeddings, p=2, dim=1)
-        # Concatenate embeddings along the feature dimension.
-        combined_embeddings = torch.cat([doc_embeddings, topic_embeddings], dim=1)
-        all_embeddings.append(combined_embeddings)
-    all_embeddings = torch.cat(all_embeddings, dim=0)
-    return all_embeddings
+        # Concatenate each document-topic pair.
+        joint_texts = [f"{joint_instruction}{doc}{SEPARATOR}{topic}" for doc, topic in zip(batch_docs, batch_topics)]
+        # Note: Pass the joint_instruction if your NV-Embed-v2 supports a prompt.
+        joint_embeddings = model.encode(joint_texts, instruction=joint_instruction)
+        joint_embeddings = F.normalize(joint_embeddings, p=2, dim=1)
+        all_embeddings.append(joint_embeddings)
+    return torch.cat(all_embeddings, dim=0)
 
 # ---------------------------
-# D. Training Loop with Early Stopping and Linear LR Scheduler
+# D. Training Loop with Early Stopping and LR Scheduler
 # ---------------------------
-def train_classifier(classifier, train_loader, dev_loader, learning_rate, print_every=1000, patience=PATIENCE):
-    """
-    Train the classifier using AdamW with a linear LR scheduler.
-    Early stopping is based on validation loss.
-    Also prints weighted F1 on the dev set.
-    """
+def train_classifier(classifier, train_loader, dev_loader, learning_rate, patience=PATIENCE):
     optimizer = torch.optim.AdamW(classifier.parameters(), lr=learning_rate)
     criterion = torch.nn.CrossEntropyLoss()
     total_training_steps = len(train_loader) * NUM_EPOCHS
@@ -109,7 +88,6 @@ def train_classifier(classifier, train_loader, dev_loader, learning_rate, print_
     best_dev_loss = float("inf")
     patience_counter = 0
     best_state = None
-    iteration = 0
     total_loss = 0
     total_correct = 0
     total_samples = 0
@@ -117,7 +95,7 @@ def train_classifier(classifier, train_loader, dev_loader, learning_rate, print_
     for epoch in range(NUM_EPOCHS):
         print(f"\nEpoch {epoch+1}/{NUM_EPOCHS}")
         for batch in train_loader:
-            embeddings, labels, combined_text = batch
+            embeddings, labels, _ = batch
             embeddings = embeddings.to(DEVICE)
             labels = labels.to(DEVICE)
             optimizer.zero_grad()
@@ -130,12 +108,9 @@ def train_classifier(classifier, train_loader, dev_loader, learning_rate, print_
             _, preds = torch.max(logits, dim=1)
             total_correct += (preds == labels).sum().item()
             total_samples += embeddings.size(0)
-            iteration += 1
         avg_loss = total_loss / total_samples
         train_acc = total_correct / total_samples
         print(f"Epoch {epoch+1} - Train Loss: {avg_loss:.4f}, Train Accuracy: {train_acc:.4f}")
-
-        # Evaluate on dev set.
         classifier.eval()
         dev_loss_total = 0
         dev_correct = 0
@@ -156,186 +131,262 @@ def train_classifier(classifier, train_loader, dev_loader, learning_rate, print_
                 all_dev_labels.extend(labels.cpu().numpy().tolist())
         dev_loss = dev_loss_total / dev_total
         dev_acc = dev_correct / dev_total
-        dev_f1 = f1_score(all_dev_labels, all_dev_preds, average="weighted")
+        dev_f1 = f1_score(all_dev_labels, all_dev_preds, average="macro")
         print(f"Epoch {epoch+1} - Dev Loss: {dev_loss:.4f}, Dev Accuracy: {dev_acc:.4f}, Dev F1: {dev_f1:.4f}")
-
         if dev_loss < best_dev_loss:
             best_dev_loss = dev_loss
             best_state = classifier.state_dict()
             patience_counter = 0
             print("Dev loss improved; saving best model.")
+            best_dev_acc = dev_acc
+            best_dev_f1 = dev_f1
         else:
             patience_counter += 1
-            print(f"No improvement on dev loss. Patience: {patience_counter}/{patience}")
-            if patience_counter >= patience:
+            print(f"No improvement on dev loss. Patience: {patience_counter}/{PATIENCE}")
+            if patience_counter >= PATIENCE:
                 print("Early stopping triggered.")
                 break
         classifier.train()
-
     if best_state is not None:
         classifier.load_state_dict(best_state)
     else:
         print("Warning: No improvement on dev set was observed during training.")
-
-    final_train_acc = total_correct / total_samples
-    print("\nFinal Training Metrics:")
-    print(f"Average Loss: {total_loss / total_samples:.4f}")
-    print(f"Training Accuracy: {final_train_acc:.4f}")
+    print(f"\nFinal Training Loss: {total_loss / total_samples:.4f}")
+    print(f"Final Training Accuracy: {total_correct / total_samples:.4f}")
     print(f"Best Dev Loss: {best_dev_loss:.4f}")
-    print(f"Best Dev Accuracy: {dev_acc:.4f}, Best Dev Weighted F1: {dev_f1:.4f}")
-
-    return classifier, dev_acc
+    print(f"Best Dev Accuracy: {best_dev_acc:.4f}, Best Dev Macro F1: {best_dev_f1:.4f}")
+    return classifier, best_dev_loss, best_dev_acc, best_dev_f1
 
 # ---------------------------
-# E. Run Pipeline for a Given Learning Rate
+# E. Prepare Datasets
 # ---------------------------
-def run_pipeline(lr_value, model_type):
+def prepare_datasets():
     """
-    Runs the complete pipeline for a given learning rate and chosen model type.
-    model_type: string, either "linear" or "cross"
-    Returns dev accuracy and the trained classifier.
+    Load datasets to be reused across experiments.
+    Returns train and dev datasets.
     """
-    print(f"\n=== Running experiment for learning rate = {lr_value} with model {model_type} ===")
-    nv_embed_model = AutoModel.from_pretrained(MODEL_PATH, trust_remote_code=True)
-    nv_embed_model.to(DEVICE)
-    nv_embed_model.eval()
-
+    print("\n=== Loading datasets ===")
+    
+    # Load datasets
+    print("Loading datasets...")
     train_ds = VASTTrainDataset(csv_file=TRAIN_FILE)
     dev_ds = VASTTrainDataset(csv_file=DEV_FILE)
-
-    train_documents = [item["document"] for item in train_ds]
-    train_topics = [item["topic"] for item in train_ds]
-    train_labels = [item["label"] for item in train_ds]
-
-    dev_documents = [item["document"] for item in dev_ds]
-    dev_topics = [item["topic"] for item in dev_ds]
-    dev_labels = [item["label"] for item in dev_ds]
-
-    print("Encoding training data...")
-    train_embeddings = encode_documents_topics_in_batches(
-        model=nv_embed_model,
-        documents=train_documents,
-        topics=train_topics,
-        batch_size=BATCH_SIZE,
-        doc_instruction=DOC_PREFIX,
-        topic_instruction=TOPIC_PREFIX
-    )
-    print("Encoding dev data...")
-    dev_embeddings = encode_documents_topics_in_batches(
-        model=nv_embed_model,
-        documents=dev_documents,
-        topics=dev_topics,
-        batch_size=BATCH_SIZE,
-        doc_instruction=DOC_PREFIX,
-        topic_instruction=TOPIC_PREFIX
-    )
-
-    from torch import tensor
-    train_dataset = EmbeddingDataset(train_embeddings, tensor(train_labels, dtype=torch.long), train_documents, train_topics)
-    train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True)
-    dev_dataset = EmbeddingDataset(dev_embeddings, tensor(dev_labels, dtype=torch.long), dev_documents, dev_topics)
-    dev_loader = DataLoader(dev_dataset, batch_size=BATCH_SIZE, shuffle=False)
-
-    # Choose model based on the argument.
-    if model_type.lower() == "linear":
-        classifier = StanceClassifier(input_dim=2*EMBED_DIM, num_classes=3).to(DEVICE)
-    elif model_type.lower() == "attention":
-        classifier = AttentionClassifier(embed_dim=EMBED_DIM, num_classes=3, num_heads=4, dropout_rate=0.1).to(DEVICE)
-    elif model_type.lower() == "cross":
-        classifier = CrossAttentionClassifier(embed_dim=EMBED_DIM, num_classes=3, num_heads=4, dropout_rate=0.1).to(DEVICE)
-    else:
-        raise ValueError("Invalid model type. Choose either 'linear', 'attention', or 'cross'.")
+    test_ds = VASTTrainDataset(csv_file=TEST_FILE)
+    inference_ds = InferenceDataset(csv_file=INFERENCE_FILE)
     
-    classifier, dev_acc = train_classifier(classifier, train_loader, dev_loader, learning_rate=lr_value, print_every=1000, patience=PATIENCE)
-    
-    return dev_acc, classifier
+    return {
+        'train': train_ds,
+        'dev': dev_ds,
+        'test': test_ds,
+        'inference': inference_ds
+    }
 
 # ---------------------------
-# F. Main Hyperparameter Search, Inference, and Test Evaluation
+# F. Run Pipeline for a Hyperparameter Configuration
+# ---------------------------
+def run_pipeline(nv_embed_model, lr_value, model_type, batch_size, datasets, dropout_rate=None, hidden_dim=None, num_layers=None):
+    """Run a single experiment with given hyperparameters."""
+    print(f"\nRunning experiment with lr={lr_value}, model={model_type}, batch_size={batch_size}, hidden_dim={hidden_dim}, num_layers={num_layers}")
+    
+    # Create embeddings with the current batch size
+    print("\n=== Encoding datasets with batch_size", batch_size, "===")
+    with torch.no_grad():
+        # Extract data for train set
+        train_documents = [item["document"] for item in datasets['train']]
+        train_topics = [item["topic"] for item in datasets['train']]
+        train_labels = tensor([item["label"] for item in datasets['train']], dtype=torch.long)
+        train_seen = [item["seen"] for item in datasets['train']]
+        
+        # Encode train set
+        train_embeddings = encode_joint_documents_topics_in_batches(
+            nv_embed_model,
+            train_documents,
+            train_topics,
+            batch_size=batch_size,
+            joint_instruction=JOINT_PREFIX
+        )
+        
+        # Extract data for dev set
+        dev_documents = [item["document"] for item in datasets['dev']]
+        dev_topics = [item["topic"] for item in datasets['dev']]
+        dev_labels = tensor([item["label"] for item in datasets['dev']], dtype=torch.long)
+        dev_seen = [item["seen"] for item in datasets['dev']]
+        
+        # Encode dev set
+        dev_embeddings = encode_joint_documents_topics_in_batches(
+            nv_embed_model,
+            dev_documents,
+            dev_topics,
+            batch_size=batch_size,
+            joint_instruction=JOINT_PREFIX
+        )
+    
+    # Create datasets with the encoded embeddings
+    train_dataset = EmbeddingDataset(train_embeddings, train_labels, train_documents, train_topics, train_seen)
+    dev_dataset = EmbeddingDataset(dev_embeddings, dev_labels, dev_documents, dev_topics, dev_seen)
+    
+    # Create data loaders with the current batch size
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+    dev_loader = DataLoader(dev_dataset, batch_size=batch_size, shuffle=False)
+    
+    # Initialize the model
+    if model_type == "mlp":
+        classifier = JointMLPClassifier(
+            input_dim=DEFAULT_EMBED_DIM,
+            hidden_dim=hidden_dim,
+            num_classes=3,
+            dropout_rate=dropout_rate,
+            num_layers=num_layers
+        )
+    else:
+        classifier = JointStanceClassifier(input_dim=DEFAULT_EMBED_DIM, num_classes=3)
+    classifier.to(DEVICE)
+    
+    # Train and evaluate
+    classifier, dev_loss, dev_acc, dev_f1 = train_classifier(
+        classifier, train_loader, dev_loader,
+        learning_rate=lr_value, patience=PATIENCE
+    )
+    
+    return dev_loss, dev_acc, dev_f1, classifier
+
+# ---------------------------
+# G. Main Hyperparameter Search, Inference, and Test Evaluation
 # ---------------------------
 def main():
-    parser = argparse.ArgumentParser(description="Stance Detection Training and Evaluation")
+    parser = argparse.ArgumentParser(description="Joint Document-Topic Stance Detection Training and Evaluation")
     parser.add_argument("--model", type=str, default="linear",
-                        help="Which model to use: 'linear', 'attention', or 'cross'")
+                        help="Which classifier to use: 'linear' or 'mlp'")
     args = parser.parse_args()
     model_type = args.model
-    candidate_lrs = [1e-2, 5e-3, 1e-3, 5e-4, 1e-4, 5e-5, 1e-5]
-    best_lr = None
-    best_dev_acc = -1
+
+    print(f"Using classifier type: {model_type}")
+
+    # Load datasets once
+    datasets = prepare_datasets()
+
+    candidate_lrs = [1e-4]
+    candidate_batch_sizes = [8]
+    candidate_dropout_rates = [0.1,0.25]
+    candidate_hidden_dims = [1024,2048]
+    candidate_num_layers = [6,8,10]
+    
+    best_config = None
+    best_dev_loss = float('inf')
     best_classifier = None
+    best_dev_acc = 0.0
+    best_dev_f1 = 0.0
+    best_bs = None
+    best_dropout = None
+    best_hidden_dim = None
+    best_num_layers = None
 
-    for lr_value in candidate_lrs:
-        dev_acc, classifier_candidate = run_pipeline(lr_value, model_type)
-        print(f"Learning rate {lr_value} achieved Dev Accuracy: {dev_acc:.4f}")
-        if dev_acc > best_dev_acc:
-            best_dev_acc = dev_acc
-            best_lr = lr_value
-            best_classifier = classifier_candidate
-
-    print(f"\n=== Best learning rate: {best_lr} with Dev Accuracy: {best_dev_acc:.4f} for model {model_type} ===")
-
-    # Inference on training_data.csv.
-    print("Running inference on training_data.csv...")
-    test_ds_inference = InferenceDataset(csv_file=INFERENCE_FILE)
-    test_documents = [item["document"] for item in test_ds_inference]
-    test_topics = [item["topic"] for item in test_ds_inference]
+    # Load NV-Embed model
     nv_embed_model = AutoModel.from_pretrained(MODEL_PATH, trust_remote_code=True)
     nv_embed_model.to(DEVICE)
     nv_embed_model.eval()
-    test_embeddings = encode_documents_topics_in_batches(
-        model=nv_embed_model,
-        documents=test_documents,
-        topics=test_topics,
-        batch_size=BATCH_SIZE,
-        doc_instruction=DOC_PREFIX,
-        topic_instruction=TOPIC_PREFIX
+
+    if model_type.lower() == "mlp":
+        for lr_value in candidate_lrs:
+            for bs in candidate_batch_sizes:
+                for dropout in candidate_dropout_rates:
+                    for hidden_dim in candidate_hidden_dims:
+                        for num_layers in candidate_num_layers:
+                            dev_loss, dev_acc, dev_f1, classifier_candidate = run_pipeline(nv_embed_model,
+                                lr_value, model_type, bs, datasets,
+                                dropout_rate=dropout, hidden_dim=hidden_dim, num_layers=num_layers
+                            )
+                            print(f"Config LR={lr_value}, BS={bs}, Dropout={dropout}, Hidden Dim={hidden_dim}, Num Layers={num_layers} -> Dev Loss: {dev_loss:.4f}, Dev Accuracy: {dev_acc:.4f}, Dev F1: {dev_f1:.4f}")
+                            if dev_loss < best_dev_loss:
+                                best_dev_loss = dev_loss
+                                best_config = (lr_value, bs, dropout, hidden_dim, num_layers)
+                                best_classifier = classifier_candidate
+                                best_dev_acc = dev_acc
+                                best_dev_f1 = dev_f1
+                                best_bs = bs
+                                best_dropout = dropout
+                                best_hidden_dim = hidden_dim
+                                best_num_layers = num_layers
+    # else:  # Linear classifier
+    #     for lr_value in candidate_lrs:
+    #         for bs in candidate_batch_sizes:
+    #             dev_loss, dev_acc, dev_f1, classifier_candidate = run_pipeline(
+    #                 lr_value, model_type, bs, datasets
+    #             )
+    #             print(f"Config LR={lr_value}, BS={bs} -> Dev Loss: {dev_loss:.4f}, Dev Accuracy: {dev_acc:.4f}, Dev F1: {dev_f1:.4f}")
+    #             if dev_loss < best_dev_loss:
+    #                 best_dev_loss = dev_loss
+    #                 best_config = (lr_value, bs)
+    #                 best_classifier = classifier_candidate
+    #                 best_dev_acc = dev_acc
+    #                 best_dev_f1 = dev_f1
+    #                 best_bs = bs
+
+    print(f"\n=== Best configuration for model {model_type}: {best_config} with Dev Loss: {best_dev_loss:.4f}, Dev Accuracy: {best_dev_acc:.4f}, Dev F1: {best_dev_f1:.4f} ===")
+
+    # Run inference using best model
+    print("Running inference on training_data.csv...")
+    inference_embeddings = encode_joint_documents_topics_in_batches(
+        AutoModel.from_pretrained(MODEL_PATH, trust_remote_code=True),
+        [item["document"] for item in datasets['inference']],
+        [item["topic"] for item in datasets['inference']],
+        batch_size=best_bs,
+        joint_instruction=JOINT_PREFIX
     )
-    test_embeddings = test_embeddings.to(DEVICE)
+    print("Embeddings created.")
+    inference_embeddings = inference_embeddings.to(DEVICE)
     best_classifier.eval()
     all_preds = []
     with torch.no_grad():
-        for start_idx in range(0, test_embeddings.size(0), BATCH_SIZE):
-            end_idx = start_idx + BATCH_SIZE
-            batch_embed = test_embeddings[start_idx:end_idx]
+        for start_idx in range(0, inference_embeddings.size(0), best_bs):
+            end_idx = start_idx + best_bs
+            batch_embed = inference_embeddings[start_idx:end_idx]
             logits = best_classifier(batch_embed)
             preds = torch.argmax(logits, dim=1)
             all_preds.extend(preds.cpu().numpy().tolist())
     stance_predictions = [LABEL_MAP[pred] for pred in all_preds]
-    df_inference = test_ds_inference.df.copy()
+    df_inference = datasets['inference'].df.copy()
     df_inference["pred"] = stance_predictions
     df_inference.to_csv(OUTPUT_PREDICTIONS, index=False)
     print(f"Predictions written to {OUTPUT_PREDICTIONS}.")
 
-    # Evaluate on the official VAST test set.
+    # Evaluate on test set
     print("Evaluating on the official VAST test set...")
-    test_ds_vast = VASTTrainDataset(csv_file=TEST_FILE)
-    test_documents_vast = [item["document"] for item in test_ds_vast]
-    test_topics_vast = [item["topic"] for item in test_ds_vast]
-    test_labels_vast = [item["label"] for item in test_ds_vast]
-    test_embeddings_vast = encode_documents_topics_in_batches(
-        model=nv_embed_model,
-        documents=test_documents_vast,
-        topics=test_topics_vast,
-        batch_size=BATCH_SIZE,
-        doc_instruction=DOC_PREFIX,
-        topic_instruction=TOPIC_PREFIX
+    test_embeddings = encode_joint_documents_topics_in_batches(
+        AutoModel.from_pretrained(MODEL_PATH, trust_remote_code=True),
+        [item["document"] for item in datasets['test']],
+        [item["topic"] for item in datasets['test']],
+        batch_size=best_bs,
+        joint_instruction=JOINT_PREFIX
     )
-    test_embeddings_vast = test_embeddings_vast.to(DEVICE)
+    test_embeddings = test_embeddings.to(DEVICE)
     best_classifier.eval()
-    vast_preds = []
+    test_preds = []
     with torch.no_grad():
-        for start_idx in range(0, test_embeddings_vast.size(0), BATCH_SIZE):
-            end_idx = start_idx + BATCH_SIZE
-            batch_embed = test_embeddings_vast[start_idx:end_idx]
+        for start_idx in range(0, test_embeddings.size(0), best_bs):
+            end_idx = start_idx + best_bs
+            batch_embed = test_embeddings[start_idx:end_idx]
             logits = best_classifier(batch_embed)
             preds = torch.argmax(logits, dim=1)
-            vast_preds.extend(preds.cpu().numpy().tolist())
-    vast_preds = [LABEL_MAP[pred] for pred in vast_preds]
-    true_labels = [LABEL_MAP[label] for label in test_labels_vast]
-    acc = accuracy_score(true_labels, vast_preds)
-    f1 = f1_score(true_labels, vast_preds, average="weighted")
+            test_preds.extend(preds.cpu().numpy().tolist())
+    test_preds = [LABEL_MAP[pred] for pred in test_preds]
+    true_labels = [LABEL_MAP[label] for label in [item["label"] for item in datasets['test']]]
+    acc = accuracy_score(true_labels, test_preds)
+    f1 = f1_score(true_labels, test_preds, average="macro")
     print(f"VAST Test Set Accuracy: {acc:.4f}")
-    print(f"VAST Test Set Weighted F1: {f1:.4f}")
+    print(f"VAST Test Set Macro F1: {f1:.4f}")
+
+    # Partition predictions based on the 'seen' flag
+    zero_shot_true = [label for label, seen in zip(true_labels, [item["seen"] for item in datasets['test']]) if seen == 0]
+    zero_shot_pred = [pred for pred, seen in zip(test_preds, [item["seen"] for item in datasets['test']]) if seen == 0]
+    few_shot_true = [label for label, seen in zip(true_labels, [item["seen"] for item in datasets['test']]) if seen == 1]
+    few_shot_pred = [pred for pred, seen in zip(test_preds, [item["seen"] for item in datasets['test']]) if seen == 1]
+
+    f1_zero_shot = f1_score(zero_shot_true, zero_shot_pred, average="macro")
+    f1_few_shot = f1_score(few_shot_true, few_shot_pred, average="macro")
+
+    print(f"VAST Test Set Zero-shot Macro F1: {f1_zero_shot:.4f}")
+    print(f"VAST Test Set Few-shot Macro F1: {f1_few_shot:.4f}")
 
 if __name__ == "__main__":
     main()

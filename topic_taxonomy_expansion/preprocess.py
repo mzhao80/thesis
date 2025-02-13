@@ -4,6 +4,7 @@ import argparse
 import pandas as pd
 from tqdm import tqdm
 import openai
+import api_keys
 
 def extract_topic_and_phrases(speech, policy, client, max_attempts=10):
     """
@@ -64,61 +65,36 @@ def main():
     input_path = os.path.join(args.data_dir, args.input_file)
     output_path = os.path.join(args.data_dir, args.output_file)
     
-    # If the training CSV already exists, skip prompting.
-    if os.path.exists(output_path):
-        print("Training data file already exists; skipping LLM prompting.")
-        out_df = pd.read_csv(output_path)
-    else:
-        print("Loading input CSV...")
-        df = pd.read_csv(input_path)
-        
-        # Write corpus.txt: each line "doc_index<TAB>speech"
-        corpus_path = os.path.join(args.data_dir, "corpus.txt")
-        print("Writing corpus.txt ...")
-        with open(corpus_path, "w", encoding="utf-8") as f:
-            for idx, row in df.iterrows():
-                speech = row["speech"]
-                f.write(f"{idx}\t{speech}\n")
-        
-        print("Initializing OpenAI client ...")
-        client = openai.OpenAI()
-        
-        print("Extracting subtopics and phrases using LLM ...")
-        all_subtopics = []
-        all_phrases = []
-        for i, row in tqdm(df.iterrows(), total=len(df)):
-            speech = row["speech"]
-            policy = str(row["policy_area"])  # convert to string
-            subtopic, phrase = extract_topic_and_phrases(speech, policy, client)
-            all_subtopics.append(subtopic)
-            all_phrases.append(phrase)
-        
-        # Create training data rows: one row per key phrase.
-        rows = []
-        for idx, row in df.iterrows():
-            speech = row["speech"]
-            policy = str(row["policy_area"])
-            subtopic = all_subtopics[idx]   
-            phrase = all_phrases[idx]
-            rows.append({
-                    "document": speech,
-                    "policy_area": policy,
-                    "subtopic": subtopic,
-                    "phrase": phrase
-                })
-        out_df = pd.DataFrame(rows)
-        out_df.to_csv(output_path, index=False)
-        print(f"Preprocessing complete. Training data saved to {output_path}.")
+    print("Initializing OpenAI client ...")
+    client = openai.OpenAI(api_key=api_keys.OPENAI_API_KEY)
     
-    # Build a global mapping of parent topics from the "policy_area" column.
-    # Convert each value to string and filter out nulls.
-    parent_topics = sorted([str(x) for x in pd.read_csv(args.input_file)["policy_area"].unique().tolist() if pd.notnull(x)])
-    topic_to_topic_idx = {topic: idx for idx, topic in enumerate(parent_topics)}
-    topics_out = os.path.join(args.data_dir, "topics.txt")
-    with open(topics_out, "w", encoding="utf-8") as f:
-        for topic, idx in topic_to_topic_idx.items():
-            f.write(f"{idx}\t{topic}\n")
-    print(f"Parent topics mapping saved to {topics_out}")
+    print("Extracting subtopics and phrases using LLM ...")
+    all_subtopics = []
+    all_phrases = []
+    df = pd.read_csv(input_path)
+    for i, row in tqdm(df.iterrows(), total=len(df)):
+        speech = row["speech"]
+        policy = str(row["policy_area"])
+        subtopic, phrase = extract_topic_and_phrases(speech, policy, client)
+        all_subtopics.append(subtopic)
+        all_phrases.append(phrase)
+    
+    # Create training data rows: one row per key phrase.
+    rows = []
+    for idx, row in df.iterrows():
+        speech = row["speech"]
+        policy = str(row["policy_area"])
+        subtopic = all_subtopics[idx]   
+        phrase = all_phrases[idx]
+        rows.append({
+                "document": speech,
+                "policy_area": policy,
+                "subtopic": subtopic,
+                "phrase": phrase
+            })
+    out_df = pd.DataFrame(rows)
+    out_df.to_csv(output_path, index=False)
+    print(f"Preprocessing complete. Training data saved to {output_path}.")
 
 if __name__ == "__main__":
     main()

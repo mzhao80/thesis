@@ -1,0 +1,533 @@
+/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/transformers/training_args.py:1568: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/sweep_bart.py:102: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Seq2SeqTrainer.__init__`. Use `processing_class` instead.
+  trainer = Seq2SeqTrainer(
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+wandb: WARNING The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+wandb: WARNING Config item 'dropout' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'length_penalty' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'output_dir' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'num_train_epochs' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'warmup_steps' was locked by 'sweep' (ignored update).
+  0%|          | 0/1038 [00:00<?, ?it/s]/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/parallel/parallel_apply.py:79: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.device(device), torch.cuda.stream(stream), autocast(enabled=autocast_enabled):
+/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 48%|████▊     | 500/1038 [06:11<07:00,  1.28it/s]
+  5%|▍         | 2/44 [00:00<00:11,  3.81it/s]
+
+
+
+
+
+
+
+ 95%|█████████▌| 42/44 [00:14<00:00,  2.70it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 96%|█████████▋| 1000/1038 [12:02<00:19,  1.93it/s]
+  0%|          | 0/44 [00:00<?, ?it/s]
+
+
+
+
+
+
+ 80%|███████▉  | 35/44 [00:09<00:02,  3.96it/s]
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 1038/1038 [12:34<00:00,  1.38it/s]
+{'train_runtime': 754.8296, 'train_samples_per_second': 21.883, 'train_steps_per_second': 1.375, 'train_loss': 1.0530078608635993, 'epoch': 6.0}
+Generating predictions on validation dataset...
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+  0%|          | 0/44 [00:00<?, ?it/s]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+  5%|▍         | 2/44 [00:10<03:38,  5.19s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+  7%|▋         | 3/44 [00:20<04:57,  7.26s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+  9%|▉         | 4/44 [00:31<05:41,  8.53s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 11%|█▏        | 5/44 [00:41<06:01,  9.27s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 14%|█▎        | 6/44 [00:52<06:08,  9.70s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 16%|█▌        | 7/44 [01:03<06:09,  9.99s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 18%|█▊        | 8/44 [01:13<06:04, 10.13s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 20%|██        | 9/44 [01:23<05:55, 10.16s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 23%|██▎       | 10/44 [01:34<05:52, 10.38s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 25%|██▌       | 11/44 [01:44<05:42, 10.39s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 27%|██▋       | 12/44 [01:56<05:45, 10.79s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 30%|██▉       | 13/44 [02:01<04:38,  8.98s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 32%|███▏      | 14/44 [02:12<04:50,  9.68s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+
+ 34%|███▍      | 15/44 [02:18<04:09,  8.62s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 36%|███▋      | 16/44 [02:29<04:17,  9.20s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+
+ 39%|███▊      | 17/44 [02:35<03:38,  8.10s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.ou should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.ou should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 45%|████▌     | 20/44 [03:06<03:51,  9.63s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 48%|████▊     | 21/44 [03:16<03:46,  9.83s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.ou should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.ou should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 50%|█████     | 22/44 [03:21<03:06,  8.49s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 52%|█████▏    | 23/44 [03:32<03:11,  9.10s/it]
+ 55%|█████▍    | 24/44 [03:42<03:07,  9.39s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 55%|█████▍    | 24/44 [03:42<03:07,  9.39s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 55%|█████▍    | 24/44 [03:42<03:07,  9.39s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 59%|█████▉    | 26/44 [04:03<02:59,  9.94s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 59%|█████▉    | 26/44 [04:03<02:59,  9.94s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 64%|██████▎   | 28/44 [04:24<02:41, 10.09s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 64%|██████▎   | 28/44 [04:24<02:41, 10.09s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 68%|██████▊   | 30/44 [04:44<02:22, 10.18s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 68%|██████▊   | 30/44 [04:44<02:22, 10.18s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 73%|███████▎  | 32/44 [05:02<01:52,  9.37s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 73%|███████▎  | 32/44 [05:02<01:52,  9.37s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 77%|███████▋  | 34/44 [05:11<01:10,  7.05s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 77%|███████▋  | 34/44 [05:11<01:10,  7.05s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 82%|████████▏ | 36/44 [05:21<00:47,  5.93s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 82%|████████▏ | 36/44 [05:21<00:47,  5.93s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.ou should use Trainer.processing_class instead.
+ 89%|████████▊ | 39/44 [05:33<00:23,  4.70s/it] use Trainer.processing_class instead.ou should use Trainer.processing_class instead.
+ 89%|████████▊ | 39/44 [05:33<00:23,  4.70s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 93%|█████████▎| 41/44 [05:43<00:14,  4.77s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 93%|█████████▎| 41/44 [05:43<00:14,  4.77s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 98%|█████████▊| 43/44 [05:52<00:04,  4.74s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+ 98%|█████████▊| 43/44 [05:52<00:04,  4.74s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+100%|██████████| 44/44 [05:54<00:00,  8.05s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+100%|██████████| 44/44 [05:54<00:00,  8.05s/it]Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.

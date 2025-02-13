@@ -1,0 +1,94 @@
+{
+  "os":  "Linux-4.18.0-513.18.1.el8_9.x86_64-x86_64-with-glibc2.28",
+  "python":  "CPython 3.12.5",
+  "startedAt":  "2025-02-13T03:01:00.413957Z",
+  "program":  "/n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/sweep_bart.py",
+  "codePath":  "topic_taxonomy_expansion/sweep_bart.py",
+  "git":  {
+    "remote":  "https://github.com/mzhao80/thesis.git",
+    "commit":  "e0a1f5be70ef0e25bb613793fa2ff928ad87b93b"
+  },
+  "email":  "michaelzhao@college.harvard.edu",
+  "root":  "/n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion",
+  "host":  "holygpu8a29104.rc.fas.harvard.edu",
+  "executable":  "/n/home09/michaelzhao/Downloads/topicexpan/myenv/bin/python",
+  "codePathLocal":  "sweep_bart.py",
+  "cpu_count":  64,
+  "cpu_count_logical":  64,
+  "gpu":  "NVIDIA A100-SXM4-80GB",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "53660876800",
+      "used":  "20951781376"
+    }
+  },
+  "memory":  {
+    "total":  "540119678976"
+  },
+  "cpu":  {
+    "count":  64,
+    "countLogical":  64
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA A100-SXM4-80GB",
+      "memoryTotal":  "85899345920",
+      "architecture":  "Ampere"
+    }
+  ],
+  "slurm":  {
+    "cluster_name":  "odyssey",
+    "conf":  "/etc/slurm/slurm.conf",
+    "cpus_on_node":  "4",
+    "cpus_per_task":  "4",
+    "gpus_on_node":  "1",
+    "gtids":  "0",
+    "job_account":  "arielpro_lab",
+    "job_cpus_per_node":  "4",
+    "job_end_time":  "1739426890",
+    "job_gid":  "10003",
+    "job_gpus":  "5",
+    "job_id":  "3688045",
+    "job_name":  "interactive",
+    "job_nodelist":  "holygpu8a29104",
+    "job_num_nodes":  "1",
+    "job_partition":  "gpu_requeue",
+    "job_qos":  "normal",
+    "job_start_time":  "1739412490",
+    "job_uid":  "65292",
+    "job_user":  "michaelzhao",
+    "jobid":  "3688045",
+    "launch_node_ipaddr":  "10.242.104.152",
+    "localid":  "0",
+    "mem_per_node":  "40960",
+    "mpi_type":  "none",
+    "nnodes":  "1",
+    "nodeid":  "0",
+    "nodelist":  "holygpu8a29104",
+    "oom_kill_step":  "0",
+    "prio_process":  "0",
+    "procid":  "0",
+    "pty_port":  "9889",
+    "pty_win_col":  "90",
+    "pty_win_row":  "23",
+    "script_context":  "prolog_task",
+    "srun_comm_host":  "10.242.104.152",
+    "srun_comm_port":  "9890",
+    "step_id":  "4294967290",
+    "step_launcher_port":  "9890",
+    "step_nodelist":  "holygpu8a29104",
+    "step_num_nodes":  "1",
+    "step_num_tasks":  "1",
+    "step_tasks_per_node":  "1",
+    "stepid":  "4294967290",
+    "submit_dir":  "/n/home09/michaelzhao/Downloads/thesis",
+    "submit_host":  "boslogin07.rc.fas.harvard.edu",
+    "task_pid":  "3456414",
+    "tasks_per_node":  "1",
+    "topology_addr":  "main.holyoke.holyhdr.holygpu8a29104",
+    "topology_addr_pattern":  "switch.switch.switch.node",
+    "tres_per_task":  "cpu=4"
+  },
+  "cudaVersion":  "12.5"
+}

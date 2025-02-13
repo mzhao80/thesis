@@ -1,0 +1,315 @@
+2025-02-13 03:34:19,925 INFO    StreamThr :11594 [internal.py:wandb_internal():83] W&B internal server running at pid: 11594, started at: 2025-02-13 03:34:19.919957
+2025-02-13 03:34:19,927 INFO    WriterThread:11594 [datastore.py:open_for_write():87] open: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/run-si9nof8a.wandb
+2025-02-13 03:34:20,252 INFO    SenderThread:11594 [dir_watcher.py:__init__():211] watching files in: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files
+2025-02-13 03:34:20,252 INFO    SenderThread:11594 [sender.py:_start_run_threads():1150] run started: si9nof8a with start time 1739435659.919005
+2025-02-13 03:34:20,302 INFO    HandlerThread:11594 [system_monitor.py:start():187] Starting system monitor
+2025-02-13 03:34:20,302 INFO    SystemMonitor:11594 [system_monitor.py:_start():151] Starting system asset monitoring threads
+2025-02-13 03:34:20,303 INFO    HandlerThread:11594 [system_monitor.py:probe():207] Collecting system info
+2025-02-13 03:34:20,303 INFO    SystemMonitor:11594 [interfaces.py:start():186] Started cpu monitoring
+2025-02-13 03:34:20,303 INFO    SystemMonitor:11594 [interfaces.py:start():186] Started disk monitoring
+2025-02-13 03:34:20,305 INFO    SystemMonitor:11594 [interfaces.py:start():186] Started gpu monitoring
+2025-02-13 03:34:20,305 INFO    SystemMonitor:11594 [interfaces.py:start():186] Started memory monitoring
+2025-02-13 03:34:20,306 INFO    SystemMonitor:11594 [interfaces.py:start():186] Started network monitoring
+2025-02-13 03:34:20,463 INFO    HandlerThread:11594 [system_monitor.py:probe():217] Finished collecting system info
+2025-02-13 03:34:20,463 INFO    HandlerThread:11594 [system_monitor.py:probe():220] Publishing system info
+2025-02-13 03:34:20,473 INFO    HandlerThread:11594 [system_monitor.py:probe():222] Finished publishing system info
+2025-02-13 03:34:20,496 INFO    SenderThread:11594 [sender.py:_save_file():1419] saving file wandb-metadata.json with policy now
+2025-02-13 03:34:20,832 INFO    wandb-upload_0:11594 [upload_job.py:push():130] Uploaded file /tmp/tmplrwbjp9zwandb/r27n038d-wandb-metadata.json
+2025-02-13 03:34:21,258 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_created():271] file/dir created: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/wandb-metadata.json
+2025-02-13 03:34:22,262 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_created():271] file/dir created: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/requirements.txt
+2025-02-13 03:34:26,283 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_created():271] file/dir created: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:34:26,779 WARNING SenderThread:11594 [sender.py:send_metric():1370] Seen metric with glob (shouldn't happen)
+2025-02-13 03:34:28,292 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:34:30,300 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:34:32,312 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:34:34,321 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:34:36,330 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:34:38,338 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:34:40,346 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:34:42,352 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:34:44,368 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:34:46,393 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:34:48,402 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:34:50,413 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:34:52,421 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:34:52,422 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/config.yaml
+2025-02-13 03:34:54,430 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:34:56,438 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:34:58,444 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:00,453 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:02,461 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:04,470 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:06,478 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:08,489 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:10,497 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:12,506 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:14,514 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:16,525 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:18,531 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:20,539 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:22,548 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:24,557 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:26,565 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:28,571 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:30,580 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:32,588 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:34,597 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:36,605 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:38,614 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:40,626 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:42,635 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:44,656 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:46,649 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:48,658 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:50,666 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:52,677 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:54,683 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:56,697 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:58,706 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:35:59,713 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:01,739 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:03,747 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:05,758 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:07,767 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:09,776 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:11,784 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:13,793 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:15,802 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:17,810 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:19,819 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:21,827 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:23,836 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:25,844 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:27,871 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:29,876 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:31,885 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:33,902 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:35,910 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:37,919 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:39,928 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:41,936 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:43,945 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:45,953 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:47,961 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:49,970 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:51,978 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:53,989 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:55,997 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:36:58,011 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:00,019 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:02,028 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:04,036 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:06,068 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:08,077 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:10,085 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:12,093 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:14,102 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:16,107 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:18,116 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:20,124 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:22,133 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:24,141 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:26,150 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:28,158 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:30,166 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:32,175 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:34,183 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:36,192 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:38,200 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:40,209 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:42,217 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:44,225 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:46,234 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:48,243 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:50,251 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:52,266 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:54,277 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:56,285 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:37:58,299 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:00,307 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:02,313 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:04,321 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:06,332 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:08,341 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:10,349 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:12,355 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:14,366 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:16,375 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:18,383 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:20,392 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:22,401 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:24,409 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:26,418 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:28,427 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:30,435 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:32,444 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:34,452 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:36,461 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:38,467 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:40,476 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:42,484 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:44,492 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:46,526 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:48,532 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:50,557 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:52,565 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:54,575 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:56,584 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:38:58,594 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:00,603 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:00,633 INFO    SenderThread:11594 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-13 03:39:01,626 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_created():271] file/dir created: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/wandb-summary.json
+2025-02-13 03:39:02,632 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:03,635 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:03,635 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/config.yaml
+2025-02-13 03:39:04,643 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:06,651 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:08,657 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:10,669 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:12,677 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:12,758 INFO    SenderThread:11594 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-13 03:39:13,680 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/wandb-summary.json
+2025-02-13 03:39:14,686 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:16,706 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:18,715 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:20,723 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:22,731 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:22,760 INFO    SenderThread:11594 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-13 03:39:22,769 INFO    SenderThread:11594 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-13 03:39:22,777 INFO    SenderThread:11594 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-13 03:39:22,786 INFO    SenderThread:11594 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-13 03:39:22,794 INFO    SenderThread:11594 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-13 03:39:22,803 INFO    SenderThread:11594 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-13 03:39:23,734 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/wandb-summary.json
+2025-02-13 03:39:24,740 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:30,763 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:36,785 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/config.yaml
+2025-02-13 03:39:39,796 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:45,816 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:49,830 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:39:55,850 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:01,878 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:03,886 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:05,894 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:07,903 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:09,911 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:13,925 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:15,935 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:17,943 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:19,951 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:21,960 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:23,968 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:25,976 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:27,984 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:31,998 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:34,006 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:36,014 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:38,027 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:40,036 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:44,049 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:46,055 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:50,072 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:52,080 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:40:58,100 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:41:04,130 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:41:06,139 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:41:10,154 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:41:12,162 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:41:18,195 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:41:24,215 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:41:30,235 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:41:36,256 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:41:44,289 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:41:58,336 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:42:10,378 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:42:16,403 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:42:22,438 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:42:28,455 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:42:34,475 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:42:40,500 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:42:46,521 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:42:52,544 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:43:00,569 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:43:01,752 INFO    SenderThread:11594 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-13 03:43:01,833 INFO    SenderThread:11594 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-13 03:43:01,833 INFO    SenderThread:11594 [sender.py:send_exit():570] handling exit code: 0
+2025-02-13 03:43:01,834 INFO    SenderThread:11594 [sender.py:send_exit():572] handling runtime: 521
+2025-02-13 03:43:01,842 INFO    SenderThread:11594 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-13 03:43:01,842 INFO    SenderThread:11594 [sender.py:send_exit():578] send defer
+2025-02-13 03:43:01,843 INFO    HandlerThread:11594 [handler.py:handle_request_defer():188] handle defer: 0
+2025-02-13 03:43:01,843 INFO    SenderThread:11594 [sender.py:send_request_defer():594] handle sender defer: 0
+2025-02-13 03:43:01,843 INFO    SenderThread:11594 [sender.py:transition_state():598] send defer: 1
+2025-02-13 03:43:01,843 INFO    HandlerThread:11594 [handler.py:handle_request_defer():188] handle defer: 1
+2025-02-13 03:43:01,843 INFO    SenderThread:11594 [sender.py:send_request_defer():594] handle sender defer: 1
+2025-02-13 03:43:01,843 INFO    SenderThread:11594 [sender.py:transition_state():598] send defer: 2
+2025-02-13 03:43:01,843 INFO    HandlerThread:11594 [handler.py:handle_request_defer():188] handle defer: 2
+2025-02-13 03:43:01,843 INFO    HandlerThread:11594 [system_monitor.py:finish():196] Stopping system monitor
+2025-02-13 03:43:01,844 INFO    HandlerThread:11594 [interfaces.py:finish():198] Joined cpu monitor
+2025-02-13 03:43:01,844 INFO    HandlerThread:11594 [interfaces.py:finish():198] Joined disk monitor
+2025-02-13 03:43:02,456 INFO    HandlerThread:11594 [interfaces.py:finish():198] Joined gpu monitor
+2025-02-13 03:43:02,456 INFO    HandlerThread:11594 [interfaces.py:finish():198] Joined memory monitor
+2025-02-13 03:43:02,456 INFO    HandlerThread:11594 [interfaces.py:finish():198] Joined network monitor
+2025-02-13 03:43:02,457 INFO    SenderThread:11594 [sender.py:send_request_defer():594] handle sender defer: 2
+2025-02-13 03:43:02,457 INFO    SenderThread:11594 [sender.py:transition_state():598] send defer: 3
+2025-02-13 03:43:02,457 INFO    HandlerThread:11594 [handler.py:handle_request_defer():188] handle defer: 3
+2025-02-13 03:43:02,457 INFO    SenderThread:11594 [sender.py:send_request_defer():594] handle sender defer: 3
+2025-02-13 03:43:02,457 INFO    SenderThread:11594 [sender.py:transition_state():598] send defer: 4
+2025-02-13 03:43:02,457 INFO    HandlerThread:11594 [handler.py:handle_request_defer():188] handle defer: 4
+2025-02-13 03:43:02,458 INFO    SenderThread:11594 [sender.py:send_request_defer():594] handle sender defer: 4
+2025-02-13 03:43:02,458 INFO    SenderThread:11594 [sender.py:transition_state():598] send defer: 5
+2025-02-13 03:43:02,458 INFO    HandlerThread:11594 [handler.py:handle_request_defer():188] handle defer: 5
+2025-02-13 03:43:02,467 INFO    SenderThread:11594 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-13 03:43:02,467 INFO    SenderThread:11594 [sender.py:send_request_defer():594] handle sender defer: 5
+2025-02-13 03:43:02,467 INFO    SenderThread:11594 [sender.py:transition_state():598] send defer: 6
+2025-02-13 03:43:02,467 INFO    HandlerThread:11594 [handler.py:handle_request_defer():188] handle defer: 6
+2025-02-13 03:43:02,467 INFO    SenderThread:11594 [sender.py:send_request_defer():594] handle sender defer: 6
+2025-02-13 03:43:02,603 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:43:02,604 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/wandb-summary.json
+2025-02-13 03:43:02,615 INFO    SenderThread:11594 [sender.py:transition_state():598] send defer: 7
+2025-02-13 03:43:02,615 INFO    HandlerThread:11594 [handler.py:handle_request_defer():188] handle defer: 7
+2025-02-13 03:43:02,616 INFO    SenderThread:11594 [sender.py:send_request_defer():594] handle sender defer: 7
+2025-02-13 03:43:03,599 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:43:03,599 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/config.yaml
+2025-02-13 03:43:04,602 INFO    Thread-12 :11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:43:04,683 INFO    SenderThread:11594 [sender.py:transition_state():598] send defer: 8
+2025-02-13 03:43:04,684 INFO    HandlerThread:11594 [handler.py:handle_request_defer():188] handle defer: 8
+2025-02-13 03:43:04,684 INFO    SenderThread:11594 [sender.py:send_request_defer():594] handle sender defer: 8
+2025-02-13 03:43:04,684 INFO    SenderThread:11594 [sender.py:transition_state():598] send defer: 9
+2025-02-13 03:43:04,684 INFO    HandlerThread:11594 [handler.py:handle_request_defer():188] handle defer: 9
+2025-02-13 03:43:04,684 INFO    SenderThread:11594 [sender.py:send_request_defer():594] handle sender defer: 9
+2025-02-13 03:43:04,684 INFO    SenderThread:11594 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-02-13 03:43:05,608 INFO    SenderThread:11594 [dir_watcher.py:_on_file_modified():288] file/dir modified: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:43:05,608 INFO    SenderThread:11594 [dir_watcher.py:finish():388] scan: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files
+2025-02-13 03:43:05,610 INFO    SenderThread:11594 [dir_watcher.py:finish():402] scan save: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/config.yaml config.yaml
+2025-02-13 03:43:05,610 INFO    SenderThread:11594 [dir_watcher.py:finish():402] scan save: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/wandb-metadata.json wandb-metadata.json
+2025-02-13 03:43:05,611 INFO    SenderThread:11594 [dir_watcher.py:finish():402] scan save: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/requirements.txt requirements.txt
+2025-02-13 03:43:05,612 INFO    SenderThread:11594 [dir_watcher.py:finish():402] scan save: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log output.log
+2025-02-13 03:43:05,614 INFO    SenderThread:11594 [dir_watcher.py:finish():402] scan save: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/wandb-summary.json wandb-summary.json
+2025-02-13 03:43:05,614 INFO    SenderThread:11594 [sender.py:transition_state():598] send defer: 10
+2025-02-13 03:43:05,615 INFO    HandlerThread:11594 [handler.py:handle_request_defer():188] handle defer: 10
+2025-02-13 03:43:05,616 INFO    SenderThread:11594 [sender.py:send_request_defer():594] handle sender defer: 10
+2025-02-13 03:43:05,617 INFO    SenderThread:11594 [file_pusher.py:finish():169] shutting down file pusher
+2025-02-13 03:43:05,905 INFO    wandb-upload_0:11594 [upload_job.py:push():130] Uploaded file /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/config.yaml
+2025-02-13 03:43:05,908 INFO    wandb-upload_1:11594 [upload_job.py:push():130] Uploaded file /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/requirements.txt
+2025-02-13 03:43:05,925 INFO    wandb-upload_3:11594 [upload_job.py:push():130] Uploaded file /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/wandb-summary.json
+2025-02-13 03:43:05,938 INFO    wandb-upload_2:11594 [upload_job.py:push():130] Uploaded file /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/files/output.log
+2025-02-13 03:43:06,138 INFO    Thread-11 (_thread_body):11594 [sender.py:transition_state():598] send defer: 11
+2025-02-13 03:43:06,138 INFO    HandlerThread:11594 [handler.py:handle_request_defer():188] handle defer: 11
+2025-02-13 03:43:06,139 INFO    SenderThread:11594 [sender.py:send_request_defer():594] handle sender defer: 11
+2025-02-13 03:43:06,139 INFO    SenderThread:11594 [file_pusher.py:join():175] waiting for file pusher
+2025-02-13 03:43:06,139 INFO    SenderThread:11594 [sender.py:transition_state():598] send defer: 12
+2025-02-13 03:43:06,139 INFO    HandlerThread:11594 [handler.py:handle_request_defer():188] handle defer: 12
+2025-02-13 03:43:06,139 INFO    SenderThread:11594 [sender.py:send_request_defer():594] handle sender defer: 12
+2025-02-13 03:43:06,139 INFO    SenderThread:11594 [file_stream.py:finish():601] file stream finish called
+2025-02-13 03:43:06,354 INFO    SenderThread:11594 [file_stream.py:finish():605] file stream finish is done
+2025-02-13 03:43:06,354 INFO    SenderThread:11594 [sender.py:transition_state():598] send defer: 13
+2025-02-13 03:43:06,354 INFO    HandlerThread:11594 [handler.py:handle_request_defer():188] handle defer: 13
+2025-02-13 03:43:06,354 INFO    SenderThread:11594 [sender.py:send_request_defer():594] handle sender defer: 13
+2025-02-13 03:43:06,354 INFO    SenderThread:11594 [sender.py:transition_state():598] send defer: 14
+2025-02-13 03:43:06,354 INFO    HandlerThread:11594 [handler.py:handle_request_defer():188] handle defer: 14
+2025-02-13 03:43:06,355 INFO    SenderThread:11594 [sender.py:send_request_defer():594] handle sender defer: 14
+2025-02-13 03:43:06,357 INFO    HandlerThread:11594 [handler.py:finish():896] shutting down handler
+2025-02-13 03:43:07,356 INFO    WriterThread:11594 [datastore.py:close():296] close: /n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250213_033415-si9nof8a/run-si9nof8a.wandb
+2025-02-13 03:43:07,356 INFO    SenderThread:11594 [sender.py:finish():1598] shutting down sender
+2025-02-13 03:43:07,356 INFO    SenderThread:11594 [file_pusher.py:finish():169] shutting down file pusher
+2025-02-13 03:43:07,356 INFO    SenderThread:11594 [file_pusher.py:join():175] waiting for file pusher

@@ -17,14 +17,16 @@ class VASTTrainDataset:
     Loads the VAST data for stance classification.
     Expects CSV columns:
       - post      : the main text/comment (document)
-      - topic_str : the associated topic
+      - new_topic : the associated topic
       - label     : stance label (0=con, 1=pro, 2=neutral)
+      - seen      : zero-shot (0) or few-shot (1)
     """
     def __init__(self, csv_file):
         self.data = pd.read_csv(csv_file)
         self.documents = self.data["post"].astype(str).tolist()
         self.topics = self.data["topic_str"].astype(str).tolist()
         self.labels = self.data["label"].tolist()
+        self.seen = self.data["seen?"].tolist()
 
     def __len__(self):
         return len(self.data)
@@ -33,7 +35,8 @@ class VASTTrainDataset:
         return {
             "document": self.documents[idx],
             "topic": self.topics[idx],
-            "label": self.labels[idx]
+            "label": self.labels[idx],
+            "seen": self.seen[idx]
         }
 
 class InferenceDataset:
@@ -45,14 +48,6 @@ class InferenceDataset:
     """
     def __init__(self, csv_file):
         self.df = pd.read_csv(csv_file)
-        # Drop rows where a key field (e.g. policy_area) is missing.
-        self.df = self.df.dropna(subset=["policy_area"])
-        # Group by document and take the first row (assumes same subtopic per document)
-        self.df = (
-            self.df.groupby("document", as_index=False)
-            .first()
-            .reset_index(drop=True)
-        )
         # Lowercase the subtopic.
         self.df["subtopic"] = self.df["subtopic"].str.lower()
         self.documents = self.df["document"].astype(str).tolist()
@@ -72,11 +67,12 @@ class EmbeddingDataset(Dataset):
     A dataset class that holds pre-computed embeddings, labels, and the original document and topic.
     This is useful for debugging and for training the classifier.
     """
-    def __init__(self, embeddings, labels, documents, topics):
+    def __init__(self, embeddings, labels, documents, topics, seen):
         self.embeddings = embeddings
         self.labels = labels
         self.documents = documents
         self.topics = topics
+        self.seen = seen
 
     def __len__(self):
         return len(self.labels)

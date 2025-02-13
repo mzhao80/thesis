@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/gpt_stance_detection.py", line 199, in <module>
+    main()
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/gpt_stance_detection.py", line 172, in main
+    print(f"Overall Pro F1: {overall_f1_pro:.4f}")
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to numpy.ndarray.__format__

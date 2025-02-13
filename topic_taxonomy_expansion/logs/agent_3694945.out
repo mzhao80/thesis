@@ -1,0 +1,394 @@
+{'train_runtime': 219.6686, 'train_samples_per_second': 25.065, 'train_steps_per_second': 1.575, 'train_loss': 6.383967581511922, 'epoch': 2.0}
+Generating predictions on validation dataset...
+{'loss': 4.2678, 'grad_norm': 127214.1796875, 'learning_rate': 7.157483319465206e-05, 'epoch': 2.89}
+{'eval_runtime': 8.5996, 'eval_samples_per_second': 80.12, 'eval_steps_per_second': 5.117, 'epoch': 2.89}
+{'loss': 1.136, 'grad_norm': 130604.4375, 'learning_rate': 4.247937254641951e-05, 'epoch': 5.78}
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_8_8_3_5.882697412929134e-05_2_1.184454341243143_0.2325526057853522.csv
+{'eval_runtime': 8.4629, 'eval_samples_per_second': 81.414, 'eval_steps_per_second': 5.199, 'epoch': 5.78}
+{'loss': 1.0396, 'grad_norm': 145138.546875, 'learning_rate': 1.3383911898186969e-05, 'epoch': 8.67}
+{'eval_runtime': 11.2464, 'eval_samples_per_second': 61.264, 'eval_steps_per_second': 3.912, 'epoch': 8.67}
+{'train_runtime': 829.8123, 'train_samples_per_second': 33.176, 'train_steps_per_second': 2.085, 'train_loss': 1.996629157093908, 'epoch': 10.0}
+Generating predictions on validation dataset...
+{'loss': 5.9182, 'grad_norm': 151729.53125, 'learning_rate': 4.1166061031652346e-05, 'epoch': 2.89}
+{'eval_runtime': 10.476, 'eval_samples_per_second': 65.77, 'eval_steps_per_second': 4.2, 'epoch': 2.89}
+{'loss': 1.2354, 'grad_norm': 131353.515625, 'learning_rate': 2.4431889880574157e-05, 'epoch': 5.78}
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_32_64_2_7.157483319465206e-05_10_5.0967345621510995_0.10368100849095728.csv
+{'eval_runtime': 10.4764, 'eval_samples_per_second': 65.767, 'eval_steps_per_second': 4.2, 'epoch': 5.78}
+{'loss': 1.1332, 'grad_norm': 155163.234375, 'learning_rate': 7.697718729495967e-06, 'epoch': 8.67}
+{'eval_runtime': 9.6055, 'eval_samples_per_second': 71.73, 'eval_steps_per_second': 4.581, 'epoch': 8.67}
+{'train_runtime': 911.9909, 'train_samples_per_second': 30.187, 'train_steps_per_second': 1.897, 'train_loss': 2.54344494770028, 'epoch': 10.0}
+Generating predictions on validation dataset...
+{'loss': 4.0571, 'grad_norm': 70040.2578125, 'learning_rate': 4.048201080391183e-05, 'epoch': 2.89}
+{'eval_runtime': 9.2472, 'eval_samples_per_second': 74.509, 'eval_steps_per_second': 4.758, 'epoch': 2.89}
+{'train_runtime': 321.9507, 'train_samples_per_second': 34.204, 'train_steps_per_second': 2.149, 'train_loss': 3.2855475982489613, 'epoch': 4.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_16_16_3_9.319296237150536e-05_4_6.178514712074925_0.5061540285349956.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_8_16_4_4.1166061031652346e-05_10_8.508714087337351_0.678648311050776.csv
+{'loss': 1.7274, 'grad_norm': 86746.2265625, 'learning_rate': 3.838922317879672e-05, 'epoch': 2.89}
+{'loss': 1.2099, 'grad_norm': 125697.5625, 'learning_rate': 6.725506723306676e-05, 'epoch': 2.89}
+{'eval_runtime': 12.2764, 'eval_samples_per_second': 56.124, 'eval_steps_per_second': 3.584, 'epoch': 2.89}
+{'train_runtime': 547.1272, 'train_samples_per_second': 25.159, 'train_steps_per_second': 1.581, 'train_loss': 1.434234866103685, 'epoch': 5.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 15.5776, 'eval_samples_per_second': 44.23, 'eval_steps_per_second': 2.825, 'epoch': 2.89}
+{'loss': 0.6881, 'grad_norm': 136924.578125, 'learning_rate': 3.991560900824287e-05, 'epoch': 5.78}
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_128_128_3_9.09772001360525e-05_5_6.917282454055097_0.25911102722079615.csv
+{'eval_runtime': 12.1044, 'eval_samples_per_second': 56.921, 'eval_steps_per_second': 3.635, 'epoch': 5.78}
+{'loss': 0.6047, 'grad_norm': 194550.421875, 'learning_rate': 1.2576150783418986e-05, 'epoch': 8.67}
+{'train_runtime': 105.8159, 'train_samples_per_second': 26.017, 'train_steps_per_second': 1.635, 'train_loss': 8.670862451454118, 'epoch': 1.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 13.1512, 'eval_samples_per_second': 52.39, 'eval_steps_per_second': 3.346, 'epoch': 8.67}
+{'train_runtime': 1115.8813, 'train_samples_per_second': 24.671, 'train_steps_per_second': 1.55, 'train_loss': 0.7998801258947119, 'epoch': 10.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_64_128_3_2.7428810028300585e-05_1_2.4949937305419168_0.018662565794038157.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_32_64_6_9.459452545789064e-05_10_1.4959363508949186_0.4226571060187128.csv
+{'loss': 2.4941, 'grad_norm': 306494.65625, 'learning_rate': 6.670651402316398e-06, 'epoch': 2.89}
+{'loss': 1.3658, 'grad_norm': 302863.5, 'learning_rate': 2.0628051380314577e-05, 'epoch': 2.89}
+{'eval_runtime': 15.731, 'eval_samples_per_second': 43.799, 'eval_steps_per_second': 2.797, 'epoch': 2.89}
+{'loss': 0.9053, 'grad_norm': 320995.125, 'learning_rate': 1.979616660884332e-06, 'epoch': 5.78}
+{'eval_runtime': 15.5934, 'eval_samples_per_second': 44.185, 'eval_steps_per_second': 2.822, 'epoch': 5.78}
+{'train_runtime': 859.6461, 'train_samples_per_second': 22.417, 'train_steps_per_second': 1.409, 'train_loss': 1.5544054329050758, 'epoch': 7.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 15.366, 'eval_samples_per_second': 44.839, 'eval_steps_per_second': 2.863, 'epoch': 2.89}
+{'loss': 0.7644, 'grad_norm': 181965.0625, 'learning_rate': 1.4569999116207324e-06, 'epoch': 5.78}
+{'eval_runtime': 12.1934, 'eval_samples_per_second': 56.506, 'eval_steps_per_second': 3.609, 'epoch': 5.78}
+{'train_runtime': 754.8296, 'train_samples_per_second': 21.883, 'train_steps_per_second': 1.375, 'train_loss': 1.0530078608635993, 'epoch': 6.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_128_256_6_1.0423479195462052e-05_7_3.9373733376153064_0.7036044633845133.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_64_128_6_3.9799102849008427e-05_6_8.670601856323797_0.489901415075691.csv
+{'loss': 1.4786, 'grad_norm': 146762.1875, 'learning_rate': 1.7962887873989847e-05, 'epoch': 2.89}
+{'loss': 1.476, 'grad_norm': 167535.015625, 'learning_rate': 5.198158514886455e-05, 'epoch': 2.89}
+{'eval_runtime': 13.3133, 'eval_samples_per_second': 51.753, 'eval_steps_per_second': 3.305, 'epoch': 2.89}
+{'train_runtime': 465.5679, 'train_samples_per_second': 23.653, 'train_steps_per_second': 1.486, 'train_loss': 1.3371058557763955, 'epoch': 4.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 16.0652, 'eval_samples_per_second': 42.888, 'eval_steps_per_second': 2.739, 'epoch': 2.89}
+{'loss': 0.5858, 'grad_norm': 75984.234375, 'learning_rate': 2.7392377415248395e-05, 'epoch': 5.78}
+{'eval_runtime': 12.2167, 'eval_samples_per_second': 56.398, 'eval_steps_per_second': 3.602, 'epoch': 5.78}
+{'loss': 0.5026, 'grad_norm': 105074.359375, 'learning_rate': 2.803169681632241e-06, 'epoch': 8.67}
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_128_256_4_6.474124171250508e-05_4_6.867276568753819_0.5202729913776714.csv
+{'eval_runtime': 11.9563, 'eval_samples_per_second': 57.626, 'eval_steps_per_second': 3.68, 'epoch': 8.67}
+{'train_runtime': 1010.6112, 'train_samples_per_second': 24.517, 'train_steps_per_second': 1.541, 'train_loss': 0.8413237863882429, 'epoch': 9.0}
+Generating predictions on validation dataset...
+{'train_runtime': 72.0625, 'train_samples_per_second': 38.203, 'train_steps_per_second': 2.401, 'train_loss': 9.38495120009935, 'epoch': 1.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_8_16_3_4.3109248640282154e-05_1_7.505812763721259_0.43605356808512846.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_128_256_6_7.165295133575747e-05_9_8.104435133304296_0.051736578925739886.csv
+{'loss': 3.3978, 'grad_norm': 104877.3515625, 'learning_rate': 3.009312532942112e-05, 'epoch': 2.89}
+{'loss': 2.3814, 'grad_norm': 93959.9921875, 'learning_rate': 3.3380984655103387e-06, 'epoch': 2.89}
+{'eval_runtime': 13.5343, 'eval_samples_per_second': 50.908, 'eval_steps_per_second': 3.251, 'epoch': 2.89}
+{'train_runtime': 354.3833, 'train_samples_per_second': 23.305, 'train_steps_per_second': 1.465, 'train_loss': 2.3331781251352415, 'epoch': 3.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 13.7585, 'eval_samples_per_second': 50.078, 'eval_steps_per_second': 3.198, 'epoch': 2.89}
+{'train_runtime': 506.2269, 'train_samples_per_second': 27.191, 'train_steps_per_second': 1.709, 'train_loss': 2.424004809429191, 'epoch': 5.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_64_64_4_7.361385563414905e-05_3_7.558239653160305_0.032076829554971466.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_64_64_4_5.0704855007106816e-05_5_2.965376550380282_0.6877785120182007.csv
+{'train_runtime': 208.7546, 'train_samples_per_second': 26.375, 'train_steps_per_second': 1.657, 'train_loss': 7.074306951092847, 'epoch': 2.0}
+Generating predictions on validation dataset...
+{'loss': 3.5052, 'grad_norm': 133281.453125, 'learning_rate': 4.983934853258864e-05, 'epoch': 2.89}
+{'eval_runtime': 9.7817, 'eval_samples_per_second': 70.438, 'eval_steps_per_second': 4.498, 'epoch': 2.89}
+{'train_runtime': 445.3822, 'train_samples_per_second': 30.906, 'train_steps_per_second': 1.942, 'train_loss': 2.482002778687229, 'epoch': 5.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_8_16_2_3.291883940824448e-05_2_0.9744611059529829_0.11009984769776492.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_128_256_3_9.967869706517728e-05_5_6.541060136933595_0.23883095602217205.csv
+{'loss': 3.3864, 'grad_norm': 122334.5390625, 'learning_rate': 6.082427858447606e-05, 'epoch': 2.89}
+{'eval_runtime': 11.1657, 'eval_samples_per_second': 61.707, 'eval_steps_per_second': 3.941, 'epoch': 2.89}
+{'loss': 0.82, 'grad_norm': 94907.28125, 'learning_rate': 1.203813846984422e-05, 'epoch': 5.78}
+{'loss': 8.7866, 'grad_norm': 166913.875, 'learning_rate': 6.101550914378622e-06, 'epoch': 2.89}
+{'eval_runtime': 15.1933, 'eval_samples_per_second': 45.349, 'eval_steps_per_second': 2.896, 'epoch': 5.78}
+{'train_runtime': 654.8, 'train_samples_per_second': 25.226, 'train_steps_per_second': 1.585, 'train_loss': 2.0529695411638027, 'epoch': 6.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 11.8481, 'eval_samples_per_second': 58.153, 'eval_steps_per_second': 3.714, 'epoch': 2.89}
+{'train_runtime': 561.3934, 'train_samples_per_second': 24.519, 'train_steps_per_second': 1.541, 'train_loss': 6.97188374954841, 'epoch': 5.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_8_8_6_1.2203101828757244e-05_5_1.6799564318589566_0.6750984078511459.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_32_32_6_9.123641787671409e-05_6_9.78077651805609_0.22295124673009217.csv
+{'loss': 6.0803, 'grad_norm': 127983.4453125, 'learning_rate': 1.7850439984220475e-05, 'epoch': 2.89}
+{'loss': 5.576, 'grad_norm': 168200.125, 'learning_rate': 1.0272050119891413e-05, 'epoch': 2.89}
+{'eval_runtime': 15.8297, 'eval_samples_per_second': 43.526, 'eval_steps_per_second': 2.78, 'epoch': 2.89}
+{'train_runtime': 406.2063, 'train_samples_per_second': 20.332, 'train_steps_per_second': 1.278, 'train_loss': 5.416478629286808, 'epoch': 3.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 11.3796, 'eval_samples_per_second': 60.547, 'eval_steps_per_second': 3.867, 'epoch': 2.89}
+{'loss': 1.5649, 'grad_norm': 103229.8828125, 'learning_rate': 1.059416356787069e-05, 'epoch': 5.78}
+{'eval_runtime': 8.8799, 'eval_samples_per_second': 77.591, 'eval_steps_per_second': 4.955, 'epoch': 5.78}
+{'loss': 1.3576, 'grad_norm': 100958.7734375, 'learning_rate': 3.337887151520902e-06, 'epoch': 8.67}
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_64_64_6_2.0544100239782825e-05_3_3.899852124526867_0.7495435085424345.csv
+{'eval_runtime': 8.6181, 'eval_samples_per_second': 79.948, 'eval_steps_per_second': 5.106, 'epoch': 8.67}
+{'train_runtime': 798.7059, 'train_samples_per_second': 34.468, 'train_steps_per_second': 2.166, 'train_loss': 2.778021116752845, 'epoch': 10.0}
+Generating predictions on validation dataset...
+{'train_runtime': 67.0075, 'train_samples_per_second': 41.085, 'train_steps_per_second': 2.582, 'train_loss': 8.191239020727963, 'epoch': 1.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_32_32_2_2.147857819239537e-05_10_7.827421226773481_0.5619566699812786.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_16_16_2_9.88905667989308e-05_1_5.385618055320976_0.4660878230360386.csv
+{'loss': 4.1727, 'grad_norm': 178492.1875, 'learning_rate': 1.8856002663415357e-05, 'epoch': 2.89}
+{'loss': 2.8945, 'grad_norm': 107973.359375, 'learning_rate': 4.10600634079443e-05, 'epoch': 2.89}
+{'eval_runtime': 13.27, 'eval_samples_per_second': 51.921, 'eval_steps_per_second': 3.316, 'epoch': 2.89}
+{'train_runtime': 599.0551, 'train_samples_per_second': 22.978, 'train_steps_per_second': 1.444, 'train_loss': 2.140690798015264, 'epoch': 5.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 13.5587, 'eval_samples_per_second': 50.816, 'eval_steps_per_second': 3.245, 'epoch': 2.89}
+{'loss': 1.0599, 'grad_norm': 213342.390625, 'learning_rate': 1.7131005574333193e-05, 'epoch': 5.78}
+{'eval_runtime': 10.66, 'eval_samples_per_second': 64.634, 'eval_steps_per_second': 4.128, 'epoch': 5.78}
+{'train_runtime': 849.8143, 'train_samples_per_second': 25.916, 'train_steps_per_second': 1.629, 'train_loss': 2.1544571363857026, 'epoch': 8.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_8_16_4_8.605739317007502e-05_5_3.373256094780462_0.33899904758648225.csv
+{'train_runtime': 91.4911, 'train_samples_per_second': 30.09, 'train_steps_per_second': 1.891, 'train_loss': 9.050065762734826, 'epoch': 1.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_128_256_4_2.8284003995123035e-05_8_4.312262724229581_0.2124051965012856.csv
+{'loss': 5.0594, 'grad_norm': 97981.8203125, 'learning_rate': 4.2956903537559286e-05, 'epoch': 2.89}
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_8_16_6_4.914472817315764e-05_1_6.616297821036347_0.4924878772238569.csv
+{'eval_runtime': 8.6933, 'eval_samples_per_second': 79.256, 'eval_steps_per_second': 5.061, 'epoch': 2.89}
+{'loss': 1.1995, 'grad_norm': 107435.5546875, 'learning_rate': 2.949210405561283e-05, 'epoch': 5.78}
+{'eval_runtime': 11.7657, 'eval_samples_per_second': 58.56, 'eval_steps_per_second': 3.74, 'epoch': 5.78}
+{'train_runtime': 558.2867, 'train_samples_per_second': 34.518, 'train_steps_per_second': 2.169, 'train_loss': 2.7751341488221577, 'epoch': 7.0}
+Generating predictions on validation dataset...
+{'loss': 3.0988, 'grad_norm': 83059.296875, 'learning_rate': 2.333603584461271e-05, 'epoch': 2.89}
+{'eval_runtime': 10.5781, 'eval_samples_per_second': 65.134, 'eval_steps_per_second': 4.16, 'epoch': 2.89}
+{'train_runtime': 411.589, 'train_samples_per_second': 26.755, 'train_steps_per_second': 1.681, 'train_loss': 2.564947249572401, 'epoch': 4.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_64_64_2_6.443535530633893e-05_7_1.889517023661483_0.34227535310127827.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_16_16_4_7.195277718755585e-05_4_8.011553201432026_0.4752930687002208.csv
+{'train_runtime': 101.1861, 'train_samples_per_second': 27.207, 'train_steps_per_second': 1.71, 'train_loss': 9.288638429145593, 'epoch': 1.0}
+Generating predictions on validation dataset...
+{'loss': 7.2399, 'grad_norm': 237191.75, 'learning_rate': 6.0509643972213844e-06, 'epoch': 2.89}
+{'eval_runtime': 10.7387, 'eval_samples_per_second': 64.161, 'eval_steps_per_second': 4.097, 'epoch': 2.89}
+{'train_runtime': 432.51, 'train_samples_per_second': 31.826, 'train_steps_per_second': 2.0, 'train_loss': 4.850302988394147, 'epoch': 5.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_64_64_3_7.075474978008953e-06_1_6.423089519418314_0.1721324706606785.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_64_128_4_9.076446595832077e-06_5_8.43729952788583_0.27788700890389917.csv
+{'train_runtime': 132.081, 'train_samples_per_second': 41.687, 'train_steps_per_second': 2.62, 'train_loss': 6.424226088330925, 'epoch': 2.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_128_256_2_2.7620774965161247e-05_2_0.4519254492212821_0.1747391992714551.csv
+{'loss': 5.8072, 'grad_norm': 185887.5, 'learning_rate': 4.701178800704475e-06, 'epoch': 2.89}
+{'eval_runtime': 7.418, 'eval_samples_per_second': 92.882, 'eval_steps_per_second': 5.932, 'epoch': 2.89}
+{'loss': 1.935, 'grad_norm': 153870.890625, 'learning_rate': 2.790130507735176e-06, 'epoch': 5.78}
+{'loss': 4.1799, 'grad_norm': 152816.578125, 'learning_rate': 2.984659357571304e-05, 'epoch': 2.89}
+{'eval_runtime': 11.5558, 'eval_samples_per_second': 59.624, 'eval_steps_per_second': 3.808, 'epoch': 5.78}
+{'loss': 1.5243, 'grad_norm': 142824.171875, 'learning_rate': 8.790822147658773e-07, 'epoch': 8.67}
+{'eval_runtime': 11.5635, 'eval_samples_per_second': 59.584, 'eval_steps_per_second': 3.805, 'epoch': 8.67}
+{'train_runtime': 890.4, 'train_samples_per_second': 30.919, 'train_steps_per_second': 1.943, 'train_loss': 2.8739973652569546, 'epoch': 10.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 13.898, 'eval_samples_per_second': 49.576, 'eval_steps_per_second': 3.166, 'epoch': 2.89}
+{'loss': 1.073, 'grad_norm': 164098.0625, 'learning_rate': 2.108123709808728e-06, 'epoch': 5.78}
+{'eval_runtime': 10.7384, 'eval_samples_per_second': 64.162, 'eval_steps_per_second': 4.097, 'epoch': 5.78}
+{'train_runtime': 705.9989, 'train_samples_per_second': 23.397, 'train_steps_per_second': 1.47, 'train_loss': 2.5681372331975743, 'epoch': 6.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_64_128_2_6.612227093673773e-06_10_1.624610668915234_0.1955135311371608.csv
+{'loss': 5.1302, 'grad_norm': 139825.546875, 'learning_rate': 1.8051362405587623e-05, 'epoch': 2.89}
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_64_128_4_2.984659357571304e-05_6_9.90827656377684_0.14702695425288806.csv
+{'eval_runtime': 9.0989, 'eval_samples_per_second': 75.724, 'eval_steps_per_second': 4.836, 'epoch': 2.89}
+{'loss': 1.6421, 'grad_norm': 130382.3828125, 'learning_rate': 7.841315796092359e-06, 'epoch': 5.78}
+{'train_runtime': 226.8429, 'train_samples_per_second': 24.272, 'train_steps_per_second': 1.525, 'train_loss': 4.398893323247832, 'epoch': 2.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 12.1905, 'eval_samples_per_second': 56.52, 'eval_steps_per_second': 3.609, 'epoch': 5.78}
+{'train_runtime': 650.781, 'train_samples_per_second': 33.842, 'train_steps_per_second': 2.127, 'train_loss': 2.849602892219676, 'epoch': 8.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_16_32_4_7.722170912010442e-05_2_3.770034053982878_0.7164686140888792.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_8_16_3_2.826140901508288e-05_8_0.751626635833208_0.5593255994834044.csv
+{'train_runtime': 214.302, 'train_samples_per_second': 25.693, 'train_steps_per_second': 1.615, 'train_loss': 4.9342863049810335, 'epoch': 2.0}
+Generating predictions on validation dataset...
+{'loss': 5.1874, 'grad_norm': 99209.5390625, 'learning_rate': 9.17853077716058e-05, 'epoch': 2.89}
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_32_64_3_3.2536500333035394e-05_2_4.512316993146306_0.7405680661281676.csv
+{'eval_runtime': 10.5259, 'eval_samples_per_second': 65.457, 'eval_steps_per_second': 4.18, 'epoch': 2.89}
+{'loss': 1.1562, 'grad_norm': 81216.640625, 'learning_rate': 5.447420705144084e-05, 'epoch': 5.78}
+{'eval_runtime': 9.5624, 'eval_samples_per_second': 72.053, 'eval_steps_per_second': 4.601, 'epoch': 5.78}
+{'loss': 1.0745, 'grad_norm': 81921.7890625, 'learning_rate': 1.716310633127588e-05, 'epoch': 8.67}
+{'loss': 4.0705, 'grad_norm': 73188.4609375, 'learning_rate': 3.0137758741968325e-05, 'epoch': 2.89}
+{'eval_runtime': 13.2929, 'eval_samples_per_second': 51.832, 'eval_steps_per_second': 3.31, 'epoch': 8.67}
+{'train_runtime': 1009.3991, 'train_samples_per_second': 27.274, 'train_steps_per_second': 1.714, 'train_loss': 2.2846982481851743, 'epoch': 10.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 12.669, 'eval_samples_per_second': 54.385, 'eval_steps_per_second': 3.473, 'epoch': 2.89}
+{'loss': 1.1808, 'grad_norm': 92169.4609375, 'learning_rate': 1.30915151096333e-05, 'epoch': 5.78}
+{'eval_runtime': 9.0022, 'eval_samples_per_second': 76.537, 'eval_steps_per_second': 4.888, 'epoch': 5.78}
+{'train_runtime': 728.5942, 'train_samples_per_second': 30.228, 'train_steps_per_second': 1.9, 'train_loss': 2.2071300793245348, 'epoch': 8.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_8_8_4_9.17853077716058e-05_10_6.499651610477287_0.7026851091685086.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_64_64_3_3.866088055813584e-05_8_3.089764747681516_0.0789450619432559.csv
+{'loss': 2.1635, 'grad_norm': 104005.0234375, 'learning_rate': 3.764124616370121e-05, 'epoch': 2.89}
+{'loss': 3.414, 'grad_norm': 211237.453125, 'learning_rate': 4.015124778233996e-05, 'epoch': 2.89}
+{'eval_runtime': 14.8303, 'eval_samples_per_second': 46.459, 'eval_steps_per_second': 2.967, 'epoch': 2.89}
+{'train_runtime': 516.1314, 'train_samples_per_second': 21.336, 'train_steps_per_second': 1.341, 'train_loss': 2.7150321916348674, 'epoch': 4.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 15.3691, 'eval_samples_per_second': 44.83, 'eval_steps_per_second': 2.863, 'epoch': 2.89}
+{'loss': 0.7944, 'grad_norm': 128798.4140625, 'learning_rate': 1.1170608917779124e-05, 'epoch': 5.78}
+{'eval_runtime': 11.9733, 'eval_samples_per_second': 57.545, 'eval_steps_per_second': 3.675, 'epoch': 5.78}
+{'train_runtime': 797.1174, 'train_samples_per_second': 24.176, 'train_steps_per_second': 1.519, 'train_loss': 1.351100263272702, 'epoch': 7.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_32_64_6_6.022687167350994e-05_4_0.9736098610082132_0.5542009120130503.csv
+{'loss': 3.5397, 'grad_norm': 174113.921875, 'learning_rate': 2.3111884315066554e-05, 'epoch': 2.89}
+{'eval_runtime': 12.0985, 'eval_samples_per_second': 56.949, 'eval_steps_per_second': 3.637, 'epoch': 2.89}
+{'train_runtime': 296.0195, 'train_samples_per_second': 27.9, 'train_steps_per_second': 1.753, 'train_loss': 3.445603251227524, 'epoch': 3.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_32_32_6_5.881775596043889e-05_7_6.823348125006801_0.00696747298534719.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_128_128_6_2.3111884315066554e-05_3_1.3286496779097725_0.5385186913880274.csv
+{'loss': 1.8781, 'grad_norm': 307015.375, 'learning_rate': 8.704338585705232e-06, 'epoch': 2.89}
+{'eval_runtime': 16.21, 'eval_samples_per_second': 42.505, 'eval_steps_per_second': 2.714, 'epoch': 2.89}
+{'train_runtime': 468.88, 'train_samples_per_second': 23.486, 'train_steps_per_second': 1.476, 'train_loss': 1.574696623521044, 'epoch': 4.0}
+Generating predictions on validation dataset...
+{'loss': 1.853, 'grad_norm': 86409.265625, 'learning_rate': 2.145001191501395e-05, 'epoch': 2.89}
+{'eval_runtime': 9.4167, 'eval_samples_per_second': 73.168, 'eval_steps_per_second': 4.673, 'epoch': 2.89}
+{'train_runtime': 393.2543, 'train_samples_per_second': 28.002, 'train_steps_per_second': 1.76, 'train_loss': 1.6433110981318302, 'epoch': 4.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_128_256_6_2.6838377305924462e-05_4_7.913206989853072_0.3448602372406857.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_128_128_3_7.730941794369612e-05_4_7.217819216559688_0.527331444440582.csv
+{'loss': 5.9119, 'grad_norm': 94598.921875, 'learning_rate': 8.792405803842913e-05, 'epoch': 2.89}
+{'loss': 9.3795, 'grad_norm': 108001.9609375, 'learning_rate': 3.710851258229632e-06, 'epoch': 2.89}
+{'eval_runtime': 11.7195, 'eval_samples_per_second': 58.791, 'eval_steps_per_second': 3.754, 'epoch': 2.89}
+{'loss': 1.3188, 'grad_norm': 82658.5390625, 'learning_rate': 3.8193255980494104e-05, 'epoch': 5.78}
+{'eval_runtime': 12.7272, 'eval_samples_per_second': 54.136, 'eval_steps_per_second': 3.457, 'epoch': 2.89}
+{'loss': 7.8772, 'grad_norm': 97141.8828125, 'learning_rate': 3.841903626085325e-06, 'epoch': 5.78}
+{'eval_runtime': 11.713, 'eval_samples_per_second': 58.824, 'eval_steps_per_second': 3.757, 'epoch': 5.78}
+{'train_runtime': 833.3535, 'train_samples_per_second': 26.428, 'train_steps_per_second': 1.661, 'train_loss': 2.9477293642959155, 'epoch': 8.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 12.6268, 'eval_samples_per_second': 54.567, 'eval_steps_per_second': 3.485, 'epoch': 5.78}
+{'loss': 6.193, 'grad_norm': 127704.53125, 'learning_rate': 3.9315710356707996e-07, 'epoch': 8.67}
+{'eval_runtime': 9.3098, 'eval_samples_per_second': 74.008, 'eval_steps_per_second': 4.726, 'epoch': 8.67}
+{'train_runtime': 951.822, 'train_samples_per_second': 26.031, 'train_steps_per_second': 1.636, 'train_loss': 7.74516634490908, 'epoch': 9.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_8_8_2_8.792405803842913e-05_8_7.740808912938969_0.09584712414049967.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_16_16_3_5.566276887344448e-06_9_0.14118601225266425_0.7951110734749816.csv
+{'loss': 6.6071, 'grad_norm': 144046.25, 'learning_rate': 2.9391577875858202e-05, 'epoch': 2.89}
+{'loss': 4.87, 'grad_norm': 124697.859375, 'learning_rate': 2.9343337866334513e-05, 'epoch': 2.89}
+{'eval_runtime': 11.0595, 'eval_samples_per_second': 62.299, 'eval_steps_per_second': 3.978, 'epoch': 2.89}
+{'loss': 1.3951, 'grad_norm': 122904.8359375, 'learning_rate': 2.0178816480930848e-05, 'epoch': 5.78}
+{'eval_runtime': 14.158, 'eval_samples_per_second': 48.665, 'eval_steps_per_second': 3.108, 'epoch': 2.89}
+{'loss': 1.1364, 'grad_norm': 92898.828125, 'learning_rate': 2.0725777675106162e-06, 'epoch': 5.78}
+{'eval_runtime': 13.9425, 'eval_samples_per_second': 49.417, 'eval_steps_per_second': 3.156, 'epoch': 5.78}
+{'train_runtime': 721.0732, 'train_samples_per_second': 22.908, 'train_steps_per_second': 1.44, 'train_loss': 2.933494865549782, 'epoch': 6.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 11.1867, 'eval_samples_per_second': 61.591, 'eval_steps_per_second': 3.933, 'epoch': 5.78}
+{'train_runtime': 709.8646, 'train_samples_per_second': 27.147, 'train_steps_per_second': 1.706, 'train_loss': 3.5163558090550167, 'epoch': 7.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_16_32_2_4.4087366813787305e-05_7_5.218634580378349_0.04048557428075333.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_64_64_4_2.9343337866334513e-05_6_4.371725226888382_0.0718643927395994.csv
+{'loss': 5.3172, 'grad_norm': 91798.5, 'learning_rate': 3.871101952673238e-05, 'epoch': 2.89}
+{'loss': 2.6712, 'grad_norm': 110472.9140625, 'learning_rate': 9.12011380228968e-05, 'epoch': 2.89}
+{'eval_runtime': 11.1391, 'eval_samples_per_second': 61.854, 'eval_steps_per_second': 3.95, 'epoch': 2.89}
+{'train_runtime': 496.8866, 'train_samples_per_second': 27.702, 'train_steps_per_second': 1.741, 'train_loss': 3.695006054123013, 'epoch': 5.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 16.0123, 'eval_samples_per_second': 43.029, 'eval_steps_per_second': 2.748, 'epoch': 2.89}
+{'train_runtime': 614.2206, 'train_samples_per_second': 22.411, 'train_steps_per_second': 1.408, 'train_loss': 1.870560450912211, 'epoch': 5.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_8_8_2_6.522541646285045e-05_5_7.792765601814901_0.3981505870297226.csv
+{'loss': 6.9369, 'grad_norm': 105171.5859375, 'learning_rate': 1.5502373304255717e-05, 'epoch': 2.89}
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_64_64_6_9.12011380228968e-05_5_3.490736319677329_0.6048845120546729.csv
+{'eval_runtime': 9.6121, 'eval_samples_per_second': 71.681, 'eval_steps_per_second': 4.578, 'epoch': 2.89}
+{'loss': 1.4995, 'grad_norm': 114468.6640625, 'learning_rate': 1.732152935526532e-05, 'epoch': 5.78}
+{'loss': 8.8842, 'grad_norm': 86655.71875, 'learning_rate': 1.1324997590567008e-05, 'epoch': 2.89}
+{'eval_runtime': 12.2998, 'eval_samples_per_second': 56.017, 'eval_steps_per_second': 3.577, 'epoch': 5.78}
+{'loss': 1.2028, 'grad_norm': 85761.625, 'learning_rate': 5.457468153028799e-06, 'epoch': 8.67}
+{'eval_runtime': 13.3651, 'eval_samples_per_second': 51.552, 'eval_steps_per_second': 3.292, 'epoch': 2.89}
+{'loss': 3.9218, 'grad_norm': 110054.4921875, 'learning_rate': 2.2649995181134016e-05, 'epoch': 5.78}
+{'eval_runtime': 12.7406, 'eval_samples_per_second': 54.079, 'eval_steps_per_second': 3.454, 'epoch': 8.67}
+{'train_runtime': 967.9122, 'train_samples_per_second': 28.443, 'train_steps_per_second': 1.787, 'train_loss': 2.941543279217847, 'epoch': 10.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 13.3582, 'eval_samples_per_second': 51.579, 'eval_steps_per_second': 3.294, 'epoch': 5.78}
+{'train_runtime': 866.4031, 'train_samples_per_second': 25.42, 'train_steps_per_second': 1.597, 'train_loss': 5.021885072564803, 'epoch': 8.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_64_64_3_2.3253559956383578e-05_10_7.053466366222327_0.4016064155130268.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_8_8_4_2.2649995181134016e-05_8_3.4930918576811933_0.5105538922023807.csv
+{'loss': 8.1666, 'grad_norm': 101771.921875, 'learning_rate': 5.901129690347745e-06, 'epoch': 2.89}
+{'loss': 5.7997, 'grad_norm': 128660.75, 'learning_rate': 2.854121327747347e-05, 'epoch': 2.89}
+{'eval_runtime': 11.7944, 'eval_samples_per_second': 58.417, 'eval_steps_per_second': 3.731, 'epoch': 2.89}
+{'train_runtime': 418.1461, 'train_samples_per_second': 26.335, 'train_steps_per_second': 1.655, 'train_loss': 7.549734479430094, 'epoch': 4.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 12.574, 'eval_samples_per_second': 54.795, 'eval_steps_per_second': 3.499, 'epoch': 2.89}
+{'train_runtime': 437.9016, 'train_samples_per_second': 25.147, 'train_steps_per_second': 1.58, 'train_loss': 4.577375864017905, 'epoch': 4.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_16_16_2_1.3584892307988038e-05_4_3.722985860642192_0.4773770302132168.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_32_64_3_5.708242655494694e-05_4_5.858424776419016_0.6649052467479384.csv
+{'loss': 3.8857, 'grad_norm': 125858.46875, 'learning_rate': 2.1478359413820447e-06, 'epoch': 2.89}
+{'loss': 3.8047, 'grad_norm': 105314.640625, 'learning_rate': 3.773925492535171e-05, 'epoch': 2.89}
+{'eval_runtime': 12.5236, 'eval_samples_per_second': 55.016, 'eval_steps_per_second': 3.513, 'epoch': 2.89}
+{'train_runtime': 334.6174, 'train_samples_per_second': 24.682, 'train_steps_per_second': 1.551, 'train_loss': 3.7914926495855252, 'epoch': 3.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 12.8525, 'eval_samples_per_second': 53.608, 'eval_steps_per_second': 3.423, 'epoch': 2.89}
+{'loss': 1.1037, 'grad_norm': 84340.71875, 'learning_rate': 1.119969449964727e-05, 'epoch': 5.78}
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_64_128_3_3.040883517009316e-05_3_4.31240755986342_0.4572841640597847.csv
+{'eval_runtime': 10.8179, 'eval_samples_per_second': 63.691, 'eval_steps_per_second': 4.067, 'epoch': 5.78}
+{'train_runtime': 661.5829, 'train_samples_per_second': 29.129, 'train_steps_per_second': 1.83, 'train_loss': 2.2123429088135773, 'epoch': 7.0}
+Generating predictions on validation dataset...
+{'loss': 2.8031, 'grad_norm': 111159.8046875, 'learning_rate': 7.299696931651505e-05, 'epoch': 2.89}
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_32_32_4_5.100903513820392e-05_7_7.466040368334193_0.4834741233033806.csv
+{'eval_runtime': 11.9806, 'eval_samples_per_second': 57.51, 'eval_steps_per_second': 3.673, 'epoch': 2.89}
+{'loss': 0.7588, 'grad_norm': 96548.375, 'learning_rate': 3.1709090743825544e-05, 'epoch': 5.78}
+{'eval_runtime': 11.2639, 'eval_samples_per_second': 61.169, 'eval_steps_per_second': 3.906, 'epoch': 5.78}
+{'train_runtime': 810.4636, 'train_samples_per_second': 27.175, 'train_steps_per_second': 1.708, 'train_loss': 1.467238718374616, 'epoch': 8.0}
+Generating predictions on validation dataset...
+{'loss': 4.7112, 'grad_norm': 132191.953125, 'learning_rate': 1.91375051427009e-05, 'epoch': 2.89}
+{'eval_runtime': 9.3461, 'eval_samples_per_second': 73.72, 'eval_steps_per_second': 4.708, 'epoch': 2.89}
+{'loss': 1.1588, 'grad_norm': 170718.671875, 'learning_rate': 2.1383232786997434e-05, 'epoch': 5.78}
+{'eval_runtime': 9.3106, 'eval_samples_per_second': 74.002, 'eval_steps_per_second': 4.726, 'epoch': 5.78}
+{'loss': 1.0222, 'grad_norm': 258949.09375, 'learning_rate': 6.737182932889602e-06, 'epoch': 8.67}
+{'eval_runtime': 9.2969, 'eval_samples_per_second': 74.11, 'eval_steps_per_second': 4.733, 'epoch': 8.67}
+{'train_runtime': 820.7909, 'train_samples_per_second': 33.541, 'train_steps_per_second': 2.108, 'train_loss': 2.1230760960220603, 'epoch': 10.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_64_64_6_7.299696931651505e-05_8_0.3653141491273249_0.32504753320393287.csv
+{'train_runtime': 72.1149, 'train_samples_per_second': 38.175, 'train_steps_per_second': 2.399, 'train_loss': 6.6884151745393785, 'epoch': 1.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_128_256_3_2.870625771405135e-05_10_0.846348236484511_0.08894530224163635.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_16_32_3_6.860680452301991e-05_1_7.87261491748588_0.5294667003379896.csv
+{'loss': 4.2756, 'grad_norm': 123626.0390625, 'learning_rate': 5.6106208752529805e-06, 'epoch': 2.89}
+{'loss': 4.2589, 'grad_norm': 221555.5625, 'learning_rate': 4.828559182289511e-05, 'epoch': 2.89}
+{'eval_runtime': 13.5692, 'eval_samples_per_second': 50.777, 'eval_steps_per_second': 3.243, 'epoch': 2.89}
+{'loss': 1.349, 'grad_norm': 212548.8125, 'learning_rate': 3.3298806820607116e-06, 'epoch': 5.78}
+{'eval_runtime': 15.4327, 'eval_samples_per_second': 44.645, 'eval_steps_per_second': 2.851, 'epoch': 2.89}
+{'loss': 0.9068, 'grad_norm': 177913.96875, 'learning_rate': 9.657118364579022e-05, 'epoch': 5.78}
+{'eval_runtime': 13.5813, 'eval_samples_per_second': 50.731, 'eval_steps_per_second': 3.24, 'epoch': 5.78}
+{'loss': 1.2419, 'grad_norm': 114206.0234375, 'learning_rate': 1.0491404888684434e-06, 'epoch': 8.67}
+{'eval_runtime': 14.9214, 'eval_samples_per_second': 46.175, 'eval_steps_per_second': 2.949, 'epoch': 5.78}
+{'loss': 0.7551, 'grad_norm': 161994.9375, 'learning_rate': 9.882508918869018e-06, 'epoch': 8.67}
+{'eval_runtime': 14.8064, 'eval_samples_per_second': 46.534, 'eval_steps_per_second': 2.972, 'epoch': 8.67}
+{'train_runtime': 1155.5836, 'train_samples_per_second': 21.441, 'train_steps_per_second': 1.347, 'train_loss': 1.927389866431401, 'epoch': 9.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 13.8309, 'eval_samples_per_second': 49.816, 'eval_steps_per_second': 3.181, 'epoch': 8.67}
+{'train_runtime': 1177.4549, 'train_samples_per_second': 23.381, 'train_steps_per_second': 1.469, 'train_loss': 2.1474251102160857, 'epoch': 10.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_128_128_4_7.891361068445248e-06_10_2.3333574000928836_0.7342567884468886.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_8_16_6_9.657118364579022e-05_9_9.982879151413131_0.5879344866147174.csv
+{'loss': 4.2546, 'grad_norm': 129175.6640625, 'learning_rate': 3.1934836754447126e-05, 'epoch': 2.89}
+{'eval_runtime': 7.3803, 'eval_samples_per_second': 93.356, 'eval_steps_per_second': 5.962, 'epoch': 2.89}
+{'loss': 1.3617, 'grad_norm': 128152.6953125, 'learning_rate': 9.47714564724099e-06, 'epoch': 5.78}
+{'loss': 3.3932, 'grad_norm': 135455.171875, 'learning_rate': 1.8291198247163475e-05, 'epoch': 2.89}
+{'eval_runtime': 11.9817, 'eval_samples_per_second': 57.504, 'eval_steps_per_second': 3.672, 'epoch': 5.78}
+{'train_runtime': 594.1798, 'train_samples_per_second': 32.433, 'train_steps_per_second': 2.038, 'train_loss': 2.5448708947683345, 'epoch': 7.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 11.8794, 'eval_samples_per_second': 58.0, 'eval_steps_per_second': 3.704, 'epoch': 2.89}
+{'loss': 1.1952, 'grad_norm': 135025.5, 'learning_rate': 1.0855751805227105e-05, 'epoch': 5.78}
+{'eval_runtime': 8.4799, 'eval_samples_per_second': 81.251, 'eval_steps_per_second': 5.189, 'epoch': 5.78}
+{'loss': 1.1232, 'grad_norm': 165697.453125, 'learning_rate': 3.420305363290731e-06, 'epoch': 8.67}
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_8_16_2_4.990098964021203e-05_7_3.4667945565877156_0.4270170524066644.csv
+{'eval_runtime': 7.4777, 'eval_samples_per_second': 92.14, 'eval_steps_per_second': 5.884, 'epoch': 8.67}
+{'train_runtime': 823.1758, 'train_samples_per_second': 33.444, 'train_steps_per_second': 2.102, 'train_loss': 1.7975669552136018, 'epoch': 10.0}
+Generating predictions on validation dataset...
+{'loss': 2.7265, 'grad_norm': 126742.1328125, 'learning_rate': 5.2255896479359944e-05, 'epoch': 2.89}
+{'eval_runtime': 10.5379, 'eval_samples_per_second': 65.383, 'eval_steps_per_second': 4.175, 'epoch': 2.89}
+{'loss': 1.0655, 'grad_norm': 149602.34375, 'learning_rate': 2.2699393945785316e-05, 'epoch': 5.78}
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_64_128_2_2.4239555400712576e-05_10_6.477173063714075_0.1147652738835868.csv
+{'eval_runtime': 9.9829, 'eval_samples_per_second': 69.018, 'eval_steps_per_second': 4.408, 'epoch': 5.78}
+{'train_runtime': 705.2904, 'train_samples_per_second': 31.227, 'train_steps_per_second': 1.962, 'train_loss': 1.653745596119434, 'epoch': 8.0}
+Generating predictions on validation dataset...
+{'loss': 6.1514, 'grad_norm': 218694.15625, 'learning_rate': 5.736568488878264e-05, 'epoch': 2.89}
+{'eval_runtime': 8.3193, 'eval_samples_per_second': 82.819, 'eval_steps_per_second': 5.289, 'epoch': 2.89}
+{'train_runtime': 388.3382, 'train_samples_per_second': 35.446, 'train_steps_per_second': 2.227, 'train_loss': 4.1680908908733745, 'epoch': 5.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_8_16_2_5.736568488878264e-05_5_2.201356989510149_0.7532114914827235.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_16_32_4_7.590109850621965e-05_8_0.3604227230724055_0.7174308667815964.csv
+{'loss': 5.0653, 'grad_norm': 93982.3203125, 'learning_rate': 4.298599373236997e-05, 'epoch': 2.89}
+{'loss': 5.5621, 'grad_norm': 111724.578125, 'learning_rate': 2.2138227158120958e-05, 'epoch': 2.89}
+{'eval_runtime': 12.5818, 'eval_samples_per_second': 54.761, 'eval_steps_per_second': 3.497, 'epoch': 2.89}
+{'train_runtime': 472.1707, 'train_samples_per_second': 23.322, 'train_steps_per_second': 1.466, 'train_loss': 4.397016580394237, 'epoch': 4.0}
+Generating predictions on validation dataset...
+{'eval_runtime': 12.3891, 'eval_samples_per_second': 55.613, 'eval_steps_per_second': 3.552, 'epoch': 2.89}
+{'loss': 1.2085, 'grad_norm': 97961.296875, 'learning_rate': 8.597198746473993e-05, 'epoch': 5.78}
+{'eval_runtime': 9.5617, 'eval_samples_per_second': 72.058, 'eval_steps_per_second': 4.602, 'epoch': 5.78}
+{'train_runtime': 623.3658, 'train_samples_per_second': 26.498, 'train_steps_per_second': 1.665, 'train_loss': 3.062868915771014, 'epoch': 6.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_128_128_3_4.4276454316241915e-05_4_4.059275633782669_0.7819703825962736.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_64_64_3_8.597198746473993e-05_6_5.961473075972512_0.6958789375070039.csv
+{'loss': 3.5062, 'grad_norm': 176135.890625, 'learning_rate': 5.3965332172428184e-05, 'epoch': 2.89}
+{'eval_runtime': 7.3278, 'eval_samples_per_second': 94.025, 'eval_steps_per_second': 6.004, 'epoch': 2.89}
+{'train_runtime': 203.034, 'train_samples_per_second': 40.678, 'train_steps_per_second': 2.556, 'train_loss': 3.420698566473518, 'epoch': 3.0}
+Generating predictions on validation dataset...
+{'train_runtime': 156.8312, 'train_samples_per_second': 35.108, 'train_steps_per_second': 2.206, 'train_loss': 8.495079084627891, 'epoch': 2.0}
+Generating predictions on validation dataset...
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_128_256_2_5.3965332172428184e-05_3_3.974105599723754_0.14925914630391332.csv
+Saved evaluation results to ./lora_bart_subtopics_sweep/eval_results_32_32_4_3.10440378720692e-05_2_0.4209538940797386_0.5429743216910646.csv

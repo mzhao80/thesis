@@ -1,9 +1,0 @@
-Traceback (most recent call last):
-  File "/n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/preprocess.py", line 124, in <module>
-    main()
-  File "/n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/preprocess.py", line 84, in main
-    client = openai.OpenAI()
-             ^^^^^^^^^^^^^^^
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/openai/_client.py", line 110, in __init__
-    raise OpenAIError(
-openai.OpenAIError: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable

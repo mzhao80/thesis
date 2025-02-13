@@ -1,0 +1,15 @@
+{"time":"2025-02-12T22:12:53.755456033-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/wandb/run-20250212_221253-7gxwravd/logs/debug-core.log"}
+{"time":"2025-02-12T22:12:53.893440308-05:00","level":"INFO","msg":"created new stream","id":"7gxwravd"}
+{"time":"2025-02-12T22:12:53.893510974-05:00","level":"INFO","msg":"stream: started","id":"7gxwravd"}
+{"time":"2025-02-12T22:12:53.893660063-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"7gxwravd"}
+{"time":"2025-02-12T22:12:53.89369214-05:00","level":"INFO","msg":"handler: started","stream_id":"7gxwravd"}
+{"time":"2025-02-12T22:12:53.893794845-05:00","level":"INFO","msg":"sender: started","stream_id":"7gxwravd"}
+{"time":"2025-02-12T22:12:53.895893794-05:00","level":"INFO","msg":"stream: closing","id":"7gxwravd"}
+{"time":"2025-02-12T22:12:53.899505739-05:00","level":"ERROR","msg":"sender: upsertConfig: RunRecord is nil"}
+{"time":"2025-02-12T22:12:54.041923055-05:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-02-12T22:12:54.04201664-05:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404 Not Found: {\"errors\":[{\"message\":\"project /lora_bart_topic_extraction_sweep not found during createRunFiles\",\"path\":[\"createRunFiles\"]}],\"data\":{\"createRunFiles\":null}}"}
+{"time":"2025-02-12T22:12:54.043195648-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-12T22:12:54.043299566-05:00","level":"INFO","msg":"handler: closed","stream_id":"7gxwravd"}
+{"time":"2025-02-12T22:12:54.043335438-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7gxwravd"}
+{"time":"2025-02-12T22:12:54.043445761-05:00","level":"INFO","msg":"sender: closed","stream_id":"7gxwravd"}
+{"time":"2025-02-12T22:12:54.046732276-05:00","level":"INFO","msg":"stream: closed","id":"7gxwravd"}

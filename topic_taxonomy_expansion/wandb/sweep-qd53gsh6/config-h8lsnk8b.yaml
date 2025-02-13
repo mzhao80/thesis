@@ -1,0 +1,24 @@
+wandb_version: 1
+
+alpha_multiplier:
+  value: 1
+data_file:
+  value: /n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/new_training_data.csv
+dropout:
+  value: 0.3981505870297226
+learning_rate:
+  value: 6.522541646285045e-05
+length_penalty:
+  value: 7.792765601814901
+model_name:
+  value: facebook/bart-large-cnn
+num_train_epochs:
+  value: 5
+output_dir:
+  value: ./lora_bart_subtopics_sweep
+r:
+  value: 8
+target_modules:
+  value: q_proj,v_proj
+warmup_steps:
+  value: 250

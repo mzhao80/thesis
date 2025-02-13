@@ -1,0 +1,118 @@
+[W211 15:49:42.050273744 socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+[W211 15:50:06.607658742 socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+[W211 15:50:06.607654091 socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+[W211 15:50:06.608458718 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[W211 15:50:06.608550858 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [00:00<00:01,  5.43it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [00:00<00:01,  5.50it/s]Loading checkpoint shards:  29%|██▊       | 2/7 [00:00<00:00,  6.82it/s]Loading checkpoint shards:  29%|██▊       | 2/7 [00:00<00:00,  6.75it/s]Loading checkpoint shards:  43%|████▎     | 3/7 [00:00<00:00,  7.43it/s]Loading checkpoint shards:  43%|████▎     | 3/7 [00:00<00:00,  7.43it/s]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:00<00:00,  7.77it/s]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:00<00:00,  7.80it/s]Loading checkpoint shards:  71%|███████▏  | 5/7 [00:00<00:00,  7.95it/s]Loading checkpoint shards:  71%|███████▏  | 5/7 [00:00<00:00,  8.01it/s]Loading checkpoint shards:  86%|████████▌ | 6/7 [00:00<00:00,  8.15it/s]Loading checkpoint shards:  86%|████████▌ | 6/7 [00:00<00:00,  8.07it/s]Loading checkpoint shards: 100%|██████████| 7/7 [00:00<00:00,  8.32it/s]Loading checkpoint shards: 100%|██████████| 7/7 [00:00<00:00,  7.81it/s]
+Loading checkpoint shards: 100%|██████████| 7/7 [00:00<00:00,  8.23it/s]Loading checkpoint shards: 100%|██████████| 7/7 [00:00<00:00,  7.76it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/2 [00:00<?, ?it/s]/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+Batches:  50%|█████     | 1/2 [00:02<00:02,  2.35s/it]Batches:  50%|█████     | 1/2 [00:02<00:02,  2.26s/it]Batches: 100%|██████████| 2/2 [00:02<00:00,  1.21s/it]
+Batches: 100%|██████████| 2/2 [00:02<00:00,  1.17s/it]
+[rank1]:W0211 15:50:56.577000 23102611211840 torch/_logging/_internal.py:1034] [0/0] Profiler function <class 'torch.autograd.profiler.record_function'> will be ignored
+[rank0]:W0211 15:50:56.577000 22920713786944 torch/_logging/_internal.py:1034] [0/0] Profiler function <class 'torch.autograd.profiler.record_function'> will be ignored
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/train_accelerate.py", line 518, in <module>
+[rank0]:     main(config)
+[rank0]:   File "/n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/train_accelerate.py", line 507, in main
+[rank0]:     torch.save(filtered_state_dict, final_save_path)
+[rank0]:   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/serialization.py", line 651, in save
+[rank0]:     with _open_zipfile_writer(f) as opened_zipfile:
+[rank0]:          ^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/serialization.py", line 525, in _open_zipfile_writer
+[rank0]:     return container(name_or_buffer)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/serialization.py", line 496, in __init__
+[rank0]:     super().__init__(torch._C.PyTorchFileWriter(self.name))
+[rank0]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: RuntimeError: Parent directory topic_taxonomy_expansion/models does not exist.
+E0211 19:38:41.889000 22885906789952 torch/distributed/elastic/multiprocessing/api.py:833] failed (exitcode: 1) local_rank: 0 (pid: 1933054) of binary: /n/home09/michaelzhao/Downloads/topicexpan/myenv/bin/python
+Traceback (most recent call last):
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/bin/accelerate", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/accelerate/commands/accelerate_cli.py", line 48, in main
+    args.func(args)
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/accelerate/commands/launch.py", line 1163, in launch_command
+    multi_gpu_launcher(args)
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/accelerate/commands/launch.py", line 792, in multi_gpu_launcher
+    distrib_run.run(args)
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 133, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train_accelerate.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-02-11_19:38:41
+  host      : holygpu8a11104.rc.fas.harvard.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 1933054)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

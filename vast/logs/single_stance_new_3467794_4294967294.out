@@ -1,0 +1,1535 @@
+Using device: cuda
+Using classifier type: mlp
+
+=== Loading datasets ===
+Loading datasets...
+
+Running experiment with lr=0.0001, model=mlp, batch_size=8, hidden_dim=1024, num_layers=6
+
+=== Encoding datasets with batch_size 8 ===
+
+Epoch 1/100
+Epoch 1 - Train Loss: 0.9167, Train Accuracy: 0.5762
+Epoch 1 - Dev Loss: 0.9158, Dev Accuracy: 0.5873, Dev F1: 0.5810
+Dev loss improved; saving best model.
+
+Epoch 2/100
+Epoch 2 - Train Loss: 0.8198, Train Accuracy: 0.6301
+Epoch 2 - Dev Loss: 0.8880, Dev Accuracy: 0.5955, Dev F1: 0.5912
+Dev loss improved; saving best model.
+
+Epoch 3/100
+Epoch 3 - Train Loss: 0.7629, Train Accuracy: 0.6594
+Epoch 3 - Dev Loss: 0.8340, Dev Accuracy: 0.6440, Dev F1: 0.6452
+Dev loss improved; saving best model.
+
+Epoch 4/100
+Epoch 4 - Train Loss: 0.7196, Train Accuracy: 0.6801
+Epoch 4 - Dev Loss: 0.8382, Dev Accuracy: 0.6499, Dev F1: 0.6505
+No improvement on dev loss. Patience: 1/20
+
+Epoch 5/100
+Epoch 5 - Train Loss: 0.6846, Train Accuracy: 0.6964
+Epoch 5 - Dev Loss: 0.8641, Dev Accuracy: 0.6688, Dev F1: 0.6710
+No improvement on dev loss. Patience: 2/20
+
+Epoch 6/100
+Epoch 6 - Train Loss: 0.6544, Train Accuracy: 0.7094
+Epoch 6 - Dev Loss: 0.8684, Dev Accuracy: 0.6542, Dev F1: 0.6530
+No improvement on dev loss. Patience: 3/20
+
+Epoch 7/100
+Epoch 7 - Train Loss: 0.6291, Train Accuracy: 0.7202
+Epoch 7 - Dev Loss: 0.9125, Dev Accuracy: 0.6654, Dev F1: 0.6665
+No improvement on dev loss. Patience: 4/20
+
+Epoch 8/100
+Epoch 8 - Train Loss: 0.6071, Train Accuracy: 0.7293
+Epoch 8 - Dev Loss: 0.8690, Dev Accuracy: 0.6659, Dev F1: 0.6644
+No improvement on dev loss. Patience: 5/20
+
+Epoch 9/100
+Epoch 9 - Train Loss: 0.5883, Train Accuracy: 0.7372
+Epoch 9 - Dev Loss: 0.9089, Dev Accuracy: 0.6528, Dev F1: 0.6435
+No improvement on dev loss. Patience: 6/20
+
+Epoch 10/100
+Epoch 10 - Train Loss: 0.5709, Train Accuracy: 0.7442
+Epoch 10 - Dev Loss: 1.0918, Dev Accuracy: 0.6309, Dev F1: 0.6324
+No improvement on dev loss. Patience: 7/20
+
+Epoch 11/100
+Epoch 11 - Train Loss: 0.5553, Train Accuracy: 0.7504
+Epoch 11 - Dev Loss: 1.2080, Dev Accuracy: 0.6435, Dev F1: 0.6427
+No improvement on dev loss. Patience: 8/20
+
+Epoch 12/100
+Epoch 12 - Train Loss: 0.5413, Train Accuracy: 0.7560
+Epoch 12 - Dev Loss: 0.9760, Dev Accuracy: 0.6678, Dev F1: 0.6683
+No improvement on dev loss. Patience: 9/20
+
+Epoch 13/100
+Epoch 13 - Train Loss: 0.5281, Train Accuracy: 0.7611
+Epoch 13 - Dev Loss: 1.2040, Dev Accuracy: 0.6469, Dev F1: 0.6464
+No improvement on dev loss. Patience: 10/20
+
+Epoch 14/100
+Epoch 14 - Train Loss: 0.5158, Train Accuracy: 0.7661
+Epoch 14 - Dev Loss: 1.2219, Dev Accuracy: 0.6605, Dev F1: 0.6610
+No improvement on dev loss. Patience: 11/20
+
+Epoch 15/100
+Epoch 15 - Train Loss: 0.5048, Train Accuracy: 0.7703
+Epoch 15 - Dev Loss: 1.0689, Dev Accuracy: 0.6770, Dev F1: 0.6783
+No improvement on dev loss. Patience: 12/20
+
+Epoch 16/100
+Epoch 16 - Train Loss: 0.4947, Train Accuracy: 0.7744
+Epoch 16 - Dev Loss: 1.3995, Dev Accuracy: 0.6363, Dev F1: 0.6385
+No improvement on dev loss. Patience: 13/20
+
+Epoch 17/100
+Epoch 17 - Train Loss: 0.4851, Train Accuracy: 0.7783
+Epoch 17 - Dev Loss: 1.2761, Dev Accuracy: 0.6673, Dev F1: 0.6626
+No improvement on dev loss. Patience: 14/20
+
+Epoch 18/100
+Epoch 18 - Train Loss: 0.4761, Train Accuracy: 0.7821
+Epoch 18 - Dev Loss: 1.3701, Dev Accuracy: 0.6552, Dev F1: 0.6572
+No improvement on dev loss. Patience: 15/20
+
+Epoch 19/100
+Epoch 19 - Train Loss: 0.4679, Train Accuracy: 0.7856
+Epoch 19 - Dev Loss: 1.4934, Dev Accuracy: 0.6756, Dev F1: 0.6719
+No improvement on dev loss. Patience: 16/20
+
+Epoch 20/100
+Epoch 20 - Train Loss: 0.4597, Train Accuracy: 0.7889
+Epoch 20 - Dev Loss: 1.5275, Dev Accuracy: 0.6513, Dev F1: 0.6533
+No improvement on dev loss. Patience: 17/20
+
+Epoch 21/100
+Epoch 21 - Train Loss: 0.4521, Train Accuracy: 0.7922
+Epoch 21 - Dev Loss: 1.6667, Dev Accuracy: 0.6402, Dev F1: 0.6429
+No improvement on dev loss. Patience: 18/20
+
+Epoch 22/100
+Epoch 22 - Train Loss: 0.4447, Train Accuracy: 0.7953
+Epoch 22 - Dev Loss: 1.4321, Dev Accuracy: 0.6693, Dev F1: 0.6706
+No improvement on dev loss. Patience: 19/20
+
+Epoch 23/100
+Epoch 23 - Train Loss: 0.4378, Train Accuracy: 0.7982
+Epoch 23 - Dev Loss: 1.5001, Dev Accuracy: 0.6625, Dev F1: 0.6649
+No improvement on dev loss. Patience: 20/20
+Early stopping triggered.
+
+Final Training Loss: 0.4378
+Final Training Accuracy: 0.7982
+Best Dev Loss: 0.8340
+Best Dev Accuracy: 0.6440, Best Dev Macro F1: 0.6452
+Config LR=0.0001, BS=8, Dropout=0.1, Hidden Dim=1024, Num Layers=6 -> Dev Loss: 0.8340, Dev Accuracy: 0.6440, Dev F1: 0.6452
+
+Running experiment with lr=0.0001, model=mlp, batch_size=8, hidden_dim=1024, num_layers=8
+
+=== Encoding datasets with batch_size 8 ===
+
+Epoch 1/100
+Epoch 1 - Train Loss: 0.9134, Train Accuracy: 0.5826
+Epoch 1 - Dev Loss: 1.2788, Dev Accuracy: 0.5082, Dev F1: 0.4475
+Dev loss improved; saving best model.
+
+Epoch 2/100
+Epoch 2 - Train Loss: 0.8220, Train Accuracy: 0.6290
+Epoch 2 - Dev Loss: 1.0296, Dev Accuracy: 0.5873, Dev F1: 0.5734
+Dev loss improved; saving best model.
+
+Epoch 3/100
+Epoch 3 - Train Loss: 0.7630, Train Accuracy: 0.6581
+Epoch 3 - Dev Loss: 0.8081, Dev Accuracy: 0.6372, Dev F1: 0.6322
+Dev loss improved; saving best model.
+
+Epoch 4/100
+Epoch 4 - Train Loss: 0.7188, Train Accuracy: 0.6799
+Epoch 4 - Dev Loss: 0.9119, Dev Accuracy: 0.6440, Dev F1: 0.6430
+No improvement on dev loss. Patience: 1/20
+
+Epoch 5/100
+Epoch 5 - Train Loss: 0.6841, Train Accuracy: 0.6965
+Epoch 5 - Dev Loss: 0.8481, Dev Accuracy: 0.6552, Dev F1: 0.6557
+No improvement on dev loss. Patience: 2/20
+
+Epoch 6/100
+Epoch 6 - Train Loss: 0.6560, Train Accuracy: 0.7092
+Epoch 6 - Dev Loss: 0.8113, Dev Accuracy: 0.6586, Dev F1: 0.6610
+No improvement on dev loss. Patience: 3/20
+
+Epoch 7/100
+Epoch 7 - Train Loss: 0.6306, Train Accuracy: 0.7203
+Epoch 7 - Dev Loss: 0.9006, Dev Accuracy: 0.6562, Dev F1: 0.6566
+No improvement on dev loss. Patience: 4/20
+
+Epoch 8/100
+Epoch 8 - Train Loss: 0.6082, Train Accuracy: 0.7297
+Epoch 8 - Dev Loss: 1.1045, Dev Accuracy: 0.6348, Dev F1: 0.6346
+No improvement on dev loss. Patience: 5/20
+
+Epoch 9/100
+Epoch 9 - Train Loss: 0.5890, Train Accuracy: 0.7375
+Epoch 9 - Dev Loss: 0.9668, Dev Accuracy: 0.6576, Dev F1: 0.6562
+No improvement on dev loss. Patience: 6/20
+
+Epoch 10/100
+Epoch 10 - Train Loss: 0.5721, Train Accuracy: 0.7446
+Epoch 10 - Dev Loss: 0.9255, Dev Accuracy: 0.6673, Dev F1: 0.6698
+No improvement on dev loss. Patience: 7/20
+
+Epoch 11/100
+Epoch 11 - Train Loss: 0.5562, Train Accuracy: 0.7510
+Epoch 11 - Dev Loss: 1.2382, Dev Accuracy: 0.5921, Dev F1: 0.5890
+No improvement on dev loss. Patience: 8/20
+
+Epoch 12/100
+Epoch 12 - Train Loss: 0.5424, Train Accuracy: 0.7565
+Epoch 12 - Dev Loss: 1.3617, Dev Accuracy: 0.5829, Dev F1: 0.5680
+No improvement on dev loss. Patience: 9/20
+
+Epoch 13/100
+Epoch 13 - Train Loss: 0.5295, Train Accuracy: 0.7614
+Epoch 13 - Dev Loss: 1.0965, Dev Accuracy: 0.6581, Dev F1: 0.6609
+No improvement on dev loss. Patience: 10/20
+
+Epoch 14/100
+Epoch 14 - Train Loss: 0.5174, Train Accuracy: 0.7662
+Epoch 14 - Dev Loss: 1.1175, Dev Accuracy: 0.6552, Dev F1: 0.6552
+No improvement on dev loss. Patience: 11/20
+
+Epoch 15/100
+Epoch 15 - Train Loss: 0.5065, Train Accuracy: 0.7703
+Epoch 15 - Dev Loss: 1.4921, Dev Accuracy: 0.6314, Dev F1: 0.6347
+No improvement on dev loss. Patience: 12/20
+
+Epoch 16/100
+Epoch 16 - Train Loss: 0.4962, Train Accuracy: 0.7745
+Epoch 16 - Dev Loss: 1.1314, Dev Accuracy: 0.6615, Dev F1: 0.6592
+No improvement on dev loss. Patience: 13/20
+
+Epoch 17/100
+Epoch 17 - Train Loss: 0.4869, Train Accuracy: 0.7781
+Epoch 17 - Dev Loss: 1.1475, Dev Accuracy: 0.6528, Dev F1: 0.6552
+No improvement on dev loss. Patience: 14/20
+
+Epoch 18/100
+Epoch 18 - Train Loss: 0.4778, Train Accuracy: 0.7820
+Epoch 18 - Dev Loss: 1.4049, Dev Accuracy: 0.6537, Dev F1: 0.6557
+No improvement on dev loss. Patience: 15/20
+
+Epoch 19/100
+Epoch 19 - Train Loss: 0.4697, Train Accuracy: 0.7853
+Epoch 19 - Dev Loss: 1.1703, Dev Accuracy: 0.6562, Dev F1: 0.6569
+No improvement on dev loss. Patience: 16/20
+
+Epoch 20/100
+Epoch 20 - Train Loss: 0.4617, Train Accuracy: 0.7885
+Epoch 20 - Dev Loss: 1.3592, Dev Accuracy: 0.6421, Dev F1: 0.6427
+No improvement on dev loss. Patience: 17/20
+
+Epoch 21/100
+Epoch 21 - Train Loss: 0.4541, Train Accuracy: 0.7917
+Epoch 21 - Dev Loss: 1.3179, Dev Accuracy: 0.6610, Dev F1: 0.6615
+No improvement on dev loss. Patience: 18/20
+
+Epoch 22/100
+Epoch 22 - Train Loss: 0.4470, Train Accuracy: 0.7948
+Epoch 22 - Dev Loss: 1.4104, Dev Accuracy: 0.6484, Dev F1: 0.6461
+No improvement on dev loss. Patience: 19/20
+
+Epoch 23/100
+Epoch 23 - Train Loss: 0.4399, Train Accuracy: 0.7979
+Epoch 23 - Dev Loss: 1.5544, Dev Accuracy: 0.6435, Dev F1: 0.6465
+No improvement on dev loss. Patience: 20/20
+Early stopping triggered.
+
+Final Training Loss: 0.4399
+Final Training Accuracy: 0.7979
+Best Dev Loss: 0.8081
+Best Dev Accuracy: 0.6372, Best Dev Macro F1: 0.6322
+Config LR=0.0001, BS=8, Dropout=0.1, Hidden Dim=1024, Num Layers=8 -> Dev Loss: 0.8081, Dev Accuracy: 0.6372, Dev F1: 0.6322
+
+Running experiment with lr=0.0001, model=mlp, batch_size=8, hidden_dim=1024, num_layers=10
+
+=== Encoding datasets with batch_size 8 ===
+
+Epoch 1/100
+Epoch 1 - Train Loss: 0.9259, Train Accuracy: 0.5739
+Epoch 1 - Dev Loss: 0.9621, Dev Accuracy: 0.5679, Dev F1: 0.5502
+Dev loss improved; saving best model.
+
+Epoch 2/100
+Epoch 2 - Train Loss: 0.8335, Train Accuracy: 0.6225
+Epoch 2 - Dev Loss: 0.9258, Dev Accuracy: 0.6169, Dev F1: 0.6134
+Dev loss improved; saving best model.
+
+Epoch 3/100
+Epoch 3 - Train Loss: 0.7756, Train Accuracy: 0.6530
+Epoch 3 - Dev Loss: 0.8968, Dev Accuracy: 0.6363, Dev F1: 0.6365
+Dev loss improved; saving best model.
+
+Epoch 4/100
+Epoch 4 - Train Loss: 0.7322, Train Accuracy: 0.6742
+Epoch 4 - Dev Loss: 0.8201, Dev Accuracy: 0.6290, Dev F1: 0.6290
+Dev loss improved; saving best model.
+
+Epoch 5/100
+Epoch 5 - Train Loss: 0.6961, Train Accuracy: 0.6911
+Epoch 5 - Dev Loss: 1.0133, Dev Accuracy: 0.6038, Dev F1: 0.5996
+No improvement on dev loss. Patience: 1/20
+
+Epoch 6/100
+Epoch 6 - Train Loss: 0.6659, Train Accuracy: 0.7045
+Epoch 6 - Dev Loss: 0.8639, Dev Accuracy: 0.6440, Dev F1: 0.6466
+No improvement on dev loss. Patience: 2/20
+
+Epoch 7/100
+Epoch 7 - Train Loss: 0.6402, Train Accuracy: 0.7154
+Epoch 7 - Dev Loss: 0.9105, Dev Accuracy: 0.6494, Dev F1: 0.6521
+No improvement on dev loss. Patience: 3/20
+
+Epoch 8/100
+Epoch 8 - Train Loss: 0.6170, Train Accuracy: 0.7250
+Epoch 8 - Dev Loss: 1.2430, Dev Accuracy: 0.6499, Dev F1: 0.6512
+No improvement on dev loss. Patience: 4/20
+
+Epoch 9/100
+Epoch 9 - Train Loss: 0.5966, Train Accuracy: 0.7332
+Epoch 9 - Dev Loss: 1.0646, Dev Accuracy: 0.6702, Dev F1: 0.6713
+No improvement on dev loss. Patience: 5/20
+
+Epoch 10/100
+Epoch 10 - Train Loss: 0.5784, Train Accuracy: 0.7404
+Epoch 10 - Dev Loss: 1.1906, Dev Accuracy: 0.6372, Dev F1: 0.6369
+No improvement on dev loss. Patience: 6/20
+
+Epoch 11/100
+Epoch 11 - Train Loss: 0.5626, Train Accuracy: 0.7466
+Epoch 11 - Dev Loss: 1.0789, Dev Accuracy: 0.6552, Dev F1: 0.6512
+No improvement on dev loss. Patience: 7/20
+
+Epoch 12/100
+Epoch 12 - Train Loss: 0.5481, Train Accuracy: 0.7524
+Epoch 12 - Dev Loss: 1.1692, Dev Accuracy: 0.6513, Dev F1: 0.6480
+No improvement on dev loss. Patience: 8/20
+
+Epoch 13/100
+Epoch 13 - Train Loss: 0.5351, Train Accuracy: 0.7575
+Epoch 13 - Dev Loss: 1.1315, Dev Accuracy: 0.6726, Dev F1: 0.6694
+No improvement on dev loss. Patience: 9/20
+
+Epoch 14/100
+Epoch 14 - Train Loss: 0.5227, Train Accuracy: 0.7628
+Epoch 14 - Dev Loss: 1.2956, Dev Accuracy: 0.6659, Dev F1: 0.6644
+No improvement on dev loss. Patience: 10/20
+
+Epoch 15/100
+Epoch 15 - Train Loss: 0.5114, Train Accuracy: 0.7672
+Epoch 15 - Dev Loss: 1.2362, Dev Accuracy: 0.6532, Dev F1: 0.6481
+No improvement on dev loss. Patience: 11/20
+
+Epoch 16/100
+Epoch 16 - Train Loss: 0.5009, Train Accuracy: 0.7715
+Epoch 16 - Dev Loss: 1.4106, Dev Accuracy: 0.6426, Dev F1: 0.6439
+No improvement on dev loss. Patience: 12/20
+
+Epoch 17/100
+Epoch 17 - Train Loss: 0.4910, Train Accuracy: 0.7755
+Epoch 17 - Dev Loss: 1.2417, Dev Accuracy: 0.6566, Dev F1: 0.6570
+No improvement on dev loss. Patience: 13/20
+
+Epoch 18/100
+Epoch 18 - Train Loss: 0.4818, Train Accuracy: 0.7793
+Epoch 18 - Dev Loss: 1.3592, Dev Accuracy: 0.6450, Dev F1: 0.6419
+No improvement on dev loss. Patience: 14/20
+
+Epoch 19/100
+Epoch 19 - Train Loss: 0.4733, Train Accuracy: 0.7827
+Epoch 19 - Dev Loss: 1.3471, Dev Accuracy: 0.6513, Dev F1: 0.6540
+No improvement on dev loss. Patience: 15/20
+
+Epoch 20/100
+Epoch 20 - Train Loss: 0.4652, Train Accuracy: 0.7862
+Epoch 20 - Dev Loss: 1.3640, Dev Accuracy: 0.6639, Dev F1: 0.6659
+No improvement on dev loss. Patience: 16/20
+
+Epoch 21/100
+Epoch 21 - Train Loss: 0.4576, Train Accuracy: 0.7894
+Epoch 21 - Dev Loss: 1.7110, Dev Accuracy: 0.6557, Dev F1: 0.6520
+No improvement on dev loss. Patience: 17/20
+
+Epoch 22/100
+Epoch 22 - Train Loss: 0.4502, Train Accuracy: 0.7925
+Epoch 22 - Dev Loss: 1.3389, Dev Accuracy: 0.6659, Dev F1: 0.6627
+No improvement on dev loss. Patience: 18/20
+
+Epoch 23/100
+Epoch 23 - Train Loss: 0.4433, Train Accuracy: 0.7953
+Epoch 23 - Dev Loss: 1.5600, Dev Accuracy: 0.6518, Dev F1: 0.6471
+No improvement on dev loss. Patience: 19/20
+
+Epoch 24/100
+Epoch 24 - Train Loss: 0.4365, Train Accuracy: 0.7980
+Epoch 24 - Dev Loss: 1.5908, Dev Accuracy: 0.6557, Dev F1: 0.6570
+No improvement on dev loss. Patience: 20/20
+Early stopping triggered.
+
+Final Training Loss: 0.4365
+Final Training Accuracy: 0.7980
+Best Dev Loss: 0.8201
+Best Dev Accuracy: 0.6290, Best Dev Macro F1: 0.6290
+Config LR=0.0001, BS=8, Dropout=0.1, Hidden Dim=1024, Num Layers=10 -> Dev Loss: 0.8201, Dev Accuracy: 0.6290, Dev F1: 0.6290
+
+Running experiment with lr=0.0001, model=mlp, batch_size=8, hidden_dim=2048, num_layers=6
+
+=== Encoding datasets with batch_size 8 ===
+
+Epoch 1/100
+Epoch 1 - Train Loss: 0.9204, Train Accuracy: 0.5838
+Epoch 1 - Dev Loss: 1.0242, Dev Accuracy: 0.5606, Dev F1: 0.5311
+Dev loss improved; saving best model.
+
+Epoch 2/100
+Epoch 2 - Train Loss: 0.8254, Train Accuracy: 0.6333
+Epoch 2 - Dev Loss: 1.2168, Dev Accuracy: 0.5131, Dev F1: 0.4608
+No improvement on dev loss. Patience: 1/20
+
+Epoch 3/100
+Epoch 3 - Train Loss: 0.7665, Train Accuracy: 0.6620
+Epoch 3 - Dev Loss: 0.9129, Dev Accuracy: 0.6106, Dev F1: 0.6098
+Dev loss improved; saving best model.
+
+Epoch 4/100
+Epoch 4 - Train Loss: 0.7230, Train Accuracy: 0.6820
+Epoch 4 - Dev Loss: 0.8078, Dev Accuracy: 0.6465, Dev F1: 0.6462
+Dev loss improved; saving best model.
+
+Epoch 5/100
+Epoch 5 - Train Loss: 0.6873, Train Accuracy: 0.6978
+Epoch 5 - Dev Loss: 1.0597, Dev Accuracy: 0.5941, Dev F1: 0.5908
+No improvement on dev loss. Patience: 1/20
+
+Epoch 6/100
+Epoch 6 - Train Loss: 0.6568, Train Accuracy: 0.7108
+Epoch 6 - Dev Loss: 0.9197, Dev Accuracy: 0.6532, Dev F1: 0.6454
+No improvement on dev loss. Patience: 2/20
+
+Epoch 7/100
+Epoch 7 - Train Loss: 0.6311, Train Accuracy: 0.7214
+Epoch 7 - Dev Loss: 1.0335, Dev Accuracy: 0.6421, Dev F1: 0.6445
+No improvement on dev loss. Patience: 3/20
+
+Epoch 8/100
+Epoch 8 - Train Loss: 0.6097, Train Accuracy: 0.7306
+Epoch 8 - Dev Loss: 0.8492, Dev Accuracy: 0.6717, Dev F1: 0.6681
+No improvement on dev loss. Patience: 4/20
+
+Epoch 9/100
+Epoch 9 - Train Loss: 0.5896, Train Accuracy: 0.7381
+Epoch 9 - Dev Loss: 0.9521, Dev Accuracy: 0.6552, Dev F1: 0.6567
+No improvement on dev loss. Patience: 5/20
+
+Epoch 10/100
+Epoch 10 - Train Loss: 0.5719, Train Accuracy: 0.7450
+Epoch 10 - Dev Loss: 1.0481, Dev Accuracy: 0.6600, Dev F1: 0.6566
+No improvement on dev loss. Patience: 6/20
+
+Epoch 11/100
+Epoch 11 - Train Loss: 0.5563, Train Accuracy: 0.7512
+Epoch 11 - Dev Loss: 1.0968, Dev Accuracy: 0.6678, Dev F1: 0.6646
+No improvement on dev loss. Patience: 7/20
+
+Epoch 12/100
+Epoch 12 - Train Loss: 0.5420, Train Accuracy: 0.7570
+Epoch 12 - Dev Loss: 1.1782, Dev Accuracy: 0.6581, Dev F1: 0.6559
+No improvement on dev loss. Patience: 8/20
+
+Epoch 13/100
+Epoch 13 - Train Loss: 0.5290, Train Accuracy: 0.7620
+Epoch 13 - Dev Loss: 1.1507, Dev Accuracy: 0.6523, Dev F1: 0.6539
+No improvement on dev loss. Patience: 9/20
+
+Epoch 14/100
+Epoch 14 - Train Loss: 0.5174, Train Accuracy: 0.7666
+Epoch 14 - Dev Loss: 0.9576, Dev Accuracy: 0.6693, Dev F1: 0.6706
+No improvement on dev loss. Patience: 10/20
+
+Epoch 15/100
+Epoch 15 - Train Loss: 0.5066, Train Accuracy: 0.7709
+Epoch 15 - Dev Loss: 1.2238, Dev Accuracy: 0.6731, Dev F1: 0.6694
+No improvement on dev loss. Patience: 11/20
+
+Epoch 16/100
+Epoch 16 - Train Loss: 0.4963, Train Accuracy: 0.7749
+Epoch 16 - Dev Loss: 1.2041, Dev Accuracy: 0.6566, Dev F1: 0.6534
+No improvement on dev loss. Patience: 12/20
+
+Epoch 17/100
+Epoch 17 - Train Loss: 0.4866, Train Accuracy: 0.7787
+Epoch 17 - Dev Loss: 1.1741, Dev Accuracy: 0.6552, Dev F1: 0.6575
+No improvement on dev loss. Patience: 13/20
+
+Epoch 18/100
+Epoch 18 - Train Loss: 0.4777, Train Accuracy: 0.7822
+Epoch 18 - Dev Loss: 1.4198, Dev Accuracy: 0.6431, Dev F1: 0.6458
+No improvement on dev loss. Patience: 14/20
+
+Epoch 19/100
+Epoch 19 - Train Loss: 0.4695, Train Accuracy: 0.7856
+Epoch 19 - Dev Loss: 1.5588, Dev Accuracy: 0.6605, Dev F1: 0.6548
+No improvement on dev loss. Patience: 15/20
+
+Epoch 20/100
+Epoch 20 - Train Loss: 0.4615, Train Accuracy: 0.7889
+Epoch 20 - Dev Loss: 1.4650, Dev Accuracy: 0.6746, Dev F1: 0.6762
+No improvement on dev loss. Patience: 16/20
+
+Epoch 21/100
+Epoch 21 - Train Loss: 0.4542, Train Accuracy: 0.7919
+Epoch 21 - Dev Loss: 1.4385, Dev Accuracy: 0.6693, Dev F1: 0.6694
+No improvement on dev loss. Patience: 17/20
+
+Epoch 22/100
+Epoch 22 - Train Loss: 0.4471, Train Accuracy: 0.7948
+Epoch 22 - Dev Loss: 1.2879, Dev Accuracy: 0.6566, Dev F1: 0.6589
+No improvement on dev loss. Patience: 18/20
+
+Epoch 23/100
+Epoch 23 - Train Loss: 0.4403, Train Accuracy: 0.7978
+Epoch 23 - Dev Loss: 1.4077, Dev Accuracy: 0.6542, Dev F1: 0.6525
+No improvement on dev loss. Patience: 19/20
+
+Epoch 24/100
+Epoch 24 - Train Loss: 0.4336, Train Accuracy: 0.8006
+Epoch 24 - Dev Loss: 1.5388, Dev Accuracy: 0.6639, Dev F1: 0.6649
+No improvement on dev loss. Patience: 20/20
+Early stopping triggered.
+
+Final Training Loss: 0.4336
+Final Training Accuracy: 0.8006
+Best Dev Loss: 0.8078
+Best Dev Accuracy: 0.6465, Best Dev Macro F1: 0.6462
+Config LR=0.0001, BS=8, Dropout=0.1, Hidden Dim=2048, Num Layers=6 -> Dev Loss: 0.8078, Dev Accuracy: 0.6465, Dev F1: 0.6462
+
+Running experiment with lr=0.0001, model=mlp, batch_size=8, hidden_dim=2048, num_layers=8
+
+=== Encoding datasets with batch_size 8 ===
+
+Epoch 1/100
+Epoch 1 - Train Loss: 0.9431, Train Accuracy: 0.5780
+Epoch 1 - Dev Loss: 1.2372, Dev Accuracy: 0.5010, Dev F1: 0.4392
+Dev loss improved; saving best model.
+
+Epoch 2/100
+Epoch 2 - Train Loss: 0.8466, Train Accuracy: 0.6244
+Epoch 2 - Dev Loss: 0.9492, Dev Accuracy: 0.5732, Dev F1: 0.5628
+Dev loss improved; saving best model.
+
+Epoch 3/100
+Epoch 3 - Train Loss: 0.7863, Train Accuracy: 0.6530
+Epoch 3 - Dev Loss: 0.8642, Dev Accuracy: 0.6387, Dev F1: 0.6411
+Dev loss improved; saving best model.
+
+Epoch 4/100
+Epoch 4 - Train Loss: 0.7420, Train Accuracy: 0.6740
+Epoch 4 - Dev Loss: 0.7886, Dev Accuracy: 0.6474, Dev F1: 0.6370
+Dev loss improved; saving best model.
+
+Epoch 5/100
+Epoch 5 - Train Loss: 0.7041, Train Accuracy: 0.6914
+Epoch 5 - Dev Loss: 0.8830, Dev Accuracy: 0.6101, Dev F1: 0.6036
+No improvement on dev loss. Patience: 1/20
+
+Epoch 6/100
+Epoch 6 - Train Loss: 0.6731, Train Accuracy: 0.7052
+Epoch 6 - Dev Loss: 0.8200, Dev Accuracy: 0.6659, Dev F1: 0.6640
+No improvement on dev loss. Patience: 2/20
+
+Epoch 7/100
+Epoch 7 - Train Loss: 0.6456, Train Accuracy: 0.7165
+Epoch 7 - Dev Loss: 0.8699, Dev Accuracy: 0.6513, Dev F1: 0.6508
+No improvement on dev loss. Patience: 3/20
+
+Epoch 8/100
+Epoch 8 - Train Loss: 0.6220, Train Accuracy: 0.7257
+Epoch 8 - Dev Loss: 0.9622, Dev Accuracy: 0.6596, Dev F1: 0.6612
+No improvement on dev loss. Patience: 4/20
+
+Epoch 9/100
+Epoch 9 - Train Loss: 0.6014, Train Accuracy: 0.7339
+Epoch 9 - Dev Loss: 0.8835, Dev Accuracy: 0.6586, Dev F1: 0.6563
+No improvement on dev loss. Patience: 5/20
+
+Epoch 10/100
+Epoch 10 - Train Loss: 0.5828, Train Accuracy: 0.7413
+Epoch 10 - Dev Loss: 0.9439, Dev Accuracy: 0.6581, Dev F1: 0.6603
+No improvement on dev loss. Patience: 6/20
+
+Epoch 11/100
+Epoch 11 - Train Loss: 0.5669, Train Accuracy: 0.7475
+Epoch 11 - Dev Loss: 1.1519, Dev Accuracy: 0.6353, Dev F1: 0.6376
+No improvement on dev loss. Patience: 7/20
+
+Epoch 12/100
+Epoch 12 - Train Loss: 0.5522, Train Accuracy: 0.7531
+Epoch 12 - Dev Loss: 1.6615, Dev Accuracy: 0.6018, Dev F1: 0.5978
+No improvement on dev loss. Patience: 8/20
+
+Epoch 13/100
+Epoch 13 - Train Loss: 0.5390, Train Accuracy: 0.7581
+Epoch 13 - Dev Loss: 1.1219, Dev Accuracy: 0.6469, Dev F1: 0.6496
+No improvement on dev loss. Patience: 9/20
+
+Epoch 14/100
+Epoch 14 - Train Loss: 0.5269, Train Accuracy: 0.7627
+Epoch 14 - Dev Loss: 0.9967, Dev Accuracy: 0.6508, Dev F1: 0.6538
+No improvement on dev loss. Patience: 10/20
+
+Epoch 15/100
+Epoch 15 - Train Loss: 0.5156, Train Accuracy: 0.7671
+Epoch 15 - Dev Loss: 1.0822, Dev Accuracy: 0.6600, Dev F1: 0.6601
+No improvement on dev loss. Patience: 11/20
+
+Epoch 16/100
+Epoch 16 - Train Loss: 0.5050, Train Accuracy: 0.7712
+Epoch 16 - Dev Loss: 1.1475, Dev Accuracy: 0.6406, Dev F1: 0.6442
+No improvement on dev loss. Patience: 12/20
+
+Epoch 17/100
+Epoch 17 - Train Loss: 0.4952, Train Accuracy: 0.7749
+Epoch 17 - Dev Loss: 1.3874, Dev Accuracy: 0.6508, Dev F1: 0.6532
+No improvement on dev loss. Patience: 13/20
+
+Epoch 18/100
+Epoch 18 - Train Loss: 0.4858, Train Accuracy: 0.7786
+Epoch 18 - Dev Loss: 1.2867, Dev Accuracy: 0.6600, Dev F1: 0.6623
+No improvement on dev loss. Patience: 14/20
+
+Epoch 19/100
+Epoch 19 - Train Loss: 0.4772, Train Accuracy: 0.7820
+Epoch 19 - Dev Loss: 1.3194, Dev Accuracy: 0.6474, Dev F1: 0.6504
+No improvement on dev loss. Patience: 15/20
+
+Epoch 20/100
+Epoch 20 - Train Loss: 0.4690, Train Accuracy: 0.7853
+Epoch 20 - Dev Loss: 1.3227, Dev Accuracy: 0.6751, Dev F1: 0.6756
+No improvement on dev loss. Patience: 16/20
+
+Epoch 21/100
+Epoch 21 - Train Loss: 0.4613, Train Accuracy: 0.7884
+Epoch 21 - Dev Loss: 1.2097, Dev Accuracy: 0.6673, Dev F1: 0.6680
+No improvement on dev loss. Patience: 17/20
+
+Epoch 22/100
+Epoch 22 - Train Loss: 0.4538, Train Accuracy: 0.7915
+Epoch 22 - Dev Loss: 1.7225, Dev Accuracy: 0.6387, Dev F1: 0.6412
+No improvement on dev loss. Patience: 18/20
+
+Epoch 23/100
+Epoch 23 - Train Loss: 0.4470, Train Accuracy: 0.7944
+Epoch 23 - Dev Loss: 1.5558, Dev Accuracy: 0.6649, Dev F1: 0.6663
+No improvement on dev loss. Patience: 19/20
+
+Epoch 24/100
+Epoch 24 - Train Loss: 0.4403, Train Accuracy: 0.7972
+Epoch 24 - Dev Loss: 1.6131, Dev Accuracy: 0.6484, Dev F1: 0.6488
+No improvement on dev loss. Patience: 20/20
+Early stopping triggered.
+
+Final Training Loss: 0.4403
+Final Training Accuracy: 0.7972
+Best Dev Loss: 0.7886
+Best Dev Accuracy: 0.6474, Best Dev Macro F1: 0.6370
+Config LR=0.0001, BS=8, Dropout=0.1, Hidden Dim=2048, Num Layers=8 -> Dev Loss: 0.7886, Dev Accuracy: 0.6474, Dev F1: 0.6370
+
+Running experiment with lr=0.0001, model=mlp, batch_size=8, hidden_dim=2048, num_layers=10
+
+=== Encoding datasets with batch_size 8 ===
+
+Epoch 1/100
+Epoch 1 - Train Loss: 0.9449, Train Accuracy: 0.5768
+Epoch 1 - Dev Loss: 1.0179, Dev Accuracy: 0.5509, Dev F1: 0.5229
+Dev loss improved; saving best model.
+
+Epoch 2/100
+Epoch 2 - Train Loss: 0.8440, Train Accuracy: 0.6224
+Epoch 2 - Dev Loss: 1.0267, Dev Accuracy: 0.5723, Dev F1: 0.5606
+No improvement on dev loss. Patience: 1/20
+
+Epoch 3/100
+Epoch 3 - Train Loss: 0.7812, Train Accuracy: 0.6544
+Epoch 3 - Dev Loss: 0.8776, Dev Accuracy: 0.6358, Dev F1: 0.6379
+Dev loss improved; saving best model.
+
+Epoch 4/100
+Epoch 4 - Train Loss: 0.7367, Train Accuracy: 0.6750
+Epoch 4 - Dev Loss: 0.9122, Dev Accuracy: 0.6052, Dev F1: 0.5958
+No improvement on dev loss. Patience: 1/20
+
+Epoch 5/100
+Epoch 5 - Train Loss: 0.6999, Train Accuracy: 0.6915
+Epoch 5 - Dev Loss: 0.8171, Dev Accuracy: 0.6532, Dev F1: 0.6553
+Dev loss improved; saving best model.
+
+Epoch 6/100
+Epoch 6 - Train Loss: 0.6688, Train Accuracy: 0.7049
+Epoch 6 - Dev Loss: 0.8633, Dev Accuracy: 0.6673, Dev F1: 0.6682
+No improvement on dev loss. Patience: 1/20
+
+Epoch 7/100
+Epoch 7 - Train Loss: 0.6419, Train Accuracy: 0.7162
+Epoch 7 - Dev Loss: 0.8866, Dev Accuracy: 0.6629, Dev F1: 0.6632
+No improvement on dev loss. Patience: 2/20
+
+Epoch 8/100
+Epoch 8 - Train Loss: 0.6186, Train Accuracy: 0.7258
+Epoch 8 - Dev Loss: 1.0007, Dev Accuracy: 0.6668, Dev F1: 0.6661
+No improvement on dev loss. Patience: 3/20
+
+Epoch 9/100
+Epoch 9 - Train Loss: 0.5991, Train Accuracy: 0.7332
+Epoch 9 - Dev Loss: 1.2365, Dev Accuracy: 0.6654, Dev F1: 0.6635
+No improvement on dev loss. Patience: 4/20
+
+Epoch 10/100
+Epoch 10 - Train Loss: 0.5803, Train Accuracy: 0.7408
+Epoch 10 - Dev Loss: 0.9570, Dev Accuracy: 0.6431, Dev F1: 0.6453
+No improvement on dev loss. Patience: 5/20
+
+Epoch 11/100
+Epoch 11 - Train Loss: 0.5639, Train Accuracy: 0.7473
+Epoch 11 - Dev Loss: 0.9776, Dev Accuracy: 0.6518, Dev F1: 0.6524
+No improvement on dev loss. Patience: 6/20
+
+Epoch 12/100
+Epoch 12 - Train Loss: 0.5489, Train Accuracy: 0.7532
+Epoch 12 - Dev Loss: 1.2184, Dev Accuracy: 0.6639, Dev F1: 0.6645
+No improvement on dev loss. Patience: 7/20
+
+Epoch 13/100
+Epoch 13 - Train Loss: 0.5353, Train Accuracy: 0.7587
+Epoch 13 - Dev Loss: 1.0111, Dev Accuracy: 0.6736, Dev F1: 0.6730
+No improvement on dev loss. Patience: 8/20
+
+Epoch 14/100
+Epoch 14 - Train Loss: 0.5225, Train Accuracy: 0.7635
+Epoch 14 - Dev Loss: 1.8720, Dev Accuracy: 0.6261, Dev F1: 0.6223
+No improvement on dev loss. Patience: 9/20
+
+Epoch 15/100
+Epoch 15 - Train Loss: 0.5114, Train Accuracy: 0.7679
+Epoch 15 - Dev Loss: 1.1236, Dev Accuracy: 0.6508, Dev F1: 0.6409
+No improvement on dev loss. Patience: 10/20
+
+Epoch 16/100
+Epoch 16 - Train Loss: 0.5008, Train Accuracy: 0.7721
+Epoch 16 - Dev Loss: 1.3614, Dev Accuracy: 0.6222, Dev F1: 0.6211
+No improvement on dev loss. Patience: 11/20
+
+Epoch 17/100
+Epoch 17 - Train Loss: 0.4912, Train Accuracy: 0.7758
+Epoch 17 - Dev Loss: 1.2701, Dev Accuracy: 0.6494, Dev F1: 0.6523
+No improvement on dev loss. Patience: 12/20
+
+Epoch 18/100
+Epoch 18 - Train Loss: 0.4822, Train Accuracy: 0.7794
+Epoch 18 - Dev Loss: 1.0469, Dev Accuracy: 0.6358, Dev F1: 0.6388
+No improvement on dev loss. Patience: 13/20
+
+Epoch 19/100
+Epoch 19 - Train Loss: 0.4736, Train Accuracy: 0.7829
+Epoch 19 - Dev Loss: 1.3662, Dev Accuracy: 0.6431, Dev F1: 0.6450
+No improvement on dev loss. Patience: 14/20
+
+Epoch 20/100
+Epoch 20 - Train Loss: 0.4656, Train Accuracy: 0.7863
+Epoch 20 - Dev Loss: 1.2641, Dev Accuracy: 0.6654, Dev F1: 0.6668
+No improvement on dev loss. Patience: 15/20
+
+Epoch 21/100
+Epoch 21 - Train Loss: 0.4580, Train Accuracy: 0.7895
+Epoch 21 - Dev Loss: 1.4270, Dev Accuracy: 0.6319, Dev F1: 0.6343
+No improvement on dev loss. Patience: 16/20
+
+Epoch 22/100
+Epoch 22 - Train Loss: 0.4507, Train Accuracy: 0.7926
+Epoch 22 - Dev Loss: 1.4745, Dev Accuracy: 0.6484, Dev F1: 0.6500
+No improvement on dev loss. Patience: 17/20
+
+Epoch 23/100
+Epoch 23 - Train Loss: 0.4439, Train Accuracy: 0.7955
+Epoch 23 - Dev Loss: 1.4135, Dev Accuracy: 0.6586, Dev F1: 0.6588
+No improvement on dev loss. Patience: 18/20
+
+Epoch 24/100
+Epoch 24 - Train Loss: 0.4373, Train Accuracy: 0.7982
+Epoch 24 - Dev Loss: 1.4079, Dev Accuracy: 0.6494, Dev F1: 0.6517
+No improvement on dev loss. Patience: 19/20
+
+Epoch 25/100
+Epoch 25 - Train Loss: 0.4310, Train Accuracy: 0.8009
+Epoch 25 - Dev Loss: 1.3672, Dev Accuracy: 0.6513, Dev F1: 0.6509
+No improvement on dev loss. Patience: 20/20
+Early stopping triggered.
+
+Final Training Loss: 0.4310
+Final Training Accuracy: 0.8009
+Best Dev Loss: 0.8171
+Best Dev Accuracy: 0.6532, Best Dev Macro F1: 0.6553
+Config LR=0.0001, BS=8, Dropout=0.1, Hidden Dim=2048, Num Layers=10 -> Dev Loss: 0.8171, Dev Accuracy: 0.6532, Dev F1: 0.6553
+
+Running experiment with lr=0.0001, model=mlp, batch_size=8, hidden_dim=1024, num_layers=6
+
+=== Encoding datasets with batch_size 8 ===
+
+Epoch 1/100
+Epoch 1 - Train Loss: 0.9220, Train Accuracy: 0.5809
+Epoch 1 - Dev Loss: 0.8837, Dev Accuracy: 0.5955, Dev F1: 0.5927
+Dev loss improved; saving best model.
+
+Epoch 2/100
+Epoch 2 - Train Loss: 0.8260, Train Accuracy: 0.6293
+Epoch 2 - Dev Loss: 0.8482, Dev Accuracy: 0.6174, Dev F1: 0.6189
+Dev loss improved; saving best model.
+
+Epoch 3/100
+Epoch 3 - Train Loss: 0.7653, Train Accuracy: 0.6588
+Epoch 3 - Dev Loss: 0.8056, Dev Accuracy: 0.6421, Dev F1: 0.6369
+Dev loss improved; saving best model.
+
+Epoch 4/100
+Epoch 4 - Train Loss: 0.7206, Train Accuracy: 0.6806
+Epoch 4 - Dev Loss: 1.3844, Dev Accuracy: 0.5533, Dev F1: 0.5352
+No improvement on dev loss. Patience: 1/20
+
+Epoch 5/100
+Epoch 5 - Train Loss: 0.6847, Train Accuracy: 0.6970
+Epoch 5 - Dev Loss: 0.9827, Dev Accuracy: 0.6178, Dev F1: 0.6187
+No improvement on dev loss. Patience: 2/20
+
+Epoch 6/100
+Epoch 6 - Train Loss: 0.6551, Train Accuracy: 0.7104
+Epoch 6 - Dev Loss: 0.8070, Dev Accuracy: 0.6615, Dev F1: 0.6624
+No improvement on dev loss. Patience: 3/20
+
+Epoch 7/100
+Epoch 7 - Train Loss: 0.6305, Train Accuracy: 0.7210
+Epoch 7 - Dev Loss: 0.8973, Dev Accuracy: 0.6654, Dev F1: 0.6651
+No improvement on dev loss. Patience: 4/20
+
+Epoch 8/100
+Epoch 8 - Train Loss: 0.6090, Train Accuracy: 0.7298
+Epoch 8 - Dev Loss: 0.9271, Dev Accuracy: 0.6445, Dev F1: 0.6460
+No improvement on dev loss. Patience: 5/20
+
+Epoch 9/100
+Epoch 9 - Train Loss: 0.5896, Train Accuracy: 0.7378
+Epoch 9 - Dev Loss: 0.9412, Dev Accuracy: 0.6673, Dev F1: 0.6673
+No improvement on dev loss. Patience: 6/20
+
+Epoch 10/100
+Epoch 10 - Train Loss: 0.5725, Train Accuracy: 0.7452
+Epoch 10 - Dev Loss: 0.9561, Dev Accuracy: 0.6494, Dev F1: 0.6522
+No improvement on dev loss. Patience: 7/20
+
+Epoch 11/100
+Epoch 11 - Train Loss: 0.5575, Train Accuracy: 0.7513
+Epoch 11 - Dev Loss: 1.0944, Dev Accuracy: 0.6518, Dev F1: 0.6480
+No improvement on dev loss. Patience: 8/20
+
+Epoch 12/100
+Epoch 12 - Train Loss: 0.5436, Train Accuracy: 0.7567
+Epoch 12 - Dev Loss: 0.9819, Dev Accuracy: 0.6586, Dev F1: 0.6592
+No improvement on dev loss. Patience: 9/20
+
+Epoch 13/100
+Epoch 13 - Train Loss: 0.5311, Train Accuracy: 0.7620
+Epoch 13 - Dev Loss: 1.1360, Dev Accuracy: 0.6508, Dev F1: 0.6490
+No improvement on dev loss. Patience: 10/20
+
+Epoch 14/100
+Epoch 14 - Train Loss: 0.5193, Train Accuracy: 0.7668
+Epoch 14 - Dev Loss: 1.1303, Dev Accuracy: 0.6625, Dev F1: 0.6624
+No improvement on dev loss. Patience: 11/20
+
+Epoch 15/100
+Epoch 15 - Train Loss: 0.5085, Train Accuracy: 0.7711
+Epoch 15 - Dev Loss: 1.1015, Dev Accuracy: 0.6499, Dev F1: 0.6517
+No improvement on dev loss. Patience: 12/20
+
+Epoch 16/100
+Epoch 16 - Train Loss: 0.4982, Train Accuracy: 0.7750
+Epoch 16 - Dev Loss: 1.2499, Dev Accuracy: 0.6542, Dev F1: 0.6549
+No improvement on dev loss. Patience: 13/20
+
+Epoch 17/100
+Epoch 17 - Train Loss: 0.4887, Train Accuracy: 0.7787
+Epoch 17 - Dev Loss: 1.0998, Dev Accuracy: 0.6668, Dev F1: 0.6672
+No improvement on dev loss. Patience: 14/20
+
+Epoch 18/100
+Epoch 18 - Train Loss: 0.4799, Train Accuracy: 0.7825
+Epoch 18 - Dev Loss: 1.1672, Dev Accuracy: 0.6499, Dev F1: 0.6527
+No improvement on dev loss. Patience: 15/20
+
+Epoch 19/100
+Epoch 19 - Train Loss: 0.4716, Train Accuracy: 0.7860
+Epoch 19 - Dev Loss: 1.2047, Dev Accuracy: 0.6431, Dev F1: 0.6453
+No improvement on dev loss. Patience: 16/20
+
+Epoch 20/100
+Epoch 20 - Train Loss: 0.4636, Train Accuracy: 0.7894
+Epoch 20 - Dev Loss: 1.3326, Dev Accuracy: 0.6537, Dev F1: 0.6518
+No improvement on dev loss. Patience: 17/20
+
+Epoch 21/100
+Epoch 21 - Train Loss: 0.4560, Train Accuracy: 0.7925
+Epoch 21 - Dev Loss: 1.4151, Dev Accuracy: 0.6397, Dev F1: 0.6421
+No improvement on dev loss. Patience: 18/20
+
+Epoch 22/100
+Epoch 22 - Train Loss: 0.4487, Train Accuracy: 0.7956
+Epoch 22 - Dev Loss: 1.4585, Dev Accuracy: 0.6741, Dev F1: 0.6746
+No improvement on dev loss. Patience: 19/20
+
+Epoch 23/100
+Epoch 23 - Train Loss: 0.4420, Train Accuracy: 0.7984
+Epoch 23 - Dev Loss: 1.6671, Dev Accuracy: 0.6532, Dev F1: 0.6535
+No improvement on dev loss. Patience: 20/20
+Early stopping triggered.
+
+Final Training Loss: 0.4420
+Final Training Accuracy: 0.7984
+Best Dev Loss: 0.8056
+Best Dev Accuracy: 0.6421, Best Dev Macro F1: 0.6369
+Config LR=0.0001, BS=8, Dropout=0.25, Hidden Dim=1024, Num Layers=6 -> Dev Loss: 0.8056, Dev Accuracy: 0.6421, Dev F1: 0.6369
+
+Running experiment with lr=0.0001, model=mlp, batch_size=8, hidden_dim=1024, num_layers=8
+
+=== Encoding datasets with batch_size 8 ===
+
+Epoch 1/100
+Epoch 1 - Train Loss: 0.9356, Train Accuracy: 0.5703
+Epoch 1 - Dev Loss: 0.8497, Dev Accuracy: 0.6178, Dev F1: 0.6157
+Dev loss improved; saving best model.
+
+Epoch 2/100
+Epoch 2 - Train Loss: 0.8374, Train Accuracy: 0.6203
+Epoch 2 - Dev Loss: 0.7727, Dev Accuracy: 0.6576, Dev F1: 0.6545
+Dev loss improved; saving best model.
+
+Epoch 3/100
+Epoch 3 - Train Loss: 0.7763, Train Accuracy: 0.6520
+Epoch 3 - Dev Loss: 0.7834, Dev Accuracy: 0.6654, Dev F1: 0.6645
+No improvement on dev loss. Patience: 1/20
+
+Epoch 4/100
+Epoch 4 - Train Loss: 0.7297, Train Accuracy: 0.6740
+Epoch 4 - Dev Loss: 1.0004, Dev Accuracy: 0.5965, Dev F1: 0.5919
+No improvement on dev loss. Patience: 2/20
+
+Epoch 5/100
+Epoch 5 - Train Loss: 0.6933, Train Accuracy: 0.6912
+Epoch 5 - Dev Loss: 0.7973, Dev Accuracy: 0.6712, Dev F1: 0.6701
+No improvement on dev loss. Patience: 3/20
+
+Epoch 6/100
+Epoch 6 - Train Loss: 0.6615, Train Accuracy: 0.7055
+Epoch 6 - Dev Loss: 0.8932, Dev Accuracy: 0.6571, Dev F1: 0.6559
+No improvement on dev loss. Patience: 4/20
+
+Epoch 7/100
+Epoch 7 - Train Loss: 0.6365, Train Accuracy: 0.7161
+Epoch 7 - Dev Loss: 0.8537, Dev Accuracy: 0.6668, Dev F1: 0.6658
+No improvement on dev loss. Patience: 5/20
+
+Epoch 8/100
+Epoch 8 - Train Loss: 0.6146, Train Accuracy: 0.7255
+Epoch 8 - Dev Loss: 0.8685, Dev Accuracy: 0.6610, Dev F1: 0.6603
+No improvement on dev loss. Patience: 6/20
+
+Epoch 9/100
+Epoch 9 - Train Loss: 0.5951, Train Accuracy: 0.7340
+Epoch 9 - Dev Loss: 1.0652, Dev Accuracy: 0.6426, Dev F1: 0.6445
+No improvement on dev loss. Patience: 7/20
+
+Epoch 10/100
+Epoch 10 - Train Loss: 0.5780, Train Accuracy: 0.7411
+Epoch 10 - Dev Loss: 0.9347, Dev Accuracy: 0.6668, Dev F1: 0.6604
+No improvement on dev loss. Patience: 8/20
+
+Epoch 11/100
+Epoch 11 - Train Loss: 0.5625, Train Accuracy: 0.7476
+Epoch 11 - Dev Loss: 0.9324, Dev Accuracy: 0.6688, Dev F1: 0.6643
+No improvement on dev loss. Patience: 9/20
+
+Epoch 12/100
+Epoch 12 - Train Loss: 0.5482, Train Accuracy: 0.7536
+Epoch 12 - Dev Loss: 0.9318, Dev Accuracy: 0.6591, Dev F1: 0.6582
+No improvement on dev loss. Patience: 10/20
+
+Epoch 13/100
+Epoch 13 - Train Loss: 0.5353, Train Accuracy: 0.7589
+Epoch 13 - Dev Loss: 1.0376, Dev Accuracy: 0.6426, Dev F1: 0.6403
+No improvement on dev loss. Patience: 11/20
+
+Epoch 14/100
+Epoch 14 - Train Loss: 0.5237, Train Accuracy: 0.7636
+Epoch 14 - Dev Loss: 1.1040, Dev Accuracy: 0.6644, Dev F1: 0.6656
+No improvement on dev loss. Patience: 12/20
+
+Epoch 15/100
+Epoch 15 - Train Loss: 0.5127, Train Accuracy: 0.7682
+Epoch 15 - Dev Loss: 1.2600, Dev Accuracy: 0.6460, Dev F1: 0.6420
+No improvement on dev loss. Patience: 13/20
+
+Epoch 16/100
+Epoch 16 - Train Loss: 0.5025, Train Accuracy: 0.7725
+Epoch 16 - Dev Loss: 1.1637, Dev Accuracy: 0.6552, Dev F1: 0.6568
+No improvement on dev loss. Patience: 14/20
+
+Epoch 17/100
+Epoch 17 - Train Loss: 0.4928, Train Accuracy: 0.7764
+Epoch 17 - Dev Loss: 1.2417, Dev Accuracy: 0.6547, Dev F1: 0.6557
+No improvement on dev loss. Patience: 15/20
+
+Epoch 18/100
+Epoch 18 - Train Loss: 0.4838, Train Accuracy: 0.7801
+Epoch 18 - Dev Loss: 1.2045, Dev Accuracy: 0.6552, Dev F1: 0.6557
+No improvement on dev loss. Patience: 16/20
+
+Epoch 19/100
+Epoch 19 - Train Loss: 0.4753, Train Accuracy: 0.7836
+Epoch 19 - Dev Loss: 1.2724, Dev Accuracy: 0.6746, Dev F1: 0.6754
+No improvement on dev loss. Patience: 17/20
+
+Epoch 20/100
+Epoch 20 - Train Loss: 0.4673, Train Accuracy: 0.7869
+Epoch 20 - Dev Loss: 1.2489, Dev Accuracy: 0.6596, Dev F1: 0.6595
+No improvement on dev loss. Patience: 18/20
+
+Epoch 21/100
+Epoch 21 - Train Loss: 0.4598, Train Accuracy: 0.7901
+Epoch 21 - Dev Loss: 1.5261, Dev Accuracy: 0.5994, Dev F1: 0.5943
+No improvement on dev loss. Patience: 19/20
+
+Epoch 22/100
+Epoch 22 - Train Loss: 0.4524, Train Accuracy: 0.7931
+Epoch 22 - Dev Loss: 1.2991, Dev Accuracy: 0.6455, Dev F1: 0.6480
+No improvement on dev loss. Patience: 20/20
+Early stopping triggered.
+
+Final Training Loss: 0.4524
+Final Training Accuracy: 0.7931
+Best Dev Loss: 0.7727
+Best Dev Accuracy: 0.6576, Best Dev Macro F1: 0.6545
+Config LR=0.0001, BS=8, Dropout=0.25, Hidden Dim=1024, Num Layers=8 -> Dev Loss: 0.7727, Dev Accuracy: 0.6576, Dev F1: 0.6545
+
+Running experiment with lr=0.0001, model=mlp, batch_size=8, hidden_dim=1024, num_layers=10
+
+=== Encoding datasets with batch_size 8 ===
+
+Epoch 1/100
+Epoch 1 - Train Loss: 0.9558, Train Accuracy: 0.5639
+Epoch 1 - Dev Loss: 0.8686, Dev Accuracy: 0.5829, Dev F1: 0.5778
+Dev loss improved; saving best model.
+
+Epoch 2/100
+Epoch 2 - Train Loss: 0.8588, Train Accuracy: 0.6127
+Epoch 2 - Dev Loss: 0.9643, Dev Accuracy: 0.5485, Dev F1: 0.5335
+No improvement on dev loss. Patience: 1/20
+
+Epoch 3/100
+Epoch 3 - Train Loss: 0.7954, Train Accuracy: 0.6436
+Epoch 3 - Dev Loss: 0.8774, Dev Accuracy: 0.6397, Dev F1: 0.6393
+No improvement on dev loss. Patience: 2/20
+
+Epoch 4/100
+Epoch 4 - Train Loss: 0.7476, Train Accuracy: 0.6671
+Epoch 4 - Dev Loss: 0.8052, Dev Accuracy: 0.6712, Dev F1: 0.6700
+Dev loss improved; saving best model.
+
+Epoch 5/100
+Epoch 5 - Train Loss: 0.7096, Train Accuracy: 0.6854
+Epoch 5 - Dev Loss: 1.0283, Dev Accuracy: 0.5887, Dev F1: 0.5841
+No improvement on dev loss. Patience: 1/20
+
+Epoch 6/100
+Epoch 6 - Train Loss: 0.6785, Train Accuracy: 0.6996
+Epoch 6 - Dev Loss: 0.8142, Dev Accuracy: 0.6591, Dev F1: 0.6573
+No improvement on dev loss. Patience: 2/20
+
+Epoch 7/100
+Epoch 7 - Train Loss: 0.6516, Train Accuracy: 0.7113
+Epoch 7 - Dev Loss: 0.9101, Dev Accuracy: 0.6309, Dev F1: 0.6282
+No improvement on dev loss. Patience: 3/20
+
+Epoch 8/100
+Epoch 8 - Train Loss: 0.6289, Train Accuracy: 0.7214
+Epoch 8 - Dev Loss: 0.8650, Dev Accuracy: 0.6649, Dev F1: 0.6655
+No improvement on dev loss. Patience: 4/20
+
+Epoch 9/100
+Epoch 9 - Train Loss: 0.6087, Train Accuracy: 0.7298
+Epoch 9 - Dev Loss: 1.2660, Dev Accuracy: 0.5951, Dev F1: 0.5939
+No improvement on dev loss. Patience: 5/20
+
+Epoch 10/100
+Epoch 10 - Train Loss: 0.5911, Train Accuracy: 0.7371
+Epoch 10 - Dev Loss: 1.0718, Dev Accuracy: 0.6484, Dev F1: 0.6462
+No improvement on dev loss. Patience: 6/20
+
+Epoch 11/100
+Epoch 11 - Train Loss: 0.5748, Train Accuracy: 0.7438
+Epoch 11 - Dev Loss: 1.0710, Dev Accuracy: 0.6790, Dev F1: 0.6745
+No improvement on dev loss. Patience: 7/20
+
+Epoch 12/100
+Epoch 12 - Train Loss: 0.5601, Train Accuracy: 0.7498
+Epoch 12 - Dev Loss: 1.0616, Dev Accuracy: 0.6717, Dev F1: 0.6713
+No improvement on dev loss. Patience: 8/20
+
+Epoch 13/100
+Epoch 13 - Train Loss: 0.5466, Train Accuracy: 0.7552
+Epoch 13 - Dev Loss: 1.3595, Dev Accuracy: 0.6048, Dev F1: 0.6032
+No improvement on dev loss. Patience: 9/20
+
+Epoch 14/100
+Epoch 14 - Train Loss: 0.5341, Train Accuracy: 0.7604
+Epoch 14 - Dev Loss: 1.2503, Dev Accuracy: 0.6411, Dev F1: 0.6436
+No improvement on dev loss. Patience: 10/20
+
+Epoch 15/100
+Epoch 15 - Train Loss: 0.5228, Train Accuracy: 0.7650
+Epoch 15 - Dev Loss: 1.1692, Dev Accuracy: 0.6503, Dev F1: 0.6538
+No improvement on dev loss. Patience: 11/20
+
+Epoch 16/100
+Epoch 16 - Train Loss: 0.5120, Train Accuracy: 0.7693
+Epoch 16 - Dev Loss: 1.2533, Dev Accuracy: 0.6426, Dev F1: 0.6449
+No improvement on dev loss. Patience: 12/20
+
+Epoch 17/100
+Epoch 17 - Train Loss: 0.5024, Train Accuracy: 0.7733
+Epoch 17 - Dev Loss: 1.1600, Dev Accuracy: 0.6532, Dev F1: 0.6555
+No improvement on dev loss. Patience: 13/20
+
+Epoch 18/100
+Epoch 18 - Train Loss: 0.4930, Train Accuracy: 0.7770
+Epoch 18 - Dev Loss: 1.2839, Dev Accuracy: 0.6484, Dev F1: 0.6431
+No improvement on dev loss. Patience: 14/20
+
+Epoch 19/100
+Epoch 19 - Train Loss: 0.4844, Train Accuracy: 0.7805
+Epoch 19 - Dev Loss: 1.2485, Dev Accuracy: 0.6625, Dev F1: 0.6641
+No improvement on dev loss. Patience: 15/20
+
+Epoch 20/100
+Epoch 20 - Train Loss: 0.4759, Train Accuracy: 0.7838
+Epoch 20 - Dev Loss: 1.4296, Dev Accuracy: 0.6591, Dev F1: 0.6602
+No improvement on dev loss. Patience: 16/20
+
+Epoch 21/100
+Epoch 21 - Train Loss: 0.4680, Train Accuracy: 0.7870
+Epoch 21 - Dev Loss: 1.5434, Dev Accuracy: 0.6494, Dev F1: 0.6512
+No improvement on dev loss. Patience: 17/20
+
+Epoch 22/100
+Epoch 22 - Train Loss: 0.4605, Train Accuracy: 0.7900
+Epoch 22 - Dev Loss: 1.8069, Dev Accuracy: 0.6639, Dev F1: 0.6658
+No improvement on dev loss. Patience: 18/20
+
+Epoch 23/100
+Epoch 23 - Train Loss: 0.4534, Train Accuracy: 0.7930
+Epoch 23 - Dev Loss: 1.5837, Dev Accuracy: 0.6659, Dev F1: 0.6677
+No improvement on dev loss. Patience: 19/20
+
+Epoch 24/100
+Epoch 24 - Train Loss: 0.4465, Train Accuracy: 0.7958
+Epoch 24 - Dev Loss: 1.6038, Dev Accuracy: 0.6649, Dev F1: 0.6668
+No improvement on dev loss. Patience: 20/20
+Early stopping triggered.
+
+Final Training Loss: 0.4465
+Final Training Accuracy: 0.7958
+Best Dev Loss: 0.8052
+Best Dev Accuracy: 0.6712, Best Dev Macro F1: 0.6700
+Config LR=0.0001, BS=8, Dropout=0.25, Hidden Dim=1024, Num Layers=10 -> Dev Loss: 0.8052, Dev Accuracy: 0.6712, Dev F1: 0.6700
+
+Running experiment with lr=0.0001, model=mlp, batch_size=8, hidden_dim=2048, num_layers=6
+
+=== Encoding datasets with batch_size 8 ===
+
+Epoch 1/100
+Epoch 1 - Train Loss: 0.9448, Train Accuracy: 0.5731
+Epoch 1 - Dev Loss: 0.9469, Dev Accuracy: 0.5790, Dev F1: 0.5657
+Dev loss improved; saving best model.
+
+Epoch 2/100
+Epoch 2 - Train Loss: 0.8470, Train Accuracy: 0.6179
+Epoch 2 - Dev Loss: 0.7729, Dev Accuracy: 0.6663, Dev F1: 0.6670
+Dev loss improved; saving best model.
+
+Epoch 3/100
+Epoch 3 - Train Loss: 0.7841, Train Accuracy: 0.6492
+Epoch 3 - Dev Loss: 0.8169, Dev Accuracy: 0.6523, Dev F1: 0.6537
+No improvement on dev loss. Patience: 1/20
+
+Epoch 4/100
+Epoch 4 - Train Loss: 0.7385, Train Accuracy: 0.6718
+Epoch 4 - Dev Loss: 0.8178, Dev Accuracy: 0.6518, Dev F1: 0.6550
+No improvement on dev loss. Patience: 2/20
+
+Epoch 5/100
+Epoch 5 - Train Loss: 0.7015, Train Accuracy: 0.6890
+Epoch 5 - Dev Loss: 0.9625, Dev Accuracy: 0.6382, Dev F1: 0.6362
+No improvement on dev loss. Patience: 3/20
+
+Epoch 6/100
+Epoch 6 - Train Loss: 0.6705, Train Accuracy: 0.7025
+Epoch 6 - Dev Loss: 0.9094, Dev Accuracy: 0.6406, Dev F1: 0.6434
+No improvement on dev loss. Patience: 4/20
+
+Epoch 7/100
+Epoch 7 - Train Loss: 0.6438, Train Accuracy: 0.7144
+Epoch 7 - Dev Loss: 0.9398, Dev Accuracy: 0.6450, Dev F1: 0.6457
+No improvement on dev loss. Patience: 5/20
+
+Epoch 8/100
+Epoch 8 - Train Loss: 0.6204, Train Accuracy: 0.7241
+Epoch 8 - Dev Loss: 1.0111, Dev Accuracy: 0.6339, Dev F1: 0.6351
+No improvement on dev loss. Patience: 6/20
+
+Epoch 9/100
+Epoch 9 - Train Loss: 0.5996, Train Accuracy: 0.7326
+Epoch 9 - Dev Loss: 0.9159, Dev Accuracy: 0.6688, Dev F1: 0.6673
+No improvement on dev loss. Patience: 7/20
+
+Epoch 10/100
+Epoch 10 - Train Loss: 0.5815, Train Accuracy: 0.7402
+Epoch 10 - Dev Loss: 1.0809, Dev Accuracy: 0.6406, Dev F1: 0.6423
+No improvement on dev loss. Patience: 8/20
+
+Epoch 11/100
+Epoch 11 - Train Loss: 0.5650, Train Accuracy: 0.7467
+Epoch 11 - Dev Loss: 1.0706, Dev Accuracy: 0.6484, Dev F1: 0.6484
+No improvement on dev loss. Patience: 9/20
+
+Epoch 12/100
+Epoch 12 - Train Loss: 0.5504, Train Accuracy: 0.7525
+Epoch 12 - Dev Loss: 1.0932, Dev Accuracy: 0.6620, Dev F1: 0.6614
+No improvement on dev loss. Patience: 10/20
+
+Epoch 13/100
+Epoch 13 - Train Loss: 0.5369, Train Accuracy: 0.7577
+Epoch 13 - Dev Loss: 1.0720, Dev Accuracy: 0.6625, Dev F1: 0.6614
+No improvement on dev loss. Patience: 11/20
+
+Epoch 14/100
+Epoch 14 - Train Loss: 0.5248, Train Accuracy: 0.7625
+Epoch 14 - Dev Loss: 1.1180, Dev Accuracy: 0.6673, Dev F1: 0.6691
+No improvement on dev loss. Patience: 12/20
+
+Epoch 15/100
+Epoch 15 - Train Loss: 0.5138, Train Accuracy: 0.7668
+Epoch 15 - Dev Loss: 0.9997, Dev Accuracy: 0.6809, Dev F1: 0.6800
+No improvement on dev loss. Patience: 13/20
+
+Epoch 16/100
+Epoch 16 - Train Loss: 0.5030, Train Accuracy: 0.7712
+Epoch 16 - Dev Loss: 1.2900, Dev Accuracy: 0.6586, Dev F1: 0.6590
+No improvement on dev loss. Patience: 14/20
+
+Epoch 17/100
+Epoch 17 - Train Loss: 0.4931, Train Accuracy: 0.7751
+Epoch 17 - Dev Loss: 1.2198, Dev Accuracy: 0.6663, Dev F1: 0.6680
+No improvement on dev loss. Patience: 15/20
+
+Epoch 18/100
+Epoch 18 - Train Loss: 0.4839, Train Accuracy: 0.7790
+Epoch 18 - Dev Loss: 1.3988, Dev Accuracy: 0.6668, Dev F1: 0.6659
+No improvement on dev loss. Patience: 16/20
+
+Epoch 19/100
+Epoch 19 - Train Loss: 0.4753, Train Accuracy: 0.7826
+Epoch 19 - Dev Loss: 1.3226, Dev Accuracy: 0.6799, Dev F1: 0.6801
+No improvement on dev loss. Patience: 17/20
+
+Epoch 20/100
+Epoch 20 - Train Loss: 0.4669, Train Accuracy: 0.7862
+Epoch 20 - Dev Loss: 1.4226, Dev Accuracy: 0.6760, Dev F1: 0.6763
+No improvement on dev loss. Patience: 18/20
+
+Epoch 21/100
+Epoch 21 - Train Loss: 0.4593, Train Accuracy: 0.7893
+Epoch 21 - Dev Loss: 1.4588, Dev Accuracy: 0.6484, Dev F1: 0.6508
+No improvement on dev loss. Patience: 19/20
+
+Epoch 22/100
+Epoch 22 - Train Loss: 0.4518, Train Accuracy: 0.7923
+Epoch 22 - Dev Loss: 1.3967, Dev Accuracy: 0.6673, Dev F1: 0.6680
+No improvement on dev loss. Patience: 20/20
+Early stopping triggered.
+
+Final Training Loss: 0.4518
+Final Training Accuracy: 0.7923
+Best Dev Loss: 0.7729
+Best Dev Accuracy: 0.6663, Best Dev Macro F1: 0.6670
+Config LR=0.0001, BS=8, Dropout=0.25, Hidden Dim=2048, Num Layers=6 -> Dev Loss: 0.7729, Dev Accuracy: 0.6663, Dev F1: 0.6670
+
+Running experiment with lr=0.0001, model=mlp, batch_size=8, hidden_dim=2048, num_layers=8
+
+=== Encoding datasets with batch_size 8 ===
+
+Epoch 1/100
+Epoch 1 - Train Loss: 0.9562, Train Accuracy: 0.5712
+Epoch 1 - Dev Loss: 0.9967, Dev Accuracy: 0.5262, Dev F1: 0.4939
+Dev loss improved; saving best model.
+
+Epoch 2/100
+Epoch 2 - Train Loss: 0.8530, Train Accuracy: 0.6209
+Epoch 2 - Dev Loss: 0.8388, Dev Accuracy: 0.6591, Dev F1: 0.6589
+Dev loss improved; saving best model.
+
+Epoch 3/100
+Epoch 3 - Train Loss: 0.7928, Train Accuracy: 0.6509
+Epoch 3 - Dev Loss: 0.7852, Dev Accuracy: 0.6508, Dev F1: 0.6506
+Dev loss improved; saving best model.
+
+Epoch 4/100
+Epoch 4 - Train Loss: 0.7469, Train Accuracy: 0.6723
+Epoch 4 - Dev Loss: 0.9990, Dev Accuracy: 0.5708, Dev F1: 0.5584
+No improvement on dev loss. Patience: 1/20
+
+Epoch 5/100
+Epoch 5 - Train Loss: 0.7091, Train Accuracy: 0.6892
+Epoch 5 - Dev Loss: 0.8786, Dev Accuracy: 0.6421, Dev F1: 0.6440
+No improvement on dev loss. Patience: 2/20
+
+Epoch 6/100
+Epoch 6 - Train Loss: 0.6768, Train Accuracy: 0.7030
+Epoch 6 - Dev Loss: 1.0739, Dev Accuracy: 0.5786, Dev F1: 0.5751
+No improvement on dev loss. Patience: 3/20
+
+Epoch 7/100
+Epoch 7 - Train Loss: 0.6502, Train Accuracy: 0.7138
+Epoch 7 - Dev Loss: 0.8614, Dev Accuracy: 0.6435, Dev F1: 0.6289
+No improvement on dev loss. Patience: 4/20
+
+Epoch 8/100
+Epoch 8 - Train Loss: 0.6269, Train Accuracy: 0.7231
+Epoch 8 - Dev Loss: 0.9921, Dev Accuracy: 0.6275, Dev F1: 0.6162
+No improvement on dev loss. Patience: 5/20
+
+Epoch 9/100
+Epoch 9 - Train Loss: 0.6063, Train Accuracy: 0.7313
+Epoch 9 - Dev Loss: 1.1068, Dev Accuracy: 0.6115, Dev F1: 0.6124
+No improvement on dev loss. Patience: 6/20
+
+Epoch 10/100
+Epoch 10 - Train Loss: 0.5881, Train Accuracy: 0.7383
+Epoch 10 - Dev Loss: 1.1790, Dev Accuracy: 0.6222, Dev F1: 0.6233
+No improvement on dev loss. Patience: 7/20
+
+Epoch 11/100
+Epoch 11 - Train Loss: 0.5717, Train Accuracy: 0.7445
+Epoch 11 - Dev Loss: 1.1554, Dev Accuracy: 0.6503, Dev F1: 0.6525
+No improvement on dev loss. Patience: 8/20
+
+Epoch 12/100
+Epoch 12 - Train Loss: 0.5570, Train Accuracy: 0.7502
+Epoch 12 - Dev Loss: 1.0669, Dev Accuracy: 0.6494, Dev F1: 0.6523
+No improvement on dev loss. Patience: 9/20
+
+Epoch 13/100
+Epoch 13 - Train Loss: 0.5436, Train Accuracy: 0.7552
+Epoch 13 - Dev Loss: 1.0782, Dev Accuracy: 0.6319, Dev F1: 0.6303
+No improvement on dev loss. Patience: 10/20
+
+Epoch 14/100
+Epoch 14 - Train Loss: 0.5312, Train Accuracy: 0.7600
+Epoch 14 - Dev Loss: 1.3211, Dev Accuracy: 0.6411, Dev F1: 0.6419
+No improvement on dev loss. Patience: 11/20
+
+Epoch 15/100
+Epoch 15 - Train Loss: 0.5197, Train Accuracy: 0.7646
+Epoch 15 - Dev Loss: 1.1724, Dev Accuracy: 0.6571, Dev F1: 0.6560
+No improvement on dev loss. Patience: 12/20
+
+Epoch 16/100
+Epoch 16 - Train Loss: 0.5090, Train Accuracy: 0.7688
+Epoch 16 - Dev Loss: 1.2624, Dev Accuracy: 0.6256, Dev F1: 0.6264
+No improvement on dev loss. Patience: 13/20
+
+Epoch 17/100
+Epoch 17 - Train Loss: 0.4990, Train Accuracy: 0.7728
+Epoch 17 - Dev Loss: 1.3784, Dev Accuracy: 0.6377, Dev F1: 0.6399
+No improvement on dev loss. Patience: 14/20
+
+Epoch 18/100
+Epoch 18 - Train Loss: 0.4900, Train Accuracy: 0.7766
+Epoch 18 - Dev Loss: 1.0717, Dev Accuracy: 0.6557, Dev F1: 0.6567
+No improvement on dev loss. Patience: 15/20
+
+Epoch 19/100
+Epoch 19 - Train Loss: 0.4813, Train Accuracy: 0.7801
+Epoch 19 - Dev Loss: 1.4862, Dev Accuracy: 0.6494, Dev F1: 0.6506
+No improvement on dev loss. Patience: 16/20
+
+Epoch 20/100
+Epoch 20 - Train Loss: 0.4731, Train Accuracy: 0.7833
+Epoch 20 - Dev Loss: 1.5406, Dev Accuracy: 0.6625, Dev F1: 0.6625
+No improvement on dev loss. Patience: 17/20
+
+Epoch 21/100
+Epoch 21 - Train Loss: 0.4654, Train Accuracy: 0.7863
+Epoch 21 - Dev Loss: 1.4898, Dev Accuracy: 0.6406, Dev F1: 0.6431
+No improvement on dev loss. Patience: 18/20
+
+Epoch 22/100
+Epoch 22 - Train Loss: 0.4580, Train Accuracy: 0.7892
+Epoch 22 - Dev Loss: 1.3737, Dev Accuracy: 0.6523, Dev F1: 0.6533
+No improvement on dev loss. Patience: 19/20
+
+Epoch 23/100
+Epoch 23 - Train Loss: 0.4509, Train Accuracy: 0.7922
+Epoch 23 - Dev Loss: 1.6057, Dev Accuracy: 0.6402, Dev F1: 0.6422
+No improvement on dev loss. Patience: 20/20
+Early stopping triggered.
+
+Final Training Loss: 0.4509
+Final Training Accuracy: 0.7922
+Best Dev Loss: 0.7852
+Best Dev Accuracy: 0.6508, Best Dev Macro F1: 0.6506
+Config LR=0.0001, BS=8, Dropout=0.25, Hidden Dim=2048, Num Layers=8 -> Dev Loss: 0.7852, Dev Accuracy: 0.6508, Dev F1: 0.6506
+
+Running experiment with lr=0.0001, model=mlp, batch_size=8, hidden_dim=2048, num_layers=10
+
+=== Encoding datasets with batch_size 8 ===
+
+Epoch 1/100
+Epoch 1 - Train Loss: 0.9456, Train Accuracy: 0.5698
+Epoch 1 - Dev Loss: 0.8953, Dev Accuracy: 0.5902, Dev F1: 0.5776
+Dev loss improved; saving best model.
+
+Epoch 2/100
+Epoch 2 - Train Loss: 0.8439, Train Accuracy: 0.6212
+Epoch 2 - Dev Loss: 0.8276, Dev Accuracy: 0.6469, Dev F1: 0.6487
+Dev loss improved; saving best model.
+
+Epoch 3/100
+Epoch 3 - Train Loss: 0.7828, Train Accuracy: 0.6516
+Epoch 3 - Dev Loss: 1.0028, Dev Accuracy: 0.6004, Dev F1: 0.5947
+No improvement on dev loss. Patience: 1/20
+
+Epoch 4/100
+Epoch 4 - Train Loss: 0.7374, Train Accuracy: 0.6732
+Epoch 4 - Dev Loss: 0.9645, Dev Accuracy: 0.6174, Dev F1: 0.6157
+No improvement on dev loss. Patience: 2/20
+
+Epoch 5/100
+Epoch 5 - Train Loss: 0.7001, Train Accuracy: 0.6902
+Epoch 5 - Dev Loss: 0.9421, Dev Accuracy: 0.6266, Dev F1: 0.6276
+No improvement on dev loss. Patience: 3/20
+
+Epoch 6/100
+Epoch 6 - Train Loss: 0.6694, Train Accuracy: 0.7040
+Epoch 6 - Dev Loss: 0.8709, Dev Accuracy: 0.6474, Dev F1: 0.6499
+No improvement on dev loss. Patience: 4/20
+
+Epoch 7/100
+Epoch 7 - Train Loss: 0.6431, Train Accuracy: 0.7152
+Epoch 7 - Dev Loss: 0.8496, Dev Accuracy: 0.6620, Dev F1: 0.6592
+No improvement on dev loss. Patience: 5/20
+
+Epoch 8/100
+Epoch 8 - Train Loss: 0.6205, Train Accuracy: 0.7247
+Epoch 8 - Dev Loss: 0.9458, Dev Accuracy: 0.6639, Dev F1: 0.6600
+No improvement on dev loss. Patience: 6/20
+
+Epoch 9/100
+Epoch 9 - Train Loss: 0.6004, Train Accuracy: 0.7333
+Epoch 9 - Dev Loss: 0.9587, Dev Accuracy: 0.6596, Dev F1: 0.6608
+No improvement on dev loss. Patience: 7/20
+
+Epoch 10/100
+Epoch 10 - Train Loss: 0.5824, Train Accuracy: 0.7407
+Epoch 10 - Dev Loss: 1.0224, Dev Accuracy: 0.6237, Dev F1: 0.6244
+No improvement on dev loss. Patience: 8/20
+
+Epoch 11/100
+Epoch 11 - Train Loss: 0.5661, Train Accuracy: 0.7471
+Epoch 11 - Dev Loss: 1.1451, Dev Accuracy: 0.6484, Dev F1: 0.6446
+No improvement on dev loss. Patience: 9/20
+
+Epoch 12/100
+Epoch 12 - Train Loss: 0.5512, Train Accuracy: 0.7529
+Epoch 12 - Dev Loss: 1.0532, Dev Accuracy: 0.6382, Dev F1: 0.6395
+No improvement on dev loss. Patience: 10/20
+
+Epoch 13/100
+Epoch 13 - Train Loss: 0.5380, Train Accuracy: 0.7582
+Epoch 13 - Dev Loss: 0.9374, Dev Accuracy: 0.6523, Dev F1: 0.6539
+No improvement on dev loss. Patience: 11/20
+
+Epoch 14/100
+Epoch 14 - Train Loss: 0.5257, Train Accuracy: 0.7632
+Epoch 14 - Dev Loss: 1.1300, Dev Accuracy: 0.6717, Dev F1: 0.6690
+No improvement on dev loss. Patience: 12/20
+
+Epoch 15/100
+Epoch 15 - Train Loss: 0.5147, Train Accuracy: 0.7677
+Epoch 15 - Dev Loss: 1.1585, Dev Accuracy: 0.6615, Dev F1: 0.6584
+No improvement on dev loss. Patience: 13/20
+
+Epoch 16/100
+Epoch 16 - Train Loss: 0.5040, Train Accuracy: 0.7719
+Epoch 16 - Dev Loss: 1.1537, Dev Accuracy: 0.6591, Dev F1: 0.6603
+No improvement on dev loss. Patience: 14/20
+
+Epoch 17/100
+Epoch 17 - Train Loss: 0.4942, Train Accuracy: 0.7758
+Epoch 17 - Dev Loss: 1.4200, Dev Accuracy: 0.6557, Dev F1: 0.6550
+No improvement on dev loss. Patience: 15/20
+
+Epoch 18/100
+Epoch 18 - Train Loss: 0.4852, Train Accuracy: 0.7793
+Epoch 18 - Dev Loss: 1.5167, Dev Accuracy: 0.6261, Dev F1: 0.6263
+No improvement on dev loss. Patience: 16/20
+
+Epoch 19/100
+Epoch 19 - Train Loss: 0.4766, Train Accuracy: 0.7828
+Epoch 19 - Dev Loss: 1.3088, Dev Accuracy: 0.6372, Dev F1: 0.6351
+No improvement on dev loss. Patience: 17/20
+
+Epoch 20/100
+Epoch 20 - Train Loss: 0.4686, Train Accuracy: 0.7859
+Epoch 20 - Dev Loss: 1.5981, Dev Accuracy: 0.6620, Dev F1: 0.6618
+No improvement on dev loss. Patience: 18/20
+
+Epoch 21/100
+Epoch 21 - Train Loss: 0.4611, Train Accuracy: 0.7889
+Epoch 21 - Dev Loss: 1.3897, Dev Accuracy: 0.6426, Dev F1: 0.6456
+No improvement on dev loss. Patience: 19/20
+
+Epoch 22/100
+Epoch 22 - Train Loss: 0.4538, Train Accuracy: 0.7919
+Epoch 22 - Dev Loss: 1.5127, Dev Accuracy: 0.6368, Dev F1: 0.6280
+No improvement on dev loss. Patience: 20/20
+Early stopping triggered.
+
+Final Training Loss: 0.4538
+Final Training Accuracy: 0.7919
+Best Dev Loss: 0.8276
+Best Dev Accuracy: 0.6469, Best Dev Macro F1: 0.6487
+Config LR=0.0001, BS=8, Dropout=0.25, Hidden Dim=2048, Num Layers=10 -> Dev Loss: 0.8276, Dev Accuracy: 0.6469, Dev F1: 0.6487
+
+=== Best configuration for model mlp: (0.0001, 8, 0.25, 1024, 8) with Dev Loss: 0.7727, Dev Accuracy: 0.6576, Dev F1: 0.6545 ===
+Running inference on training_data.csv...

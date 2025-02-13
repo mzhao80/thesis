@@ -1,0 +1,11 @@
+Initializing OpenAI client ...
+Extracting subtopics and phrases using LLM ...
+Error parsing LLM response on attempt 1: Expected at least two lines in response.
+Response was: Executive Power Abuse\nput a stop to the President's abuse of executive power
+Error parsing LLM response on attempt 1: Expected at least two lines in response.
+Response was: Constitutional Compliance\n"submit a constitutional authority statement"
+Error parsing LLM response on attempt 1: Expected at least two lines in response.
+Response was: International Monetary Fund Policy\n"it is unnecessary as the IMF executive board will not review the SDR basket"
+Error parsing LLM response on attempt 1: Expected at least two lines in response.
+Response was: Postal Worker Safety\nensure that those measures actually work to effectively protect our postal employees
+Preprocessing complete. Training data saved to /n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/training_data.csv.
