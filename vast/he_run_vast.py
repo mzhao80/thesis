@@ -2,37 +2,29 @@ import os
 import socket
 
 if __name__ == '__main__':
-    data = ['vast', 'pstance', 'covid'][0]
+    data = 'vast'
     topic = ''
     batch_size = 32
     epochs = 50
     patience = 10
     lr = 2e-5
     l2_reg = 5e-5
-    model = ['bert-base', 'bertweet', 'covid-twitter-bert'][0]
-    wiki_model = ['', 'bert-base'][1]
+    model = 'bert-base'
+    wiki_model = 'bert-base'
     n_layers_freeze = 10
-    n_layers_freeze_wiki = 0
+    n_layers_freeze_wiki = 10
     gpu = '0'
     inference = 0
 
-    if wiki_model == model:
-        n_layers_freeze_wiki = n_layers_freeze
-    if not wiki_model or wiki_model == model:
-        n_layers_freeze_wiki = 0
-
     os.makedirs('results', exist_ok=True)
-    if data != 'vast':
-        file_name = f'results/{data}-topic={topic}-lr={lr}-bs={batch_size}.txt'
-    else:
-        file_name = f'results/{data}-lr={lr}-bs={batch_size}.txt'
-
-    if model != 'bert-base':
-        file_name = file_name[:-4] + f'-{model}.txt'
+    file_name = f'results/{data}-lr={lr}-bs={batch_size}.txt'
+    file_name = file_name[:-4] + f'-{model}.txt'
+    
     if n_layers_freeze > 0:
         file_name = file_name[:-4] + f'-n_layers_fz={n_layers_freeze}.txt'
-    if wiki_model:
-        file_name = file_name[:-4] + f'-wiki={wiki_model}.txt'
+    
+    file_name = file_name[:-4] + f'-wiki={wiki_model}.txt'
+    
     if n_layers_freeze_wiki > 0:
         file_name = file_name[:-4] + f'-n_layers_fz_wiki={n_layers_freeze_wiki}.txt'
 

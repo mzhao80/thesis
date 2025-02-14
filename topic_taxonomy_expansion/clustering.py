@@ -73,12 +73,8 @@ def main():
 
     source_mapping = {}
     for idx, row in df.iterrows():
-        pred = row['pred_subtopic']
-        if pd.isna(pred):
-            continue
         # We convert the index to a string for later concatenation.
-        source_mapping.setdefault(pred, []).append(str(idx))
-
+        source_mapping[idx] = row['document']
 
     # List to store cluster taxonomy information.
     taxonomy = []
@@ -108,7 +104,7 @@ def main():
         d = reduced_embeddings.shape[1]  # explicitly set d = number of features after reduction
         
         # Cluster using HDBSCAN on the reduced embeddings.
-        min_cluster_size = 5
+        min_cluster_size = 10
         clusterer = hdbscan.HDBSCAN(min_cluster_size=min_cluster_size)
         cluster_labels = clusterer.fit_predict(reduced_embeddings)
         

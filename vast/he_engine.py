@@ -35,15 +35,12 @@ class Engine:
         print('Done\n')
 
         print('Initializing model....')
-        num_labels = 2 if args.data == 'pstance' else 3
+        num_labels = 3
         model = BERTSeqClf(num_labels=num_labels, model=args.model, n_layers_freeze=args.n_layers_freeze,
                            wiki_model=args.wiki_model, n_layers_freeze_wiki=args.n_layers_freeze_wiki)
         model = nn.DataParallel(model)
         if args.inference == 1:
-            if args.data != 'vast':
-                model_name = f"ckp/model_{args.data}.pt"
-            else:
-                model_name = f"ckp/model_{args.data}_{args.topic}.pt"
+            model_name = f"ckp/model_{args.data}_{args.topic}.pt"
             print('\nLoading checkpoint....')
             state_dict = torch.load(model_name, map_location='cpu')
             model.load_state_dict(state_dict)
@@ -71,40 +68,24 @@ class Engine:
             for epoch in range(self.args.epochs):
                 print(f"{'*' * 30}Epoch: {epoch + 1}{'*' * 30}")
                 loss = self.train_epoch()
-                f1, f1_favor, f1_against, f1_neutral = self.eval('val')
+                f1 = self.eval('val')
                 if f1 > best_epoch_f1:
                     best_epoch = epoch
                     best_epoch_f1 = f1
                     best_state_dict = copy.deepcopy(self.model.state_dict())
                 print(f'Epoch: {epoch+1}\tTrain Loss: {loss:.3f}\tVal F1: {f1:.3f}\n'
-                      f'Val F1_favor: {f1_favor:.3f}\tVal F1_against: {f1_against:.3f}\tVal F1_Neutral: {f1_neutral:.3f}\n'
                       f'Best Epoch: {best_epoch+1}\tBest Epoch Val F1: {best_epoch_f1:.3f}\n')
                 if epoch - best_epoch >= self.args.patience:
                     break
 
             print('Saving the best checkpoint....')
             self.model.load_state_dict(best_state_dict)
-            if self.args.data != 'vast':
-                model_name = f"ckp/model_{self.args.data}.pt"
-            else:
-                model_name = f"ckp/model_{self.args.data}_{self.args.topic}.pt"
+            model_name = f"ckp/model_{self.args.data}_{self.args.topic}.pt"
             torch.save(best_state_dict, model_name)
 
         print('Inference...')
-        if self.args.data != 'vast':
-            f1_avg, f1_favor, f1_against, f1_neutral = self.eval('test')
-            print(f'Test F1: {f1_avg:.3f}\tTest F1_Favor: {f1_favor:.3f}\t'
-                  f'Test F1_Against: {f1_against:.3f}\tTest F1_Neutral: {f1_neutral:.3f}')
-        else:
-            f1_avg, f1_favor, f1_against, f1_neutral, \
-            f1_avg_few, f1_favor_few, f1_against_few, f1_neutral_few, \
-            f1_avg_zero, f1_favor_zero, f1_against_zero, f1_neutral_zero, = self.eval('test')
-            print(f'Test F1: {f1_avg:.3f}\tTest F1_Favor: {f1_favor:.3f}\t'
-                  f'Test F1_Against: {f1_against:.3f}\tTest F1_Neutral: {f1_neutral:.3f}\n'
-                  f'Test F1_Few: {f1_avg_few:.3f}\tTest F1_Favor_Few: {f1_favor_few:.3f}\t'
-                  f'Test F1_Against_Few: {f1_against_few:.3f}\tTest F1_Neutral_Few: {f1_neutral_few:.3f}\n'
-                  f'Test F1_Zero: {f1_avg_zero:.3f}\tTest F1_Favor_Zero: {f1_favor_zero:.3f}\t'
-                  f'Test F1_Against_Zero: {f1_against_zero:.3f}\tTest F1_Neutral_Zero: {f1_neutral_zero:.3f}')
+        f1_avg, f1_few, f1_zero = self.eval('test')
+        print(f'Test F1: {f1_avg:.3f}\tTest F1_Few: {f1_few:.3f}\tTest F1_Zero: {f1_zero:.3f}')
 
     def train_epoch(self):
         self.model.train()
@@ -171,32 +152,19 @@ class Engine:
         mask_few_shot = np.concatenate(mask_few_shot)
 
         from sklearn.metrics import f1_score
-        if self.args.data != 'pstance':
-            f1_against, f1_favor, f1_neutral = f1_score(y_true, y_pred, average=None)
-        else:
-            f1_against, f1_favor = f1_score(y_true, y_pred, average=None)
-            f1_neutral = 0
+        f1_avg = f1_score(y_true, y_pred, average="macro")
 
-        if self.args.data == 'pstance':
-            f1_avg = 0.5 * (f1_favor + f1_against)
-        else:
-            f1_avg = (f1_favor + f1_against + f1_neutral) / 3
-
-        if self.args.data == 'vast' and phase == 'test':
+        if phase == 'test':
             mask_few_shot = mask_few_shot.astype(bool)
             y_true_few = y_true[mask_few_shot]
             y_pred_few = y_pred[mask_few_shot]
-            f1_against_few, f1_favor_few, f1_neutral_few = f1_score(y_true_few, y_pred_few, average=None)
-            f1_avg_few = (f1_against_few + f1_favor_few + f1_neutral_few) / 3
+            f1_avg_few = f1_score(y_true_few, y_pred_few, average="macro")
 
             mask_zero_shot = ~mask_few_shot
             y_true_zero = y_true[mask_zero_shot]
             y_pred_zero = y_pred[mask_zero_shot]
-            f1_against_zero, f1_favor_zero, f1_neutral_zero = f1_score(y_true_zero, y_pred_zero, average=None)
-            f1_avg_zero = (f1_against_zero + f1_favor_zero + f1_neutral_zero) / 3
+            f1_avg_zero = f1_score(y_true_zero, y_pred_zero, average="macro")
 
-            return f1_avg, f1_favor, f1_against, f1_neutral, \
-                   f1_avg_few, f1_favor_few, f1_against_few, f1_neutral_few, \
-                   f1_avg_zero, f1_favor_zero, f1_against_zero, f1_neutral_zero,
+            return f1_avg, f1_avg_few, f1_avg_zero
 
-        return f1_avg, f1_favor, f1_against, f1_neutral
+        return f1_avg

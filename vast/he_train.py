@@ -3,7 +3,7 @@ from he_engine import Engine
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data', type=str, choices=('vast', 'pstance', 'covid'), default='vast',
+    parser.add_argument('--data', type=str, choices=('vast'), default='vast',
                         help='which dataset to use')
     parser.add_argument('--topic', type=str, choices=('bernie', 'biden', 'trump',
                                                       'bernie,biden', 'bernie,trump',

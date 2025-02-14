@@ -9,7 +9,7 @@ os.environ['TOKENIZERS_PARALLELISM'] = '0'
 # Zero-Shot Stance Detection: A Dataset and Model using Generalized Topic Representations
 class VASTZeroFewShot(Dataset):
     def __init__(self, phase, model='bert-base', wiki_model=''):
-        path = 'data/vast/'
+        path = 'zero-shot-stance/data/VAST'
         if phase in ['train', 'test']:
             file_path = f'{path}/vast_{phase}.csv'
         else:
@@ -37,34 +37,17 @@ class VASTZeroFewShot(Dataset):
 
         # os.environ['TRANSFORMERS_OFFLINE'] = '1'
         from transformers import AutoTokenizer
-        if model == 'bert-base':
-            tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased')
-        elif model == 'bertweet':
-            tokenizer = AutoTokenizer.from_pretrained('vinai/bertweet-base')
-        else: # covid-twitter-bert
-            tokenizer = AutoTokenizer.from_pretrained('digitalepidemiologylab/covid-twitter-bert-v2')
+        tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased')
 
-        if wiki_model:
-            wiki_dict = pickle.load(open(f'{path}/wiki_dict.pkl', 'rb'))
-            wiki_summaries = df['new_topic'].map(wiki_dict).tolist()
 
-            if wiki_model == model:
-                tokenizer_wiki = tokenizer
-            else:
-                tokenizer_wiki = AutoTokenizer.from_pretrained('bert-base-uncased')
+        wiki_dict = pickle.load(open(f'{path}/wiki_dict.pkl', 'rb'))
+        wiki_summaries = df['new_topic'].map(wiki_dict).tolist()
 
-            if wiki_model == model:
-                tweets_targets = [f'text: {x} target: {y}' for x, y in zip(tweets, topics)]
-                encodings = tokenizer(tweets_targets, wiki_summaries, padding=True, truncation=True)
-                encodings_wiki = {'input_ids': [[0]] * df.shape[0], 'attention_mask': [[0]] * df.shape[0]}
-            else:
-                encodings = tokenizer(tweets, topics, padding=True, truncation=True)
-                encodings_wiki = tokenizer_wiki(wiki_summaries, padding=True, truncation=True)
-
-        else:
-            encodings = tokenizer(tweets, topics, padding=True, truncation=True)
-            encodings_wiki = {'input_ids': [[0]] * df.shape[0], 'attention_mask': [[0]] * df.shape[0]}
-
+        tokenizer_wiki = tokenizer
+        tweets_targets = [f'text: {x} target: {y}' for x, y in zip(tweets, topics)]
+        encodings = tokenizer(tweets_targets, wiki_summaries, padding=True, truncation=True)
+        encodings_wiki = {'input_ids': [[0]] * df.shape[0], 'attention_mask': [[0]] * df.shape[0]}
+       
         # encodings for the texts and tweets
         input_ids = torch.tensor(encodings['input_ids'], dtype=torch.long)
         attention_mask = torch.tensor(encodings['attention_mask'], dtype=torch.long)
@@ -114,12 +97,7 @@ class VASTZeroFewShot(Dataset):
 
 def data_loader(data, phase, topic, batch_size, model='bert-base', wiki_model='', n_workers=4):
     shuffle = True if phase == 'train' else False
-    if data == 'vast':
-        dataset = VASTZeroFewShot(phase, model=model, wiki_model=wiki_model)
-    elif data == 'pstance':
-        dataset = PStance(phase, topic, model=model, wiki_model=wiki_model)
-    else:
-        dataset = COVIDTweetStance(phase, topic, model, wiki_model=wiki_model)
+    dataset = VASTZeroFewShot(phase, model=model, wiki_model=wiki_model)
 
     loader = DataLoader(dataset, batch_size=batch_size, shuffle=shuffle, num_workers=n_workers)
     return loader

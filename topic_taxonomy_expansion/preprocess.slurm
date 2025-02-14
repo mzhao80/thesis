@@ -12,8 +12,5 @@
 cd ~/Downloads/thesis
 source ../topicexpan/myenv/bin/activate
 module load cuda/11.8.0-fasrc01
-export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 cd topic_taxonomy_expansion
-
-# Run the GPU script
 python preprocess.py
