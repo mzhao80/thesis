@@ -8,8 +8,8 @@ import api_keys
 
 def main():
     # Define paths.
-    taxonomy_file = "taxonomy_output.csv"          # Taxonomy with gpt_label and source_indices.
-    original_file = "all_data_predictions.csv"       # Original CSV containing the "document" column.
+    taxonomy_file = "step_2.csv"           # Taxonomy with gpt_label and source_indices.
+    original_file = "step_1.csv"       # Original CSV containing the "document" column.
     model_dir = "./lora_bart_subtopics"              # Directory where the trained BART model was saved.
     
     # Load the taxonomy and original CSV.
@@ -17,7 +17,7 @@ def main():
     original_df = pd.read_csv(original_file)
     
     # Load the fine-tuned BART model and its tokenizer.
-    model = AutoModelForSeq2SeqLM.from_pretrained(model_dir).half()
+    model = AutoModelForSeq2SeqLM.from_pretrained(model_dir)
     tokenizer = AutoTokenizer.from_pretrained("facebook/bart-large-cnn")
     
     # Prepare the device.
@@ -64,8 +64,9 @@ def main():
     
     # Save the results to CSV.
     new_df = pd.DataFrame(results)
-    new_df.to_csv("new_subtopics_per_document.csv", index=False)
-    print("Saved new subtopics per document to new_subtopics_per_document.csv")
+    output_csv = "step_3.csv"
+    new_df.to_csv(output_csv, index=False)
+    print(f"Saved predictions to {output_csv}")
 
 if __name__ == "__main__":
     main()

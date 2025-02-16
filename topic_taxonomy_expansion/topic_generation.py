@@ -7,7 +7,7 @@ import torch
 def main():
     # Define paths.
     model_dir = "./lora_bart_subtopics"  # Directory where the trained model was saved.
-    data_file = "/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/new_training_data.csv"
+    data_file = "/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/training_data.csv"
     
     model = AutoModelForSeq2SeqLM.from_pretrained(model_dir)
     tokenizer = AutoTokenizer.from_pretrained("facebook/bart-large-cnn")
@@ -66,7 +66,7 @@ def main():
     df["pred_subtopic"] = all_preds
     
     # Save the final CSV with all original columns plus the predictions.
-    output_csv = "predictions_2.csv"
+    output_csv = "step_1.csv"
     df.to_csv(output_csv, index=False)
     print(f"Saved predictions to {output_csv}")
 

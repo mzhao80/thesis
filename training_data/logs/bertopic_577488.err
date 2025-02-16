@@ -1,0 +1,425 @@
+Batches:   0%|          | 0/12 [00:00<?, ?it/s]Batches:   8%|▊         | 1/12 [00:00<00:03,  3.43it/s]Batches:  17%|█▋        | 2/12 [00:00<00:01,  5.02it/s]Batches:  25%|██▌       | 3/12 [00:00<00:01,  6.09it/s]Batches:  33%|███▎      | 4/12 [00:00<00:01,  6.84it/s]Batches:  42%|████▏     | 5/12 [00:00<00:00,  7.27it/s]Batches:  58%|█████▊    | 7/12 [00:00<00:00,  9.45it/s]Batches: 100%|██████████| 12/12 [00:01<00:00, 11.77it/s]
+2025-01-24 20:02:40,722 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:02:42,378 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:02:42,378 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:02:42,388 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:02:42,390 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:02:42,451 - BERTopic - Representation - Completed ✓
+2025-01-24 20:02:42,920 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:02:43,242 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:02:43,242 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:02:43,252 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:02:43,253 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:02:43,315 - BERTopic - Representation - Completed ✓
+2025-01-24 20:02:43,802 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:02:44,104 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:02:44,104 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:02:44,113 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:02:44,115 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:02:44,176 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/4 [00:00<?, ?it/s]Batches:  25%|██▌       | 1/4 [00:00<00:00,  7.67it/s]Batches:  50%|█████     | 2/4 [00:00<00:00,  8.30it/s]Batches: 100%|██████████| 4/4 [00:00<00:00, 12.22it/s]
+2025-01-24 20:02:46,236 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:02:46,354 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:02:46,354 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:02:46,359 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:02:46,361 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:02:46,386 - BERTopic - Representation - Completed ✓
+2025-01-24 20:02:46,563 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:02:46,656 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:02:46,656 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:02:46,662 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:02:46,664 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:02:46,690 - BERTopic - Representation - Completed ✓
+2025-01-24 20:02:46,880 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:02:46,959 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:02:46,959 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:02:46,964 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:02:46,965 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:02:46,990 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/5 [00:00<?, ?it/s]Batches:  20%|██        | 1/5 [00:00<00:00,  7.73it/s]Batches:  40%|████      | 2/5 [00:00<00:00,  8.37it/s]Batches: 100%|██████████| 5/5 [00:00<00:00, 15.42it/s]
+2025-01-24 20:02:48,572 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:02:48,756 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:02:48,756 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:02:48,763 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:02:48,765 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:02:48,789 - BERTopic - Representation - Completed ✓
+2025-01-24 20:02:49,020 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:02:49,195 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:02:49,195 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:02:49,201 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:02:49,202 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:02:49,227 - BERTopic - Representation - Completed ✓
+2025-01-24 20:02:49,459 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:02:49,633 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:02:49,634 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:02:49,640 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:02:49,641 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:02:49,669 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 38.14it/s]
+Batches:   0%|          | 0/14 [00:00<?, ?it/s]Batches:   7%|▋         | 1/14 [00:00<00:01,  7.24it/s]Batches:  14%|█▍        | 2/14 [00:00<00:01,  7.80it/s]Batches:  21%|██▏       | 3/14 [00:00<00:01,  7.99it/s]Batches:  29%|██▊       | 4/14 [00:00<00:01,  8.12it/s]Batches:  36%|███▌      | 5/14 [00:00<00:01,  8.41it/s]Batches:  50%|█████     | 7/14 [00:00<00:00, 11.87it/s]Batches: 100%|██████████| 14/14 [00:00<00:00, 17.75it/s]
+2025-01-24 20:02:52,876 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:02:53,354 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:02:53,354 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:02:53,367 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:02:53,369 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:02:53,428 - BERTopic - Representation - Completed ✓
+2025-01-24 20:02:54,077 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:02:54,541 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:02:54,541 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:02:54,554 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:02:54,556 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:02:54,622 - BERTopic - Representation - Completed ✓
+2025-01-24 20:02:55,325 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:02:55,734 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:02:55,734 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:02:55,746 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:02:55,748 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:02:55,807 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:  50%|█████     | 1/2 [00:00<00:00,  7.64it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 13.83it/s]
+2025-01-24 20:02:57,274 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:02:57,330 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:02:57,330 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:02:57,334 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:02:57,335 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:02:57,350 - BERTopic - Representation - Completed ✓
+2025-01-24 20:02:57,440 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:02:57,498 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:02:57,498 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:02:57,501 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:02:57,503 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:02:57,517 - BERTopic - Representation - Completed ✓
+2025-01-24 20:02:57,602 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:02:57,656 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:02:57,656 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:02:57,659 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:02:57,661 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:02:57,675 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/40 [00:00<?, ?it/s]Batches:   2%|▎         | 1/40 [00:00<00:05,  6.93it/s]Batches:   5%|▌         | 2/40 [00:00<00:05,  7.38it/s]Batches:   8%|▊         | 3/40 [00:00<00:04,  7.62it/s]Batches:  10%|█         | 4/40 [00:00<00:04,  7.82it/s]Batches:  12%|█▎        | 5/40 [00:00<00:04,  7.94it/s]Batches:  15%|█▌        | 6/40 [00:00<00:04,  7.94it/s]Batches:  18%|█▊        | 7/40 [00:00<00:04,  8.03it/s]Batches:  20%|██        | 8/40 [00:01<00:03,  8.17it/s]Batches:  22%|██▎       | 9/40 [00:01<00:03,  8.29it/s]Batches:  25%|██▌       | 10/40 [00:01<00:03,  8.17it/s]Batches:  28%|██▊       | 11/40 [00:01<00:03,  8.21it/s]Batches:  30%|███       | 12/40 [00:01<00:03,  8.35it/s]Batches:  32%|███▎      | 13/40 [00:01<00:03,  8.48it/s]Batches:  35%|███▌      | 14/40 [00:01<00:02,  8.77it/s]Batches:  38%|███▊      | 15/40 [00:01<00:02,  8.86it/s]Batches:  42%|████▎     | 17/40 [00:01<00:02, 10.46it/s]Batches:  48%|████▊     | 19/40 [00:02<00:01, 12.64it/s]Batches:  60%|██████    | 24/40 [00:02<00:00, 22.02it/s]Batches:  80%|████████  | 32/40 [00:02<00:00, 36.97it/s]Batches: 100%|██████████| 40/40 [00:02<00:00, 16.88it/s]
+2025-01-24 20:03:05,461 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:07,630 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:07,630 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:07,665 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:07,667 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:07,814 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:10,107 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:11,951 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:11,951 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:11,980 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:11,982 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:12,110 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:14,322 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:16,128 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:16,128 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:16,158 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:16,159 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:16,282 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:  50%|█████     | 1/2 [00:00<00:00,  8.68it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 14.49it/s]
+2025-01-24 20:03:18,134 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:18,184 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:18,184 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:18,187 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:18,188 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:18,198 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:18,274 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:18,331 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:18,331 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:18,334 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:18,335 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:18,346 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:18,420 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:18,480 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:18,480 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:18,483 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:18,484 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:18,495 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches:  33%|███▎      | 1/3 [00:00<00:00,  8.12it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 18.39it/s]
+2025-01-24 20:03:19,913 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:19,985 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:19,985 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:19,989 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:19,991 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:20,008 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:20,122 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:20,212 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:20,212 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:20,216 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:20,217 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:20,233 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:20,346 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:20,433 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:20,433 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:20,437 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:20,438 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:20,454 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/24 [00:00<?, ?it/s]Batches:   4%|▍         | 1/24 [00:00<00:03,  6.96it/s]Batches:   8%|▊         | 2/24 [00:00<00:02,  7.45it/s]Batches:  12%|█▎        | 3/24 [00:00<00:02,  7.76it/s]Batches:  17%|█▋        | 4/24 [00:00<00:02,  8.01it/s]Batches:  21%|██        | 5/24 [00:00<00:02,  8.10it/s]Batches:  25%|██▌       | 6/24 [00:00<00:02,  8.16it/s]Batches:  29%|██▉       | 7/24 [00:00<00:02,  8.32it/s]Batches:  33%|███▎      | 8/24 [00:00<00:01,  8.65it/s]Batches:  42%|████▏     | 10/24 [00:01<00:01,  9.96it/s]Batches:  50%|█████     | 12/24 [00:01<00:00, 12.47it/s]Batches:  75%|███████▌  | 18/24 [00:01<00:00, 24.78it/s]Batches: 100%|██████████| 24/24 [00:01<00:00, 17.03it/s]
+2025-01-24 20:03:24,520 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:25,555 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:25,555 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:25,579 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:25,581 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:25,685 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:27,050 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:28,249 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:28,249 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:28,272 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:28,274 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:28,377 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:29,506 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:30,445 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:30,446 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:30,465 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:30,467 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:30,554 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/15 [00:00<?, ?it/s]Batches:   7%|▋         | 1/15 [00:00<00:02,  6.56it/s]Batches:  13%|█▎        | 2/15 [00:00<00:01,  7.42it/s]Batches:  20%|██        | 3/15 [00:00<00:01,  7.72it/s]Batches:  27%|██▋       | 4/15 [00:00<00:01,  8.07it/s]Batches:  33%|███▎      | 5/15 [00:00<00:01,  8.16it/s]Batches:  40%|████      | 6/15 [00:00<00:01,  8.34it/s]Batches:  53%|█████▎    | 8/15 [00:00<00:00, 11.21it/s]Batches: 100%|██████████| 15/15 [00:00<00:00, 27.23it/s]Batches: 100%|██████████| 15/15 [00:00<00:00, 15.43it/s]
+2025-01-24 20:03:33,819 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:34,330 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:34,330 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:34,346 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:34,348 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:34,416 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:35,141 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:35,645 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:35,645 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:35,660 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:35,662 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:35,743 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:36,559 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:37,038 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:37,039 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:37,053 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:37,055 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:37,130 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/6 [00:00<?, ?it/s]Batches:  17%|█▋        | 1/6 [00:00<00:00,  7.55it/s]Batches:  33%|███▎      | 2/6 [00:00<00:00,  7.84it/s]Batches:  50%|█████     | 3/6 [00:00<00:00,  8.10it/s]Batches: 100%|██████████| 6/6 [00:00<00:00, 14.24it/s]
+2025-01-24 20:03:39,169 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:39,355 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:39,355 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:39,361 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:39,363 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:39,395 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:39,640 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:39,831 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:39,831 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:39,837 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:39,838 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:39,873 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:40,134 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:40,305 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:40,306 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:40,312 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:40,313 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:40,350 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:  50%|█████     | 1/2 [00:00<00:00,  7.89it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 14.33it/s]
+2025-01-24 20:03:41,518 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:41,562 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:41,562 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:41,565 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:41,566 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:41,579 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:41,642 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:41,688 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:41,688 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:41,691 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:41,692 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:41,704 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:41,767 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:41,807 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:41,807 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:41,810 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:41,811 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:41,823 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:  50%|█████     | 1/2 [00:00<00:00,  8.35it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 15.25it/s]
+2025-01-24 20:03:42,838 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:42,898 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:42,898 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:42,901 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:42,903 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:42,915 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:42,992 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:43,049 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:43,049 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:43,052 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:43,053 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:43,065 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:43,144 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:43,190 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:43,190 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:43,193 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:43,195 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:43,207 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:  50%|█████     | 1/2 [00:00<00:00,  8.17it/s]Batches: 100%|██████████| 2/2 [00:00<00:00, 14.70it/s]
+2025-01-24 20:03:44,317 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:44,366 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:44,367 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:44,369 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:44,371 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:44,383 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:44,444 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:44,490 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:44,491 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:44,494 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:44,495 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:44,507 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:44,577 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:44,622 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:44,622 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:44,625 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:44,627 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:44,638 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/13 [00:00<?, ?it/s]Batches:   8%|▊         | 1/13 [00:00<00:01,  7.43it/s]Batches:  15%|█▌        | 2/13 [00:00<00:01,  7.85it/s]Batches:  23%|██▎       | 3/13 [00:00<00:01,  8.20it/s]Batches:  31%|███       | 4/13 [00:00<00:01,  8.29it/s]Batches:  46%|████▌     | 6/13 [00:00<00:00, 10.41it/s]Batches: 100%|██████████| 13/13 [00:00<00:00, 17.93it/s]
+2025-01-24 20:03:46,894 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:47,315 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:47,315 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:47,327 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:47,329 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:47,376 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:47,967 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:48,359 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:48,360 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:48,372 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:48,373 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:48,423 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:49,059 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:49,433 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:49,433 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:49,446 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:49,447 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:49,501 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  9.70it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  9.68it/s]
+2025-01-24 20:03:50,889 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:50,922 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:50,922 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:50,925 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:50,926 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:50,937 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:50,991 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:51,025 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:51,025 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:51,028 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:51,030 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:51,040 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:51,091 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:51,127 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:51,127 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:51,130 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:51,131 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:51,142 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches:  33%|███▎      | 1/3 [00:00<00:00,  8.07it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 16.04it/s]
+2025-01-24 20:03:52,274 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:52,348 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:52,348 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:52,352 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:52,354 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:52,369 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:52,478 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:52,541 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:52,541 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:52,545 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:52,546 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:52,563 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:52,682 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:52,749 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:52,749 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:52,753 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:52,755 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:52,770 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/17 [00:00<?, ?it/s]Batches:   6%|▌         | 1/17 [00:00<00:02,  7.44it/s]Batches:  12%|█▏        | 2/17 [00:00<00:01,  7.90it/s]Batches:  18%|█▊        | 3/17 [00:00<00:01,  8.19it/s]Batches:  24%|██▎       | 4/17 [00:00<00:01,  8.34it/s]Batches:  29%|██▉       | 5/17 [00:00<00:01,  8.62it/s]Batches:  41%|████      | 7/17 [00:00<00:01,  9.85it/s]Batches:  65%|██████▍   | 11/17 [00:00<00:00, 17.57it/s]Batches: 100%|██████████| 17/17 [00:00<00:00, 18.23it/s]
+2025-01-24 20:03:55,494 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:56,162 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:56,162 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:56,178 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:56,179 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:56,247 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:57,098 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:57,800 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:57,800 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:57,816 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:57,818 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:57,887 - BERTopic - Representation - Completed ✓
+2025-01-24 20:03:58,773 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:03:59,496 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:03:59,496 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:03:59,511 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:03:59,513 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:03:59,580 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/50 [00:00<?, ?it/s]Batches:   2%|▏         | 1/50 [00:00<00:07,  6.58it/s]Batches:   4%|▍         | 2/50 [00:00<00:06,  7.07it/s]Batches:   6%|▌         | 3/50 [00:00<00:06,  7.32it/s]Batches:   8%|▊         | 4/50 [00:00<00:06,  7.48it/s]Batches:  10%|█         | 5/50 [00:00<00:05,  7.73it/s]Batches:  12%|█▏        | 6/50 [00:00<00:05,  7.85it/s]Batches:  14%|█▍        | 7/50 [00:00<00:05,  8.00it/s]Batches:  16%|█▌        | 8/50 [00:01<00:05,  8.03it/s]Batches:  18%|█▊        | 9/50 [00:01<00:05,  8.09it/s]Batches:  20%|██        | 10/50 [00:01<00:04,  8.15it/s]Batches:  22%|██▏       | 11/50 [00:01<00:04,  8.15it/s]Batches:  24%|██▍       | 12/50 [00:01<00:04,  8.30it/s]Batches:  26%|██▌       | 13/50 [00:01<00:04,  8.40it/s]Batches:  28%|██▊       | 14/50 [00:01<00:04,  8.52it/s]Batches:  30%|███       | 15/50 [00:01<00:04,  8.55it/s]Batches:  32%|███▏      | 16/50 [00:01<00:03,  8.90it/s]Batches:  34%|███▍      | 17/50 [00:02<00:03,  9.14it/s]Batches:  38%|███▊      | 19/50 [00:02<00:03,  9.61it/s]Batches:  42%|████▏     | 21/50 [00:02<00:02, 10.26it/s]Batches:  46%|████▌     | 23/50 [00:02<00:02, 11.01it/s]Batches:  52%|█████▏    | 26/50 [00:02<00:01, 14.76it/s]Batches:  64%|██████▍   | 32/50 [00:02<00:00, 24.70it/s]Batches:  80%|████████  | 40/50 [00:02<00:00, 37.94it/s]Batches:  98%|█████████▊| 49/50 [00:03<00:00, 50.22it/s]Batches: 100%|██████████| 50/50 [00:03<00:00, 16.43it/s]
+2025-01-24 20:04:08,229 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:04:11,180 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:04:11,180 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:04:11,214 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:04:11,216 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:04:11,362 - BERTopic - Representation - Completed ✓
+2025-01-24 20:04:14,211 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:04:16,702 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:04:16,702 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:04:16,739 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:04:16,741 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:04:16,894 - BERTopic - Representation - Completed ✓
+2025-01-24 20:04:19,876 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:04:22,448 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:04:22,448 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:04:22,486 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:04:22,487 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:04:22,643 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches:  33%|███▎      | 1/3 [00:00<00:00,  8.12it/s]Batches: 100%|██████████| 3/3 [00:00<00:00, 16.54it/s]
+2025-01-24 20:04:24,786 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:04:24,859 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:04:24,859 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:04:24,863 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:04:24,865 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:04:24,881 - BERTopic - Representation - Completed ✓
+2025-01-24 20:04:25,011 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:04:25,103 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:04:25,104 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:04:25,108 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:04:25,109 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:04:25,125 - BERTopic - Representation - Completed ✓
+2025-01-24 20:04:25,258 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:04:25,346 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:04:25,346 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:04:25,351 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:04:25,352 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:04:25,369 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/4 [00:00<?, ?it/s]Batches:  25%|██▌       | 1/4 [00:00<00:00,  7.43it/s]Batches:  50%|█████     | 2/4 [00:00<00:00,  8.13it/s]Batches: 100%|██████████| 4/4 [00:00<00:00, 13.21it/s]
+2025-01-24 20:04:26,678 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:04:26,802 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:04:26,802 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:04:26,807 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:04:26,809 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:04:26,838 - BERTopic - Representation - Completed ✓
+2025-01-24 20:04:27,022 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:04:27,137 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:04:27,137 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:04:27,143 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:04:27,144 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:04:27,175 - BERTopic - Representation - Completed ✓
+2025-01-24 20:04:27,364 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:04:27,459 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:04:27,459 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:04:27,464 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:04:27,465 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:04:27,854 - BERTopic - Representation - Completed ✓
+Batches:   0%|          | 0/339 [00:00<?, ?it/s]Batches:   0%|          | 1/339 [00:00<01:04,  5.25it/s]Batches:   1%|          | 2/339 [00:00<00:58,  5.74it/s]Batches:   1%|          | 3/339 [00:00<00:55,  6.04it/s]Batches:   1%|          | 4/339 [00:00<00:53,  6.24it/s]Batches:   1%|▏         | 5/339 [00:00<00:51,  6.45it/s]Batches:   2%|▏         | 6/339 [00:00<00:50,  6.63it/s]Batches:   2%|▏         | 7/339 [00:01<00:49,  6.76it/s]Batches:   2%|▏         | 8/339 [00:01<00:48,  6.86it/s]Batches:   3%|▎         | 9/339 [00:01<00:47,  6.97it/s]Batches:   3%|▎         | 10/339 [00:01<00:46,  7.07it/s]Batches:   3%|▎         | 11/339 [00:01<00:45,  7.15it/s]Batches:   4%|▎         | 12/339 [00:01<00:45,  7.22it/s]Batches:   4%|▍         | 13/339 [00:01<00:44,  7.25it/s]Batches:   4%|▍         | 14/339 [00:02<00:44,  7.32it/s]Batches:   4%|▍         | 15/339 [00:02<00:43,  7.38it/s]Batches:   5%|▍         | 16/339 [00:02<00:43,  7.44it/s]Batches:   5%|▌         | 17/339 [00:02<00:43,  7.46it/s]Batches:   5%|▌         | 18/339 [00:02<00:42,  7.52it/s]Batches:   6%|▌         | 19/339 [00:02<00:42,  7.60it/s]Batches:   6%|▌         | 20/339 [00:02<00:42,  7.58it/s]Batches:   6%|▌         | 21/339 [00:02<00:41,  7.63it/s]Batches:   6%|▋         | 22/339 [00:03<00:41,  7.67it/s]Batches:   7%|▋         | 23/339 [00:03<00:41,  7.70it/s]Batches:   7%|▋         | 24/339 [00:03<00:40,  7.71it/s]Batches:   7%|▋         | 25/339 [00:03<00:40,  7.75it/s]Batches:   8%|▊         | 26/339 [00:03<00:40,  7.77it/s]Batches:   8%|▊         | 27/339 [00:03<00:40,  7.73it/s]Batches:   8%|▊         | 28/339 [00:03<00:40,  7.72it/s]Batches:   9%|▊         | 29/339 [00:04<00:40,  7.70it/s]Batches:   9%|▉         | 30/339 [00:04<00:40,  7.70it/s]Batches:   9%|▉         | 31/339 [00:04<00:39,  7.74it/s]Batches:   9%|▉         | 32/339 [00:04<00:39,  7.82it/s]Batches:  10%|▉         | 33/339 [00:04<00:39,  7.81it/s]Batches:  10%|█         | 34/339 [00:04<00:38,  7.84it/s]Batches:  10%|█         | 35/339 [00:04<00:38,  7.83it/s]Batches:  11%|█         | 36/339 [00:04<00:38,  7.87it/s]Batches:  11%|█         | 37/339 [00:05<00:38,  7.92it/s]Batches:  11%|█         | 38/339 [00:05<00:37,  7.93it/s]Batches:  12%|█▏        | 39/339 [00:05<00:37,  7.90it/s]Batches:  12%|█▏        | 40/339 [00:05<00:37,  7.93it/s]Batches:  12%|█▏        | 41/339 [00:05<00:37,  7.96it/s]Batches:  12%|█▏        | 42/339 [00:05<00:37,  8.02it/s]Batches:  13%|█▎        | 43/339 [00:05<00:37,  7.98it/s]Batches:  13%|█▎        | 44/339 [00:05<00:37,  7.96it/s]Batches:  13%|█▎        | 45/339 [00:06<00:36,  7.96it/s]Batches:  14%|█▎        | 46/339 [00:06<00:36,  7.94it/s]Batches:  14%|█▍        | 47/339 [00:06<00:36,  7.97it/s]Batches:  14%|█▍        | 48/339 [00:06<00:36,  7.97it/s]Batches:  14%|█▍        | 49/339 [00:06<00:36,  7.99it/s]Batches:  15%|█▍        | 50/339 [00:06<00:36,  7.99it/s]Batches:  15%|█▌        | 51/339 [00:06<00:35,  8.03it/s]Batches:  15%|█▌        | 52/339 [00:06<00:35,  8.06it/s]Batches:  16%|█▌        | 53/339 [00:07<00:35,  8.15it/s]Batches:  16%|█▌        | 54/339 [00:07<00:35,  8.12it/s]Batches:  16%|█▌        | 55/339 [00:07<00:35,  8.09it/s]Batches:  17%|█▋        | 56/339 [00:07<00:35,  8.08it/s]Batches:  17%|█▋        | 57/339 [00:07<00:34,  8.06it/s]Batches:  17%|█▋        | 58/339 [00:07<00:34,  8.10it/s]Batches:  17%|█▋        | 59/339 [00:07<00:34,  8.10it/s]Batches:  18%|█▊        | 60/339 [00:07<00:34,  8.10it/s]Batches:  18%|█▊        | 61/339 [00:08<00:34,  8.08it/s]Batches:  18%|█▊        | 62/339 [00:08<00:34,  8.09it/s]Batches:  19%|█▊        | 63/339 [00:08<00:34,  8.08it/s]Batches:  19%|█▉        | 64/339 [00:08<00:33,  8.19it/s]Batches:  19%|█▉        | 65/339 [00:08<00:33,  8.29it/s]Batches:  19%|█▉        | 66/339 [00:08<00:32,  8.34it/s]Batches:  20%|█▉        | 67/339 [00:08<00:32,  8.29it/s]Batches:  20%|██        | 68/339 [00:08<00:32,  8.36it/s]Batches:  20%|██        | 69/339 [00:08<00:32,  8.41it/s]Batches:  21%|██        | 70/339 [00:09<00:31,  8.45it/s]Batches:  21%|██        | 71/339 [00:09<00:31,  8.49it/s]Batches:  21%|██        | 72/339 [00:09<00:31,  8.43it/s]Batches:  22%|██▏       | 73/339 [00:09<00:31,  8.49it/s]Batches:  22%|██▏       | 74/339 [00:09<00:31,  8.53it/s]Batches:  22%|██▏       | 75/339 [00:09<00:30,  8.54it/s]Batches:  22%|██▏       | 76/339 [00:09<00:30,  8.57it/s]Batches:  23%|██▎       | 77/339 [00:09<00:30,  8.49it/s]Batches:  23%|██▎       | 78/339 [00:10<00:30,  8.45it/s]Batches:  23%|██▎       | 79/339 [00:10<00:30,  8.53it/s]Batches:  24%|██▎       | 80/339 [00:10<00:30,  8.56it/s]Batches:  24%|██▍       | 81/339 [00:10<00:30,  8.60it/s]Batches:  24%|██▍       | 82/339 [00:10<00:30,  8.47it/s]Batches:  24%|██▍       | 83/339 [00:10<00:29,  8.54it/s]Batches:  25%|██▍       | 84/339 [00:10<00:29,  8.59it/s]Batches:  25%|██▌       | 85/339 [00:10<00:29,  8.52it/s]Batches:  25%|██▌       | 86/339 [00:10<00:30,  8.42it/s]Batches:  26%|██▌       | 87/339 [00:11<00:29,  8.41it/s]Batches:  26%|██▌       | 88/339 [00:11<00:30,  8.35it/s]Batches:  26%|██▋       | 89/339 [00:11<00:29,  8.40it/s]Batches:  27%|██▋       | 90/339 [00:11<00:30,  8.30it/s]Batches:  27%|██▋       | 91/339 [00:11<00:29,  8.31it/s]Batches:  27%|██▋       | 92/339 [00:11<00:29,  8.42it/s]Batches:  27%|██▋       | 93/339 [00:11<00:28,  8.49it/s]Batches:  28%|██▊       | 94/339 [00:11<00:28,  8.54it/s]Batches:  28%|██▊       | 95/339 [00:12<00:28,  8.59it/s]Batches:  28%|██▊       | 96/339 [00:12<00:28,  8.64it/s]Batches:  29%|██▊       | 97/339 [00:12<00:27,  8.67it/s]Batches:  29%|██▉       | 98/339 [00:12<00:27,  8.68it/s]Batches:  29%|██▉       | 99/339 [00:12<00:27,  8.70it/s]Batches:  29%|██▉       | 100/339 [00:12<00:27,  8.71it/s]Batches:  30%|██▉       | 101/339 [00:12<00:27,  8.71it/s]Batches:  30%|███       | 102/339 [00:12<00:27,  8.62it/s]Batches:  30%|███       | 103/339 [00:12<00:27,  8.68it/s]Batches:  31%|███       | 104/339 [00:13<00:27,  8.56it/s]Batches:  31%|███       | 105/339 [00:13<00:27,  8.63it/s]Batches:  31%|███▏      | 106/339 [00:13<00:26,  8.67it/s]Batches:  32%|███▏      | 107/339 [00:13<00:26,  8.72it/s]Batches:  32%|███▏      | 108/339 [00:13<00:26,  8.73it/s]Batches:  32%|███▏      | 109/339 [00:13<00:26,  8.77it/s]Batches:  32%|███▏      | 110/339 [00:13<00:26,  8.80it/s]Batches:  33%|███▎      | 111/339 [00:13<00:25,  8.84it/s]Batches:  33%|███▎      | 112/339 [00:13<00:26,  8.69it/s]Batches:  33%|███▎      | 113/339 [00:14<00:26,  8.60it/s]Batches:  34%|███▎      | 114/339 [00:14<00:25,  8.75it/s]Batches:  34%|███▍      | 115/339 [00:14<00:24,  9.04it/s]Batches:  34%|███▍      | 116/339 [00:14<00:24,  9.02it/s]Batches:  35%|███▍      | 117/339 [00:14<00:24,  9.12it/s]Batches:  35%|███▍      | 118/339 [00:14<00:24,  8.99it/s]Batches:  35%|███▌      | 119/339 [00:14<00:23,  9.25it/s]Batches:  36%|███▌      | 121/339 [00:14<00:22,  9.68it/s]Batches:  36%|███▋      | 123/339 [00:15<00:22,  9.66it/s]Batches:  37%|███▋      | 124/339 [00:15<00:22,  9.60it/s]Batches:  37%|███▋      | 126/339 [00:15<00:22,  9.42it/s]Batches:  38%|███▊      | 128/339 [00:15<00:21,  9.73it/s]Batches:  38%|███▊      | 129/339 [00:15<00:21,  9.58it/s]Batches:  38%|███▊      | 130/339 [00:15<00:21,  9.61it/s]Batches:  39%|███▉      | 132/339 [00:16<00:20,  9.98it/s]Batches:  40%|███▉      | 134/339 [00:16<00:19, 10.66it/s]Batches:  40%|████      | 136/339 [00:16<00:18, 11.15it/s]Batches:  41%|████      | 138/339 [00:16<00:17, 11.42it/s]Batches:  41%|████▏     | 140/339 [00:16<00:17, 11.59it/s]Batches:  42%|████▏     | 142/339 [00:16<00:16, 12.01it/s]Batches:  42%|████▏     | 144/339 [00:17<00:15, 12.61it/s]Batches:  43%|████▎     | 146/339 [00:17<00:14, 12.92it/s]Batches:  44%|████▎     | 148/339 [00:17<00:13, 13.71it/s]Batches:  44%|████▍     | 150/339 [00:17<00:14, 12.73it/s]Batches:  45%|████▍     | 152/339 [00:17<00:13, 13.78it/s]Batches:  45%|████▌     | 154/339 [00:17<00:12, 14.56it/s]Batches:  46%|████▌     | 156/339 [00:17<00:11, 15.42it/s]Batches:  47%|████▋     | 159/339 [00:17<00:10, 17.38it/s]Batches:  47%|████▋     | 161/339 [00:18<00:10, 16.59it/s]Batches:  48%|████▊     | 163/339 [00:18<00:10, 17.19it/s]Batches:  49%|████▉     | 166/339 [00:18<00:09, 19.08it/s]Batches:  50%|████▉     | 169/339 [00:18<00:08, 20.31it/s]Batches:  51%|█████     | 172/339 [00:18<00:07, 21.87it/s]Batches:  52%|█████▏    | 175/339 [00:18<00:07, 22.94it/s]Batches:  53%|█████▎    | 178/339 [00:18<00:06, 24.26it/s]Batches:  54%|█████▎    | 182/339 [00:18<00:05, 26.37it/s]Batches:  55%|█████▍    | 186/339 [00:19<00:05, 29.73it/s]Batches:  56%|█████▋    | 191/339 [00:19<00:04, 33.12it/s]Batches:  58%|█████▊    | 196/339 [00:19<00:03, 35.79it/s]Batches:  59%|█████▉    | 201/339 [00:19<00:03, 37.50it/s]Batches:  61%|██████    | 207/339 [00:19<00:03, 41.90it/s]Batches:  63%|██████▎   | 213/339 [00:19<00:02, 44.81it/s]Batches:  65%|██████▍   | 219/339 [00:19<00:02, 48.49it/s]Batches:  67%|██████▋   | 226/339 [00:19<00:02, 52.80it/s]Batches:  69%|██████▊   | 233/339 [00:19<00:01, 57.12it/s]Batches:  71%|███████   | 240/339 [00:20<00:01, 59.81it/s]Batches:  73%|███████▎  | 248/339 [00:20<00:01, 64.68it/s]Batches:  76%|███████▌  | 256/339 [00:20<00:01, 66.72it/s]Batches:  78%|███████▊  | 264/339 [00:20<00:01, 69.15it/s]Batches:  80%|████████  | 272/339 [00:20<00:00, 71.80it/s]Batches:  83%|████████▎ | 281/339 [00:20<00:00, 76.39it/s]Batches:  86%|████████▌ | 291/339 [00:20<00:00, 82.34it/s]Batches:  88%|████████▊ | 300/339 [00:20<00:00, 84.51it/s]Batches:  91%|█████████▏| 310/339 [00:20<00:00, 86.66it/s]Batches:  94%|█████████▍| 320/339 [00:20<00:00, 90.10it/s]Batches:  97%|█████████▋| 330/339 [00:21<00:00, 90.21it/s]Batches: 100%|██████████| 339/339 [00:21<00:00, 15.99it/s]
+2025-01-24 20:05:09,174 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:05:13,572 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:05:13,572 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:05:13,912 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:05:13,917 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:05:14,945 - BERTopic - Representation - Completed ✓
+2025-01-24 20:05:25,287 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:05:29,572 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:05:29,572 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:05:30,011 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:05:30,016 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:05:31,313 - BERTopic - Representation - Completed ✓
+2025-01-24 20:05:42,654 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:05:46,151 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:05:46,151 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:05:46,506 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:05:46,510 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:05:47,508 - BERTopic - Representation - Completed ✓
+2025-01-24 20:05:58,519 - BERTopic - Dimensionality - Fitting the dimensionality reduction algorithm
+2025-01-24 20:06:02,949 - BERTopic - Dimensionality - Completed ✓
+2025-01-24 20:06:02,949 - BERTopic - Cluster - Start clustering the reduced embeddings
+2025-01-24 20:06:03,287 - BERTopic - Cluster - Completed ✓
+2025-01-24 20:06:03,291 - BERTopic - Representation - Extracting topics from clusters using representation models.
+2025-01-24 20:06:04,313 - BERTopic - Representation - Completed ✓

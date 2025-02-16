@@ -1,0 +1,1148 @@
+wandb: Agent Starting Run: jsiov2ji with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 25
+wandb: 	l2_reg: 0.0005413090046320467
+wandb: 	lr: 3.31949550803375e-05
+wandb: 	n_layers_freeze: 11
+wandb: 	patience: 15
+wandb: Currently logged in as: michaelzhao (michaelzhao-harvard-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_083708-jsiov2ji
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run clean-sweep-1
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/jsiov2ji
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▁▂▂▂▂▂▃▃▃▅▅▅▅▆▆▆▆▆▆█████
+wandb:  best_val_f1 ▁▁▄▆▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇█████
+wandb:        epoch ▁▁▂▂▂▂▃▃▃▄▄▄▅▅▅▅▆▆▆▇▇▇▇██
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▆▆▆▅▅▅▄▄▄▄▃▃▃▃▃▂▂▂▂▂▁▁▁▁
+wandb:       val_f1 ▁▁▄▆▇▇▆▇▇▇▇▇▇▇▇▇▇▇▇▇█▇▇▇▇
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 21
+wandb:  best_val_f1 0.33054
+wandb:        epoch 25
+wandb:      test_f1 0.3577
+wandb:  test_f1_few 0.36755
+wandb: test_f1_zero 0.34755
+wandb:   train_loss 0.29501
+wandb:       val_f1 0.31896
+wandb: 
+wandb: 🚀 View run clean-sweep-1 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/jsiov2ji
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_083708-jsiov2ji/logs
+wandb: Agent Starting Run: jdavofbo with config:
+wandb: 	batch_size: 32
+wandb: 	epochs: 50
+wandb: 	l2_reg: 0.00047713945470969737
+wandb: 	lr: 4.844330717724521e-05
+wandb: 	n_layers_freeze: 9
+wandb: 	patience: 10
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_084415-jdavofbo
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dutiful-sweep-2
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/jdavofbo
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▁▁▂▂▂▃▃▄▄▄▄▄▄▄▄▄▄███████████
+wandb:  best_val_f1 ▁▇▇▇▇▇▇▇█████████████████████
+wandb:        epoch ▁▁▁▂▂▂▃▃▃▃▃▄▄▄▅▅▅▅▅▆▆▆▇▇▇▇▇██
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▇▆▆▅▅▄▄▄▃▃▃▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁
+wandb:       val_f1 ▁▇▅▇▇▇▇▇█▆▇▇▆▇▇▇▇▇█▇▇███▇▇██▇
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 19
+wandb:  best_val_f1 0.33314
+wandb:        epoch 29
+wandb:      test_f1 0.36741
+wandb:  test_f1_few 0.44532
+wandb: test_f1_zero 0.35802
+wandb:   train_loss 0.02429
+wandb:       val_f1 0.31733
+wandb: 
+wandb: 🚀 View run dutiful-sweep-2 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/jdavofbo
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_084415-jdavofbo/logs
+wandb: Agent Starting Run: tb85f7u3 with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 50
+wandb: 	l2_reg: 0.0004251033103751551
+wandb: 	lr: 3.91515072344422e-05
+wandb: 	n_layers_freeze: 12
+wandb: 	patience: 15
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_085244-tb85f7u3
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run gentle-sweep-3
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/tb85f7u3
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▁▁▁▁▁▁▁▁▃▃▄▄▄▄▄▄▄▄▄▆▆▆▆▆▇▇▇▇▇██████████
+wandb:  best_val_f1 ▁▁▁▁▁▁▁▁▁▂▂▄▄▄▄▄▄▄▄▄▆▆▆▆▆▇▇▇▇▇██████████
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇███
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▆▆▆▅▅▅▅▅▅▅▅▄▄▄▄▄▄▄▃▃▃▃▃▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁
+wandb:       val_f1 ▇▃▁▁▄▅▆▆▆▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇███▇▇▇███████▇▇▇
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 39
+wandb:  best_val_f1 0.32378
+wandb:        epoch 50
+wandb:      test_f1 0.36578
+wandb:  test_f1_few 0.43521
+wandb: test_f1_zero 0.36642
+wandb:   train_loss 0.27012
+wandb:       val_f1 0.31277
+wandb: 
+wandb: 🚀 View run gentle-sweep-3 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/tb85f7u3
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_085244-tb85f7u3/logs
+wandb: Agent Starting Run: ilvpsb1f with config:
+wandb: 	batch_size: 8
+wandb: 	epochs: 75
+wandb: 	l2_reg: 0.0003147744962877587
+wandb: 	lr: 4.375770911038685e-06
+wandb: 	n_layers_freeze: 10
+wandb: 	patience: 5
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_090601-ilvpsb1f
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run denim-sweep-4
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/ilvpsb1f
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▂▂▃▄▄▅▅▇▇██████
+wandb:  best_val_f1 ▁▂▂▄▇▇▇▇████████
+wandb:        epoch ▁▁▂▂▃▃▄▄▅▅▆▆▇▇██
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▅▅▄▄▃▃▃▂▂▂▂▂▁▁▁
+wandb:       val_f1 ▁▂▁▅▇▆▇▇████████
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 11
+wandb:  best_val_f1 0.32258
+wandb:        epoch 16
+wandb:      test_f1 0.34961
+wandb:  test_f1_few 0.41154
+wandb: test_f1_zero 0.35178
+wandb:   train_loss 0.59818
+wandb:       val_f1 0.32031
+wandb: 
+wandb: 🚀 View run denim-sweep-4 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/ilvpsb1f
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_090601-ilvpsb1f/logs
+wandb: Agent Starting Run: r01mkwr0 with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 50
+wandb: 	l2_reg: 0.0007534193612677356
+wandb: 	lr: 7.289739148846642e-05
+wandb: 	n_layers_freeze: 0
+wandb: 	patience: 10
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_091139-r01mkwr0
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run classic-sweep-5
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/r01mkwr0
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▂▂▅▅▅███████████
+wandb:  best_val_f1 ▁▆▆▇▇▇███████████
+wandb:        epoch ▁▁▂▂▃▃▄▄▅▅▅▆▆▇▇██
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▇▆▆▅▄▄▄▃▃▃▂▂▂▁▁
+wandb:       val_f1 ▁▆▅▇▆▇█▇█▇▇▇▆▇▇▇▇
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 7
+wandb:  best_val_f1 0.36357
+wandb:        epoch 17
+wandb:      test_f1 0.37183
+wandb:  test_f1_few 0.44055
+wandb: test_f1_zero 0.36895
+wandb:   train_loss 0.11112
+wandb:       val_f1 0.34298
+wandb: 
+wandb: 🚀 View run classic-sweep-5 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/r01mkwr0
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_091139-r01mkwr0/logs
+wandb: Agent Starting Run: wnuo2u2v with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 75
+wandb: 	l2_reg: 0.0009195810211398752
+wandb: 	lr: 7.709809686358135e-05
+wandb: 	n_layers_freeze: 0
+wandb: 	patience: 10
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_091725-wnuo2u2v
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run cerulean-sweep-6
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/wnuo2u2v
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▁▁▂▂▂▂▂▂▂▆▆▆▆▆███████████
+wandb:  best_val_f1 ▁▇▇▇▇▇▇▇▇▇████████████████
+wandb:        epoch ▁▁▂▂▂▂▃▃▃▄▄▄▄▅▅▅▅▆▆▆▇▇▇▇██
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▆▅▅▅▄▄▃▄▄▄▃▃▃▄▃▂▂▂▁▁▅▆▆▆▆
+wandb:       val_f1 ▁▇▆▇▇▇▇▅▅▆██▇▇██████▇▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 16
+wandb:  best_val_f1 0.34947
+wandb:        epoch 26
+wandb:      test_f1 0.37978
+wandb:  test_f1_few 0.44939
+wandb: test_f1_zero 0.38285
+wandb:   train_loss 0.76367
+wandb:       val_f1 0.18703
+wandb: 
+wandb: 🚀 View run cerulean-sweep-6 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/wnuo2u2v
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_091725-wnuo2u2v/logs
+wandb: Agent Starting Run: ykrhez8y with config:
+wandb: 	batch_size: 32
+wandb: 	epochs: 25
+wandb: 	l2_reg: 0.00013524560816653084
+wandb: 	lr: 2.0607749123352555e-06
+wandb: 	n_layers_freeze: 1
+wandb: 	patience: 5
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_092600-ykrhez8y
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lilac-sweep-7
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/ykrhez8y
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▁▁▁▁▁
+wandb:  best_val_f1 ▁▁▁▁▁▁
+wandb:        epoch ▁▂▄▅▇█
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▅▃▂▁▁
+wandb:       val_f1 █▂▁▁▂▁
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 1
+wandb:  best_val_f1 0.29671
+wandb:        epoch 6
+wandb:      test_f1 0.27629
+wandb:  test_f1_few 0.31793
+wandb: test_f1_zero 0.2801
+wandb:   train_loss 0.85381
+wandb:       val_f1 0.18483
+wandb: 
+wandb: 🚀 View run lilac-sweep-7 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/ykrhez8y
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_092600-ykrhez8y/logs
+wandb: Agent Starting Run: jnol47qo with config:
+wandb: 	batch_size: 32
+wandb: 	epochs: 25
+wandb: 	l2_reg: 0.0008581335604133682
+wandb: 	lr: 2.985624299864429e-05
+wandb: 	n_layers_freeze: 0
+wandb: 	patience: 10
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_092817-jnol47qo
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run solar-sweep-8
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/jnol47qo
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▁▁▂▃▃▄▄▄▄▄▄▄▄▄▄█████████
+wandb:  best_val_f1 ▁▇▇▇█████████████████████
+wandb:        epoch ▁▁▂▂▂▂▃▃▃▄▄▄▅▅▅▅▆▆▆▇▇▇▇██
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▇▆▆▅▅▄▄▄▃▃▃▃▂▂▂▂▁▁▁▁▁▁▁
+wandb:       val_f1 ▁▇▅▇███▇████▇▇▇██████▇▇▇█
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 17
+wandb:  best_val_f1 0.36382
+wandb:        epoch 25
+wandb:      test_f1 0.35303
+wandb:  test_f1_few 0.42508
+wandb: test_f1_zero 0.34785
+wandb:   train_loss 0.05155
+wandb:       val_f1 0.35147
+wandb: 
+wandb: 🚀 View run solar-sweep-8 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/jnol47qo
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_092817-jnol47qo/logs
+wandb: Sweep Agent: Waiting for job.
+wandb: Job received.
+wandb: Agent Starting Run: kl9yof6t with config:
+wandb: 	batch_size: 32
+wandb: 	epochs: 25
+wandb: 	l2_reg: 0.0008809401233328146
+wandb: 	lr: 7.792523328046519e-05
+wandb: 	n_layers_freeze: 2
+wandb: 	patience: 5
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_093658-kl9yof6t
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run icy-sweep-9
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/kl9yof6t
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▁▁▁▁▁
+wandb:  best_val_f1 ▁▁▁▁▁▁
+wandb:        epoch ▁▂▄▅▇█
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▂▁▁▁▁
+wandb:       val_f1 █▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 1
+wandb:  best_val_f1 0.26582
+wandb:        epoch 6
+wandb:      test_f1 0.29573
+wandb:  test_f1_few 0.34458
+wandb: test_f1_zero 0.30582
+wandb:   train_loss 0.76192
+wandb:       val_f1 0.18515
+wandb: 
+wandb: 🚀 View run icy-sweep-9 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/kl9yof6t
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_093658-kl9yof6t/logs
+wandb: Agent Starting Run: f8q7udt6 with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 75
+wandb: 	l2_reg: 9.360440854664582e-05
+wandb: 	lr: 5.290160162174807e-05
+wandb: 	n_layers_freeze: 0
+wandb: 	patience: 10
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_093913-f8q7udt6
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run worldly-sweep-10
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/f8q7udt6
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▁▁▁▁▁▁▁▁▁▁
+wandb:  best_val_f1 ▁▁▁▁▁▁▁▁▁▁▁
+wandb:        epoch ▁▂▂▃▄▅▅▆▇▇█
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▆▅▅▄▃▃▂▁▁
+wandb:       val_f1 █▂▁▁▂▆▆██▆▇
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 1
+wandb:  best_val_f1 0.33801
+wandb:        epoch 11
+wandb:      test_f1 0.35404
+wandb:  test_f1_few 0.42242
+wandb: test_f1_zero 0.34688
+wandb:   train_loss 0.34494
+wandb:       val_f1 0.33036
+wandb: 
+wandb: 🚀 View run worldly-sweep-10 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/f8q7udt6
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_093913-f8q7udt6/logs
+wandb: Agent Starting Run: nqndqqi6 with config:
+wandb: 	batch_size: 32
+wandb: 	epochs: 25
+wandb: 	l2_reg: 0.00011063239720238004
+wandb: 	lr: 7.105443417189665e-05
+wandb: 	n_layers_freeze: 8
+wandb: 	patience: 5
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_094327-nqndqqi6
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dutiful-sweep-11
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/nqndqqi6
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▂▂▃▄▄▆▆▆██████
+wandb:  best_val_f1 ▁▇▇▇▇▇█████████
+wandb:        epoch ▁▁▂▃▃▃▄▅▅▅▆▇▇▇█
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▇▆▆▅▄▄▃▃▂▂▁▁▁
+wandb:       val_f1 ▁▇▄▇▇▇█▇▇█▇▇▇██
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 10
+wandb:  best_val_f1 0.3365
+wandb:        epoch 15
+wandb:      test_f1 0.36799
+wandb:  test_f1_few 0.43297
+wandb: test_f1_zero 0.37141
+wandb:   train_loss 0.10058
+wandb:       val_f1 0.33453
+wandb: 
+wandb: 🚀 View run dutiful-sweep-11 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/nqndqqi6
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_094327-nqndqqi6/logs
+wandb: Agent Starting Run: hn2oulsh with config:
+wandb: 	batch_size: 8
+wandb: 	epochs: 25
+wandb: 	l2_reg: 0.0002310049537416545
+wandb: 	lr: 6.331926554551199e-05
+wandb: 	n_layers_freeze: 9
+wandb: 	patience: 15
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_094805-hn2oulsh
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run fearless-sweep-12
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/hn2oulsh
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▁▁▁▁▃▃▃▄▄▄▄▄▄▆▆▆▆▆▆█████
+wandb:  best_val_f1 ▁▂▂▂▂▂▂▃▃▅▅▅▅▅▇▇▇▇▇▇█████
+wandb:        epoch ▁▁▂▂▂▂▃▃▃▄▄▄▅▅▅▅▆▆▆▇▇▇▇██
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▇▆▅▅▄▃▃▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:       val_f1 ▅▅▁▄▅▅▄▆▆▇▆▆▆▇█▇▅▇█▅█▇▆▇▇
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 21
+wandb:  best_val_f1 0.32771
+wandb:        epoch 25
+wandb:      test_f1 0.35769
+wandb:  test_f1_few 0.43576
+wandb: test_f1_zero 0.34997
+wandb:   train_loss 0.02899
+wandb:       val_f1 0.3179
+wandb: 
+wandb: 🚀 View run fearless-sweep-12 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/hn2oulsh
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_094805-hn2oulsh/logs
+wandb: Sweep Agent: Waiting for job.
+wandb: Job received.
+wandb: Agent Starting Run: 92g5png5 with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 75
+wandb: 	l2_reg: 0.0009408582660239944
+wandb: 	lr: 8.478482376228277e-05
+wandb: 	n_layers_freeze: 5
+wandb: 	patience: 10
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_095700-92g5png5
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dandy-sweep-13
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/92g5png5
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▂▄▅▅███████████
+wandb:  best_val_f1 ▁▆▇▇▇███████████
+wandb:        epoch ▁▁▂▂▃▃▄▄▅▅▆▆▇▇██
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▇▆▆▅▄▄▃▃▃▂▂▂▁▁
+wandb:       val_f1 ▁▆▇▇▆██▇▇█▇▇▇▇▇█
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 6
+wandb:  best_val_f1 0.3588
+wandb:        epoch 16
+wandb:      test_f1 0.37507
+wandb:  test_f1_few 0.44933
+wandb: test_f1_zero 0.3699
+wandb:   train_loss 0.15028
+wandb:       val_f1 0.348
+wandb: 
+wandb: 🚀 View run dandy-sweep-13 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/92g5png5
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_095700-92g5png5/logs
+wandb: Agent Starting Run: 0ohc55yp with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 25
+wandb: 	l2_reg: 0.0008360079436908452
+wandb: 	lr: 9.06024786291994e-05
+wandb: 	n_layers_freeze: 10
+wandb: 	patience: 5
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_100203-0ohc55yp
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run pleasant-sweep-14
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/0ohc55yp
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▂▄▅▅██████
+wandb:  best_val_f1 ▁▆▇████████
+wandb:        epoch ▁▂▂▃▄▅▅▆▇▇█
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▆▅▅▄▃▃▂▂▁
+wandb:       val_f1 ▁▆▇█▇██▇█▇▇
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 6
+wandb:  best_val_f1 0.32942
+wandb:        epoch 11
+wandb:      test_f1 0.35068
+wandb:  test_f1_few 0.40886
+wandb: test_f1_zero 0.35367
+wandb:   train_loss 0.30769
+wandb:       val_f1 0.32049
+wandb: 
+wandb: 🚀 View run pleasant-sweep-14 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/0ohc55yp
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_100203-0ohc55yp/logs
+wandb: Agent Starting Run: 4ho1dgsb with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 50
+wandb: 	l2_reg: 0.000629828681583051
+wandb: 	lr: 2.9576589715743963e-05
+wandb: 	n_layers_freeze: 1
+wandb: 	patience: 5
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_100522-4ho1dgsb
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run sparkling-sweep-15
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/4ho1dgsb
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▂▂▂▅▅▅▅██████
+wandb:  best_val_f1 ▁▆▆▆██████████
+wandb:        epoch ▁▂▂▃▃▄▄▅▅▆▆▇▇█
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▇▆▅▅▄▃▃▃▂▂▁▁
+wandb:       val_f1 ▁▆▂▃█▇▆▇█▇▆▇▅▇
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 9
+wandb:  best_val_f1 0.35524
+wandb:        epoch 14
+wandb:      test_f1 0.38659
+wandb:  test_f1_few 0.39053
+wandb: test_f1_zero 0.37776
+wandb:   train_loss 0.11638
+wandb:       val_f1 0.34685
+wandb: 
+wandb: 🚀 View run sparkling-sweep-15 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/4ho1dgsb
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_100522-4ho1dgsb/logs
+wandb: Agent Starting Run: ucsjwuqc with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 75
+wandb: 	l2_reg: 2.3826127995902165e-05
+wandb: 	lr: 3.3886300530687576e-05
+wandb: 	n_layers_freeze: 4
+wandb: 	patience: 5
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_101035-ucsjwuqc
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run elated-sweep-16
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/ucsjwuqc
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▂▃▅▆▆██████
+wandb:  best_val_f1 ▁▂▆▇████████
+wandb:        epoch ▁▂▂▃▄▄▅▅▆▇▇█
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▆▅▅▄▃▃▂▂▁▁
+wandb:       val_f1 ▁▂▆▇█▇█▇▇█▇▇
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 7
+wandb:  best_val_f1 0.35515
+wandb:        epoch 12
+wandb:      test_f1 0.37692
+wandb:  test_f1_few 0.45678
+wandb: test_f1_zero 0.36704
+wandb:   train_loss 0.36197
+wandb:       val_f1 0.34127
+wandb: 
+wandb: 🚀 View run elated-sweep-16 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/ucsjwuqc
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_101035-ucsjwuqc/logs
+wandb: Agent Starting Run: gff8z2p5 with config:
+wandb: 	batch_size: 8
+wandb: 	epochs: 25
+wandb: 	l2_reg: 0.00023539141838265865
+wandb: 	lr: 6.871753081042246e-05
+wandb: 	n_layers_freeze: 3
+wandb: 	patience: 5
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_101431-gff8z2p5
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run genial-sweep-17
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/gff8z2p5
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▂▂▃▃▃▃▃▇▇██████
+wandb:  best_val_f1 ▁▅▅▇▇▇▇▇████████
+wandb:        epoch ▁▁▂▂▃▃▄▄▅▅▆▆▇▇██
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▇▆▅▄▄▃▃▂▂▂▂▂▂▁
+wandb:       val_f1 ▃▆▁▇▇▇▆▇█▇█▇▆▇▆▇
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 11
+wandb:  best_val_f1 0.34811
+wandb:        epoch 16
+wandb:      test_f1 0.37273
+wandb:  test_f1_few 0.38479
+wandb: test_f1_zero 0.36018
+wandb:   train_loss 0.24262
+wandb:       val_f1 0.34285
+wandb: 
+wandb: 🚀 View run genial-sweep-17 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/gff8z2p5
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_101431-gff8z2p5/logs
+wandb: Sweep Agent: Waiting for job.
+wandb: Job received.
+wandb: Agent Starting Run: sp989k1b with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 50
+wandb: 	l2_reg: 0.0004780155080393184
+wandb: 	lr: 3.1108694146551966e-05
+wandb: 	n_layers_freeze: 4
+wandb: 	patience: 5
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_102103-sp989k1b
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run stilted-sweep-18
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/sp989k1b
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▁▅▆██████
+wandb:  best_val_f1 ▁▁▆▇██████
+wandb:        epoch ▁▂▃▃▄▅▆▆▇█
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▆▆▅▄▄▃▂▁▁
+wandb:       val_f1 ▁▁▆▇███▇██
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 5
+wandb:  best_val_f1 0.35653
+wandb:        epoch 10
+wandb:      test_f1 0.37522
+wandb:  test_f1_few 0.44609
+wandb: test_f1_zero 0.37173
+wandb:   train_loss 0.44243
+wandb:       val_f1 0.34725
+wandb: 
+wandb: 🚀 View run stilted-sweep-18 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/sp989k1b
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_102103-sp989k1b/logs
+wandb: Agent Starting Run: iw1kg6if with config:
+wandb: 	batch_size: 8
+wandb: 	epochs: 25
+wandb: 	l2_reg: 2.2136677665857348e-05
+wandb: 	lr: 3.168845356500972e-05
+wandb: 	n_layers_freeze: 8
+wandb: 	patience: 15
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_102424-iw1kg6if
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run tough-sweep-19
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/iw1kg6if
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▃▃▆████████████████
+wandb:  best_val_f1 ▁▄▄▇████████████████
+wandb:        epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▇▆▆▅▄▄▃▃▃▂▂▂▁▁▁▁▁▁
+wandb:       val_f1 ▂▅▁▇█▇▆▆▇▆▇▇▇▆▇▆▇▇▇▆
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 5
+wandb:  best_val_f1 0.3269
+wandb:        epoch 20
+wandb:      test_f1 0.37616
+wandb:  test_f1_few 0.37861
+wandb: test_f1_zero 0.36915
+wandb:   train_loss 0.03324
+wandb:       val_f1 0.31091
+wandb: 
+wandb: 🚀 View run tough-sweep-19 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/iw1kg6if
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_102424-iw1kg6if/logs
+wandb: Sweep Agent: Waiting for job.
+wandb: Job received.
+wandb: Agent Starting Run: b4zohi5g with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 75
+wandb: 	l2_reg: 0.0002184170775650266
+wandb: 	lr: 5.4106407821974894e-05
+wandb: 	n_layers_freeze: 2
+wandb: 	patience: 10
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_103146-b4zohi5g
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run effortless-sweep-20
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/b4zohi5g
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▁▂▂▃▃▃▃▄▅▅▅▅▅▅▅▅▅███████████
+wandb:  best_val_f1 ▁▆▆▆▇▇▇▇▇████████████████████
+wandb:        epoch ▁▁▁▂▂▂▃▃▃▃▃▄▄▄▅▅▅▅▅▆▆▆▇▇▇▇▇██
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▇▇▆▅▅▄▄▃▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:       val_f1 ▁▆▆▅▇▇▇▆▇██▇█▇▇▇▇██▇▇▇▇▇▇█▇▇▇
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 19
+wandb:  best_val_f1 0.34279
+wandb:        epoch 29
+wandb:      test_f1 0.37734
+wandb:  test_f1_few 0.38902
+wandb: test_f1_zero 0.36235
+wandb:   train_loss 0.0093
+wandb:       val_f1 0.32167
+wandb: 
+wandb: 🚀 View run effortless-sweep-20 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/b4zohi5g
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_103146-b4zohi5g/logs
+wandb: Agent Starting Run: r9dle5ua with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 75
+wandb: 	l2_reg: 8.066143704623787e-05
+wandb: 	lr: 3.363320811460275e-05
+wandb: 	n_layers_freeze: 5
+wandb: 	patience: 5
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_104200-r9dle5ua
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run pretty-sweep-21
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/r9dle5ua
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▁▅▆██████
+wandb:  best_val_f1 ▁▁▆▇██████
+wandb:        epoch ▁▂▃▃▄▅▆▆▇█
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▆▆▅▄▃▃▂▂▁
+wandb:       val_f1 ▁▁▆▇█▇▇▇▇▇
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 5
+wandb:  best_val_f1 0.34502
+wandb:        epoch 10
+wandb:      test_f1 0.37356
+wandb:  test_f1_few 0.42605
+wandb: test_f1_zero 0.39224
+wandb:   train_loss 0.4758
+wandb:       val_f1 0.32991
+wandb: 
+wandb: 🚀 View run pretty-sweep-21 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/r9dle5ua
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_104200-r9dle5ua/logs
+wandb: Agent Starting Run: u5022968 with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 25
+wandb: 	l2_reg: 0.000882230155542473
+wandb: 	lr: 2.8241526410434163e-05
+wandb: 	n_layers_freeze: 2
+wandb: 	patience: 10
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_104518-u5022968
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run zany-sweep-22
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/u5022968
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▂▃▃▄▅▆▆▇███████████
+wandb:  best_val_f1 ▁▁▅▇▇▇▇▇▇███████████
+wandb:        epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▇▆▆▅▅▄▃▃▃▃▂▂▂▂▂▁▁▁
+wandb:       val_f1 ▁▁▅▇▇▇▇▇▇█▇▇▇▇█▇▇▇▇▇
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 10
+wandb:  best_val_f1 0.37106
+wandb:        epoch 20
+wandb:      test_f1 0.36471
+wandb:  test_f1_few 0.44081
+wandb: test_f1_zero 0.35473
+wandb:   train_loss 0.1979
+wandb:       val_f1 0.35167
+wandb: 
+wandb: 🚀 View run zany-sweep-22 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/u5022968
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_104518-u5022968/logs
+wandb: Sweep Agent: Waiting for job.
+wandb: Job received.
+wandb: Agent Starting Run: fxcw90n9 with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 50
+wandb: 	l2_reg: 0.0008062881753955189
+wandb: 	lr: 1.3665808037114128e-05
+wandb: 	n_layers_freeze: 1
+wandb: 	patience: 10
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_105159-fxcw90n9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run kind-sweep-23
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/fxcw90n9
+wandb: updating run config
+wandb: 
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▁▂▂▂▂▃▃▃▃▄▄▄▄▄▄▄▆▆▆▆▆▆▆███████████
+wandb:  best_val_f1 ▁▁▂▅▆▇▇▇███████████████████████████
+wandb:        epoch ▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇███
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▇▆▆▆▅▅▅▄▄▄▃▃▃▃▃▃▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁
+wandb:       val_f1 ▁▁▂▅▆▇▇▇█████████████▇█▇██▇▇▇▇██▇██
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 25
+wandb:  best_val_f1 0.35503
+wandb:        epoch 35
+wandb:      test_f1 0.37008
+wandb:  test_f1_few 0.4495
+wandb: test_f1_zero 0.36116
+wandb:   train_loss 0.18187
+wandb:       val_f1 0.34515
+wandb: 
+wandb: 🚀 View run kind-sweep-23 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/fxcw90n9
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_105159-fxcw90n9/logs
+wandb: Agent Starting Run: 03glsrg0 with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 50
+wandb: 	l2_reg: 0.0007197426660608856
+wandb: 	lr: 4.2457507538090504e-05
+wandb: 	n_layers_freeze: 2
+wandb: 	patience: 15
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_110341-03glsrg0
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run true-sweep-24
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/03glsrg0
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▂▃▄▅▆▆████████████████
+wandb:  best_val_f1 ▁▄▆▇▇▇▇████████████████
+wandb:        epoch ▁▁▂▂▂▃▃▃▄▄▄▅▅▅▅▆▆▆▇▇▇██
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▇▆▆▆▅▅▅▄▄▄▃▃▃▃▃▂▂▂▂▁▁
+wandb:       val_f1 ▁▄▆▇▇▇▆█▇▇▇▇▇▇▇▇▇▇▇█▇▇▇
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 8
+wandb:  best_val_f1 0.37407
+wandb:        epoch 23
+wandb:      test_f1 0.38573
+wandb:  test_f1_few 0.45594
+wandb: test_f1_zero 0.38755
+wandb:   train_loss 0.14874
+wandb:       val_f1 0.35499
+wandb: 
+wandb: 🚀 View run true-sweep-24 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/03glsrg0
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_110341-03glsrg0/logs
+wandb: Agent Starting Run: s9manbxa with config:
+wandb: 	batch_size: 32
+wandb: 	epochs: 50
+wandb: 	l2_reg: 0.0007941193583549672
+wandb: 	lr: 1.504665937365641e-05
+wandb: 	n_layers_freeze: 0
+wandb: 	patience: 10
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_111107-s9manbxa
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run hardy-sweep-25
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/s9manbxa
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▂▂▄▅▅▆▆███████████
+wandb:  best_val_f1 ▁▆▆▇▇▇▇▇███████████
+wandb:        epoch ▁▁▂▂▃▃▃▄▄▅▅▅▆▆▆▇▇██
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▆▆▅▅▄▄▃▃▂▂▂▂▂▁▁▁▁
+wandb:       val_f1 ▁▆▆▇▇▆▇▇█▇█▇▇▇█▇▇▇▇
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 9
+wandb:  best_val_f1 0.36566
+wandb:        epoch 19
+wandb:      test_f1 0.38048
+wandb:  test_f1_few 0.45228
+wandb: test_f1_zero 0.37771
+wandb:   train_loss 0.24336
+wandb:       val_f1 0.34191
+wandb: 
+wandb: 🚀 View run hardy-sweep-25 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/s9manbxa
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_111107-s9manbxa/logs
+wandb: Agent Starting Run: 3lfrr7h8 with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 50
+wandb: 	l2_reg: 0.0009779768220570951
+wandb: 	lr: 2.2572814985645203e-05
+wandb: 	n_layers_freeze: 3
+wandb: 	patience: 10
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_111740-3lfrr7h8
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run chocolate-sweep-26
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/3lfrr7h8
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▁▂▂▃▃▃▄▄▅▅▅▅▅▅▅▅▅███████████
+wandb:  best_val_f1 ▁▁▄▅▇▇▇██████████████████████
+wandb:        epoch ▁▁▁▂▂▂▃▃▃▃▃▄▄▄▅▅▅▅▅▆▆▆▇▇▇▇▇██
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▇▆▆▆▅▅▅▄▄▄▃▃▃▃▃▃▃▂▂▂▂▂▂▁▁▁▁
+wandb:       val_f1 ▂▁▅▅▇▆▇███▇▇▇▇█▇█▇█▇▆▇▇▇▇█▇▇▇
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 19
+wandb:  best_val_f1 0.35686
+wandb:        epoch 29
+wandb:      test_f1 0.37286
+wandb:  test_f1_few 0.43872
+wandb: test_f1_zero 0.3744
+wandb:   train_loss 0.08801
+wandb:       val_f1 0.34104
+wandb: 
+wandb: 🚀 View run chocolate-sweep-26 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/3lfrr7h8
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_111740-3lfrr7h8/logs
+wandb: Agent Starting Run: mg8p9thi with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 50
+wandb: 	l2_reg: 0.0007433988588883468
+wandb: 	lr: 3.977964498799502e-05
+wandb: 	n_layers_freeze: 1
+wandb: 	patience: 15
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_112647-mg8p9thi
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run prime-sweep-27
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/mg8p9thi
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▂▂▃▃▃▅▅▅▅████████████████
+wandb:  best_val_f1 ▁▃▇███████████████████████
+wandb:        epoch ▁▁▂▂▂▂▃▃▃▄▄▄▄▅▅▅▅▆▆▆▇▇▇▇██
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▇▆▆▆▅▅▄▄▄▃▃▃▃▃▃▂▂▂▁▁▁▁▁▁
+wandb:       val_f1 ▁▃▇█▇▅█▇▇▇█████▇▇▇▇▇▇▇▇▇▇▇
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 11
+wandb:  best_val_f1 0.36324
+wandb:        epoch 26
+wandb:      test_f1 0.37258
+wandb:  test_f1_few 0.44837
+wandb: test_f1_zero 0.36059
+wandb:   train_loss 0.06011
+wandb:       val_f1 0.33707
+wandb: 
+wandb: 🚀 View run prime-sweep-27 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/mg8p9thi
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_112647-mg8p9thi/logs
+wandb: Agent Starting Run: vs4yhd1n with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 50
+wandb: 	l2_reg: 0.0007100765117717336
+wandb: 	lr: 2.0405461230285497e-05
+wandb: 	n_layers_freeze: 2
+wandb: 	patience: 10
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_113515-vs4yhd1n
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run stellar-sweep-28
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/vs4yhd1n
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:   best_epoch ▁▁▃▃▄▄▄▆▆███████████
+wandb:  best_val_f1 ▁▁▄▅▇▇▇█████████████
+wandb:        epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb:      test_f1 ▁
+wandb:  test_f1_few ▁
+wandb: test_f1_zero ▁
+wandb:   train_loss █▇▆▆▆▅▅▄▄▃▃▂▂▂▂▂▁▁▁▁
+wandb:       val_f1 ▂▁▄▅▇▅▇█▇██▇▇███▇▇█▇
+wandb: 
+wandb: Run summary:
+wandb:   best_epoch 10
+wandb:  best_val_f1 0.35917
+wandb:        epoch 20
+wandb:      test_f1 0.37811
+wandb:  test_f1_few 0.45265
+wandb: test_f1_zero 0.37146
+wandb:   train_loss 0.29033
+wandb:       val_f1 0.33588
+wandb: 
+wandb: 🚀 View run stellar-sweep-28 at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/vs4yhd1n
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250216_113515-vs4yhd1n/logs
+wandb: Agent Starting Run: kb9lrqsb with config:
+wandb: 	batch_size: 32
+wandb: 	epochs: 50
+wandb: 	l2_reg: 0.0008056928648074674
+wandb: 	lr: 3.595793881658753e-05
+wandb: 	n_layers_freeze: 3
+wandb: 	patience: 15
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250216_114146-kb9lrqsb
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run breezy-sweep-29
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/sweeps/eko9ylky
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-multiple/runs/kb9lrqsb

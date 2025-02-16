@@ -1,0 +1,488 @@
+// Taxonomy Tree
+digraph {
+	policy_0 [label="Government Operations and Politics"]
+	subtopic1_0 [label="D.C. Statehood and Local Governance"]
+	policy_0 -> subtopic1_0
+	subtopic2_0 [label="D.C. Statehood and Local Governance Issues"]
+	subtopic1_0 -> subtopic2_0
+	cluster_0 [label="cluster_length: 8"]
+	subtopic2_0 -> cluster_0
+	subtopic2_1 [label="D.C. Crime and Public Safety Reform"]
+	subtopic1_0 -> subtopic2_1
+	cluster_1 [label="cluster_length: 43"]
+	subtopic2_1 -> cluster_1
+	subtopic1_1 [label="Government Transparency and Accountability Measures"]
+	policy_0 -> subtopic1_1
+	subtopic2_2 [label="Regulatory Oversight and Government Accountability"]
+	subtopic1_1 -> subtopic2_2
+	cluster_2 [label="cluster_length: 35"]
+	subtopic2_2 -> cluster_2
+	subtopic2_3 [label="Government Accountability Practices and Standards"]
+	subtopic1_1 -> subtopic2_3
+	cluster_3 [label="cluster_length: 17"]
+	subtopic2_3 -> cluster_3
+	subtopic1_2 [label="Reproductive Rights and Healthcare Politics"]
+	policy_0 -> subtopic1_2
+	subtopic2_4 [label="Abortion Rights and Government Policy"]
+	subtopic1_2 -> subtopic2_4
+	cluster_4 [label="cluster_length: 6"]
+	subtopic2_4 -> cluster_4
+	subtopic2_5 [label="Women's Reproductive Rights Legislation"]
+	subtopic1_2 -> subtopic2_5
+	cluster_5 [label="cluster_length: 6"]
+	subtopic2_5 -> cluster_5
+	policy_1 [label="Crime and Law Enforcement"]
+	subtopic1_3 [label="Gun Regulation and Law Enforcement Practices"]
+	policy_1 -> subtopic1_3
+	subtopic2_6 [label="Gun Regulation in Law Enforcement"]
+	subtopic1_3 -> subtopic2_6
+	cluster_6 [label="cluster_length: 11"]
+	subtopic2_6 -> cluster_6
+	subtopic2_7 [label="Law Enforcement Policies and Regulations"]
+	subtopic1_3 -> subtopic2_7
+	cluster_7 [label="cluster_length: 10"]
+	subtopic2_7 -> cluster_7
+	policy_2 [label=Law]
+	subtopic1_4 [label=Uncategorized]
+	policy_2 -> subtopic1_4
+	cluster_8 [label="cluster_length: 0"]
+	subtopic1_4 -> cluster_8
+	policy_3 [label="Emergency Management"]
+	subtopic1_5 [label="Emergency Management Funding Issues"]
+	policy_3 -> subtopic1_5
+	subtopic2_8 [label="Funding for Emergency Response Programs"]
+	subtopic1_5 -> subtopic2_8
+	cluster_9 [label="cluster_length: 14"]
+	subtopic2_8 -> cluster_9
+	subtopic2_9 [label="Accountability in Emergency Management Funding"]
+	subtopic1_5 -> subtopic2_9
+	cluster_10 [label="cluster_length: 14"]
+	subtopic2_9 -> cluster_10
+	subtopic1_6 [label="Border Security and Immigration Policy"]
+	policy_3 -> subtopic1_6
+	subtopic2_10 [label="Border Security Challenges in Emergency Management"]
+	subtopic1_6 -> subtopic2_10
+	cluster_11 [label="cluster_length: 12"]
+	subtopic2_10 -> cluster_11
+	subtopic2_11 [label="Border Security and Immigration Enforcement"]
+	subtopic1_6 -> subtopic2_11
+	cluster_12 [label="cluster_length: 8"]
+	subtopic2_11 -> cluster_12
+	policy_4 [label=Energy]
+	subtopic1_7 [label="Strategic Petroleum Reserve Management and Oversight"]
+	policy_4 -> subtopic1_7
+	subtopic2_12 [label=Uncategorized]
+	subtopic1_7 -> subtopic2_12
+	cluster_13 [label="cluster_length: 4"]
+	subtopic2_12 -> cluster_13
+	subtopic1_8 [label="Energy Legislation and Amendments"]
+	policy_4 -> subtopic1_8
+	subtopic2_13 [label="Legislative Process and Amendment Debates"]
+	subtopic1_8 -> subtopic2_13
+	cluster_14 [label="cluster_length: 14"]
+	subtopic2_13 -> cluster_14
+	subtopic2_14 [label="Energy Policy and Environmental Impact"]
+	subtopic1_8 -> subtopic2_14
+	cluster_15 [label="cluster_length: 8"]
+	subtopic2_14 -> cluster_15
+	subtopic1_9 [label="Energy Security and Policy Challenges"]
+	policy_4 -> subtopic1_9
+	subtopic2_15 [label="Big Oil's Environmental Impact Analysis"]
+	subtopic1_9 -> subtopic2_15
+	cluster_16 [label="cluster_length: 12"]
+	subtopic2_15 -> cluster_16
+	subtopic2_16 [label="Energy Security and National Resilience"]
+	subtopic1_9 -> subtopic2_16
+	cluster_17 [label="cluster_length: 16"]
+	subtopic2_16 -> cluster_17
+	subtopic1_10 [label="Energy Production and Policy"]
+	policy_4 -> subtopic1_10
+	subtopic2_17 [label="Domestic Renewable Energy Production Policies"]
+	subtopic1_10 -> subtopic2_17
+	cluster_18 [label="cluster_length: 9"]
+	subtopic2_17 -> cluster_18
+	subtopic2_18 [label="Energy Costs and Economic Effects"]
+	subtopic1_10 -> subtopic2_18
+	cluster_19 [label="cluster_length: 6"]
+	subtopic2_18 -> cluster_19
+	subtopic1_11 [label="Energy Policy Analysis and Debate"]
+	policy_4 -> subtopic1_11
+	subtopic2_19 [label=Uncategorized]
+	subtopic1_11 -> subtopic2_19
+	cluster_20 [label="cluster_length: 11"]
+	subtopic2_19 -> cluster_20
+	subtopic1_12 [label="Offshore Energy Development Regulations"]
+	policy_4 -> subtopic1_12
+	subtopic2_20 [label="Offshore Wind Energy Development Regulations"]
+	subtopic1_12 -> subtopic2_20
+	cluster_21 [label="cluster_length: 9"]
+	subtopic2_20 -> cluster_21
+	subtopic2_21 [label="Regulations and Policies for Offshore Drilling"]
+	subtopic1_12 -> subtopic2_21
+	cluster_22 [label="cluster_length: 8"]
+	subtopic2_21 -> cluster_22
+	subtopic2_22 [label="Oil Drilling Regulations and Impacts"]
+	subtopic1_12 -> subtopic2_22
+	cluster_23 [label="cluster_length: 10"]
+	subtopic2_22 -> cluster_23
+	subtopic1_13 [label="Climate Change and Environmental Policy"]
+	policy_4 -> subtopic1_13
+	subtopic2_23 [label="Climate Change Impacts on Energy Policy"]
+	subtopic1_13 -> subtopic2_23
+	cluster_24 [label="cluster_length: 21"]
+	subtopic2_23 -> cluster_24
+	subtopic2_24 [label="Environmental Protection and Policy Framework"]
+	subtopic1_13 -> subtopic2_24
+	cluster_25 [label="cluster_length: 13"]
+	subtopic2_24 -> cluster_25
+	subtopic1_14 [label="Public Lands and Energy Policy"]
+	policy_4 -> subtopic1_14
+	subtopic2_25 [label=Uncategorized]
+	subtopic1_14 -> subtopic2_25
+	cluster_26 [label="cluster_length: 10"]
+	subtopic2_25 -> cluster_26
+	subtopic1_15 [label="Water Quality and Environmental Protection"]
+	policy_4 -> subtopic1_15
+	subtopic2_26 [label=Uncategorized]
+	subtopic1_15 -> subtopic2_26
+	cluster_27 [label="cluster_length: 10"]
+	subtopic2_26 -> cluster_27
+	subtopic1_16 [label="Gas Stove Regulation and Policy"]
+	policy_4 -> subtopic1_16
+	subtopic2_27 [label=Uncategorized]
+	subtopic1_16 -> subtopic2_27
+	cluster_28 [label="cluster_length: 5"]
+	subtopic2_27 -> cluster_28
+	subtopic1_17 [label="China's Influence on Global Energy Resources"]
+	policy_4 -> subtopic1_17
+	subtopic2_28 [label="China's Impact on Global Energy Resources"]
+	subtopic1_17 -> subtopic2_28
+	cluster_29 [label="cluster_length: 7"]
+	subtopic2_28 -> cluster_29
+	subtopic2_29 [label="Uranium Mining and Its Impacts"]
+	subtopic1_17 -> subtopic2_29
+	cluster_30 [label="cluster_length: 5"]
+	subtopic2_29 -> cluster_30
+	policy_5 [label="Armed Forces and National Security"]
+	subtopic1_18 [label="Diversity and Inclusion in the Military"]
+	policy_5 -> subtopic1_18
+	subtopic2_30 [label="Military Cultural History and Recognition"]
+	subtopic1_18 -> subtopic2_30
+	cluster_31 [label="cluster_length: 6"]
+	subtopic2_30 -> cluster_31
+	subtopic2_31 [label="Military Diversity and Inclusion Strategies"]
+	subtopic1_18 -> subtopic2_31
+	cluster_32 [label="cluster_length: 13"]
+	subtopic2_31 -> cluster_32
+	subtopic1_19 [label="Military Families and Gender Healthcare Access"]
+	policy_5 -> subtopic1_19
+	subtopic2_32 [label="Military Support Services for Families"]
+	subtopic1_19 -> subtopic2_32
+	cluster_33 [label="cluster_length: 10"]
+	subtopic2_32 -> cluster_33
+	subtopic2_33 [label="Military Family Health and Rights"]
+	subtopic1_19 -> subtopic2_33
+	cluster_34 [label="cluster_length: 8"]
+	subtopic2_33 -> cluster_34
+	subtopic2_34 [label="Transgender Issues in Military Healthcare"]
+	subtopic1_19 -> subtopic2_34
+	cluster_35 [label="cluster_length: 5"]
+	subtopic2_34 -> cluster_35
+	subtopic1_20 [label="Legislative Procedures and National Security"]
+	policy_5 -> subtopic1_20
+	subtopic2_35 [label="Legislative Process for National Defense"]
+	subtopic1_20 -> subtopic2_35
+	cluster_36 [label="cluster_length: 16"]
+	subtopic2_35 -> cluster_36
+	subtopic2_36 [label="National Security and Information Integrity"]
+	subtopic1_20 -> subtopic2_36
+	cluster_37 [label="cluster_length: 14"]
+	subtopic2_36 -> cluster_37
+	subtopic1_21 [label="U.S. Support and Funding for Ukraine"]
+	policy_5 -> subtopic1_21
+	subtopic2_37 [label="U.S. Financial Support for Ukraine"]
+	subtopic1_21 -> subtopic2_37
+	cluster_38 [label="cluster_length: 12"]
+	subtopic2_37 -> cluster_38
+	subtopic2_38 [label="Military Assistance for Ukraine"]
+	subtopic1_21 -> subtopic2_38
+	cluster_39 [label="cluster_length: 11"]
+	subtopic2_38 -> cluster_39
+	policy_6 [label=Education]
+	subtopic1_22 [label="Parental Rights and Education Issues"]
+	policy_6 -> subtopic1_22
+	subtopic2_39 [label="Education Funding and Reform Issues"]
+	subtopic1_22 -> subtopic2_39
+	cluster_40 [label="cluster_length: 23"]
+	subtopic2_39 -> cluster_40
+	subtopic2_40 [label="Parental Rights in Educational Policy"]
+	subtopic1_22 -> subtopic2_40
+	cluster_41 [label="cluster_length: 11"]
+	subtopic2_40 -> cluster_41
+	subtopic2_41 [label="Book Censorship Challenges in Education"]
+	subtopic1_22 -> subtopic2_41
+	cluster_42 [label="cluster_length: 9"]
+	subtopic2_41 -> cluster_42
+	subtopic2_42 [label="Gun Safety Measures in Schools"]
+	subtopic1_22 -> subtopic2_42
+	cluster_43 [label="cluster_length: 7"]
+	subtopic2_42 -> cluster_43
+	subtopic2_43 [label="Hunting and Archery Education Initiatives"]
+	subtopic1_22 -> subtopic2_43
+	cluster_44 [label="cluster_length: 9"]
+	subtopic2_43 -> cluster_44
+	subtopic1_23 [label="Women's Sports Participation and Rights"]
+	policy_6 -> subtopic1_23
+	subtopic2_44 [label="Women's Sports Participation in Education"]
+	subtopic1_23 -> subtopic2_44
+	cluster_45 [label="cluster_length: 6"]
+	subtopic2_44 -> cluster_45
+	subtopic2_45 [label="Transgender Issues in Sports Education"]
+	subtopic1_23 -> subtopic2_45
+	cluster_46 [label="cluster_length: 7"]
+	subtopic2_45 -> cluster_46
+	policy_7 [label=Health]
+	subtopic1_24 [label="Public Health Emergency Management and Response"]
+	policy_7 -> subtopic1_24
+	subtopic2_46 [label="COVID-19 Emergency Response and Management"]
+	subtopic1_24 -> subtopic2_46
+	cluster_47 [label="cluster_length: 18"]
+	subtopic2_46 -> cluster_47
+	subtopic2_47 [label="Vaccine Mandates and Healthcare Workers"]
+	subtopic1_24 -> subtopic2_47
+	cluster_48 [label="cluster_length: 50"]
+	subtopic2_47 -> cluster_48
+	policy_8 [label="Social Welfare"]
+	subtopic1_25 [label=Uncategorized]
+	policy_8 -> subtopic1_25
+	cluster_49 [label="cluster_length: 0"]
+	subtopic1_25 -> cluster_49
+	policy_9 [label="Agriculture and Food"]
+	subtopic1_26 [label="Agricultural Funding and Policy Issues"]
+	policy_9 -> subtopic1_26
+	subtopic2_48 [label="Agricultural Funding and Climate Change"]
+	subtopic1_26 -> subtopic2_48
+	cluster_50 [label="cluster_length: 30"]
+	subtopic2_48 -> cluster_50
+	subtopic2_49 [label="Agricultural Regulatory Framework Issues"]
+	subtopic1_26 -> subtopic2_49
+	cluster_51 [label="cluster_length: 6"]
+	subtopic2_49 -> cluster_51
+	subtopic1_27 [label="Government Spending and Funding Issues"]
+	policy_9 -> subtopic1_27
+	subtopic2_50 [label="Government Funding for Agricultural Programs"]
+	subtopic1_27 -> subtopic2_50
+	cluster_52 [label="cluster_length: 16"]
+	subtopic2_50 -> cluster_52
+	subtopic2_51 [label="Funding for Agricultural Support Programs"]
+	subtopic1_27 -> subtopic2_51
+	cluster_53 [label="cluster_length: 9"]
+	subtopic2_51 -> cluster_53
+	policy_10 [label="International Affairs"]
+	subtopic1_28 [label="U.S.-China Technological and Security Relations"]
+	policy_10 -> subtopic1_28
+	subtopic2_52 [label="U.S.-China Technology and Telecommunications Policies"]
+	subtopic1_28 -> subtopic2_52
+	cluster_54 [label="cluster_length: 8"]
+	subtopic2_52 -> cluster_54
+	subtopic2_53 [label="Taiwan's Role in Global Politics"]
+	subtopic1_28 -> subtopic2_53
+	cluster_55 [label="cluster_length: 6"]
+	subtopic2_53 -> cluster_55
+	subtopic1_29 [label="International Diplomatic Relations and Support"]
+	policy_10 -> subtopic1_29
+	subtopic2_54 [label="International Humanitarian and Military Support"]
+	subtopic1_29 -> subtopic2_54
+	cluster_56 [label="cluster_length: 8"]
+	subtopic2_54 -> cluster_56
+	subtopic2_55 [label="U.S.-Middle East Diplomatic Relations"]
+	subtopic1_29 -> subtopic2_55
+	cluster_57 [label="cluster_length: 16"]
+	subtopic2_55 -> cluster_57
+	subtopic1_30 [label="International Funding and Assistance Issues"]
+	policy_10 -> subtopic1_30
+	subtopic2_56 [label="Climate Change Funding and Policy"]
+	subtopic1_30 -> subtopic2_56
+	cluster_58 [label="cluster_length: 19"]
+	subtopic2_56 -> cluster_58
+	subtopic2_57 [label="International Aid and Funding Challenges"]
+	subtopic1_30 -> subtopic2_57
+	cluster_59 [label="cluster_length: 15"]
+	subtopic2_57 -> cluster_59
+	subtopic2_58 [label="Refugee Assistance and Funding Challenges"]
+	subtopic1_30 -> subtopic2_58
+	cluster_60 [label="cluster_length: 10"]
+	subtopic2_58 -> cluster_60
+	subtopic1_31 [label="Accountability in International Affairs"]
+	policy_10 -> subtopic1_31
+	subtopic2_59 [label="Accountability and Transparency in Foreign Policy"]
+	subtopic1_31 -> subtopic2_59
+	cluster_61 [label="cluster_length: 17"]
+	subtopic2_59 -> cluster_61
+	subtopic2_60 [label="Government Accountability and Oversight"]
+	subtopic1_31 -> subtopic2_60
+	cluster_62 [label="cluster_length: 26"]
+	subtopic2_60 -> cluster_62
+	policy_11 [label="Economics and Public Finance"]
+	subtopic1_32 [label="Fiscal Responsibility and Government Funding"]
+	policy_11 -> subtopic1_32
+	subtopic2_61 [label="Fiscal Responsibility and Budgeting Practices"]
+	subtopic1_32 -> subtopic2_61
+	cluster_63 [label="cluster_length: 20"]
+	subtopic2_61 -> cluster_63
+	subtopic2_62 [label="Government Funding Challenges and Solutions"]
+	subtopic1_32 -> subtopic2_62
+	cluster_64 [label="cluster_length: 12"]
+	subtopic2_62 -> cluster_64
+	subtopic2_63 [label="Funding for Law Enforcement Infrastructure"]
+	subtopic1_32 -> subtopic2_63
+	cluster_65 [label="cluster_length: 11"]
+	subtopic2_63 -> cluster_65
+	subtopic1_33 [label="Climate Change and Economic Policy"]
+	policy_11 -> subtopic1_33
+	subtopic2_64 [label="Climate Change and Economic Impacts"]
+	subtopic1_33 -> subtopic2_64
+	cluster_66 [label="cluster_length: 27"]
+	subtopic2_64 -> cluster_66
+	subtopic2_65 [label="Natural Gas Appliance Regulation Issues"]
+	subtopic1_33 -> subtopic2_65
+	cluster_67 [label="cluster_length: 6"]
+	subtopic2_65 -> cluster_67
+	subtopic1_34 [label="IRS Funding and Tax Compliance"]
+	policy_11 -> subtopic1_34
+	subtopic2_66 [label=Uncategorized]
+	subtopic1_34 -> subtopic2_66
+	cluster_68 [label="cluster_length: 11"]
+	subtopic2_66 -> cluster_68
+	subtopic1_35 [label="Labor Rights and Electoral Politics"]
+	policy_11 -> subtopic1_35
+	subtopic2_67 [label="Voting Rights and Legislative Impact"]
+	subtopic1_35 -> subtopic2_67
+	cluster_69 [label="cluster_length: 10"]
+	subtopic2_67 -> cluster_69
+	subtopic2_68 [label="Civil Liberties and Economic Impacts"]
+	subtopic1_35 -> subtopic2_68
+	cluster_70 [label="cluster_length: 7"]
+	subtopic2_68 -> cluster_70
+	subtopic2_69 [label="Labor Union Rights and Regulations"]
+	subtopic1_35 -> subtopic2_69
+	cluster_71 [label="cluster_length: 14"]
+	subtopic2_69 -> cluster_71
+	subtopic1_36 [label="Border Security and Government Spending"]
+	policy_11 -> subtopic1_36
+	subtopic2_70 [label="Border Security Funding and Policy"]
+	subtopic1_36 -> subtopic2_70
+	cluster_72 [label="cluster_length: 7"]
+	subtopic2_70 -> cluster_72
+	subtopic2_71 [label="Border Security and Economic Impact"]
+	subtopic1_36 -> subtopic2_71
+	cluster_73 [label="cluster_length: 8"]
+	subtopic2_71 -> cluster_73
+	subtopic1_37 [label="Funding Cuts in Public Services"]
+	policy_11 -> subtopic1_37
+	subtopic2_72 [label="Public Services Funding Reductions"]
+	subtopic1_37 -> subtopic2_72
+	cluster_74 [label="cluster_length: 11"]
+	subtopic2_72 -> cluster_74
+	subtopic2_73 [label="Education Funding Challenges and Reforms"]
+	subtopic1_37 -> subtopic2_73
+	cluster_75 [label="cluster_length: 14"]
+	subtopic2_73 -> cluster_75
+	subtopic2_74 [label="Higher Education Funding and Accountability"]
+	subtopic1_37 -> subtopic2_74
+	cluster_76 [label="cluster_length: 10"]
+	subtopic2_74 -> cluster_76
+	subtopic1_38 [label="International Military and Humanitarian Aid"]
+	policy_11 -> subtopic1_38
+	subtopic2_75 [label="Foreign Aid Distribution for Ukraine"]
+	subtopic1_38 -> subtopic2_75
+	cluster_77 [label="cluster_length: 10"]
+	subtopic2_75 -> cluster_77
+	subtopic2_76 [label="Israel Financial Assistance and Support"]
+	subtopic1_38 -> subtopic2_76
+	cluster_78 [label="cluster_length: 11"]
+	subtopic2_76 -> cluster_78
+	subtopic1_39 [label="Regulatory Oversight and Financial Governance"]
+	policy_11 -> subtopic1_39
+	subtopic2_77 [label="Regulatory Oversight of Financial Markets"]
+	subtopic1_39 -> subtopic2_77
+	cluster_79 [label="cluster_length: 46"]
+	subtopic2_77 -> cluster_79
+	subtopic2_78 [label="SEC Regulations and Shareholder Rights"]
+	subtopic1_39 -> subtopic2_78
+	cluster_80 [label="cluster_length: 11"]
+	subtopic2_78 -> cluster_80
+	subtopic1_40 [label="Public Safety and Regulation Policies"]
+	policy_11 -> subtopic1_40
+	subtopic2_79 [label="Public Safety and Occupational Health"]
+	subtopic1_40 -> subtopic2_79
+	cluster_81 [label="cluster_length: 10"]
+	subtopic2_79 -> cluster_81
+	subtopic2_80 [label="Economic Impacts of Gun Violence Prevention"]
+	subtopic1_40 -> subtopic2_80
+	cluster_82 [label="cluster_length: 6"]
+	subtopic2_80 -> cluster_82
+	subtopic1_41 [label="Public Health and Vaccine Mandates"]
+	policy_11 -> subtopic1_41
+	subtopic2_81 [label="Vaccine Mandates and Economic Implications"]
+	subtopic1_41 -> subtopic2_81
+	cluster_83 [label="cluster_length: 16"]
+	subtopic2_81 -> cluster_83
+	subtopic2_82 [label="Public Health Mandates and Economics"]
+	subtopic1_41 -> subtopic2_82
+	cluster_84 [label="cluster_length: 8"]
+	subtopic2_82 -> cluster_84
+	subtopic1_42 [label="Healthcare Funding and Research Challenges"]
+	policy_11 -> subtopic1_42
+	subtopic2_83 [label="Healthcare Funding and Workforce Challenges"]
+	subtopic1_42 -> subtopic2_83
+	cluster_85 [label="cluster_length: 21"]
+	subtopic2_83 -> cluster_85
+	subtopic2_84 [label="Health Research Funding Mechanisms"]
+	subtopic1_42 -> subtopic2_84
+	cluster_86 [label="cluster_length: 9"]
+	subtopic2_84 -> cluster_86
+	policy_12 [label=Immigration]
+	subtopic1_43 [label="Border Security and Immigration Policy"]
+	policy_12 -> subtopic1_43
+	subtopic2_85 [label="Border Security Challenges and Solutions"]
+	subtopic1_43 -> subtopic2_85
+	cluster_87 [label="cluster_length: 15"]
+	subtopic2_85 -> cluster_87
+	subtopic2_86 [label="Immigration Reform and Opposition Dynamics"]
+	subtopic1_43 -> subtopic2_86
+	cluster_88 [label="cluster_length: 11"]
+	subtopic2_86 -> cluster_88
+	subtopic1_44 [label="Immigration and Education Policy"]
+	policy_12 -> subtopic1_44
+	subtopic2_87 [label=Uncategorized]
+	subtopic1_44 -> subtopic2_87
+	cluster_89 [label="cluster_length: 8"]
+	subtopic2_87 -> cluster_89
+	policy_13 [label="Civil Rights and Liberties, Minority Issues"]
+	subtopic1_45 [label=Uncategorized]
+	policy_13 -> subtopic1_45
+	cluster_90 [label="cluster_length: 0"]
+	subtopic1_45 -> cluster_90
+	policy_14 [label="Housing and Community Development"]
+	subtopic1_46 [label=Uncategorized]
+	policy_14 -> subtopic1_46
+	cluster_91 [label="cluster_length: 0"]
+	subtopic1_46 -> cluster_91
+	parent [label="Parent Node"]
+	parent -> policy_0
+	parent -> policy_1
+	parent -> policy_2
+	parent -> policy_3
+	parent -> policy_4
+	parent -> policy_5
+	parent -> policy_6
+	parent -> policy_7
+	parent -> policy_8
+	parent -> policy_9
+	parent -> policy_10
+	parent -> policy_11
+	parent -> policy_12
+	parent -> policy_13
+	parent -> policy_14
+}

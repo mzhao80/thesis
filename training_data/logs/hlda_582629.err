@@ -1,0 +1,450 @@
+2025-01-24 22:07:39,504 - INFO - Reading data...
+2025-01-24 22:07:49,083 - INFO - Loaded 10837 documents
+2025-01-24 22:07:49,084 - INFO - 
+Processing policy areas...
+2025-01-24 22:07:49,126 - INFO - 
+Processing policy area: Government Operations and Politics
+2025-01-24 22:07:49,126 - INFO - Number of documents: 362
+2025-01-24 22:07:49,127 - INFO - Training model with 362 documents...
+2025-01-24 22:07:49,251 - INFO - Document statistics:
+2025-01-24 22:07:49,251 - INFO -   Valid documents: 362
+2025-01-24 22:07:49,251 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:07:49,251 - INFO -   Empty documents: 0
+2025-01-24 22:07:49,251 - INFO - Training hLDA model...
+/n/home09/michaelzhao/Downloads/thesis/keywords_hlda.py:112: RuntimeWarning: The training result may differ even with fixed seed if `workers` != 1.
+  model.train(1)
+2025-01-24 22:07:52,861 - INFO - Iteration: 10	Log-likelihood: -7.9699030212760595
+2025-01-24 22:07:56,228 - INFO - Iteration: 20	Log-likelihood: -7.819931996633004
+2025-01-24 22:07:59,589 - INFO - Iteration: 30	Log-likelihood: -7.758024352584282
+2025-01-24 22:08:02,979 - INFO - Iteration: 40	Log-likelihood: -7.714510316952204
+2025-01-24 22:08:06,353 - INFO - Iteration: 50	Log-likelihood: -7.6887484886667625
+2025-01-24 22:08:09,696 - INFO - Iteration: 60	Log-likelihood: -7.663101422335208
+2025-01-24 22:08:13,044 - INFO - Iteration: 70	Log-likelihood: -7.642852228434091
+2025-01-24 22:08:16,386 - INFO - Iteration: 80	Log-likelihood: -7.630252550615041
+2025-01-24 22:08:19,734 - INFO - Iteration: 90	Log-likelihood: -7.622934775292786
+2025-01-24 22:08:23,075 - INFO - Iteration: 100	Log-likelihood: -7.60148689288526
+2025-01-24 22:08:23,115 - INFO - 
+Processing policy area: Taxation
+2025-01-24 22:08:23,115 - INFO - Number of documents: 120
+2025-01-24 22:08:23,115 - INFO - Training model with 120 documents...
+2025-01-24 22:08:23,121 - INFO - Document statistics:
+2025-01-24 22:08:23,121 - INFO -   Valid documents: 120
+2025-01-24 22:08:23,121 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:08:23,121 - INFO -   Empty documents: 0
+2025-01-24 22:08:23,121 - INFO - Training hLDA model...
+2025-01-24 22:08:24,320 - INFO - Iteration: 10	Log-likelihood: -7.2087866847563395
+2025-01-24 22:08:25,493 - INFO - Iteration: 20	Log-likelihood: -7.095972567822336
+2025-01-24 22:08:26,665 - INFO - Iteration: 30	Log-likelihood: -7.046082089264113
+2025-01-24 22:08:27,832 - INFO - Iteration: 40	Log-likelihood: -7.019217362053506
+2025-01-24 22:08:28,992 - INFO - Iteration: 50	Log-likelihood: -7.004321700947082
+2025-01-24 22:08:30,156 - INFO - Iteration: 60	Log-likelihood: -7.004373713131811
+2025-01-24 22:08:31,317 - INFO - Iteration: 70	Log-likelihood: -7.000825776904531
+2025-01-24 22:08:32,473 - INFO - Iteration: 80	Log-likelihood: -6.9914644698309045
+2025-01-24 22:08:33,634 - INFO - Iteration: 90	Log-likelihood: -6.977040714130072
+2025-01-24 22:08:34,795 - INFO - Iteration: 100	Log-likelihood: -6.974139652648877
+2025-01-24 22:08:34,806 - INFO - 
+Processing policy area: Crime and Law Enforcement
+2025-01-24 22:08:34,807 - INFO - Number of documents: 156
+2025-01-24 22:08:34,807 - INFO - Training model with 156 documents...
+2025-01-24 22:08:34,812 - INFO - Document statistics:
+2025-01-24 22:08:34,812 - INFO -   Valid documents: 156
+2025-01-24 22:08:34,812 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:08:34,812 - INFO -   Empty documents: 0
+2025-01-24 22:08:34,812 - INFO - Training hLDA model...
+2025-01-24 22:08:36,318 - INFO - Iteration: 10	Log-likelihood: -7.081981963545294
+2025-01-24 22:08:37,800 - INFO - Iteration: 20	Log-likelihood: -6.962193716951925
+2025-01-24 22:08:39,285 - INFO - Iteration: 30	Log-likelihood: -6.90693596881584
+2025-01-24 22:08:40,751 - INFO - Iteration: 40	Log-likelihood: -6.903108553013155
+2025-01-24 22:08:42,218 - INFO - Iteration: 50	Log-likelihood: -6.900218450830963
+2025-01-24 22:08:43,701 - INFO - Iteration: 60	Log-likelihood: -6.884884213054771
+2025-01-24 22:08:45,171 - INFO - Iteration: 70	Log-likelihood: -6.882112410161493
+2025-01-24 22:08:46,654 - INFO - Iteration: 80	Log-likelihood: -6.875387036755164
+2025-01-24 22:08:48,130 - INFO - Iteration: 90	Log-likelihood: -6.870674995858901
+2025-01-24 22:08:49,599 - INFO - Iteration: 100	Log-likelihood: -6.864709986706878
+2025-01-24 22:08:49,614 - INFO - 
+Processing policy area: Law
+2025-01-24 22:08:49,614 - INFO - Number of documents: 5
+2025-01-24 22:08:49,614 - INFO - Training model with 5 documents...
+2025-01-24 22:08:49,614 - INFO - Document statistics:
+2025-01-24 22:08:49,614 - INFO -   Valid documents: 5
+2025-01-24 22:08:49,614 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:08:49,614 - INFO -   Empty documents: 0
+2025-01-24 22:08:49,614 - INFO - Training hLDA model...
+2025-01-24 22:08:49,712 - INFO - Iteration: 10	Log-likelihood: -5.349162342052363
+2025-01-24 22:08:49,806 - INFO - Iteration: 20	Log-likelihood: -5.12772253177507
+2025-01-24 22:08:49,900 - INFO - Iteration: 30	Log-likelihood: -5.153691543332643
+2025-01-24 22:08:49,995 - INFO - Iteration: 40	Log-likelihood: -5.088023156730938
+2025-01-24 22:08:50,089 - INFO - Iteration: 50	Log-likelihood: -5.096140635181243
+2025-01-24 22:08:50,183 - INFO - Iteration: 60	Log-likelihood: -5.074647136158646
+2025-01-24 22:08:50,276 - INFO - Iteration: 70	Log-likelihood: -5.0693514783382705
+2025-01-24 22:08:50,370 - INFO - Iteration: 80	Log-likelihood: -5.088013167920797
+2025-01-24 22:08:50,464 - INFO - Iteration: 90	Log-likelihood: -5.063812032279022
+2025-01-24 22:08:50,556 - INFO - Iteration: 100	Log-likelihood: -5.048508268460495
+2025-01-24 22:08:50,558 - INFO - 
+Processing policy area: Emergency Management
+2025-01-24 22:08:50,558 - INFO - Number of documents: 419
+2025-01-24 22:08:50,558 - INFO - Training model with 419 documents...
+2025-01-24 22:08:50,573 - INFO - Document statistics:
+2025-01-24 22:08:50,573 - INFO -   Valid documents: 419
+2025-01-24 22:08:50,574 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:08:50,574 - INFO -   Empty documents: 0
+2025-01-24 22:08:50,574 - INFO - Training hLDA model...
+2025-01-24 22:08:54,391 - INFO - Iteration: 10	Log-likelihood: -7.569921033026381
+2025-01-24 22:08:58,234 - INFO - Iteration: 20	Log-likelihood: -7.38255428116555
+2025-01-24 22:09:02,045 - INFO - Iteration: 30	Log-likelihood: -7.354741280259095
+2025-01-24 22:09:05,813 - INFO - Iteration: 40	Log-likelihood: -7.330525188353027
+2025-01-24 22:09:09,578 - INFO - Iteration: 50	Log-likelihood: -7.317828235657977
+2025-01-24 22:09:13,361 - INFO - Iteration: 60	Log-likelihood: -7.311624723214038
+2025-01-24 22:09:17,132 - INFO - Iteration: 70	Log-likelihood: -7.310823877909798
+2025-01-24 22:09:20,897 - INFO - Iteration: 80	Log-likelihood: -7.289274196055209
+2025-01-24 22:09:24,669 - INFO - Iteration: 90	Log-likelihood: -7.301282056208966
+2025-01-24 22:09:28,448 - INFO - Iteration: 100	Log-likelihood: -7.296383176857815
+2025-01-24 22:09:28,513 - INFO - 
+Processing policy area: Commerce
+2025-01-24 22:09:28,513 - INFO - Number of documents: 51
+2025-01-24 22:09:28,513 - INFO - Training model with 51 documents...
+2025-01-24 22:09:28,515 - INFO - Document statistics:
+2025-01-24 22:09:28,515 - INFO -   Valid documents: 51
+2025-01-24 22:09:28,515 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:09:28,515 - INFO -   Empty documents: 0
+2025-01-24 22:09:28,515 - INFO - Training hLDA model...
+2025-01-24 22:09:29,080 - INFO - Iteration: 10	Log-likelihood: -6.650264224130497
+2025-01-24 22:09:29,621 - INFO - Iteration: 20	Log-likelihood: -6.512127494564146
+2025-01-24 22:09:30,169 - INFO - Iteration: 30	Log-likelihood: -6.460242789134066
+2025-01-24 22:09:30,714 - INFO - Iteration: 40	Log-likelihood: -6.45183398686039
+2025-01-24 22:09:31,259 - INFO - Iteration: 50	Log-likelihood: -6.434267176590398
+2025-01-24 22:09:31,807 - INFO - Iteration: 60	Log-likelihood: -6.401119873605769
+2025-01-24 22:09:32,352 - INFO - Iteration: 70	Log-likelihood: -6.403182833239757
+2025-01-24 22:09:32,899 - INFO - Iteration: 80	Log-likelihood: -6.368554160574629
+2025-01-24 22:09:33,444 - INFO - Iteration: 90	Log-likelihood: -6.36368077705288
+2025-01-24 22:09:33,987 - INFO - Iteration: 100	Log-likelihood: -6.363342894730052
+2025-01-24 22:09:33,992 - INFO - 
+Processing policy area: Energy
+2025-01-24 22:09:33,992 - INFO - Number of documents: 1262
+2025-01-24 22:09:33,992 - INFO - Training model with 1262 documents...
+2025-01-24 22:09:34,036 - INFO - Document statistics:
+2025-01-24 22:09:34,036 - INFO -   Valid documents: 1261
+2025-01-24 22:09:34,036 - INFO -   Short documents (< 2 tokens): 1
+2025-01-24 22:09:34,036 - INFO -   Empty documents: 0
+2025-01-24 22:09:34,036 - INFO - Training hLDA model...
+2025-01-24 22:09:45,479 - INFO - Iteration: 10	Log-likelihood: -7.9243803232545655
+2025-01-24 22:09:56,802 - INFO - Iteration: 20	Log-likelihood: -7.7791662484639295
+2025-01-24 22:10:08,155 - INFO - Iteration: 30	Log-likelihood: -7.718773330840669
+2025-01-24 22:10:19,532 - INFO - Iteration: 40	Log-likelihood: -7.687312013429709
+2025-01-24 22:10:30,930 - INFO - Iteration: 50	Log-likelihood: -7.658715515987586
+2025-01-24 22:10:42,281 - INFO - Iteration: 60	Log-likelihood: -7.638544391294518
+2025-01-24 22:10:53,792 - INFO - Iteration: 70	Log-likelihood: -7.620300531261811
+2025-01-24 22:11:05,531 - INFO - Iteration: 80	Log-likelihood: -7.608433195995644
+2025-01-24 22:11:17,335 - INFO - Iteration: 90	Log-likelihood: -7.595972103719224
+2025-01-24 22:11:29,094 - INFO - Iteration: 100	Log-likelihood: -7.586416373716328
+2025-01-24 22:11:29,380 - INFO - 
+Processing policy area: Science, Technology, Communications
+2025-01-24 22:11:29,380 - INFO - Number of documents: 60
+2025-01-24 22:11:29,381 - INFO - Training model with 60 documents...
+2025-01-24 22:11:29,383 - INFO - Document statistics:
+2025-01-24 22:11:29,383 - INFO -   Valid documents: 60
+2025-01-24 22:11:29,383 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:11:29,383 - INFO -   Empty documents: 0
+2025-01-24 22:11:29,383 - INFO - Training hLDA model...
+2025-01-24 22:11:30,041 - INFO - Iteration: 10	Log-likelihood: -6.517763778488155
+2025-01-24 22:11:30,680 - INFO - Iteration: 20	Log-likelihood: -6.382512535116472
+2025-01-24 22:11:31,314 - INFO - Iteration: 30	Log-likelihood: -6.29447929296557
+2025-01-24 22:11:31,952 - INFO - Iteration: 40	Log-likelihood: -6.264948640636484
+2025-01-24 22:11:32,588 - INFO - Iteration: 50	Log-likelihood: -6.23305768707775
+2025-01-24 22:11:33,230 - INFO - Iteration: 60	Log-likelihood: -6.224147388637875
+2025-01-24 22:11:33,872 - INFO - Iteration: 70	Log-likelihood: -6.196810937370503
+2025-01-24 22:11:34,500 - INFO - Iteration: 80	Log-likelihood: -6.191754641341126
+2025-01-24 22:11:35,136 - INFO - Iteration: 90	Log-likelihood: -6.195693158287517
+2025-01-24 22:11:35,768 - INFO - Iteration: 100	Log-likelihood: -6.17633729261725
+2025-01-24 22:11:35,774 - INFO - 
+Processing policy area: Finance and Financial Sector
+2025-01-24 22:11:35,774 - INFO - Number of documents: 72
+2025-01-24 22:11:35,774 - INFO - Training model with 72 documents...
+2025-01-24 22:11:35,778 - INFO - Document statistics:
+2025-01-24 22:11:35,778 - INFO -   Valid documents: 72
+2025-01-24 22:11:35,778 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:11:35,778 - INFO -   Empty documents: 0
+2025-01-24 22:11:35,778 - INFO - Training hLDA model...
+2025-01-24 22:11:36,546 - INFO - Iteration: 10	Log-likelihood: -6.860939100790396
+2025-01-24 22:11:37,299 - INFO - Iteration: 20	Log-likelihood: -6.713361653236574
+2025-01-24 22:11:38,048 - INFO - Iteration: 30	Log-likelihood: -6.627715930957846
+2025-01-24 22:11:38,801 - INFO - Iteration: 40	Log-likelihood: -6.5807659972800145
+2025-01-24 22:11:39,557 - INFO - Iteration: 50	Log-likelihood: -6.545985623903736
+2025-01-24 22:11:40,306 - INFO - Iteration: 60	Log-likelihood: -6.5266092930525135
+2025-01-24 22:11:41,055 - INFO - Iteration: 70	Log-likelihood: -6.512185890947891
+2025-01-24 22:11:41,799 - INFO - Iteration: 80	Log-likelihood: -6.49690617673609
+2025-01-24 22:11:42,549 - INFO - Iteration: 90	Log-likelihood: -6.489134068287957
+2025-01-24 22:11:43,296 - INFO - Iteration: 100	Log-likelihood: -6.481575533518457
+2025-01-24 22:11:43,302 - INFO - 
+Processing policy area: Armed Forces and National Security
+2025-01-24 22:11:43,302 - INFO - Number of documents: 755
+2025-01-24 22:11:43,302 - INFO - Training model with 755 documents...
+2025-01-24 22:11:43,332 - INFO - Document statistics:
+2025-01-24 22:11:43,332 - INFO -   Valid documents: 755
+2025-01-24 22:11:43,332 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:11:43,332 - INFO -   Empty documents: 0
+2025-01-24 22:11:43,332 - INFO - Training hLDA model...
+2025-01-24 22:11:50,321 - INFO - Iteration: 10	Log-likelihood: -7.9017789415830215
+2025-01-24 22:11:57,193 - INFO - Iteration: 20	Log-likelihood: -7.682364292610586
+2025-01-24 22:12:04,123 - INFO - Iteration: 30	Log-likelihood: -7.581802366507867
+2025-01-24 22:12:11,088 - INFO - Iteration: 40	Log-likelihood: -7.553245691660245
+2025-01-24 22:12:18,027 - INFO - Iteration: 50	Log-likelihood: -7.547680287106916
+2025-01-24 22:12:24,962 - INFO - Iteration: 60	Log-likelihood: -7.537260132409679
+2025-01-24 22:12:31,886 - INFO - Iteration: 70	Log-likelihood: -7.523728371488489
+2025-01-24 22:12:38,785 - INFO - Iteration: 80	Log-likelihood: -7.521565457487812
+2025-01-24 22:12:45,681 - INFO - Iteration: 90	Log-likelihood: -7.514776525200004
+2025-01-24 22:12:52,607 - INFO - Iteration: 100	Log-likelihood: -7.513587007563566
+2025-01-24 22:12:52,767 - INFO - 
+Processing policy area: Education
+2025-01-24 22:12:52,767 - INFO - Number of documents: 476
+2025-01-24 22:12:52,767 - INFO - Training model with 476 documents...
+2025-01-24 22:12:52,790 - INFO - Document statistics:
+2025-01-24 22:12:52,790 - INFO -   Valid documents: 476
+2025-01-24 22:12:52,790 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:12:52,790 - INFO -   Empty documents: 0
+2025-01-24 22:12:52,790 - INFO - Training hLDA model...
+2025-01-24 22:12:57,284 - INFO - Iteration: 10	Log-likelihood: -7.780640477491648
+2025-01-24 22:13:01,682 - INFO - Iteration: 20	Log-likelihood: -7.614309797032879
+2025-01-24 22:13:06,089 - INFO - Iteration: 30	Log-likelihood: -7.543796047902791
+2025-01-24 22:13:10,514 - INFO - Iteration: 40	Log-likelihood: -7.5206151754920905
+2025-01-24 22:13:14,935 - INFO - Iteration: 50	Log-likelihood: -7.514848386709721
+2025-01-24 22:13:19,363 - INFO - Iteration: 60	Log-likelihood: -7.506525292989892
+2025-01-24 22:13:23,777 - INFO - Iteration: 70	Log-likelihood: -7.493731781764496
+2025-01-24 22:13:28,190 - INFO - Iteration: 80	Log-likelihood: -7.498817259145769
+2025-01-24 22:13:32,614 - INFO - Iteration: 90	Log-likelihood: -7.493335827947031
+2025-01-24 22:13:37,032 - INFO - Iteration: 100	Log-likelihood: -7.496036511802128
+2025-01-24 22:13:37,111 - INFO - 
+Processing policy area: Health
+2025-01-24 22:13:37,111 - INFO - Number of documents: 162
+2025-01-24 22:13:37,111 - INFO - Training model with 162 documents...
+2025-01-24 22:13:37,120 - INFO - Document statistics:
+2025-01-24 22:13:37,120 - INFO -   Valid documents: 161
+2025-01-24 22:13:37,120 - INFO -   Short documents (< 2 tokens): 1
+2025-01-24 22:13:37,120 - INFO -   Empty documents: 0
+2025-01-24 22:13:37,120 - INFO - Training hLDA model...
+2025-01-24 22:13:38,718 - INFO - Iteration: 10	Log-likelihood: -7.5428246908905034
+2025-01-24 22:13:40,281 - INFO - Iteration: 20	Log-likelihood: -7.389615965252472
+2025-01-24 22:13:41,838 - INFO - Iteration: 30	Log-likelihood: -7.299645506929278
+2025-01-24 22:13:43,400 - INFO - Iteration: 40	Log-likelihood: -7.269866621986452
+2025-01-24 22:13:44,959 - INFO - Iteration: 50	Log-likelihood: -7.234197439102145
+2025-01-24 22:13:46,513 - INFO - Iteration: 60	Log-likelihood: -7.228991089344101
+2025-01-24 22:13:48,072 - INFO - Iteration: 70	Log-likelihood: -7.213690293454891
+2025-01-24 22:13:49,631 - INFO - Iteration: 80	Log-likelihood: -7.1953209063887265
+2025-01-24 22:13:51,186 - INFO - Iteration: 90	Log-likelihood: -7.199545951599322
+2025-01-24 22:13:52,751 - INFO - Iteration: 100	Log-likelihood: -7.199718028495047
+2025-01-24 22:13:52,770 - INFO - 
+Processing policy area: Social Welfare
+2025-01-24 22:13:52,770 - INFO - Number of documents: 2
+2025-01-24 22:13:52,770 - WARNING - Skipping Social Welfare: too few documents
+2025-01-24 22:13:52,771 - INFO - 
+Processing policy area: Public Lands and Natural Resources
+2025-01-24 22:13:52,771 - INFO - Number of documents: 36
+2025-01-24 22:13:52,771 - INFO - Training model with 36 documents...
+2025-01-24 22:13:52,774 - INFO - Document statistics:
+2025-01-24 22:13:52,774 - INFO -   Valid documents: 36
+2025-01-24 22:13:52,774 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:13:52,774 - INFO -   Empty documents: 0
+2025-01-24 22:13:52,774 - INFO - Training hLDA model...
+2025-01-24 22:13:53,214 - INFO - Iteration: 10	Log-likelihood: -6.616983714242071
+2025-01-24 22:13:53,636 - INFO - Iteration: 20	Log-likelihood: -6.463957130802058
+2025-01-24 22:13:54,057 - INFO - Iteration: 30	Log-likelihood: -6.430498965958281
+2025-01-24 22:13:54,477 - INFO - Iteration: 40	Log-likelihood: -6.382785982888597
+2025-01-24 22:13:54,897 - INFO - Iteration: 50	Log-likelihood: -6.355941710589574
+2025-01-24 22:13:55,314 - INFO - Iteration: 60	Log-likelihood: -6.314050344438362
+2025-01-24 22:13:55,733 - INFO - Iteration: 70	Log-likelihood: -6.306455418640685
+2025-01-24 22:13:56,152 - INFO - Iteration: 80	Log-likelihood: -6.272909007746972
+2025-01-24 22:13:56,574 - INFO - Iteration: 90	Log-likelihood: -6.28724833228909
+2025-01-24 22:13:56,993 - INFO - Iteration: 100	Log-likelihood: -6.292081925265507
+2025-01-24 22:13:56,996 - INFO - 
+Processing policy area: Native Americans
+2025-01-24 22:13:56,996 - INFO - Number of documents: 47
+2025-01-24 22:13:56,996 - INFO - Training model with 47 documents...
+2025-01-24 22:13:56,998 - INFO - Document statistics:
+2025-01-24 22:13:56,999 - INFO -   Valid documents: 47
+2025-01-24 22:13:56,999 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:13:56,999 - INFO -   Empty documents: 0
+2025-01-24 22:13:56,999 - INFO - Training hLDA model...
+2025-01-24 22:13:57,529 - INFO - Iteration: 10	Log-likelihood: -6.571485429600368
+2025-01-24 22:13:58,045 - INFO - Iteration: 20	Log-likelihood: -6.4208294299263615
+2025-01-24 22:13:58,561 - INFO - Iteration: 30	Log-likelihood: -6.339674852808416
+2025-01-24 22:13:59,078 - INFO - Iteration: 40	Log-likelihood: -6.324212615447765
+2025-01-24 22:13:59,590 - INFO - Iteration: 50	Log-likelihood: -6.296616968176892
+2025-01-24 22:14:00,106 - INFO - Iteration: 60	Log-likelihood: -6.306969434008084
+2025-01-24 22:14:00,623 - INFO - Iteration: 70	Log-likelihood: -6.3009711599551315
+2025-01-24 22:14:01,139 - INFO - Iteration: 80	Log-likelihood: -6.281279764110214
+2025-01-24 22:14:01,657 - INFO - Iteration: 90	Log-likelihood: -6.267398519348542
+2025-01-24 22:14:02,170 - INFO - Iteration: 100	Log-likelihood: -6.2725192013443705
+2025-01-24 22:14:02,173 - INFO - 
+Processing policy area: Transportation and Public Works
+2025-01-24 22:14:02,173 - INFO - Number of documents: 40
+2025-01-24 22:14:02,173 - INFO - Training model with 40 documents...
+2025-01-24 22:14:02,175 - INFO - Document statistics:
+2025-01-24 22:14:02,175 - INFO -   Valid documents: 40
+2025-01-24 22:14:02,175 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:14:02,175 - INFO -   Empty documents: 0
+2025-01-24 22:14:02,175 - INFO - Training hLDA model...
+2025-01-24 22:14:02,647 - INFO - Iteration: 10	Log-likelihood: -6.533343436636477
+2025-01-24 22:14:03,103 - INFO - Iteration: 20	Log-likelihood: -6.422514038705895
+2025-01-24 22:14:03,561 - INFO - Iteration: 30	Log-likelihood: -6.399981265562102
+2025-01-24 22:14:04,014 - INFO - Iteration: 40	Log-likelihood: -6.37761985346959
+2025-01-24 22:14:04,469 - INFO - Iteration: 50	Log-likelihood: -6.362376078507976
+2025-01-24 22:14:04,923 - INFO - Iteration: 60	Log-likelihood: -6.340605492908897
+2025-01-24 22:14:05,377 - INFO - Iteration: 70	Log-likelihood: -6.3492996164562685
+2025-01-24 22:14:05,830 - INFO - Iteration: 80	Log-likelihood: -6.351345694353017
+2025-01-24 22:14:06,285 - INFO - Iteration: 90	Log-likelihood: -6.3233472039359935
+2025-01-24 22:14:06,739 - INFO - Iteration: 100	Log-likelihood: -6.329942664925153
+2025-01-24 22:14:06,744 - INFO - 
+Processing policy area: Agriculture and Food
+2025-01-24 22:14:06,744 - INFO - Number of documents: 395
+2025-01-24 22:14:06,744 - INFO - Training model with 395 documents...
+2025-01-24 22:14:06,757 - INFO - Document statistics:
+2025-01-24 22:14:06,757 - INFO -   Valid documents: 395
+2025-01-24 22:14:06,757 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:14:06,757 - INFO -   Empty documents: 0
+2025-01-24 22:14:06,757 - INFO - Training hLDA model...
+2025-01-24 22:14:10,526 - INFO - Iteration: 10	Log-likelihood: -7.545033173112901
+2025-01-24 22:14:14,236 - INFO - Iteration: 20	Log-likelihood: -7.270859546995051
+2025-01-24 22:14:17,929 - INFO - Iteration: 30	Log-likelihood: -7.2036972660534
+2025-01-24 22:14:21,637 - INFO - Iteration: 40	Log-likelihood: -7.188533226364851
+2025-01-24 22:14:25,342 - INFO - Iteration: 50	Log-likelihood: -7.178444769976915
+2025-01-24 22:14:29,046 - INFO - Iteration: 60	Log-likelihood: -7.177829001350914
+2025-01-24 22:14:32,733 - INFO - Iteration: 70	Log-likelihood: -7.176426713681966
+2025-01-24 22:14:36,442 - INFO - Iteration: 80	Log-likelihood: -7.166337809522831
+2025-01-24 22:14:40,150 - INFO - Iteration: 90	Log-likelihood: -7.160703192960035
+2025-01-24 22:14:43,858 - INFO - Iteration: 100	Log-likelihood: -7.161804888890713
+2025-01-24 22:14:43,918 - INFO - 
+Processing policy area: Foreign Trade and International Finance
+2025-01-24 22:14:43,918 - INFO - Number of documents: 27
+2025-01-24 22:14:43,918 - INFO - Training model with 27 documents...
+2025-01-24 22:14:43,920 - INFO - Document statistics:
+2025-01-24 22:14:43,920 - INFO -   Valid documents: 27
+2025-01-24 22:14:43,920 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:14:43,920 - INFO -   Empty documents: 0
+2025-01-24 22:14:43,920 - INFO - Training hLDA model...
+2025-01-24 22:14:44,277 - INFO - Iteration: 10	Log-likelihood: -6.375448719208872
+2025-01-24 22:14:44,615 - INFO - Iteration: 20	Log-likelihood: -6.308745569290026
+2025-01-24 22:14:44,955 - INFO - Iteration: 30	Log-likelihood: -6.186362538456368
+2025-01-24 22:14:45,294 - INFO - Iteration: 40	Log-likelihood: -6.160701543520215
+2025-01-24 22:14:45,631 - INFO - Iteration: 50	Log-likelihood: -6.163915998258657
+2025-01-24 22:14:45,970 - INFO - Iteration: 60	Log-likelihood: -6.156259703841646
+2025-01-24 22:14:46,311 - INFO - Iteration: 70	Log-likelihood: -6.144858425107655
+2025-01-24 22:14:46,652 - INFO - Iteration: 80	Log-likelihood: -6.1325918184272865
+2025-01-24 22:14:46,989 - INFO - Iteration: 90	Log-likelihood: -6.1372799801435605
+2025-01-24 22:14:47,327 - INFO - Iteration: 100	Log-likelihood: -6.131483918610688
+2025-01-24 22:14:47,331 - INFO - 
+Processing policy area: Labor and Employment
+2025-01-24 22:14:47,331 - INFO - Number of documents: 77
+2025-01-24 22:14:47,331 - INFO - Training model with 77 documents...
+2025-01-24 22:14:47,334 - INFO - Document statistics:
+2025-01-24 22:14:47,334 - INFO -   Valid documents: 77
+2025-01-24 22:14:47,334 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:14:47,334 - INFO -   Empty documents: 0
+2025-01-24 22:14:47,334 - INFO - Training hLDA model...
+2025-01-24 22:14:48,153 - INFO - Iteration: 10	Log-likelihood: -6.932598188945878
+2025-01-24 22:14:48,957 - INFO - Iteration: 20	Log-likelihood: -6.778681363925854
+2025-01-24 22:14:49,758 - INFO - Iteration: 30	Log-likelihood: -6.7199249201524145
+2025-01-24 22:14:50,561 - INFO - Iteration: 40	Log-likelihood: -6.7085028388093
+2025-01-24 22:14:51,369 - INFO - Iteration: 50	Log-likelihood: -6.706768251329582
+2025-01-24 22:14:52,168 - INFO - Iteration: 60	Log-likelihood: -6.689855181683087
+2025-01-24 22:14:52,966 - INFO - Iteration: 70	Log-likelihood: -6.701480682076359
+2025-01-24 22:14:53,762 - INFO - Iteration: 80	Log-likelihood: -6.6763464857461505
+2025-01-24 22:14:54,557 - INFO - Iteration: 90	Log-likelihood: -6.687809963418637
+2025-01-24 22:14:55,360 - INFO - Iteration: 100	Log-likelihood: -6.666144973286328
+2025-01-24 22:14:55,366 - INFO - 
+Processing policy area: International Affairs
+2025-01-24 22:14:55,367 - INFO - Number of documents: 523
+2025-01-24 22:14:55,367 - INFO - Training model with 523 documents...
+2025-01-24 22:14:55,385 - INFO - Document statistics:
+2025-01-24 22:14:55,385 - INFO -   Valid documents: 523
+2025-01-24 22:14:55,385 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:14:55,385 - INFO -   Empty documents: 0
+2025-01-24 22:14:55,385 - INFO - Training hLDA model...
+2025-01-24 22:15:00,331 - INFO - Iteration: 10	Log-likelihood: -7.815390265680627
+2025-01-24 22:15:05,207 - INFO - Iteration: 20	Log-likelihood: -7.588176021789251
+2025-01-24 22:15:10,068 - INFO - Iteration: 30	Log-likelihood: -7.4930022436716195
+2025-01-24 22:15:14,904 - INFO - Iteration: 40	Log-likelihood: -7.465348105495834
+2025-01-24 22:15:19,741 - INFO - Iteration: 50	Log-likelihood: -7.453991793729352
+2025-01-24 22:15:24,578 - INFO - Iteration: 60	Log-likelihood: -7.437366207345114
+2025-01-24 22:15:29,402 - INFO - Iteration: 70	Log-likelihood: -7.430289756675162
+2025-01-24 22:15:34,223 - INFO - Iteration: 80	Log-likelihood: -7.419954299459043
+2025-01-24 22:15:39,061 - INFO - Iteration: 90	Log-likelihood: -7.424412771376349
+2025-01-24 22:15:43,923 - INFO - Iteration: 100	Log-likelihood: -7.423222980446823
+2025-01-24 22:15:44,004 - INFO - 
+Processing policy area: Economics and Public Finance
+2025-01-24 22:15:44,004 - INFO - Number of documents: 1572
+2025-01-24 22:15:44,004 - INFO - Training model with 1572 documents...
+2025-01-24 22:15:44,064 - INFO - Document statistics:
+2025-01-24 22:15:44,064 - INFO -   Valid documents: 1571
+2025-01-24 22:15:44,064 - INFO -   Short documents (< 2 tokens): 1
+2025-01-24 22:15:44,064 - INFO -   Empty documents: 0
+2025-01-24 22:15:44,064 - INFO - Training hLDA model...
+2025-01-24 22:15:58,681 - INFO - Iteration: 10	Log-likelihood: -8.062141787826407
+2025-01-24 22:16:13,305 - INFO - Iteration: 20	Log-likelihood: -7.8076594547335185
+2025-01-24 22:16:27,975 - INFO - Iteration: 30	Log-likelihood: -7.729576618477127
+2025-01-24 22:16:42,706 - INFO - Iteration: 40	Log-likelihood: -7.693959197185339
+2025-01-24 22:16:57,412 - INFO - Iteration: 50	Log-likelihood: -7.682497689978087
+2025-01-24 22:17:12,149 - INFO - Iteration: 60	Log-likelihood: -7.667272412381354
+2025-01-24 22:17:26,809 - INFO - Iteration: 70	Log-likelihood: -7.6641886914735355
+2025-01-24 22:17:41,537 - INFO - Iteration: 80	Log-likelihood: -7.660330057722041
+2025-01-24 22:17:56,210 - INFO - Iteration: 90	Log-likelihood: -7.654922637658575
+2025-01-24 22:18:10,958 - INFO - Iteration: 100	Log-likelihood: -7.651679449131422
+2025-01-24 22:18:11,398 - INFO - 
+Processing policy area: Environmental Protection
+2025-01-24 22:18:11,398 - INFO - Number of documents: 91
+2025-01-24 22:18:11,398 - INFO - Training model with 91 documents...
+2025-01-24 22:18:11,401 - INFO - Document statistics:
+2025-01-24 22:18:11,401 - INFO -   Valid documents: 91
+2025-01-24 22:18:11,401 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:18:11,401 - INFO -   Empty documents: 0
+2025-01-24 22:18:11,401 - INFO - Training hLDA model...
+2025-01-24 22:18:12,351 - INFO - Iteration: 10	Log-likelihood: -6.891773005773009
+2025-01-24 22:18:13,278 - INFO - Iteration: 20	Log-likelihood: -6.779025668200396
+2025-01-24 22:18:14,205 - INFO - Iteration: 30	Log-likelihood: -6.734714614241968
+2025-01-24 22:18:15,139 - INFO - Iteration: 40	Log-likelihood: -6.71592454717209
+2025-01-24 22:18:16,068 - INFO - Iteration: 50	Log-likelihood: -6.7059538653536075
+2025-01-24 22:18:16,992 - INFO - Iteration: 60	Log-likelihood: -6.705059657008777
+2025-01-24 22:18:17,915 - INFO - Iteration: 70	Log-likelihood: -6.6919928384561755
+2025-01-24 22:18:18,841 - INFO - Iteration: 80	Log-likelihood: -6.669264396562935
+2025-01-24 22:18:19,761 - INFO - Iteration: 90	Log-likelihood: -6.669411409897707
+2025-01-24 22:18:20,687 - INFO - Iteration: 100	Log-likelihood: -6.652374759582844
+2025-01-24 22:18:20,694 - INFO - 
+Processing policy area: Immigration
+2025-01-24 22:18:20,694 - INFO - Number of documents: 125
+2025-01-24 22:18:20,694 - INFO - Training model with 125 documents...
+2025-01-24 22:18:20,702 - INFO - Document statistics:
+2025-01-24 22:18:20,702 - INFO -   Valid documents: 125
+2025-01-24 22:18:20,702 - INFO -   Short documents (< 2 tokens): 0
+2025-01-24 22:18:20,702 - INFO -   Empty documents: 0
+2025-01-24 22:18:20,702 - INFO - Training hLDA model...
+2025-01-24 22:18:21,962 - INFO - Iteration: 10	Log-likelihood: -7.370651067430845
+2025-01-24 22:18:23,195 - INFO - Iteration: 20	Log-likelihood: -7.204147565344982
+2025-01-24 22:18:24,423 - INFO - Iteration: 30	Log-likelihood: -7.140709157149938
+2025-01-24 22:18:25,664 - INFO - Iteration: 40	Log-likelihood: -7.117630900635671
+2025-01-24 22:18:26,893 - INFO - Iteration: 50	Log-likelihood: -7.125258327625786
+2025-01-24 22:18:28,124 - INFO - Iteration: 60	Log-likelihood: -7.103419723226465
+2025-01-24 22:18:29,351 - INFO - Iteration: 70	Log-likelihood: -7.103924735774074
+2025-01-24 22:18:30,576 - INFO - Iteration: 80	Log-likelihood: -7.093882876714307
+2025-01-24 22:18:31,807 - INFO - Iteration: 90	Log-likelihood: -7.098947637327054
+2025-01-24 22:18:33,044 - INFO - Iteration: 100	Log-likelihood: -7.093174937481942
+2025-01-24 22:18:33,058 - INFO - 
+Processing policy area: Civil Rights and Liberties, Minority Issues
+2025-01-24 22:18:33,058 - INFO - Number of documents: 1
+2025-01-24 22:18:33,058 - WARNING - Skipping Civil Rights and Liberties, Minority Issues: too few documents
+2025-01-24 22:18:33,059 - INFO - 
+Processing policy area: Housing and Community Development
+2025-01-24 22:18:33,059 - INFO - Number of documents: 2
+2025-01-24 22:18:33,059 - WARNING - Skipping Housing and Community Development: too few documents
+2025-01-24 22:18:33,059 - INFO - 
+Saving policy area results...
+2025-01-24 22:18:33,307 - INFO - Results saved to ./topic_taxonomies_outputs/hlda_hierarchy.json
+2025-01-24 22:18:33,307 - INFO - 
+Processing global hierarchy...
+2025-01-24 22:18:33,311 - INFO - Training model with 10837 documents...
+2025-01-24 22:18:33,804 - INFO - Document statistics:
+2025-01-24 22:18:33,804 - INFO -   Valid documents: 10834
+2025-01-24 22:18:33,804 - INFO -   Short documents (< 2 tokens): 3
+2025-01-24 22:18:33,804 - INFO -   Empty documents: 0
+2025-01-24 22:18:33,804 - INFO - Training hLDA model...
+2025-01-24 22:20:19,307 - INFO - Iteration: 10	Log-likelihood: -inf
+2025-01-24 22:20:19,313 - ERROR - Model diverged (log-likelihood is -inf)
+2025-01-24 22:20:19,333 - INFO - hLDA analysis complete!

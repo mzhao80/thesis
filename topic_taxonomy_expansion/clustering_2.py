@@ -21,25 +21,30 @@ def compute_medoid(texts, embeddings):
     medoid_index = np.argmax(similarities)
     return texts[medoid_index]
 
-def generate_cluster_label(subtopics, client, max_attempts=5):
+def generate_cluster_label(subtopics, parent_topic, client, max_attempts=5):
     """
     Uses the OpenAI API (gpt-4o-mini) to generate a succinct label that represents
     the common theme among the given list of subtopics.
     """
-    prompt = (
-        "Given the following list of subtopics, provide a succinct label that captures "
-        "the common theme they represent.\n\n"
-        "Subtopics: " + "; ".join(subtopics) + "\n\n"
-        "Answer only with a short topic (3-7 words)."
+    system_message = (
+        "You are a helpful assistant constructing a three-level topic taxonomy. "
+        "When given a second-level parent topic and a list of topics of documents clustered under the parent topic, you must generate a concise and representative third-level topic (3-7 words) "
+        "that describes the common topic of the document topics clustered under the parent topic.\n"
+        "The generated third-level subtopic should be a distinct child topic but still distinct from the parent topic, and should be as specific as possible."
+        "For example, a good three-level taxonomy would be 1. Defense; 2. Defense Spending; 3. Asia-Pacific Defense Spending. "
+        "Also, the topic should be unstanced. For example, you should prefer output Budget Cuts instead of Opposition to Budget Cuts."
     )
+
+    prompt = (
+        "Given the following parent topic and list of topics from documents clustered under a second-level parent topic, generate a third-level subtopic that is representative of "
+        "the common topic the document topics represent. It should be as specific as possible, and related to the parent topic, but it should not be substantially the same as the parent topic.\n\n"
+        "Second-Level Parent Topic: " + parent_topic + "\n\n"
+        "Clustered Document Topics: " + "; ".join(subtopics) + "\n\n"
+        "Answer only with the generated third-level subtopic (3-7 words):\n\n"
+    )
+
     messages = [
-        {
-            "role": "system",
-            "content": (
-                "You are a helpful assistant that generates a concise topic label for a cluster of subtopics."
-                "Respond only with a short phrase (3-7 words) that represents the common theme."
-            )
-        },
+        {"role": "system", "content": system_message},
         {"role": "user", "content": prompt}
     ]
     
@@ -59,6 +64,7 @@ def generate_cluster_label(subtopics, client, max_attempts=5):
 
 
 def main():
+    n_components = 10
     # Create directory for visualizations if it doesn't exist.
     if not os.path.exists('cluster_viz_2'):
         os.makedirs('cluster_viz_2')
@@ -66,7 +72,7 @@ def main():
     client = OpenAI(api_key=api_keys.OPENAI_API_KEY)
 
     # Load the predictions CSV (which contains the original columns).
-    df = pd.read_csv('new_subtopics_per_document.csv')
+    df = pd.read_csv('step_3.csv')
 
     # Initialize the Sentence Transformer model.
     model = SentenceTransformer('all-MiniLM-L6-v2').to('cuda')
@@ -97,15 +103,30 @@ def main():
             print(f"Total subtopics: {len(subtopics)}")
             
             # Skip if too few subtopics.
-            if len(subtopics) < 10:
+            if len(subtopics) < n_components+2 or parent_topic=="":
                 print("Too few subtopics, skipping...")
+                source_indices = []
+                for t in subtopics:
+                    if t in source_mapping:
+                        source_indices.extend(source_mapping[t])
+                # Remove duplicates if desired:
+                source_indices = list(dict.fromkeys(source_indices))
+                
+                taxonomy.append({
+                    'policy_area': policy_area,
+                    'subtopic_1': parent_topic,
+                    'subtopic_2': "",
+                    'cluster_length': len(subtopics),
+                    'source_subtopics': "",
+                    'source_indices': ";".join(source_indices)
+                })
                 continue
 
             # Compute original embeddings.
             original_embeddings = model.encode(subtopics, convert_to_numpy=True)
             
             # --- Dimensionality Reduction with UMAP for clustering & DBCV ---
-            umap_model = umap.UMAP(n_components=8)
+            umap_model = umap.UMAP(n_components=n_components)
             reduced_embeddings = umap_model.fit_transform(original_embeddings)
             d = reduced_embeddings.shape[1]  # explicitly set d = number of features after reduction
             
@@ -176,7 +197,7 @@ def main():
                 taxonomy.append({
                     'policy_area': policy_area,
                     'subtopic_1': parent_topic,
-                    'subtopic_2': generate_cluster_label(texts, client),
+                    'subtopic_2': generate_cluster_label(texts, policy_area, client),
                     'cluster_length': len(texts),
                     'source_subtopics': ";".join(texts),
                     'source_indices': ";".join(source_indices)
@@ -184,8 +205,8 @@ def main():
 
     # Write taxonomy to CSV.
     taxonomy_df = pd.DataFrame(taxonomy)
-    taxonomy_df.to_csv('taxonomy_output_2.csv', index=False)
-    print("\nTaxonomy saved to taxonomy_output_2.csv")
+    taxonomy_df.to_csv('step_4.csv', index=False)
+    print("\nTaxonomy saved to step_4.csv")
 
 if __name__ == "__main__":
     main()

@@ -19,9 +19,14 @@ if __name__ == '__main__':
     parser.add_argument('--l2_reg', type=float, default=5e-5)
     parser.add_argument('--max_grad', type=float, default=0)
     parser.add_argument('--n_layers_freeze', type=int, default=0)
-    parser.add_argument('--model', type=str, choices=('bert-base', 'bertweet', 'covid-twitter-bert'),
-                        default='bert-base')
-    parser.add_argument('--wiki_model', type=str, choices=('', 'bert-base'), default='')
+    parser.add_argument('--model', type=str,
+                        choices=('bert-base-uncased', 'sentence-transformers/all-MiniLM-L6-v2'),
+                        default='bert-base-uncased',
+                        help='choose between bert-base-uncased and all-MiniLM-L6-v2')
+    parser.add_argument('--wiki_model', type=str,
+                        choices=('', 'bert-base-uncased', 'sentence-transformers/all-MiniLM-L6-v2'),
+                        default='',
+                        help='If provided, use this model for wiki input')
     parser.add_argument('--n_layers_freeze_wiki', type=int, default=0)
     parser.add_argument('--gpu', type=str, default='')
     parser.add_argument('--n_workers', type=int, default=4)

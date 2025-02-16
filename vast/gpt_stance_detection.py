@@ -169,29 +169,29 @@ def main():
 
     print("\n=== By Stance (Binary F1 Scores) ===")
     if overall_f1_pro is not None:
-        print(f"Overall Pro F1: {overall_f1_pro:.4f}")
+        print(f"Overall Pro F1: {overall_f1_pro[0]:.4f}")
     else:
         print("No overall 'pro' samples.")
     if overall_f1_con is not None:
-        print(f"Overall Con F1: {overall_f1_con:.4f}")
+        print(f"Overall Con F1: {overall_f1_con[0]:.4f}")
     else:
         print("No overall 'con' samples.")
 
     if zero_f1_pro is not None:
-        print(f"Zero-shot Pro F1: {zero_f1_pro:.4f}")
+        print(f"Zero-shot Pro F1: {zero_f1_pro[0]:.4f}")
     else:
         print("No zero-shot 'pro' samples.")
     if zero_f1_con is not None:
-        print(f"Zero-shot Con F1: {zero_f1_con:.4f}")
+        print(f"Zero-shot Con F1: {zero_f1_con[0]:.4f}")
     else:
         print("No zero-shot 'con' samples.")
 
     if few_f1_pro is not None:
-        print(f"Few-shot Pro F1: {few_f1_pro:.4f}")
+        print(f"Few-shot Pro F1: {few_f1_pro[0]:.4f}")
     else:
         print("No few-shot 'pro' samples.")
     if few_f1_con is not None:
-        print(f"Few-shot Con F1: {few_f1_con:.4f}")
+        print(f"Few-shot Con F1: {few_f1_con[0]:.4f}")
     else:
         print("No few-shot 'con' samples.")
 

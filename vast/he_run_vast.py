@@ -9,8 +9,8 @@ if __name__ == '__main__':
     patience = 10
     lr = 2e-5
     l2_reg = 5e-5
-    model = 'bert-base'
-    wiki_model = 'bert-base'
+    model = 'bert-base-uncased'
+    wiki_model = 'bert-base-uncased'
     n_layers_freeze = 10
     n_layers_freeze_wiki = 10
     gpu = '0'
