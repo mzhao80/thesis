@@ -1,0 +1,220 @@
+import torch
+import torch.nn as nn
+import os
+import numpy as np
+from single_datasets import data_loader
+from he_models import BERTSeqClf
+
+
+class Engine:
+    def __init__(self, args):
+        os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
+        device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
+        print(f"Let's use {torch.cuda.device_count()} GPUs!")
+
+        os.makedirs('ckp', exist_ok=True)
+
+        torch.manual_seed(args.seed)
+        torch.cuda.manual_seed(args.seed)
+        np.random.seed(args.seed)
+
+        print('Preparing data....')
+        if args.inference == 0:
+            print('Training data....')
+            train_loader = data_loader(args.data, 'train', args.topic, args.batch_size, model=args.model,
+                                       wiki_model=args.wiki_model, n_workers=args.n_workers)
+            print('Val data....')
+            val_loader = data_loader(args.data, 'val', args.topic, 2*args.batch_size, model=args.model,
+                                     wiki_model=args.wiki_model, n_workers=args.n_workers)
+            print('Test data....')
+            test_loader = data_loader(args.data, 'test', args.topic, 2*args.batch_size, model=args.model,
+                                      wiki_model=args.wiki_model, n_workers=args.n_workers)
+        else:
+            train_loader = None
+            val_loader = None
+            print('Inference data....')
+            test_loader = data_loader(args.data, 'test', args.topic, 2*args.batch_size, model=args.model,
+                                      wiki_model=args.wiki_model, n_workers=args.n_workers, inference_mode=args.inference==1)
+        print('Done\n')
+
+        print('Initializing model....')
+        num_labels = 3
+        model = BERTSeqClf(num_labels=num_labels, model=args.model, n_layers_freeze=args.n_layers_freeze,
+                           wiki_model=args.wiki_model, n_layers_freeze_wiki=args.n_layers_freeze_wiki)
+        model = nn.DataParallel(model)
+        if args.inference == 1:
+            model_name = args.save_path
+            print('\nLoading checkpoint....')
+            state_dict = torch.load(model_name, map_location='cpu')
+            model.load_state_dict(state_dict)
+            print('Done\n')
+        model.to(device)
+
+        optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=args.l2_reg)
+        criterion = nn.CrossEntropyLoss(ignore_index=3)
+
+        self.device = device
+        self.train_loader = train_loader
+        self.val_loader = val_loader
+        self.test_loader = test_loader
+        self.model = model
+        self.optimizer = optimizer
+        self.criterion = criterion
+        self.args = args
+
+    def train(self):
+        if self.args.inference == 0:
+            import copy
+            best_epoch = 0
+            best_epoch_f1 = 0
+            best_state_dict = copy.deepcopy(self.model.state_dict())
+            for epoch in range(self.args.epochs):
+                print(f"{'*' * 30}Epoch: {epoch + 1}{'*' * 30}")
+                loss = self.train_epoch()
+                f1 = self.eval('val')
+                if f1 > best_epoch_f1:
+                    best_epoch = epoch
+                    best_epoch_f1 = f1
+                    best_state_dict = copy.deepcopy(self.model.state_dict())
+                print(f'Epoch: {epoch+1}\tTrain Loss: {loss:.3f}\tVal F1: {f1:.3f}\n'
+                      f'Best Epoch: {best_epoch+1}\tBest Epoch Val F1: {best_epoch_f1:.3f}\n')
+                if epoch - best_epoch >= self.args.patience:
+                    break
+
+            print('Saving the best checkpoint....')
+            self.model.load_state_dict(best_state_dict)
+            torch.save(best_state_dict, self.args.save_path)
+
+        print('Inference...')
+        if self.args.inference == 1:
+            self.inference()
+        else:
+            f1_avg, f1_few, f1_zero = self.eval('test')
+            print(f'Test F1: {f1_avg:.3f}\tTest F1_Few: {f1_few:.3f}\tTest F1_Zero: {f1_zero:.3f}')
+
+    def inference(self):
+        """Run inference on new data and save predictions"""
+        self.model.eval()
+        predictions = []
+        logits_list = []
+        
+        with torch.no_grad():
+            for i, batch in enumerate(self.test_loader):
+                input_ids = batch['input_ids'].to(self.device)
+                attention_mask = batch['attention_mask'].to(self.device)
+                token_type_ids = batch['token_type_ids'].to(self.device)
+                if self.args.wiki_model and self.args.wiki_model != self.args.model:
+                    input_ids_wiki = batch['input_ids_wiki'].to(self.device)
+                    attention_mask_wiki = batch['attention_mask_wiki'].to(self.device)
+                else:
+                    input_ids_wiki = None
+                    attention_mask_wiki = None
+                    
+                logits = self.model(input_ids, attention_mask, token_type_ids,
+                                    input_ids_wiki=input_ids_wiki, attention_mask_wiki=attention_mask_wiki)
+                preds = logits.argmax(dim=1)
+                
+                predictions.extend(preds.cpu().numpy().tolist())
+                logits_list.extend(logits.cpu().numpy().tolist())
+        
+        # Get original data from the dataset
+        original_data = self.test_loader.dataset.original_data
+        
+        # Add predictions and logits
+        original_data['stance_prediction'] = predictions
+        # Convert numeric predictions to labels
+        stance_labels = {0: 'AGAINST', 1: 'FAVOR', 2: 'NONE'}
+        original_data['stance'] = original_data['stance_prediction'].map(stance_labels)
+        
+        # Add logits columns
+        logits_array = np.array(logits_list)
+        original_data['logits_against'] = logits_array[:, 0]
+        original_data['logits_favor'] = logits_array[:, 1]
+        original_data['logits_none'] = logits_array[:, 2]
+        
+        # Save to CSV
+        output_file = 'stanced_data.csv'
+        original_data.to_csv(output_file, index=False)
+        print(f'Saved predictions and logits to {output_file}')
+
+    def train_epoch(self):
+        self.model.train()
+        epoch_loss = 0
+
+        for i, batch in enumerate(self.train_loader):
+            self.optimizer.zero_grad()
+            input_ids = batch['input_ids'].to(self.device)
+            attention_mask = batch['attention_mask'].to(self.device)
+            token_type_ids = batch['token_type_ids'].to(self.device)
+            stances = batch['stances'].to(self.device)
+            if self.args.wiki_model and self.args.wiki_model != self.args.model:
+                input_ids_wiki = batch['input_ids_wiki'].to(self.device)
+                attention_mask_wiki = batch['attention_mask_wiki'].to(self.device)
+            else:
+                input_ids_wiki = None
+                attention_mask_wiki = None
+
+            logits = self.model(input_ids=input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids,
+                                input_ids_wiki=input_ids_wiki, attention_mask_wiki=attention_mask_wiki)
+            loss = self.criterion(logits, stances)
+            loss.backward()
+            self.optimizer.step()
+
+            interval = max(len(self.train_loader)//10, 1)
+            if i % interval == 0 or i == len(self.train_loader) - 1:
+                print(f'Batch: {i+1}/{len(self.train_loader)}\tLoss:{loss.item():.3f}')
+
+            epoch_loss += loss.item()
+
+        return epoch_loss / len(self.train_loader)
+
+    def eval(self, phase='val'):
+        self.model.eval()
+        y_pred = []
+        y_true = []
+        mask_few_shot = []
+        val_loader = self.val_loader if phase == 'val' else self.test_loader
+        with torch.no_grad():
+            for i, batch in enumerate(val_loader):
+                input_ids = batch['input_ids'].to(self.device)
+                attention_mask = batch['attention_mask'].to(self.device)
+                token_type_ids = batch['token_type_ids'].to(self.device)
+                labels = batch['stances']
+                if self.args.data == 'vast' and phase == 'test':
+                    mask_few_shot_ = batch['few_shot']
+                else:
+                    mask_few_shot_ = torch.tensor([0])
+                if self.args.wiki_model and self.args.wiki_model != self.args.model:
+                    input_ids_wiki = batch['input_ids_wiki'].to(self.device)
+                    attention_mask_wiki = batch['attention_mask_wiki'].to(self.device)
+                else:
+                    input_ids_wiki = None
+                    attention_mask_wiki = None
+                logits = self.model(input_ids, attention_mask, token_type_ids,
+                                    input_ids_wiki=input_ids_wiki, attention_mask_wiki=attention_mask_wiki)
+                preds = logits.argmax(dim=1)
+                y_pred.append(preds.detach().to('cpu').numpy())
+                y_true.append(labels.detach().to('cpu').numpy())
+                mask_few_shot.append(mask_few_shot_.detach().to('cpu').numpy())
+
+        y_pred = np.concatenate(y_pred, axis=0)
+        y_true = np.concatenate(y_true, axis=0)
+        mask_few_shot = np.concatenate(mask_few_shot)
+
+        from sklearn.metrics import f1_score
+        f1_avg = f1_score(y_true, y_pred, average="macro")
+
+        if phase == 'test':
+            mask_few_shot = mask_few_shot.astype(bool)
+            y_true_few = y_true[mask_few_shot]
+            y_pred_few = y_pred[mask_few_shot]
+            f1_avg_few = f1_score(y_true_few, y_pred_few, average="macro")
+
+            mask_zero_shot = ~mask_few_shot
+            y_true_zero = y_true[mask_zero_shot]
+            y_pred_zero = y_pred[mask_zero_shot]
+            f1_avg_zero = f1_score(y_true_zero, y_pred_zero, average="macro")
+
+            return f1_avg, f1_avg_few, f1_avg_zero
+
+        return f1_avg

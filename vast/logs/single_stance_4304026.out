@@ -1,0 +1,28 @@
+Starting with configuration:
+data: vast
+topic: 
+model: sentence-transformers/all-mpnet-base-v2
+wiki_model: sentence-transformers/all-mpnet-base-v2
+lr: 8e-06
+batch_size: 16
+epochs: 75
+patience: 15
+n_layers_freeze: 3
+l2_reg: 4e-05
+gpu: 0
+inference: 0
+n_workers: 4
+seed: 42
+n_layers_freeze_wiki: 3
+Let's use 1 GPUs!
+Preparing data....
+Training data....
+# of train examples: 13477
+max len: 512, max len wiki: 1
+Val data....
+# of val examples: 2062
+max len: 512, max len wiki: 1
+Done
+
+Initializing model....
+******************************Epoch: 1******************************

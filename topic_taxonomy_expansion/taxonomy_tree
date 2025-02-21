@@ -1,475 +1,544 @@
 // Taxonomy Tree
 digraph {
-	policy_0 [label="Government Operations and Politics"]
-	subtopic1_0 [label="D.C. Statehood and Local Governance"]
+	rankdir=LR
+	policy_0 [label="Government Operations and Politics (373, 6.17%)"]
+	subtopic1_0 [label="Federal Workforce and Governance Reform (321, 86.06%)"]
 	policy_0 -> subtopic1_0
-	subtopic2_0 [label="D.C. Statehood and Local Governance Issues"]
-	subtopic1_0 -> subtopic2_0
-	cluster_0 [label="cluster_length: 8"]
-	subtopic2_0 -> cluster_0
-	subtopic2_1 [label="D.C. Crime and Public Safety Reform"]
+	subtopic2_1 [label="D.C. Crime Policy Reforms (29, 9.03%)"]
 	subtopic1_0 -> subtopic2_1
-	cluster_1 [label="cluster_length: 43"]
-	subtopic2_1 -> cluster_1
-	subtopic1_1 [label="Government Transparency and Accountability Measures"]
-	policy_0 -> subtopic1_1
-	subtopic2_2 [label="Regulatory Oversight and Government Accountability"]
-	subtopic1_1 -> subtopic2_2
-	cluster_2 [label="cluster_length: 35"]
-	subtopic2_2 -> cluster_2
-	subtopic2_3 [label="Government Accountability Practices and Standards"]
-	subtopic1_1 -> subtopic2_3
-	cluster_3 [label="cluster_length: 17"]
-	subtopic2_3 -> cluster_3
-	subtopic1_2 [label="Reproductive Rights and Healthcare Politics"]
-	policy_0 -> subtopic1_2
-	subtopic2_4 [label="Abortion Rights and Government Policy"]
-	subtopic1_2 -> subtopic2_4
-	cluster_4 [label="cluster_length: 6"]
-	subtopic2_4 -> cluster_4
-	subtopic2_5 [label="Women's Reproductive Rights Legislation"]
-	subtopic1_2 -> subtopic2_5
-	cluster_5 [label="cluster_length: 6"]
-	subtopic2_5 -> cluster_5
-	policy_1 [label="Crime and Law Enforcement"]
-	subtopic1_3 [label="Gun Regulation and Law Enforcement Practices"]
-	policy_1 -> subtopic1_3
-	subtopic2_6 [label="Gun Regulation in Law Enforcement"]
-	subtopic1_3 -> subtopic2_6
-	cluster_6 [label="cluster_length: 11"]
-	subtopic2_6 -> cluster_6
-	subtopic2_7 [label="Law Enforcement Policies and Regulations"]
-	subtopic1_3 -> subtopic2_7
-	cluster_7 [label="cluster_length: 10"]
-	subtopic2_7 -> cluster_7
-	policy_2 [label=Law]
-	subtopic1_4 [label=Uncategorized]
-	policy_2 -> subtopic1_4
-	cluster_8 [label="cluster_length: 0"]
-	subtopic1_4 -> cluster_8
-	policy_3 [label="Emergency Management"]
-	subtopic1_5 [label="Emergency Management Funding Issues"]
-	policy_3 -> subtopic1_5
-	subtopic2_8 [label="Funding for Emergency Response Programs"]
-	subtopic1_5 -> subtopic2_8
-	cluster_9 [label="cluster_length: 14"]
-	subtopic2_8 -> cluster_9
-	subtopic2_9 [label="Accountability in Emergency Management Funding"]
-	subtopic1_5 -> subtopic2_9
-	cluster_10 [label="cluster_length: 14"]
-	subtopic2_9 -> cluster_10
-	subtopic1_6 [label="Border Security and Immigration Policy"]
-	policy_3 -> subtopic1_6
-	subtopic2_10 [label="Border Security Challenges in Emergency Management"]
-	subtopic1_6 -> subtopic2_10
-	cluster_11 [label="cluster_length: 12"]
-	subtopic2_10 -> cluster_11
-	subtopic2_11 [label="Border Security and Immigration Enforcement"]
-	subtopic1_6 -> subtopic2_11
-	cluster_12 [label="cluster_length: 8"]
-	subtopic2_11 -> cluster_12
-	policy_4 [label=Energy]
-	subtopic1_7 [label="Strategic Petroleum Reserve Management and Oversight"]
-	policy_4 -> subtopic1_7
-	subtopic2_12 [label=Uncategorized]
-	subtopic1_7 -> subtopic2_12
-	cluster_13 [label="cluster_length: 4"]
-	subtopic2_12 -> cluster_13
-	subtopic1_8 [label="Energy Legislation and Amendments"]
-	policy_4 -> subtopic1_8
-	subtopic2_13 [label="Legislative Process and Amendment Debates"]
-	subtopic1_8 -> subtopic2_13
-	cluster_14 [label="cluster_length: 14"]
-	subtopic2_13 -> cluster_14
-	subtopic2_14 [label="Energy Policy and Environmental Impact"]
-	subtopic1_8 -> subtopic2_14
-	cluster_15 [label="cluster_length: 8"]
-	subtopic2_14 -> cluster_15
-	subtopic1_9 [label="Energy Security and Policy Challenges"]
-	policy_4 -> subtopic1_9
-	subtopic2_15 [label="Big Oil's Environmental Impact Analysis"]
-	subtopic1_9 -> subtopic2_15
-	cluster_16 [label="cluster_length: 12"]
-	subtopic2_15 -> cluster_16
-	subtopic2_16 [label="Energy Security and National Resilience"]
-	subtopic1_9 -> subtopic2_16
-	cluster_17 [label="cluster_length: 16"]
-	subtopic2_16 -> cluster_17
-	subtopic1_10 [label="Energy Production and Policy"]
-	policy_4 -> subtopic1_10
-	subtopic2_17 [label="Domestic Renewable Energy Production Policies"]
-	subtopic1_10 -> subtopic2_17
-	cluster_18 [label="cluster_length: 9"]
-	subtopic2_17 -> cluster_18
-	subtopic2_18 [label="Energy Costs and Economic Effects"]
-	subtopic1_10 -> subtopic2_18
-	cluster_19 [label="cluster_length: 6"]
-	subtopic2_18 -> cluster_19
-	subtopic1_11 [label="Energy Policy Analysis and Debate"]
-	policy_4 -> subtopic1_11
-	subtopic2_19 [label=Uncategorized]
-	subtopic1_11 -> subtopic2_19
-	cluster_20 [label="cluster_length: 11"]
-	subtopic2_19 -> cluster_20
-	subtopic1_12 [label="Offshore Energy Development Regulations"]
-	policy_4 -> subtopic1_12
-	subtopic2_20 [label="Offshore Wind Energy Development Regulations"]
-	subtopic1_12 -> subtopic2_20
-	cluster_21 [label="cluster_length: 9"]
-	subtopic2_20 -> cluster_21
-	subtopic2_21 [label="Regulations and Policies for Offshore Drilling"]
-	subtopic1_12 -> subtopic2_21
-	cluster_22 [label="cluster_length: 8"]
-	subtopic2_21 -> cluster_22
-	subtopic2_22 [label="Oil Drilling Regulations and Impacts"]
-	subtopic1_12 -> subtopic2_22
-	cluster_23 [label="cluster_length: 10"]
-	subtopic2_22 -> cluster_23
-	subtopic1_13 [label="Climate Change and Environmental Policy"]
-	policy_4 -> subtopic1_13
-	subtopic2_23 [label="Climate Change Impacts on Energy Policy"]
-	subtopic1_13 -> subtopic2_23
-	cluster_24 [label="cluster_length: 21"]
-	subtopic2_23 -> cluster_24
-	subtopic2_24 [label="Environmental Protection and Policy Framework"]
-	subtopic1_13 -> subtopic2_24
-	cluster_25 [label="cluster_length: 13"]
-	subtopic2_24 -> cluster_25
-	subtopic1_14 [label="Public Lands and Energy Policy"]
-	policy_4 -> subtopic1_14
-	subtopic2_25 [label=Uncategorized]
-	subtopic1_14 -> subtopic2_25
-	cluster_26 [label="cluster_length: 10"]
-	subtopic2_25 -> cluster_26
-	subtopic1_15 [label="Water Quality and Environmental Protection"]
-	policy_4 -> subtopic1_15
-	subtopic2_26 [label=Uncategorized]
-	subtopic1_15 -> subtopic2_26
-	cluster_27 [label="cluster_length: 10"]
-	subtopic2_26 -> cluster_27
-	subtopic1_16 [label="Gas Stove Regulation and Policy"]
-	policy_4 -> subtopic1_16
-	subtopic2_27 [label=Uncategorized]
-	subtopic1_16 -> subtopic2_27
-	cluster_28 [label="cluster_length: 5"]
-	subtopic2_27 -> cluster_28
-	subtopic1_17 [label="China's Influence on Global Energy Resources"]
-	policy_4 -> subtopic1_17
-	subtopic2_28 [label="China's Impact on Global Energy Resources"]
-	subtopic1_17 -> subtopic2_28
-	cluster_29 [label="cluster_length: 7"]
-	subtopic2_28 -> cluster_29
-	subtopic2_29 [label="Uranium Mining and Its Impacts"]
-	subtopic1_17 -> subtopic2_29
-	cluster_30 [label="cluster_length: 5"]
-	subtopic2_29 -> cluster_30
-	policy_5 [label="Armed Forces and National Security"]
-	subtopic1_18 [label="Diversity and Inclusion in the Military"]
-	policy_5 -> subtopic1_18
-	subtopic2_30 [label="Military Cultural History and Recognition"]
-	subtopic1_18 -> subtopic2_30
-	cluster_31 [label="cluster_length: 6"]
-	subtopic2_30 -> cluster_31
-	subtopic2_31 [label="Military Diversity and Inclusion Strategies"]
-	subtopic1_18 -> subtopic2_31
-	cluster_32 [label="cluster_length: 13"]
-	subtopic2_31 -> cluster_32
-	subtopic1_19 [label="Military Families and Gender Healthcare Access"]
-	policy_5 -> subtopic1_19
-	subtopic2_32 [label="Military Support Services for Families"]
-	subtopic1_19 -> subtopic2_32
-	cluster_33 [label="cluster_length: 10"]
-	subtopic2_32 -> cluster_33
-	subtopic2_33 [label="Military Family Health and Rights"]
-	subtopic1_19 -> subtopic2_33
-	cluster_34 [label="cluster_length: 8"]
-	subtopic2_33 -> cluster_34
-	subtopic2_34 [label="Transgender Issues in Military Healthcare"]
-	subtopic1_19 -> subtopic2_34
-	cluster_35 [label="cluster_length: 5"]
-	subtopic2_34 -> cluster_35
-	subtopic1_20 [label="Legislative Procedures and National Security"]
-	policy_5 -> subtopic1_20
-	subtopic2_35 [label="Legislative Process for National Defense"]
-	subtopic1_20 -> subtopic2_35
-	cluster_36 [label="cluster_length: 16"]
-	subtopic2_35 -> cluster_36
-	subtopic2_36 [label="National Security and Information Integrity"]
-	subtopic1_20 -> subtopic2_36
-	cluster_37 [label="cluster_length: 14"]
-	subtopic2_36 -> cluster_37
-	subtopic1_21 [label="U.S. Support and Funding for Ukraine"]
-	policy_5 -> subtopic1_21
-	subtopic2_37 [label="U.S. Financial Support for Ukraine"]
-	subtopic1_21 -> subtopic2_37
-	cluster_38 [label="cluster_length: 12"]
-	subtopic2_37 -> cluster_38
-	subtopic2_38 [label="Military Assistance for Ukraine"]
-	subtopic1_21 -> subtopic2_38
-	cluster_39 [label="cluster_length: 11"]
-	subtopic2_38 -> cluster_39
-	policy_6 [label=Education]
-	subtopic1_22 [label="Parental Rights and Education Issues"]
-	policy_6 -> subtopic1_22
-	subtopic2_39 [label="Education Funding and Reform Issues"]
-	subtopic1_22 -> subtopic2_39
-	cluster_40 [label="cluster_length: 23"]
-	subtopic2_39 -> cluster_40
-	subtopic2_40 [label="Parental Rights in Educational Policy"]
-	subtopic1_22 -> subtopic2_40
-	cluster_41 [label="cluster_length: 11"]
-	subtopic2_40 -> cluster_41
-	subtopic2_41 [label="Book Censorship Challenges in Education"]
-	subtopic1_22 -> subtopic2_41
-	cluster_42 [label="cluster_length: 9"]
-	subtopic2_41 -> cluster_42
-	subtopic2_42 [label="Gun Safety Measures in Schools"]
-	subtopic1_22 -> subtopic2_42
-	cluster_43 [label="cluster_length: 7"]
-	subtopic2_42 -> cluster_43
-	subtopic2_43 [label="Hunting and Archery Education Initiatives"]
-	subtopic1_22 -> subtopic2_43
-	cluster_44 [label="cluster_length: 9"]
-	subtopic2_43 -> cluster_44
-	subtopic1_23 [label="Women's Sports Participation and Rights"]
-	policy_6 -> subtopic1_23
-	subtopic2_44 [label="Women's Sports Participation in Education"]
-	subtopic1_23 -> subtopic2_44
-	cluster_45 [label="cluster_length: 6"]
-	subtopic2_44 -> cluster_45
-	subtopic2_45 [label="Transgender Issues in Sports Education"]
-	subtopic1_23 -> subtopic2_45
-	cluster_46 [label="cluster_length: 7"]
-	subtopic2_45 -> cluster_46
-	policy_7 [label=Health]
-	subtopic1_24 [label="Public Health Emergency Management and Response"]
-	policy_7 -> subtopic1_24
-	subtopic2_46 [label="COVID-19 Emergency Response and Management"]
-	subtopic1_24 -> subtopic2_46
-	cluster_47 [label="cluster_length: 18"]
-	subtopic2_46 -> cluster_47
-	subtopic2_47 [label="Vaccine Mandates and Healthcare Workers"]
-	subtopic1_24 -> subtopic2_47
-	cluster_48 [label="cluster_length: 50"]
-	subtopic2_47 -> cluster_48
-	policy_8 [label="Social Welfare"]
-	subtopic1_25 [label=Uncategorized]
-	policy_8 -> subtopic1_25
-	cluster_49 [label="cluster_length: 0"]
-	subtopic1_25 -> cluster_49
-	policy_9 [label="Agriculture and Food"]
-	subtopic1_26 [label="Agricultural Funding and Policy Issues"]
-	policy_9 -> subtopic1_26
-	subtopic2_48 [label="Agricultural Funding and Climate Change"]
-	subtopic1_26 -> subtopic2_48
-	cluster_50 [label="cluster_length: 30"]
-	subtopic2_48 -> cluster_50
-	subtopic2_49 [label="Agricultural Regulatory Framework Issues"]
-	subtopic1_26 -> subtopic2_49
-	cluster_51 [label="cluster_length: 6"]
-	subtopic2_49 -> cluster_51
-	subtopic1_27 [label="Government Spending and Funding Issues"]
-	policy_9 -> subtopic1_27
-	subtopic2_50 [label="Government Funding for Agricultural Programs"]
-	subtopic1_27 -> subtopic2_50
-	cluster_52 [label="cluster_length: 16"]
-	subtopic2_50 -> cluster_52
-	subtopic2_51 [label="Funding for Agricultural Support Programs"]
-	subtopic1_27 -> subtopic2_51
-	cluster_53 [label="cluster_length: 9"]
-	subtopic2_51 -> cluster_53
-	policy_10 [label="International Affairs"]
-	subtopic1_28 [label="U.S.-China Technological and Security Relations"]
-	policy_10 -> subtopic1_28
-	subtopic2_52 [label="U.S.-China Technology and Telecommunications Policies"]
-	subtopic1_28 -> subtopic2_52
-	cluster_54 [label="cluster_length: 8"]
-	subtopic2_52 -> cluster_54
-	subtopic2_53 [label="Taiwan's Role in Global Politics"]
-	subtopic1_28 -> subtopic2_53
-	cluster_55 [label="cluster_length: 6"]
-	subtopic2_53 -> cluster_55
-	subtopic1_29 [label="International Diplomatic Relations and Support"]
-	policy_10 -> subtopic1_29
-	subtopic2_54 [label="International Humanitarian and Military Support"]
-	subtopic1_29 -> subtopic2_54
-	cluster_56 [label="cluster_length: 8"]
-	subtopic2_54 -> cluster_56
-	subtopic2_55 [label="U.S.-Middle East Diplomatic Relations"]
-	subtopic1_29 -> subtopic2_55
-	cluster_57 [label="cluster_length: 16"]
-	subtopic2_55 -> cluster_57
-	subtopic1_30 [label="International Funding and Assistance Issues"]
-	policy_10 -> subtopic1_30
-	subtopic2_56 [label="Climate Change Funding and Policy"]
-	subtopic1_30 -> subtopic2_56
-	cluster_58 [label="cluster_length: 19"]
-	subtopic2_56 -> cluster_58
-	subtopic2_57 [label="International Aid and Funding Challenges"]
-	subtopic1_30 -> subtopic2_57
-	cluster_59 [label="cluster_length: 15"]
-	subtopic2_57 -> cluster_59
-	subtopic2_58 [label="Refugee Assistance and Funding Challenges"]
-	subtopic1_30 -> subtopic2_58
-	cluster_60 [label="cluster_length: 10"]
-	subtopic2_58 -> cluster_60
-	subtopic1_31 [label="Accountability in International Affairs"]
-	policy_10 -> subtopic1_31
-	subtopic2_59 [label="Accountability and Transparency in Foreign Policy"]
-	subtopic1_31 -> subtopic2_59
-	cluster_61 [label="cluster_length: 17"]
-	subtopic2_59 -> cluster_61
-	subtopic2_60 [label="Government Accountability and Oversight"]
-	subtopic1_31 -> subtopic2_60
-	cluster_62 [label="cluster_length: 26"]
-	subtopic2_60 -> cluster_62
-	policy_11 [label="Economics and Public Finance"]
-	subtopic1_32 [label="Fiscal Responsibility and Government Funding"]
-	policy_11 -> subtopic1_32
-	subtopic2_61 [label="Fiscal Responsibility and Budgeting Practices"]
-	subtopic1_32 -> subtopic2_61
-	cluster_63 [label="cluster_length: 20"]
-	subtopic2_61 -> cluster_63
-	subtopic2_62 [label="Government Funding Challenges and Solutions"]
-	subtopic1_32 -> subtopic2_62
-	cluster_64 [label="cluster_length: 12"]
-	subtopic2_62 -> cluster_64
-	subtopic2_63 [label="Funding for Law Enforcement Infrastructure"]
-	subtopic1_32 -> subtopic2_63
-	cluster_65 [label="cluster_length: 11"]
-	subtopic2_63 -> cluster_65
-	subtopic1_33 [label="Climate Change and Economic Policy"]
-	policy_11 -> subtopic1_33
-	subtopic2_64 [label="Climate Change and Economic Impacts"]
-	subtopic1_33 -> subtopic2_64
-	cluster_66 [label="cluster_length: 27"]
-	subtopic2_64 -> cluster_66
-	subtopic2_65 [label="Natural Gas Appliance Regulation Issues"]
-	subtopic1_33 -> subtopic2_65
-	cluster_67 [label="cluster_length: 6"]
-	subtopic2_65 -> cluster_67
-	subtopic1_34 [label="IRS Funding and Tax Compliance"]
-	policy_11 -> subtopic1_34
-	subtopic2_66 [label=Uncategorized]
-	subtopic1_34 -> subtopic2_66
-	cluster_68 [label="cluster_length: 11"]
-	subtopic2_66 -> cluster_68
-	subtopic1_35 [label="Labor Rights and Electoral Politics"]
-	policy_11 -> subtopic1_35
-	subtopic2_67 [label="Voting Rights and Legislative Impact"]
-	subtopic1_35 -> subtopic2_67
-	cluster_69 [label="cluster_length: 10"]
-	subtopic2_67 -> cluster_69
-	subtopic2_68 [label="Civil Liberties and Economic Impacts"]
-	subtopic1_35 -> subtopic2_68
-	cluster_70 [label="cluster_length: 7"]
-	subtopic2_68 -> cluster_70
-	subtopic2_69 [label="Labor Union Rights and Regulations"]
-	subtopic1_35 -> subtopic2_69
-	cluster_71 [label="cluster_length: 14"]
-	subtopic2_69 -> cluster_71
-	subtopic1_36 [label="Border Security and Government Spending"]
-	policy_11 -> subtopic1_36
-	subtopic2_70 [label="Border Security Funding and Policy"]
-	subtopic1_36 -> subtopic2_70
-	cluster_72 [label="cluster_length: 7"]
-	subtopic2_70 -> cluster_72
-	subtopic2_71 [label="Border Security and Economic Impact"]
-	subtopic1_36 -> subtopic2_71
-	cluster_73 [label="cluster_length: 8"]
-	subtopic2_71 -> cluster_73
-	subtopic1_37 [label="Funding Cuts in Public Services"]
-	policy_11 -> subtopic1_37
-	subtopic2_72 [label="Public Services Funding Reductions"]
-	subtopic1_37 -> subtopic2_72
-	cluster_74 [label="cluster_length: 11"]
-	subtopic2_72 -> cluster_74
-	subtopic2_73 [label="Education Funding Challenges and Reforms"]
-	subtopic1_37 -> subtopic2_73
-	cluster_75 [label="cluster_length: 14"]
-	subtopic2_73 -> cluster_75
-	subtopic2_74 [label="Higher Education Funding and Accountability"]
-	subtopic1_37 -> subtopic2_74
-	cluster_76 [label="cluster_length: 10"]
-	subtopic2_74 -> cluster_76
-	subtopic1_38 [label="International Military and Humanitarian Aid"]
-	policy_11 -> subtopic1_38
-	subtopic2_75 [label="Foreign Aid Distribution for Ukraine"]
-	subtopic1_38 -> subtopic2_75
-	cluster_77 [label="cluster_length: 10"]
-	subtopic2_75 -> cluster_77
-	subtopic2_76 [label="Israel Financial Assistance and Support"]
-	subtopic1_38 -> subtopic2_76
-	cluster_78 [label="cluster_length: 11"]
-	subtopic2_76 -> cluster_78
-	subtopic1_39 [label="Regulatory Oversight and Financial Governance"]
-	policy_11 -> subtopic1_39
-	subtopic2_77 [label="Regulatory Oversight of Financial Markets"]
-	subtopic1_39 -> subtopic2_77
-	cluster_79 [label="cluster_length: 46"]
-	subtopic2_77 -> cluster_79
-	subtopic2_78 [label="SEC Regulations and Shareholder Rights"]
-	subtopic1_39 -> subtopic2_78
-	cluster_80 [label="cluster_length: 11"]
-	subtopic2_78 -> cluster_80
-	subtopic1_40 [label="Public Safety and Regulation Policies"]
-	policy_11 -> subtopic1_40
-	subtopic2_79 [label="Public Safety and Occupational Health"]
-	subtopic1_40 -> subtopic2_79
-	cluster_81 [label="cluster_length: 10"]
-	subtopic2_79 -> cluster_81
-	subtopic2_80 [label="Economic Impacts of Gun Violence Prevention"]
-	subtopic1_40 -> subtopic2_80
-	cluster_82 [label="cluster_length: 6"]
-	subtopic2_80 -> cluster_82
-	subtopic1_41 [label="Public Health and Vaccine Mandates"]
-	policy_11 -> subtopic1_41
-	subtopic2_81 [label="Vaccine Mandates and Economic Implications"]
-	subtopic1_41 -> subtopic2_81
-	cluster_83 [label="cluster_length: 16"]
-	subtopic2_81 -> cluster_83
-	subtopic2_82 [label="Public Health Mandates and Economics"]
-	subtopic1_41 -> subtopic2_82
-	cluster_84 [label="cluster_length: 8"]
-	subtopic2_82 -> cluster_84
-	subtopic1_42 [label="Healthcare Funding and Research Challenges"]
-	policy_11 -> subtopic1_42
-	subtopic2_83 [label="Healthcare Funding and Workforce Challenges"]
-	subtopic1_42 -> subtopic2_83
-	cluster_85 [label="cluster_length: 21"]
-	subtopic2_83 -> cluster_85
-	subtopic2_84 [label="Health Research Funding Mechanisms"]
-	subtopic1_42 -> subtopic2_84
-	cluster_86 [label="cluster_length: 9"]
-	subtopic2_84 -> cluster_86
-	policy_12 [label=Immigration]
-	subtopic1_43 [label="Border Security and Immigration Policy"]
-	policy_12 -> subtopic1_43
-	subtopic2_85 [label="Border Security Challenges and Solutions"]
-	subtopic1_43 -> subtopic2_85
-	cluster_87 [label="cluster_length: 15"]
-	subtopic2_85 -> cluster_87
-	subtopic2_86 [label="Immigration Reform and Opposition Dynamics"]
-	subtopic1_43 -> subtopic2_86
-	cluster_88 [label="cluster_length: 11"]
-	subtopic2_86 -> cluster_88
-	subtopic1_44 [label="Immigration and Education Policy"]
-	policy_12 -> subtopic1_44
-	subtopic2_87 [label=Uncategorized]
-	subtopic1_44 -> subtopic2_87
-	cluster_89 [label="cluster_length: 8"]
-	subtopic2_87 -> cluster_89
-	policy_13 [label="Civil Rights and Liberties, Minority Issues"]
-	subtopic1_45 [label=Uncategorized]
-	policy_13 -> subtopic1_45
-	cluster_90 [label="cluster_length: 0"]
-	subtopic1_45 -> cluster_90
-	policy_14 [label="Housing and Community Development"]
-	subtopic1_46 [label=Uncategorized]
-	policy_14 -> subtopic1_46
-	cluster_91 [label="cluster_length: 0"]
-	subtopic1_46 -> cluster_91
-	parent [label="Parent Node"]
+	subtopic2_2 [label="Federal Workforce Reform Initiatives (29, 9.03%)"]
+	subtopic1_0 -> subtopic2_2
+	subtopic2_3 [label="Misc. (56, 17.45%)"]
+	subtopic1_0 -> subtopic2_3
+	subtopic2_4 [label="Regulatory Oversight Limitations (36, 11.21%)"]
+	subtopic1_0 -> subtopic2_4
+	subtopic2_5 [label="Vaccine Mandates and Public Policy (45, 14.02%)"]
+	subtopic1_0 -> subtopic2_5
+	subtopic2_6 [label="Noncitizen Voting Policy Debate (20, 6.23%)"]
+	subtopic1_0 -> subtopic2_6
+	subtopic2_7 [label="Police Accountability and Reform Policies (19, 5.92%)"]
+	subtopic1_0 -> subtopic2_7
+	subtopic2_8 [label="Regulatory Changes Impact on Businesses (16, 4.98%)"]
+	subtopic1_0 -> subtopic2_8
+	subtopic2_9 [label="Government Accountability Initiatives (21, 6.54%)"]
+	subtopic1_0 -> subtopic2_9
+	subtopic2_10 [label="D.C. Statehood Debate (18, 5.61%)"]
+	subtopic1_0 -> subtopic2_10
+	subtopic2_11 [label="Government Transparency Initiatives (11, 3.43%)"]
+	subtopic1_0 -> subtopic2_11
+	subtopic2_12 [label="Agency Guidance on Reproductive Rights (21, 6.54%)"]
+	subtopic1_0 -> subtopic2_12
+	subtopic1_13 [label="Misc. (13, 3.49%)"]
+	policy_0 -> subtopic1_13
+	subtopic1_14 [label="Censorship and Free Speech Regulation (39, 10.46%)"]
+	policy_0 -> subtopic1_14
+	subtopic2_15 [label="Regulation of Free Speech Online (13, 33.33%)"]
+	subtopic1_14 -> subtopic2_15
+	subtopic2_16 [label="Censorship and Free Speech Policy (17, 43.59%)"]
+	subtopic1_14 -> subtopic2_16
+	subtopic2_17 [label="Misc. (9, 23.08%)"]
+	subtopic1_14 -> subtopic2_17
+	policy_1 [label="Taxation (131, 2.17%)"]
+	subtopic1_18 [label="IRS Administration and Tax Compliance (55, 41.98%)"]
+	policy_1 -> subtopic1_18
+	subtopic2_19 [label="IRS Budget Reform Proposals (27, 49.09%)"]
+	subtopic1_18 -> subtopic2_19
+	subtopic2_20 [label="Small Business Tax Compliance Reform (22, 40.00%)"]
+	subtopic1_18 -> subtopic2_20
+	subtopic2_21 [label="Misc. (6, 10.91%)"]
+	subtopic1_18 -> subtopic2_21
+	subtopic1_22 [label="Misc. (27, 20.61%)"]
+	policy_1 -> subtopic1_22
+	subtopic1_23 [label="Healthcare Taxation and Benefits (49, 37.40%)"]
+	policy_1 -> subtopic1_23
+	subtopic2_24 [label="Healthcare Tax Credit Reforms (20, 40.82%)"]
+	subtopic1_23 -> subtopic2_24
+	subtopic2_25 [label="Healthcare Tax Deductions Policy (12, 24.49%)"]
+	subtopic1_23 -> subtopic2_25
+	subtopic2_26 [label="Healthcare Tax Deductions and Benefits (17, 34.69%)"]
+	subtopic1_23 -> subtopic2_26
+	policy_2 [label="Environmental Protection (98, 1.62%)"]
+	subtopic1_27 [label="Environmental Regulations and Policies (36, 36.73%)"]
+	policy_2 -> subtopic1_27
+	subtopic2_28 [label="Misc. (36, 100.00%)"]
+	subtopic1_27 -> subtopic2_28
+	subtopic1_29 [label="Vehicle Emissions and Regulations (62, 63.27%)"]
+	policy_2 -> subtopic1_29
+	subtopic2_30 [label="Vehicle Emissions Regulation Policies (21, 33.87%)"]
+	subtopic1_29 -> subtopic2_30
+	subtopic2_31 [label="Electric Vehicle Adoption Policies (41, 66.13%)"]
+	subtopic1_29 -> subtopic2_31
+	policy_3 [label="Crime and Law Enforcement (127, 2.10%)"]
+	subtopic1_32 [label="Law Enforcement and Public Safety Regulations (66, 51.97%)"]
+	policy_3 -> subtopic1_32
+	subtopic2_33 [label="Law Enforcement Accountability Reforms (31, 46.97%)"]
+	subtopic1_32 -> subtopic2_33
+	subtopic2_34 [label="Gun Control Policy Reform (16, 24.24%)"]
+	subtopic1_32 -> subtopic2_34
+	subtopic2_35 [label="Rape Kit Testing Legislation (13, 19.70%)"]
+	subtopic1_32 -> subtopic2_35
+	subtopic2_36 [label="Misc. (6, 9.09%)"]
+	subtopic1_32 -> subtopic2_36
+	subtopic1_37 [label="Drug Policy and Crisis Response (50, 39.37%)"]
+	policy_3 -> subtopic1_37
+	subtopic2_38 [label="Fentanyl Regulation and Policy Reform (33, 66.00%)"]
+	subtopic1_37 -> subtopic2_38
+	subtopic2_39 [label="Fentanyl Regulation and Enforcement (17, 34.00%)"]
+	subtopic1_37 -> subtopic2_39
+	subtopic1_40 [label="Misc. (11, 8.66%)"]
+	policy_3 -> subtopic1_40
+	policy_4 [label="Energy (687, 11.36%)"]
+	subtopic1_41 [label="Strategic Petroleum Reserve Management (69, 10.04%)"]
+	policy_4 -> subtopic1_41
+	subtopic2_42 [label="Misc. (69, 100.00%)"]
+	subtopic1_41 -> subtopic2_42
+	subtopic1_43 [label="Energy Security and Cybersecurity (49, 7.13%)"]
+	policy_4 -> subtopic1_43
+	subtopic2_44 [label="Misc. (49, 100.00%)"]
+	subtopic1_43 -> subtopic2_44
+	subtopic1_45 [label="Oil and Gas Policy Regulations (305, 44.40%)"]
+	policy_4 -> subtopic1_45
+	subtopic2_46 [label="Offshore Oil and Gas Development Policy (37, 12.13%)"]
+	subtopic1_45 -> subtopic2_46
+	subtopic2_47 [label="Oil and Gas Export Policy (13, 4.26%)"]
+	subtopic1_45 -> subtopic2_47
+	subtopic2_48 [label="Misc. (60, 19.67%)"]
+	subtopic1_45 -> subtopic2_48
+	subtopic2_49 [label="Natural Gas Permit Regulations (58, 19.02%)"]
+	subtopic1_45 -> subtopic2_49
+	subtopic2_50 [label="Offshore Oil and Gas Leasing Policies (34, 11.15%)"]
+	subtopic1_45 -> subtopic2_50
+	subtopic2_51 [label="Carbon Emissions Control Policies (41, 13.44%)"]
+	subtopic1_45 -> subtopic2_51
+	subtopic2_52 [label="Natural Gas Stove Regulation Policies (13, 4.26%)"]
+	subtopic1_45 -> subtopic2_52
+	subtopic2_53 [label="Energy Policy Reform Debates (19, 6.23%)"]
+	subtopic1_45 -> subtopic2_53
+	subtopic2_54 [label="Critical Minerals Mining Regulation (17, 5.57%)"]
+	subtopic1_45 -> subtopic2_54
+	subtopic2_55 [label="Water Quality Regulation Policies (13, 4.26%)"]
+	subtopic1_45 -> subtopic2_55
+	subtopic1_56 [label="Energy Policy and Reform (84, 12.23%)"]
+	policy_4 -> subtopic1_56
+	subtopic2_57 [label="Energy Policy Accountability Measures (66, 78.57%)"]
+	subtopic1_56 -> subtopic2_57
+	subtopic2_58 [label="Energy Infrastructure Investment Priorities (18, 21.43%)"]
+	subtopic1_56 -> subtopic2_58
+	subtopic1_59 [label="Energy Independence Strategies (29, 4.22%)"]
+	policy_4 -> subtopic1_59
+	subtopic2_60 [label="Misc. (29, 100.00%)"]
+	subtopic1_59 -> subtopic2_60
+	subtopic1_61 [label="Energy Production and Development Strategies (41, 5.97%)"]
+	policy_4 -> subtopic1_61
+	subtopic2_62 [label="Energy Production Regulations (30, 73.17%)"]
+	subtopic1_61 -> subtopic2_62
+	subtopic2_63 [label="Green Energy Access Policy (11, 26.83%)"]
+	subtopic1_61 -> subtopic2_63
+	subtopic1_64 [label="Energy Affordability and Costs (35, 5.09%)"]
+	policy_4 -> subtopic1_64
+	subtopic2_65 [label="Misc. (35, 100.00%)"]
+	subtopic1_64 -> subtopic2_65
+	subtopic1_66 [label="Misc. (42, 6.11%)"]
+	policy_4 -> subtopic1_66
+	subtopic1_67 [label="Clean and Sustainable Energy Solutions (33, 4.80%)"]
+	policy_4 -> subtopic1_67
+	subtopic2_68 [label="Misc. (33, 100.00%)"]
+	subtopic1_67 -> subtopic2_68
+	policy_5 [label="Law (16, 0.26%)"]
+	subtopic1_69 [label="Misc. (16, 100.00%)"]
+	policy_5 -> subtopic1_69
+	policy_6 [label="Emergency Management (206, 3.41%)"]
+	subtopic1_70 [label="Disaster Recovery and Resilience Strategies (148, 71.84%)"]
+	policy_6 -> subtopic1_70
+	subtopic2_71 [label="Immigration Enforcement Policy Revisions (14, 9.46%)"]
+	subtopic1_70 -> subtopic2_71
+	subtopic2_72 [label="Election Security Reforms (24, 16.22%)"]
+	subtopic1_70 -> subtopic2_72
+	subtopic2_73 [label="Misc. (35, 23.65%)"]
+	subtopic1_70 -> subtopic2_73
+	subtopic2_74 [label="Disaster Recovery Funding Allocation (23, 15.54%)"]
+	subtopic1_70 -> subtopic2_74
+	subtopic2_75 [label="First Responder Resources Allocation (15, 10.14%)"]
+	subtopic1_70 -> subtopic2_75
+	subtopic2_76 [label="Immigration Reform and Emergency Response (26, 17.57%)"]
+	subtopic1_70 -> subtopic2_76
+	subtopic2_77 [label="Emergency Management Funding Allocation (11, 7.43%)"]
+	subtopic1_70 -> subtopic2_77
+	subtopic1_78 [label="Border Security and Infrastructure Management (58, 28.16%)"]
+	policy_6 -> subtopic1_78
+	subtopic2_79 [label="Misc. (58, 100.00%)"]
+	subtopic1_78 -> subtopic2_79
+	policy_7 [label="Transportation and Public Works (273, 4.51%)"]
+	subtopic1_80 [label="Transportation and Aviation Safety (31, 11.36%)"]
+	policy_7 -> subtopic1_80
+	subtopic2_81 [label="Misc. (31, 100.00%)"]
+	subtopic1_80 -> subtopic2_81
+	subtopic1_82 [label="Aviation and Maritime Infrastructure Development (212, 77.66%)"]
+	policy_7 -> subtopic1_82
+	subtopic2_83 [label="Rural Airport Infrastructure Support (81, 38.21%)"]
+	subtopic1_82 -> subtopic2_83
+	subtopic2_84 [label="Misc. (29, 13.68%)"]
+	subtopic1_82 -> subtopic2_84
+	subtopic2_85 [label="Aviation Noise Mitigation Policies (59, 27.83%)"]
+	subtopic1_82 -> subtopic2_85
+	subtopic2_86 [label="Aviation Workforce Policy Reform (30, 14.15%)"]
+	subtopic1_82 -> subtopic2_86
+	subtopic2_87 [label="Aviation Safety Regulatory Reforms (13, 6.13%)"]
+	subtopic1_82 -> subtopic2_87
+	subtopic1_88 [label="Misc. (30, 10.99%)"]
+	policy_7 -> subtopic1_88
+	policy_8 [label="Commerce (111, 1.84%)"]
+	subtopic1_89 [label="Misc. (111, 100.00%)"]
+	policy_8 -> subtopic1_89
+	policy_9 [label="Congress (7, 0.12%)"]
+	subtopic1_90 [label="Misc. (7, 100.00%)"]
+	policy_9 -> subtopic1_90
+	policy_10 [label="Science, Technology, Communications (87, 1.44%)"]
+	subtopic1_91 [label="Remote Sensing and Communication Technologies (41, 47.13%)"]
+	policy_10 -> subtopic1_91
+	subtopic2_92 [label="Misc. (41, 100.00%)"]
+	subtopic1_91 -> subtopic2_92
+	subtopic1_93 [label="Misc. (19, 21.84%)"]
+	policy_10 -> subtopic1_93
+	subtopic1_94 [label="Science and Technology Legislation (27, 31.03%)"]
+	policy_10 -> subtopic1_94
+	subtopic2_95 [label="Misc. (27, 100.00%)"]
+	subtopic1_94 -> subtopic2_95
+	policy_11 [label="Finance and Financial Sector (133, 2.20%)"]
+	subtopic1_96 [label="Financial Regulation and Investor Protection (83, 62.41%)"]
+	policy_11 -> subtopic1_96
+	subtopic2_97 [label="Bipartisan Financial Regulation Reform (23, 27.71%)"]
+	subtopic1_96 -> subtopic2_97
+	subtopic2_98 [label="Financial Exploitation Prevention Measures (43, 51.81%)"]
+	subtopic1_96 -> subtopic2_98
+	subtopic2_99 [label="Misc. (17, 20.48%)"]
+	subtopic1_96 -> subtopic2_99
+	subtopic1_100 [label="Misc. (22, 16.54%)"]
+	policy_11 -> subtopic1_100
+	subtopic1_101 [label="Housing Finance and Policy (28, 21.05%)"]
+	policy_11 -> subtopic1_101
+	subtopic2_102 [label="Mortgage Access and Reform Policies (12, 42.86%)"]
+	subtopic1_101 -> subtopic2_102
+	subtopic2_103 [label="Affordable Housing Policy Reforms (16, 57.14%)"]
+	subtopic1_101 -> subtopic2_103
+	policy_12 [label="Education (283, 4.68%)"]
+	subtopic1_104 [label="Parental Involvement and Education Policy (205, 72.44%)"]
+	policy_12 -> subtopic1_104
+	subtopic2_105 [label="Parental Rights in Education Policy (44, 21.46%)"]
+	subtopic1_104 -> subtopic2_105
+	subtopic2_106 [label="Education Funding Transparency Policies (85, 41.46%)"]
+	subtopic1_104 -> subtopic2_106
+	subtopic2_107 [label="Misc. (6, 2.93%)"]
+	subtopic1_104 -> subtopic2_107
+	subtopic2_108 [label="Education Funding Reform (22, 10.73%)"]
+	subtopic1_104 -> subtopic2_108
+	subtopic2_109 [label="Transgender Protections in Education Policy (16, 7.80%)"]
+	subtopic1_104 -> subtopic2_109
+	subtopic2_110 [label="Title IX and Women's Sports Equity (19, 9.27%)"]
+	subtopic1_104 -> subtopic2_110
+	subtopic2_111 [label="Transgender Participation in Women's Sports (13, 6.34%)"]
+	subtopic1_104 -> subtopic2_111
+	subtopic1_112 [label="Parental and Educational Rights (64, 22.61%)"]
+	policy_12 -> subtopic1_112
+	subtopic2_113 [label="Misc. (64, 100.00%)"]
+	subtopic1_112 -> subtopic2_113
+	subtopic1_114 [label="Misc. (14, 4.95%)"]
+	policy_12 -> subtopic1_114
+	policy_13 [label="Armed Forces and National Security (596, 9.86%)"]
+	subtopic1_115 [label="Veterans Affairs and Military Support (396, 66.44%)"]
+	policy_13 -> subtopic1_115
+	subtopic2_116 [label="Veterans' Healthcare Policy Reform (47, 11.87%)"]
+	subtopic1_115 -> subtopic2_116
+	subtopic2_117 [label="Veterans Affairs Reform Legislation (15, 3.79%)"]
+	subtopic1_115 -> subtopic2_117
+	subtopic2_118 [label="Veterans Affairs Policy Reforms (27, 6.82%)"]
+	subtopic1_115 -> subtopic2_118
+	subtopic2_119 [label="Military Recruitment Strategies (13, 3.28%)"]
+	subtopic1_115 -> subtopic2_119
+	subtopic2_120 [label="Military Funding Oversight and Accountability (21, 5.30%)"]
+	subtopic1_115 -> subtopic2_120
+	subtopic2_121 [label="Misc. (93, 23.48%)"]
+	subtopic1_115 -> subtopic2_121
+	subtopic2_122 [label="Government Surveillance and Privacy Reform (34, 8.59%)"]
+	subtopic1_115 -> subtopic2_122
+	subtopic2_123 [label="Defense Spending Accountability Measures (14, 3.54%)"]
+	subtopic1_115 -> subtopic2_123
+	subtopic2_124 [label="Veteran Benefits Administration Reform (26, 6.57%)"]
+	subtopic1_115 -> subtopic2_124
+	subtopic2_125 [label="Nuclear Weapons Modernization Debate (46, 11.62%)"]
+	subtopic1_115 -> subtopic2_125
+	subtopic2_126 [label="Military Compensation and Benefits Reform (24, 6.06%)"]
+	subtopic1_115 -> subtopic2_126
+	subtopic2_127 [label="Foreign Policy Oversight in Conflicts (24, 6.06%)"]
+	subtopic1_115 -> subtopic2_127
+	subtopic2_128 [label="Military Diversity and Inclusion Policies (12, 3.03%)"]
+	subtopic1_115 -> subtopic2_128
+	subtopic1_129 [label="Misc. (150, 25.17%)"]
+	policy_13 -> subtopic1_129
+	subtopic1_130 [label="U.S. Support and Assistance to Ukraine (50, 8.39%)"]
+	policy_13 -> subtopic1_130
+	subtopic2_131 [label="Misc. (50, 100.00%)"]
+	subtopic1_130 -> subtopic2_131
+	policy_14 [label="Health (122, 2.02%)"]
+	subtopic1_132 [label="Public Health Emergency Management and Reform (75, 61.48%)"]
+	policy_14 -> subtopic1_132
+	subtopic2_133 [label="Healthcare Access Equity Reform (46, 61.33%)"]
+	subtopic1_132 -> subtopic2_133
+	subtopic2_134 [label="Public Health Emergency Response Policies (14, 18.67%)"]
+	subtopic1_132 -> subtopic2_134
+	subtopic2_135 [label="Misc. (4, 5.33%)"]
+	subtopic1_132 -> subtopic2_135
+	subtopic2_136 [label="Healthcare Pricing Transparency Reform (11, 14.67%)"]
+	subtopic1_132 -> subtopic2_136
+	subtopic1_137 [label="COVID-19 Vaccination and Response Policies (37, 30.33%)"]
+	policy_14 -> subtopic1_137
+	subtopic2_138 [label="Misc. (37, 100.00%)"]
+	subtopic1_137 -> subtopic2_138
+	subtopic1_139 [label="Misc. (10, 8.20%)"]
+	policy_14 -> subtopic1_139
+	policy_15 [label="Social Welfare (2, 0.03%)"]
+	subtopic1_140 [label="Misc. (2, 100.00%)"]
+	policy_15 -> subtopic1_140
+	policy_16 [label="Public Lands and Natural Resources (51, 0.84%)"]
+	subtopic1_141 [label="Misc. (51, 100.00%)"]
+	policy_16 -> subtopic1_141
+	policy_17 [label="Economics and Public Finance (2230, 36.88%)"]
+	subtopic1_142 [label="Fiscal Responsibility and Sustainability (35, 1.57%)"]
+	policy_17 -> subtopic1_142
+	subtopic2_143 [label="Misc. (35, 100.00%)"]
+	subtopic1_142 -> subtopic2_143
+	subtopic1_144 [label="Misc. (646, 28.97%)"]
+	policy_17 -> subtopic1_144
+	subtopic1_145 [label="Government Spending and Tax Policy (99, 4.44%)"]
+	policy_17 -> subtopic1_145
+	subtopic2_146 [label="Government Spending Efficiency Standards (17, 17.17%)"]
+	subtopic1_145 -> subtopic2_146
+	subtopic2_147 [label="Federal Spending Accountability Measures (23, 23.23%)"]
+	subtopic1_145 -> subtopic2_147
+	subtopic2_148 [label="IRS Tax Enforcement Transparency Reform (27, 27.27%)"]
+	subtopic1_145 -> subtopic2_148
+	subtopic2_149 [label="Federal Funding Accountability Policies (32, 32.32%)"]
+	subtopic1_145 -> subtopic2_149
+	subtopic1_150 [label="Debt Ceiling Policy and Legislation (42, 1.88%)"]
+	policy_17 -> subtopic1_150
+	subtopic2_151 [label="Debt Ceiling Increase Debate (26, 61.90%)"]
+	subtopic1_150 -> subtopic2_151
+	subtopic2_152 [label="Debt Ceiling Policy Changes (16, 38.10%)"]
+	subtopic1_150 -> subtopic2_152
+	subtopic1_153 [label="Government Oversight and Accountability (95, 4.26%)"]
+	policy_17 -> subtopic1_153
+	subtopic2_154 [label="Federal Employee Rights and Protections (36, 37.89%)"]
+	subtopic1_153 -> subtopic2_154
+	subtopic2_155 [label="Government Accountability Reforms (29, 30.53%)"]
+	subtopic1_153 -> subtopic2_155
+	subtopic2_156 [label="Government Oversight Reform Debate (20, 21.05%)"]
+	subtopic1_153 -> subtopic2_156
+	subtopic2_157 [label="Misc. (10, 10.53%)"]
+	subtopic1_153 -> subtopic2_157
+	subtopic1_158 [label="Affordable Housing and Living Costs (30, 1.35%)"]
+	policy_17 -> subtopic1_158
+	subtopic2_159 [label="Misc. (7, 23.33%)"]
+	subtopic1_158 -> subtopic2_159
+	subtopic2_160 [label="LGBTQ Housing Policy Funding (9, 30.00%)"]
+	subtopic1_158 -> subtopic2_160
+	subtopic2_161 [label="Affordable Housing Policy Reforms (14, 46.67%)"]
+	subtopic1_158 -> subtopic2_161
+	subtopic1_162 [label="Economic Analysis and Policy Evaluation (30, 1.35%)"]
+	policy_17 -> subtopic1_162
+	subtopic2_163 [label="Inflation Control Policy Measures (11, 36.67%)"]
+	subtopic1_162 -> subtopic2_163
+	subtopic2_164 [label="Industrial Decarbonization Economic Impact (19, 63.33%)"]
+	subtopic1_162 -> subtopic2_164
+	subtopic1_165 [label="Regulatory Framework and Financial Oversight (104, 4.66%)"]
+	policy_17 -> subtopic1_165
+	subtopic2_166 [label="Regulatory Authority in Public Finance (19, 18.27%)"]
+	subtopic1_165 -> subtopic2_166
+	subtopic2_167 [label="Consumer Financial Protection Policies (41, 39.42%)"]
+	subtopic1_165 -> subtopic2_167
+	subtopic2_168 [label="Antitrust Regulation Reforms (14, 13.46%)"]
+	subtopic1_165 -> subtopic2_168
+	subtopic2_169 [label="Regulatory Burden on Small Businesses (24, 23.08%)"]
+	subtopic1_165 -> subtopic2_169
+	subtopic2_170 [label="Misc. (6, 5.77%)"]
+	subtopic1_165 -> subtopic2_170
+	subtopic1_171 [label="Bipartisan Economic Policy and Budgeting (29, 1.30%)"]
+	policy_17 -> subtopic1_171
+	subtopic2_172 [label="Misc. (29, 100.00%)"]
+	subtopic1_171 -> subtopic2_172
+	subtopic1_173 [label="Healthcare Funding and Policy Issues (127, 5.70%)"]
+	policy_17 -> subtopic1_173
+	subtopic2_174 [label="Welfare Program Work Requirements (20, 15.75%)"]
+	subtopic1_173 -> subtopic2_174
+	subtopic2_175 [label="Substance Use Disorder Funding Allocation (14, 11.02%)"]
+	subtopic1_173 -> subtopic2_175
+	subtopic2_176 [label="Public Health Funding Allocation Debate (11, 8.66%)"]
+	subtopic1_173 -> subtopic2_176
+	subtopic2_177 [label="Healthcare Funding Reform Debate (21, 16.54%)"]
+	subtopic1_173 -> subtopic2_177
+	subtopic2_178 [label="Misc. (29, 22.83%)"]
+	subtopic1_173 -> subtopic2_178
+	subtopic2_179 [label="Research Funding Allocation Controversies (19, 14.96%)"]
+	subtopic1_173 -> subtopic2_179
+	subtopic2_180 [label="Healthcare Access Policy Reform (13, 10.24%)"]
+	subtopic1_173 -> subtopic2_180
+	subtopic1_181 [label="Energy Policy and Regulation (84, 3.77%)"]
+	policy_17 -> subtopic1_181
+	subtopic2_182 [label="Energy Subsidies Reform Debate (48, 57.14%)"]
+	subtopic1_181 -> subtopic2_182
+	subtopic2_183 [label="Renewable Energy Subsidy Policies (25, 29.76%)"]
+	subtopic1_181 -> subtopic2_183
+	subtopic2_184 [label="Energy Regulation and Compliance Standards (11, 13.10%)"]
+	subtopic1_181 -> subtopic2_184
+	subtopic1_185 [label="Infrastructure and Environmental Investments (122, 5.47%)"]
+	policy_17 -> subtopic1_185
+	subtopic2_186 [label="Beach Management and Environmental Funding (30, 24.59%)"]
+	subtopic1_185 -> subtopic2_186
+	subtopic2_187 [label="Environmental Regulation Compliance Costs (42, 34.43%)"]
+	subtopic1_185 -> subtopic2_187
+	subtopic2_188 [label="Infrastructure Investment Controversies (37, 30.33%)"]
+	subtopic1_185 -> subtopic2_188
+	subtopic2_189 [label="Transportation Infrastructure Funding Strategies (13, 10.66%)"]
+	subtopic1_185 -> subtopic2_189
+	subtopic1_190 [label="Veterans' Healthcare and Support Services (56, 2.51%)"]
+	policy_17 -> subtopic1_190
+	subtopic2_191 [label="Veterans' Healthcare Funding Policies (29, 51.79%)"]
+	subtopic1_190 -> subtopic2_191
+	subtopic2_192 [label="Veterans' Healthcare Policy Accessibility (14, 25.00%)"]
+	subtopic1_190 -> subtopic2_192
+	subtopic2_193 [label="Veterans Healthcare Funding Allocation (13, 23.21%)"]
+	subtopic1_190 -> subtopic2_193
+	subtopic1_194 [label="Public Debt and Deficit Management (54, 2.42%)"]
+	policy_17 -> subtopic1_194
+	subtopic2_195 [label="Debt Management Policy Efficiency (14, 25.93%)"]
+	subtopic1_194 -> subtopic2_195
+	subtopic2_196 [label="Misc. (11, 20.37%)"]
+	subtopic1_194 -> subtopic2_196
+	subtopic2_197 [label="Public Debt Crisis Management Strategies (29, 53.70%)"]
+	subtopic1_194 -> subtopic2_197
+	subtopic1_198 [label="Government Funding and Compensation Management (68, 3.05%)"]
+	policy_17 -> subtopic1_198
+	subtopic2_199 [label="Government Funding Prioritization Policy (40, 58.82%)"]
+	subtopic1_198 -> subtopic2_199
+	subtopic2_200 [label="Government Compensation and Wage Policies (23, 33.82%)"]
+	subtopic1_198 -> subtopic2_200
+	subtopic2_201 [label="Misc. (5, 7.35%)"]
+	subtopic1_198 -> subtopic2_201
+	subtopic1_202 [label="Government Funding and Budget Adjustments (38, 1.70%)"]
+	policy_17 -> subtopic1_202
+	subtopic2_203 [label="Misc. (38, 100.00%)"]
+	subtopic1_202 -> subtopic2_203
+	subtopic1_204 [label="Budget Cuts and Economic Impact (32, 1.43%)"]
+	policy_17 -> subtopic1_204
+	subtopic2_205 [label="Budget Cuts and Economic Growth (12, 37.50%)"]
+	subtopic1_204 -> subtopic2_205
+	subtopic2_206 [label="Budget Cuts Impact on Public Services (12, 37.50%)"]
+	subtopic1_204 -> subtopic2_206
+	subtopic2_207 [label="Misc. (8, 25.00%)"]
+	subtopic1_204 -> subtopic2_207
+	subtopic1_208 [label="Education Funding and Policy (62, 2.78%)"]
+	policy_17 -> subtopic1_208
+	subtopic2_209 [label="Postsecondary Education Funding Controversies (47, 75.81%)"]
+	subtopic1_208 -> subtopic2_209
+	subtopic2_210 [label="Arts Funding Allocation Policies (15, 24.19%)"]
+	subtopic1_208 -> subtopic2_210
+	subtopic1_211 [label="Border Security and Economic Impact (26, 1.17%)"]
+	policy_17 -> subtopic1_211
+	subtopic2_212 [label="Misc. (26, 100.00%)"]
+	subtopic1_211 -> subtopic2_212
+	subtopic1_213 [label="Foreign Affairs and Aid Funding (109, 4.89%)"]
+	policy_17 -> subtopic1_213
+	subtopic2_214 [label="Foreign Influence on Domestic Policy (25, 22.94%)"]
+	subtopic1_213 -> subtopic2_214
+	subtopic2_215 [label="Foreign Aid Funding Accountability Measures (33, 30.28%)"]
+	subtopic1_213 -> subtopic2_215
+	subtopic2_216 [label="Misc. (10, 9.17%)"]
+	subtopic1_213 -> subtopic2_216
+	subtopic2_217 [label="Foreign Aid Effectiveness Debates (18, 16.51%)"]
+	subtopic1_213 -> subtopic2_217
+	subtopic2_218 [label="Military Aid to Israel and Palestine (23, 21.10%)"]
+	subtopic1_213 -> subtopic2_218
+	subtopic1_219 [label="Diversity, Equity, and Inclusion Initiatives (31, 1.39%)"]
+	policy_17 -> subtopic1_219
+	subtopic2_220 [label="Diversity and Inclusion Policy Reforms (18, 58.06%)"]
+	subtopic1_219 -> subtopic2_220
+	subtopic2_221 [label="Diversity and Inclusion Funding Policies (12, 38.71%)"]
+	subtopic1_219 -> subtopic2_221
+	subtopic2_222 [label="Misc. (1, 3.23%)"]
+	subtopic1_219 -> subtopic2_222
+	subtopic1_223 [label="Vaccine Policies and Funding (29, 1.30%)"]
+	policy_17 -> subtopic1_223
+	subtopic2_224 [label="Misc. (29, 100.00%)"]
+	subtopic1_223 -> subtopic2_224
+	subtopic1_225 [label="Climate Change Economics and Policy (57, 2.56%)"]
+	policy_17 -> subtopic1_225
+	subtopic2_226 [label="Misc. (57, 100.00%)"]
+	subtopic1_225 -> subtopic2_226
+	subtopic1_227 [label="Sanctions and Human Rights Issues (29, 1.30%)"]
+	policy_17 -> subtopic1_227
+	subtopic2_228 [label="Misc. (29, 100.00%)"]
+	subtopic1_227 -> subtopic2_228
+	subtopic1_229 [label="Agricultural Policy and Funding Management (75, 3.36%)"]
+	policy_17 -> subtopic1_229
+	subtopic2_230 [label="Public Lands Management Policies (37, 49.33%)"]
+	subtopic1_229 -> subtopic2_230
+	subtopic2_231 [label="Agricultural Emissions Policy Reform (17, 22.67%)"]
+	subtopic1_229 -> subtopic2_231
+	subtopic2_232 [label="Agricultural Research and Funding Priorities (21, 28.00%)"]
+	subtopic1_229 -> subtopic2_232
+	subtopic1_233 [label="Energy Assistance and Efficiency Programs (28, 1.26%)"]
+	policy_17 -> subtopic1_233
+	subtopic2_234 [label="Misc. (28, 100.00%)"]
+	subtopic1_233 -> subtopic2_234
+	subtopic1_235 [label="Public Safety Regulations and Standards (30, 1.35%)"]
+	policy_17 -> subtopic1_235
+	subtopic2_236 [label="Misc. (30, 100.00%)"]
+	subtopic1_235 -> subtopic2_236
+	subtopic1_237 [label="Migration and Refugee Policy (26, 1.17%)"]
+	policy_17 -> subtopic1_237
+	subtopic2_238 [label="Misc. (26, 100.00%)"]
+	subtopic1_237 -> subtopic2_238
+	subtopic1_239 [label="Transportation Funding and Policy (37, 1.66%)"]
+	policy_17 -> subtopic1_239
+	subtopic2_240 [label="Transportation Funding Allocation Debate (26, 70.27%)"]
+	subtopic1_239 -> subtopic2_240
+	subtopic2_241 [label="Transit Infrastructure Funding Policy (11, 29.73%)"]
+	subtopic1_239 -> subtopic2_241
+	policy_18 [label="Native Americans (25, 0.41%)"]
+	subtopic1_242 [label="Misc. (25, 100.00%)"]
+	policy_18 -> subtopic1_242
+	policy_19 [label="Agriculture and Food (61, 1.01%)"]
+	subtopic1_243 [label="Misc. (61, 100.00%)"]
+	policy_19 -> subtopic1_243
+	policy_20 [label="International Affairs (148, 2.45%)"]
+	subtopic1_244 [label="Misc. (148, 100.00%)"]
+	policy_20 -> subtopic1_244
+	policy_21 [label="Labor and Employment (42, 0.69%)"]
+	subtopic1_245 [label="Misc. (42, 100.00%)"]
+	policy_21 -> subtopic1_245
+	policy_22 [label="Immigration (220, 3.64%)"]
+	subtopic1_246 [label="Immigration Policy and Legal Issues (56, 25.45%)"]
+	policy_22 -> subtopic1_246
+	subtopic2_247 [label="Misc. (56, 100.00%)"]
+	subtopic1_246 -> subtopic2_247
+	subtopic1_248 [label="Border Security and Immigration Policy (116, 52.73%)"]
+	policy_22 -> subtopic1_248
+	subtopic2_249 [label="School Immigration Policy Reform (19, 16.38%)"]
+	subtopic1_248 -> subtopic2_249
+	subtopic2_250 [label="Border Security Enforcement Measures (25, 21.55%)"]
+	subtopic1_248 -> subtopic2_250
+	subtopic2_251 [label="Border Security Policy Reform (72, 62.07%)"]
+	subtopic1_248 -> subtopic2_251
+	subtopic1_252 [label="Immigration Policy and Reform (48, 21.82%)"]
+	policy_22 -> subtopic1_252
+	subtopic2_253 [label="Misc. (48, 100.00%)"]
+	subtopic1_252 -> subtopic2_253
+	policy_23 [label="Civil Rights and Liberties, Minority Issues (2, 0.03%)"]
+	subtopic1_254 [label="Misc. (2, 100.00%)"]
+	policy_23 -> subtopic1_254
+	policy_24 [label="Foreign Trade and International Finance (16, 0.26%)"]
+	subtopic1_255 [label="Misc. (16, 100.00%)"]
+	policy_24 -> subtopic1_255
+	parent [label="Parent Node (6047, 100%)"]
 	parent -> policy_0
 	parent -> policy_1
 	parent -> policy_2
@@ -485,4 +554,14 @@ digraph {
 	parent -> policy_12
 	parent -> policy_13
 	parent -> policy_14
+	parent -> policy_15
+	parent -> policy_16
+	parent -> policy_17
+	parent -> policy_18
+	parent -> policy_19
+	parent -> policy_20
+	parent -> policy_21
+	parent -> policy_22
+	parent -> policy_23
+	parent -> policy_24
 }

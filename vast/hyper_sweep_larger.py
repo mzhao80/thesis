@@ -45,11 +45,11 @@ if __name__ == '__main__':
         'parameters': {
             'lr': {
                 'distribution': 'uniform',
-                'min': 1e-6,
-                'max': 1e-4
+                'min': 5e-6,
+                'max': 5e-5
             },
             'batch_size': {
-                'values': [8, 16, 32, 64]
+                'values': [4, 8, 16, 32, 64]
             },
             'patience': {
                 'values': [5, 10, 15]
@@ -60,12 +60,12 @@ if __name__ == '__main__':
             'n_layers_freeze': {
                 'distribution': 'int_uniform',
                 'min': 0,
-                'max': 12
+                'max': 4
             },
             'l2_reg': {
                 'distribution': 'uniform',
                 'min': 1e-5,
-                'max': 1e-3
+                'max': 1e-4
             }
         },
         'early_terminate': {
@@ -77,7 +77,7 @@ if __name__ == '__main__':
     }
 
     # Create the sweep and get the sweep id
-    sweep_id = wandb.sweep(sweep_config, project="wiki-larger")
+    sweep_id = wandb.sweep(sweep_config, project="wiki-larger-new")
     #Launch the sweep agent; here, count=20 means 20 runs will be executed
-    #sweep_id = "michaelzhao-harvard-university/wiki-larger/7x9p6967"
+    #sweep_id = "michaelzhao-harvard-university/wiki-larger/3ve6ad6p"
     wandb.agent(sweep_id, function=sweep_train, count=100)

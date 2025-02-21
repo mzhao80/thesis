@@ -10,6 +10,33 @@ import matplotlib.pyplot as plt
 from hdbscan.validity import validity_index
 from openai import OpenAI
 import api_keys
+from collections import Counter, defaultdict
+from tqdm.auto import tqdm
+
+def enforce_majority_cluster(embeddings, cluster_labels, misc_embedding):
+    """
+    Ensures identical embeddings are assigned to the most frequent cluster they appeared in.
+    """
+    embedding_dict = defaultdict(lambda: Counter())  # Maps embedding -> cluster frequency counter
+    corrected_labels = np.copy(cluster_labels)
+
+    # First pass: Count occurrences of each embedding in different clusters
+    for i, emb in enumerate(embeddings):
+        emb_tuple = tuple(emb)  # Convert to a hashable type
+        embedding_dict[emb_tuple][cluster_labels[i]] += 1  # Count occurrences
+
+    # Second pass: Reassign labels based on majority occurrence
+    for i, emb in enumerate(embeddings):
+        emb_tuple = tuple(emb)
+        if len(embedding_dict[emb_tuple]) > 1:
+            # Find the most frequent cluster for this embedding
+            most_frequent_cluster = max(embedding_dict[emb_tuple], key=embedding_dict[emb_tuple].get)
+            corrected_labels[i] = most_frequent_cluster  # Assign the most common cluster
+        # remove misc
+        if emb_tuple == misc_embedding:
+            corrected_labels[i] = -1
+
+    return corrected_labels
 
 def compute_medoid(texts, embeddings):
     """
@@ -30,8 +57,8 @@ def generate_cluster_label(subtopics, parent_topic, client, max_attempts=5):
         "You are a helpful assistant constructing a three-level topic taxonomy. "
         "When given a first-level parent topic and a list of topics of documents clustered under the parent topic, you must generate a concise and representative second-level topic (3-7 words) "
         "that describes the common topic of the document topics clustered under the parent topic.\n"
-        "The generated second-level subtopic should be a distinct child topic and more specific than the parent topic, but still not too specific because we will later generate a third level of the taxonomy. "
-        "For example, a good three-level taxonomy would be 1. Defense; 2. Defense Spending; 3. Asia-Pacific Defense Spending. "
+        "The generated second-level subtopic should be a distinct child topic and more specific than the parent topic, but still be as broad as possible otherwise because we will later generate a third level of the taxonomy. "
+        "For example, a good three-level taxonomy would be 1. Defense; 2. Naval Funding; 3. Asia-Pacific Naval Buildup. "
         "Also, the topic should be unstanced. For example, you should prefer output Budget Cuts instead of Opposition to Budget Cuts."
     )
 
@@ -65,6 +92,8 @@ def generate_cluster_label(subtopics, parent_topic, client, max_attempts=5):
 
 def main():
     n_components = 5
+    weighted_score = 0
+    doc_count = 0
     # Create directory for visualizations if it doesn't exist.
     if not os.path.exists('cluster_viz'):
         os.makedirs('cluster_viz')
@@ -73,65 +102,80 @@ def main():
 
     # Load the predictions CSV (which contains the original columns).
     df = pd.read_csv('step_1.csv')
+    original_length = len(df)
+    # drop rows with no subtopic predicted
+    # df = df.dropna(subset=['pred_subtopic', 'policy_area'])
+    # print(f"{original_length - len(df)} rows dropped ({(original_length - len(df)) / original_length * 100:.2f}%) due to no predicted subtopic or policy area.")
 
     # Initialize the Sentence Transformer model.
     model = SentenceTransformer('all-MiniLM-L6-v2').to('cuda')
 
     source_mapping = {}
     for idx, row in df.iterrows():
-        pred = row['pred_subtopic']
-        if pd.isna(pred):
-            continue
+        path = (row['policy_area'], row['pred_subtopic'])
         # We convert the index to a string for later concatenation.
-        source_mapping.setdefault(pred, []).append(str(idx))
+        if path not in source_mapping:
+            source_mapping[path] = []
+        source_mapping[path].append(str(idx))
+    
+    embeddings = {}
+
+    for subtopic in tqdm(df['pred_subtopic'].unique(), desc="Generating embeddings"):
+        embeddings[subtopic] = model.encode(subtopic, convert_to_numpy=True)
+    
+    misc_embedding = tuple(embeddings["Misc."])
 
     # List to store cluster taxonomy information.
     taxonomy = []
 
     # Loop over each parent topic (policy_area)
-    for parent_topic in df['policy_area'].unique():
+    for parent_topic in tqdm(df['policy_area'].unique(), desc="Clustering"):
+        curr_doc_count = 0
         print(f"\nProcessing parent topic: {parent_topic}")
         
         # Filter by current parent topic.
         sub_df = df[df['policy_area'] == parent_topic]
         
         # Get unique predicted subtopics.
-        subtopics = sub_df['pred_subtopic'].unique().tolist()
+        subtopics = sub_df['pred_subtopic'].tolist()
         print(f"Total subtopics: {len(subtopics)}")
         
         # Skip if too few subtopics.
         if len(subtopics) < n_components + 2:
             print("Too few subtopics, skipping...")
-            source_indices = []
+            source_indices = set()
             for t in subtopics:
-                if t in source_mapping:
-                    source_indices.extend(source_mapping[t])
-            # Remove duplicates if desired:
-            source_indices = list(dict.fromkeys(source_indices))
+                source_indices.update(source_mapping[(parent_topic, t)])
+            curr_doc_count += len(source_indices)
             
             taxonomy.append({
                 'policy_area': parent_topic,
                 'cluster_length': len(subtopics),
-                'medoid_text': "",
-                'reduced_medoid_text': "",
-                'gpt_label': "",
-                'pred_subtopics': "",
+                'medoid_text': "Misc.",
+                'reduced_medoid_text': "Misc.",
+                'gpt_label': "Misc.",
+                'pred_subtopics': "Misc.",
                 'source_indices': ";".join(source_indices)
             })
+            doc_count += curr_doc_count
+            print(f"Documents processed: {curr_doc_count}")
             continue
 
         # Compute original embeddings.
-        original_embeddings = model.encode(subtopics, convert_to_numpy=True)
+        # original_embeddings = model.encode(subtopics, convert_to_numpy=True)
+        # get original_embeddings from embeddings dict instead
+        original_embeddings = np.array([embeddings[subtopic] for subtopic in subtopics])
         
         # --- Dimensionality Reduction with UMAP for clustering & DBCV ---
-        umap_model = umap.UMAP(n_components=n_components)
+        umap_model = umap.UMAP(n_components=n_components, n_neighbors=25, metric='cosine')
         reduced_embeddings = umap_model.fit_transform(original_embeddings)
         d = reduced_embeddings.shape[1]  # explicitly set d = number of features after reduction
         
         # Cluster using HDBSCAN on the reduced embeddings.
-        min_cluster_size = 10
+        min_cluster_size = 25
         clusterer = hdbscan.HDBSCAN(min_cluster_size=min_cluster_size)
         cluster_labels = clusterer.fit_predict(reduced_embeddings)
+        cluster_labels = enforce_majority_cluster(original_embeddings, cluster_labels, misc_embedding)
         
         # Print clustering summary.
         unique_labels = set(cluster_labels)
@@ -148,12 +192,14 @@ def main():
                 d=d
             )
             print(f"DBCV Score: {dbcv_score:.3f}")
+            weighted_score += dbcv_score * (len(subtopics) - noise_count)
+            print(f"Weighted DBCV Score: {weighted_score:.3f}")
         except Exception as e:
             print("Error computing DBCV score:", e)
         
         # --- Visualization using UMAP to 2 dimensions ---
         # We run a separate UMAP reduction for visualization.
-        umap_vis = umap.UMAP(n_components=2)
+        umap_vis = umap.UMAP(n_components=2, metric='cosine')
         vis_embeddings = umap_vis.fit_transform(original_embeddings)
         vis_df = pd.DataFrame({
             "subtopic": subtopics,
@@ -173,39 +219,52 @@ def main():
         
         # --- Organize texts by cluster label (drop noise points) ---
         clusters = {}
-        for label, text in zip(cluster_labels, subtopics):
-            if label == -1:
-                continue
-            clusters.setdefault(label, []).append(text)
+        for label, texts in zip(cluster_labels, subtopics):
+            clusters.setdefault(label, []).append(texts)
         
         # For each cluster, compute the medoid
         for label, texts in clusters.items():
-            cluster_original_embeddings = model.encode(texts, convert_to_numpy=True)   
-            cluster_reduced_embeddings = umap_model.transform(cluster_original_embeddings)
-            new_topic_label = compute_medoid(np.array(texts), cluster_original_embeddings)
-            new_reduced_topic_label = compute_medoid(np.array(texts), cluster_reduced_embeddings)
-
-            source_indices = []
+            seen = set()
+            newTexts = []
+            for text in texts:
+                if text not in seen:
+                    newTexts.append(text)
+                    seen.add(text)
+            texts = newTexts
+            
+            if label != -1:
+                cluster_original_embeddings = np.array([embeddings[t] for t in texts])
+                cluster_reduced_embeddings = umap_model.transform(cluster_original_embeddings)
+                new_topic_label = compute_medoid(np.array(texts), cluster_original_embeddings)
+                new_reduced_topic_label = compute_medoid(np.array(texts), cluster_reduced_embeddings)
+                gpt_label = generate_cluster_label(texts, parent_topic, client)
+            else:
+                new_topic_label = "Misc."
+                new_reduced_topic_label = "Misc."
+                gpt_label = "Misc."
+                
+            source_indices = set()
             for t in texts:
-                if t in source_mapping:
-                    source_indices.extend(source_mapping[t])
-            # Remove duplicates if desired:
-            source_indices = list(dict.fromkeys(source_indices))
+                source_indices.update(source_mapping[(parent_topic, t)])
+            curr_doc_count += len(source_indices)
             
             taxonomy.append({
                 'policy_area': parent_topic,
                 'cluster_length': len(texts),
                 'medoid_text': new_topic_label,
                 'reduced_medoid_text': new_reduced_topic_label,
-                'gpt_label': generate_cluster_label(texts, parent_topic, client),
+                'gpt_label': gpt_label,
                 'pred_subtopics': ";".join(texts),
                 'source_indices': ";".join(source_indices)
             })
+        print(f"Documents processed: {curr_doc_count}")
+        doc_count += curr_doc_count
 
     # Write taxonomy to CSV.
     taxonomy_df = pd.DataFrame(taxonomy)
-    taxonomy_df.to_csv('step_2.csv', index=False)
-    print("\nTaxonomy saved to step_2.csv")
+    taxonomy_df.to_csv(f'step_2.csv', index=False)
+    print(f"\nTaxonomy saved to step_2.csv with weighted DBCV score: {weighted_score:.3f}")
+    print(f"Total doc count processed: {doc_count}. Original doc count: {len(df)}")
 
 if __name__ == "__main__":
     main()

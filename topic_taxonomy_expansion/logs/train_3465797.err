@@ -1,75 +1,0 @@
-[W211 13:11:23.004930807 socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
-[W211 13:12:07.278119487 socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
-[W211 13:12:07.278115857 socket.cpp:697] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
-[W211 13:12:07.281568521 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
-[W211 13:12:07.281641901 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
-Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [00:00<00:01,  5.68it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [00:00<00:01,  5.01it/s]Loading checkpoint shards:  29%|██▊       | 2/7 [00:00<00:00,  6.30it/s]Loading checkpoint shards:  29%|██▊       | 2/7 [00:00<00:00,  6.37it/s]Loading checkpoint shards:  43%|████▎     | 3/7 [00:00<00:00,  6.60it/s]Loading checkpoint shards:  43%|████▎     | 3/7 [00:00<00:00,  6.27it/s]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:00<00:00,  6.82it/s]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:00<00:00,  6.96it/s]Loading checkpoint shards:  71%|███████▏  | 5/7 [00:00<00:00,  7.07it/s]Loading checkpoint shards:  71%|███████▏  | 5/7 [00:00<00:00,  6.91it/s]Loading checkpoint shards:  86%|████████▌ | 6/7 [00:01<00:00,  4.21it/s]Loading checkpoint shards:  86%|████████▌ | 6/7 [00:01<00:00,  4.18it/s]Loading checkpoint shards: 100%|██████████| 7/7 [00:01<00:00,  4.99it/s]Loading checkpoint shards: 100%|██████████| 7/7 [00:01<00:00,  5.44it/s]
-Loading checkpoint shards: 100%|██████████| 7/7 [00:01<00:00,  4.96it/s]Loading checkpoint shards: 100%|██████████| 7/7 [00:01<00:00,  5.38it/s]
-Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:   0%|          | 0/2 [00:00<?, ?it/s]/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-Batches:  50%|█████     | 1/2 [00:04<00:04,  4.44s/it]Batches:  50%|█████     | 1/2 [00:04<00:04,  4.56s/it]Batches: 100%|██████████| 2/2 [00:04<00:00,  2.26s/it]
-Batches: 100%|██████████| 2/2 [00:04<00:00,  2.32s/it]
-[rank0]:W0211 13:13:53.811000 22654949164608 torch/_logging/_internal.py:1034] [0/0] Profiler function <class 'torch.autograd.profiler.record_function'> will be ignored
-[rank1]:W0211 13:13:53.811000 22859163301440 torch/_logging/_internal.py:1034] [0/0] Profiler function <class 'torch.autograd.profiler.record_function'> will be ignored
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-/n/sw/Miniforge3-24.7.1-0/lib/python3.12/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
-  self.gen = func(*args, **kwds)
-slurmstepd: error: *** JOB 3465797 ON holygpu8a11202 CANCELLED AT 2025-02-11T13:31:16 ***
-W0211 13:31:16.693000 22950334015040 torch/distributed/elastic/agent/server/api.py:688] Received 15 death signal, shutting down workers
-W0211 13:31:16.693000 22950334015040 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 2246604 closing signal SIGTERM
-W0211 13:31:16.694000 22950334015040 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 2246605 closing signal SIGTERM

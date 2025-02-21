@@ -22,3 +22,4 @@ python clustering.py
 python topic_generation_2.py
 python clustering_2.py
 python viz_tree.py
+python merge_taxonomy.py

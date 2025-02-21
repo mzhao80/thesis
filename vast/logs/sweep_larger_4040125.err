@@ -1,0 +1,655 @@
+wandb: Agent Starting Run: gye8t8yr with config:
+wandb: 	batch_size: 32
+wandb: 	epochs: 75
+wandb: 	l2_reg: 7.105692132632347e-05
+wandb: 	lr: 3.534725187038329e-05
+wandb: 	n_layers_freeze: 4
+wandb: 	n_layers_freeze_wiki: 0
+wandb: 	patience: 15
+wandb: Currently logged in as: michaelzhao (michaelzhao-harvard-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250218_090756-gye8t8yr
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run leafy-sweep-1
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new/sweeps/zvtezstn
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new/runs/gye8t8yr
+wandb:                                                                                
+wandb: 🚀 View run leafy-sweep-1 at: https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new/runs/gye8t8yr
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250218_090756-gye8t8yr/logs
+Run gye8t8yr errored:
+Traceback (most recent call last):
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/hyper_sweep_larger.py", line 36, in sweep_train
+    engine.train()
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 74, in train
+    train_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 130, in train_epoch
+    logits = self.model(input_ids=input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/parallel/data_parallel.py", line 184, in forward
+    return self.module(*inputs[0], **module_kwargs[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/he_models.py", line 98, in forward
+    logits = self.classifier(pooled_output)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 117, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (32x1536 and 3072x3)
+
+wandb: ERROR Run gye8t8yr errored:
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+wandb: ERROR     self._function()
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/hyper_sweep_larger.py", line 36, in sweep_train
+wandb: ERROR     engine.train()
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 74, in train
+wandb: ERROR     train_loss = self.train_epoch()
+wandb: ERROR                  ^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 130, in train_epoch
+wandb: ERROR     logits = self.model(input_ids=input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids,
+wandb: ERROR              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+wandb: ERROR     return self._call_impl(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+wandb: ERROR     return forward_call(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/parallel/data_parallel.py", line 184, in forward
+wandb: ERROR     return self.module(*inputs[0], **module_kwargs[0])
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+wandb: ERROR     return self._call_impl(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+wandb: ERROR     return forward_call(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/he_models.py", line 98, in forward
+wandb: ERROR     logits = self.classifier(pooled_output)
+wandb: ERROR              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+wandb: ERROR     return self._call_impl(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+wandb: ERROR     return forward_call(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 117, in forward
+wandb: ERROR     return F.linear(input, self.weight, self.bias)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR RuntimeError: mat1 and mat2 shapes cannot be multiplied (32x1536 and 3072x3)
+wandb: ERROR 
+wandb: Agent Starting Run: 3joifz9w with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 25
+wandb: 	l2_reg: 7.590763719485767e-05
+wandb: 	lr: 2.929685156879613e-05
+wandb: 	n_layers_freeze: 4
+wandb: 	n_layers_freeze_wiki: 0
+wandb: 	patience: 5
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250218_090827-3joifz9w
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run woven-sweep-2
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new/sweeps/zvtezstn
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new/runs/3joifz9w
+wandb:                                                                                
+wandb: 🚀 View run woven-sweep-2 at: https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new/runs/3joifz9w
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250218_090827-3joifz9w/logs
+Run 3joifz9w errored:
+Traceback (most recent call last):
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/hyper_sweep_larger.py", line 36, in sweep_train
+    engine.train()
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 74, in train
+    train_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 130, in train_epoch
+    logits = self.model(input_ids=input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/parallel/data_parallel.py", line 184, in forward
+    return self.module(*inputs[0], **module_kwargs[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/he_models.py", line 98, in forward
+    logits = self.classifier(pooled_output)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 117, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (64x1536 and 3072x3)
+
+wandb: ERROR Run 3joifz9w errored:
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+wandb: ERROR     self._function()
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/hyper_sweep_larger.py", line 36, in sweep_train
+wandb: ERROR     engine.train()
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 74, in train
+wandb: ERROR     train_loss = self.train_epoch()
+wandb: ERROR                  ^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 130, in train_epoch
+wandb: ERROR     logits = self.model(input_ids=input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids,
+wandb: ERROR              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+wandb: ERROR     return self._call_impl(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+wandb: ERROR     return forward_call(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/parallel/data_parallel.py", line 184, in forward
+wandb: ERROR     return self.module(*inputs[0], **module_kwargs[0])
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+wandb: ERROR     return self._call_impl(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+wandb: ERROR     return forward_call(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/he_models.py", line 98, in forward
+wandb: ERROR     logits = self.classifier(pooled_output)
+wandb: ERROR              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+wandb: ERROR     return self._call_impl(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+wandb: ERROR     return forward_call(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 117, in forward
+wandb: ERROR     return F.linear(input, self.weight, self.bias)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR RuntimeError: mat1 and mat2 shapes cannot be multiplied (64x1536 and 3072x3)
+wandb: ERROR 
+wandb: Sweep Agent: Waiting for job.
+wandb: Job received.
+wandb: Agent Starting Run: jd3fcx4r with config:
+wandb: 	batch_size: 16
+wandb: 	epochs: 25
+wandb: 	l2_reg: 8.82979411602809e-05
+wandb: 	lr: 1.6700496045404343e-05
+wandb: 	n_layers_freeze: 2
+wandb: 	n_layers_freeze_wiki: 2
+wandb: 	patience: 15
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250218_090857-jd3fcx4r
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run likely-sweep-3
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new/sweeps/zvtezstn
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new/runs/jd3fcx4r
+wandb:                                                                                
+wandb: 🚀 View run likely-sweep-3 at: https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new/runs/jd3fcx4r
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250218_090857-jd3fcx4r/logs
+Run jd3fcx4r errored:
+Traceback (most recent call last):
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/hyper_sweep_larger.py", line 36, in sweep_train
+    engine.train()
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 74, in train
+    train_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 130, in train_epoch
+    logits = self.model(input_ids=input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/parallel/data_parallel.py", line 184, in forward
+    return self.module(*inputs[0], **module_kwargs[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/he_models.py", line 98, in forward
+    logits = self.classifier(pooled_output)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 117, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (16x1536 and 3072x3)
+
+wandb: ERROR Run jd3fcx4r errored:
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+wandb: ERROR     self._function()
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/hyper_sweep_larger.py", line 36, in sweep_train
+wandb: ERROR     engine.train()
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 74, in train
+wandb: ERROR     train_loss = self.train_epoch()
+wandb: ERROR                  ^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 130, in train_epoch
+wandb: ERROR     logits = self.model(input_ids=input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids,
+wandb: ERROR              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+wandb: ERROR     return self._call_impl(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+wandb: ERROR     return forward_call(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/parallel/data_parallel.py", line 184, in forward
+wandb: ERROR     return self.module(*inputs[0], **module_kwargs[0])
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+wandb: ERROR     return self._call_impl(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+wandb: ERROR     return forward_call(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/he_models.py", line 98, in forward
+wandb: ERROR     logits = self.classifier(pooled_output)
+wandb: ERROR              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+wandb: ERROR     return self._call_impl(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+wandb: ERROR     return forward_call(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 117, in forward
+wandb: ERROR     return F.linear(input, self.weight, self.bias)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR RuntimeError: mat1 and mat2 shapes cannot be multiplied (16x1536 and 3072x3)
+wandb: ERROR 
+wandb: Agent Starting Run: x275xzpt with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 50
+wandb: 	l2_reg: 2.7370629586426413e-05
+wandb: 	lr: 4.877563838181653e-05
+wandb: 	n_layers_freeze: 0
+wandb: 	n_layers_freeze_wiki: 2
+wandb: 	patience: 5
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250218_090918-x275xzpt
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run leafy-sweep-4
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new/sweeps/zvtezstn
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new/runs/x275xzpt
+wandb:                                                                                
+wandb: 🚀 View run leafy-sweep-4 at: https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new/runs/x275xzpt
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250218_090918-x275xzpt/logs
+Run x275xzpt errored:
+Traceback (most recent call last):
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/hyper_sweep_larger.py", line 36, in sweep_train
+    engine.train()
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 74, in train
+    train_loss = self.train_epoch()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 130, in train_epoch
+    logits = self.model(input_ids=input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/parallel/data_parallel.py", line 184, in forward
+    return self.module(*inputs[0], **module_kwargs[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/he_models.py", line 86, in forward
+    outputs = self.bert(input_ids=input_ids,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 544, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 334, in forward
+    layer_outputs = layer_module(
+                    ^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 293, in forward
+    self_attention_outputs = self.attention(
+                             ^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 234, in forward
+    self_outputs = self.attn(
+                   ^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 170, in forward
+    attention_scores = torch.matmul(q, k.transpose(-1, -2))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 768.00 MiB. GPU 0 has a total capacity of 79.10 GiB of which 604.62 MiB is free. Including non-PyTorch memory, this process has 78.50 GiB memory in use. Of the allocated memory 77.77 GiB is allocated by PyTorch, and 71.59 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+wandb: ERROR Run x275xzpt errored:
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+wandb: ERROR     self._function()
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/hyper_sweep_larger.py", line 36, in sweep_train
+wandb: ERROR     engine.train()
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 74, in train
+wandb: ERROR     train_loss = self.train_epoch()
+wandb: ERROR                  ^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 130, in train_epoch
+wandb: ERROR     logits = self.model(input_ids=input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids,
+wandb: ERROR              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+wandb: ERROR     return self._call_impl(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+wandb: ERROR     return forward_call(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/parallel/data_parallel.py", line 184, in forward
+wandb: ERROR     return self.module(*inputs[0], **module_kwargs[0])
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+wandb: ERROR     return self._call_impl(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+wandb: ERROR     return forward_call(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/he_models.py", line 86, in forward
+wandb: ERROR     outputs = self.bert(input_ids=input_ids,
+wandb: ERROR               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+wandb: ERROR     return self._call_impl(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+wandb: ERROR     return forward_call(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 544, in forward
+wandb: ERROR     encoder_outputs = self.encoder(
+wandb: ERROR                       ^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+wandb: ERROR     return self._call_impl(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+wandb: ERROR     return forward_call(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 334, in forward
+wandb: ERROR     layer_outputs = layer_module(
+wandb: ERROR                     ^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+wandb: ERROR     return self._call_impl(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+wandb: ERROR     return forward_call(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 293, in forward
+wandb: ERROR     self_attention_outputs = self.attention(
+wandb: ERROR                              ^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+wandb: ERROR     return self._call_impl(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+wandb: ERROR     return forward_call(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 234, in forward
+wandb: ERROR     self_outputs = self.attn(
+wandb: ERROR                    ^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+wandb: ERROR     return self._call_impl(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+wandb: ERROR     return forward_call(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 170, in forward
+wandb: ERROR     attention_scores = torch.matmul(q, k.transpose(-1, -2))
+wandb: ERROR                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 768.00 MiB. GPU 0 has a total capacity of 79.10 GiB of which 604.62 MiB is free. Including non-PyTorch memory, this process has 78.50 GiB memory in use. Of the allocated memory 77.77 GiB is allocated by PyTorch, and 71.59 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+wandb: ERROR 
+wandb: Agent Starting Run: 512jxned with config:
+wandb: 	batch_size: 64
+wandb: 	epochs: 75
+wandb: 	l2_reg: 2.051130824106522e-05
+wandb: 	lr: 8.08871706066116e-06
+wandb: 	n_layers_freeze: 0
+wandb: 	n_layers_freeze_wiki: 1
+wandb: 	patience: 5
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250218_090939-512jxned
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run firm-sweep-5
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new/sweeps/zvtezstn
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new/runs/512jxned
+wandb:                                                                                
+wandb: 🚀 View run firm-sweep-5 at: https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new/runs/512jxned
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250218_090939-512jxned/logs
+Run 512jxned errored:
+Traceback (most recent call last):
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/hyper_sweep_larger.py", line 36, in sweep_train
+    engine.train()
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 71, in train
+    best_state_dict = copy.deepcopy(self.model.state_dict())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/sw/Miniforge3-24.7.1-0/lib/python3.12/copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/sw/Miniforge3-24.7.1-0/lib/python3.12/copy.py", line 285, in _reconstruct
+    value = deepcopy(value, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/n/sw/Miniforge3-24.7.1-0/lib/python3.12/copy.py", line 143, in deepcopy
+    y = copier(memo)
+        ^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/_tensor.py", line 123, in __deepcopy__
+    new_storage = self._typed_storage()._deepcopy(memo)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/storage.py", line 908, in _deepcopy
+    return self._new_wrapped_storage(copy.deepcopy(self._untyped_storage, memo))
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/sw/Miniforge3-24.7.1-0/lib/python3.12/copy.py", line 143, in deepcopy
+    y = copier(memo)
+        ^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/storage.py", line 144, in __deepcopy__
+    new_storage = self.clone()
+                  ^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/storage.py", line 158, in clone
+    return type(self)(self.nbytes(), device=self.device).copy_(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 90.00 MiB. GPU 0 has a total capacity of 79.10 GiB of which 22.62 MiB is free. Including non-PyTorch memory, this process has 79.06 GiB memory in use. Of the allocated memory 78.40 GiB is allocated by PyTorch, and 10.23 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+wandb: ERROR Run 512jxned errored:
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+wandb: ERROR     self._function()
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/hyper_sweep_larger.py", line 36, in sweep_train
+wandb: ERROR     engine.train()
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 71, in train
+wandb: ERROR     best_state_dict = copy.deepcopy(self.model.state_dict())
+wandb: ERROR                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/sw/Miniforge3-24.7.1-0/lib/python3.12/copy.py", line 162, in deepcopy
+wandb: ERROR     y = _reconstruct(x, memo, *rv)
+wandb: ERROR         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/sw/Miniforge3-24.7.1-0/lib/python3.12/copy.py", line 285, in _reconstruct
+wandb: ERROR     value = deepcopy(value, memo)
+wandb: ERROR             ^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/sw/Miniforge3-24.7.1-0/lib/python3.12/copy.py", line 143, in deepcopy
+wandb: ERROR     y = copier(memo)
+wandb: ERROR         ^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/_tensor.py", line 123, in __deepcopy__
+wandb: ERROR     new_storage = self._typed_storage()._deepcopy(memo)
+wandb: ERROR                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/storage.py", line 908, in _deepcopy
+wandb: ERROR     return self._new_wrapped_storage(copy.deepcopy(self._untyped_storage, memo))
+wandb: ERROR                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/sw/Miniforge3-24.7.1-0/lib/python3.12/copy.py", line 143, in deepcopy
+wandb: ERROR     y = copier(memo)
+wandb: ERROR         ^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/storage.py", line 144, in __deepcopy__
+wandb: ERROR     new_storage = self.clone()
+wandb: ERROR                   ^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/storage.py", line 158, in clone
+wandb: ERROR     return type(self)(self.nbytes(), device=self.device).copy_(self)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 90.00 MiB. GPU 0 has a total capacity of 79.10 GiB of which 22.62 MiB is free. Including non-PyTorch memory, this process has 79.06 GiB memory in use. Of the allocated memory 78.40 GiB is allocated by PyTorch, and 10.23 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+wandb: ERROR 
+wandb: Agent Starting Run: ahoyioa8 with config:
+wandb: 	batch_size: 8
+wandb: 	epochs: 25
+wandb: 	l2_reg: 7.606923412427817e-05
+wandb: 	lr: 7.034579604450906e-06
+wandb: 	n_layers_freeze: 0
+wandb: 	n_layers_freeze_wiki: 3
+wandb: 	patience: 15
+wandb: Tracking run with wandb version 0.19.6
+wandb: Run data is saved locally in /n/home09/michaelzhao/Downloads/thesis/vast/wandb/run-20250218_091000-ahoyioa8
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run devoted-sweep-6
+wandb: ⭐️ View project at https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new
+wandb: 🧹 View sweep at https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new/sweeps/zvtezstn
+wandb: 🚀 View run at https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new/runs/ahoyioa8
+wandb:                                                                                
+wandb: 🚀 View run devoted-sweep-6 at: https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new/runs/ahoyioa8
+wandb: ⭐️ View project at: https://wandb.ai/michaelzhao-harvard-university/wiki-larger-new
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250218_091000-ahoyioa8/logs
+Run ahoyioa8 errored:
+Traceback (most recent call last):
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/hyper_sweep_larger.py", line 35, in sweep_train
+    engine = Engine(args)
+             ^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 43, in __init__
+    model = nn.DataParallel(model)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/parallel/data_parallel.py", line 163, in __init__
+    self.module.to(self.src_device_obj)
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1174, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 780, in _apply
+    module._apply(fn)
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 780, in _apply
+    module._apply(fn)
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 780, in _apply
+    module._apply(fn)
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 805, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1160, in convert
+    return t.to(
+           ^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 90.00 MiB. GPU 0 has a total capacity of 79.10 GiB of which 22.62 MiB is free. Including non-PyTorch memory, this process has 79.06 GiB memory in use. Of the allocated memory 78.40 GiB is allocated by PyTorch, and 10.23 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+wandb: ERROR Run ahoyioa8 errored:
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+wandb: ERROR     self._function()
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/hyper_sweep_larger.py", line 35, in sweep_train
+wandb: ERROR     engine = Engine(args)
+wandb: ERROR              ^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/thesis/vast/he_engine.py", line 43, in __init__
+wandb: ERROR     model = nn.DataParallel(model)
+wandb: ERROR             ^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/parallel/data_parallel.py", line 163, in __init__
+wandb: ERROR     self.module.to(self.src_device_obj)
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1174, in to
+wandb: ERROR     return self._apply(convert)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 780, in _apply
+wandb: ERROR     module._apply(fn)
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 780, in _apply
+wandb: ERROR     module._apply(fn)
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 780, in _apply
+wandb: ERROR     module._apply(fn)
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 805, in _apply
+wandb: ERROR     param_applied = fn(param)
+wandb: ERROR                     ^^^^^^^^^
+wandb: ERROR   File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1160, in convert
+wandb: ERROR     return t.to(
+wandb: ERROR            ^^^^^
+wandb: ERROR torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 90.00 MiB. GPU 0 has a total capacity of 79.10 GiB of which 22.62 MiB is free. Including non-PyTorch memory, this process has 79.06 GiB memory in use. Of the allocated memory 78.40 GiB is allocated by PyTorch, and 10.23 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+wandb: ERROR 
+Detected 5 failed runs in a row at start, killing sweep.
+wandb: ERROR Detected 5 failed runs in a row at start, killing sweep.
+wandb: To change this value set WANDB_AGENT_MAX_INITIAL_FAILURES=val

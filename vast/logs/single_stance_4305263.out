@@ -1,0 +1,188 @@
+Starting with configuration:
+data: vast
+topic: 
+model: sentence-transformers/all-mpnet-base-v2
+wiki_model: sentence-transformers/all-mpnet-base-v2
+lr: 8e-06
+batch_size: 16
+epochs: 75
+patience: 15
+n_layers_freeze: 3
+l2_reg: 4e-05
+gpu: 0
+inference: 0
+n_workers: 4
+seed: 42
+n_layers_freeze_wiki: 3
+Let's use 1 GPUs!
+Preparing data....
+Training data....
+# of train examples: 13477
+max len: 174, max len wiki: 512
+Val data....
+# of val examples: 2062
+max len: 163, max len wiki: 512
+Done
+
+Initializing model....
+******************************Epoch: 1******************************
+Batch: 1/843	Loss:1.270
+Batch: 85/843	Loss:1.143
+Batch: 169/843	Loss:0.992
+Batch: 253/843	Loss:0.882
+Batch: 337/843	Loss:0.842
+Batch: 421/843	Loss:1.078
+Batch: 505/843	Loss:1.004
+Batch: 589/843	Loss:0.896
+Batch: 673/843	Loss:0.887
+Batch: 757/843	Loss:0.891
+Batch: 841/843	Loss:0.979
+Batch: 843/843	Loss:0.825
+Epoch: 1	Train Loss: 0.988	Val F1: 0.454
+Best Epoch: 1	Best Epoch Val F1: 0.454
+
+******************************Epoch: 2******************************
+Batch: 1/843	Loss:0.985
+Batch: 85/843	Loss:0.998
+Batch: 169/843	Loss:0.910
+Batch: 253/843	Loss:0.758
+Batch: 337/843	Loss:0.917
+Batch: 421/843	Loss:0.877
+Batch: 505/843	Loss:1.109
+Batch: 589/843	Loss:0.924
+Batch: 673/843	Loss:1.172
+Batch: 757/843	Loss:0.903
+Batch: 841/843	Loss:0.940
+Batch: 843/843	Loss:0.954
+Epoch: 2	Train Loss: 0.925	Val F1: 0.418
+Best Epoch: 1	Best Epoch Val F1: 0.454
+
+******************************Epoch: 3******************************
+Batch: 1/843	Loss:0.891
+Batch: 85/843	Loss:0.902
+Batch: 169/843	Loss:0.888
+Batch: 253/843	Loss:0.969
+Batch: 337/843	Loss:1.035
+Batch: 421/843	Loss:0.821
+Batch: 505/843	Loss:1.007
+Batch: 589/843	Loss:0.969
+Batch: 673/843	Loss:0.762
+Batch: 757/843	Loss:0.850
+Batch: 841/843	Loss:0.880
+Batch: 843/843	Loss:0.614
+Epoch: 3	Train Loss: 0.880	Val F1: 0.495
+Best Epoch: 3	Best Epoch Val F1: 0.495
+
+******************************Epoch: 4******************************
+Batch: 1/843	Loss:0.777
+Batch: 85/843	Loss:0.765
+Batch: 169/843	Loss:0.828
+Batch: 253/843	Loss:1.032
+Batch: 337/843	Loss:0.904
+Batch: 421/843	Loss:0.703
+Batch: 505/843	Loss:0.983
+Batch: 589/843	Loss:0.642
+Batch: 673/843	Loss:0.739
+Batch: 757/843	Loss:0.606
+Batch: 841/843	Loss:0.775
+Batch: 843/843	Loss:1.133
+Epoch: 4	Train Loss: 0.822	Val F1: 0.479
+Best Epoch: 3	Best Epoch Val F1: 0.495
+
+******************************Epoch: 5******************************
+Batch: 1/843	Loss:0.786
+Batch: 85/843	Loss:0.713
+Batch: 169/843	Loss:0.772
+Batch: 253/843	Loss:0.852
+Batch: 337/843	Loss:0.773
+Batch: 421/843	Loss:0.928
+Batch: 505/843	Loss:0.836
+Batch: 589/843	Loss:0.677
+Batch: 673/843	Loss:0.871
+Batch: 757/843	Loss:0.960
+Batch: 841/843	Loss:0.849
+Batch: 843/843	Loss:1.100
+Epoch: 5	Train Loss: 0.760	Val F1: 0.510
+Best Epoch: 5	Best Epoch Val F1: 0.510
+
+******************************Epoch: 6******************************
+Batch: 1/843	Loss:0.522
+Batch: 85/843	Loss:0.509
+Batch: 169/843	Loss:0.493
+Batch: 253/843	Loss:0.808
+Batch: 337/843	Loss:0.965
+Batch: 421/843	Loss:0.509
+Batch: 505/843	Loss:0.883
+Batch: 589/843	Loss:0.970
+Batch: 673/843	Loss:0.683
+Batch: 757/843	Loss:1.035
+Batch: 841/843	Loss:0.520
+Batch: 843/843	Loss:0.184
+Epoch: 6	Train Loss: 0.698	Val F1: 0.463
+Best Epoch: 5	Best Epoch Val F1: 0.510
+
+******************************Epoch: 7******************************
+Batch: 1/843	Loss:0.704
+Batch: 85/843	Loss:0.791
+Batch: 169/843	Loss:0.641
+Batch: 253/843	Loss:0.716
+Batch: 337/843	Loss:0.438
+Batch: 421/843	Loss:0.606
+Batch: 505/843	Loss:0.394
+Batch: 589/843	Loss:0.570
+Batch: 673/843	Loss:0.572
+Batch: 757/843	Loss:0.364
+Batch: 841/843	Loss:0.661
+Batch: 843/843	Loss:0.241
+Epoch: 7	Train Loss: 0.652	Val F1: 0.495
+Best Epoch: 5	Best Epoch Val F1: 0.510
+
+******************************Epoch: 8******************************
+Batch: 1/843	Loss:0.735
+Batch: 85/843	Loss:0.694
+Batch: 169/843	Loss:0.698
+Batch: 253/843	Loss:0.811
+Batch: 337/843	Loss:0.815
+Batch: 421/843	Loss:0.583
+Batch: 505/843	Loss:0.795
+Batch: 589/843	Loss:0.410
+Batch: 673/843	Loss:0.483
+Batch: 757/843	Loss:0.742
+Batch: 841/843	Loss:0.872
+Batch: 843/843	Loss:0.780
+Epoch: 8	Train Loss: 0.601	Val F1: 0.537
+Best Epoch: 8	Best Epoch Val F1: 0.537
+
+******************************Epoch: 9******************************
+Batch: 1/843	Loss:0.824
+Batch: 85/843	Loss:0.504
+Batch: 169/843	Loss:0.421
+Batch: 253/843	Loss:0.648
+Batch: 337/843	Loss:0.796
+Batch: 421/843	Loss:0.952
+Batch: 505/843	Loss:0.954
+Batch: 589/843	Loss:0.878
+Batch: 673/843	Loss:0.575
+Batch: 757/843	Loss:0.346
+Batch: 841/843	Loss:0.446
+Batch: 843/843	Loss:0.848
+Epoch: 9	Train Loss: 0.561	Val F1: 0.501
+Best Epoch: 8	Best Epoch Val F1: 0.537
+
+******************************Epoch: 10******************************
+Batch: 1/843	Loss:0.487
+Batch: 85/843	Loss:0.516
+Batch: 169/843	Loss:0.394
+Batch: 253/843	Loss:0.692
+Batch: 337/843	Loss:0.788
+Batch: 421/843	Loss:0.755
+Batch: 505/843	Loss:0.881
+Batch: 589/843	Loss:0.500
+Batch: 673/843	Loss:0.421
+Batch: 757/843	Loss:0.749
+Batch: 841/843	Loss:0.643
+Batch: 843/843	Loss:0.594
+Epoch: 10	Train Loss: 0.518	Val F1: 0.498
+Best Epoch: 8	Best Epoch Val F1: 0.537
+
+******************************Epoch: 11******************************

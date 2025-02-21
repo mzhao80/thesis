@@ -5,15 +5,17 @@ import pandas as pd
 from tqdm import tqdm
 import openai
 import api_keys
+from bs4 import BeautifulSoup
+import csv
 
 def extract_topic(speech, policy, client, max_attempts=10):
     """
     For a given speech and its broad policy area, call the LLM to extract a short, general topic (1–5 words) describing the main issue in the speech
     Retries up to max_attempts until successful.
-    Returns (topic, phrase)
+    Returns topic
     """
     prompt = (
-        "Here we have the text of a congressional speech and a broad policy area assigned by the Congressional Research Service. For the following speech, please output only a short, general topic (1–5 words) that describes the main political issue discussed in the speech. It should be general and unstanced, for example Budget Cuts instead of Opposition to Budget Cuts.\n"
+        "Here we have the text of a congressional speech and a broad policy area assigned by the Congressional Research Service. For the following speech, please output only a short, general topic (1-5 words) that describes the main political issue discussed in the speech. It should be general and unstanced, for example Budget Cuts instead of Opposition to Budget Cuts.\n"
         f"Speech: {speech}\n\n"
         f"Broad Policy Area: {policy}\n\n"
         "Response:\n"
@@ -22,7 +24,7 @@ def extract_topic(speech, policy, client, max_attempts=10):
         {"role": "system",
          "content": (
              "You are a helpful assistant that extracts the main topic from congressional speeches. "
-             "For the following speech, please output only a short, general topic (1–5 words) that describes the main political issue discussed in the speech. It should be general and unstanced, for example Budget Cuts instead of Opposition to Budget Cuts."
+             "For the following speech, please output only a short, general topic (1-5 words) that describes the main political issue discussed in the speech. It should be general and unstanced, for example Budget Cuts instead of Opposition to Budget Cuts. However, it needs to be a topic that one can take a policy stance on, such as National Guard Expansion rather than National Guard. As much as possible, make it a single topic (for example, Welfare Programs instead of Social Security and Medicare)."
          )},
         {"role": "user", "content": prompt}
     ]
@@ -35,7 +37,7 @@ def extract_topic(speech, policy, client, max_attempts=10):
                 messages=messages
             )
             subtopic = response.choices[0].message.content.strip()
-            return subtopic, phrase
+            return subtopic
         except Exception as e:
             print(f"Error parsing LLM response on attempt {attempt+1}: {e}\nResponse was: {content if 'content' in locals() else 'N/A'}")
             attempt += 1
@@ -44,9 +46,9 @@ def extract_topic(speech, policy, client, max_attempts=10):
 def main():
     parser = argparse.ArgumentParser(description="Preprocess df_bills.csv to produce training_data.csv")
     parser.add_argument('--input-file', type=str, default='df_bills.csv',
-                        help="Input CSV file (must contain 'speech' and 'policy_area' columns)")
+                        help="Input CSV file")
     parser.add_argument('--output-file', type=str, default='training_data.csv',
-                        help="Output CSV file with document, policy_area, topic, and phrase columns")
+                        help="Output CSV file")
     parser.add_argument('--data-dir', type=str, default='/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao',
                         help="Directory of files")
     args = parser.parse_args()
@@ -61,23 +63,57 @@ def main():
     print("Extracting topics using LLM ...")
     all_topics = []
     df = pd.read_csv(input_path)
-    for i, row in tqdm(df.iterrows(), total=len(df)):
-        speech = row["speech"]
-        policy = str(row["policy_area"])
-        topic = extract_topic(speech, policy, client)
-        all_topics.append(topic)
-    
-    # Create training data rows: one row per key phrase.
+    # drop rows where policy_area is na
+    original_df_length = len(df)
+    df = df.dropna(subset=["policy_area"])
+    print(f"Original df length: {original_df_length}")
+    print(f"New df length: {len(df)}")
+    print(f"Percentage dropped: {(original_df_length - len(df)) / original_df_length * 100:.2f}%")
+    # print all policy areas
+    print(df["policy_area"].unique())
+
     rows = []
-    for idx, row in df.iterrows():
+
+    if not os.path.exists("cache.csv"):
+        for i, row in tqdm(df.iterrows(), total=len(df)):
+            speech = row["speech"]
+            policy = str(row["policy_area"])
+            topic = extract_topic(speech, policy, client)
+            all_topics.append(topic)
+
+        if len(all_topics) != len(df):
+            print(f"Error: Number of topics ({len(all_topics)}) does not match number of rows in df ({len(df)})")
+
+        # write all topics to csv, with each topic on a row
+        with open("cache.csv", "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["topic"])
+            writer.writerows([[topic] for topic in all_topics])
+    else:
+        # read in all_topics
+        all_topics = pd.read_csv("cache.csv")["topic"].tolist()
+
+    for (idx, row), topic in zip(df.iterrows(), all_topics):
         speech = row["speech"]
+        speaker = row["speaker"]
+        chamber = row["chamber"]
         policy = str(row["policy_area"])
-        topic = all_topics[idx]   
+        summary = row["latest_summary"]
+        clean_summary = "" if pd.isna(summary) else BeautifulSoup(summary, "html.parser").get_text(separator=" ").strip()
+        leg_subjects = row["legislative_subjects"]
+        committees = row["committees"]
+        
         rows.append({
-                "document": speech,
-                "policy_area": policy,
-                "topic": topic
-            })
+            "document": speech,
+            "speaker": speaker,
+            "chamber": chamber,
+            "policy_area": policy,
+            "topic": topic,
+            "legislative_subjects": leg_subjects,
+            "committees": committees,
+            "summary": clean_summary,
+        })
+
     out_df = pd.DataFrame(rows)
     out_df.to_csv(output_path, index=False)
     print(f"Preprocessing complete. Training data saved to {output_path}.")

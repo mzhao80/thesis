@@ -14,25 +14,29 @@ import numpy as np
 import random
 
 def main():
+    r = 16
+    alpha = 8
     # 1. Load CSV data and create a train/validation split (80/20 split)
-    data_files = {"data": "/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/new_training_data.csv"}
+    data_files = {"data": "/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/training_data_2023.csv"}
     dataset = load_dataset("csv", data_files=data_files)
     
     # Use the entire CSV as a single dataset and then split it
     dataset = dataset["data"].train_test_split(test_size=0.2, seed=42)
     train_dataset = dataset["train"]
     val_dataset = dataset["test"]
+    # print length of val dataset
+    print(f"Length of val dataset: {len(val_dataset)}")
     
     # 2. Load the tokenizer
     model_name = "facebook/bart-large-cnn"
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     
     # 3. Preprocessing function: format input and tokenize both input and target.
-    #    Also, for evaluation, we store the original subtopic text as "target".
+    #    Also, for evaluation, we store the original topic text as "target".
     def preprocess_function(examples):
         # Combine the policy_area and document into one prompt string.
         inputs = [
-            f"Extract a short subtopic of the parent topic, {pa}, from the following speech: {doc}"
+            f"Extract a short topic of the parent topic, {pa}, from the following speech: {doc}"
             for pa, doc in zip(examples["policy_area"], examples["document"])
         ]
         model_inputs = tokenizer(
@@ -42,10 +46,10 @@ def main():
             padding="max_length"
         )
         
-        # Tokenize the target (subtopic)
+        # Tokenize the target (topic)
         with tokenizer.as_target_tokenizer():
             labels = tokenizer(
-                examples["subtopic"],
+                examples["topic"],
                 max_length=16,
                 truncation=True,
                 padding="max_length"
@@ -53,13 +57,13 @@ def main():
         model_inputs["labels"] = labels["input_ids"]
         
         # Save original target text for evaluation purposes.
-        if "subtopic" in examples:
-            model_inputs["target"] = examples["subtopic"]
+        if "topic" in examples:
+            model_inputs["target"] = examples["topic"]
         return model_inputs
 
     # For training, remove all extra columns.
     train_dataset = train_dataset.map(
-        preprocess_function, batched=True, remove_columns=["document", "policy_area", "subtopic"]
+        preprocess_function, batched=True, remove_columns=["document", "policy_area", "topic"]
     )
     # For validation, keep the target text by only removing document and policy_area.
     val_dataset = val_dataset.map(
@@ -76,8 +80,8 @@ def main():
 
     # Define LoRA configuration. Here we update the query and value projection matrices.
     lora_config = LoraConfig(
-        r=16,
-        lora_alpha=64,      # Scaling factor
+        r=r,
+        lora_alpha=alpha,      # Scaling factor
         lora_dropout=0.1,   # Dropout probability for LoRA layers
         target_modules=target_modules
     )
@@ -87,7 +91,7 @@ def main():
     
     # 5. Setup training arguments.
     training_args = Seq2SeqTrainingArguments(
-        output_dir="./lora_bart_subtopics_new",
+        output_dir="./lora_bart_topics",
         overwrite_output_dir=True,
         learning_rate=1e-4,
         num_train_epochs=5,
@@ -114,7 +118,7 @@ def main():
     # 7. Start fine-tuning.
     trainer.train()
 
-    trainer.save_model("./lora_bart_subtopics")
+    trainer.save_model("./lora_bart_topics")
     
     # 8. After training, generate predictions on the validation set with generation parameters.
     print("Generating predictions on validation dataset...")
@@ -131,7 +135,7 @@ def main():
     decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
     
     # Retrieve target texts from the validation dataset.
-    # (We stored the original subtopic text in the "target" key.)
+    # (We stored the original topic text in the "target" key.)
     target_texts = val_dataset["target"]
     
     # Create a DataFrame and output to CSV.
@@ -139,7 +143,7 @@ def main():
         "target": target_texts,
         "generated": decoded_preds,
     })
-    output_csv = f"eval_results/results.csv"
+    output_csv = f"eval_results/results_{r}_{alpha}.csv"
     results_df.to_csv(output_csv, index=False)
     print(f"Saved evaluation results to {output_csv}")
 

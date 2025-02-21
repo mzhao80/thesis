@@ -1,0 +1,39 @@
+Traceback (most recent call last):
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/single_run.py", line 42, in <module>
+    main()
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/single_run.py", line 39, in main
+    engine.train()
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/single_engine.py", line 81, in train
+    val_f1 = self.eval('val')
+             ^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/single_engine.py", line 164, in eval
+    outputs = self.model(input_ids=input_ids,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/parallel/data_parallel.py", line 184, in forward
+    return self.module(*inputs[0], **module_kwargs[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/thesis/vast/he_models.py", line 58, in forward
+    logits = self.classifier(pooled_output)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 117, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (32x1536 and 768x3)

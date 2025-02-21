@@ -10,7 +10,7 @@ if __name__ == '__main__':
                                                       'biden,bernie', 'biden,trump',
                                                       'trump,bernie', 'trump,biden',
                                                       'face_masks', 'fauci',
-                                                      'stay_at_home_orders', 'school_closures', ''), default='bernie',
+                                                      'stay_at_home_orders', 'school_closures', ''), default='',
                         help='the topic to use')
     parser.add_argument('--batch_size', type=int, default=32)
     parser.add_argument('--epochs', type=int, default=100)
@@ -18,16 +18,16 @@ if __name__ == '__main__':
     parser.add_argument('--lr', type=float, default=1e-5)
     parser.add_argument('--l2_reg', type=float, default=5e-5)
     parser.add_argument('--max_grad', type=float, default=0)
-    parser.add_argument('--n_layers_freeze', type=int, default=0)
+    parser.add_argument('--n_layers_freeze', type=int, default=4)
     parser.add_argument('--model', type=str,
-                        choices=('bert-base-uncased', 'sentence-transformers/all-MiniLM-L6-v2'),
-                        default='bert-base-uncased',
-                        help='choose between bert-base-uncased and all-MiniLM-L6-v2')
+                        choices=('bert-base-uncased', 'sentence-transformers/all-MiniLM-L6-v2', 'sentence-transformers/all-mpnet-base-v2'),
+                        default='sentence-transformers/all-mpnet-base-v2',
+                        help='choose between bert-base-uncased and all-MiniLM-L6-v2 and all-mpnet-base-v2')
     parser.add_argument('--wiki_model', type=str,
-                        choices=('', 'bert-base-uncased', 'sentence-transformers/all-MiniLM-L6-v2'),
-                        default='',
+                        choices=('', 'bert-base-uncased', 'sentence-transformers/all-MiniLM-L6-v2', 'sentence-transformers/all-mpnet-base-v2'),
+                        default='sentence-transformers/all-mpnet-base-v2',
                         help='If provided, use this model for wiki input')
-    parser.add_argument('--n_layers_freeze_wiki', type=int, default=0)
+    parser.add_argument('--n_layers_freeze_wiki', type=int, default=4)
     parser.add_argument('--gpu', type=str, default='')
     parser.add_argument('--n_workers', type=int, default=4)
     parser.add_argument('--inference', type=int, default=0, help='if doing inference or not')

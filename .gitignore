@@ -3,3 +3,6 @@ topic_taxonomy_expansion/models/*
 */wandb/*
 vast/ckp/*
 */__pycache__/*
+training_data/cache.csv
+topic_taxonomy_expansion/step_1.csv
+topic_taxonomy_expansion/step_3.csv

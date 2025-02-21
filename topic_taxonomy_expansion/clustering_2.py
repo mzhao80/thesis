@@ -10,6 +10,33 @@ import matplotlib.pyplot as plt
 from hdbscan.validity import validity_index
 from openai import OpenAI
 import api_keys
+from collections import defaultdict, Counter
+from tqdm.auto import tqdm
+
+def enforce_majority_cluster(embeddings, cluster_labels, misc_embedding):
+    """
+    Ensures identical embeddings are assigned to the most frequent cluster they appeared in.
+    """
+    embedding_dict = defaultdict(lambda: Counter())  # Maps embedding -> cluster frequency counter
+    corrected_labels = np.copy(cluster_labels)
+
+    # First pass: Count occurrences of each embedding in different clusters
+    for i, emb in enumerate(embeddings):
+        emb_tuple = tuple(emb)  # Convert to a hashable type
+        embedding_dict[emb_tuple][cluster_labels[i]] += 1  # Count occurrences
+
+    # Second pass: Reassign labels based on majority occurrence
+    for i, emb in enumerate(embeddings):
+        emb_tuple = tuple(emb)
+        if len(embedding_dict[emb_tuple]) > 1:
+            # Find the most frequent cluster for this embedding
+            most_frequent_cluster = max(embedding_dict[emb_tuple], key=embedding_dict[emb_tuple].get)
+            corrected_labels[i] = most_frequent_cluster  # Assign the most common cluster
+        # remove misc
+        if emb_tuple == misc_embedding:
+            corrected_labels[i] = -1
+
+    return corrected_labels
 
 def compute_medoid(texts, embeddings):
     """
@@ -31,13 +58,13 @@ def generate_cluster_label(subtopics, parent_topic, client, max_attempts=5):
         "When given a second-level parent topic and a list of topics of documents clustered under the parent topic, you must generate a concise and representative third-level topic (3-7 words) "
         "that describes the common topic of the document topics clustered under the parent topic.\n"
         "The generated third-level subtopic should be a distinct child topic but still distinct from the parent topic, and should be as specific as possible."
-        "For example, a good three-level taxonomy would be 1. Defense; 2. Defense Spending; 3. Asia-Pacific Defense Spending. "
-        "Also, the topic should be unstanced. For example, you should prefer output Budget Cuts instead of Opposition to Budget Cuts."
+        "For example, a good three-level taxonomy would be 1. Defense; 2. Naval Funding; 3. Asia-Pacific Naval Buildup. "
+        "Also, the topic should be inherently unstanced. For example, you should prefer output Budget Cuts instead of Opposition to Budget Cuts. But it should still be a topic that one can take a position on because this topic will be used for stance detection."
     )
 
     prompt = (
         "Given the following parent topic and list of topics from documents clustered under a second-level parent topic, generate a third-level subtopic that is representative of "
-        "the common topic the document topics represent. It should be as specific as possible, and related to the parent topic, but it should not be substantially the same as the parent topic.\n\n"
+        "the common topic the document topics represent. It should be as specific as possible, and related to the parent topic, but it should not be substantially the same as the parent topic. It must be a policy controversy one can take a stance on of support or oppose, such as Refugee Visa Expansion.\n\n"
         "Second-Level Parent Topic: " + parent_topic + "\n\n"
         "Clustered Document Topics: " + "; ".join(subtopics) + "\n\n"
         "Answer only with the generated third-level subtopic (3-7 words):\n\n"
@@ -64,7 +91,10 @@ def generate_cluster_label(subtopics, parent_topic, client, max_attempts=5):
 
 
 def main():
-    n_components = 10
+    n_components = 5
+    weighted_score = 0
+    doc_count = 0
+
     # Create directory for visualizations if it doesn't exist.
     if not os.path.exists('cluster_viz_2'):
         os.makedirs('cluster_viz_2')
@@ -73,18 +103,26 @@ def main():
 
     # Load the predictions CSV (which contains the original columns).
     df = pd.read_csv('step_3.csv')
+    original_length = len(df)
+    # drop rows with no subtopic predicted
+    # df = df.dropna(subset=['subtopic_2'])
+    # print(f"{original_length - len(df)} rows dropped ({(original_length - len(df)) / original_length * 100:.2f}%) due to no predicted subtopic or policy area.")
+
 
     # Initialize the Sentence Transformer model.
     model = SentenceTransformer('all-MiniLM-L6-v2').to('cuda')
-
+\
     source_mapping = {}
     for idx, row in df.iterrows():
-        pred = row['new_subtopic']
-        if pd.isna(pred):
-            continue
+        path = (row['policy_area'], row['subtopic_1'], row['subtopic_2'])
         # We convert the index to a string for later concatenation.
-        source_mapping.setdefault(pred, []).append(str(idx))
+        source_mapping.setdefault(path, []).append(str(idx))
 
+    embeddings = {}
+
+    for subtopic in tqdm(df['subtopic_2'].unique(), desc="Generating embeddings"):
+        embeddings[subtopic] = model.encode(subtopic, convert_to_numpy=True)
+    misc_embedding = tuple(embeddings["Misc."])
 
     # List to store cluster taxonomy information.
     taxonomy = []
@@ -92,30 +130,29 @@ def main():
     # Loop over each parent topic
     for policy_area in df['policy_area'].unique():
         new_df = df[df['policy_area'] == policy_area]
-        for parent_topic in new_df['gpt_label'].unique():
+        for parent_topic in new_df['subtopic_1'].unique():
             print(f"\nProcessing parent topic: {parent_topic}")
+            curr_doc_count = 0
             
             # Filter by current parent topic.
-            sub_df = new_df[new_df['gpt_label'] == parent_topic]
+            sub_df = new_df[new_df['subtopic_1'] == parent_topic]
             
             # Get unique predicted subtopics.
-            subtopics = sub_df['new_subtopic'].unique().tolist()
+            subtopics = sub_df['subtopic_2'].tolist()
             print(f"Total subtopics: {len(subtopics)}")
             
             # Skip if too few subtopics.
-            if len(subtopics) < n_components+2 or parent_topic=="":
-                print("Too few subtopics, skipping...")
-                source_indices = []
-                for t in subtopics:
-                    if t in source_mapping:
-                        source_indices.extend(source_mapping[t])
-                # Remove duplicates if desired:
-                source_indices = list(dict.fromkeys(source_indices))
+            if len(subtopics) < n_components+2 or parent_topic=="Misc.":
+                print("Too few subtopics or Misc. subtopics, skipping...")
+                source_indices = set()
+                for t in set(subtopics):
+                    source_indices.update(source_mapping[(policy_area, parent_topic, t)])
+                doc_count += len(source_indices)
                 
                 taxonomy.append({
                     'policy_area': policy_area,
                     'subtopic_1': parent_topic,
-                    'subtopic_2': "",
+                    'subtopic_2': "" if parent_topic == "Misc." else "Misc.",
                     'cluster_length': len(subtopics),
                     'source_subtopics': "",
                     'source_indices': ";".join(source_indices)
@@ -123,17 +160,18 @@ def main():
                 continue
 
             # Compute original embeddings.
-            original_embeddings = model.encode(subtopics, convert_to_numpy=True)
+            original_embeddings = np.array([embeddings[subtopic] for subtopic in subtopics])
             
             # --- Dimensionality Reduction with UMAP for clustering & DBCV ---
-            umap_model = umap.UMAP(n_components=n_components)
+            umap_model = umap.UMAP(n_components=n_components, n_neighbors = 25, metric = "cosine")
             reduced_embeddings = umap_model.fit_transform(original_embeddings)
             d = reduced_embeddings.shape[1]  # explicitly set d = number of features after reduction
             
             # Cluster using HDBSCAN on the reduced embeddings.
-            min_cluster_size = 5
+            min_cluster_size = 10
             clusterer = hdbscan.HDBSCAN(min_cluster_size=min_cluster_size)
             cluster_labels = clusterer.fit_predict(reduced_embeddings)
+            cluster_labels = enforce_majority_cluster(original_embeddings, cluster_labels, misc_embedding)
             
             # Print clustering summary.
             unique_labels = set(cluster_labels)
@@ -150,6 +188,8 @@ def main():
                     d=d
                 )
                 print(f"DBCV Score: {dbcv_score:.3f}")
+                weighted_score += dbcv_score * (len(subtopics) - noise_count)
+                print(f"Weighted DBCV Score: {weighted_score:.3f}")
             except Exception as e:
                 print("Error computing DBCV score:", e)
             
@@ -176,37 +216,65 @@ def main():
             # --- Organize texts by cluster label (drop noise points) ---
             clusters = {}
             for label, text in zip(cluster_labels, subtopics):
-                if label == -1:
-                    continue
                 clusters.setdefault(label, []).append(text)
             
             # For each cluster, compute the medoid
             for label, texts in clusters.items():
-                cluster_original_embeddings = model.encode(texts, convert_to_numpy=True)   
-                cluster_reduced_embeddings = umap_model.transform(cluster_original_embeddings)
-                new_topic_label = compute_medoid(np.array(texts), cluster_original_embeddings)
-                new_reduced_topic_label = compute_medoid(np.array(texts), cluster_reduced_embeddings)
+                seen = set()
+                newTexts = []
+                for text in texts:
+                    if text not in seen:
+                        newTexts.append(text)
+                        seen.add(text)
+                oldTexts = texts
+                texts = newTexts
 
-                source_indices = []
+                if label != -1:
+                    cluster_original_embeddings = np.array([embeddings[subtopic] for subtopic in texts])
+                    cluster_reduced_embeddings = umap_model.transform(cluster_original_embeddings)
+                    new_topic_label = compute_medoid(np.array(texts), cluster_original_embeddings)
+                    new_reduced_topic_label = compute_medoid(np.array(texts), cluster_reduced_embeddings)
+                    gpt_label = generate_cluster_label(texts, policy_area, client)
+                else:
+                    new_topic_label = "Misc."
+                    new_reduced_topic_label = "Misc."
+                    gpt_label = "Misc."
+
+                source_indices = set()
+                counts = {}
+
                 for t in texts:
-                    if t in source_mapping:
-                        source_indices.extend(source_mapping[t])
-                # Remove duplicates if desired:
-                source_indices = list(dict.fromkeys(source_indices))
-                
+                    source_indices.update(source_mapping[(policy_area, parent_topic, t)])
+                    counts[t] = len(source_mapping[(policy_area, parent_topic, t)])
+                curr_doc_count += len(source_indices)
+
+                counter = Counter(oldTexts)
+                for t, count in counter.items():
+                    if count != counts[t]:
+                        print(texts)
+                        print(f"Count does not match: {t}: {count} != {counts[t]}")
+
                 taxonomy.append({
                     'policy_area': policy_area,
                     'subtopic_1': parent_topic,
-                    'subtopic_2': generate_cluster_label(texts, policy_area, client),
-                    'cluster_length': len(texts),
+                    'subtopic_2': gpt_label,
+                    'cluster_length': len(oldTexts),
                     'source_subtopics': ";".join(texts),
                     'source_indices': ";".join(source_indices)
                 })
 
+            # print doc count
+            if curr_doc_count != len(subtopics):
+                print(f"Doc count does not match: doc count {curr_doc_count} != subtopic length {len(subtopics)}")
+            else:
+                print(f"Doc count: {curr_doc_count}")
+            doc_count += curr_doc_count
+
     # Write taxonomy to CSV.
     taxonomy_df = pd.DataFrame(taxonomy)
     taxonomy_df.to_csv('step_4.csv', index=False)
-    print("\nTaxonomy saved to step_4.csv")
+    print(f"Total doc count processed: {doc_count}. Original doc count: {len(df)}")
+    print(f"\nTaxonomy saved to step_4.csv with weighted DBCV score: {weighted_score:.3f}")
 
 if __name__ == "__main__":
     main()
