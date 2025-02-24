@@ -1,0 +1,9 @@
+2025-02-23 20:05:54,442 - Fetching members of the 117th Congress...
+2025-02-23 20:05:55,041 - Error fetching congress members: 503 Server Error: Service Unavailable for url: https://api.congress.gov/v3/member/congress/117?api_key=Mj12gZy7v2dlUpur2oqhcnDFqzHx9UqusYh14NkH&currentMember=False
+2025-02-23 20:05:55,042 - No members found. Exiting.
+2025-02-23 20:07:01,058 - Fetching members of the 117th Congress...
+2025-02-23 20:07:13,824 - Error fetching congress members: 520 Server Error: status code 520 for url: https://api.congress.gov/v3/member/congress/117?currentMember=False&api_key=Mj12gZy7v2dlUpur2oqhcnDFqzHx9UqusYh14NkH
+2025-02-23 20:07:13,827 - No members found. Exiting.
+2025-02-23 20:09:10,686 - Fetching members of the 117th Congress...
+2025-02-23 20:09:11,211 - Error fetching congress members: 503 Server Error: Service Unavailable for url: https://api.congress.gov/v3/member/congress/117?currentMember=False&api_key=Mj12gZy7v2dlUpur2oqhcnDFqzHx9UqusYh14NkH
+2025-02-23 20:09:11,212 - No members found. Exiting.

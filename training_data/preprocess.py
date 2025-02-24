@@ -490,7 +490,7 @@ def main():
     # Remove rows where speaker starts with any of The CLERK, The SPEAKER, The PRESIDENT, The PRESIDING OFFICER, The Acting CHAIR, The CHAIR, The ACTING PRESIDENT case-insensitive
     df_bills = df_bills[~df_bills["speaker"].str.lower().str.startswith(("the clerk", "the speaker", "the president", "the presiding officer", "the acting chair", "the chair", "the acting president"), na=False)]
 
-    # Filter out rows where speech is less than 250 characters, to filter out procedural speehces
+    # Filter out rows where speech is less than 250 characters, to filter out procedural speecges
     df_bills = df_bills[df_bills['speech'].str.len() >= 250]
     # -----------------------------------
     # 2. Identify potential bills
@@ -510,29 +510,30 @@ def main():
         build_bill_data_dict(API_KEY, all_bills_dict, CONGRESS_NUMBER, offset=0)
         with open("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/all_bills_dict.json", "w") as f:
             json.dump(all_bills_dict, f, indent=2)
-        # Now for each stored bill, fetch deeper data (subjects, committees, etc.)
-        cache = {}
-        if os.path.exists("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/cache.json"):
-            with open("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/cache.json", "r") as f:
-                cache = json.load(f)
-        for title_lower, info in tqdm(all_bills_dict.items()):
-            bt = info["bill_type"]
-            bn = info["bill_number"]
-            # fetch the deeper data
-            if (bt, bn) in cache:
-                fetched = cache[(bt, bn)]
-            else:
-                fetched = fetch_and_cache_bill_data(API_KEY, CONGRESS_NUMBER, bt, bn)
-                cache[(bt, bn)] = fetched
-            info.update(fetched)
+    else:
+        print("all bills json loaded.")
+        with open("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/all_bills_dict.json", "r") as f:
+            all_bills_dict = json.load(f)
+    # Now for each stored bill, fetch deeper data (subjects, committees, etc.)
+    cache = {}
+    if os.path.exists("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/cache.json"):
+        print("Cache loaded.")
+        with open("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/cache.json", "r") as f:
+            cache = json.load(f)
+    for title_lower, info in tqdm(all_bills_dict.items()):
+        bt = info["bill_type"]
+        bn = info["bill_number"]
+        key = f"{bt},{bn}"
+        # fetch the deeper data
+        if key in cache:
+            fetched = cache[key]
+        else:
+            fetched = fetch_and_cache_bill_data(API_KEY, CONGRESS_NUMBER, bt, bn)
+            cache[key] = fetched
+        info.update(fetched)
 
-        with open("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/cache.json", "w") as f:
-            json.dump(cache, f, indent=2)
-        with open("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/all_bills_dict.json", "w") as f:
-            json.dump(all_bills_dict, f, indent=2)
-
-    with open("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/all_bills_dict.json", "r") as f:
-        all_bills_dict = json.load(f)
+    with open("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/cache.json", "w") as f:
+        json.dump(cache, f, indent=2)
 
     # Apply the function to each row in df_bills
     logging.info("Adding bill data columns...")

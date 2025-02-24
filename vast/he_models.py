@@ -9,7 +9,7 @@ class BERTSeqClf(nn.Module):
 
         os.environ['TRANSFORMERS_OFFLINE'] = '1'
         from transformers import AutoModel
-        self.bert = AutoModel.from_pretrained('bert-base-uncased')
+        self.bert = AutoModel.from_pretrained(model)
 
         n_layers = 12
         if n_layers_freeze > 0:

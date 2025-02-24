@@ -1,0 +1,18 @@
+Initializing OpenAI client ...
+Extracting topics using LLM ...
+Original df length: 12429
+New df length: 10080
+Percentage dropped: 18.90%
+['Government Operations and Politics'
+ 'Science, Technology, Communications' 'Education'
+ 'Economics and Public Finance' 'Transportation and Public Works' 'Health'
+ 'Law' 'Immigration' 'Labor and Employment' 'Agriculture and Food'
+ 'Taxation' 'Crime and Law Enforcement' 'International Affairs'
+ 'Armed Forces and National Security' 'Congress'
+ 'Finance and Financial Sector' 'Public Lands and Natural Resources'
+ 'Civil Rights and Liberties, Minority Issues' 'Social Welfare' 'Energy'
+ 'Commerce' 'Families' 'Environmental Protection' 'Emergency Management'
+ 'Housing and Community Development' 'Water Resources Development'
+ 'Arts, Culture, Religion' 'Native Americans' 'Sports and Recreation'
+ 'Animals' 'Foreign Trade and International Finance']
+Preprocessing complete. Training data saved to /n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/training_data.csv.

@@ -40,7 +40,7 @@ def main():
             count += 1
             if gpt_label == "Misc.":
                 results.append({
-                    "document_index": doc_idx,
+                    "idx": doc_idx,
                     "policy_area": row["policy_area"],
                     "subtopic_1": gpt_label,
                     "subtopic_2": "Misc."
@@ -73,7 +73,7 @@ def main():
                 pred = "Misc."
             
             results.append({
-                "document_index": doc_idx,
+                "idx": doc_idx,
                 "policy_area": row["policy_area"],
                 "subtopic_1": gpt_label,
                 "subtopic_2": pred
@@ -81,6 +81,8 @@ def main():
     
     # Save the results to CSV.
     new_df = pd.DataFrame(results)
+    # sort df by idx
+    new_df = new_df.sort_values(by="idx")
     output_csv = "step_3.csv"
     new_df.to_csv(output_csv, index=False)
     print(f"Processed {count} documents.")

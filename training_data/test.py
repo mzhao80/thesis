@@ -22,4 +22,5 @@ bill_number = 8326
 url = f"{BASE_URL}/bill/{congress}/{bill_type.lower()}/{bill_number}/subjects"
 params = {"api_key": api_key, "format": "json"}
 resp = requests.get(url, params=params)
-print(resp.json().get("subjects").get("policyArea"))
+print(resp.status_code)
+print(resp.json())

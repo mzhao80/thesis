@@ -20,7 +20,7 @@ def parse_args():
     
     # System parameters
     parser.add_argument('--gpu', type=str, default='0', help='GPU device number')
-    parser.add_argument('--inference', type=int, default=1, help='0 for training, 1 for inference')
+    parser.add_argument('--inference', type=int, default=0, help='0 for training, 1 for inference')
     parser.add_argument('--n_workers', type=int, default=4, help='Number of data loader workers')
     parser.add_argument('--seed', type=int, default=42, help='Random seed')
     parser.add_argument('--save_path', type=str, default='ckp/best_model.pt', help='Path to save the best model checkpoint')

@@ -3,7 +3,7 @@
 #SBATCH -o logs/llm_label_%j.out
 #SBATCH -e logs/llm_label_%j.err
 #SBATCH -p sapphire
-#SBATCH -t 00-02:00:00
+#SBATCH -t 00-04:00:00
 #SBATCH -c 4
 #SBATCH --mem=32G
 #SBATCH --account=murphy_lab

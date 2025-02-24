@@ -1,0 +1,759 @@
+Saved predictions to step_1.csv
+
+Processing parent topic: Voting Rights Expansion
+Total subtopics: 906
+Clusters (excluding noise): 31, Noise points: 75
+DBCV Score: 0.767
+Weighted DBCV Score: 637.340
+UMAP visualization saved for Voting Rights Expansion
+Doc count: 906
+
+Processing parent topic: Voting Rights Protections
+Total subtopics: 123
+Clusters (excluding noise): 3, Noise points: 0
+DBCV Score: 0.957
+Weighted DBCV Score: 755.074
+UMAP visualization saved for Voting Rights Protections
+Doc count: 123
+
+Processing parent topic: Postal Service Reform Debate
+Total subtopics: 58
+Clusters (excluding noise): 0, Noise points: 58
+DBCV Score: 0.000
+Weighted DBCV Score: 755.074
+Doc count: 58
+
+Processing parent topic: Funding for Scientific Research
+Total subtopics: 130
+Clusters (excluding noise): 5, Noise points: 5
+DBCV Score: 0.823
+Weighted DBCV Score: 857.935
+UMAP visualization saved for Funding for Scientific Research
+Doc count: 130
+
+Processing parent topic: Advocating for STEM Education Funding
+Total subtopics: 39
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.964
+Weighted DBCV Score: 895.512
+UMAP visualization saved for Advocating for STEM Education Funding
+Doc count: 39
+
+Processing parent topic: Misc.
+Total subtopics: 163
+Too few subtopics or Misc. subtopics, skipping...
+
+Processing parent topic: Cybersecurity Policy and Funding
+Total subtopics: 132
+Clusters (excluding noise): 5, Noise points: 0
+DBCV Score: 0.664
+Weighted DBCV Score: 983.139
+UMAP visualization saved for Cybersecurity Policy and Funding
+Doc count: 132
+
+Processing parent topic: China-U.S. Policy Competition
+Total subtopics: 58
+Clusters (excluding noise): 3, Noise points: 0
+DBCV Score: 0.798
+Weighted DBCV Score: 1029.448
+UMAP visualization saved for China-U.S. Policy Competition
+Doc count: 58
+
+Processing parent topic: Voting Rights and Representation
+Total subtopics: 74
+Clusters (excluding noise): 3, Noise points: 1
+DBCV Score: 0.536
+Weighted DBCV Score: 1068.542
+UMAP visualization saved for Voting Rights and Representation
+Doc count: 74
+
+Processing parent topic: Misc.
+Total subtopics: 33
+Too few subtopics or Misc. subtopics, skipping...
+
+Processing parent topic: Education Funding Controversies
+Total subtopics: 59
+Clusters (excluding noise): 4, Noise points: 5
+DBCV Score: 0.610
+Weighted DBCV Score: 1101.479
+UMAP visualization saved for Education Funding Controversies
+Doc count: 59
+
+Processing parent topic: Mental Health Support in Education
+Total subtopics: 36
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.973
+Weighted DBCV Score: 1136.520
+UMAP visualization saved for Mental Health Support in Education
+Doc count: 36
+
+Processing parent topic: Government Spending Accountability
+Total subtopics: 82
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.977
+Weighted DBCV Score: 1216.621
+UMAP visualization saved for Government Spending Accountability
+Doc count: 82
+
+Processing parent topic: Pandemic Relief Funding
+Total subtopics: 70
+Clusters (excluding noise): 3, Noise points: 0
+DBCV Score: 0.947
+Weighted DBCV Score: 1282.938
+UMAP visualization saved for Pandemic Relief Funding
+Doc count: 70
+
+Processing parent topic: Economic Inequality Solutions
+Total subtopics: 95
+Clusters (excluding noise): 5, Noise points: 5
+DBCV Score: 0.827
+Weighted DBCV Score: 1357.387
+UMAP visualization saved for Economic Inequality Solutions
+Doc count: 95
+
+Processing parent topic: Misc.
+Total subtopics: 386
+Too few subtopics or Misc. subtopics, skipping...
+
+Processing parent topic: Poverty Reduction Funding Controversy
+Total subtopics: 171
+Clusters (excluding noise): 8, Noise points: 4
+DBCV Score: 0.637
+Weighted DBCV Score: 1463.708
+UMAP visualization saved for Poverty Reduction Funding Controversy
+Doc count: 171
+
+Processing parent topic: Legislative Accountability and Oversight
+Total subtopics: 84
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.981
+Weighted DBCV Score: 1546.079
+UMAP visualization saved for Legislative Accountability and Oversight
+Doc count: 84
+
+Processing parent topic: Pregnancy Discrimination Legislation
+Total subtopics: 50
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.960
+Weighted DBCV Score: 1594.071
+UMAP visualization saved for Pregnancy Discrimination Legislation
+Doc count: 50
+
+Processing parent topic: Affordable Healthcare Access Expansion
+Total subtopics: 80
+Clusters (excluding noise): 5, Noise points: 0
+DBCV Score: 0.903
+Weighted DBCV Score: 1666.312
+UMAP visualization saved for Affordable Healthcare Access Expansion
+Doc count: 80
+
+Processing parent topic: Tax Reform Controversies
+Total subtopics: 59
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.983
+Weighted DBCV Score: 1724.322
+UMAP visualization saved for Tax Reform Controversies
+Doc count: 59
+
+Processing parent topic: Strengthening Senior Financial Protections
+Total subtopics: 32
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.891
+Weighted DBCV Score: 1752.836
+UMAP visualization saved for Strengthening Senior Financial Protections
+Doc count: 32
+
+Processing parent topic: Renewable Energy Subsidies
+Total subtopics: 27
+Clusters (excluding noise): 2, Noise points: 2
+DBCV Score: 0.209
+Weighted DBCV Score: 1758.051
+UMAP visualization saved for Renewable Energy Subsidies
+Doc count: 27
+
+Processing parent topic: Climate Change Legislation Controversy
+Total subtopics: 44
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.959
+Weighted DBCV Score: 1800.252
+UMAP visualization saved for Climate Change Legislation Controversy
+Doc count: 44
+
+Processing parent topic: Inflation Control Measures
+Total subtopics: 48
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.415
+Weighted DBCV Score: 1820.155
+UMAP visualization saved for Inflation Control Measures
+Doc count: 48
+
+Processing parent topic: Insulin Price Regulation
+Total subtopics: 38
+Clusters (excluding noise): 0, Noise points: 38
+DBCV Score: 0.000
+Weighted DBCV Score: 1820.155
+Doc count: 38
+
+Processing parent topic: Funding Mental Health Initiatives
+Total subtopics: 45
+Clusters (excluding noise): 3, Noise points: 0
+DBCV Score: 0.478
+Weighted DBCV Score: 1841.665
+UMAP visualization saved for Funding Mental Health Initiatives
+Doc count: 45
+
+Processing parent topic: Infrastructure Investment Controversy
+Total subtopics: 44
+Clusters (excluding noise): 0, Noise points: 44
+DBCV Score: 0.000
+Weighted DBCV Score: 1841.665
+Doc count: 44
+
+Processing parent topic: Transportation Infrastructure Funding
+Total subtopics: 381
+Clusters (excluding noise): 14, Noise points: 26
+DBCV Score: 0.696
+Weighted DBCV Score: 2088.826
+UMAP visualization saved for Transportation Infrastructure Funding
+Doc count: 381
+
+Processing parent topic: Healthcare Access Equity
+Total subtopics: 431
+Clusters (excluding noise): 15, Noise points: 32
+DBCV Score: 0.665
+Weighted DBCV Score: 2354.316
+UMAP visualization saved for Healthcare Access Equity
+Doc count: 431
+
+Processing parent topic: Abortion Rights and Regulations
+Total subtopics: 95
+Clusters (excluding noise): 4, Noise points: 0
+DBCV Score: 0.965
+Weighted DBCV Score: 2446.038
+UMAP visualization saved for Abortion Rights and Regulations
+Doc count: 95
+
+Processing parent topic: Misc.
+Total subtopics: 32
+Too few subtopics or Misc. subtopics, skipping...
+
+Processing parent topic: Contraception Access Rights
+Total subtopics: 28
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.971
+Weighted DBCV Score: 2473.229
+UMAP visualization saved for Contraception Access Rights
+Doc count: 28
+
+Processing parent topic: Abortion Rights Debate
+Total subtopics: 53
+Clusters (excluding noise): 0, Noise points: 53
+DBCV Score: 0.000
+Weighted DBCV Score: 2473.229
+Doc count: 53
+
+Processing parent topic: Raising the Debt Ceiling
+Total subtopics: 27
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.977
+Weighted DBCV Score: 2499.598
+UMAP visualization saved for Raising the Debt Ceiling
+Doc count: 27
+
+Processing parent topic: Arbitration Policy Reform
+Total subtopics: 101
+Clusters (excluding noise): 3, Noise points: 0
+DBCV Score: 0.805
+Weighted DBCV Score: 2580.876
+UMAP visualization saved for Arbitration Policy Reform
+Doc count: 101
+
+Processing parent topic: Misc.
+Total subtopics: 10
+Too few subtopics or Misc. subtopics, skipping...
+
+Processing parent topic: Strengthening Sexual Harassment Laws
+Total subtopics: 39
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.974
+Weighted DBCV Score: 2618.867
+UMAP visualization saved for Strengthening Sexual Harassment Laws
+Doc count: 39
+
+Processing parent topic: Dreamer Legalization Debate
+Total subtopics: 108
+Clusters (excluding noise): 6, Noise points: 0
+DBCV Score: 0.907
+Weighted DBCV Score: 2716.796
+UMAP visualization saved for Dreamer Legalization Debate
+Doc count: 108
+
+Processing parent topic: Illegal Immigration Enforcement
+Total subtopics: 119
+Clusters (excluding noise): 3, Noise points: 1
+DBCV Score: 0.290
+Weighted DBCV Score: 2751.045
+UMAP visualization saved for Illegal Immigration Enforcement
+Doc count: 119
+
+Processing parent topic: Strengthening Border Security Measures
+Total subtopics: 54
+Clusters (excluding noise): 0, Noise points: 54
+DBCV Score: 0.000
+Weighted DBCV Score: 2751.045
+Doc count: 54
+
+Processing parent topic: Apprenticeship Program Enhancement
+Total subtopics: 54
+Clusters (excluding noise): 3, Noise points: 0
+DBCV Score: 0.924
+Weighted DBCV Score: 2800.948
+UMAP visualization saved for Apprenticeship Program Enhancement
+Doc count: 54
+
+Processing parent topic: Workforce Development Reform
+Total subtopics: 45
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.970
+Weighted DBCV Score: 2844.582
+UMAP visualization saved for Workforce Development Reform
+Doc count: 45
+
+Processing parent topic: Union Rights and Protections
+Total subtopics: 222
+Clusters (excluding noise): 7, Noise points: 4
+DBCV Score: 0.669
+Weighted DBCV Score: 2990.375
+UMAP visualization saved for Union Rights and Protections
+Doc count: 222
+
+Processing parent topic: Enhancing Workplace Safety Regulations
+Total subtopics: 40
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.970
+Weighted DBCV Score: 3029.158
+UMAP visualization saved for Enhancing Workplace Safety Regulations
+Doc count: 40
+
+Processing parent topic: Retirement Benefits Reform
+Total subtopics: 49
+Clusters (excluding noise): 3, Noise points: 0
+DBCV Score: 0.636
+Weighted DBCV Score: 3060.325
+UMAP visualization saved for Retirement Benefits Reform
+Doc count: 49
+
+Processing parent topic: Protecting Older Workers' Rights
+Total subtopics: 39
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.940
+Weighted DBCV Score: 3096.999
+UMAP visualization saved for Protecting Older Workers' Rights
+Doc count: 39
+
+Processing parent topic: Food Safety and Nutrition Access
+Total subtopics: 101
+Clusters (excluding noise): 7, Noise points: 9
+DBCV Score: 0.700
+Weighted DBCV Score: 3161.439
+UMAP visualization saved for Food Safety and Nutrition Access
+Doc count: 101
+
+Processing parent topic: Tax Breaks for Specific Industries
+Total subtopics: 49
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.424
+Weighted DBCV Score: 3182.195
+UMAP visualization saved for Tax Breaks for Specific Industries
+Doc count: 49
+
+Processing parent topic: Law Enforcement Accountability Reform
+Total subtopics: 459
+Clusters (excluding noise): 23, Noise points: 25
+DBCV Score: 0.732
+Weighted DBCV Score: 3499.717
+UMAP visualization saved for Law Enforcement Accountability Reform
+Doc count: 459
+
+Processing parent topic: Rights and Liberties Expansion
+Total subtopics: 55
+Clusters (excluding noise): 2, Noise points: 6
+DBCV Score: 0.364
+Weighted DBCV Score: 3517.563
+UMAP visualization saved for Rights and Liberties Expansion
+Doc count: 55
+
+Processing parent topic: Gun Violence Prevention Strategies
+Total subtopics: 68
+Clusters (excluding noise): 0, Noise points: 68
+DBCV Score: 0.000
+Weighted DBCV Score: 3517.563
+Doc count: 68
+
+Processing parent topic: Legislative Reform for Criminal Justice
+Total subtopics: 30
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.175
+Weighted DBCV Score: 3522.820
+UMAP visualization saved for Legislative Reform for Criminal Justice
+Doc count: 30
+
+Processing parent topic: Strict Background Check Regulations
+Total subtopics: 28
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.977
+Weighted DBCV Score: 3550.173
+UMAP visualization saved for Strict Background Check Regulations
+Doc count: 28
+
+Processing parent topic: Gun Control Debate
+Total subtopics: 82
+Clusters (excluding noise): 3, Noise points: 0
+DBCV Score: 0.929
+Weighted DBCV Score: 3626.377
+UMAP visualization saved for Gun Control Debate
+Doc count: 82
+
+Processing parent topic: Drug Policy Reform Controversy
+Total subtopics: 92
+Clusters (excluding noise): 5, Noise points: 0
+DBCV Score: 0.916
+Weighted DBCV Score: 3710.687
+UMAP visualization saved for Drug Policy Reform Controversy
+Doc count: 92
+
+Processing parent topic: Strengthening Trafficking Prevention Laws
+Total subtopics: 33
+Clusters (excluding noise): 0, Noise points: 33
+DBCV Score: 0.000
+Weighted DBCV Score: 3710.687
+Doc count: 33
+
+Processing parent topic: Misc.
+Total subtopics: 36
+Too few subtopics or Misc. subtopics, skipping...
+
+Processing parent topic: Misc.
+Total subtopics: 198
+Too few subtopics or Misc. subtopics, skipping...
+
+Processing parent topic: Foreign Aid Controversies
+Total subtopics: 198
+Clusters (excluding noise): 11, Noise points: 7
+DBCV Score: 0.725
+Weighted DBCV Score: 3849.151
+UMAP visualization saved for Foreign Aid Controversies
+Doc count: 198
+
+Processing parent topic: Global Health Preparedness Controversy
+Total subtopics: 30
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.899
+Weighted DBCV Score: 3876.125
+UMAP visualization saved for Global Health Preparedness Controversy
+Doc count: 30
+
+Processing parent topic: Human Rights Enforcement Challenges
+Total subtopics: 39
+Clusters (excluding noise): 2, Noise points: 7
+DBCV Score: 0.030
+Weighted DBCV Score: 3877.076
+UMAP visualization saved for Human Rights Enforcement Challenges
+Doc count: 39
+
+Processing parent topic: Combating Islamophobia Legislation
+Total subtopics: 30
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.960
+Weighted DBCV Score: 3905.887
+UMAP visualization saved for Combating Islamophobia Legislation
+Doc count: 30
+
+Processing parent topic: National Guard Funding Controversies
+Total subtopics: 58
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.981
+Weighted DBCV Score: 3962.807
+UMAP visualization saved for National Guard Funding Controversies
+Doc count: 58
+
+Processing parent topic: Veteran Healthcare Access Reform
+Total subtopics: 361
+Clusters (excluding noise): 5, Noise points: 0
+DBCV Score: 0.611
+Weighted DBCV Score: 4183.509
+UMAP visualization saved for Veteran Healthcare Access Reform
+Doc count: 361
+
+Processing parent topic: Misc.
+Total subtopics: 382
+Too few subtopics or Misc. subtopics, skipping...
+
+Processing parent topic: Cannabis Legalization Controversy
+Total subtopics: 26
+Clusters (excluding noise): 0, Noise points: 26
+DBCV Score: 0.000
+Weighted DBCV Score: 4183.509
+Doc count: 26
+
+Processing parent topic: Military Recognition and Support
+Total subtopics: 104
+Clusters (excluding noise): 3, Noise points: 0
+DBCV Score: 0.960
+Weighted DBCV Score: 4283.322
+UMAP visualization saved for Military Recognition and Support
+Doc count: 104
+
+Processing parent topic: Legislative Reform Controversies
+Total subtopics: 36
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.911
+Weighted DBCV Score: 4316.135
+UMAP visualization saved for Legislative Reform Controversies
+Doc count: 36
+
+Processing parent topic: Women’s Health Policy Reform
+Total subtopics: 32
+Clusters (excluding noise): 2, Noise points: 1
+DBCV Score: 0.424
+Weighted DBCV Score: 4329.272
+UMAP visualization saved for Women’s Health Policy Reform
+Doc count: 32
+
+Processing parent topic: Military Legislation Accountability
+Total subtopics: 40
+Clusters (excluding noise): 3, Noise points: 4
+DBCV Score: 0.456
+Weighted DBCV Score: 4345.682
+UMAP visualization saved for Military Legislation Accountability
+Doc count: 40
+
+Processing parent topic: Defense Spending Accountability
+Total subtopics: 100
+Clusters (excluding noise): 4, Noise points: 4
+DBCV Score: 0.660
+Weighted DBCV Score: 4409.065
+UMAP visualization saved for Defense Spending Accountability
+Doc count: 100
+
+Processing parent topic: Cybersecurity Policy Controversies
+Total subtopics: 43
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.975
+Weighted DBCV Score: 4450.985
+UMAP visualization saved for Cybersecurity Policy Controversies
+Doc count: 43
+
+Processing parent topic: Misc.
+Total subtopics: 134
+Too few subtopics or Misc. subtopics, skipping...
+
+Processing parent topic: Capitol Police Reform Funding
+Total subtopics: 32
+Clusters (excluding noise): 2, Noise points: 6
+DBCV Score: 0.380
+Weighted DBCV Score: 4460.856
+UMAP visualization saved for Capitol Police Reform Funding
+Doc count: 32
+
+Processing parent topic: Accountability in Government Policy
+Total subtopics: 61
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.964
+Weighted DBCV Score: 4519.675
+UMAP visualization saved for Accountability in Government Policy
+Doc count: 61
+
+Processing parent topic: Misc.
+Total subtopics: 31
+Too few subtopics or Misc. subtopics, skipping...
+
+Processing parent topic: Debt Collection Reform
+Total subtopics: 33
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.973
+Weighted DBCV Score: 4551.769
+UMAP visualization saved for Debt Collection Reform
+Doc count: 33
+
+Processing parent topic: Financial Consumer Protections
+Total subtopics: 226
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.954
+Weighted DBCV Score: 4767.454
+UMAP visualization saved for Financial Consumer Protections
+Doc count: 226
+
+Processing parent topic: Public Lands Conservation Policy
+Total subtopics: 240
+Clusters (excluding noise): 17, Noise points: 2
+DBCV Score: 0.772
+Weighted DBCV Score: 4951.275
+UMAP visualization saved for Public Lands Conservation Policy
+Doc count: 240
+
+Processing parent topic: Misc.
+Total subtopics: 27
+Too few subtopics or Misc. subtopics, skipping...
+
+Processing parent topic: Wildfire Management and Response
+Total subtopics: 39
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.981
+Weighted DBCV Score: 4989.519
+UMAP visualization saved for Wildfire Management and Response
+Doc count: 39
+
+Processing parent topic: Civil Rights Protections Expansion
+Total subtopics: 257
+Clusters (excluding noise): 15, Noise points: 8
+DBCV Score: 0.781
+Weighted DBCV Score: 5183.932
+UMAP visualization saved for Civil Rights Protections Expansion
+Doc count: 257
+
+Processing parent topic: Marriage Equality Legislation
+Total subtopics: 48
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.323
+Weighted DBCV Score: 5199.445
+UMAP visualization saved for Marriage Equality Legislation
+Doc count: 48
+
+Processing parent topic: Social Welfare Reform Debate
+Total subtopics: 45
+Clusters (excluding noise): 3, Noise points: 0
+DBCV Score: 0.780
+Weighted DBCV Score: 5234.558
+UMAP visualization saved for Social Welfare Reform Debate
+Doc count: 45
+
+Processing parent topic: Energy Infrastructure Protection
+Total subtopics: 29
+Clusters (excluding noise): 0, Noise points: 29
+DBCV Score: 0.000
+Weighted DBCV Score: 5234.558
+Doc count: 29
+
+Processing parent topic: Small Business Funding Controversies
+Total subtopics: 188
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.976
+Weighted DBCV Score: 5418.135
+UMAP visualization saved for Small Business Funding Controversies
+Doc count: 188
+
+Processing parent topic: Misc.
+Total subtopics: 154
+Too few subtopics or Misc. subtopics, skipping...
+
+Processing parent topic: Strengthening Consumer Protection Laws
+Total subtopics: 35
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.902
+Weighted DBCV Score: 5449.705
+UMAP visualization saved for Strengthening Consumer Protection Laws
+Doc count: 35
+
+Processing parent topic: Child Abuse and Domestic Violence Prevention
+Total subtopics: 56
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.964
+Weighted DBCV Score: 5503.670
+UMAP visualization saved for Child Abuse and Domestic Violence Prevention
+Doc count: 56
+
+Processing parent topic: Water Quality Protection Regulations
+Total subtopics: 121
+Clusters (excluding noise): 7, Noise points: 14
+DBCV Score: 0.576
+Weighted DBCV Score: 5565.298
+UMAP visualization saved for Water Quality Protection Regulations
+Doc count: 121
+
+Processing parent topic: Regulating PFAS Chemicals
+Total subtopics: 30
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.975
+Weighted DBCV Score: 5594.548
+UMAP visualization saved for Regulating PFAS Chemicals
+Doc count: 30
+
+Processing parent topic: Homeland Security Funding Reform
+Total subtopics: 34
+Clusters (excluding noise): 2, Noise points: 3
+DBCV Score: 0.430
+Weighted DBCV Score: 5607.886
+UMAP visualization saved for Homeland Security Funding Reform
+Doc count: 34
+
+Processing parent topic: Misc.
+Total subtopics: 101
+Too few subtopics or Misc. subtopics, skipping...
+
+Processing parent topic: Disaster Response Funding Controversy
+Total subtopics: 45
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.957
+Weighted DBCV Score: 5650.963
+UMAP visualization saved for Disaster Response Funding Controversy
+Doc count: 45
+
+Processing parent topic: Mortgage Accessibility Reform
+Total subtopics: 27
+Clusters (excluding noise): 2, Noise points: 1
+DBCV Score: 0.451
+Weighted DBCV Score: 5662.696
+UMAP visualization saved for Mortgage Accessibility Reform
+Doc count: 27
+
+Processing parent topic: Clean Water Access Initiatives
+Total subtopics: 29
+Clusters (excluding noise): 2, Noise points: 5
+DBCV Score: 0.505
+Weighted DBCV Score: 5674.813
+UMAP visualization saved for Clean Water Access Initiatives
+Doc count: 29
+
+Processing parent topic: COVID-19 Cultural Impact
+Total subtopics: 19
+Clusters (excluding noise): 2, Noise points: 4
+DBCV Score: 0.524
+Weighted DBCV Score: 5682.676
+UMAP visualization saved for COVID-19 Cultural Impact
+Doc count: 19
+
+Processing parent topic: Tribal Land Rights Restoration
+Total subtopics: 93
+Clusters (excluding noise): 3, Noise points: 0
+DBCV Score: 0.940
+Weighted DBCV Score: 5770.073
+UMAP visualization saved for Tribal Land Rights Restoration
+Doc count: 93
+
+Processing parent topic: Amateur Athlete Compensation Debate
+Total subtopics: 13
+Clusters (excluding noise): 0, Noise points: 13
+DBCV Score: 0.000
+Weighted DBCV Score: 5770.073
+Doc count: 13
+
+Processing parent topic: Animal Welfare Regulations
+Total subtopics: 41
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.949
+Weighted DBCV Score: 5808.999
+UMAP visualization saved for Animal Welfare Regulations
+Doc count: 41
+
+Processing parent topic: Sanctions Against Russia
+Total subtopics: 89
+Clusters (excluding noise): 2, Noise points: 0
+DBCV Score: 0.946
+Weighted DBCV Score: 5893.187
+UMAP visualization saved for Sanctions Against Russia
+Doc count: 89
+Total doc count processed: 10080. Original doc count: 10080
+
+Taxonomy saved to step_4.csv with weighted DBCV score: 5893.187
+Merged dataset saved successfully with 'target' column added!

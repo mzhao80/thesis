@@ -10,30 +10,35 @@ class VASTSubtopicDataset(Dataset):
     def __init__(self, model='bert-base', wiki_model=''):
         # Read the taxonomy data
         df = pd.read_csv('/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/taxonomy_data.csv')
+        # filter df where chamber is "S"
+        #df = df[df['chamber'] == 'S']
         print(f'# of total examples: {df.shape[0]}')
         
-        # Drop rows where required fields are missing
-        df = df.dropna(subset=['speaker', 'document', 'summary', 'subtopic_2'])
+        # Drop rows where required fields are missing, but preserve indices
+        df = df.dropna(subset=['speaker', 'document', 'target'])
         print(f'# of examples after dropping na: {df.shape[0]}')
 
         # Store the data
         self.speakers = df['speaker'].tolist()
         self.documents = df['document'].tolist()
-        self.subtopics = df['subtopic_2'].tolist()
+        self.subtopics_1 = df['subtopic_1'].tolist()
+        self.subtopics_2 = df['subtopic_2'].tolist()
         self.stances = [-1] * len(self.documents)  # No labels for inference
+        self.chambers = df['chamber'].tolist()
         
         # Load the tokenizer
         from transformers import AutoTokenizer
-        self.tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased')
+        self.tokenizer = AutoTokenizer.from_pretrained(model)
         
         # Process text data
         self.encodings = self.tokenizer(
             self.documents,
-            self.subtopics,
+            self.subtopics_2,
             truncation=True,
             max_length=512,
             padding='max_length',
-            return_tensors='pt'
+            return_tensors='pt',
+            return_token_type_ids=True
         )
         
     def __len__(self):
@@ -46,8 +51,10 @@ class VASTSubtopicDataset(Dataset):
             'token_type_ids': self.encodings['token_type_ids'][idx],
             'labels': self.stances[idx],
             'speaker': self.speakers[idx],
-            'subtopic': self.subtopics[idx],
-            'document': self.documents[idx]
+            'subtopics_1': self.subtopics_1[idx],
+            'subtopics_2': self.subtopics_2[idx],
+            'document': self.documents[idx],
+            'chamber': self.chambers[idx]
         }
         return item
 

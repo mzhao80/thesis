@@ -8,7 +8,7 @@ os.environ['TOKENIZERS_PARALLELISM'] = '0'
 
 # Zero-Shot Stance Detection: A Dataset and Model using Generalized Topic Representations
 class VASTZeroFewShot(Dataset):
-    def __init__(self, phase, model='bert-base', wiki_model='', inference_mode=False):
+    def __init__(self, phase, model='bert-base-uncased', wiki_model='', inference_mode=False):
         if not inference_mode:
             path = 'zero-shot-stance/data/VAST'
             if phase in ['train', 'test']:
@@ -60,11 +60,11 @@ class VASTZeroFewShot(Dataset):
 
         # os.environ['TRANSFORMERS_OFFLINE'] = '1'
         from transformers import AutoTokenizer
-        tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased')
+        tokenizer = AutoTokenizer.from_pretrained(model)
 
         tokenizer_wiki = tokenizer
         tweets_targets = [f'text: {x} target: {y}' for x, y in zip(tweets, topics)]
-        encodings = tokenizer(tweets_targets, wiki_summaries, padding=True, truncation=True)
+        encodings = tokenizer(tweets_targets, wiki_summaries, padding=True, truncation=True, return_token_type_ids=True)
         encodings_wiki = {'input_ids': [[0]] * df.shape[0], 'attention_mask': [[0]] * df.shape[0]}
        
         # encodings for the texts and tweets
@@ -116,7 +116,7 @@ class VASTZeroFewShot(Dataset):
         return self.stances.shape[0]
 
 
-def data_loader(data, phase, topic, batch_size, model='bert-base', wiki_model='', n_workers=4, inference_mode=False):
+def data_loader(data, phase, topic, batch_size, model='bert-base-uncased', wiki_model='', n_workers=4, inference_mode=False):
     shuffle = True if phase == 'train' else False
     dataset = VASTZeroFewShot(phase, model=model, wiki_model=wiki_model, inference_mode=inference_mode)
 

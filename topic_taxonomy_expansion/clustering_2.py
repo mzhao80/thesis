@@ -58,13 +58,14 @@ def generate_cluster_label(subtopics, parent_topic, client, max_attempts=5):
         "When given a second-level parent topic and a list of topics of documents clustered under the parent topic, you must generate a concise and representative third-level topic (3-7 words) "
         "that describes the common topic of the document topics clustered under the parent topic.\n"
         "The generated third-level subtopic should be a distinct child topic but still distinct from the parent topic, and should be as specific as possible."
-        "For example, a good three-level taxonomy would be 1. Defense; 2. Naval Funding; 3. Asia-Pacific Naval Buildup. "
-        "Also, the topic should be inherently unstanced. For example, you should prefer output Budget Cuts instead of Opposition to Budget Cuts. But it should still be a topic that one can take a position on because this topic will be used for stance detection."
+        "For example, a good three-level taxonomy would be 1. Defense; 2. Naval Expansion; 3. Asia-Pacific Naval Buildup. "
+        "The outputted topic should have an inherent stance someone could take a for or against position on, e.g. Energy Subsidies instead of Energy Policy, and Federal Workforce Expansion instead of Federal Workforce Size. "
+        "It should have the same political direction of inherent stance as its parent topic, so if the parent topic is Expanding Clean Energy, two possible subtopics are Expanding Nuclear Energy and Reducing Fossil Fuel Dependence."
     )
 
     prompt = (
         "Given the following parent topic and list of topics from documents clustered under a second-level parent topic, generate a third-level subtopic that is representative of "
-        "the common topic the document topics represent. It should be as specific as possible, and related to the parent topic, but it should not be substantially the same as the parent topic. It must be a policy controversy one can take a stance on of support or oppose, such as Refugee Visa Expansion.\n\n"
+        "the common topic the document topics represent. It should be as specific as possible, and a subtopic of the parent topic. It must be a policy controversy one can take a stance on (for or against). Output the topic as an inherently stanced issue, such as Expanding Refugee Visa Programs instead of Refugee Policies or Refugee Controversy.\n\n"
         "Second-Level Parent Topic: " + parent_topic + "\n\n"
         "Clustered Document Topics: " + "; ".join(subtopics) + "\n\n"
         "Answer only with the generated third-level subtopic (3-7 words):\n\n"
@@ -91,7 +92,9 @@ def generate_cluster_label(subtopics, parent_topic, client, max_attempts=5):
 
 
 def main():
-    n_components = 5
+    n_components = 10
+    n_neighbors = 15
+    min_cluster_size = 5
     weighted_score = 0
     doc_count = 0
 
@@ -104,6 +107,8 @@ def main():
     # Load the predictions CSV (which contains the original columns).
     df = pd.read_csv('step_3.csv')
     original_length = len(df)
+    # treat idx as string
+    df['idx'] = df['idx'].astype(str)
     # drop rows with no subtopic predicted
     # df = df.dropna(subset=['subtopic_2'])
     # print(f"{original_length - len(df)} rows dropped ({(original_length - len(df)) / original_length * 100:.2f}%) due to no predicted subtopic or policy area.")
@@ -116,12 +121,13 @@ def main():
     for idx, row in df.iterrows():
         path = (row['policy_area'], row['subtopic_1'], row['subtopic_2'])
         # We convert the index to a string for later concatenation.
-        source_mapping.setdefault(path, []).append(str(idx))
+        source_mapping.setdefault(path, []).append(row['idx'])
 
     embeddings = {}
 
     for subtopic in tqdm(df['subtopic_2'].unique(), desc="Generating embeddings"):
         embeddings[subtopic] = model.encode(subtopic, convert_to_numpy=True)
+    embeddings["Misc."] = model.encode("Misc.", convert_to_numpy=True)
     misc_embedding = tuple(embeddings["Misc."])
 
     # List to store cluster taxonomy information.
@@ -163,12 +169,11 @@ def main():
             original_embeddings = np.array([embeddings[subtopic] for subtopic in subtopics])
             
             # --- Dimensionality Reduction with UMAP for clustering & DBCV ---
-            umap_model = umap.UMAP(n_components=n_components, n_neighbors = 25, metric = "cosine")
+            umap_model = umap.UMAP(n_components=n_components, n_neighbors = n_neighbors, metric = "cosine")
             reduced_embeddings = umap_model.fit_transform(original_embeddings)
             d = reduced_embeddings.shape[1]  # explicitly set d = number of features after reduction
             
             # Cluster using HDBSCAN on the reduced embeddings.
-            min_cluster_size = 10
             clusterer = hdbscan.HDBSCAN(min_cluster_size=min_cluster_size)
             cluster_labels = clusterer.fit_predict(reduced_embeddings)
             cluster_labels = enforce_majority_cluster(original_embeddings, cluster_labels, misc_embedding)
@@ -217,6 +222,10 @@ def main():
             clusters = {}
             for label, text in zip(cluster_labels, subtopics):
                 clusters.setdefault(label, []).append(text)
+
+            # if there is one cluster (one unique value in cluster_labels), set all values of cluster_labels to 1. this will cause them to form one cluster.
+            if len(clusters) == 1:
+                clusters = {1: subtopics}
             
             # For each cluster, compute the medoid
             for label, texts in clusters.items():

@@ -9,7 +9,7 @@ from tqdm.auto import tqdm
 def main():
     # Define paths.
     model_dir = "./lora_bart_topics"  # Directory where the trained model was saved.
-    data_file = "/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/training_data.csv"
+    data_file = "/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/house.csv"
     
     model = AutoModelForSeq2SeqLM.from_pretrained(model_dir)
     tokenizer = AutoTokenizer.from_pretrained("facebook/bart-large-cnn")
@@ -66,6 +66,9 @@ def main():
     
     # Add a new column for the predicted subtopics.
     df["pred_subtopic"] = all_preds
+
+    # Add each document's index
+    df["idx"] = df.index
 
     # Loop through rows where pred_subtopic is missing or empty and try to regenerate.
     max_retries = 5

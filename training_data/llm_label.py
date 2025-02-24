@@ -15,7 +15,7 @@ def extract_topic(speech, policy, client, max_attempts=10):
     Returns topic
     """
     prompt = (
-        "Here we have the text of a congressional speech and a broad policy area assigned by the Congressional Research Service. For the following speech, please output only a short, general topic (1-5 words) that describes the main political issue discussed in the speech. It should be general and unstanced, for example Budget Cuts instead of Opposition to Budget Cuts.\n"
+        "Here we have the text of a congressional speech and a broad policy area assigned by the Congressional Research Service. For the following speech, please output only a short topic (1-5 words) that describes the main political issue discussed in the speech. The topic should be inherently stanced as something one could take a for or against position on. For example, you should output Budget Cuts instead of Budget Policy.\n\n"
         f"Speech: {speech}\n\n"
         f"Broad Policy Area: {policy}\n\n"
         "Response:\n"
@@ -24,7 +24,7 @@ def extract_topic(speech, policy, client, max_attempts=10):
         {"role": "system",
          "content": (
              "You are a helpful assistant that extracts the main topic from congressional speeches. "
-             "For the following speech, please output only a short, general topic (1-5 words) that describes the main political issue discussed in the speech. It should be general and unstanced, for example Budget Cuts instead of Opposition to Budget Cuts. However, it needs to be a topic that one can take a policy stance on, such as National Guard Expansion rather than National Guard. As much as possible, make it a single topic (for example, Welfare Programs instead of Social Security and Medicare)."
+             "For the following speech, please output only a topic (1-5 words) that describes the main political issue discussed in the speech. The topic should be inherently stanced as something one could take a for or against position on, such as Gun Control instead of Gun Controversy or Gun Policy. For example, you should output Budget Cuts instead of Budget Policy. Make it a single topic (for example, Welfare Programs instead of Social Security and Medicare)."
          )},
         {"role": "user", "content": prompt}
     ]
@@ -56,6 +56,7 @@ def main():
     os.makedirs(args.data_dir, exist_ok=True)
     input_path = os.path.join(args.data_dir, args.input_file)
     output_path = os.path.join(args.data_dir, args.output_file)
+    cache_path = os.path.join(args.data_dir, f"cache_{args.input_file}.csv")
     
     print("Initializing OpenAI client ...")
     client = openai.OpenAI(api_key=api_keys.OPENAI_API_KEY)
@@ -74,7 +75,7 @@ def main():
 
     rows = []
 
-    if not os.path.exists("cache.csv"):
+    if not os.path.exists(cache_path):
         for i, row in tqdm(df.iterrows(), total=len(df)):
             speech = row["speech"]
             policy = str(row["policy_area"])
@@ -85,13 +86,13 @@ def main():
             print(f"Error: Number of topics ({len(all_topics)}) does not match number of rows in df ({len(df)})")
 
         # write all topics to csv, with each topic on a row
-        with open("cache.csv", "w", newline="", encoding="utf-8") as f:
+        with open(cache_path, "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
             writer.writerow(["topic"])
             writer.writerows([[topic] for topic in all_topics])
     else:
         # read in all_topics
-        all_topics = pd.read_csv("cache.csv")["topic"].tolist()
+        all_topics = pd.read_csv(cache_path)["topic"].tolist()
 
     for (idx, row), topic in zip(df.iterrows(), all_topics):
         speech = row["speech"]

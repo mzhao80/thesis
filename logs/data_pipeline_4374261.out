@@ -1,1 +1,21 @@
 Running preprocess.py
+Running llm_label.py
+Initializing OpenAI client ...
+Extracting topics using LLM ...
+Original df length: 12429
+New df length: 0
+Percentage dropped: 100.00%
+[]
+Preprocessing complete. Training data saved to /n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/training_data.csv.
+Running topic_generation.py
+Running clustering.py
+
+Processing parent topic: Government Operations and Politics
+Total subtopics: 373
+Clusters (excluding noise): 5, Noise points: 36
+DBCV Score: 0.546
+Weighted DBCV Score: 184.133
+UMAP visualization saved for Government Operations and Politics
+Running topic_generation_2.py
+Running clustering_2.py
+Running viz_tree.py

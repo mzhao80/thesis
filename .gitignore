@@ -6,3 +6,5 @@ vast/ckp/*
 training_data/cache.csv
 topic_taxonomy_expansion/step_1.csv
 topic_taxonomy_expansion/step_3.csv
+*.csv
+*/cache.json
