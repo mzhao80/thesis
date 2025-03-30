@@ -1,4 +1,4 @@
-# Stance-Based Ideal Points: A Framework for Ideological Analysis from Legislative Speech
+# Stance-Based Ideal Points
 
 This repository contains the implementation of a comprehensive framework for extracting ideological positions from text data, with a particular application to estimating legislators' ideal points from their speeches in the Congressional Record. The framework addresses limitations in traditional vote-based methods (which rely on binary roll-call votes) and existing text-based approaches (which focus on lexical co-occurrence), by leveraging the rich semantic content of legislative discourse.
 
