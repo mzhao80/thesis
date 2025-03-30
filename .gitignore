@@ -2,9 +2,10 @@ topic_taxonomy_expansion/models/*
 */api_keys.py
 */wandb/*
 vast/ckp/*
+vast/ckp_new_new/*
 */__pycache__/*
-training_data/cache.csv
-topic_taxonomy_expansion/step_1.csv
-topic_taxonomy_expansion/step_3.csv
 *.csv
 */cache.json
+topic_taxonomy_expansion/bertopic_model
+vast/ckp_new_new/finetuned_model.pt
+topic_taxonomy_expansion/step_1.csv 

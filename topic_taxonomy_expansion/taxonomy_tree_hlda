@@ -1,0 +1,2444 @@
+// Taxonomy Tree
+digraph {
+	graph [nodesep=0.5 ranksep=2.0 ratio=expand]
+	node [fontsize=14 height=0.4 margin=0.1 width=0.6]
+	edge [penwidth=0.8]
+	dpi=1200 rankdir=LR size="60,50"
+	policy_0 [label="Economics and Public Finance (1311, 12.51%)"]
+	subtopic1_0 [label="section sec funds provided division title program appropriations provides certain (1063, 81.08%)"]
+	policy_0 -> subtopic1_0
+	subtopic2_1 [label="funding sec provides act energy credit program available shall remain (1013, 95.30%)"]
+	subtopic1_0 -> subtopic2_1
+	subtopic2_2 [label="administration federal bill appropriations housing office development safety provides related (21, 1.98%)"]
+	subtopic1_0 -> subtopic2_2
+	subtopic2_3 [label="bill election states president federal people campaign state act government (13, 1.22%)"]
+	subtopic1_0 -> subtopic2_3
+	subtopic2_4 [label="extends act appropriations sec 2022 continuing december division provides programs (9, 0.85%)"]
+	subtopic1_0 -> subtopic2_4
+	subtopic2_5 [label="va administration bill appropriations housing office care safety transportation data (3, 0.28%)"]
+	subtopic1_0 -> subtopic2_5
+	subtopic2_6 [label="bill incarcerated act justice juveniles communications attorney mr system person (1, 0.09%)"]
+	subtopic1_0 -> subtopic2_6
+	subtopic2_7 [label="ocean acidification bill act research coastal national support coast committee (1, 0.09%)"]
+	subtopic1_0 -> subtopic2_7
+	subtopic2_8 [label="bill highlands land conservation act service federal forest interior data (1, 0.09%)"]
+	subtopic1_0 -> subtopic2_8
+	subtopic2_9 [label="bill act must suspend move rules pass r veterans h (1, 0.09%)"]
+	subtopic1_0 -> subtopic2_9
+	subtopic1_10 [label="bill act would also time legislation people support mr speaker (235, 17.93%)"]
+	policy_0 -> subtopic1_10
+	subtopic2_11 [label="programs national security department related requires certain authorizes education federal (161, 68.51%)"]
+	subtopic1_10 -> subtopic2_11
+	subtopic2_12 [label="administration federal housing appropriations bill development office transportation provides safety (44, 18.72%)"]
+	subtopic1_10 -> subtopic2_12
+	subtopic2_13 [label="service appropriations bill food provides nutrition rural programs agricultural administration (24, 10.21%)"]
+	subtopic1_10 -> subtopic2_13
+	subtopic2_14 [label="budget materials agency justification public congress agencies congressional federal transparency (5, 2.13%)"]
+	subtopic1_10 -> subtopic2_14
+	subtopic2_15 [label="ukraine russia ukrainian russian war military weapons nato world week (1, 0.43%)"]
+	subtopic1_10 -> subtopic2_15
+	subtopic1_16 [label="women violence act bill sexual programs assault victims domestic new (11, 0.84%)"]
+	policy_0 -> subtopic1_16
+	subtopic2_17 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (11, 100.00%)"]
+	subtopic1_16 -> subtopic2_17
+	subtopic1_18 [label="university foundation health medicine research cancer america coalition nih institute (1, 0.08%)"]
+	policy_0 -> subtopic1_18
+	subtopic2_19 [label="american association society medical college surgeons chapter oncology academy national (1, 100.00%)"]
+	subtopic1_18 -> subtopic2_19
+	subtopic1_20 [label="administration rule housing proposed significant scope mike public amendment farm (1, 0.08%)"]
+	policy_0 -> subtopic1_20
+	subtopic2_21 [label="congress member farmers federal would bill information emissions r provides (1, 100.00%)"]
+	subtopic1_20 -> subtopic2_21
+	policy_1 [label="Armed Forces and National Security (1304, 12.44%)"]
+	subtopic1_22 [label="bill act would also time legislation people support mr speaker (877, 67.25%)"]
+	policy_1 -> subtopic1_22
+	subtopic2_23 [label="programs national security department related requires certain authorizes education federal (624, 71.15%)"]
+	subtopic1_22 -> subtopic2_23
+	subtopic2_24 [label="veterans va bill affairs department care act health requires compensation (54, 6.16%)"]
+	subtopic1_22 -> subtopic2_24
+	subtopic2_25 [label="israel iron dome defense appropriations supplemental system support rocket today (28, 3.19%)"]
+	subtopic1_22 -> subtopic2_25
+	subtopic2_26 [label="veterans va health contraception veteran act access bill affairs speaker (21, 2.39%)"]
+	subtopic1_22 -> subtopic2_26
+	subtopic2_27 [label="veterans va veteran enrollment care instructions notice electronic health system (20, 2.28%)"]
+	subtopic1_22 -> subtopic2_27
+	subtopic2_28 [label="veterans training health mental enforcement law va service program act (15, 1.71%)"]
+	subtopic1_22 -> subtopic2_28
+	subtopic2_29 [label="va harassment veterans employment discrimination sexual complaint requires veteran policies (10, 1.14%)"]
+	subtopic1_22 -> subtopic2_29
+	subtopic2_30 [label="program veterans must assistance benefits va bill transfer credits retraining (9, 1.03%)"]
+	subtopic1_22 -> subtopic2_30
+	subtopic2_31 [label="health veterans mental minority research va support care disparities program (8, 0.91%)"]
+	subtopic1_22 -> subtopic2_31
+	subtopic2_32 [label="veterans va bill veteran act service automobile vehicle cemetery certain (7, 0.80%)"]
+	subtopic1_22 -> subtopic2_32
+	subtopic2_33 [label="veterans va automation benefits affairs rural credit ketchum department homeless (7, 0.80%)"]
+	subtopic1_22 -> subtopic2_33
+	subtopic2_34 [label="va foia veterans act information requests records website must make (7, 0.80%)"]
+	subtopic1_22 -> subtopic2_34
+	subtopic2_35 [label="veterans va employee care fairness secretary employees collective administration rights (7, 0.80%)"]
+	subtopic1_22 -> subtopic2_35
+	subtopic2_36 [label="information 19 odni origin covid deserve american get virology institute (5, 0.57%)"]
+	subtopic1_22 -> subtopic2_36
+	subtopic2_37 [label="health care mental providers among behavioral suicide must hhs grants (4, 0.46%)"]
+	subtopic1_22 -> subtopic2_37
+	subtopic2_38 [label="program africa african leaders veterans young leadership support yali must (4, 0.46%)"]
+	subtopic1_22 -> subtopic2_38
+	subtopic2_39 [label="va counselors employment equal cap workforce employees opportunity discrimination counselor (3, 0.34%)"]
+	subtopic1_22 -> subtopic2_39
+	subtopic2_40 [label="burn registry pit veterans death open individual cause airborne exposures (3, 0.34%)"]
+	subtopic1_22 -> subtopic2_40
+	subtopic2_41 [label="women medal six eight congressional triple war gold mail service (3, 0.34%)"]
+	subtopic1_22 -> subtopic2_41
+	subtopic2_42 [label="isakson senator johnny veterans georgia regional office atlanta affairs senate (3, 0.34%)"]
+	subtopic1_22 -> subtopic2_42
+	subtopic2_43 [label="food veterans insecurity va veteran hunger mazon assistance security federal (3, 0.34%)"]
+	subtopic1_22 -> subtopic2_43
+	subtopic2_44 [label="health systems vaccination immunization public information pregnant bill 19 care (2, 0.23%)"]
+	subtopic1_22 -> subtopic2_44
+	subtopic2_45 [label="cannabis marijuana act directs study related state research legalization recreational (2, 0.23%)"]
+	subtopic1_22 -> subtopic2_45
+	subtopic2_46 [label="contraception bill right access pregnancy prevent act including health care (2, 0.23%)"]
+	subtopic1_22 -> subtopic2_46
+	subtopic2_47 [label="military survivor retiree death comfort veteran defense month overpayment decedent (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_47
+	subtopic2_48 [label="opioids back day medications unused take drop cabinet drugs dea (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_48
+	subtopic2_49 [label="labor forced xinjiang shall sanctions china congress uyghur goods u (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_49
+	subtopic2_50 [label="contraception women contraceptives access right control oral health birth counter (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_50
+	subtopic2_51 [label="housing safety fire federally assisted public temperature smoke alarms units (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_51
+	subtopic2_52 [label="families case law murder victims cold cases enforcement family homicide (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_52
+	subtopic2_53 [label="congenital birth treatment necessary insurance defects coverage medically anomalies health (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_53
+	subtopic2_54 [label="veterans park honor gold star police service national fees special (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_54
+	subtopic2_55 [label="israeli military human israel hamas said rights attacks strikes hrw (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_55
+	subtopic2_56 [label="small recovery act threshold disaster projects project assistance emergency must (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_56
+	subtopic2_57 [label="women pregnant incarcerated health pregnancy requires needs bill care custody (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_57
+	subtopic2_58 [label="women maternal stillbirth veterans health care maternity served pregnancy prevention (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_58
+	subtopic2_59 [label="officers safety public benefits duty officer stress traumatic death disorder (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_59
+	subtopic2_60 [label="abortion services bill health provider may women medically restrictions governments (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_60
+	subtopic2_61 [label="rewards crimes war information act law department state program bill (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_61
+	subtopic2_62 [label="nicaragua ortega department sanctions must act corruption state renacer targeted (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_62
+	subtopic2_63 [label="district gift tax academy residents federal u rfra service c (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_63
+	subtopic2_64 [label="student loan debt loans interest federal refinancing rates rate education (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_64
+	subtopic2_65 [label="sexual arbitration harassment assault forced act women court dispute agreements (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_65
+	subtopic2_66 [label="ukraine lease russia defense lend president articles putin invasion russian (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_66
+	subtopic2_67 [label="guard national district program educators c members financial general educator (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_67
+	subtopic2_68 [label="uyghur china rights human uyghurs department groups state minority issues (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_68
+	subtopic2_69 [label="social determinants health medicaid guidance states 2021 address insurance caring (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_69
+	subtopic2_70 [label="safety information faa airmen pilots force task repair stations aviation (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_70
+	subtopic2_71 [label="networks cybersecurity equipment communications act bill open mobile information security (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_71
+	subtopic2_72 [label="dhs homeland security training department h r program acquisition employee (1, 0.11%)"]
+	subtopic1_22 -> subtopic2_72
+	subtopic1_73 [label="section sec funds provided division title program appropriations provides certain (351, 26.92%)"]
+	policy_1 -> subtopic1_73
+	subtopic2_74 [label="va veterans sec must toxic service section exposure care specified (107, 30.48%)"]
+	subtopic1_73 -> subtopic2_74
+	subtopic2_75 [label="requires division authorizes related program establishes department security certain guard (64, 18.23%)"]
+	subtopic1_73 -> subtopic2_75
+	subtopic2_76 [label="funding sec provides act energy credit program available shall remain (54, 15.38%)"]
+	subtopic1_73 -> subtopic2_76
+	subtopic2_77 [label="va veterans sec must toxic service section care specified exposure (23, 6.55%)"]
+	subtopic1_73 -> subtopic2_77
+	subtopic2_78 [label="va veterans sec must toxic section service specified exposure care (14, 3.99%)"]
+	subtopic1_73 -> subtopic2_78
+	subtopic2_79 [label="va veterans sec must toxic service exposure care specified health (14, 3.99%)"]
+	subtopic1_73 -> subtopic2_79
+	subtopic2_80 [label="requires division authorizes related security department establishes program coast guard (12, 3.42%)"]
+	subtopic1_73 -> subtopic2_80
+	subtopic2_81 [label="bill election states president federal people campaign state act government (10, 2.85%)"]
+	subtopic1_73 -> subtopic2_81
+	subtopic2_82 [label="va veterans sec must toxic service section exposure specified care (10, 2.85%)"]
+	subtopic1_73 -> subtopic2_82
+	subtopic2_83 [label="requires division authorizes related establishes department security certain coast guard (7, 1.99%)"]
+	subtopic1_73 -> subtopic2_83
+	subtopic2_84 [label="bill act must suspend move rules pass r veterans h (7, 1.99%)"]
+	subtopic1_73 -> subtopic2_84
+	subtopic2_85 [label="va veterans toxic must service exposure care specified medical health (4, 1.14%)"]
+	subtopic1_73 -> subtopic2_85
+	subtopic2_86 [label="requires division authorizes coast security related department guard issues defense (4, 1.14%)"]
+	subtopic1_73 -> subtopic2_86
+	subtopic2_87 [label="requires division authorizes coast related guard dod defense department security (4, 1.14%)"]
+	subtopic1_73 -> subtopic2_87
+	subtopic2_88 [label="bill gender identity act equality sexual discrimination orientation including public (3, 0.85%)"]
+	subtopic1_73 -> subtopic2_88
+	subtopic2_89 [label="requires division authorizes guard coast establishes security defense dod military (3, 0.85%)"]
+	subtopic1_73 -> subtopic2_89
+	subtopic2_90 [label="ocean acidification bill act research coastal national support coast committee (2, 0.57%)"]
+	subtopic1_73 -> subtopic2_90
+	subtopic2_91 [label="act native items cultural human american issues department remains export (2, 0.57%)"]
+	subtopic1_73 -> subtopic2_91
+	subtopic2_92 [label="pfas water epa bill must substances act health standards hazardous (2, 0.57%)"]
+	subtopic1_73 -> subtopic2_92
+	subtopic2_93 [label="water act tribe arizona agreement river interior settlement bill crit (1, 0.28%)"]
+	subtopic1_73 -> subtopic2_93
+	subtopic2_94 [label="bill highlands land conservation act service federal forest interior data (1, 0.28%)"]
+	subtopic1_73 -> subtopic2_94
+	subtopic2_95 [label="hate crimes bill law justice department crime covid 19 doj (1, 0.28%)"]
+	subtopic1_73 -> subtopic2_95
+	subtopic2_96 [label="beneficiary insurance life va insured years designated veterans person payment (1, 0.28%)"]
+	subtopic1_73 -> subtopic2_96
+	subtopic2_97 [label="trail service forest completion bill water amendment interior mr divide (1, 0.28%)"]
+	subtopic1_73 -> subtopic2_97
+	subtopic1_98 [label="american us african americans country many years one today george (31, 2.38%)"]
+	policy_1 -> subtopic1_98
+	subtopic2_99 [label="army war medal gold congressional world ghost bill ii service (31, 100.00%)"]
+	subtopic1_98 -> subtopic2_99
+	subtopic1_100 [label="department veterans atlanta medical center act senator affairs georgia cleland (15, 1.15%)"]
+	policy_1 -> subtopic1_100
+	subtopic2_101 [label="veterans rasmuson isakson alaska colonel office regional va women mary (15, 100.00%)"]
+	subtopic1_100 -> subtopic2_101
+	subtopic1_102 [label="war women world ii memorial home front worked bill act (9, 0.69%)"]
+	policy_1 -> subtopic1_102
+	subtopic2_103 [label="six triple eight battalion gold medal congressional women 6888th mail (9, 100.00%)"]
+	subtopic1_102 -> subtopic2_103
+	subtopic1_104 [label="women violence act bill sexual programs assault victims domestic new (8, 0.61%)"]
+	policy_1 -> subtopic1_104
+	subtopic2_105 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (8, 100.00%)"]
+	subtopic1_104 -> subtopic2_105
+	subtopic1_106 [label="veterans breast va cancer services mammography must care access national (5, 0.38%)"]
+	policy_1 -> subtopic1_106
+	subtopic2_107 [label="imaging genetic expand female molecular integrated support implement enhance group (5, 100.00%)"]
+	subtopic1_106 -> subtopic2_107
+	subtopic1_108 [label="va clothing allowance veteran veterans bill longer must notice eligibility (4, 0.31%)"]
+	policy_1 -> subtopic1_108
+	subtopic2_109 [label="let live loss protect disabilities payments pledged millions accelerated courageous (4, 100.00%)"]
+	subtopic1_108 -> subtopic2_109
+	subtopic1_110 [label="district c bill columbia federal act would authority local government (2, 0.15%)"]
+	policy_1 -> subtopic1_110
+	subtopic2_111 [label="statue commission board park removal buildings ncpc interior land zoning (2, 100.00%)"]
+	subtopic1_110 -> subtopic2_111
+	subtopic1_112 [label="would washington bill rule act district channel proposed access columbia (1, 0.08%)"]
+	policy_1 -> subtopic1_112
+	subtopic2_113 [label="guard days housing 30 national bah members deployed receive allowance (1, 100.00%)"]
+	subtopic1_112 -> subtopic2_113
+	subtopic1_114 [label="campus va veterans angeles los use funds west bill land (1, 0.08%)"]
+	policy_1 -> subtopic1_114
+	subtopic2_115 [label="leases housing enhanced go implementing exclusively supposed 2016 let finally (1, 100.00%)"]
+	subtopic1_114 -> subtopic2_115
+	policy_2 [label="Government Operations and Politics (1243, 11.86%)"]
+	subtopic1_116 [label="bill act would also time legislation people support mr speaker (697, 56.07%)"]
+	policy_2 -> subtopic1_116
+	subtopic2_117 [label="programs national security department related requires certain authorizes education federal (187, 26.83%)"]
+	subtopic1_116 -> subtopic2_117
+	subtopic2_118 [label="voting bill vote election voter federal campaign establishes rights registration (112, 16.07%)"]
+	subtopic1_116 -> subtopic2_118
+	subtopic2_119 [label="postal service usps bill benefits program government health must office (49, 7.03%)"]
+	subtopic1_116 -> subtopic2_119
+	subtopic2_120 [label="bill state president election presidential vice specifies electoral votes act (27, 3.87%)"]
+	subtopic1_116 -> subtopic2_120
+	subtopic2_121 [label="puerto rico status bill plebiscite shall voter choice statehood political (26, 3.73%)"]
+	subtopic1_116 -> subtopic2_121
+	subtopic2_122 [label="service schedule positions excepted f order president placed federal executive (25, 3.59%)"]
+	subtopic1_116 -> subtopic2_122
+	subtopic2_123 [label="data information survey agencies lgbtqi sexual gender orientation identity sex (24, 3.44%)"]
+	subtopic1_116 -> subtopic2_123
+	subtopic2_124 [label="court supreme justice police justices protect marshal protection bill family (22, 3.16%)"]
+	subtopic1_116 -> subtopic2_124
+	subtopic2_125 [label="russia ukraine russian president putin trade energy belarus bill products (16, 2.30%)"]
+	subtopic1_116 -> subtopic2_125
+	subtopic2_126 [label="workers federal injured physician compensation nurse practitioners assistants treatment program (15, 2.15%)"]
+	subtopic1_116 -> subtopic2_126
+	subtopic2_127 [label="access voting program advocacy protection act pava bill inclusion vote (13, 1.87%)"]
+	subtopic1_116 -> subtopic2_127
+	subtopic2_128 [label="mr speaker senate president session joint shuwanza house parliamentary vice (10, 1.43%)"]
+	subtopic1_116 -> subtopic2_128
+	subtopic2_129 [label="dhs homeland security training department h r program acquisition employee (10, 1.43%)"]
+	subtopic1_116 -> subtopic2_129
+	subtopic2_130 [label="conflicts interest organizational federal small contractors agency agencies businesses subcontracting (10, 1.43%)"]
+	subtopic1_116 -> subtopic2_130
+	subtopic2_131 [label="poverty areas persistent bill federal communities investments resources need report (10, 1.43%)"]
+	subtopic1_116 -> subtopic2_131
+	subtopic2_132 [label="guidance agency clarity documents law small federal businesses agencies public (8, 1.15%)"]
+	subtopic1_116 -> subtopic2_132
+	subtopic2_133 [label="election president presidential state elections democracy bill vice electoral votes (7, 1.00%)"]
+	subtopic1_116 -> subtopic2_133
+	subtopic2_134 [label="acquisition dhs programs department board management review security homeland responsibilities (7, 1.00%)"]
+	subtopic1_116 -> subtopic2_134
+	subtopic2_135 [label="postal service usps benefits health bill government program retirees medicare (7, 1.00%)"]
+	subtopic1_116 -> subtopic2_135
+	subtopic2_136 [label="voting vote rights election john lewis democracy campaign voter preclearance (6, 0.86%)"]
+	subtopic1_116 -> subtopic2_136
+	subtopic2_137 [label="mr january committee president resolution capitol congress meadows select attack (5, 0.72%)"]
+	subtopic1_116 -> subtopic2_137
+	subtopic2_138 [label="records plan backlog veterans requests access backlogs center nprc national (5, 0.72%)"]
+	subtopic1_116 -> subtopic2_138
+	subtopic2_139 [label="bill president state electoral election presidential vice congress house january (5, 0.72%)"]
+	subtopic1_116 -> subtopic2_139
+	subtopic2_140 [label="construction services reverse complex auctions design price bill federal substantial (4, 0.57%)"]
+	subtopic1_116 -> subtopic2_140
+	subtopic2_141 [label="election state votes president day arizona constitution registration voting said (4, 0.57%)"]
+	subtopic1_116 -> subtopic2_141
+	subtopic2_142 [label="lighting energy efficient systems bill gsa buildings cost requirements effective (4, 0.57%)"]
+	subtopic1_116 -> subtopic2_142
+	subtopic2_143 [label="cloud communications security council fedramp authorization federal bill reliability interoperability (3, 0.43%)"]
+	subtopic1_116 -> subtopic2_143
+	subtopic2_144 [label="putin ukraine sanctions nord russia stream president pipeline 2 biden (3, 0.43%)"]
+	subtopic1_116 -> subtopic2_144
+	subtopic2_145 [label="vote voting election democracy freedom country senator elections voters voter (3, 0.43%)"]
+	subtopic1_116 -> subtopic2_145
+	subtopic2_146 [label="voting vote rights right act texas election americans lewis voter (3, 0.43%)"]
+	subtopic1_116 -> subtopic2_146
+	subtopic2_147 [label="voting voter vote laws election federal states rights state establishes (3, 0.43%)"]
+	subtopic1_116 -> subtopic2_147
+	subtopic2_148 [label="energy oil gas putin biden american world usps joe vladimir (3, 0.43%)"]
+	subtopic1_116 -> subtopic2_148
+	subtopic2_149 [label="retirement plans act workers employees employer strong savings secure securing (3, 0.43%)"]
+	subtopic1_116 -> subtopic2_149
+	subtopic2_150 [label="center keller helen national stamps deaf conservation blind species stamp (3, 0.43%)"]
+	subtopic1_116 -> subtopic2_150
+	subtopic2_151 [label="technology equipment repair computer computers veterans students broadband rural need (3, 0.43%)"]
+	subtopic1_116 -> subtopic2_151
+	subtopic2_152 [label="vote voting rights democracy election day senate republican party senator (2, 0.29%)"]
+	subtopic1_116 -> subtopic2_152
+	subtopic2_153 [label="guard national district program educators c members financial general educator (2, 0.29%)"]
+	subtopic1_116 -> subtopic2_153
+	subtopic2_154 [label="disaster assistance fema federal bill emergency disasters management agency rural (2, 0.29%)"]
+	subtopic1_116 -> subtopic2_154
+	subtopic2_155 [label="veterans park honor gold star police service national fees special (2, 0.29%)"]
+	subtopic1_116 -> subtopic2_155
+	subtopic2_156 [label="forest service trail bill completion wildfire wildfires interior divide continental (2, 0.29%)"]
+	subtopic1_116 -> subtopic2_156
+	subtopic2_157 [label="iraq military aumf use congress force 2002 war authorization repeal (2, 0.29%)"]
+	subtopic1_116 -> subtopic2_157
+	subtopic2_158 [label="border flights biden administration state communities president presidential election immigrants (2, 0.29%)"]
+	subtopic1_116 -> subtopic2_158
+	subtopic2_159 [label="ukraine lease russia defense lend president articles putin invasion russian (2, 0.29%)"]
+	subtopic1_116 -> subtopic2_159
+	subtopic2_160 [label="budget materials agency justification public congress agencies congressional federal transparency (2, 0.29%)"]
+	subtopic1_116 -> subtopic2_160
+	subtopic2_161 [label="rewards crimes war information act law department state program bill (2, 0.29%)"]
+	subtopic1_116 -> subtopic2_161
+	subtopic2_162 [label="wellstone rustin paul building minnesota rights federal civil senator life (2, 0.29%)"]
+	subtopic1_116 -> subtopic2_162
+	subtopic2_163 [label="local nomination c courts president senate district vacancy judges congress (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_163
+	subtopic2_164 [label="process founding constitution ability fathers follow nowhere electors followed selecting (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_164
+	subtopic2_165 [label="democracy heard court pennsylvania representative constitution case judge f independence (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_165
+	subtopic2_166 [label="covid fraud 19 eidl limitations statute language pandemic access sba (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_166
+	subtopic2_167 [label="museum children nation capital ncm building remain center gsa ncr (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_167
+	subtopic2_168 [label="house democrats texas quorum warrants voting chamber tuesday special session (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_168
+	subtopic2_169 [label="infrastructure bridges hate roads tax doj hikes supervised fund raising (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_169
+	subtopic2_170 [label="job january disenfranchise office description violent election 80 protest responsibility (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_170
+	subtopic2_171 [label="fed officials chair reserve ethics interest powell decisions problem integrity (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_171
+	subtopic2_172 [label="president vote spouse former gender family century 21st immediate debate (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_172
+	subtopic2_173 [label="veterans va automation benefits affairs rural credit ketchum department homeless (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_173
+	subtopic2_174 [label="agency research health must bill arpa hhs h high director (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_174
+	subtopic2_175 [label="putin ukrainian people ukraine island freedom snake ukrainians russian fighting (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_175
+	subtopic2_176 [label="parks veterans national lands pass gold families star recreational yellowstone (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_176
+	subtopic2_177 [label="benefits pension pbgc payment delphi monthly bill plans corporation plan (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_177
+	subtopic2_178 [label="judge jackson court supreme president justice usps postal trump nominee (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_178
+	subtopic2_179 [label="dir wyden usps clawbacks fees grassley pharmacy fee rural pharmacists (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_179
+	subtopic2_180 [label="maduro venezuela regime oil venezuelan biden administration american putin business (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_180
+	subtopic2_181 [label="advertising businesses federal owned gao agencies minorities contracts information sdbs (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_181
+	subtopic2_182 [label="census citizenship decennial bureau acs participation question 2020 status questions (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_182
+	subtopic2_183 [label="va foia veterans act information requests records website must make (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_183
+	subtopic2_184 [label="air cabin aircraft faa airline quality incidents fume fumes toxic (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_184
+	subtopic2_185 [label="veterans va bill affairs department care act health requires compensation (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_185
+	subtopic2_186 [label="lgbtq students suicide youth school mental training health bento prevention (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_186
+	subtopic2_187 [label="veterans training health mental enforcement law va service program act (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_187
+	subtopic2_188 [label="small recovery act threshold disaster projects project assistance emergency must (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_188
+	subtopic2_189 [label="elections campaign disclose spending billion secret voters donors influence contributions (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_189
+	subtopic2_190 [label="risk resilience president natural disaster community hazard zones assessment data (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_190
+	subtopic2_191 [label="small business program women businesses sba loan owned bill 7 (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_191
+	subtopic2_192 [label="administration federal housing appropriations bill development office transportation provides safety (1, 0.14%)"]
+	subtopic1_116 -> subtopic2_192
+	subtopic1_193 [label="section sec funds provided division title program appropriations provides certain (425, 34.19%)"]
+	policy_2 -> subtopic1_193
+	subtopic2_194 [label="bill election states president federal people campaign state act government (395, 92.94%)"]
+	subtopic1_193 -> subtopic2_194
+	subtopic2_195 [label="bill act must suspend move rules pass r veterans h (8, 1.88%)"]
+	subtopic1_193 -> subtopic2_195
+	subtopic2_196 [label="security homeland dhs bill items act procurement department sets oig (4, 0.94%)"]
+	subtopic1_193 -> subtopic2_196
+	subtopic2_197 [label="funding sec provides act energy credit program available shall remain (3, 0.71%)"]
+	subtopic1_193 -> subtopic2_197
+	subtopic2_198 [label="c bill district pay courts cfo authority columbia rate court (3, 0.71%)"]
+	subtopic1_193 -> subtopic2_198
+	subtopic2_199 [label="mentor program security business protege small homeland firm department fema (3, 0.71%)"]
+	subtopic1_193 -> subtopic2_199
+	subtopic2_200 [label="sec gsa leasing authority estate lease real commission congress million (2, 0.47%)"]
+	subtopic1_193 -> subtopic2_200
+	subtopic2_201 [label="shall sec nsf science awards national office initiative standards quantum (2, 0.47%)"]
+	subtopic1_193 -> subtopic2_201
+	subtopic2_202 [label="water act tribe arizona agreement river interior settlement bill crit (1, 0.24%)"]
+	subtopic1_193 -> subtopic2_202
+	subtopic2_203 [label="ocean acidification bill act research coastal national support coast committee (1, 0.24%)"]
+	subtopic1_193 -> subtopic2_203
+	subtopic2_204 [label="trail service forest completion bill water amendment interior mr divide (1, 0.24%)"]
+	subtopic1_193 -> subtopic2_204
+	subtopic2_205 [label="bill gender identity act equality sexual discrimination orientation including public (1, 0.24%)"]
+	subtopic1_193 -> subtopic2_205
+	subtopic2_206 [label="bill fha housing mortgage appraisers financial time homebuyers first mr (1, 0.24%)"]
+	subtopic1_193 -> subtopic2_206
+	subtopic1_207 [label="certificate state vote electors purports ascertain return advised parliamentarians appoint (78, 6.28%)"]
+	policy_2 -> subtopic1_207
+	subtopic2_208 [label="state president votes received vice vote electoral r authentic regular (78, 100.00%)"]
+	subtopic1_207 -> subtopic2_208
+	subtopic1_209 [label="women violence act bill sexual programs assault victims domestic new (12, 0.97%)"]
+	policy_2 -> subtopic1_209
+	subtopic2_210 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (11, 91.67%)"]
+	subtopic1_209 -> subtopic2_210
+	subtopic2_211 [label="postal ca service usps tx pa ny il reform health (1, 8.33%)"]
+	subtopic1_209 -> subtopic2_211
+	subtopic1_212 [label="district c bill columbia federal act would authority local government (10, 0.80%)"]
+	policy_2 -> subtopic1_212
+	subtopic2_213 [label="statue commission board park removal buildings ncpc interior land zoning (4, 40.00%)"]
+	subtopic1_212 -> subtopic2_213
+	subtopic2_214 [label="bridge law repeal virginia obstructing person bridges accountability connecting obstruct (2, 20.00%)"]
+	subtopic1_212 -> subtopic2_214
+	subtopic2_215 [label="president mpd police department federalize emergency federalization summer protect exist (1, 10.00%)"]
+	subtopic1_212 -> subtopic2_215
+	subtopic2_216 [label="dcng leave employees u civilian 5 pay members 5519 drafting (1, 10.00%)"]
+	subtopic1_212 -> subtopic2_216
+	subtopic2_217 [label="park washington war defenses national creek rock civil nation capital (1, 10.00%)"]
+	subtopic1_212 -> subtopic2_217
+	subtopic2_218 [label="special elections election board days set 2012 hold complete tuesday (1, 10.00%)"]
+	subtopic1_212 -> subtopic2_218
+	subtopic1_219 [label="election state court legislature constitution votes pennsylvania vote presidential voting (9, 0.72%)"]
+	policy_2 -> subtopic1_219
+	subtopic2_220 [label="arizona ballots electors would governor hearing county fraud maricopa counting (8, 88.89%)"]
+	subtopic1_219 -> subtopic2_220
+	subtopic2_221 [label="illegal exhibit elections aliens biden noncitizens joe american alien citizenship (1, 11.11%)"]
+	subtopic1_219 -> subtopic2_221
+	subtopic1_222 [label="department veterans atlanta medical center act senator affairs georgia cleland (5, 0.40%)"]
+	policy_2 -> subtopic1_222
+	subtopic2_223 [label="veterans rasmuson isakson alaska colonel office regional va women mary (5, 100.00%)"]
+	subtopic1_222 -> subtopic2_223
+	subtopic1_224 [label="doss patrol border station donna rocksprings texas agent bill u (4, 0.32%)"]
+	policy_2 -> subtopic1_224
+	subtopic2_225 [label="del united naming capitalist chipped bounce crammed leisure portrayed weinstein (4, 100.00%)"]
+	subtopic1_224 -> subtopic2_225
+	subtopic1_226 [label="section nvra 8 fernandes states enforcement voter 7 division voting (1, 0.08%)"]
+	policy_2 -> subtopic1_226
+	subtopic2_227 [label="list maintenance leadership told provisions voters registration vote investigations election (1, 100.00%)"]
+	subtopic1_226 -> subtopic2_227
+	subtopic1_228 [label="mailing press letter r media employees carriers valley management marketing (1, 0.08%)"]
+	policy_2 -> subtopic1_228
+	subtopic2_229 [label="postal association inc national mail services usps service direct solutions (1, 100.00%)"]
+	subtopic1_228 -> subtopic2_229
+	subtopic1_230 [label="step legislation senate c transmittal employees capitol district chairman bill (1, 0.08%)"]
+	policy_2 -> subtopic1_230
+	subtopic2_231 [label="signs oversight 4 grandsons rebut capitalist bounce crammed leisure portrayed (1, 100.00%)"]
+	subtopic1_230 -> subtopic2_231
+	policy_3 [label="Crime and Law Enforcement (883, 8.42%)"]
+	subtopic1_232 [label="bill act would also time legislation people support mr speaker (418, 47.34%)"]
+	policy_3 -> subtopic1_232
+	subtopic2_233 [label="programs national security department related requires certain authorizes education federal (107, 25.60%)"]
+	subtopic1_232 -> subtopic2_233
+	subtopic2_234 [label="cannabis marijuana act directs study related state research legalization recreational (64, 15.31%)"]
+	subtopic1_232 -> subtopic2_234
+	subtopic2_235 [label="active shooter alert bill local law enforcement state coordinator act (60, 14.35%)"]
+	subtopic1_232 -> subtopic2_235
+	subtopic2_236 [label="fentanyl scheduling temporary substances drug analogues order act administration schedule (15, 3.59%)"]
+	subtopic1_232 -> subtopic2_236
+	subtopic2_237 [label="trafficking human victims school sex children child abuse sexual act (14, 3.35%)"]
+	subtopic1_232 -> subtopic2_237
+	subtopic2_238 [label="reentry community program people county grants authorizes jail individuals support (13, 3.11%)"]
+	subtopic1_232 -> subtopic2_238
+	subtopic2_239 [label="women pregnant incarcerated health pregnancy requires needs bill care custody (13, 3.11%)"]
+	subtopic1_232 -> subtopic2_239
+	subtopic2_240 [label="act registration mitigation controlled substances dea drug projects suspicious assistance (12, 2.87%)"]
+	subtopic1_232 -> subtopic2_240
+	subtopic2_241 [label="counseling peer support officers law enforcement programs act cops police (12, 2.87%)"]
+	subtopic1_232 -> subtopic2_241
+	subtopic2_242 [label="lynching crime hate attempt antilynching emmett till commit offense aggravated (10, 2.39%)"]
+	subtopic1_232 -> subtopic2_242
+	subtopic2_243 [label="veterans training health mental enforcement law va service program act (10, 2.39%)"]
+	subtopic1_232 -> subtopic2_243
+	subtopic2_244 [label="officers safety public benefits duty officer stress traumatic death disorder (9, 2.15%)"]
+	subtopic1_232 -> subtopic2_244
+	subtopic2_245 [label="conduct acquitted justice jury sentencing trial judges criminal guilty found (8, 1.91%)"]
+	subtopic1_232 -> subtopic2_245
+	subtopic2_246 [label="domestic terrorism fbi doj white hate violence dhs department crimes (8, 1.91%)"]
+	subtopic1_232 -> subtopic2_246
+	subtopic2_247 [label="families case law murder victims cold cases enforcement family homicide (6, 1.44%)"]
+	subtopic1_232 -> subtopic2_247
+	subtopic2_248 [label="opioid rural abuse communities program substance prevention programs deaths treatment (5, 1.20%)"]
+	subtopic1_232 -> subtopic2_248
+	subtopic2_249 [label="president vote spouse former gender family century 21st immediate debate (5, 1.20%)"]
+	subtopic1_232 -> subtopic2_249
+	subtopic2_250 [label="dhs homeland security training department h r program acquisition employee (4, 0.96%)"]
+	subtopic1_232 -> subtopic2_250
+	subtopic2_251 [label="child abuse cacs fbi survivors use multidisciplinary act victims section (4, 0.96%)"]
+	subtopic1_232 -> subtopic2_251
+	subtopic2_252 [label="military independent command authority commanders system justice crimes prosecutors convening (3, 0.72%)"]
+	subtopic1_232 -> subtopic2_252
+	subtopic2_253 [label="methamphetamine drug percent response threat plan national fentanyl control overdose (3, 0.72%)"]
+	subtopic1_232 -> subtopic2_253
+	subtopic2_254 [label="health care mental providers among behavioral suicide must hhs grants (3, 0.72%)"]
+	subtopic1_232 -> subtopic2_254
+	subtopic2_255 [label="infrastructure bridges hate roads tax doj hikes supervised fund raising (2, 0.48%)"]
+	subtopic1_232 -> subtopic2_255
+	subtopic2_256 [label="criminals pension prey poachers scams defund sanchez lawlessness fraudulent resources (2, 0.48%)"]
+	subtopic1_232 -> subtopic2_256
+	subtopic2_257 [label="food farmers local families market markets csbg bank seniors extends (2, 0.48%)"]
+	subtopic1_232 -> subtopic2_257
+	subtopic2_258 [label="vote voting rights democracy election day senate republican party senator (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_258
+	subtopic2_259 [label="background gao firearm checks denied gun 000 atf firearms 12 (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_259
+	subtopic2_260 [label="formula infant baby families supply wic fda shortage food usda (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_260
+	subtopic2_261 [label="program veterans must assistance benefits va bill transfer credits retraining (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_261
+	subtopic2_262 [label="veterans va automation benefits affairs rural credit ketchum department homeless (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_262
+	subtopic2_263 [label="voting voter vote laws election federal states rights state establishes (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_263
+	subtopic2_264 [label="iran iranian sanctions drones bill provisions u combat weapons aerial (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_264
+	subtopic2_265 [label="atkins said deputy letter kareem peer officers counseling 4 service (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_265
+	subtopic2_266 [label="online scams card gift cybercrime holiday fbi cards social media (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_266
+	subtopic2_267 [label="said ransomware nakasone general government groups cyber cybercrime officials adversaries (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_267
+	subtopic2_268 [label="cannabis oregon marijuana state hemp legal illicit legalization market said (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_268
+	subtopic2_269 [label="marijuana cannabis adolescent use related policy legalization child effects increased (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_269
+	subtopic2_270 [label="forest treasury department officers interest service agencies home carry accounts (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_270
+	subtopic2_271 [label="veterans va bill veteran act service automobile vehicle cemetery certain (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_271
+	subtopic2_272 [label="postal property usps ppos mail police protect real authority service (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_272
+	subtopic2_273 [label="veterans park honor gold star police service national fees special (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_273
+	subtopic2_274 [label="veterans va bill affairs department care act health requires compensation (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_274
+	subtopic2_275 [label="mr january committee president resolution capitol congress meadows select attack (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_275
+	subtopic2_276 [label="court supreme justice police justices protect marshal protection bill family (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_276
+	subtopic2_277 [label="research screening newborn health children birth disabilities national reauthorizes gabriella (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_277
+	subtopic2_278 [label="health veterans mental minority research va support care disparities program (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_278
+	subtopic2_279 [label="cancer childhood research education act star reauthorization public early pediatric (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_279
+	subtopic2_280 [label="fentanyl drug drugs communities said opioid u crisis deaths border (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_280
+	subtopic2_281 [label="mental health association training national behavioral louisiana enforcement de escalation (1, 0.24%)"]
+	subtopic1_232 -> subtopic2_281
+	subtopic1_282 [label="gun federal firearms guns establishes bill criminal new laws prohibits (185, 20.95%)"]
+	policy_3 -> subtopic1_282
+	subtopic2_283 [label="background firearm check firearms gun violence days federal transfers checks (180, 97.30%)"]
+	subtopic1_282 -> subtopic2_283
+	subtopic2_284 [label="10 buffalo active n shooter age law risk alert extreme (3, 1.62%)"]
+	subtopic1_282 -> subtopic2_284
+	subtopic2_285 [label="late events oregon desperately reeling norway imposes australia station sunset (2, 1.08%)"]
+	subtopic1_282 -> subtopic2_285
+	subtopic1_286 [label="section sec funds provided division title program appropriations provides certain (71, 8.04%)"]
+	policy_3 -> subtopic1_286
+	subtopic2_287 [label="hate crimes bill law justice department crime covid 19 doj (39, 54.93%)"]
+	subtopic1_286 -> subtopic2_287
+	subtopic2_288 [label="bill incarcerated act justice juveniles communications attorney mr system person (13, 18.31%)"]
+	subtopic1_286 -> subtopic2_288
+	subtopic2_289 [label="missing namus unidentified law persons ncic national act doj databases (6, 8.45%)"]
+	subtopic1_286 -> subtopic2_289
+	subtopic2_290 [label="trafficking human child section victims sec victim persons federal abuse (4, 5.63%)"]
+	subtopic1_286 -> subtopic2_290
+	subtopic2_291 [label="bill election states president federal people campaign state act government (3, 4.23%)"]
+	subtopic1_286 -> subtopic2_291
+	subtopic2_292 [label="child cacs abuse use multidisciplinary section fbi regional modifies ojjdp (3, 4.23%)"]
+	subtopic1_286 -> subtopic2_292
+	subtopic2_293 [label="funding sec provides act energy credit program available shall remain (2, 2.82%)"]
+	subtopic1_286 -> subtopic2_293
+	subtopic2_294 [label="labor employees bill union workers employee strikes unfair employers right (1, 1.41%)"]
+	subtopic1_286 -> subtopic2_294
+	subtopic1_295 [label="enforcement law policing bill misconduct officer practices use police force (60, 6.80%)"]
+	policy_3 -> subtopic1_295
+	subtopic2_296 [label="police mr speaker george floyd us legislation communities act people (59, 98.33%)"]
+	subtopic1_295 -> subtopic2_296
+	subtopic2_297 [label="beyer kuster clark fl il wasserman correa schultz kelly cardenas (1, 1.67%)"]
+	subtopic1_295 -> subtopic2_297
+	subtopic1_298 [label="women violence act bill sexual programs assault victims domestic new (51, 5.78%)"]
+	policy_3 -> subtopic1_298
+	subtopic2_299 [label="violence domestic services prevention bill family support organizations tribal grants (43, 84.31%)"]
+	subtopic1_298 -> subtopic2_299
+	subtopic2_300 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (8, 15.69%)"]
+	subtopic1_298 -> subtopic2_300
+	subtopic1_301 [label="american us african americans country many years one today george (21, 2.38%)"]
+	policy_3 -> subtopic1_301
+	subtopic2_302 [label="terrorism domestic fbi doj hate white must federal crimes agencies (21, 100.00%)"]
+	subtopic1_301 -> subtopic2_302
+	subtopic1_303 [label="cocaine bill powder crack disparity offenses 1 drug criminal penalties (19, 2.15%)"]
+	policy_3 -> subtopic1_303
+	subtopic2_304 [label="act sentencing crack step first offenders cocaine congress convicted retroactive (19, 100.00%)"]
+	subtopic1_303 -> subtopic2_304
+	subtopic1_305 [label="officers benefits public safety program bill disability psob duty responders (10, 1.13%)"]
+	policy_3 -> subtopic1_305
+	subtopic2_306 [label="legislation important pascrell association line president able fallen get congress (10, 100.00%)"]
+	subtopic1_305 -> subtopic2_306
+	subtopic1_307 [label="financial act exploitation legislation protect bill r make older 2021 (9, 1.02%)"]
+	policy_3 -> subtopic1_307
+	subtopic2_308 [label="elder abuse justice fraud initiative bill department doj protection resources (9, 100.00%)"]
+	subtopic1_307 -> subtopic2_308
+	subtopic1_309 [label="federal united states bill murder zapata law avila officers certain (6, 0.68%)"]
+	policy_3 -> subtopic1_309
+	subtopic2_310 [label="employees agents mr justice officials intimidate kidnap retaliate legislation speaker (6, 100.00%)"]
+	subtopic1_309 -> subtopic2_310
+	subtopic1_311 [label="expenses make also system pretrial work live authority indigent required (6, 0.68%)"]
+	policy_3 -> subtopic1_311
+	subtopic2_312 [label="court bill judges defendants magistrate federal appearances defendant subsistence proceedings (6, 100.00%)"]
+	subtopic1_311 -> subtopic2_312
+	subtopic1_313 [label="cybercrime crime data 2021 national reporting must cyber better bill (6, 0.68%)"]
+	policy_3 -> subtopic1_313
+	subtopic2_314 [label="attacks attack covid 19 mobile 2022 fake supply organizations threat (6, 100.00%)"]
+	subtopic1_313 -> subtopic2_314
+	subtopic1_315 [label="district c bill columbia federal act would authority local government (4, 0.45%)"]
+	policy_3 -> subtopic1_315
+	subtopic2_316 [label="parole commission offenders supervised determinations successful make transferred 31 november (2, 50.00%)"]
+	subtopic1_315 -> subtopic2_316
+	subtopic2_317 [label="president mpd police department federalize emergency federalization summer protect exist (1, 25.00%)"]
+	subtopic1_315 -> subtopic2_317
+	subtopic2_318 [label="bridge law repeal virginia obstructing person bridges accountability connecting obstruct (1, 25.00%)"]
+	subtopic1_315 -> subtopic2_318
+	subtopic1_319 [label="veterans treatment court bill veteran justice courts drug program rates (4, 0.45%)"]
+	policy_3 -> subtopic1_319
+	subtopic2_320 [label="programs pilot 4035 minorities instead 2021 jurisdiction provided incentivizes want (4, 100.00%)"]
+	subtopic1_319 -> subtopic2_320
+	subtopic1_321 [label="bop camera systems deficiencies within prisons ensure security prison address (4, 0.45%)"]
+	policy_3 -> subtopic1_321
+	subtopic2_322 [label="limited protecting across many although testified monitoring oversight lack disciplinary (4, 100.00%)"]
+	subtopic1_321 -> subtopic2_322
+	subtopic1_323 [label="said trafficking human sex victims girl lanfersiek blanton reports schools (3, 0.34%)"]
+	policy_3 -> subtopic1_323
+	subtopic2_324 [label="epstein palm beach girls high school police royal told post (3, 100.00%)"]
+	subtopic1_323 -> subtopic2_324
+	subtopic1_325 [label="deaths overdose 2021 opioid act 2020 drug rural provisional data (2, 0.23%)"]
+	policy_3 -> subtopic1_325
+	subtopic2_326 [label="stem percent science msis students minority serving ihes institutions black (2, 100.00%)"]
+	subtopic1_325 -> subtopic2_326
+	subtopic1_327 [label="name jr james christopher anthony joseph scott thomas william justin (1, 0.11%)"]
+	policy_3 -> subtopic1_327
+	subtopic2_328 [label="police withheld michael robert john david matthew joshua jason enforcement (1, 100.00%)"]
+	subtopic1_327 -> subtopic2_328
+	subtopic1_329 [label="people bill going cost costs insurance understand hate think three (1, 0.11%)"]
+	policy_3 -> subtopic1_329
+	subtopic2_330 [label="insulin china institutes confucius party communist know universities senate years (1, 100.00%)"]
+	subtopic1_329 -> subtopic2_330
+	subtopic1_331 [label="trafficking sex al stm united recruitment traffickers canada domestic research (1, 0.11%)"]
+	policy_3 -> subtopic1_331
+	subtopic2_332 [label="victims et youth states minors sexual 2010 exploitation risk international (1, 100.00%)"]
+	subtopic1_331 -> subtopic2_332
+	subtopic1_333 [label="children online texas montgomery force f2 minor icac police solicitation (1, 0.11%)"]
+	policy_3 -> subtopic1_333
+	subtopic2_334 [label="county houston task internet office department district child operation parents (1, 100.00%)"]
+	subtopic1_333 -> subtopic2_334
+	policy_4 [label="Health (720, 6.87%)"]
+	subtopic1_335 [label="bill act would also time legislation people support mr speaker (641, 89.03%)"]
+	policy_4 -> subtopic1_335
+	subtopic2_336 [label="programs national security department related requires certain authorizes education federal (128, 19.97%)"]
+	subtopic1_335 -> subtopic2_336
+	subtopic2_337 [label="abortion services bill health provider may women medically restrictions governments (99, 15.44%)"]
+	subtopic1_335 -> subtopic2_337
+	subtopic2_338 [label="contraception bill right access pregnancy prevent act including health care (37, 5.77%)"]
+	subtopic1_335 -> subtopic2_338
+	subtopic2_339 [label="health care mental providers among behavioral suicide must hhs grants (33, 5.15%)"]
+	subtopic1_335 -> subtopic2_339
+	subtopic2_340 [label="abortion state services person bill care right women health another (31, 4.84%)"]
+	subtopic1_335 -> subtopic2_340
+	subtopic2_341 [label="disease heart carol research valvular valve act national blood andy (21, 3.28%)"]
+	subtopic1_335 -> subtopic2_341
+	subtopic2_342 [label="debt physical activity based guidelines hhs ceiling spending democrats republicans (20, 3.12%)"]
+	subtopic1_335 -> subtopic2_342
+	subtopic2_343 [label="health care mobile grants centers stillbirths stillbirth access services support (14, 2.18%)"]
+	subtopic1_335 -> subtopic2_343
+	subtopic2_344 [label="research screening newborn health children birth disabilities national reauthorizes gabriella (14, 2.18%)"]
+	subtopic1_335 -> subtopic2_344
+	subtopic2_345 [label="health veterans mental minority research va support care disparities program (13, 2.03%)"]
+	subtopic1_335 -> subtopic2_345
+	subtopic2_346 [label="als diseases neurodegenerative shall grants development research fda drugs access (13, 2.03%)"]
+	subtopic1_335 -> subtopic2_346
+	subtopic2_347 [label="suicide synthetic health prevention opioids hhs training awareness public services (12, 1.87%)"]
+	subtopic1_335 -> subtopic2_347
+	subtopic2_348 [label="covid 19 cognitive research support brycen ben addiction family national (10, 1.56%)"]
+	subtopic1_335 -> subtopic2_348
+	subtopic2_349 [label="women data health maternal black mapping mortality broadband act fcc (10, 1.56%)"]
+	subtopic1_335 -> subtopic2_349
+	subtopic2_350 [label="students health mental intervention stem behavioral schools education support school (9, 1.40%)"]
+	subtopic1_335 -> subtopic2_350
+	subtopic2_351 [label="cannabis marijuana act directs study related state research legalization recreational (9, 1.40%)"]
+	subtopic1_335 -> subtopic2_351
+	subtopic2_352 [label="agency research health must bill arpa hhs h high director (9, 1.40%)"]
+	subtopic1_335 -> subtopic2_352
+	subtopic2_353 [label="authorization prior care time standards medicare patients get plans seniors (9, 1.40%)"]
+	subtopic1_335 -> subtopic2_353
+	subtopic2_354 [label="health systems vaccination immunization public information pregnant bill 19 care (8, 1.25%)"]
+	subtopic1_335 -> subtopic2_354
+	subtopic2_355 [label="congenital birth treatment necessary insurance defects coverage medically anomalies health (8, 1.25%)"]
+	subtopic1_335 -> subtopic2_355
+	subtopic2_356 [label="health mental students prevention education suicide campus oral bill support (7, 1.09%)"]
+	subtopic1_335 -> subtopic2_356
+	subtopic2_357 [label="abortion services bill health life women unborn states provider may (6, 0.94%)"]
+	subtopic1_335 -> subtopic2_357
+	subtopic2_358 [label="lymphedema treatment medicare compression coverage obesity items care garments provides (6, 0.94%)"]
+	subtopic1_335 -> subtopic2_358
+	subtopic2_359 [label="rehabilitation centers innovation patients research dr injury memorial facilities smith (6, 0.94%)"]
+	subtopic1_335 -> subtopic2_359
+	subtopic2_360 [label="food sesame research major act allergy faster allergen allergies certain (5, 0.78%)"]
+	subtopic1_335 -> subtopic2_360
+	subtopic2_361 [label="hpv cancers cancer prevent vaccines act associated health human education (5, 0.78%)"]
+	subtopic1_335 -> subtopic2_361
+	subtopic2_362 [label="veterans training health mental enforcement law va service program act (5, 0.78%)"]
+	subtopic1_335 -> subtopic2_362
+	subtopic2_363 [label="court supreme justice police justices protect marshal protection bill family (4, 0.62%)"]
+	subtopic1_335 -> subtopic2_363
+	subtopic2_364 [label="social determinants health medicaid guidance states 2021 address insurance caring (4, 0.62%)"]
+	subtopic1_335 -> subtopic2_364
+	subtopic2_365 [label="contraception women contraceptives access right control oral health birth counter (4, 0.62%)"]
+	subtopic1_335 -> subtopic2_365
+	subtopic2_366 [label="cancer childhood research education act star reauthorization public early pediatric (4, 0.62%)"]
+	subtopic1_335 -> subtopic2_366
+	subtopic2_367 [label="active shooter alert bill local law enforcement state coordinator act (3, 0.47%)"]
+	subtopic1_335 -> subtopic2_367
+	subtopic2_368 [label="abortion services health bill provider restrictions may life said medically (3, 0.47%)"]
+	subtopic1_335 -> subtopic2_368
+	subtopic2_369 [label="debt vote ceiling default fiscal activity physical limit republicans economic (3, 0.47%)"]
+	subtopic1_335 -> subtopic2_369
+	subtopic2_370 [label="breast medicare reconstruction care coverage services medicaid patients cancer mastectomy (2, 0.31%)"]
+	subtopic1_335 -> subtopic2_370
+	subtopic2_371 [label="formula infant baby families supply wic fda shortage food usda (2, 0.31%)"]
+	subtopic1_335 -> subtopic2_371
+	subtopic2_372 [label="fentanyl scheduling temporary substances drug analogues order act administration schedule (2, 0.31%)"]
+	subtopic1_335 -> subtopic2_372
+	subtopic2_373 [label="lgbtq students suicide youth school mental training health bento prevention (2, 0.31%)"]
+	subtopic1_335 -> subtopic2_373
+	subtopic2_374 [label="veterans va bill affairs department care act health requires compensation (2, 0.31%)"]
+	subtopic1_335 -> subtopic2_374
+	subtopic2_375 [label="pfas firefighting firefighters substances foam exposure act health equipment dhs (2, 0.31%)"]
+	subtopic1_335 -> subtopic2_375
+	subtopic2_376 [label="women abortion court roe services v wade right constitutional decision (2, 0.31%)"]
+	subtopic1_335 -> subtopic2_376
+	subtopic2_377 [label="abortion right health choice services access court roe women v (2, 0.31%)"]
+	subtopic1_335 -> subtopic2_377
+	subtopic2_378 [label="opioid rural abuse communities program substance prevention programs deaths treatment (2, 0.31%)"]
+	subtopic1_335 -> subtopic2_378
+	subtopic2_379 [label="fentanyl drug drugs communities said opioid u crisis deaths border (2, 0.31%)"]
+	subtopic1_335 -> subtopic2_379
+	subtopic2_380 [label="abortion women court roe health v rights services protection supreme (2, 0.31%)"]
+	subtopic1_335 -> subtopic2_380
+	subtopic2_381 [label="abortion court supreme v roe wade justices go governments precedent (2, 0.31%)"]
+	subtopic1_335 -> subtopic2_381
+	subtopic2_382 [label="believe privacy right abortion women decision rights people whether going (2, 0.31%)"]
+	subtopic1_335 -> subtopic2_382
+	subtopic2_383 [label="women abortion state services right care person reproductive health texas (2, 0.31%)"]
+	subtopic1_335 -> subtopic2_383
+	subtopic2_384 [label="access voting program advocacy protection act pava bill inclusion vote (2, 0.31%)"]
+	subtopic1_335 -> subtopic2_384
+	subtopic2_385 [label="research science award grants education students stem support national advance (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_385
+	subtopic2_386 [label="mental health association training national behavioral louisiana enforcement de escalation (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_386
+	subtopic2_387 [label="security tsa plan transportation airports information act must develop 19 (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_387
+	subtopic2_388 [label="poverty areas persistent bill federal communities investments resources need report (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_388
+	subtopic2_389 [label="health services mental people community clinics help percent substance abuse (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_389
+	subtopic2_390 [label="medicaid cynthia georgia saves healthcare clinic coverage get care says (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_390
+	subtopic2_391 [label="treasury continue debt limit investments cash suspend csrdf september raise (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_391
+	subtopic2_392 [label="bill judges judicial reports financial capital securities federal venture requires (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_392
+	subtopic2_393 [label="financial institutions credit bill access services racial cash report lending (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_393
+	subtopic2_394 [label="debt collection consumer protections collector student bill collectors small certain (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_394
+	subtopic2_395 [label="student loan debt loans interest federal refinancing rates rate education (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_395
+	subtopic2_396 [label="cloud communications security council fedramp authorization federal bill reliability interoperability (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_396
+	subtopic2_397 [label="mr january committee president resolution capitol congress meadows select attack (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_397
+	subtopic2_398 [label="election state votes president day arizona constitution registration voting said (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_398
+	subtopic2_399 [label="nuclear weapons medicare treaty united conversion nations agreement international needs (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_399
+	subtopic2_400 [label="said abortion health go could right hospital went situation going (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_400
+	subtopic2_401 [label="russia ukraine russian president putin trade energy belarus bill products (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_401
+	subtopic2_402 [label="trafficking human victims school sex children child abuse sexual act (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_402
+	subtopic2_403 [label="crib babies sleep inclined bumpers sleepers products infant infants safe (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_403
+	subtopic2_404 [label="child native american indian abuse languages services act family neglect (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_404
+	subtopic2_405 [label="ftc federal commission court trade consumers relief seek consumer act (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_405
+	subtopic2_406 [label="labor forced xinjiang shall sanctions china congress uyghur goods u (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_406
+	subtopic2_407 [label="state amendment 14th women court rights states black reproductive right (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_407
+	subtopic2_408 [label="religious freedom china persecution states commission united chinese rights policy (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_408
+	subtopic2_409 [label="program internet connectivity programs access affordable lifeline income low assistance (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_409
+	subtopic2_410 [label="care act economic indian services health urban development confer legislation (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_410
+	subtopic2_411 [label="rights civil cold case board records act review support cases (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_411
+	subtopic2_412 [label="try right patients life treatments access laws restrictions substances psilocybin (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_412
+	subtopic2_413 [label="workers made companies ohio manufacturing american jobs country semiconductors overseas (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_413
+	subtopic2_414 [label="alkonis even lieutenant accident fact japan japanese prison navy country (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_414
+	subtopic2_415 [label="ukraine russia ukrainian russian war military weapons nato world week (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_415
+	subtopic2_416 [label="athletes amateur athletic compensation equal gender bill sports u requires (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_416
+	subtopic2_417 [label="veterans republicans weeks 30 good decided pact idea 3 thought (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_417
+	subtopic2_418 [label="veterans va employee care fairness secretary employees collective administration rights (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_418
+	subtopic2_419 [label="conflicts interest organizational federal small contractors agency agencies businesses subcontracting (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_419
+	subtopic2_420 [label="housing safety fire federally assisted public temperature smoke alarms units (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_420
+	subtopic2_421 [label="animal testing drug animals trials law drugs tests human toxic (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_421
+	subtopic2_422 [label="research science development national technology technologies section stem awards data (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_422
+	subtopic2_423 [label="center keller helen national stamps deaf conservation blind species stamp (1, 0.16%)"]
+	subtopic1_335 -> subtopic2_423
+	subtopic1_424 [label="section sec funds provided division title program appropriations provides certain (40, 5.56%)"]
+	policy_4 -> subtopic1_424
+	subtopic2_425 [label="drug orphan foundation fda bill exclusivity 000 sponsor reagan granted (12, 30.00%)"]
+	subtopic1_424 -> subtopic2_425
+	subtopic2_426 [label="funding sec provides act energy credit program available shall remain (10, 25.00%)"]
+	subtopic1_424 -> subtopic2_426
+	subtopic2_427 [label="bill act must suspend move rules pass r veterans h (9, 22.50%)"]
+	subtopic1_424 -> subtopic2_427
+	subtopic2_428 [label="products biological education fda biosimilars biosimilar bill providers product patients (3, 7.50%)"]
+	subtopic1_424 -> subtopic2_428
+	subtopic2_429 [label="species wildlife conservation endangered must restoration title funds fish recovery (2, 5.00%)"]
+	subtopic1_424 -> subtopic2_429
+	subtopic2_430 [label="bill election states president federal people campaign state act government (1, 2.50%)"]
+	subtopic1_424 -> subtopic2_430
+	subtopic2_431 [label="ocean acidification bill act research coastal national support coast committee (1, 2.50%)"]
+	subtopic1_424 -> subtopic2_431
+	subtopic2_432 [label="marijuana housing federally parent assisted bill child health medical including (1, 2.50%)"]
+	subtopic1_424 -> subtopic2_432
+	subtopic2_433 [label="hate crimes bill law justice department crime covid 19 doj (1, 2.50%)"]
+	subtopic1_424 -> subtopic2_433
+	subtopic1_434 [label="activity physical based hhs guidelines years must bill americans 10 (12, 1.67%)"]
+	policy_4 -> subtopic1_434
+	subtopic2_435 [label="tax cuts taxes death false pay income gop corporate top (5, 41.67%)"]
+	subtopic1_434 -> subtopic2_435
+	subtopic2_436 [label="rocky vaccines rejects pursuant cloaked unlikely strips guise eligibilities loads (4, 33.33%)"]
+	subtopic1_434 -> subtopic2_436
+	subtopic2_437 [label="deficit billion republican republicans trillion party bush floor grew mess (3, 25.00%)"]
+	subtopic1_434 -> subtopic2_437
+	subtopic1_438 [label="heart asian south disease health research awareness states bill risk (9, 1.25%)"]
+	policy_4 -> subtopic1_438
+	subtopic2_439 [label="19 amendment relationship study medicine rates studies time mortality tissue (9, 100.00%)"]
+	subtopic1_438 -> subtopic2_439
+	subtopic1_440 [label="women violence act bill sexual programs assault victims domestic new (7, 0.97%)"]
+	policy_4 -> subtopic1_440
+	subtopic2_441 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (7, 100.00%)"]
+	subtopic1_440 -> subtopic2_441
+	subtopic1_442 [label="bill security homeland traveler trusted review department dhs quadrennial 2021 (4, 0.56%)"]
+	policy_4 -> subtopic1_442
+	subtopic2_443 [label="blood cord transplant program stem cell marrow act also patients (4, 100.00%)"]
+	subtopic1_442 -> subtopic2_443
+	subtopic1_444 [label="animals research testing use alternatives number national center animal used (1, 0.14%)"]
+	policy_4 -> subtopic1_444
+	subtopic2_445 [label="blm burros helicopters gathering put helicopter protection employ captured burro (1, 100.00%)"]
+	subtopic1_444 -> subtopic2_445
+	subtopic1_446 [label="gun federal firearms guns establishes bill criminal new laws prohibits (1, 0.14%)"]
+	policy_4 -> subtopic1_446
+	subtopic2_447 [label="background firearm check firearms gun violence days federal transfers checks (1, 100.00%)"]
+	subtopic1_446 -> subtopic2_447
+	subtopic1_448 [label="essential caregiver mother care facility facilities term residents year long (1, 0.14%)"]
+	policy_4 -> subtopic1_448
+	subtopic2_449 [label="caregivers john father act life also husband suffering old covid (1, 100.00%)"]
+	subtopic1_448 -> subtopic2_449
+	subtopic1_450 [label="stillbirth shine health autumn hhs stillbirths act collection perinatal departments (1, 0.14%)"]
+	policy_4 -> subtopic1_450
+	subtopic2_451 [label="chair due failure author sids bring stillborn congressional crammed bounce (1, 100.00%)"]
+	subtopic1_450 -> subtopic2_451
+	subtopic1_452 [label="weeks duration law services international date policy limit permissive 198 (1, 0.14%)"]
+	policy_4 -> subtopic1_452
+	subtopic2_453 [label="abortion countries states elective 20 united pregnancy past gestational gestation (1, 100.00%)"]
+	subtopic1_452 -> subtopic2_453
+	subtopic1_454 [label="clinic planned abortion fire health time molotov damage one cocktail (1, 0.14%)"]
+	policy_4 -> subtopic1_454
+	subtopic2_455 [label="parenthood state care services person sentenced threw january building freedom (1, 100.00%)"]
+	subtopic1_454 -> subtopic2_455
+	subtopic1_456 [label="university foundation health medicine research cancer america coalition nih institute (1, 0.14%)"]
+	policy_4 -> subtopic1_456
+	subtopic2_457 [label="american association society medical college surgeons chapter oncology academy national (1, 100.00%)"]
+	subtopic1_456 -> subtopic2_457
+	policy_5 [label="Science, Technology, Communications (596, 5.69%)"]
+	subtopic1_458 [label="bill act would also time legislation people support mr speaker (483, 81.04%)"]
+	policy_5 -> subtopic1_458
+	subtopic2_459 [label="programs national security department related requires certain authorizes education federal (366, 75.78%)"]
+	subtopic1_458 -> subtopic2_459
+	subtopic2_460 [label="networks cybersecurity equipment communications act bill open mobile information security (26, 5.38%)"]
+	subtopic1_458 -> subtopic2_460
+	subtopic2_461 [label="noaa weather nwr service scientist chief national bill radio support (17, 3.52%)"]
+	subtopic1_458 -> subtopic2_461
+	subtopic2_462 [label="research science development national technology technologies section stem awards data (8, 1.66%)"]
+	subtopic1_458 -> subtopic2_462
+	subtopic2_463 [label="time daylight saving permanent sunshine people standard hour make areas (8, 1.66%)"]
+	subtopic1_458 -> subtopic2_463
+	subtopic2_464 [label="phone number subscriber disaster numbers year jeff act home service (7, 1.45%)"]
+	subtopic1_458 -> subtopic2_464
+	subtopic2_465 [label="information press journalists bill government reporters federal act protects obtained (7, 1.45%)"]
+	subtopic1_458 -> subtopic2_465
+	subtopic2_466 [label="research science award grants education students stem support national advance (6, 1.24%)"]
+	subtopic1_458 -> subtopic2_466
+	subtopic2_467 [label="power low communications media stations television diversity act marketplace market (5, 1.04%)"]
+	subtopic1_458 -> subtopic2_467
+	subtopic2_468 [label="cloud communications security council fedramp authorization federal bill reliability interoperability (5, 1.04%)"]
+	subtopic1_458 -> subtopic2_468
+	subtopic2_469 [label="cyber exercise incident response critical cisa cyberattacks infrastructure national program (4, 0.83%)"]
+	subtopic1_458 -> subtopic2_469
+	subtopic2_470 [label="technology equipment repair computer computers veterans students broadband rural need (3, 0.62%)"]
+	subtopic1_458 -> subtopic2_470
+	subtopic2_471 [label="disaster assistance fema federal bill emergency disasters management agency rural (3, 0.62%)"]
+	subtopic1_458 -> subtopic2_471
+	subtopic2_472 [label="program internet connectivity programs access affordable lifeline income low assistance (3, 0.62%)"]
+	subtopic1_458 -> subtopic2_472
+	subtopic2_473 [label="communications services phone martha costs incarcerated wright fcc reed reasonable (3, 0.62%)"]
+	subtopic1_458 -> subtopic2_473
+	subtopic2_474 [label="workers made companies ohio manufacturing american jobs country semiconductors overseas (2, 0.41%)"]
+	subtopic1_458 -> subtopic2_474
+	subtopic2_475 [label="shark trade small fin fins sharks u sba sales ban (1, 0.21%)"]
+	subtopic1_458 -> subtopic2_475
+	subtopic2_476 [label="students health mental intervention stem behavioral schools education support school (1, 0.21%)"]
+	subtopic1_458 -> subtopic2_476
+	subtopic2_477 [label="small business businesses programs centers education career workforce development support (1, 0.21%)"]
+	subtopic1_458 -> subtopic2_477
+	subtopic2_478 [label="veterans training health mental enforcement law va service program act (1, 0.21%)"]
+	subtopic1_458 -> subtopic2_478
+	subtopic2_479 [label="stem science ihes must agency bill underrepresented groups also grants (1, 0.21%)"]
+	subtopic1_458 -> subtopic2_479
+	subtopic2_480 [label="chief scientist committee noaa science technology scientific resources integrity natural (1, 0.21%)"]
+	subtopic1_458 -> subtopic2_480
+	subtopic2_481 [label="russia ukraine russian president putin trade energy belarus bill products (1, 0.21%)"]
+	subtopic1_458 -> subtopic2_481
+	subtopic2_482 [label="small loan 504 sba program cdc bill business office must (1, 0.21%)"]
+	subtopic1_458 -> subtopic2_482
+	subtopic2_483 [label="jones act protection border customs letter offshore u 2021 vessels (1, 0.21%)"]
+	subtopic1_458 -> subtopic2_483
+	subtopic2_484 [label="health mental students prevention education suicide campus oral bill support (1, 0.21%)"]
+	subtopic1_458 -> subtopic2_484
+	subtopic1_485 [label="section sec funds provided division title program appropriations provides certain (97, 16.28%)"]
+	policy_5 -> subtopic1_485
+	subtopic2_486 [label="funding sec provides act energy credit program available shall remain (46, 47.42%)"]
+	subtopic1_485 -> subtopic2_486
+	subtopic2_487 [label="bill election states president federal people campaign state act government (9, 9.28%)"]
+	subtopic1_485 -> subtopic2_487
+	subtopic2_488 [label="ocean acidification bill act research coastal national support coast committee (7, 7.22%)"]
+	subtopic1_485 -> subtopic2_488
+	subtopic2_489 [label="bill act must suspend move rules pass r veterans h (6, 6.19%)"]
+	subtopic1_485 -> subtopic2_489
+	subtopic2_490 [label="shall nsf support section national doe institutions technology nasa nist (5, 5.15%)"]
+	subtopic1_485 -> subtopic2_490
+	subtopic2_491 [label="underrepresented artificial staff capabilities police broadening usa evidence comprehensive modernization (4, 4.12%)"]
+	subtopic1_485 -> subtopic2_491
+	subtopic2_492 [label="bill gender identity act equality sexual discrimination orientation including public (3, 3.09%)"]
+	subtopic1_485 -> subtopic2_492
+	subtopic2_493 [label="shall sec nsf science awards national office initiative standards quantum (3, 3.09%)"]
+	subtopic1_485 -> subtopic2_493
+	subtopic2_494 [label="intelligence overseas hbcus producing changing 10399a preeminence negotiations presentation guardrails (3, 3.09%)"]
+	subtopic1_485 -> subtopic2_494
+	subtopic2_495 [label="hate crimes bill law justice department crime covid 19 doj (2, 2.06%)"]
+	subtopic1_485 -> subtopic2_495
+	subtopic2_496 [label="clarke ms rights anti letter voter article statements decision saying (1, 1.03%)"]
+	subtopic1_485 -> subtopic2_496
+	subtopic2_497 [label="wildlife great lakes act fish invasive water species restoration bill (1, 1.03%)"]
+	subtopic1_485 -> subtopic2_497
+	subtopic2_498 [label="cent worth adjustment dear cola residence golly literature dislikes trent (1, 1.03%)"]
+	subtopic1_485 -> subtopic2_498
+	subtopic2_499 [label="trafficking human child section victims sec victim persons federal abuse (1, 1.03%)"]
+	subtopic1_485 -> subtopic2_499
+	subtopic2_500 [label="extends act appropriations sec 2022 continuing december division provides programs (1, 1.03%)"]
+	subtopic1_485 -> subtopic2_500
+	subtopic2_501 [label="labor employees bill union workers employee strikes unfair employers right (1, 1.03%)"]
+	subtopic1_485 -> subtopic2_501
+	subtopic2_502 [label="martin joe michigan faculty dearborn leonard father deluged attended ford (1, 1.03%)"]
+	subtopic1_485 -> subtopic2_502
+	subtopic2_503 [label="horses slaughtered equines mexico slaughter advent gobble heinous undertake hat (1, 1.03%)"]
+	subtopic1_485 -> subtopic2_503
+	subtopic2_504 [label="security homeland dhs bill items act procurement department sets oig (1, 1.03%)"]
+	subtopic1_485 -> subtopic2_504
+	subtopic1_505 [label="women violence act bill sexual programs assault victims domestic new (5, 0.84%)"]
+	policy_5 -> subtopic1_505
+	subtopic2_506 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (5, 100.00%)"]
+	subtopic1_505 -> subtopic2_506
+	subtopic1_507 [label="deaths overdose 2021 opioid act 2020 drug rural provisional data (2, 0.34%)"]
+	policy_5 -> subtopic1_507
+	subtopic2_508 [label="stem percent science msis students minority serving ihes institutions black (2, 100.00%)"]
+	subtopic1_507 -> subtopic2_508
+	subtopic1_509 [label="money people know going million think one say spent would (2, 0.34%)"]
+	policy_5 -> subtopic1_509
+	subtopic2_510 [label="national foundation science study work make nobody spending nih funding (2, 100.00%)"]
+	subtopic1_509 -> subtopic2_510
+	subtopic1_511 [label="iran trump nuclear deal united israel states back israeli gaza (1, 0.17%)"]
+	policy_5 -> subtopic1_511
+	subtopic2_512 [label="sanctions palestinians palestinian biden would east agreement talks region government (1, 100.00%)"]
+	subtopic1_511 -> subtopic2_512
+	subtopic1_513 [label="crib bill h r inclined future bumpers sleepers infants pre (1, 0.17%)"]
+	policy_5 -> subtopic1_513
+	subtopic2_514 [label="consumers marketplaces certain information third online sellers party volume high (1, 100.00%)"]
+	subtopic1_513 -> subtopic2_514
+	subtopic1_515 [label="enforcement law policing bill misconduct officer practices use police force (1, 0.17%)"]
+	policy_5 -> subtopic1_515
+	subtopic2_516 [label="police mr speaker george floyd us legislation communities act people (1, 100.00%)"]
+	subtopic1_515 -> subtopic2_516
+	subtopic1_517 [label="puerto rico bill disclosures board employed compensation professional interested bankruptcy (1, 0.17%)"]
+	policy_5 -> subtopic1_517
+	subtopic2_518 [label="hotspot doctor trying beneath sick physician attending mocks distinguished partnership (1, 100.00%)"]
+	subtopic1_517 -> subtopic2_518
+	subtopic1_519 [label="juneteenth day independence americans african texas national freedom years act (1, 0.17%)"]
+	policy_5 -> subtopic1_519
+	subtopic2_520 [label="south africa helped ambassador whose someone recognition cost african davis (1, 100.00%)"]
+	subtopic1_519 -> subtopic2_520
+	subtopic1_521 [label="apprenticeship bill programs national system state oa program 1 labor (1, 0.17%)"]
+	policy_5 -> subtopic1_521
+	subtopic2_522 [label="skills workers work registered opportunities industry r jobs 447 apprentices (1, 100.00%)"]
+	subtopic1_521 -> subtopic2_522
+	subtopic1_523 [label="department veterans atlanta medical center act senator affairs georgia cleland (1, 0.17%)"]
+	policy_5 -> subtopic1_523
+	subtopic2_524 [label="veterans rasmuson isakson alaska colonel office regional va women mary (1, 100.00%)"]
+	subtopic1_523 -> subtopic2_524
+	policy_6 [label="International Affairs (564, 5.38%)"]
+	subtopic1_525 [label="bill act would also time legislation people support mr speaker (489, 86.70%)"]
+	policy_6 -> subtopic1_525
+	subtopic2_526 [label="programs national security department related requires certain authorizes education federal (120, 24.54%)"]
+	subtopic1_525 -> subtopic2_526
+	subtopic2_527 [label="ukraine lease russia defense lend president articles putin invasion russian (69, 14.11%)"]
+	subtopic1_525 -> subtopic2_527
+	subtopic2_528 [label="islamophobia muslim bill office acts shall promote combating violence combat (54, 11.04%)"]
+	subtopic1_525 -> subtopic2_528
+	subtopic2_529 [label="iraq military aumf use congress force 2002 war authorization repeal (40, 8.18%)"]
+	subtopic1_525 -> subtopic2_529
+	subtopic2_530 [label="labor forced xinjiang shall sanctions china congress uyghur goods u (28, 5.73%)"]
+	subtopic1_525 -> subtopic2_530
+	subtopic2_531 [label="global security health food strategy agenda pandemic preparedness united locust (24, 4.91%)"]
+	subtopic1_525 -> subtopic2_531
+	subtopic2_532 [label="russia ukraine russian president putin trade energy belarus bill products (16, 3.27%)"]
+	subtopic1_525 -> subtopic2_532
+	subtopic2_533 [label="religious freedom china persecution states commission united chinese rights policy (11, 2.25%)"]
+	subtopic1_525 -> subtopic2_533
+	subtopic2_534 [label="program africa african leaders veterans young leadership support yali must (10, 2.04%)"]
+	subtopic1_525 -> subtopic2_534
+	subtopic2_535 [label="rewards crimes war information act law department state program bill (10, 2.04%)"]
+	subtopic1_525 -> subtopic2_535
+	subtopic2_536 [label="russia belarus financial international act imf treasury sanctions sdrs countries (8, 1.64%)"]
+	subtopic1_525 -> subtopic2_536
+	subtopic2_537 [label="mozambique resolution violence terrorist isis cabo delgado province government northern (8, 1.64%)"]
+	subtopic1_525 -> subtopic2_537
+	subtopic2_538 [label="uyghur china rights human uyghurs department groups state minority issues (8, 1.64%)"]
+	subtopic1_525 -> subtopic2_538
+	subtopic2_539 [label="nicaragua ortega department sanctions must act corruption state renacer targeted (7, 1.43%)"]
+	subtopic1_525 -> subtopic2_539
+	subtopic2_540 [label="supply semiconductor chain materials working russia congress group ukraine global (7, 1.43%)"]
+	subtopic1_525 -> subtopic2_540
+	subtopic2_541 [label="malnutrition nutrition usaid global programs prevent community act u activities (6, 1.23%)"]
+	subtopic1_525 -> subtopic2_541
+	subtopic2_542 [label="taiwan china sanctions ccp securities certain military u administration invasion (6, 1.23%)"]
+	subtopic1_525 -> subtopic2_542
+	subtopic2_543 [label="bosnia peace agreement sanctions herzegovina certain foreign dayton persons stability (6, 1.23%)"]
+	subtopic1_525 -> subtopic2_543
+	subtopic2_544 [label="drug captagon assad department trafficking syria regime narcotics production administration (6, 1.23%)"]
+	subtopic1_525 -> subtopic2_544
+	subtopic2_545 [label="program fellowship lewis john civil rights fulbright fellows shall world (6, 1.23%)"]
+	subtopic1_525 -> subtopic2_545
+	subtopic2_546 [label="burma military democracy coup burmese democratic mr nations southeast united (5, 1.02%)"]
+	subtopic1_525 -> subtopic2_546
+	subtopic2_547 [label="democracy cambodia sanctions cambodian rights human individuals shall government hun (5, 1.02%)"]
+	subtopic1_525 -> subtopic2_547
+	subtopic2_548 [label="georgia support rights human shall u abuses russian assistance georgian (5, 1.02%)"]
+	subtopic1_525 -> subtopic2_548
+	subtopic2_549 [label="iran iranian sanctions drones bill provisions u combat weapons aerial (5, 1.02%)"]
+	subtopic1_525 -> subtopic2_549
+	subtopic2_550 [label="debt coral conservation tropical countries reef forest nature developing win (4, 0.82%)"]
+	subtopic1_525 -> subtopic2_550
+	subtopic2_551 [label="putin ukraine sanctions nord russia stream president pipeline 2 biden (4, 0.82%)"]
+	subtopic1_525 -> subtopic2_551
+	subtopic2_552 [label="putin ukraine russian sanctions bill war corrupt act russia corruption (4, 0.82%)"]
+	subtopic1_525 -> subtopic2_552
+	subtopic2_553 [label="iran hostages hostage congressional gold medal crisis 1979 award 1981 (4, 0.82%)"]
+	subtopic1_525 -> subtopic2_553
+	subtopic2_554 [label="descent african people affairs global discrimination office international internationally rights (1, 0.20%)"]
+	subtopic1_525 -> subtopic2_554
+	subtopic2_555 [label="saudi arabia dissidents intelligence khashoggi jamal killing house select 1392 (1, 0.20%)"]
+	subtopic1_525 -> subtopic2_555
+	subtopic2_556 [label="nuclear weapons medicare treaty united conversion nations agreement international needs (1, 0.20%)"]
+	subtopic1_525 -> subtopic2_556
+	subtopic1_557 [label="section sec funds provided division title program appropriations provides certain (50, 8.87%)"]
+	policy_6 -> subtopic1_557
+	subtopic2_558 [label="bill election states president federal people campaign state act government (18, 36.00%)"]
+	subtopic1_557 -> subtopic2_558
+	subtopic2_559 [label="extends act appropriations sec 2022 continuing december division provides programs (16, 32.00%)"]
+	subtopic1_557 -> subtopic2_559
+	subtopic2_560 [label="funding sec provides act energy credit program available shall remain (8, 16.00%)"]
+	subtopic1_557 -> subtopic2_560
+	subtopic2_561 [label="hate crimes bill law justice department crime covid 19 doj (2, 4.00%)"]
+	subtopic1_557 -> subtopic2_561
+	subtopic2_562 [label="counterterrorism countries partnership strategies partner africa maghreb north counter west (1, 2.00%)"]
+	subtopic1_557 -> subtopic2_562
+	subtopic2_563 [label="bill incarcerated act justice juveniles communications attorney mr system person (1, 2.00%)"]
+	subtopic1_557 -> subtopic2_563
+	subtopic2_564 [label="international arizona extends commission border continuing ioi 2022 mexico water (1, 2.00%)"]
+	subtopic1_557 -> subtopic2_564
+	subtopic2_565 [label="species wildlife conservation endangered must restoration title funds fish recovery (1, 2.00%)"]
+	subtopic1_557 -> subtopic2_565
+	subtopic2_566 [label="bill act must suspend move rules pass r veterans h (1, 2.00%)"]
+	subtopic1_557 -> subtopic2_566
+	subtopic2_567 [label="security homeland dhs bill items act procurement department sets oig (1, 2.00%)"]
+	subtopic1_557 -> subtopic2_567
+	subtopic1_568 [label="sanitation women girls refugees refugee people safety vulnerable secure access (8, 1.42%)"]
+	policy_6 -> subtopic1_568
+	subtopic2_569 [label="korean north korea family americans families bill state reunification south (8, 100.00%)"]
+	subtopic1_568 -> subtopic2_569
+	subtopic1_570 [label="women violence act bill sexual programs assault victims domestic new (6, 1.06%)"]
+	policy_6 -> subtopic1_570
+	subtopic2_571 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (6, 100.00%)"]
+	subtopic1_570 -> subtopic2_571
+	subtopic1_572 [label="dissidents states united congress protection diplomatic act u intelligence human (4, 0.71%)"]
+	policy_6 -> subtopic1_572
+	subtopic2_573 [label="saudi arabia bill president khashoggi shall rights requires whether jamal (4, 100.00%)"]
+	subtopic1_572 -> subtopic2_573
+	subtopic1_574 [label="financial act exploitation legislation protect bill r make older 2021 (3, 0.53%)"]
+	policy_6 -> subtopic1_574
+	subtopic2_575 [label="burma coup united military states burmese people government parliament democratic (3, 100.00%)"]
+	subtopic1_574 -> subtopic2_575
+	subtopic1_576 [label="hockey ree league years one player first member commitment sale (3, 0.53%)"]
+	policy_6 -> subtopic1_576
+	subtopic2_577 [label="willie medal congressional gold bill ice act mr recognition time (3, 100.00%)"]
+	subtopic1_576 -> subtopic2_577
+	subtopic1_578 [label="would washington bill rule act district channel proposed access columbia (1, 0.18%)"]
+	policy_6 -> subtopic1_578
+	subtopic2_579 [label="peace corps menstrual products pcvs volunteers equity items ensure anniversary (1, 100.00%)"]
+	subtopic1_578 -> subtopic2_579
+	policy_7 [label="Labor and Employment (449, 4.28%)"]
+	subtopic1_580 [label="bill act would also time legislation people support mr speaker (127, 28.29%)"]
+	policy_7 -> subtopic1_580
+	subtopic2_581 [label="programs national security department related requires certain authorizes education federal (57, 44.88%)"]
+	subtopic1_580 -> subtopic2_581
+	subtopic2_582 [label="retirement plans act workers employees employer strong savings secure securing (29, 22.83%)"]
+	subtopic1_580 -> subtopic2_582
+	subtopic2_583 [label="benefits pension pbgc payment delphi monthly bill plans corporation plan (21, 16.54%)"]
+	subtopic1_580 -> subtopic2_583
+	subtopic2_584 [label="center keller helen national stamps deaf conservation blind species stamp (5, 3.94%)"]
+	subtopic1_580 -> subtopic2_584
+	subtopic2_585 [label="job older age workers applicants said employers jobs people discrimination (3, 2.36%)"]
+	subtopic1_580 -> subtopic2_585
+	subtopic2_586 [label="violence workplace workers social healthcare standard 1195 osha prevention labor (2, 1.57%)"]
+	subtopic1_580 -> subtopic2_586
+	subtopic2_587 [label="pay women female jobs gender dominated wages paid epa equal (1, 0.79%)"]
+	subtopic1_580 -> subtopic2_587
+	subtopic2_588 [label="health care mental providers among behavioral suicide must hhs grants (1, 0.79%)"]
+	subtopic1_580 -> subtopic2_588
+	subtopic2_589 [label="active shooter alert bill local law enforcement state coordinator act (1, 0.79%)"]
+	subtopic1_580 -> subtopic2_589
+	subtopic2_590 [label="advertising businesses federal owned gao agencies minorities contracts information sdbs (1, 0.79%)"]
+	subtopic1_580 -> subtopic2_590
+	subtopic2_591 [label="research science award grants education students stem support national advance (1, 0.79%)"]
+	subtopic1_580 -> subtopic2_591
+	subtopic2_592 [label="va harassment veterans employment discrimination sexual complaint requires veteran policies (1, 0.79%)"]
+	subtopic1_580 -> subtopic2_592
+	subtopic2_593 [label="harassment sexual transportation assault national passenger commission individuals reporting incidents (1, 0.79%)"]
+	subtopic1_580 -> subtopic2_593
+	subtopic2_594 [label="cancer childhood research education act star reauthorization public early pediatric (1, 0.79%)"]
+	subtopic1_580 -> subtopic2_594
+	subtopic2_595 [label="program internet connectivity programs access affordable lifeline income low assistance (1, 0.79%)"]
+	subtopic1_580 -> subtopic2_595
+	subtopic2_596 [label="retirement stock model employee esop esops employees retire plans mechanism (1, 0.79%)"]
+	subtopic1_580 -> subtopic2_596
+	subtopic1_597 [label="act bill discrimination job hair based women time law black (124, 27.62%)"]
+	policy_7 -> subtopic1_597
+	subtopic2_598 [label="pay women equal discrimination wage bill sex men paycheck fairness (64, 51.61%)"]
+	subtopic1_597 -> subtopic2_598
+	subtopic2_599 [label="age discrimination older bill workers claims act employment practice also (60, 48.39%)"]
+	subtopic1_597 -> subtopic2_599
+	subtopic1_600 [label="section sec funds provided division title program appropriations provides certain (82, 18.26%)"]
+	policy_7 -> subtopic1_600
+	subtopic2_601 [label="labor employees bill union workers employee strikes unfair employers right (81, 98.78%)"]
+	subtopic1_600 -> subtopic2_601
+	subtopic2_602 [label="funding sec provides act energy credit program available shall remain (1, 1.22%)"]
+	subtopic1_600 -> subtopic2_602
+	subtopic1_603 [label="apprenticeship bill programs national system state oa program 1 labor (74, 16.48%)"]
+	policy_7 -> subtopic1_603
+	subtopic2_604 [label="skills workers work registered opportunities industry r jobs 447 apprentices (73, 98.65%)"]
+	subtopic1_603 -> subtopic2_604
+	subtopic2_605 [label="beyer clark butterfield gomez arrington kelly kildee fl pa wagner (1, 1.35%)"]
+	subtopic1_603 -> subtopic2_605
+	subtopic1_606 [label="violence workers nurses bill osha patients would said emergency department (37, 8.24%)"]
+	policy_7 -> subtopic1_606
+	subtopic2_607 [label="health care workplace social service violence workers standard labor sectors (37, 100.00%)"]
+	subtopic1_606 -> subtopic2_607
+	subtopic1_608 [label="women violence act bill sexual programs assault victims domestic new (5, 1.11%)"]
+	policy_7 -> subtopic1_608
+	subtopic2_609 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (5, 100.00%)"]
+	subtopic1_608 -> subtopic2_609
+	policy_8 [label="Transportation and Public Works (425, 4.05%)"]
+	subtopic1_610 [label="section sec funds provided division title program appropriations provides certain (245, 57.65%)"]
+	policy_8 -> subtopic1_610
+	subtopic2_611 [label="funding sec provides act energy credit program available shall remain (190, 77.55%)"]
+	subtopic1_610 -> subtopic2_611
+	subtopic2_612 [label="bill election states president federal people campaign state act government (19, 7.76%)"]
+	subtopic1_610 -> subtopic2_612
+	subtopic2_613 [label="water act tribe arizona agreement river interior settlement bill crit (4, 1.63%)"]
+	subtopic1_610 -> subtopic2_613
+	subtopic2_614 [label="ocean acidification bill act research coastal national support coast committee (3, 1.22%)"]
+	subtopic1_610 -> subtopic2_614
+	subtopic2_615 [label="va veterans sec must toxic service exposure care specified health (3, 1.22%)"]
+	subtopic1_610 -> subtopic2_615
+	subtopic2_616 [label="administration federal bill appropriations housing office development safety provides related (3, 1.22%)"]
+	subtopic1_610 -> subtopic2_616
+	subtopic2_617 [label="requires division authorizes coast related guard dod defense department security (3, 1.22%)"]
+	subtopic1_610 -> subtopic2_617
+	subtopic2_618 [label="hate crimes bill law justice department crime covid 19 doj (2, 0.82%)"]
+	subtopic1_610 -> subtopic2_618
+	subtopic2_619 [label="extends act appropriations sec 2022 continuing december division provides programs (2, 0.82%)"]
+	subtopic1_610 -> subtopic2_619
+	subtopic2_620 [label="pfas water epa bill must substances act health standards hazardous (2, 0.82%)"]
+	subtopic1_610 -> subtopic2_620
+	subtopic2_621 [label="horses slaughtered equines mexico slaughter advent gobble heinous undertake hat (2, 0.82%)"]
+	subtopic1_610 -> subtopic2_621
+	subtopic2_622 [label="bill act must suspend move rules pass r veterans h (2, 0.82%)"]
+	subtopic1_610 -> subtopic2_622
+	subtopic2_623 [label="tour commercial flights areas safety national installations ground air operations (1, 0.41%)"]
+	subtopic1_610 -> subtopic2_623
+	subtopic2_624 [label="va administration bill appropriations housing office care safety transportation data (1, 0.41%)"]
+	subtopic1_610 -> subtopic2_624
+	subtopic2_625 [label="security homeland dhs bill items act procurement department sets oig (1, 0.41%)"]
+	subtopic1_610 -> subtopic2_625
+	subtopic2_626 [label="requires division authorizes related program establishes department security certain guard (1, 0.41%)"]
+	subtopic1_610 -> subtopic2_626
+	subtopic2_627 [label="tax maritime vessels fuels fuel diesel ocean ports excise operators (1, 0.41%)"]
+	subtopic1_610 -> subtopic2_627
+	subtopic2_628 [label="martin joe michigan faculty dearborn leonard father deluged attended ford (1, 0.41%)"]
+	subtopic1_610 -> subtopic2_628
+	subtopic2_629 [label="bill fha housing mortgage appraisers financial time homebuyers first mr (1, 0.41%)"]
+	subtopic1_610 -> subtopic2_629
+	subtopic2_630 [label="bill highlands land conservation act service federal forest interior data (1, 0.41%)"]
+	subtopic1_610 -> subtopic2_630
+	subtopic2_631 [label="marijuana housing federally parent assisted bill child health medical including (1, 0.41%)"]
+	subtopic1_610 -> subtopic2_631
+	subtopic2_632 [label="labor employees bill union workers employee strikes unfair employers right (1, 0.41%)"]
+	subtopic1_610 -> subtopic2_632
+	subtopic1_633 [label="bill act would also time legislation people support mr speaker (153, 36.00%)"]
+	policy_8 -> subtopic1_633
+	subtopic2_634 [label="ocean shipping carriers charges maritime american fmc u commission act (33, 21.57%)"]
+	subtopic1_633 -> subtopic2_634
+	subtopic2_635 [label="programs national security department related requires certain authorizes education federal (32, 20.92%)"]
+	subtopic1_633 -> subtopic2_635
+	subtopic2_636 [label="security tsa plan transportation airports information act must develop 19 (17, 11.11%)"]
+	subtopic1_633 -> subtopic2_636
+	subtopic2_637 [label="air mobility advanced aam aircraft federal transportation operations act mr (10, 6.54%)"]
+	subtopic1_633 -> subtopic2_637
+	subtopic2_638 [label="alaska cruise canada police voyage ships cdc one officers foreign (8, 5.23%)"]
+	subtopic1_633 -> subtopic2_638
+	subtopic2_639 [label="safety information faa airmen pilots force task repair stations aviation (7, 4.58%)"]
+	subtopic1_633 -> subtopic2_639
+	subtopic2_640 [label="trafficking human victims school sex children child abuse sexual act (5, 3.27%)"]
+	subtopic1_633 -> subtopic2_640
+	subtopic2_641 [label="airport projects expedited payments incentive infrastructure airports completion delivery ranking (4, 2.61%)"]
+	subtopic1_633 -> subtopic2_641
+	subtopic2_642 [label="pfas firefighting firefighters substances foam exposure act health equipment dhs (4, 2.61%)"]
+	subtopic1_633 -> subtopic2_642
+	subtopic2_643 [label="sexual arbitration harassment assault forced act women court dispute agreements (2, 1.31%)"]
+	subtopic1_633 -> subtopic2_643
+	subtopic2_644 [label="administration federal housing appropriations bill development office transportation provides safety (2, 1.31%)"]
+	subtopic1_633 -> subtopic2_644
+	subtopic2_645 [label="harassment sexual transportation assault national passenger commission individuals reporting incidents (2, 1.31%)"]
+	subtopic1_633 -> subtopic2_645
+	subtopic2_646 [label="service appropriations bill food provides nutrition rural programs agricultural administration (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_646
+	subtopic2_647 [label="acquisition dhs programs department board management review security homeland responsibilities (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_647
+	subtopic2_648 [label="guard coast security fleet needs missions polar america cutters pay (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_648
+	subtopic2_649 [label="counsel inspection secondary individual covered opportunity subject lawful border permanent (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_649
+	subtopic2_650 [label="formula infant baby families supply wic fda shortage food usda (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_650
+	subtopic2_651 [label="lymphedema treatment medicare compression coverage obesity items care garments provides (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_651
+	subtopic2_652 [label="stem science ihes must agency bill underrepresented groups also grants (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_652
+	subtopic2_653 [label="veterans va bill affairs department care act health requires compensation (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_653
+	subtopic2_654 [label="committee mr january president trump 6th meadows attack navarro privilege (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_654
+	subtopic2_655 [label="postal service usps bill benefits program government health must office (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_655
+	subtopic2_656 [label="abortion services bill health provider may women medically restrictions governments (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_656
+	subtopic2_657 [label="domestic terrorism fbi doj white hate violence dhs department crimes (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_657
+	subtopic2_658 [label="health systems vaccination immunization public information pregnant bill 19 care (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_658
+	subtopic2_659 [label="committee resolution mr privilege united select scavino states congress executive (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_659
+	subtopic2_660 [label="voting bill vote election voter federal campaign establishes rights registration (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_660
+	subtopic2_661 [label="infrastructure bridges hate roads tax doj hikes supervised fund raising (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_661
+	subtopic2_662 [label="poverty areas persistent bill federal communities investments resources need report (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_662
+	subtopic2_663 [label="small businesses grant restaurants pandemic loss bill sba experienced priority (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_663
+	subtopic2_664 [label="air cabin aircraft faa airline quality incidents fume fumes toxic (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_664
+	subtopic2_665 [label="delaware uss first state navy history later constitution mess texas (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_665
+	subtopic2_666 [label="judicial philosophy court judge jackson rewrite dark history money big (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_666
+	subtopic2_667 [label="nuclear iran war deal president trump plan putin bomb closer (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_667
+	subtopic2_668 [label="corrosion prevention bridge repair contractors defazio 117 employ union registered (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_668
+	subtopic2_669 [label="american vessels port exports u ocean oil would crude berthing (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_669
+	subtopic2_670 [label="courtney trafficking katy says childproof human america help kelly sex (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_670
+	subtopic2_671 [label="jones act protection border customs letter offshore u 2021 vessels (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_671
+	subtopic2_672 [label="crossings rail blocked railroad safety highway crossing improvement problem trains (1, 0.65%)"]
+	subtopic1_633 -> subtopic2_672
+	subtopic1_673 [label="women violence act bill sexual programs assault victims domestic new (5, 1.18%)"]
+	policy_8 -> subtopic1_673
+	subtopic2_674 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (4, 80.00%)"]
+	subtopic1_673 -> subtopic2_674
+	subtopic2_675 [label="violence domestic services prevention bill family support organizations tribal grants (1, 20.00%)"]
+	subtopic1_673 -> subtopic2_675
+	subtopic1_676 [label="support workforce education industry research bill institutions u mr stakeholders (4, 0.94%)"]
+	policy_8 -> subtopic1_676
+	subtopic2_677 [label="aviation association aerospace national center pilots maintenance advancement air airlines (4, 100.00%)"]
+	subtopic1_676 -> subtopic2_677
+	subtopic1_678 [label="would washington bill rule act district channel proposed access columbia (3, 0.71%)"]
+	policy_8 -> subtopic1_678
+	subtopic2_679 [label="helicopter noise faa area mechanism gao information ncr dc exchange (3, 100.00%)"]
+	subtopic1_678 -> subtopic2_679
+	subtopic1_680 [label="bill security homeland traveler trusted review department dhs quadrennial 2021 (3, 0.71%)"]
+	policy_8 -> subtopic1_680
+	subtopic2_681 [label="blood cord transplant program stem cell marrow act also patients (3, 100.00%)"]
+	subtopic1_680 -> subtopic2_681
+	subtopic1_682 [label="national heritage area act bill support river park system would (2, 0.47%)"]
+	policy_8 -> subtopic1_682
+	subtopic2_683 [label="bill area wilderness establishes recreation lands national management recreational designates (2, 100.00%)"]
+	subtopic1_682 -> subtopic2_683
+	subtopic1_684 [label="marriage act sex marriages law provisions state court recognize states (2, 0.47%)"]
+	policy_8 -> subtopic1_684
+	subtopic2_685 [label="legislation one people justice would want couples rights senate said (2, 100.00%)"]
+	subtopic1_684 -> subtopic2_685
+	subtopic1_686 [label="committee trump returns tax house means ways law democrats request (2, 0.47%)"]
+	policy_8 -> subtopic1_686
+	subtopic2_687 [label="president tax return irs audit examination presidential bill report income (2, 100.00%)"]
+	subtopic1_686 -> subtopic2_687
+	subtopic1_688 [label="bikeshare systems transit eligible demand legislation since transportation trips shared (1, 0.24%)"]
+	policy_8 -> subtopic1_688
+	subtopic2_689 [label="portland capitalist rebut bounce crammed leisure portrayed weinstein loads millionaire (1, 100.00%)"]
+	subtopic1_688 -> subtopic2_689
+	subtopic1_690 [label="financial act exploitation legislation protect bill r make older 2021 (1, 0.24%)"]
+	policy_8 -> subtopic1_690
+	subtopic2_691 [label="elder abuse justice fraud initiative bill department doj protection resources (1, 100.00%)"]
+	subtopic1_690 -> subtopic2_691
+	subtopic1_692 [label="activity physical based hhs guidelines years must bill americans 10 (1, 0.24%)"]
+	policy_8 -> subtopic1_692
+	subtopic2_693 [label="rocky vaccines rejects pursuant cloaked unlikely strips guise eligibilities loads (1, 100.00%)"]
+	subtopic1_692 -> subtopic2_693
+	subtopic1_694 [label="organizations c 501 4 act irs self declare tax bill (1, 0.24%)"]
+	policy_8 -> subtopic1_694
+	subtopic2_695 [label="favorites couch capitalist bounce crammed leisure portrayed weinstein loads millionaire (1, 100.00%)"]
+	subtopic1_694 -> subtopic2_695
+	subtopic1_696 [label="section nvra 8 fernandes states enforcement voter 7 division voting (1, 0.24%)"]
+	policy_8 -> subtopic1_696
+	subtopic2_697 [label="list maintenance leadership told provisions voters registration vote investigations election (1, 100.00%)"]
+	subtopic1_696 -> subtopic2_697
+	subtopic1_698 [label="soring horses bill act tennessee past walking horse industry r (1, 0.24%)"]
+	policy_8 -> subtopic1_698
+	subtopic2_699 [label="grossly occasion sales humanely subject consistent loads pessimism busdrivers hodgepodge (1, 100.00%)"]
+	subtopic1_698 -> subtopic2_699
+	policy_9 [label="Commerce (377, 3.60%)"]
+	subtopic1_700 [label="bill act would also time legislation people support mr speaker (345, 91.51%)"]
+	policy_9 -> subtopic1_700
+	subtopic2_701 [label="programs national security department related requires certain authorizes education federal (74, 21.45%)"]
+	subtopic1_700 -> subtopic2_701
+	subtopic2_702 [label="small businesses grant restaurants pandemic loss bill sba experienced priority (51, 14.78%)"]
+	subtopic1_700 -> subtopic2_702
+	subtopic2_703 [label="small business program women businesses sba loan owned bill 7 (46, 13.33%)"]
+	subtopic1_700 -> subtopic2_703
+	subtopic2_704 [label="small program ppp june 2021 bill 30 businesses water business (27, 7.83%)"]
+	subtopic1_700 -> subtopic2_704
+	subtopic2_705 [label="ftc federal commission court trade consumers relief seek consumer act (22, 6.38%)"]
+	subtopic1_700 -> subtopic2_705
+	subtopic2_706 [label="small loan 504 sba program cdc bill business office must (18, 5.22%)"]
+	subtopic1_700 -> subtopic2_706
+	subtopic2_707 [label="small business program businesses score association sba percent h sbics (18, 5.22%)"]
+	subtopic1_700 -> subtopic2_707
+	subtopic2_708 [label="small business businesses programs centers education career workforce development support (15, 4.35%)"]
+	subtopic1_700 -> subtopic2_708
+	subtopic2_709 [label="bill program patents humanity patent humanitarian award certificates h support (9, 2.61%)"]
+	subtopic1_700 -> subtopic2_709
+	subtopic2_710 [label="debt collection consumer protections collector student bill collectors small certain (7, 2.03%)"]
+	subtopic1_700 -> subtopic2_710
+	subtopic2_711 [label="small hubzone business price program evaluation businesses preference contracting revises (7, 2.03%)"]
+	subtopic1_700 -> subtopic2_711
+	subtopic2_712 [label="conflicts interest organizational federal small contractors agency agencies businesses subcontracting (7, 2.03%)"]
+	subtopic1_700 -> subtopic2_712
+	subtopic2_713 [label="scams seniors information commission older report adults enforcement law scammers (6, 1.74%)"]
+	subtopic1_700 -> subtopic2_713
+	subtopic2_714 [label="networks cybersecurity equipment communications act bill open mobile information security (5, 1.45%)"]
+	subtopic1_700 -> subtopic2_714
+	subtopic2_715 [label="crib babies sleep inclined bumpers sleepers products infant infants safe (4, 1.16%)"]
+	subtopic1_700 -> subtopic2_715
+	subtopic2_716 [label="disaster assistance fema federal bill emergency disasters management agency rural (4, 1.16%)"]
+	subtopic1_700 -> subtopic2_716
+	subtopic2_717 [label="devices consumers microphone camera smart consumer work internet connected disclose (4, 1.16%)"]
+	subtopic1_700 -> subtopic2_717
+	subtopic2_718 [label="veterans va bill affairs department care act health requires compensation (3, 0.87%)"]
+	subtopic1_700 -> subtopic2_718
+	subtopic2_719 [label="covid fraud 19 eidl limitations statute language pandemic access sba (3, 0.87%)"]
+	subtopic1_700 -> subtopic2_719
+	subtopic2_720 [label="competition companies amazon platform tech platforms big google products dominant (2, 0.58%)"]
+	subtopic1_700 -> subtopic2_720
+	subtopic2_721 [label="shark trade small fin fins sharks u sba sales ban (2, 0.58%)"]
+	subtopic1_700 -> subtopic2_721
+	subtopic2_722 [label="covid 19 cognitive research support brycen ben addiction family national (1, 0.29%)"]
+	subtopic1_700 -> subtopic2_722
+	subtopic2_723 [label="health mental students prevention education suicide campus oral bill support (1, 0.29%)"]
+	subtopic1_700 -> subtopic2_723
+	subtopic2_724 [label="technology equipment repair computer computers veterans students broadband rural need (1, 0.29%)"]
+	subtopic1_700 -> subtopic2_724
+	subtopic2_725 [label="program internet connectivity programs access affordable lifeline income low assistance (1, 0.29%)"]
+	subtopic1_700 -> subtopic2_725
+	subtopic2_726 [label="budget materials agency justification public congress agencies congressional federal transparency (1, 0.29%)"]
+	subtopic1_700 -> subtopic2_726
+	subtopic2_727 [label="program africa african leaders veterans young leadership support yali must (1, 0.29%)"]
+	subtopic1_700 -> subtopic2_727
+	subtopic2_728 [label="supply semiconductor chain materials working russia congress group ukraine global (1, 0.29%)"]
+	subtopic1_700 -> subtopic2_728
+	subtopic2_729 [label="sba restaurants ig experienced eidl revitalization shocks launch pain venue (1, 0.29%)"]
+	subtopic1_700 -> subtopic2_729
+	subtopic2_730 [label="suicide synthetic health prevention opioids hhs training awareness public services (1, 0.29%)"]
+	subtopic1_700 -> subtopic2_730
+	subtopic2_731 [label="workers made companies ohio manufacturing american jobs country semiconductors overseas (1, 0.29%)"]
+	subtopic1_700 -> subtopic2_731
+	subtopic2_732 [label="e visa states united lightering 1 visas alien u trade (1, 0.29%)"]
+	subtopic1_700 -> subtopic2_732
+	subtopic1_733 [label="copyright act arts fees waive application registration time bill work (9, 2.39%)"]
+	policy_9 -> subtopic1_733
+	subtopic2_734 [label="students property intellectual congressional app competitions register winning competition challenge (9, 100.00%)"]
+	subtopic1_733 -> subtopic2_734
+	subtopic1_735 [label="women violence act bill sexual programs assault victims domestic new (8, 2.12%)"]
+	policy_9 -> subtopic1_735
+	subtopic2_736 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (8, 100.00%)"]
+	subtopic1_735 -> subtopic2_736
+	subtopic1_737 [label="child would curren katie stability judy years old families stories (8, 2.12%)"]
+	policy_9 -> subtopic1_737
+	subtopic2_738 [label="tip children overs act dressers safety furniture standards sturdy consumer (8, 100.00%)"]
+	subtopic1_737 -> subtopic2_738
+	subtopic1_739 [label="section sec funds provided division title program appropriations provides certain (4, 1.06%)"]
+	policy_9 -> subtopic1_739
+	subtopic2_740 [label="bill election states president federal people campaign state act government (2, 50.00%)"]
+	subtopic1_739 -> subtopic2_740
+	subtopic2_741 [label="bill act must suspend move rules pass r veterans h (1, 25.00%)"]
+	subtopic1_739 -> subtopic2_741
+	subtopic2_742 [label="funding sec provides act energy credit program available shall remain (1, 25.00%)"]
+	subtopic1_739 -> subtopic2_742
+	subtopic1_743 [label="crib bill h r inclined future bumpers sleepers infants pre (2, 0.53%)"]
+	policy_9 -> subtopic1_743
+	subtopic2_744 [label="consumers marketplaces certain information third online sellers party volume high (2, 100.00%)"]
+	subtopic1_743 -> subtopic2_744
+	subtopic1_745 [label="recalls recall product consumers products companies know consumer cpsc marketing (1, 0.27%)"]
+	policy_9 -> subtopic1_745
+	subtopic2_746 [label="donovan bounce crammed leisure portrayed weinstein loads millionaire estates hodgepodge (1, 100.00%)"]
+	subtopic1_745 -> subtopic2_746
+	policy_10 [label="Public Lands and Natural Resources (306, 2.92%)"]
+	subtopic1_747 [label="national heritage area act bill support river park system would (158, 51.63%)"]
+	policy_10 -> subtopic1_747
+	subtopic2_748 [label="bill area wilderness establishes recreation lands national management recreational designates (81, 51.27%)"]
+	subtopic1_747 -> subtopic2_748
+	subtopic2_749 [label="land site bill tribe historic lands act school indian trust (65, 41.14%)"]
+	subtopic1_747 -> subtopic2_749
+	subtopic2_750 [label="northern idaho 3616 southeastern history leger industries became shared fernandez (4, 2.53%)"]
+	subtopic1_747 -> subtopic2_750
+	subtopic2_751 [label="baltimore reauthorization chiricahua towards mt mercury motion notable youth neighborhoods (4, 2.53%)"]
+	subtopic1_747 -> subtopic2_751
+	subtopic2_752 [label="site historic amache interior granada water land colorado appurtenances boundary (3, 1.90%)"]
+	subtopic1_747 -> subtopic2_752
+	subtopic2_753 [label="brandon response miller understatement tremendously snyder emily alan possible watkins (1, 0.63%)"]
+	subtopic1_747 -> subtopic2_753
+	subtopic1_754 [label="bill act would also time legislation people support mr speaker (75, 24.51%)"]
+	policy_10 -> subtopic1_754
+	subtopic2_755 [label="forest service trail bill completion wildfire wildfires interior divide continental (39, 52.00%)"]
+	subtopic1_754 -> subtopic2_755
+	subtopic2_756 [label="programs national security department related requires certain authorizes education federal (15, 20.00%)"]
+	subtopic1_754 -> subtopic2_756
+	subtopic2_757 [label="parks veterans national lands pass gold families star recreational yellowstone (10, 13.33%)"]
+	subtopic1_754 -> subtopic2_757
+	subtopic2_758 [label="gateway ukrainian solidarity arch people ukraine louis st russia missouri (3, 4.00%)"]
+	subtopic1_754 -> subtopic2_758
+	subtopic2_759 [label="veterans park honor gold star police service national fees special (2, 2.67%)"]
+	subtopic1_754 -> subtopic2_759
+	subtopic2_760 [label="forest treasury department officers interest service agencies home carry accounts (2, 2.67%)"]
+	subtopic1_754 -> subtopic2_760
+	subtopic2_761 [label="japanese american americans confinement war world ii h sites history (1, 1.33%)"]
+	subtopic1_754 -> subtopic2_761
+	subtopic2_762 [label="black soldiers war slavery 000 served troops army white confederate (1, 1.33%)"]
+	subtopic1_754 -> subtopic2_762
+	subtopic2_763 [label="park pipeline natural gas forge valley permit within main segment (1, 1.33%)"]
+	subtopic1_754 -> subtopic2_763
+	subtopic2_764 [label="heritage national area process bills omnibus invented areas congress shall (1, 1.33%)"]
+	subtopic1_754 -> subtopic2_764
+	subtopic1_765 [label="section sec funds provided division title program appropriations provides certain (43, 14.05%)"]
+	policy_10 -> subtopic1_765
+	subtopic2_766 [label="trail service forest completion bill water amendment interior mr divide (15, 34.88%)"]
+	subtopic1_765 -> subtopic2_766
+	subtopic2_767 [label="bill highlands land conservation act service federal forest interior data (10, 23.26%)"]
+	subtopic1_765 -> subtopic2_767
+	subtopic2_768 [label="area national heritage point study ka bill ena bear river (5, 11.63%)"]
+	subtopic1_765 -> subtopic2_768
+	subtopic2_769 [label="japanese american war world ii confinement sites history program network (4, 9.30%)"]
+	subtopic1_765 -> subtopic2_769
+	subtopic2_770 [label="bill act must suspend move rules pass r veterans h (2, 4.65%)"]
+	subtopic1_765 -> subtopic2_770
+	subtopic2_771 [label="ocean acidification bill act research coastal national support coast committee (2, 4.65%)"]
+	subtopic1_765 -> subtopic2_771
+	subtopic2_772 [label="wildlife great lakes act fish invasive water species restoration bill (2, 4.65%)"]
+	subtopic1_765 -> subtopic2_772
+	subtopic2_773 [label="funding sec provides act energy credit program available shall remain (2, 4.65%)"]
+	subtopic1_765 -> subtopic2_773
+	subtopic2_774 [label="bill election states president federal people campaign state act government (1, 2.33%)"]
+	subtopic1_765 -> subtopic2_774
+	subtopic1_775 [label="war women world ii memorial home front worked bill act (15, 4.90%)"]
+	policy_10 -> subtopic1_775
+	subtopic2_776 [label="commemorative work service national federal establishment bill district shall enslaved (15, 100.00%)"]
+	subtopic1_775 -> subtopic2_776
+	subtopic1_777 [label="district c bill columbia federal act would authority local government (5, 1.63%)"]
+	policy_10 -> subtopic1_777
+	subtopic2_778 [label="statue commission board park removal buildings ncpc interior land zoning (2, 40.00%)"]
+	subtopic1_777 -> subtopic2_778
+	subtopic2_779 [label="park washington war defenses national creek rock civil nation capital (2, 40.00%)"]
+	subtopic1_777 -> subtopic2_779
+	subtopic2_780 [label="newlands fountain chevy remove name chase park memorial francis plaque (1, 20.00%)"]
+	subtopic1_777 -> subtopic2_780
+	subtopic1_781 [label="bill basins extends report fy2022 5001 sucker chub speaker parks (4, 1.31%)"]
+	policy_10 -> subtopic1_781
+	subtopic2_782 [label="river colorado recovery fish endangered upper juan san programs basin (4, 100.00%)"]
+	subtopic1_781 -> subtopic2_782
+	subtopic1_783 [label="women violence act bill sexual programs assault victims domestic new (3, 0.98%)"]
+	policy_10 -> subtopic1_783
+	subtopic2_784 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (3, 100.00%)"]
+	subtopic1_783 -> subtopic2_784
+	subtopic1_785 [label="committee fisheries advisory sustainable fishery noaa regions members fishing legislation (3, 0.98%)"]
+	policy_10 -> subtopic1_785
+	subtopic2_786 [label="salmon sound puget alaska task force bill state alaskan research (3, 100.00%)"]
+	subtopic1_785 -> subtopic2_786
+	policy_11 [label="Civil Rights and Liberties, Minority Issues (305, 2.91%)"]
+	subtopic1_787 [label="marriage act sex marriages law provisions state court recognize states (105, 34.43%)"]
+	policy_11 -> subtopic1_787
+	subtopic2_788 [label="legislation one people justice would want couples rights senate said (101, 96.19%)"]
+	subtopic1_787 -> subtopic2_788
+	subtopic2_789 [label="rex said indiana reagan people one early went marine governor (1, 0.95%)"]
+	subtopic1_787 -> subtopic2_789
+	subtopic2_790 [label="senator mr north carolina south dakota indiana kansas srf marshall (1, 0.95%)"]
+	subtopic1_787 -> subtopic2_790
+	subtopic2_791 [label="30 calendar 1133 motions 1147 nos wednesday cloture executive unanimous (1, 0.95%)"]
+	subtopic1_787 -> subtopic2_791
+	subtopic2_792 [label="war world russia ukraine putin nations illegal defender free sand (1, 0.95%)"]
+	subtopic1_787 -> subtopic2_792
+	subtopic1_793 [label="bill act would also time legislation people support mr speaker (81, 26.56%)"]
+	policy_11 -> subtopic1_793
+	subtopic2_794 [label="juneteenth day national independence holiday june texas history 19 slavery (25, 30.86%)"]
+	subtopic1_793 -> subtopic2_794
+	subtopic2_795 [label="programs national security department related requires certain authorizes education federal (11, 13.58%)"]
+	subtopic1_793 -> subtopic2_795
+	subtopic2_796 [label="rights civil cold case board records act review support cases (10, 12.35%)"]
+	subtopic1_793 -> subtopic2_796
+	subtopic2_797 [label="fentanyl scheduling temporary substances drug analogues order act administration schedule (6, 7.41%)"]
+	subtopic1_793 -> subtopic2_797
+	subtopic2_798 [label="state amendment 14th women court rights states black reproductive right (4, 4.94%)"]
+	subtopic1_793 -> subtopic2_798
+	subtopic2_799 [label="discrimination hair texture race based style hairstyle employment associated employee (4, 4.94%)"]
+	subtopic1_793 -> subtopic2_799
+	subtopic2_800 [label="lgbtq discrimination equality protections rights gender identity sexual transgender community (2, 2.47%)"]
+	subtopic1_793 -> subtopic2_800
+	subtopic2_801 [label="juneteenth holiday national day jazz myers independence observance doc black (2, 2.47%)"]
+	subtopic1_793 -> subtopic2_801
+	subtopic2_802 [label="japanese american americans confinement war world ii h sites history (2, 2.47%)"]
+	subtopic1_793 -> subtopic2_802
+	subtopic2_803 [label="energy oil gas putin biden american world usps joe vladimir (2, 2.47%)"]
+	subtopic1_793 -> subtopic2_803
+	subtopic2_804 [label="marriage thanksgiving sex marriages club colorado old provisions recognize equality (2, 2.47%)"]
+	subtopic1_793 -> subtopic2_804
+	subtopic2_805 [label="abortion state services person bill care right women health another (1, 1.23%)"]
+	subtopic1_793 -> subtopic2_805
+	subtopic2_806 [label="athletes amateur athletic compensation equal gender bill sports u requires (1, 1.23%)"]
+	subtopic1_793 -> subtopic2_806
+	subtopic2_807 [label="mr january committee president resolution capitol congress meadows select attack (1, 1.23%)"]
+	subtopic1_793 -> subtopic2_807
+	subtopic2_808 [label="service schedule positions excepted f order president placed federal executive (1, 1.23%)"]
+	subtopic1_793 -> subtopic2_808
+	subtopic2_809 [label="district gift tax academy residents federal u rfra service c (1, 1.23%)"]
+	subtopic1_793 -> subtopic2_809
+	subtopic2_810 [label="wellstone rustin paul building minnesota rights federal civil senator life (1, 1.23%)"]
+	subtopic1_793 -> subtopic2_810
+	subtopic2_811 [label="russia ukraine russian president putin trade energy belarus bill products (1, 1.23%)"]
+	subtopic1_793 -> subtopic2_811
+	subtopic2_812 [label="court opinion justice concerned failures marriages another centers justices supreme (1, 1.23%)"]
+	subtopic1_793 -> subtopic2_812
+	subtopic2_813 [label="ukraine russia ukrainian russian war military weapons nato world week (1, 1.23%)"]
+	subtopic1_793 -> subtopic2_813
+	subtopic2_814 [label="forney corporal marine brother marriage vietnam sex marriages provisions still (1, 1.23%)"]
+	subtopic1_793 -> subtopic2_814
+	subtopic2_815 [label="team j p work peace corps life albania person oregon (1, 1.23%)"]
+	subtopic1_793 -> subtopic2_815
+	subtopic1_816 [label="section sec funds provided division title program appropriations provides certain (64, 20.98%)"]
+	policy_11 -> subtopic1_816
+	subtopic2_817 [label="bill gender identity act equality sexual discrimination orientation including public (59, 92.19%)"]
+	subtopic1_816 -> subtopic2_817
+	subtopic2_818 [label="japanese american war world ii confinement sites history program network (5, 7.81%)"]
+	subtopic1_816 -> subtopic2_818
+	subtopic1_819 [label="act bill discrimination job hair based women time law black (34, 11.15%)"]
+	policy_11 -> subtopic1_819
+	subtopic2_820 [label="pay women equal discrimination wage bill sex men paycheck fairness (25, 73.53%)"]
+	subtopic1_819 -> subtopic2_820
+	subtopic2_821 [label="age discrimination older bill workers claims act employment practice also (6, 17.65%)"]
+	subtopic1_819 -> subtopic2_821
+	subtopic2_822 [label="floor focus issues avoiding schedule happen price minority focused bring (2, 5.88%)"]
+	subtopic1_819 -> subtopic2_822
+	subtopic2_823 [label="precise valuable infringed offensive continuous racially heartbreaking competition glad recitation (1, 2.94%)"]
+	subtopic1_819 -> subtopic2_823
+	subtopic1_824 [label="juneteenth day independence americans african texas national freedom years act (10, 3.28%)"]
+	policy_11 -> subtopic1_824
+	subtopic2_825 [label="colleague senator jackson distinguished imagine represents manager children say fight (4, 40.00%)"]
+	subtopic1_824 -> subtopic2_825
+	subtopic2_826 [label="together 2 days one emancipation wonderful races push creating pick (2, 20.00%)"]
+	subtopic1_824 -> subtopic2_826
+	subtopic2_827 [label="south africa helped ambassador whose someone recognition cost african davis (2, 20.00%)"]
+	subtopic1_824 -> subtopic2_827
+	subtopic2_828 [label="symbolizes hallelujah 1865 100 teenagers fort enforcement handcuffed law boat (1, 10.00%)"]
+	subtopic1_824 -> subtopic2_828
+	subtopic2_829 [label="black check tulsa stores dead believe message debt wealth cbc (1, 10.00%)"]
+	subtopic1_824 -> subtopic2_829
+	subtopic1_830 [label="till emmett mamie mobley medal congressional gold act american support (7, 2.30%)"]
+	policy_11 -> subtopic1_830
+	subtopic2_831 [label="bill african history body lynching 2021 today given mother culture (7, 100.00%)"]
+	subtopic1_830 -> subtopic2_831
+	subtopic1_832 [label="women violence act bill sexual programs assault victims domestic new (4, 1.31%)"]
+	policy_11 -> subtopic1_832
+	subtopic2_833 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (4, 100.00%)"]
+	subtopic1_832 -> subtopic2_833
+	policy_12 [label="Finance and Financial Sector (290, 2.77%)"]
+	subtopic1_834 [label="bill act would also time legislation people support mr speaker (264, 91.03%)"]
+	policy_12 -> subtopic1_834
+	subtopic2_835 [label="programs national security department related requires certain authorizes education federal (90, 34.09%)"]
+	subtopic1_834 -> subtopic2_835
+	subtopic2_836 [label="financial institutions credit bill access services racial cash report lending (79, 29.92%)"]
+	subtopic1_834 -> subtopic2_836
+	subtopic2_837 [label="debt collection consumer protections collector student bill collectors small certain (28, 10.61%)"]
+	subtopic1_834 -> subtopic2_837
+	subtopic2_838 [label="bill judges judicial reports financial capital securities federal venture requires (12, 4.55%)"]
+	subtopic1_834 -> subtopic2_838
+	subtopic2_839 [label="bankruptcy debt small businesses bill business debtor provisions chapter limit (6, 2.27%)"]
+	subtopic1_834 -> subtopic2_839
+	subtopic2_840 [label="program cdfi community cdfis bill bond guarantee services financial institutions (6, 2.27%)"]
+	subtopic1_834 -> subtopic2_840
+	subtopic2_841 [label="bill program patents humanity patent humanitarian award certificates h support (6, 2.27%)"]
+	subtopic1_834 -> subtopic2_841
+	subtopic2_842 [label="russia belarus financial international act imf treasury sanctions sdrs countries (5, 1.89%)"]
+	subtopic1_834 -> subtopic2_842
+	subtopic2_843 [label="coins tubman harriet bill dunbar 000 mr treasury school issue (4, 1.52%)"]
+	subtopic1_834 -> subtopic2_843
+	subtopic2_844 [label="ftc federal commission court trade consumers relief seek consumer act (3, 1.14%)"]
+	subtopic1_834 -> subtopic2_844
+	subtopic2_845 [label="information press journalists bill government reporters federal act protects obtained (2, 0.76%)"]
+	subtopic1_834 -> subtopic2_845
+	subtopic2_846 [label="small business program women businesses sba loan owned bill 7 (2, 0.76%)"]
+	subtopic1_834 -> subtopic2_846
+	subtopic2_847 [label="labor forced xinjiang shall sanctions china congress uyghur goods u (2, 0.76%)"]
+	subtopic1_834 -> subtopic2_847
+	subtopic2_848 [label="data information survey agencies lgbtqi sexual gender orientation identity sex (2, 0.76%)"]
+	subtopic1_834 -> subtopic2_848
+	subtopic2_849 [label="discrimination lgbtq invidious owned data credit minority financial indicate investment (2, 0.76%)"]
+	subtopic1_834 -> subtopic2_849
+	subtopic2_850 [label="research science development national technology technologies section stem awards data (1, 0.38%)"]
+	subtopic1_834 -> subtopic2_850
+	subtopic2_851 [label="health care mental providers among behavioral suicide must hhs grants (1, 0.38%)"]
+	subtopic1_834 -> subtopic2_851
+	subtopic2_852 [label="gateway ukrainian solidarity arch people ukraine louis st russia missouri (1, 0.38%)"]
+	subtopic1_834 -> subtopic2_852
+	subtopic2_853 [label="veterans va bill affairs department care act health requires compensation (1, 0.38%)"]
+	subtopic1_834 -> subtopic2_853
+	subtopic2_854 [label="contraception bill right access pregnancy prevent act including health care (1, 0.38%)"]
+	subtopic1_834 -> subtopic2_854
+	subtopic2_855 [label="voting voter vote laws election federal states rights state establishes (1, 0.38%)"]
+	subtopic1_834 -> subtopic2_855
+	subtopic2_856 [label="cloud communications security council fedramp authorization federal bill reliability interoperability (1, 0.38%)"]
+	subtopic1_834 -> subtopic2_856
+	subtopic2_857 [label="criminals pension prey poachers scams defund sanchez lawlessness fraudulent resources (1, 0.38%)"]
+	subtopic1_834 -> subtopic2_857
+	subtopic2_858 [label="lighting energy efficient systems bill gsa buildings cost requirements effective (1, 0.38%)"]
+	subtopic1_834 -> subtopic2_858
+	subtopic2_859 [label="networks cybersecurity equipment communications act bill open mobile information security (1, 0.38%)"]
+	subtopic1_834 -> subtopic2_859
+	subtopic2_860 [label="russia ukraine russian president putin trade energy belarus bill products (1, 0.38%)"]
+	subtopic1_834 -> subtopic2_860
+	subtopic2_861 [label="ukraine lease russia defense lend president articles putin invasion russian (1, 0.38%)"]
+	subtopic1_834 -> subtopic2_861
+	subtopic2_862 [label="said hud texas hester houston harvey state communities disaster black (1, 0.38%)"]
+	subtopic1_834 -> subtopic2_862
+	subtopic2_863 [label="nicaragua ortega department sanctions must act corruption state renacer targeted (1, 0.38%)"]
+	subtopic1_834 -> subtopic2_863
+	subtopic2_864 [label="bosnia peace agreement sanctions herzegovina certain foreign dayton persons stability (1, 0.38%)"]
+	subtopic1_834 -> subtopic2_864
+	subtopic1_865 [label="section sec funds provided division title program appropriations provides certain (6, 2.07%)"]
+	policy_12 -> subtopic1_865
+	subtopic2_866 [label="funding sec provides act energy credit program available shall remain (4, 66.67%)"]
+	subtopic1_865 -> subtopic2_866
+	subtopic2_867 [label="bill election states president federal people campaign state act government (1, 16.67%)"]
+	subtopic1_865 -> subtopic2_867
+	subtopic2_868 [label="bill act must suspend move rules pass r veterans h (1, 16.67%)"]
+	subtopic1_865 -> subtopic2_868
+	subtopic1_869 [label="war women world ii memorial home front worked bill act (5, 1.72%)"]
+	policy_12 -> subtopic1_869
+	subtopic2_870 [label="commemorative work service national federal establishment bill district shall enslaved (5, 100.00%)"]
+	subtopic1_869 -> subtopic2_870
+	subtopic1_871 [label="trafficking consumer financial survivors traffickers bondage victims repair human committee (4, 1.38%)"]
+	policy_12 -> subtopic1_871
+	subtopic2_872 [label="credit reporting victim debt survivor bill adverse act services dr (4, 100.00%)"]
+	subtopic1_871 -> subtopic2_872
+	subtopic1_873 [label="financial act exploitation legislation protect bill r make older 2021 (4, 1.38%)"]
+	policy_12 -> subtopic1_873
+	subtopic2_874 [label="elder abuse justice fraud initiative bill department doj protection resources (3, 75.00%)"]
+	subtopic1_873 -> subtopic2_874
+	subtopic2_875 [label="burma coup united military states burmese people government parliament democratic (1, 25.00%)"]
+	subtopic1_873 -> subtopic2_875
+	subtopic1_876 [label="women violence act bill sexual programs assault victims domestic new (3, 1.03%)"]
+	policy_12 -> subtopic1_876
+	subtopic2_877 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (3, 100.00%)"]
+	subtopic1_876 -> subtopic2_877
+	subtopic1_878 [label="tubman harriet coins bill freedom underground 000 railroad treasury york (3, 1.03%)"]
+	policy_12 -> subtopic1_878
+	subtopic2_879 [label="representative liberation north guiding anthony reflects weinstein busdrivers hodgepodge estates (2, 66.67%)"]
+	subtopic1_878 -> subtopic2_879
+	subtopic2_880 [label="gained couch bounce crammed leisure portrayed weinstein loads millionaire estates (1, 33.33%)"]
+	subtopic1_878 -> subtopic2_880
+	subtopic1_881 [label="american us african americans country many years one today george (1, 0.34%)"]
+	policy_12 -> subtopic1_881
+	subtopic2_882 [label="army war medal gold congressional world ghost bill ii service (1, 100.00%)"]
+	subtopic1_881 -> subtopic2_882
+	policy_13 [label="Immigration (281, 2.68%)"]
+	subtopic1_883 [label="bill act would also time legislation people support mr speaker (134, 47.69%)"]
+	policy_13 -> subtopic1_883
+	subtopic2_884 [label="programs national security department related requires certain authorizes education federal (97, 72.39%)"]
+	subtopic1_883 -> subtopic2_884
+	subtopic2_885 [label="counsel inspection secondary individual covered opportunity subject lawful border permanent (25, 18.66%)"]
+	subtopic1_883 -> subtopic2_885
+	subtopic2_886 [label="e visa states united lightering 1 visas alien u trade (10, 7.46%)"]
+	subtopic1_883 -> subtopic2_886
+	subtopic2_887 [label="voting bill vote election voter federal campaign establishes rights registration (1, 0.75%)"]
+	subtopic1_883 -> subtopic2_887
+	subtopic2_888 [label="fentanyl scheduling temporary substances drug analogues order act administration schedule (1, 0.75%)"]
+	subtopic1_883 -> subtopic2_888
+	subtopic1_889 [label="section sec funds provided division title program appropriations provides certain (98, 34.88%)"]
+	policy_13 -> subtopic1_889
+	subtopic2_890 [label="bill election states president federal people campaign state act government (97, 98.98%)"]
+	subtopic1_889 -> subtopic2_890
+	subtopic2_891 [label="funding sec provides act energy credit program available shall remain (1, 1.02%)"]
+	subtopic1_889 -> subtopic2_891
+	subtopic1_892 [label="h 2a status bill dhs program agricultural may caw housing (36, 12.81%)"]
+	policy_13 -> subtopic1_892
+	subtopic2_893 [label="grant years farmworkers system apply date farm electronic border united (36, 100.00%)"]
+	subtopic1_892 -> subtopic2_893
+	subtopic1_894 [label="women violence act bill sexual programs assault victims domestic new (5, 1.78%)"]
+	policy_13 -> subtopic1_894
+	subtopic2_895 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (5, 100.00%)"]
+	subtopic1_894 -> subtopic2_895
+	subtopic1_896 [label="shadow wolves officers nation tohono odham unit special security agents (5, 1.78%)"]
+	policy_13 -> subtopic1_896
+	subtopic2_897 [label="legislative current track constitution section bipartisan pursuant timothy physical passage (5, 100.00%)"]
+	subtopic1_896 -> subtopic2_897
+	subtopic1_898 [label="commanders government afghan bill alien fighters visa spouse child number (2, 0.71%)"]
+	policy_13 -> subtopic1_898
+	subtopic2_899 [label="taliban journalists media threats said journalist afghanistan women also local (2, 100.00%)"]
+	subtopic1_898 -> subtopic2_899
+	subtopic1_900 [label="milk american ca bureau ohio employers alien northwest may texas (1, 0.36%)"]
+	policy_13 -> subtopic1_900
+	subtopic2_901 [label="association growers producers california dairy nursery landscape inc idaho cooperative (1, 100.00%)"]
+	subtopic1_900 -> subtopic2_901
+	policy_14 [label="Congress (227, 2.17%)"]
+	subtopic1_902 [label="section sec funds provided division title program appropriations provides certain (110, 48.46%)"]
+	policy_14 -> subtopic1_902
+	subtopic2_903 [label="bill election states president federal people campaign state act government (63, 57.27%)"]
+	subtopic1_902 -> subtopic2_903
+	subtopic2_904 [label="funding sec provides act energy credit program available shall remain (47, 42.73%)"]
+	subtopic1_902 -> subtopic2_904
+	subtopic1_905 [label="bill act would also time legislation people support mr speaker (108, 47.58%)"]
+	policy_14 -> subtopic1_905
+	subtopic2_906 [label="mr january committee president resolution capitol congress meadows select attack (45, 41.67%)"]
+	subtopic1_905 -> subtopic2_906
+	subtopic2_907 [label="programs national security department related requires certain authorizes education federal (16, 14.81%)"]
+	subtopic1_905 -> subtopic2_907
+	subtopic2_908 [label="committee resolution mr privilege united select scavino states congress executive (11, 10.19%)"]
+	subtopic1_905 -> subtopic2_908
+	subtopic2_909 [label="border irs resolution 42 speaker question january previous americans investigate (11, 10.19%)"]
+	subtopic1_905 -> subtopic2_909
+	subtopic2_910 [label="committee mr january president trump 6th meadows attack navarro privilege (4, 3.70%)"]
+	subtopic1_905 -> subtopic2_910
+	subtopic2_911 [label="office food agricultural usda packers act poultry department security agriculture (2, 1.85%)"]
+	subtopic1_905 -> subtopic2_911
+	subtopic2_912 [label="arbitration rights forced fair civil agreement employment predispute 2022 dispute (2, 1.85%)"]
+	subtopic1_905 -> subtopic2_912
+	subtopic2_913 [label="safety information faa airmen pilots force task repair stations aviation (1, 0.93%)"]
+	subtopic1_905 -> subtopic2_913
+	subtopic2_914 [label="fencing capitol security permanent court supreme complex public nation distance (1, 0.93%)"]
+	subtopic1_905 -> subtopic2_914
+	subtopic2_915 [label="budget materials agency justification public congress agencies congressional federal transparency (1, 0.93%)"]
+	subtopic1_905 -> subtopic2_915
+	subtopic2_916 [label="ocean shipping carriers charges maritime american fmc u commission act (1, 0.93%)"]
+	subtopic1_905 -> subtopic2_916
+	subtopic2_917 [label="bill judges judicial reports financial capital securities federal venture requires (1, 0.93%)"]
+	subtopic1_905 -> subtopic2_917
+	subtopic2_918 [label="malnutrition nutrition usaid global programs prevent community act u activities (1, 0.93%)"]
+	subtopic1_905 -> subtopic2_918
+	subtopic2_919 [label="debt physical activity based guidelines hhs ceiling spending democrats republicans (1, 0.93%)"]
+	subtopic1_905 -> subtopic2_919
+	subtopic2_920 [label="postal service usps bill benefits program government health must office (1, 0.93%)"]
+	subtopic1_905 -> subtopic2_920
+	subtopic2_921 [label="debt vote ceiling default fiscal activity physical limit republicans economic (1, 0.93%)"]
+	subtopic1_905 -> subtopic2_921
+	subtopic2_922 [label="fentanyl scheduling temporary substances drug analogues order act administration schedule (1, 0.93%)"]
+	subtopic1_905 -> subtopic2_922
+	subtopic2_923 [label="counsel inspection secondary individual covered opportunity subject lawful border permanent (1, 0.93%)"]
+	subtopic1_905 -> subtopic2_923
+	subtopic2_924 [label="administration federal housing appropriations bill development office transportation provides safety (1, 0.93%)"]
+	subtopic1_905 -> subtopic2_924
+	subtopic2_925 [label="border flights biden administration state communities president presidential election immigrants (1, 0.93%)"]
+	subtopic1_905 -> subtopic2_925
+	subtopic2_926 [label="ukraine lease russia defense lend president articles putin invasion russian (1, 0.93%)"]
+	subtopic1_905 -> subtopic2_926
+	subtopic2_927 [label="fentanyl drug drugs communities said opioid u crisis deaths border (1, 0.93%)"]
+	subtopic1_905 -> subtopic2_927
+	subtopic2_928 [label="veterans va bill affairs department care act health requires compensation (1, 0.93%)"]
+	subtopic1_905 -> subtopic2_928
+	subtopic2_929 [label="disaster assistance fema federal bill emergency disasters management agency rural (1, 0.93%)"]
+	subtopic1_905 -> subtopic2_929
+	subtopic1_930 [label="women violence act bill sexual programs assault victims domestic new (5, 2.20%)"]
+	policy_14 -> subtopic1_930
+	subtopic2_931 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (5, 100.00%)"]
+	subtopic1_930 -> subtopic2_931
+	subtopic1_932 [label="american us african americans country many years one today george (4, 1.76%)"]
+	policy_14 -> subtopic1_932
+	subtopic2_933 [label="army war medal gold congressional world ghost bill ii service (4, 100.00%)"]
+	subtopic1_932 -> subtopic2_933
+	policy_15 [label="Emergency Management (180, 1.72%)"]
+	subtopic1_934 [label="bill act would also time legislation people support mr speaker (151, 83.89%)"]
+	policy_15 -> subtopic1_934
+	subtopic2_935 [label="programs national security department related requires certain authorizes education federal (44, 29.14%)"]
+	subtopic1_934 -> subtopic2_935
+	subtopic2_936 [label="disaster assistance fema federal bill emergency disasters management agency rural (37, 24.50%)"]
+	subtopic1_934 -> subtopic2_936
+	subtopic2_937 [label="pfas firefighting firefighters substances foam exposure act health equipment dhs (14, 9.27%)"]
+	subtopic1_934 -> subtopic2_937
+	subtopic2_938 [label="small recovery act threshold disaster projects project assistance emergency must (12, 7.95%)"]
+	subtopic1_934 -> subtopic2_938
+	subtopic2_939 [label="fire fires local state federal major administration usfa u investigation (10, 6.62%)"]
+	subtopic1_934 -> subtopic2_939
+	subtopic2_940 [label="dhs homeland security training department h r program acquisition employee (8, 5.30%)"]
+	subtopic1_934 -> subtopic2_940
+	subtopic2_941 [label="act registration mitigation controlled substances dea drug projects suspicious assistance (6, 3.97%)"]
+	subtopic1_934 -> subtopic2_941
+	subtopic2_942 [label="risk resilience president natural disaster community hazard zones assessment data (6, 3.97%)"]
+	subtopic1_934 -> subtopic2_942
+	subtopic2_943 [label="mitigation act corrections bill hazard building storm technical revolving loan (5, 3.31%)"]
+	subtopic1_934 -> subtopic2_943
+	subtopic2_944 [label="disaster fha federal fema mortgage mortgages assessments small report dollar (3, 1.99%)"]
+	subtopic1_934 -> subtopic2_944
+	subtopic2_945 [label="forest service trail bill completion wildfire wildfires interior divide continental (3, 1.99%)"]
+	subtopic1_934 -> subtopic2_945
+	subtopic2_946 [label="children climate said many change disasters times world emissions study (1, 0.66%)"]
+	subtopic1_934 -> subtopic2_946
+	subtopic2_947 [label="veterans va bill affairs department care act health requires compensation (1, 0.66%)"]
+	subtopic1_934 -> subtopic2_947
+	subtopic2_948 [label="poverty areas persistent bill federal communities investments resources need report (1, 0.66%)"]
+	subtopic1_934 -> subtopic2_948
+	subtopic1_949 [label="section sec funds provided division title program appropriations provides certain (19, 10.56%)"]
+	policy_15 -> subtopic1_949
+	subtopic2_950 [label="funding sec provides act energy credit program available shall remain (5, 26.32%)"]
+	subtopic1_949 -> subtopic2_950
+	subtopic2_951 [label="requires division authorizes related security department establishes program coast guard (3, 15.79%)"]
+	subtopic1_949 -> subtopic2_951
+	subtopic2_952 [label="bill election states president federal people campaign state act government (3, 15.79%)"]
+	subtopic1_949 -> subtopic2_952
+	subtopic2_953 [label="ocean acidification bill act research coastal national support coast committee (2, 10.53%)"]
+	subtopic1_949 -> subtopic2_953
+	subtopic2_954 [label="bill act must suspend move rules pass r veterans h (2, 10.53%)"]
+	subtopic1_949 -> subtopic2_954
+	subtopic2_955 [label="mentor program security business protege small homeland firm department fema (2, 10.53%)"]
+	subtopic1_949 -> subtopic2_955
+	subtopic2_956 [label="security homeland dhs bill items act procurement department sets oig (1, 5.26%)"]
+	subtopic1_949 -> subtopic2_956
+	subtopic2_957 [label="labor employees bill union workers employee strikes unfair employers right (1, 5.26%)"]
+	subtopic1_949 -> subtopic2_957
+	subtopic1_958 [label="medical dhs countermeasures homeland bill security pandemic support department r (5, 2.78%)"]
+	policy_15 -> subtopic1_958
+	subtopic2_959 [label="intelligence threats sharing cbrn important response partners situational terrorist awareness (5, 100.00%)"]
+	subtopic1_958 -> subtopic2_959
+	subtopic1_960 [label="bill security homeland traveler trusted review department dhs quadrennial 2021 (4, 2.22%)"]
+	policy_15 -> subtopic1_960
+	subtopic2_961 [label="blood cord transplant program stem cell marrow act also patients (4, 100.00%)"]
+	subtopic1_960 -> subtopic2_961
+	subtopic1_962 [label="women violence act bill sexual programs assault victims domestic new (1, 0.56%)"]
+	policy_15 -> subtopic1_962
+	subtopic2_963 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (1, 100.00%)"]
+	subtopic1_962 -> subtopic2_963
+	policy_16 [label="Environmental Protection (151, 1.44%)"]
+	subtopic1_964 [label="section sec funds provided division title program appropriations provides certain (109, 72.19%)"]
+	policy_16 -> subtopic1_964
+	subtopic2_965 [label="species wildlife conservation endangered must restoration title funds fish recovery (48, 44.04%)"]
+	subtopic1_964 -> subtopic2_965
+	subtopic2_966 [label="pfas water epa bill must substances act health standards hazardous (32, 29.36%)"]
+	subtopic1_964 -> subtopic2_966
+	subtopic2_967 [label="ocean acidification bill act research coastal national support coast committee (21, 19.27%)"]
+	subtopic1_964 -> subtopic2_967
+	subtopic2_968 [label="funding sec provides act energy credit program available shall remain (4, 3.67%)"]
+	subtopic1_964 -> subtopic2_968
+	subtopic2_969 [label="wildlife great lakes act fish invasive water species restoration bill (4, 3.67%)"]
+	subtopic1_964 -> subtopic2_969
+	subtopic1_970 [label="bill act would also time legislation people support mr speaker (24, 15.89%)"]
+	policy_16 -> subtopic1_970
+	subtopic2_971 [label="pfas firefighting firefighters substances foam exposure act health equipment dhs (5, 20.83%)"]
+	subtopic1_970 -> subtopic2_971
+	subtopic2_972 [label="abandoned mine act treatment mines acid drainage coal states stream (5, 20.83%)"]
+	subtopic1_970 -> subtopic2_972
+	subtopic2_973 [label="recycling water senator infrastructure capito composting together drinking lead think (5, 20.83%)"]
+	subtopic1_970 -> subtopic2_973
+	subtopic2_974 [label="programs national security department related requires certain authorizes education federal (4, 16.67%)"]
+	subtopic1_970 -> subtopic2_974
+	subtopic2_975 [label="pfas water epa drinking chemicals health clean address action substances (3, 12.50%)"]
+	subtopic1_970 -> subtopic2_975
+	subtopic2_976 [label="water drinking infrastructure wastewater rural communities state lead programs senator (1, 4.17%)"]
+	subtopic1_970 -> subtopic2_976
+	subtopic2_977 [label="oil palm deforestation products united sustainable fuel end imports foreign (1, 4.17%)"]
+	subtopic1_970 -> subtopic2_977
+	subtopic1_978 [label="harmful algal hypoxia blooms florida south task force ecosystem waters (12, 7.95%)"]
+	policy_16 -> subtopic1_978
+	subtopic2_979 [label="ecosystems great act saline bill program basin assess lakes lake (12, 100.00%)"]
+	subtopic1_978 -> subtopic2_979
+	subtopic1_980 [label="city water wastewater diego san act loma ii obtain pollution (5, 3.31%)"]
+	policy_16 -> subtopic1_980
+	subtopic2_981 [label="permit plant treatment program bill modifications npdes standards point secondary (5, 100.00%)"]
+	subtopic1_980 -> subtopic2_981
+	subtopic1_982 [label="committee fisheries advisory sustainable fishery noaa regions members fishing legislation (1, 0.66%)"]
+	policy_16 -> subtopic1_982
+	subtopic2_983 [label="salmon sound puget alaska task force bill state alaskan research (1, 100.00%)"]
+	subtopic1_982 -> subtopic2_983
+	policy_17 [label="Law (150, 1.43%)"]
+	subtopic1_984 [label="bill act would also time legislation people support mr speaker (115, 76.67%)"]
+	policy_17 -> subtopic1_984
+	subtopic2_985 [label="sexual arbitration harassment assault forced act women court dispute agreements (73, 63.48%)"]
+	subtopic1_984 -> subtopic2_985
+	subtopic2_986 [label="bill judges judicial reports financial capital securities federal venture requires (12, 10.43%)"]
+	subtopic1_984 -> subtopic2_986
+	subtopic2_987 [label="programs national security department related requires certain authorizes education federal (7, 6.09%)"]
+	subtopic1_984 -> subtopic2_987
+	subtopic2_988 [label="arbitration rights forced fair civil agreement employment predispute 2022 dispute (6, 5.22%)"]
+	subtopic1_984 -> subtopic2_988
+	subtopic2_989 [label="bankruptcy debt small businesses bill business debtor provisions chapter limit (5, 4.35%)"]
+	subtopic1_984 -> subtopic2_989
+	subtopic2_990 [label="ocean shipping carriers charges maritime american fmc u commission act (2, 1.74%)"]
+	subtopic1_984 -> subtopic2_990
+	subtopic2_991 [label="sexual harassment article rolling assault jackie uva stone story clause (2, 1.74%)"]
+	subtopic1_984 -> subtopic2_991
+	subtopic2_992 [label="local nomination c courts president senate district vacancy judges congress (1, 0.87%)"]
+	subtopic1_984 -> subtopic2_992
+	subtopic2_993 [label="administration federal housing appropriations bill development office transportation provides safety (1, 0.87%)"]
+	subtopic1_984 -> subtopic2_993
+	subtopic2_994 [label="supply semiconductor chain materials working russia congress group ukraine global (1, 0.87%)"]
+	subtopic1_984 -> subtopic2_994
+	subtopic2_995 [label="russia ukraine russian president putin trade energy belarus bill products (1, 0.87%)"]
+	subtopic1_984 -> subtopic2_995
+	subtopic2_996 [label="rights civil cold case board records act review support cases (1, 0.87%)"]
+	subtopic1_984 -> subtopic2_996
+	subtopic2_997 [label="service schedule positions excepted f order president placed federal executive (1, 0.87%)"]
+	subtopic1_984 -> subtopic2_997
+	subtopic2_998 [label="program veterans must assistance benefits va bill transfer credits retraining (1, 0.87%)"]
+	subtopic1_984 -> subtopic2_998
+	subtopic2_999 [label="fencing capitol security permanent court supreme complex public nation distance (1, 0.87%)"]
+	subtopic1_984 -> subtopic2_999
+	subtopic1_1000 [label="puerto rico bill disclosures board employed compensation professional interested bankruptcy (13, 8.67%)"]
+	policy_17 -> subtopic1_1000
+	subtopic2_1001 [label="bipartisan conflict working decisions island chairman best lack even staff (12, 92.31%)"]
+	subtopic1_1000 -> subtopic2_1001
+	subtopic2_1002 [label="hotspot doctor trying beneath sick physician attending mocks distinguished partnership (1, 7.69%)"]
+	subtopic1_1000 -> subtopic2_1002
+	subtopic1_1003 [label="district c bill columbia federal act would authority local government (6, 4.00%)"]
+	policy_17 -> subtopic1_1003
+	subtopic2_1004 [label="clemency crimes grant prosecute legislation review congressional give period passed (3, 50.00%)"]
+	subtopic1_1003 -> subtopic2_1004
+	subtopic2_1005 [label="courts breastfeeding jury title hra mothers 11 relating organization duty (2, 33.33%)"]
+	subtopic1_1003 -> subtopic2_1005
+	subtopic2_1006 [label="employees courts discrimination public defender pds employment dchra rights 1977 (1, 16.67%)"]
+	subtopic1_1003 -> subtopic2_1006
+	subtopic1_1007 [label="notarizations bill electronic notarization remote notary public commerce remotely states (6, 4.00%)"]
+	policy_17 -> subtopic1_1007
+	subtopic2_1008 [label="people protections convenient us key streamline simply access pallone multifactor (6, 100.00%)"]
+	subtopic1_1007 -> subtopic2_1008
+	subtopic1_1009 [label="federal charter association bar bill directors foundation board director bylaws (4, 2.67%)"]
+	policy_17 -> subtopic1_1009
+	subtopic2_1010 [label="donovan bounce crammed leisure portrayed weinstein loads millionaire estates hodgepodge (2, 50.00%)"]
+	subtopic1_1009 -> subtopic2_1010
+	subtopic2_1011 [label="courts wills grow jurisprudence leadership presents last contemporary adapt constrain (2, 50.00%)"]
+	subtopic1_1009 -> subtopic2_1011
+	subtopic1_1012 [label="women violence act bill sexual programs assault victims domestic new (3, 2.00%)"]
+	policy_17 -> subtopic1_1012
+	subtopic2_1013 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (3, 100.00%)"]
+	subtopic1_1012 -> subtopic2_1013
+	subtopic1_1014 [label="section sec funds provided division title program appropriations provides certain (3, 2.00%)"]
+	policy_17 -> subtopic1_1014
+	subtopic2_1015 [label="c bill district pay courts cfo authority columbia rate court (2, 66.67%)"]
+	subtopic1_1014 -> subtopic2_1015
+	subtopic2_1016 [label="bill gender identity act equality sexual discrimination orientation including public (1, 33.33%)"]
+	subtopic1_1014 -> subtopic2_1016
+	policy_18 [label="Education (128, 1.22%)"]
+	subtopic1_1017 [label="bill act would also time legislation people support mr speaker (111, 86.72%)"]
+	policy_18 -> subtopic1_1017
+	subtopic2_1018 [label="programs national security department related requires certain authorizes education federal (52, 46.85%)"]
+	subtopic1_1017 -> subtopic2_1018
+	subtopic2_1019 [label="loan joint consolidation borrower separate loans individual borrowers abuse application (22, 19.82%)"]
+	subtopic1_1017 -> subtopic2_1019
+	subtopic2_1020 [label="health mental students prevention education suicide campus oral bill support (10, 9.01%)"]
+	subtopic1_1017 -> subtopic2_1020
+	subtopic2_1021 [label="stem science ihes must agency bill underrepresented groups also grants (6, 5.41%)"]
+	subtopic1_1017 -> subtopic2_1021
+	subtopic2_1022 [label="cancer childhood research education act star reauthorization public early pediatric (2, 1.80%)"]
+	subtopic1_1017 -> subtopic2_1022
+	subtopic2_1023 [label="veterans va health contraception veteran act access bill affairs speaker (2, 1.80%)"]
+	subtopic1_1017 -> subtopic2_1023
+	subtopic2_1024 [label="students health mental intervention stem behavioral schools education support school (2, 1.80%)"]
+	subtopic1_1017 -> subtopic2_1024
+	subtopic2_1025 [label="health care mental providers among behavioral suicide must hhs grants (2, 1.80%)"]
+	subtopic1_1017 -> subtopic2_1025
+	subtopic2_1026 [label="opioid rural abuse communities program substance prevention programs deaths treatment (2, 1.80%)"]
+	subtopic1_1017 -> subtopic2_1026
+	subtopic2_1027 [label="assistance teachers surviving spouse death child violence teacher compensation dependent (1, 0.90%)"]
+	subtopic1_1017 -> subtopic2_1027
+	subtopic2_1028 [label="student loan debt loans interest federal refinancing rates rate education (1, 0.90%)"]
+	subtopic1_1017 -> subtopic2_1028
+	subtopic2_1029 [label="skills jobs get economy programs students training back pell good (1, 0.90%)"]
+	subtopic1_1017 -> subtopic2_1029
+	subtopic2_1030 [label="research science award grants education students stem support national advance (1, 0.90%)"]
+	subtopic1_1017 -> subtopic2_1030
+	subtopic2_1031 [label="military independent command authority commanders system justice crimes prosecutors convening (1, 0.90%)"]
+	subtopic1_1017 -> subtopic2_1031
+	subtopic2_1032 [label="student sports concussions association return athletes national concussion school students (1, 0.90%)"]
+	subtopic1_1017 -> subtopic2_1032
+	subtopic2_1033 [label="guard national district program educators c members financial general educator (1, 0.90%)"]
+	subtopic1_1017 -> subtopic2_1033
+	subtopic2_1034 [label="forest service trail bill completion wildfire wildfires interior divide continental (1, 0.90%)"]
+	subtopic1_1017 -> subtopic2_1034
+	subtopic2_1035 [label="russia ukraine russian president putin trade energy belarus bill products (1, 0.90%)"]
+	subtopic1_1017 -> subtopic2_1035
+	subtopic2_1036 [label="authorization prior care time standards medicare patients get plans seniors (1, 0.90%)"]
+	subtopic1_1017 -> subtopic2_1036
+	subtopic2_1037 [label="teacher state teachers student teaching shortages students quality high ratios (1, 0.90%)"]
+	subtopic1_1017 -> subtopic2_1037
+	subtopic1_1038 [label="section sec funds provided division title program appropriations provides certain (8, 6.25%)"]
+	policy_18 -> subtopic1_1038
+	subtopic2_1039 [label="funding sec provides act energy credit program available shall remain (7, 87.50%)"]
+	subtopic1_1038 -> subtopic2_1039
+	subtopic2_1040 [label="bill act must suspend move rules pass r veterans h (1, 12.50%)"]
+	subtopic1_1038 -> subtopic2_1040
+	subtopic1_1041 [label="women violence act bill sexual programs assault victims domestic new (5, 3.91%)"]
+	policy_18 -> subtopic1_1041
+	subtopic2_1042 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (5, 100.00%)"]
+	subtopic1_1041 -> subtopic2_1042
+	subtopic1_1043 [label="cocaine bill powder crack disparity offenses 1 drug criminal penalties (1, 0.78%)"]
+	policy_18 -> subtopic1_1043
+	subtopic2_1044 [label="act sentencing crack step first offenders cocaine congress convicted retroactive (1, 100.00%)"]
+	subtopic1_1043 -> subtopic2_1044
+	subtopic1_1045 [label="people bill going cost costs insurance understand hate think three (1, 0.78%)"]
+	policy_18 -> subtopic1_1045
+	subtopic2_1046 [label="insulin china institutes confucius party communist know universities senate years (1, 100.00%)"]
+	subtopic1_1045 -> subtopic2_1046
+	subtopic1_1047 [label="pandemic act us social many isolation least congressional smithsonian fellow (1, 0.78%)"]
+	policy_18 -> subtopic1_1047
+	subtopic2_1048 [label="history american asian pacific americans civics teaching administered academies bill (1, 100.00%)"]
+	subtopic1_1047 -> subtopic2_1048
+	subtopic1_1049 [label="support workforce education industry research bill institutions u mr stakeholders (1, 0.78%)"]
+	policy_18 -> subtopic1_1049
+	subtopic2_1050 [label="aviation association aerospace national center pilots maintenance advancement air airlines (1, 100.00%)"]
+	subtopic1_1049 -> subtopic2_1050
+	policy_19 [label="Agriculture and Food (101, 0.96%)"]
+	subtopic1_1051 [label="bill act would also time legislation people support mr speaker (97, 96.04%)"]
+	policy_19 -> subtopic1_1051
+	subtopic2_1052 [label="office food agricultural usda packers act poultry department security agriculture (47, 48.45%)"]
+	subtopic1_1051 -> subtopic2_1052
+	subtopic2_1053 [label="formula infant baby families supply wic fda shortage food usda (24, 24.74%)"]
+	subtopic1_1051 -> subtopic2_1053
+	subtopic2_1054 [label="programs national security department related requires certain authorizes education federal (23, 23.71%)"]
+	subtopic1_1051 -> subtopic2_1054
+	subtopic2_1055 [label="american school products food commodities waiver foreign purchase usda foods (1, 1.03%)"]
+	subtopic1_1051 -> subtopic2_1055
+	subtopic2_1056 [label="forest service trail bill completion wildfire wildfires interior divide continental (1, 1.03%)"]
+	subtopic1_1051 -> subtopic2_1056
+	subtopic2_1057 [label="food farmers local families market markets csbg bank seniors extends (1, 1.03%)"]
+	subtopic1_1051 -> subtopic2_1057
+	subtopic1_1058 [label="section sec funds provided division title program appropriations provides certain (2, 1.98%)"]
+	policy_19 -> subtopic1_1058
+	subtopic2_1059 [label="bill election states president federal people campaign state act government (1, 50.00%)"]
+	subtopic1_1058 -> subtopic2_1059
+	subtopic2_1060 [label="funding sec provides act energy credit program available shall remain (1, 50.00%)"]
+	subtopic1_1058 -> subtopic2_1060
+	subtopic1_1061 [label="species invasive state invasives island inspections macadamia last tree ohi (1, 0.99%)"]
+	policy_19 -> subtopic1_1061
+	subtopic2_1062 [label="hawaii bill agricultural unique one growing since coffee threat risk (1, 100.00%)"]
+	subtopic1_1061 -> subtopic2_1062
+	subtopic1_1063 [label="district c bill columbia federal act would authority local government (1, 0.99%)"]
+	policy_19 -> subtopic1_1063
+	subtopic2_1064 [label="park washington war defenses national creek rock civil nation capital (1, 100.00%)"]
+	subtopic1_1063 -> subtopic2_1064
+	policy_20 [label="Native Americans (93, 0.89%)"]
+	subtopic1_1065 [label="national heritage area act bill support river park system would (42, 45.16%)"]
+	policy_20 -> subtopic1_1065
+	subtopic2_1066 [label="land site bill tribe historic lands act school indian trust (41, 97.62%)"]
+	subtopic1_1065 -> subtopic2_1066
+	subtopic2_1067 [label="gaming tribal indian internet state bill wager governments government lands (1, 2.38%)"]
+	subtopic1_1065 -> subtopic2_1067
+	subtopic1_1068 [label="section sec funds provided division title program appropriations provides certain (24, 25.81%)"]
+	policy_20 -> subtopic1_1068
+	subtopic2_1069 [label="act native items cultural human american issues department remains export (9, 37.50%)"]
+	subtopic1_1068 -> subtopic2_1069
+	subtopic2_1070 [label="water act tribe arizona agreement river interior settlement bill crit (6, 25.00%)"]
+	subtopic1_1068 -> subtopic2_1070
+	subtopic2_1071 [label="road center youth ihs california access desert sage wellness land (5, 20.83%)"]
+	subtopic1_1068 -> subtopic2_1071
+	subtopic2_1072 [label="funding sec provides act energy credit program available shall remain (3, 12.50%)"]
+	subtopic1_1068 -> subtopic2_1072
+	subtopic2_1073 [label="species wildlife conservation endangered must restoration title funds fish recovery (1, 4.17%)"]
+	subtopic1_1068 -> subtopic2_1073
+	subtopic1_1074 [label="bill act would also time legislation people support mr speaker (21, 22.58%)"]
+	policy_20 -> subtopic1_1074
+	subtopic2_1075 [label="child native american indian abuse languages services act family neglect (14, 66.67%)"]
+	subtopic1_1074 -> subtopic2_1075
+	subtopic2_1076 [label="care act economic indian services health urban development confer legislation (6, 28.57%)"]
+	subtopic1_1074 -> subtopic2_1076
+	subtopic2_1077 [label="land trust tribes block territories fpl allotments pala indian amendments (1, 4.76%)"]
+	subtopic1_1074 -> subtopic2_1077
+	subtopic1_1078 [label="women violence act bill sexual programs assault victims domestic new (3, 3.23%)"]
+	policy_20 -> subtopic1_1078
+	subtopic2_1079 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (3, 100.00%)"]
+	subtopic1_1078 -> subtopic2_1079
+	subtopic1_1080 [label="alaska health native consortium services land tribal council tanana young (3, 3.23%)"]
+	policy_20 -> subtopic1_1080
+	subtopic2_1081 [label="appreciate slogans rebut capitalist bounce crammed leisure portrayed weinstein loads (3, 100.00%)"]
+	subtopic1_1080 -> subtopic2_1081
+	policy_21 [label="Foreign Trade and International Finance (89, 0.85%)"]
+	subtopic1_1082 [label="bill act would also time legislation people support mr speaker (87, 97.75%)"]
+	policy_21 -> subtopic1_1082
+	subtopic2_1083 [label="russia ukraine russian president putin trade energy belarus bill products (63, 72.41%)"]
+	subtopic1_1082 -> subtopic2_1083
+	subtopic2_1084 [label="formula infant baby families supply wic fda shortage food usda (20, 22.99%)"]
+	subtopic1_1082 -> subtopic2_1084
+	subtopic2_1085 [label="spending senate congressionally directed appropriations rule earmarks formula hampshire process (2, 2.30%)"]
+	subtopic1_1082 -> subtopic2_1085
+	subtopic2_1086 [label="u minimis de imports fees duties import countries taxes goods (1, 1.15%)"]
+	subtopic1_1082 -> subtopic2_1086
+	subtopic2_1087 [label="programs national security department related requires certain authorizes education federal (1, 1.15%)"]
+	subtopic1_1082 -> subtopic2_1087
+	subtopic1_1088 [label="women violence act bill sexual programs assault victims domestic new (2, 2.25%)"]
+	policy_21 -> subtopic1_1088
+	subtopic2_1089 [label="beyer pallone correa tx fl jeffries bill evans rollcall congress (2, 100.00%)"]
+	subtopic1_1088 -> subtopic2_1089
+	policy_22 [label="Families (56, 0.53%)"]
+	subtopic1_1090 [label="women violence act bill sexual programs assault victims domestic new (43, 76.79%)"]
+	policy_22 -> subtopic1_1090
+	subtopic2_1091 [label="violence domestic services prevention bill family support organizations tribal grants (43, 100.00%)"]
+	subtopic1_1090 -> subtopic2_1091
+	subtopic1_1092 [label="bill act would also time legislation people support mr speaker (13, 23.21%)"]
+	policy_22 -> subtopic1_1092
+	subtopic2_1093 [label="care act economic indian services health urban development confer legislation (5, 38.46%)"]
+	subtopic1_1092 -> subtopic2_1093
+	subtopic2_1094 [label="child native american indian abuse languages services act family neglect (4, 30.77%)"]
+	subtopic1_1092 -> subtopic2_1094
+	subtopic2_1095 [label="programs national security department related requires certain authorizes education federal (3, 23.08%)"]
+	subtopic1_1092 -> subtopic2_1095
+	subtopic2_1096 [label="pfas firefighting firefighters substances foam exposure act health equipment dhs (1, 7.69%)"]
+	subtopic1_1092 -> subtopic2_1096
+	policy_23 [label="Taxation (49, 0.47%)"]
+	subtopic1_1097 [label="committee trump returns tax house means ways law democrats request (25, 51.02%)"]
+	policy_23 -> subtopic1_1097
+	subtopic2_1098 [label="president tax return irs audit examination presidential bill report income (25, 100.00%)"]
+	subtopic1_1097 -> subtopic2_1098
+	subtopic1_1099 [label="bill act would also time legislation people support mr speaker (15, 30.61%)"]
+	policy_23 -> subtopic1_1099
+	subtopic2_1100 [label="programs national security department related requires certain authorizes education federal (5, 33.33%)"]
+	subtopic1_1099 -> subtopic2_1100
+	subtopic2_1101 [label="military independent command authority commanders system justice crimes prosecutors convening (2, 13.33%)"]
+	subtopic1_1099 -> subtopic2_1101
+	subtopic2_1102 [label="irs tax president return examination audit presidential income audits returns (2, 13.33%)"]
+	subtopic1_1099 -> subtopic2_1102
+	subtopic2_1103 [label="wind distributed energy turbines property small modernization extension turbine megawatts (1, 6.67%)"]
+	subtopic1_1099 -> subtopic2_1103
+	subtopic2_1104 [label="time daylight saving permanent sunshine people standard hour make areas (1, 6.67%)"]
+	subtopic1_1099 -> subtopic2_1104
+	subtopic2_1105 [label="district gift tax academy residents federal u rfra service c (1, 6.67%)"]
+	subtopic1_1099 -> subtopic2_1105
+	subtopic2_1106 [label="rent credit housing income help relief life 100 residence tax (1, 6.67%)"]
+	subtopic1_1099 -> subtopic2_1106
+	subtopic2_1107 [label="election president presidential state elections democracy bill vice electoral votes (1, 6.67%)"]
+	subtopic1_1099 -> subtopic2_1107
+	subtopic2_1108 [label="pelosi examination chronicle francisco mayor homeless spouse immediately november millions (1, 6.67%)"]
+	subtopic1_1099 -> subtopic2_1108
+	subtopic1_1109 [label="section sec funds provided division title program appropriations provides certain (7, 14.29%)"]
+	policy_23 -> subtopic1_1109
+	subtopic2_1110 [label="funding sec provides act energy credit program available shall remain (6, 85.71%)"]
+	subtopic1_1109 -> subtopic2_1110
+	subtopic2_1111 [label="tax maritime vessels fuels fuel diesel ocean ports excise operators (1, 14.29%)"]
+	subtopic1_1109 -> subtopic2_1111
+	subtopic1_1112 [label="gun federal firearms guns establishes bill criminal new laws prohibits (1, 2.04%)"]
+	policy_23 -> subtopic1_1112
+	subtopic2_1113 [label="background firearm check firearms gun violence days federal transfers checks (1, 100.00%)"]
+	subtopic1_1112 -> subtopic2_1113
+	subtopic1_1114 [label="organizations c 501 4 act irs self declare tax bill (1, 2.04%)"]
+	policy_23 -> subtopic1_1114
+	subtopic2_1115 [label="favorites couch capitalist bounce crammed leisure portrayed weinstein loads millionaire (1, 100.00%)"]
+	subtopic1_1114 -> subtopic2_1115
+	policy_24 [label="Social Welfare (45, 0.43%)"]
+	subtopic1_1116 [label="bill act would also time legislation people support mr speaker (41, 91.11%)"]
+	policy_24 -> subtopic1_1116
+	subtopic2_1117 [label="programs national security department related requires certain authorizes education federal (22, 53.66%)"]
+	subtopic1_1116 -> subtopic2_1117
+	subtopic2_1118 [label="program cdfi community cdfis bill bond guarantee services financial institutions (4, 9.76%)"]
+	subtopic1_1116 -> subtopic2_1118
+	subtopic2_1119 [label="land trust tribes block territories fpl allotments pala indian amendments (3, 7.32%)"]
+	subtopic1_1116 -> subtopic2_1119
+	subtopic2_1120 [label="malnutrition nutrition usaid global programs prevent community act u activities (2, 4.88%)"]
+	subtopic1_1116 -> subtopic2_1120
+	subtopic2_1121 [label="poverty areas persistent bill federal communities investments resources need report (2, 4.88%)"]
+	subtopic1_1116 -> subtopic2_1121
+	subtopic2_1122 [label="financial institutions credit bill access services racial cash report lending (2, 4.88%)"]
+	subtopic1_1116 -> subtopic2_1122
+	subtopic2_1123 [label="women maternal stillbirth veterans health care maternity served pregnancy prevention (1, 2.44%)"]
+	subtopic1_1116 -> subtopic2_1123
+	subtopic2_1124 [label="housing safety fire federally assisted public temperature smoke alarms units (1, 2.44%)"]
+	subtopic1_1116 -> subtopic2_1124
+	subtopic2_1125 [label="abortion right health choice services access court roe women v (1, 2.44%)"]
+	subtopic1_1116 -> subtopic2_1125
+	subtopic2_1126 [label="said hud texas hester houston harvey state communities disaster black (1, 2.44%)"]
+	subtopic1_1116 -> subtopic2_1126
+	subtopic2_1127 [label="puerto rico status bill plebiscite shall voter choice statehood political (1, 2.44%)"]
+	subtopic1_1116 -> subtopic2_1127
+	subtopic2_1128 [label="food farmers local families market markets csbg bank seniors extends (1, 2.44%)"]
+	subtopic1_1116 -> subtopic2_1128
+	subtopic1_1129 [label="section sec funds provided division title program appropriations provides certain (2, 4.44%)"]
+	policy_24 -> subtopic1_1129
+	subtopic2_1130 [label="bill election states president federal people campaign state act government (2, 100.00%)"]
+	subtopic1_1129 -> subtopic2_1130
+	subtopic1_1131 [label="community action director executive missouri inc county board member agency (1, 2.22%)"]
+	policy_24 -> subtopic1_1131
+	subtopic2_1132 [label="ohio virginia csbg council west patricia park texas district manager (1, 100.00%)"]
+	subtopic1_1131 -> subtopic2_1132
+	subtopic1_1133 [label="president center christian professor language protections md justice va would (1, 2.22%)"]
+	policy_24 -> subtopic1_1133
+	subtopic2_1134 [label="faith based csbg washington organizations dc choice church religious charitable (1, 100.00%)"]
+	subtopic1_1133 -> subtopic2_1134
+	policy_25 [label="Animals (41, 0.39%)"]
+	subtopic1_1135 [label="big cats public breeding would bill u animals possession owners (24, 58.54%)"]
+	policy_25 -> subtopic1_1135
+	subtopic2_1136 [label="act cats wildlife big must sec species lacey entities violation (24, 100.00%)"]
+	subtopic1_1135 -> subtopic2_1136
+	subtopic1_1137 [label="bill act would also time legislation people support mr speaker (15, 36.59%)"]
+	policy_25 -> subtopic1_1137
+	subtopic2_1138 [label="soring horse horses act past bill practice tennessee industry 2022 (9, 60.00%)"]
+	subtopic1_1137 -> subtopic2_1138
+	subtopic2_1139 [label="disease research usda chronic wasting deer mr management state program (6, 40.00%)"]
+	subtopic1_1137 -> subtopic2_1139
+	subtopic1_1140 [label="animals research testing use alternatives number national center animal used (1, 2.44%)"]
+	policy_25 -> subtopic1_1140
+	subtopic2_1141 [label="blm burros helicopters gathering put helicopter protection employ captured burro (1, 100.00%)"]
+	subtopic1_1140 -> subtopic2_1141
+	subtopic1_1142 [label="soring horses bill act tennessee past walking horse industry r (1, 2.44%)"]
+	policy_25 -> subtopic1_1142
+	subtopic2_1143 [label="grossly occasion sales humanely subject consistent loads pessimism busdrivers hodgepodge (1, 100.00%)"]
+	subtopic1_1142 -> subtopic2_1143
+	policy_26 [label="Energy (29, 0.28%)"]
+	subtopic1_1144 [label="bill act would also time legislation people support mr speaker (23, 79.31%)"]
+	policy_26 -> subtopic1_1144
+	subtopic2_1145 [label="programs national security department related requires certain authorizes education federal (22, 95.65%)"]
+	subtopic1_1144 -> subtopic2_1145
+	subtopic2_1146 [label="american vessels port exports u ocean oil would crude berthing (1, 4.35%)"]
+	subtopic1_1144 -> subtopic2_1146
+	subtopic1_1147 [label="charging ev rates stations utility electricity commercial high section 40431 (2, 6.90%)"]
+	policy_26 -> subtopic1_1147
+	subtopic2_1148 [label="utilities demand public electric charges charge sector new customers load (2, 100.00%)"]
+	subtopic1_1147 -> subtopic2_1148
+	subtopic1_1149 [label="national heritage area act bill support river park system would (2, 6.90%)"]
+	policy_26 -> subtopic1_1149
+	subtopic2_1150 [label="energy cybersecurity doe students university pursuing leadership postdoctoral graduate utilities (2, 100.00%)"]
+	subtopic1_1149 -> subtopic2_1150
+	subtopic1_1151 [label="section sec funds provided division title program appropriations provides certain (1, 3.45%)"]
+	policy_26 -> subtopic1_1151
+	subtopic2_1152 [label="bill act must suspend move rules pass r veterans h (1, 100.00%)"]
+	subtopic1_1151 -> subtopic2_1152
+	subtopic1_1153 [label="percent recycled plastics industry use recycling 2 disposable single reduce (1, 3.45%)"]
+	policy_26 -> subtopic1_1153
+	subtopic2_1154 [label="plastic bill 10 less 2050 one actually act fee see (1, 100.00%)"]
+	subtopic1_1153 -> subtopic2_1154
+	policy_27 [label="Water Resources Development (29, 0.28%)"]
+	subtopic1_1155 [label="bill act would also time legislation people support mr speaker (24, 82.76%)"]
+	policy_27 -> subtopic1_1155
+	subtopic2_1156 [label="small program ppp june 2021 bill 30 businesses water business (11, 45.83%)"]
+	subtopic1_1155 -> subtopic2_1156
+	subtopic2_1157 [label="water drinking infrastructure wastewater rural communities state lead programs senator (5, 20.83%)"]
+	subtopic1_1155 -> subtopic2_1157
+	subtopic2_1158 [label="programs national security department related requires certain authorizes education federal (3, 12.50%)"]
+	subtopic1_1155 -> subtopic2_1158
+	subtopic2_1159 [label="recycling water senator infrastructure capito composting together drinking lead think (3, 12.50%)"]
+	subtopic1_1155 -> subtopic2_1159
+	subtopic2_1160 [label="pfas water epa drinking chemicals health clean address action substances (1, 4.17%)"]
+	subtopic1_1155 -> subtopic2_1160
+	subtopic2_1161 [label="program internet connectivity programs access affordable lifeline income low assistance (1, 4.17%)"]
+	subtopic1_1155 -> subtopic2_1161
+	subtopic1_1162 [label="section sec funds provided division title program appropriations provides certain (3, 10.34%)"]
+	policy_27 -> subtopic1_1162
+	subtopic2_1163 [label="funding sec provides act energy credit program available shall remain (2, 66.67%)"]
+	subtopic1_1162 -> subtopic2_1163
+	subtopic2_1164 [label="hate crimes bill law justice department crime covid 19 doj (1, 33.33%)"]
+	subtopic1_1162 -> subtopic2_1164
+	subtopic1_1165 [label="city water wastewater diego san act loma ii obtain pollution (1, 3.45%)"]
+	policy_27 -> subtopic1_1165
+	subtopic2_1166 [label="permit plant treatment program bill modifications npdes standards point secondary (1, 100.00%)"]
+	subtopic1_1165 -> subtopic2_1166
+	subtopic1_1167 [label="marriage act sex marriages law provisions state court recognize states (1, 3.45%)"]
+	policy_27 -> subtopic1_1167
+	subtopic2_1168 [label="senator mr north carolina south dakota indiana kansas srf marshall (1, 100.00%)"]
+	subtopic1_1167 -> subtopic2_1168
+	policy_28 [label="Housing and Community Development (27, 0.26%)"]
+	subtopic1_1169 [label="bill act would also time legislation people support mr speaker (15, 55.56%)"]
+	policy_28 -> subtopic1_1169
+	subtopic2_1170 [label="housing safety fire federally assisted public temperature smoke alarms units (10, 66.67%)"]
+	subtopic1_1169 -> subtopic2_1170
+	subtopic2_1171 [label="disaster fha federal fema mortgage mortgages assessments small report dollar (4, 26.67%)"]
+	subtopic1_1169 -> subtopic2_1171
+	subtopic2_1172 [label="fentanyl scheduling temporary substances drug analogues order act administration schedule (1, 6.67%)"]
+	subtopic1_1169 -> subtopic2_1172
+	subtopic1_1173 [label="section sec funds provided division title program appropriations provides certain (12, 44.44%)"]
+	policy_28 -> subtopic1_1173
+	subtopic2_1174 [label="bill fha housing mortgage appraisers financial time homebuyers first mr (11, 91.67%)"]
+	subtopic1_1173 -> subtopic2_1174
+	subtopic2_1175 [label="marijuana housing federally parent assisted bill child health medical including (1, 8.33%)"]
+	subtopic1_1173 -> subtopic2_1175
+	policy_29 [label="Arts, Culture, Religion (19, 0.18%)"]
+	subtopic1_1176 [label="bill act would also time legislation people support mr speaker (17, 89.47%)"]
+	policy_29 -> subtopic1_1176
+	subtopic2_1177 [label="covid 19 project history american pandemic collect stories congress bill (9, 52.94%)"]
+	subtopic1_1176 -> subtopic2_1177
+	subtopic2_1178 [label="programs national security department related requires certain authorizes education federal (8, 47.06%)"]
+	subtopic1_1176 -> subtopic2_1178
+	subtopic1_1179 [label="pandemic act us social many isolation least congressional smithsonian fellow (1, 5.26%)"]
+	policy_29 -> subtopic1_1179
+	subtopic2_1180 [label="19 covid quilt memorial americans disease aids lives loved lost (1, 100.00%)"]
+	subtopic1_1179 -> subtopic2_1180
+	subtopic1_1181 [label="district c bill columbia federal act would authority local government (1, 5.26%)"]
+	policy_29 -> subtopic1_1181
+	subtopic2_1182 [label="statue commission board park removal buildings ncpc interior land zoning (1, 100.00%)"]
+	subtopic1_1181 -> subtopic2_1182
+	policy_30 [label="Sports and Recreation (13, 0.12%)"]
+	subtopic1_1183 [label="hockey ree league years one player first member commitment sale (9, 69.23%)"]
+	policy_30 -> subtopic1_1183
+	subtopic2_1184 [label="willie medal congressional gold bill ice act mr recognition time (9, 100.00%)"]
+	subtopic1_1183 -> subtopic2_1184
+	subtopic1_1185 [label="bill act would also time legislation people support mr speaker (4, 30.77%)"]
+	policy_30 -> subtopic1_1185
+	subtopic2_1186 [label="athletes amateur athletic compensation equal gender bill sports u requires (4, 100.00%)"]
+	subtopic1_1185 -> subtopic2_1186
+	parent [label="Parent Node (10481, 100%)"]
+	parent -> policy_0
+	parent -> policy_1
+	parent -> policy_2
+	parent -> policy_3
+	parent -> policy_4
+	parent -> policy_5
+	parent -> policy_6
+	parent -> policy_7
+	parent -> policy_8
+	parent -> policy_9
+	parent -> policy_10
+	parent -> policy_11
+	parent -> policy_12
+	parent -> policy_13
+	parent -> policy_14
+	parent -> policy_15
+	parent -> policy_16
+	parent -> policy_17
+	parent -> policy_18
+	parent -> policy_19
+	parent -> policy_20
+	parent -> policy_21
+	parent -> policy_22
+	parent -> policy_23
+	parent -> policy_24
+	parent -> policy_25
+	parent -> policy_26
+	parent -> policy_27
+	parent -> policy_28
+	parent -> policy_29
+	parent -> policy_30
+}

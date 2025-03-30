@@ -13,7 +13,7 @@ def parse_args():
     parser.add_argument('--batch_size', type=int, default=32, help='Batch size')
     parser.add_argument('--n_workers', type=int, default=4, help='Number of data loader workers')
     parser.add_argument('--seed', type=int, default=42, help='Random seed')
-    parser.add_argument('--save_path', type=str, default='ckp/best_model.pt', help='Path to load the trained model checkpoint')
+    parser.add_argument('--save_path', type=str, default='ckp_new/finetuned_model.pt', help='Path to load the trained model checkpoint')
     
     args = parser.parse_args()
     # Set wiki_model freezing to match main model freezing

@@ -1,3 +1,26 @@
+"""
+StrideStance Model Architecture Implementation
+
+This module implements the core model architecture for the StrideStance approach,
+adapted from He et al.'s (2022) knowledge-enhanced stance detection models. It focuses on:
+
+1. Implementing a BERT-based sequence classification model with knowledge enhancement
+2. Supporting integration of external knowledge for improved topic understanding
+3. Providing the neural network foundation for the stance detection task
+4. Enabling transfer learning from pre-trained language models
+
+Key features:
+- BERT-based sequence classification with stance prediction (against, favor, neutral)
+- Adaptation of pre-trained sentence transformer models
+- Knowledge integration mechanisms from the original He et al. implementation
+- Support for document-level stance detection
+
+This architecture serves as the backbone of the StrideStance system, providing the
+neural network foundation for both the training and inference pipelines. While based
+on He et al.'s work, it has been adapted to better handle long documents through
+integration with the document splitting and aggregation components.
+"""
+
 import torch.nn as nn
 import torch
 import os

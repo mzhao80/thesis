@@ -17,7 +17,7 @@ def main():
     r = 16
     alpha = 8
     # 1. Load CSV data and create a train/validation split (80/20 split)
-    data_files = {"data": "/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/training_data_with_summaries.csv"}
+    data_files = {"data": "/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/training_data_2023.csv"}
     dataset = load_dataset("csv", data_files=data_files)
     
     # Use the entire CSV as a single dataset and then split it
@@ -91,13 +91,13 @@ def main():
     
     # 5. Setup training arguments.
     training_args = Seq2SeqTrainingArguments(
-        output_dir="./lora_bart_topics_new",
+        output_dir="./throwaway",
         overwrite_output_dir=True,
         learning_rate=1e-4,
-        num_train_epochs=5,
-        warmup_steps=500,            # Added warmup steps for smoother LR ramp-up
+        num_train_epochs=0,
+        warmup_steps=1,            # Added warmup steps for smoother LR ramp-up
         evaluation_strategy="steps",
-        eval_steps=500,
+        eval_steps=1,
         save_steps=500,
         logging_steps=500,
         predict_with_generate=True,
@@ -118,7 +118,7 @@ def main():
     # 7. Start fine-tuning.
     trainer.train()
 
-    trainer.save_model("./lora_bart_topics_new")
+    trainer.save_model("./throwaway")
     
     # 8. After training, generate predictions on the validation set with generation parameters.
     print("Generating predictions on validation dataset...")

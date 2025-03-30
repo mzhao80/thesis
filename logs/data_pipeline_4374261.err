@@ -1,120 +1,0 @@
-2025-02-21 17:13:13,387 - Starting
-2025-02-21 17:13:16,239 - Adding bill data columns...
-  0%|          | 0/12429 [00:00<?, ?it/s] 38%|███▊      | 4725/12429 [00:00<00:00, 47240.13it/s] 79%|███████▉  | 9840/12429 [00:00<00:00, 49536.55it/s]100%|██████████| 12429/12429 [00:00<00:00, 49560.55it/s]
-2025-02-21 17:13:16,563 - Done!
-Generating data split: 0 examples [00:00, ? examples/s]Generating data split: 0 examples [00:00, ? examples/s]
-Traceback (most recent call last):
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/datasets/builder.py", line 1854, in _prepare_split_single
-    for _, table in generator:
-                    ^^^^^^^^^
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/datasets/packaged_modules/csv/csv.py", line 188, in _generate_tables
-    csv_file_reader = pd.read_csv(file, iterator=True, dtype=dtype, **self.config.pd_read_csv_kwargs)
-                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/datasets/streaming.py", line 75, in wrapper
-    return function(*args, download_config=download_config, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/datasets/utils/file_utils.py", line 1212, in xpandas_read_csv
-    return pd.read_csv(xopen(filepath_or_buffer, "rb", download_config=download_config), **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
-    return mapping[engine](f, **self.options)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
-    self._reader = parsers.TextReader(src, **kwds)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
-pandas.errors.EmptyDataError: No columns to parse from file
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/topic_generation.py", line 109, in <module>
-    main()
-  File "/n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/topic_generation.py", line 18, in main
-    dataset = load_dataset("csv", data_files={"data": data_file})["data"]
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/datasets/load.py", line 2151, in load_dataset
-    builder_instance.download_and_prepare(
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/datasets/builder.py", line 924, in download_and_prepare
-    self._download_and_prepare(
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/datasets/builder.py", line 1000, in _download_and_prepare
-    self._prepare_split(split_generator, **prepare_split_kwargs)
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/datasets/builder.py", line 1741, in _prepare_split
-    for job_id, done, content in self._prepare_split_single(
-                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/datasets/builder.py", line 1897, in _prepare_split_single
-    raise DatasetGenerationError("An error occurred while generating the dataset") from e
-datasets.exceptions.DatasetGenerationError: An error occurred while generating the dataset
-Generating embeddings:   0%|          | 0/3499 [00:00<?, ?it/s]Generating embeddings:   0%|          | 1/3499 [00:00<09:08,  6.38it/s]Generating embeddings:   1%|          | 42/3499 [00:00<00:17, 197.80it/s]Generating embeddings:   2%|▏         | 81/3499 [00:00<00:12, 274.35it/s]Generating embeddings:   3%|▎         | 122/3499 [00:00<00:10, 323.56it/s]Generating embeddings:   5%|▍         | 164/3499 [00:00<00:09, 353.77it/s]Generating embeddings:   6%|▌         | 206/3499 [00:00<00:08, 372.52it/s]Generating embeddings:   7%|▋         | 246/3499 [00:00<00:08, 378.78it/s]Generating embeddings:   8%|▊         | 287/3499 [00:00<00:08, 387.73it/s]Generating embeddings:   9%|▉         | 328/3499 [00:00<00:08, 393.82it/s]Generating embeddings:  11%|█         | 369/3499 [00:01<00:07, 398.32it/s]Generating embeddings:  12%|█▏        | 410/3499 [00:01<00:07, 401.29it/s]Generating embeddings:  13%|█▎        | 451/3499 [00:01<00:07, 403.38it/s]Generating embeddings:  14%|█▍        | 492/3499 [00:01<00:07, 405.16it/s]Generating embeddings:  15%|█▌        | 533/3499 [00:01<00:07, 406.17it/s]Generating embeddings:  16%|█▋        | 574/3499 [00:01<00:07, 407.05it/s]Generating embeddings:  18%|█▊        | 615/3499 [00:01<00:07, 407.49it/s]Generating embeddings:  19%|█▊        | 656/3499 [00:01<00:06, 407.72it/s]Generating embeddings:  20%|█▉        | 697/3499 [00:01<00:06, 407.80it/s]Generating embeddings:  21%|██        | 738/3499 [00:01<00:06, 408.06it/s]Generating embeddings:  22%|██▏       | 779/3499 [00:02<00:06, 408.28it/s]Generating embeddings:  23%|██▎       | 820/3499 [00:02<00:06, 408.25it/s]Generating embeddings:  25%|██▍       | 861/3499 [00:02<00:06, 407.96it/s]Generating embeddings:  26%|██▌       | 902/3499 [00:02<00:06, 408.22it/s]Generating embeddings:  27%|██▋       | 943/3499 [00:02<00:06, 408.25it/s]Generating embeddings:  28%|██▊       | 984/3499 [00:02<00:06, 404.30it/s]Generating embeddings:  29%|██▉       | 1025/3499 [00:02<00:06, 404.86it/s]Generating embeddings:  30%|███       | 1066/3499 [00:02<00:05, 405.59it/s]Generating embeddings:  32%|███▏      | 1107/3499 [00:02<00:05, 405.87it/s]Generating embeddings:  33%|███▎      | 1148/3499 [00:02<00:05, 406.50it/s]Generating embeddings:  34%|███▍      | 1189/3499 [00:03<00:05, 406.63it/s]Generating embeddings:  35%|███▌      | 1230/3499 [00:03<00:05, 407.19it/s]Generating embeddings:  36%|███▋      | 1271/3499 [00:03<00:05, 407.35it/s]Generating embeddings:  37%|███▋      | 1312/3499 [00:03<00:05, 407.53it/s]Generating embeddings:  39%|███▊      | 1353/3499 [00:03<00:05, 407.46it/s]Generating embeddings:  40%|███▉      | 1394/3499 [00:03<00:05, 407.56it/s]Generating embeddings:  41%|████      | 1435/3499 [00:03<00:05, 407.77it/s]Generating embeddings:  42%|████▏     | 1476/3499 [00:03<00:04, 408.12it/s]Generating embeddings:  43%|████▎     | 1517/3499 [00:03<00:04, 408.11it/s]Generating embeddings:  45%|████▍     | 1558/3499 [00:03<00:04, 408.22it/s]Generating embeddings:  46%|████▌     | 1599/3499 [00:04<00:04, 408.23it/s]Generating embeddings:  47%|████▋     | 1640/3499 [00:04<00:04, 408.32it/s]Generating embeddings:  48%|████▊     | 1681/3499 [00:04<00:04, 407.87it/s]Generating embeddings:  49%|████▉     | 1722/3499 [00:04<00:04, 407.60it/s]Generating embeddings:  50%|█████     | 1763/3499 [00:04<00:04, 407.80it/s]Generating embeddings:  52%|█████▏    | 1804/3499 [00:04<00:04, 407.68it/s]Generating embeddings:  53%|█████▎    | 1845/3499 [00:04<00:04, 407.95it/s]Generating embeddings:  54%|█████▍    | 1886/3499 [00:04<00:03, 408.14it/s]Generating embeddings:  55%|█████▌    | 1927/3499 [00:04<00:03, 406.08it/s]Generating embeddings:  56%|█████▌    | 1968/3499 [00:04<00:03, 406.36it/s]Generating embeddings:  57%|█████▋    | 2009/3499 [00:05<00:03, 406.69it/s]Generating embeddings:  59%|█████▊    | 2050/3499 [00:05<00:03, 406.92it/s]Generating embeddings:  60%|█████▉    | 2091/3499 [00:05<00:03, 406.65it/s]Generating embeddings:  61%|██████    | 2132/3499 [00:05<00:03, 406.58it/s]Generating embeddings:  62%|██████▏   | 2173/3499 [00:05<00:03, 406.89it/s]Generating embeddings:  63%|██████▎   | 2214/3499 [00:05<00:03, 407.28it/s]Generating embeddings:  64%|██████▍   | 2255/3499 [00:05<00:03, 407.19it/s]Generating embeddings:  66%|██████▌   | 2296/3499 [00:05<00:02, 407.25it/s]Generating embeddings:  67%|██████▋   | 2337/3499 [00:05<00:02, 407.48it/s]Generating embeddings:  68%|██████▊   | 2378/3499 [00:05<00:02, 407.67it/s]Generating embeddings:  69%|██████▉   | 2419/3499 [00:06<00:02, 407.83it/s]Generating embeddings:  70%|███████   | 2460/3499 [00:06<00:02, 407.87it/s]Generating embeddings:  71%|███████▏  | 2501/3499 [00:06<00:02, 407.94it/s]Generating embeddings:  73%|███████▎  | 2542/3499 [00:06<00:02, 407.90it/s]Generating embeddings:  74%|███████▍  | 2583/3499 [00:06<00:02, 407.74it/s]Generating embeddings:  75%|███████▍  | 2624/3499 [00:06<00:02, 408.09it/s]Generating embeddings:  76%|███████▌  | 2665/3499 [00:06<00:02, 407.96it/s]Generating embeddings:  77%|███████▋  | 2706/3499 [00:06<00:01, 407.99it/s]Generating embeddings:  79%|███████▊  | 2747/3499 [00:06<00:01, 407.95it/s]Generating embeddings:  80%|███████▉  | 2788/3499 [00:07<00:01, 408.13it/s]Generating embeddings:  81%|████████  | 2829/3499 [00:07<00:01, 405.92it/s]Generating embeddings:  82%|████████▏ | 2870/3499 [00:07<00:01, 406.61it/s]Generating embeddings:  83%|████████▎ | 2911/3499 [00:07<00:01, 407.37it/s]Generating embeddings:  84%|████████▍ | 2952/3499 [00:07<00:01, 407.79it/s]Generating embeddings:  86%|████████▌ | 2993/3499 [00:07<00:01, 407.68it/s]Generating embeddings:  87%|████████▋ | 3034/3499 [00:07<00:01, 407.90it/s]Generating embeddings:  88%|████████▊ | 3075/3499 [00:07<00:01, 408.09it/s]Generating embeddings:  89%|████████▉ | 3116/3499 [00:07<00:00, 408.14it/s]Generating embeddings:  90%|█████████ | 3157/3499 [00:07<00:00, 408.14it/s]Generating embeddings:  91%|█████████▏| 3198/3499 [00:08<00:00, 407.89it/s]Generating embeddings:  93%|█████████▎| 3239/3499 [00:08<00:00, 407.60it/s]Generating embeddings:  94%|█████████▎| 3280/3499 [00:08<00:00, 407.72it/s]Generating embeddings:  95%|█████████▍| 3321/3499 [00:08<00:00, 407.84it/s]Generating embeddings:  96%|█████████▌| 3362/3499 [00:08<00:00, 407.81it/s]Generating embeddings:  97%|█████████▋| 3403/3499 [00:08<00:00, 407.70it/s]Generating embeddings:  98%|█████████▊| 3444/3499 [00:08<00:00, 407.93it/s]Generating embeddings: 100%|█████████▉| 3485/3499 [00:08<00:00, 408.01it/s]Generating embeddings: 100%|██████████| 3499/3499 [00:08<00:00, 400.02it/s]
-Clustering:   0%|          | 0/25 [00:00<?, ?it/s]Clustering:   0%|          | 0/25 [00:15<?, ?it/s]
-Traceback (most recent call last):
-  File "/n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/clustering.py", line 271, in <module>
-    main()
-  File "/n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/clustering.py", line 258, in main
-    'source_indices': ";".join(source_indices)
-                      ^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: sequence item 0: expected str instance, int found
-Processing taxonomy:   0%|          | 0/87 [00:00<?, ?it/s]Processing taxonomy:   0%|          | 0/87 [00:03<?, ?it/s]
-Traceback (most recent call last):
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
-    return self._engine.get_loc(casted_key)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
-  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
-  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
-  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
-KeyError: 'idx'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/topic_generation_2.py", line 90, in <module>
-    main()
-  File "/n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/topic_generation_2.py", line 76, in main
-    "idx": row["idx"],
-           ~~~^^^^^^^
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/pandas/core/series.py", line 1121, in __getitem__
-    return self._get_value(key)
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/pandas/core/series.py", line 1237, in _get_value
-    loc = self.index.get_loc(label)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
-    raise KeyError(key) from err
-KeyError: 'idx'
-Traceback (most recent call last):
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
-    return self._engine.get_loc(casted_key)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
-  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
-  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
-  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
-KeyError: 'idx'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/clustering_2.py", line 280, in <module>
-    main()
-  File "/n/home09/michaelzhao/Downloads/thesis/topic_taxonomy_expansion/clustering_2.py", line 119, in main
-    source_mapping.setdefault(path, []).append(row['idx'])
-                                               ~~~^^^^^^^
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/pandas/core/series.py", line 1121, in __getitem__
-    return self._get_value(key)
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/pandas/core/series.py", line 1237, in _get_value
-    loc = self.index.get_loc(label)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/n/home09/michaelzhao/Downloads/topicexpan/myenv/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
-    raise KeyError(key) from err
-KeyError: 'idx'

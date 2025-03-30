@@ -76,7 +76,7 @@ class SubtopicEngine:
         print('Done\n')
 
         print('Initializing model....')
-        num_labels = 3  # Stance labels: against (0), neutral (1), favor (2)
+        num_labels = 3  # Stance labels: against (0), favor (1), neutral(2)
         self.model = BERTSeqClf(num_labels=num_labels, model=args.model, n_layers_freeze=args.n_layers_freeze,
                                wiki_model=args.wiki_model, n_layers_freeze_wiki=args.n_layers_freeze_wiki)
         self.model = nn.DataParallel(self.model)
@@ -123,51 +123,50 @@ class SubtopicEngine:
                     if subtopic_2 and subtopic_2 != "Misc.":  # Skip empty subtopics
                         speaker_subtopic_preds[speaker][subtopic_2].append(preds[i])
                         probs = softmax(logits[i])
-                        weight = get_prediction_weight(probs, method='entropy')  # Use entropy-based weighting
-                        speaker_subtopic_probs[speaker][subtopic_2].append((probs, weight))
-                        speaker_subtopic_docs[speaker][subtopic_2].append((batch['document'][i], weight))
+                        speaker_subtopic_probs[speaker][subtopic_2].append(probs)
+                        speaker_subtopic_docs[speaker][subtopic_2].append(batch['document'][i])
                         speaker_subtopic_chambers[speaker][subtopic_2]=batch['chamber'][i]
                         speaker_subtopic_parents[speaker][subtopic_2]=batch['subtopics_1'][i]
         
-        # Calculate weighted average probabilities for each speaker-subtopic pair
+        # Calculate simple average probabilities for each speaker-subtopic pair
         results = []
         for speaker in speaker_subtopic_preds:
             for subtopic_2 in speaker_subtopic_preds[speaker]:
                 preds = speaker_subtopic_preds[speaker][subtopic_2]
-                probs_and_weights = speaker_subtopic_probs[speaker][subtopic_2]
-                docs_and_weights = speaker_subtopic_docs[speaker][subtopic_2]
+                probs_list = speaker_subtopic_probs[speaker][subtopic_2]
+                docs_list = speaker_subtopic_docs[speaker][subtopic_2]
                 chamber = speaker_subtopic_chambers[speaker][subtopic_2]
                 parent = speaker_subtopic_parents[speaker][subtopic_2]
                 
-                # Separate probs and weights
-                probs = np.array([p[0] for p in probs_and_weights])
-                weights = np.array([p[1] for p in probs_and_weights])
+                # Convert to numpy array for simple averaging
+                probs = np.array(probs_list)
                 
-                # Normalize weights to sum to 1
-                weights = weights / (weights.sum() + 1e-10)
+                # Calculate simple average (no weighting)
+                avg_probs = np.mean(probs, axis=0)
                 
-                # Calculate weighted average
-                avg_probs = np.sum(probs * weights[:, np.newaxis], axis=0)
+                # Calculate stance confidence as absolute magnitude of stance score
+                # abs(mean pro - mean con)
+                stance_confidence = abs(avg_probs[1] - avg_probs[0])
                 
-                # Calculate stance confidence considering only weighted mean probabilities
-                stance_confidence = calculate_stance_confidence(probs, weights)
+                # Get the winning direction index
+                winning_direction = np.argmax(avg_probs)
                 
-                # Find most important doc (highest weight)
-                most_important_idx = np.argmax(weights)
-                most_important_doc = docs_and_weights[most_important_idx][0]
+                # Find the document with the highest probability in the winning direction
+                doc_winning_probs = [prob[winning_direction] for prob in probs_list]
+                most_important_idx = np.argmax(doc_winning_probs)
+                most_important_doc = docs_list[most_important_idx]
                 
                 results.append({
                     'speaker': speaker,
                     'chamber': chamber,
                     'subtopic_1': parent,
                     'subtopic_2': subtopic_2,
-                    'document_count': len(docs_and_weights),
+                    'document_count': len(docs_list),
                     'stance': ['against', 'favor', 'neutral'][np.argmax(avg_probs)],
                     'stance_confidence': stance_confidence,
                     'prob_against': avg_probs[0],
                     'prob_favor': avg_probs[1],
                     'prob_neutral': avg_probs[2],
-                    'max_doc_weight': weights[most_important_idx],
                     'most_important_doc': most_important_doc
                 })
         
@@ -175,4 +174,5 @@ class SubtopicEngine:
         results_df = pd.DataFrame(results)
         output_path = '/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/speaker_stance_results.csv'
         results_df.to_csv(output_path, index=False)
+        results_df.to_csv('speaker_stance_results.csv', index=False)
         print(f'\nResults saved to: {output_path}')

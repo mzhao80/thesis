@@ -1,933 +1,901 @@
 // Taxonomy Tree
 digraph {
-	rankdir=LR
-	policy_0 [label="Economics and Public Finance (1144, 12.68%)"]
-	subtopic1_0 [label="Misc. (381, 33.30%)"]
+	graph [ratio=expand]
+	dpi=900 rankdir=LR size="50,40"
+	policy_0 [label="Economics and Public Finance (1311, 12.51%)"]
+	subtopic1_0 [label="Increasing Government Spending Accountability (833, 63.54%)"]
 	policy_0 -> subtopic1_0
-	subtopic1_1 [label="Economic Inequality Reform (91, 7.95%)"]
-	policy_0 -> subtopic1_1
-	subtopic2_2 [label="Implementing Progressive Income Taxation (35, 38.46%)"]
-	subtopic1_1 -> subtopic2_2
-	subtopic2_3 [label="Increasing Minimum Wage Standards (20, 21.98%)"]
-	subtopic1_1 -> subtopic2_3
-	subtopic2_4 [label="Supporting Comprehensive Economic Policy Reform (18, 19.78%)"]
-	subtopic1_1 -> subtopic2_4
-	subtopic2_5 [label="Bailouts for Caribbean Economic Recovery (18, 19.78%)"]
-	subtopic1_1 -> subtopic2_5
-	subtopic1_6 [label="Infrastructure Investment Controversy (91, 7.95%)"]
-	policy_0 -> subtopic1_6
-	subtopic2_7 [label="Increasing Federal Infrastructure Funding (38, 41.76%)"]
-	subtopic1_6 -> subtopic2_7
-	subtopic2_8 [label="Funding Climate Change Adaptation Programs (22, 24.18%)"]
-	subtopic1_6 -> subtopic2_8
-	subtopic2_9 [label="Increasing Green Energy Subsidies (12, 13.19%)"]
-	subtopic1_6 -> subtopic2_9
-	subtopic2_10 [label="Implementing Greenhouse Gas Emission Regulations (10, 10.99%)"]
-	subtopic1_6 -> subtopic2_10
-	subtopic2_11 [label="Modernizing Public Investment in Weather Data (6, 6.59%)"]
-	subtopic1_6 -> subtopic2_11
-	subtopic2_12 [label="Misc. (3, 3.30%)"]
-	subtopic1_6 -> subtopic2_12
-	subtopic1_13 [label="Healthcare Access Controversies (81, 7.08%)"]
-	policy_0 -> subtopic1_13
-	subtopic2_14 [label="Expanding Medicaid Coverage Accessibility (35, 43.21%)"]
-	subtopic1_13 -> subtopic2_14
-	subtopic2_15 [label="Controlling Prescription Drug Costs (26, 32.10%)"]
-	subtopic1_13 -> subtopic2_15
-	subtopic2_16 [label="Cutting Healthcare Funding for Efficiency (13, 16.05%)"]
-	subtopic1_13 -> subtopic2_16
-	subtopic2_17 [label="Medicare Drug Price Negotiation Reform (7, 8.64%)"]
-	subtopic1_13 -> subtopic2_17
-	subtopic1_18 [label="Accountable Government Spending (67, 5.86%)"]
-	policy_0 -> subtopic1_18
-	subtopic2_19 [label="Reducing Federal Spending Levels (34, 50.75%)"]
-	subtopic1_18 -> subtopic2_19
-	subtopic2_20 [label="Enhancing Budget Accountability Measures (26, 38.81%)"]
-	subtopic1_18 -> subtopic2_20
-	subtopic2_21 [label="Controlling Government Debt Growth (7, 10.45%)"]
-	subtopic1_18 -> subtopic2_21
-	subtopic1_22 [label="Government Funding Reform (64, 5.59%)"]
-	policy_0 -> subtopic1_22
-	subtopic2_23 [label="Increasing Government Funding Allocations (43, 67.19%)"]
-	subtopic1_22 -> subtopic2_23
-	subtopic2_24 [label="Reforming Federal Funding Allocation (21, 32.81%)"]
-	subtopic1_22 -> subtopic2_24
-	subtopic1_25 [label="Tax Reform Controversy (56, 4.90%)"]
-	policy_0 -> subtopic1_25
-	subtopic2_26 [label="Implementing Progressive Tax Reforms (30, 53.57%)"]
-	subtopic1_25 -> subtopic2_26
-	subtopic2_27 [label="Ensuring Corporate Tax Fairness (26, 46.43%)"]
-	subtopic1_25 -> subtopic2_27
-	subtopic1_28 [label="Vaccine Access and Funding (55, 4.81%)"]
-	policy_0 -> subtopic1_28
-	subtopic2_29 [label="Increasing Vaccine Funding Accessibility (34, 61.82%)"]
-	subtopic1_28 -> subtopic2_29
-	subtopic2_30 [label="Improving Vaccine Access Equity (21, 38.18%)"]
-	subtopic1_28 -> subtopic2_30
-	subtopic1_31 [label="Pregnant Workers' Rights Expansion (45, 3.93%)"]
-	policy_0 -> subtopic1_31
-	subtopic2_32 [label="Expanding Childcare Access and Funding (34, 75.56%)"]
-	subtopic1_31 -> subtopic2_32
-	subtopic2_33 [label="Strengthening Workers' Rights Legislation (11, 24.44%)"]
-	subtopic1_31 -> subtopic2_33
-	subtopic1_34 [label="Legislative Reform Controversy (41, 3.58%)"]
+	subtopic2_1 [label="Enhancing Budget Transparency Measures (141, 16.93%)"]
+	subtopic1_0 -> subtopic2_1
+	subtopic2_2 [label="Misc. (133, 15.97%)"]
+	subtopic1_0 -> subtopic2_2
+	subtopic2_3 [label="Expanding Affordable Childcare Access (68, 8.16%)"]
+	subtopic1_0 -> subtopic2_3
+	subtopic2_4 [label="Increasing Minimum Wage Laws (52, 6.24%)"]
+	subtopic1_0 -> subtopic2_4
+	subtopic2_5 [label="Regulating Big Tech Mergers (39, 4.68%)"]
+	subtopic1_0 -> subtopic2_5
+	subtopic2_6 [label="Increasing Science Research Funding (34, 4.08%)"]
+	subtopic1_0 -> subtopic2_6
+	subtopic2_7 [label="Strengthening Scam Prevention Laws (29, 3.48%)"]
+	subtopic1_0 -> subtopic2_7
+	subtopic2_8 [label="Expanding Healthcare Coverage Options (28, 3.36%)"]
+	subtopic1_0 -> subtopic2_8
+	subtopic2_9 [label="Reducing Federal Spending (27, 3.24%)"]
+	subtopic1_0 -> subtopic2_9
+	subtopic2_10 [label="Increasing Disaster Relief Funding (25, 3.00%)"]
+	subtopic1_0 -> subtopic2_10
+	subtopic2_11 [label="Reducing Military Spending Increase (25, 3.00%)"]
+	subtopic1_0 -> subtopic2_11
+	subtopic2_12 [label="Restricting IRS Funding Increases (25, 3.00%)"]
+	subtopic1_0 -> subtopic2_12
+	subtopic2_13 [label="Supporting Haiti Aid Initiatives (24, 2.88%)"]
+	subtopic1_0 -> subtopic2_13
+	subtopic2_14 [label="Supporting Healthcare Access Reform (21, 2.52%)"]
+	subtopic1_0 -> subtopic2_14
+	subtopic2_15 [label="Expanding Healthcare Access Equity (20, 2.40%)"]
+	subtopic1_0 -> subtopic2_15
+	subtopic2_16 [label="Opposing Government Funding Cuts (19, 2.28%)"]
+	subtopic1_0 -> subtopic2_16
+	subtopic2_17 [label="Increasing Infrastructure Investment Aid (17, 2.04%)"]
+	subtopic1_0 -> subtopic2_17
+	subtopic2_18 [label="Bipartisan Government Spending Reform (16, 1.92%)"]
+	subtopic1_0 -> subtopic2_18
+	subtopic2_19 [label="Enhancing Government Transparency (16, 1.92%)"]
+	subtopic1_0 -> subtopic2_19
+	subtopic2_20 [label="Enhancing Bailout Transparency (14, 1.68%)"]
+	subtopic1_0 -> subtopic2_20
+	subtopic2_21 [label="Expanding Child Poverty Relief Programs (13, 1.56%)"]
+	subtopic1_0 -> subtopic2_21
+	subtopic2_22 [label="Expanding Paid Family Leave (13, 1.56%)"]
+	subtopic1_0 -> subtopic2_22
+	subtopic2_23 [label="Increased School Funding Accountability (12, 1.44%)"]
+	subtopic1_0 -> subtopic2_23
+	subtopic2_24 [label="Achieving Tax Fairness Reform (11, 1.32%)"]
+	subtopic1_0 -> subtopic2_24
+	subtopic2_25 [label="Strengthening Immigration Enforcement Policies (11, 1.32%)"]
+	subtopic1_0 -> subtopic2_25
+	subtopic1_26 [label="Expanding Drug Price Controls (87, 6.64%)"]
+	policy_0 -> subtopic1_26
+	subtopic2_27 [label="Reducing Prescription Drug Prices (43, 49.43%)"]
+	subtopic1_26 -> subtopic2_27
+	subtopic2_28 [label="Increasing Mental Health Funding (28, 32.18%)"]
+	subtopic1_26 -> subtopic2_28
+	subtopic2_29 [label="Increasing Access to Addiction Treatment (16, 18.39%)"]
+	subtopic1_26 -> subtopic2_29
+	subtopic1_30 [label="Increasing Pandemic Relief Funding (80, 6.10%)"]
+	policy_0 -> subtopic1_30
+	subtopic2_31 [label="Increasing Pandemic Relief Funding (45, 56.25%)"]
+	subtopic1_30 -> subtopic2_31
+	subtopic2_32 [label="Vaccine Funding Transparency Standards (18, 22.50%)"]
+	subtopic1_30 -> subtopic2_32
+	subtopic2_33 [label="COVID-19 Relief Funding Accountability (17, 21.25%)"]
+	subtopic1_30 -> subtopic2_33
+	subtopic1_34 [label="Misc. (78, 5.95%)"]
 	policy_0 -> subtopic1_34
-	subtopic2_35 [label="Reforming Legislative Processes for Economic Equity (41, 100.00%)"]
-	subtopic1_34 -> subtopic2_35
-	subtopic1_36 [label="Mental Health Funding Priorities (41, 3.58%)"]
-	policy_0 -> subtopic1_36
-	subtopic2_37 [label="Funding Mental Health Intervention Programs (22, 53.66%)"]
-	subtopic1_36 -> subtopic2_37
-	subtopic2_38 [label="Prioritizing Mental Health Funding Allocation (19, 46.34%)"]
-	subtopic1_36 -> subtopic2_38
-	subtopic1_39 [label="Insulin Price Control Measures (38, 3.32%)"]
-	policy_0 -> subtopic1_39
-	subtopic2_40 [label="Controlling Insulin Prices for Patients (38, 100.00%)"]
-	subtopic1_39 -> subtopic2_40
-	subtopic1_41 [label="Inflation Control Measures (37, 3.23%)"]
+	subtopic1_35 [label="Strengthening Climate Change Policies (52, 3.97%)"]
+	policy_0 -> subtopic1_35
+	subtopic2_36 [label="Funding Climate Change Initiatives (28, 53.85%)"]
+	subtopic1_35 -> subtopic2_36
+	subtopic2_37 [label="Reducing Fossil Fuel Subsidies (24, 46.15%)"]
+	subtopic1_35 -> subtopic2_37
+	subtopic1_38 [label="Increasing Clean Energy Funding (51, 3.89%)"]
+	policy_0 -> subtopic1_38
+	subtopic2_39 [label="Imposing Methane Emission Taxes (36, 70.59%)"]
+	subtopic1_38 -> subtopic2_39
+	subtopic2_40 [label="Increasing Climate Change Funding (15, 29.41%)"]
+	subtopic1_38 -> subtopic2_40
+	subtopic1_41 [label="Capping Insulin Prices (39, 2.97%)"]
 	policy_0 -> subtopic1_41
-	subtopic2_42 [label="Implementing Inflation Reduction Legislation (25, 67.57%)"]
+	subtopic2_42 [label="Lowering Insulin Costs (21, 53.85%)"]
 	subtopic1_41 -> subtopic2_42
-	subtopic2_43 [label="Implementing Price Controls to Combat Inflation (12, 32.43%)"]
+	subtopic2_43 [label="Implementing Insulin Price Controls (18, 46.15%)"]
 	subtopic1_41 -> subtopic2_43
-	subtopic1_44 [label="Poverty Alleviation Initiatives (29, 2.53%)"]
+	subtopic1_44 [label="Expanding Pregnant Workers' Rights (35, 2.67%)"]
 	policy_0 -> subtopic1_44
-	subtopic2_45 [label="Disaster Funding Allocation Controversies (12, 41.38%)"]
+	subtopic2_45 [label="Strengthening Paid Leave Policies (35, 100.00%)"]
 	subtopic1_44 -> subtopic2_45
-	subtopic2_46 [label="Enhancing Social Assistance Effectiveness (11, 37.93%)"]
-	subtopic1_44 -> subtopic2_46
-	subtopic2_47 [label="Misc. (6, 20.69%)"]
-	subtopic1_44 -> subtopic2_47
-	subtopic1_48 [label="Combatting Fraud and Scams (27, 2.36%)"]
+	subtopic1_46 [label="Expanding Voting Access (28, 2.14%)"]
+	policy_0 -> subtopic1_46
+	subtopic2_47 [label="Protecting Voting Rights (28, 100.00%)"]
+	subtopic1_46 -> subtopic2_47
+	subtopic1_48 [label="Controlling Inflationary Spending (28, 2.14%)"]
 	policy_0 -> subtopic1_48
-	subtopic2_49 [label="Regulating Big Tech Mergers and Acquisitions (14, 51.85%)"]
+	subtopic2_49 [label="Implementing Inflation Reduction Policies (28, 100.00%)"]
 	subtopic1_48 -> subtopic2_49
-	subtopic2_50 [label="Strengthening Fraud Prevention Policies (13, 48.15%)"]
-	subtopic1_48 -> subtopic2_50
-	policy_1 [label="Armed Forces and National Security (1083, 12.01%)"]
-	subtopic1_51 [label="Military Funding Reform (554, 51.15%)"]
+	policy_1 [label="Armed Forces and National Security (1304, 12.44%)"]
+	subtopic1_50 [label="Misc. (352, 26.99%)"]
+	policy_1 -> subtopic1_50
+	subtopic1_51 [label="Military Accountability Measures (238, 18.25%)"]
 	policy_1 -> subtopic1_51
-	subtopic2_52 [label="Reforming Military Funding Allocation (237, 42.78%)"]
+	subtopic2_52 [label="Military Funding Accountability Reform (202, 84.87%)"]
 	subtopic1_51 -> subtopic2_52
-	subtopic2_53 [label="Misc. (60, 10.83%)"]
+	subtopic2_53 [label="Improving Military Accountability Standards (36, 15.13%)"]
 	subtopic1_51 -> subtopic2_53
-	subtopic2_54 [label="Strengthening TSA Employee Rights (24, 4.33%)"]
-	subtopic1_51 -> subtopic2_54
-	subtopic2_55 [label="Investing in Climate Resilient Infrastructure (24, 4.33%)"]
-	subtopic1_51 -> subtopic2_55
-	subtopic2_56 [label="Recognizing Minority Contributions in Military (18, 3.25%)"]
-	subtopic1_51 -> subtopic2_56
-	subtopic2_57 [label="Enhancing Cybersecurity for National Defense (17, 3.07%)"]
-	subtopic1_51 -> subtopic2_57
-	subtopic2_58 [label="Restricting Military Equipment Exports (16, 2.89%)"]
-	subtopic1_51 -> subtopic2_58
-	subtopic2_59 [label="Increasing Military Funding Allocations (15, 2.71%)"]
-	subtopic1_51 -> subtopic2_59
-	subtopic2_60 [label="Strengthening Whistleblower Protections in Military (15, 2.71%)"]
-	subtopic1_51 -> subtopic2_60
-	subtopic2_61 [label="Reforming Military Education and Training Standards (14, 2.53%)"]
-	subtopic1_51 -> subtopic2_61
-	subtopic2_62 [label="Opposing Defense Budget Reductions (12, 2.17%)"]
-	subtopic1_51 -> subtopic2_62
-	subtopic2_63 [label="Strengthening International War Crimes Accountability (12, 2.17%)"]
-	subtopic1_51 -> subtopic2_63
-	subtopic2_64 [label="Disaster Recovery Funding Reform (12, 2.17%)"]
-	subtopic1_51 -> subtopic2_64
-	subtopic2_65 [label="Supporting Military Aid to Yemen (10, 1.81%)"]
-	subtopic1_51 -> subtopic2_65
-	subtopic2_66 [label="Enhancing Human Rights Protections (9, 1.62%)"]
-	subtopic1_51 -> subtopic2_66
-	subtopic2_67 [label="Strengthening Military Accountability Measures (8, 1.44%)"]
-	subtopic1_51 -> subtopic2_67
-	subtopic2_68 [label="Reforming Military Oversight and Accountability (8, 1.44%)"]
-	subtopic1_51 -> subtopic2_68
-	subtopic2_69 [label="Opposing Military Land Acquisition Practices (8, 1.44%)"]
-	subtopic1_51 -> subtopic2_69
-	subtopic2_70 [label="Regulating PFAS in Military Waste Disposal (7, 1.26%)"]
-	subtopic1_51 -> subtopic2_70
-	subtopic2_71 [label="Combating Domestic Terrorism Legislation (7, 1.26%)"]
-	subtopic1_51 -> subtopic2_71
-	subtopic2_72 [label="Reforming Special Immigrant Visa Policies (6, 1.08%)"]
-	subtopic1_51 -> subtopic2_72
-	subtopic2_73 [label="Increasing Wildfire Response Funding (6, 1.08%)"]
-	subtopic1_51 -> subtopic2_73
-	subtopic2_74 [label="Improving Military Sexual Assault Protections (5, 0.90%)"]
-	subtopic1_51 -> subtopic2_74
-	subtopic2_75 [label="Increasing U.S. Military Engagement Abroad (4, 0.72%)"]
-	subtopic1_51 -> subtopic2_75
-	subtopic1_76 [label="Veteran Healthcare Access Reform (374, 34.53%)"]
+	subtopic1_54 [label="Expanding Veteran Benefits Access (120, 9.20%)"]
+	policy_1 -> subtopic1_54
+	subtopic2_55 [label="Veteran Benefits Reform (91, 75.83%)"]
+	subtopic1_54 -> subtopic2_55
+	subtopic2_56 [label="Enhancing Veteran Employment Access (23, 19.17%)"]
+	subtopic1_54 -> subtopic2_56
+	subtopic2_57 [label="Misc. (6, 5.00%)"]
+	subtopic1_54 -> subtopic2_57
+	subtopic1_58 [label="Increasing Environmental Funding (76, 5.83%)"]
+	policy_1 -> subtopic1_58
+	subtopic2_59 [label="Funding Climate Resilience Initiatives (21, 27.63%)"]
+	subtopic1_58 -> subtopic2_59
+	subtopic2_60 [label="Military Funding for Disaster Relief (18, 23.68%)"]
+	subtopic1_58 -> subtopic2_60
+	subtopic2_61 [label="Improving Military Water Safety (18, 23.68%)"]
+	subtopic1_58 -> subtopic2_61
+	subtopic2_62 [label="Protecting Public Lands Rights (16, 21.05%)"]
+	subtopic1_58 -> subtopic2_62
+	subtopic2_63 [label="Misc. (3, 3.95%)"]
+	subtopic1_58 -> subtopic2_63
+	subtopic1_64 [label="Increasing Military Funding (68, 5.21%)"]
+	policy_1 -> subtopic1_64
+	subtopic2_65 [label="Equitable Military Funding Distributions (42, 61.76%)"]
+	subtopic1_64 -> subtopic2_65
+	subtopic2_66 [label="Increasing Military Funding Support (15, 22.06%)"]
+	subtopic1_64 -> subtopic2_66
+	subtopic2_67 [label="Misc. (11, 16.18%)"]
+	subtopic1_64 -> subtopic2_67
+	subtopic1_68 [label="Expanding Veteran Support Services (63, 4.83%)"]
+	policy_1 -> subtopic1_68
+	subtopic2_69 [label="Enhancing Veteran Service Dog Access (44, 69.84%)"]
+	subtopic1_68 -> subtopic2_69
+	subtopic2_70 [label="Increasing Veteran Services Funding (19, 30.16%)"]
+	subtopic1_68 -> subtopic2_70
+	subtopic1_71 [label="Expanding Veterans' Healthcare Access (59, 4.52%)"]
+	policy_1 -> subtopic1_71
+	subtopic2_72 [label="Expanding Medical Cannabis Access for Veterans (38, 64.41%)"]
+	subtopic1_71 -> subtopic2_72
+	subtopic2_73 [label="Improving Veterans Healthcare Access (21, 35.59%)"]
+	subtopic1_71 -> subtopic2_73
+	subtopic1_74 [label="Expanding Veteran Healthcare Access (56, 4.29%)"]
+	policy_1 -> subtopic1_74
+	subtopic2_75 [label="Improving Veteran Healthcare Access (56, 100.00%)"]
+	subtopic1_74 -> subtopic2_75
+	subtopic1_76 [label="Expanding Military Recognition Programs (48, 3.68%)"]
 	policy_1 -> subtopic1_76
-	subtopic2_77 [label="Improving Veteran Healthcare Access Rights (284, 75.94%)"]
+	subtopic2_77 [label="Enhancing Veterans' Recognition Programs (28, 58.33%)"]
 	subtopic1_76 -> subtopic2_77
-	subtopic2_78 [label="Enhancing Veteran Healthcare Access (50, 13.37%)"]
+	subtopic2_78 [label="Recognizing Specialized Military Units (13, 27.08%)"]
 	subtopic1_76 -> subtopic2_78
-	subtopic2_79 [label="Reforming Veteran Healthcare Access (34, 9.09%)"]
+	subtopic2_79 [label="Misc. (7, 14.58%)"]
 	subtopic1_76 -> subtopic2_79
-	subtopic2_80 [label="Improving Veteran Healthcare Accountability (6, 1.60%)"]
-	subtopic1_76 -> subtopic2_80
-	subtopic1_81 [label="Misc. (106, 9.79%)"]
-	policy_1 -> subtopic1_81
-	subtopic1_82 [label="National Guard Funding Controversy (49, 4.52%)"]
+	subtopic1_80 [label="Enhancing Veterans' Accountability (46, 3.53%)"]
+	policy_1 -> subtopic1_80
+	subtopic2_81 [label="Reforming Veteran Accountability Measures (46, 100.00%)"]
+	subtopic1_80 -> subtopic2_81
+	subtopic1_82 [label="Expanding Military Aid Programs (40, 3.07%)"]
 	policy_1 -> subtopic1_82
-	subtopic2_83 [label="Reforming Defense Authorization Processes (26, 53.06%)"]
+	subtopic2_83 [label="Military Aid to Ukraine (40, 100.00%)"]
 	subtopic1_82 -> subtopic2_83
-	subtopic2_84 [label="Increasing National Guard Funding Transparency (17, 34.69%)"]
-	subtopic1_82 -> subtopic2_84
-	subtopic2_85 [label="Increasing Military Funding Allocations (6, 12.24%)"]
-	subtopic1_82 -> subtopic2_85
-	policy_2 [label="Government Operations and Politics (904, 10.02%)"]
-	subtopic1_86 [label="Voting Rights Controversy (724, 80.09%)"]
-	policy_2 -> subtopic1_86
-	subtopic2_87 [label="Voting Rights Expansion Initiatives (231, 31.91%)"]
+	subtopic1_84 [label="Enhancing Toxic Exposure Prevention (29, 2.22%)"]
+	policy_1 -> subtopic1_84
+	subtopic2_85 [label="Veterans' Toxic Exposure Compensation (29, 100.00%)"]
+	subtopic1_84 -> subtopic2_85
+	subtopic1_86 [label="Enhancing Transportation Security Worker Protections (29, 2.22%)"]
+	policy_1 -> subtopic1_86
+	subtopic2_87 [label="Strengthening TSA Worker Unions (16, 55.17%)"]
 	subtopic1_86 -> subtopic2_87
-	subtopic2_88 [label="Misc. (84, 11.60%)"]
+	subtopic2_88 [label="Strengthening Transportation Security Worker Rights (13, 44.83%)"]
 	subtopic1_86 -> subtopic2_88
-	subtopic2_89 [label="Enhancing DHS Leadership Accountability (42, 5.80%)"]
-	subtopic1_86 -> subtopic2_89
-	subtopic2_90 [label="Strengthening Border Security Funding Policies (26, 3.59%)"]
-	subtopic1_86 -> subtopic2_90
-	subtopic2_91 [label="Reforming Federal Employee Compensation Policies (25, 3.45%)"]
-	subtopic1_86 -> subtopic2_91
-	subtopic2_92 [label="Strengthening Election Integrity Measures (22, 3.04%)"]
-	subtopic1_86 -> subtopic2_92
-	subtopic2_93 [label="Expanding Voting Access and Rights (21, 2.90%)"]
-	subtopic1_86 -> subtopic2_93
-	subtopic2_94 [label="Strengthening Voter ID Requirements (17, 2.35%)"]
-	subtopic1_86 -> subtopic2_94
-	subtopic2_95 [label="Promoting LGBTQ+ Data Transparency Policies (17, 2.35%)"]
-	subtopic1_86 -> subtopic2_95
-	subtopic2_96 [label="Strengthening Cybersecurity Regulations (16, 2.21%)"]
-	subtopic1_86 -> subtopic2_96
-	subtopic2_97 [label="Strengthening Inspector General Independence (15, 2.07%)"]
-	subtopic1_86 -> subtopic2_97
-	subtopic2_98 [label="Implementing Fair Redistricting Practices (13, 1.80%)"]
-	subtopic1_86 -> subtopic2_98
-	subtopic2_99 [label="Improving Veterans' Records Accessibility (12, 1.66%)"]
-	subtopic1_86 -> subtopic2_99
-	subtopic2_100 [label="Reforming Campaign Finance Regulations (11, 1.52%)"]
-	subtopic1_86 -> subtopic2_100
-	subtopic2_101 [label="Expanding Voting Access Legislation (11, 1.52%)"]
-	subtopic1_86 -> subtopic2_101
-	subtopic2_102 [label="Restricting Voter Access through ID Laws (11, 1.52%)"]
-	subtopic1_86 -> subtopic2_102
-	subtopic2_103 [label="Strengthening Voting Rights Protections (11, 1.52%)"]
-	subtopic1_86 -> subtopic2_103
-	subtopic2_104 [label="Opposing Voter Suppression Measures (11, 1.52%)"]
-	subtopic1_86 -> subtopic2_104
-	subtopic2_105 [label="Strengthening Congressional Oversight Powers (11, 1.52%)"]
-	subtopic1_86 -> subtopic2_105
-	subtopic2_106 [label="Strengthening Whistleblower Protections (11, 1.52%)"]
-	subtopic1_86 -> subtopic2_106
-	subtopic2_107 [label="Advocating for D.C. Statehood Rights (10, 1.38%)"]
-	subtopic1_86 -> subtopic2_107
-	subtopic2_108 [label="Improving Pandemic Response Coordination (10, 1.38%)"]
-	subtopic1_86 -> subtopic2_108
-	subtopic2_109 [label="Opposing Voter Registration Restrictions (9, 1.24%)"]
-	subtopic1_86 -> subtopic2_109
-	subtopic2_110 [label="Improving Disability Healthcare Accessibility (9, 1.24%)"]
-	subtopic1_86 -> subtopic2_110
-	subtopic2_111 [label="Improving Clarity in Government Regulations (9, 1.24%)"]
-	subtopic1_86 -> subtopic2_111
-	subtopic2_112 [label="Expanding Government Poverty Assistance Programs (9, 1.24%)"]
-	subtopic1_86 -> subtopic2_112
-	subtopic2_113 [label="Reforming Government Procurement Standards (8, 1.10%)"]
-	subtopic1_86 -> subtopic2_113
-	subtopic2_114 [label="Strengthening Domestic Manufacturing Policies (8, 1.10%)"]
-	subtopic1_86 -> subtopic2_114
-	subtopic2_115 [label="Expanding Cybersecurity Workforce Initiatives (7, 0.97%)"]
-	subtopic1_86 -> subtopic2_115
-	subtopic2_116 [label="Federal Control of Local Law Enforcement (7, 0.97%)"]
-	subtopic1_86 -> subtopic2_116
-	subtopic2_117 [label="Promoting Democracy in Local Elections (7, 0.97%)"]
-	subtopic1_86 -> subtopic2_117
-	subtopic2_118 [label="Strengthening Supreme Court Security Measures (7, 0.97%)"]
-	subtopic1_86 -> subtopic2_118
-	subtopic2_119 [label="Increasing D.C. Home Rule Authority (6, 0.83%)"]
-	subtopic1_86 -> subtopic2_119
-	subtopic1_120 [label="Voting Rights Protection Policies (116, 12.83%)"]
-	policy_2 -> subtopic1_120
-	subtopic2_121 [label="Strengthening Voting Rights Protections (97, 83.62%)"]
-	subtopic1_120 -> subtopic2_121
-	subtopic2_122 [label="Strengthening Voting Rights Enforcement (19, 16.38%)"]
-	subtopic1_120 -> subtopic2_122
-	subtopic1_123 [label="Postal Service Reform Debate (41, 4.54%)"]
+	subtopic1_89 [label="Expanding Veterans' Mental Health Services (28, 2.15%)"]
+	policy_1 -> subtopic1_89
+	subtopic2_90 [label="Improving Veterans' Mental Health Access (28, 100.00%)"]
+	subtopic1_89 -> subtopic2_90
+	subtopic1_91 [label="Expanding Cannabis Legalization (26, 1.99%)"]
+	policy_1 -> subtopic1_91
+	subtopic2_92 [label="Legalizing Cannabis for Veterans (26, 100.00%)"]
+	subtopic1_91 -> subtopic2_92
+	subtopic1_93 [label="Increasing Defense Funding (26, 1.99%)"]
+	policy_1 -> subtopic1_93
+	subtopic2_94 [label="Increasing Defense Budget Accountability (13, 50.00%)"]
+	subtopic1_93 -> subtopic2_94
+	subtopic2_95 [label="Increasing Defense Budget Allocation (13, 50.00%)"]
+	subtopic1_93 -> subtopic2_95
+	policy_2 [label="Government Operations and Politics (1243, 11.86%)"]
+	subtopic1_96 [label="Strengthening Government Accountability (613, 49.32%)"]
+	policy_2 -> subtopic1_96
+	subtopic2_97 [label="Misc. (92, 15.01%)"]
+	subtopic1_96 -> subtopic2_97
+	subtopic2_98 [label="Strengthening Inspector General Independence (87, 14.19%)"]
+	subtopic1_96 -> subtopic2_98
+	subtopic2_99 [label="Campaign Finance Transparency Reform (61, 9.95%)"]
+	subtopic1_96 -> subtopic2_99
+	subtopic2_100 [label="Federal Employee Health Benefits Reform (59, 9.62%)"]
+	subtopic1_96 -> subtopic2_100
+	subtopic2_101 [label="Restricting Federal Election Authority (49, 7.99%)"]
+	subtopic1_96 -> subtopic2_101
+	subtopic2_102 [label="Strengthening Government Accountability (40, 6.53%)"]
+	subtopic1_96 -> subtopic2_102
+	subtopic2_103 [label="Strengthening Cybersecurity Regulations (38, 6.20%)"]
+	subtopic1_96 -> subtopic2_103
+	subtopic2_104 [label="Abolishing the Electoral College (27, 4.40%)"]
+	subtopic1_96 -> subtopic2_104
+	subtopic2_105 [label="Protecting LGBTQI Constitutional Rights (27, 4.40%)"]
+	subtopic1_96 -> subtopic2_105
+	subtopic2_106 [label="Strengthening Border Security Policies (25, 4.08%)"]
+	subtopic1_96 -> subtopic2_106
+	subtopic2_107 [label="Nationalizing Election Processes (22, 3.59%)"]
+	subtopic1_96 -> subtopic2_107
+	subtopic2_108 [label="Strengthening Procurement Accountability (17, 2.77%)"]
+	subtopic1_96 -> subtopic2_108
+	subtopic2_109 [label="Strengthening Foreign Diplomatic Security (17, 2.77%)"]
+	subtopic1_96 -> subtopic2_109
+	subtopic2_110 [label="Strengthening Local Government Autonomy (14, 2.28%)"]
+	subtopic1_96 -> subtopic2_110
+	subtopic2_111 [label="Strengthening Opioid Regulation Enforcement (14, 2.28%)"]
+	subtopic1_96 -> subtopic2_111
+	subtopic2_112 [label="Strengthening Election Security (13, 2.12%)"]
+	subtopic1_96 -> subtopic2_112
+	subtopic2_113 [label="Increasing Department of Homeland Security Funding (11, 1.79%)"]
+	subtopic1_96 -> subtopic2_113
+	subtopic1_114 [label="Voting Rights Expansion (101, 8.13%)"]
+	policy_2 -> subtopic1_114
+	subtopic2_115 [label="Mandatory Universal Voter Registration (38, 37.62%)"]
+	subtopic1_114 -> subtopic2_115
+	subtopic2_116 [label="Protecting Noncitizen Voting Rights (31, 30.69%)"]
+	subtopic1_114 -> subtopic2_116
+	subtopic2_117 [label="Expanding Voting Rights Protections (20, 19.80%)"]
+	subtopic1_114 -> subtopic2_117
+	subtopic2_118 [label="Voter Registration Access Expansion (12, 11.88%)"]
+	subtopic1_114 -> subtopic2_118
+	subtopic1_119 [label="Expanding Voting Rights Access (97, 7.80%)"]
+	policy_2 -> subtopic1_119
+	subtopic2_120 [label="Voting Rights Expansion for Youth (57, 58.76%)"]
+	subtopic1_119 -> subtopic2_120
+	subtopic2_121 [label="Enhancing Voting Accessibility Options (40, 41.24%)"]
+	subtopic1_119 -> subtopic2_121
+	subtopic1_122 [label="Misc. (94, 7.56%)"]
+	policy_2 -> subtopic1_122
+	subtopic1_123 [label="Expanding Postal Service Efficiency (55, 4.42%)"]
 	policy_2 -> subtopic1_123
-	subtopic2_124 [label="Reforming Postal Service Operations and Funding (41, 100.00%)"]
+	subtopic2_124 [label="Strengthening Postal Service Accountability (55, 100.00%)"]
 	subtopic1_123 -> subtopic2_124
-	subtopic1_125 [label="Misc. (23, 2.54%)"]
+	subtopic1_125 [label="Expanding Electoral Voting Rights (52, 4.18%)"]
 	policy_2 -> subtopic1_125
-	policy_3 [label="Crime and Law Enforcement (833, 9.24%)"]
-	subtopic1_126 [label="Law Enforcement Accountability Reform (491, 58.94%)"]
-	policy_3 -> subtopic1_126
-	subtopic2_127 [label="Enhancing Law Enforcement Accountability Standards (95, 19.35%)"]
-	subtopic1_126 -> subtopic2_127
-	subtopic2_128 [label="Strengthening Hate Crime Legislation (54, 11.00%)"]
-	subtopic1_126 -> subtopic2_128
-	subtopic2_129 [label="Advocating for Law Enforcement Accountability Reform (31, 6.31%)"]
-	subtopic1_126 -> subtopic2_129
-	subtopic2_130 [label="Strengthening Elder Abuse Protections (27, 5.50%)"]
-	subtopic1_126 -> subtopic2_130
-	subtopic2_131 [label="Strengthening Child Abuse Prevention Laws (25, 5.09%)"]
-	subtopic1_126 -> subtopic2_131
-	subtopic2_132 [label="Misc. (20, 4.07%)"]
-	subtopic1_126 -> subtopic2_132
-	subtopic2_133 [label="Expanding Mental Health Resources for Offenders (18, 3.67%)"]
-	subtopic1_126 -> subtopic2_133
-	subtopic2_134 [label="Advancing Racial Justice in Criminal Justice (17, 3.46%)"]
-	subtopic1_126 -> subtopic2_134
-	subtopic2_135 [label="Enhancing Prison Accountability Measures (17, 3.46%)"]
-	subtopic1_126 -> subtopic2_135
-	subtopic2_136 [label="Expanding Active Shooter Alert Systems (17, 3.46%)"]
-	subtopic1_126 -> subtopic2_136
-	subtopic2_137 [label="Strengthening Police Accountability Measures (15, 3.05%)"]
-	subtopic1_126 -> subtopic2_137
-	subtopic2_138 [label="Increasing Public Safety Officer Benefits (15, 3.05%)"]
-	subtopic1_126 -> subtopic2_138
-	subtopic2_139 [label="Strengthening Domestic Terrorism Legislation (15, 3.05%)"]
-	subtopic1_126 -> subtopic2_139
-	subtopic2_140 [label="Strengthening Domestic Violence Legislation (14, 2.85%)"]
-	subtopic1_126 -> subtopic2_140
-	subtopic2_141 [label="Law Enforcement Training Reform Initiatives (14, 2.85%)"]
-	subtopic1_126 -> subtopic2_141
-	subtopic2_142 [label="Improving Maternal Care in Prisons (13, 2.65%)"]
-	subtopic1_126 -> subtopic2_142
-	subtopic2_143 [label="Enhancing Border Security Funding (13, 2.65%)"]
-	subtopic1_126 -> subtopic2_143
-	subtopic2_144 [label="Reforming Drug Sentencing Guidelines (12, 2.44%)"]
-	subtopic1_126 -> subtopic2_144
-	subtopic2_145 [label="Increasing Police Funding Allocation (11, 2.24%)"]
-	subtopic1_126 -> subtopic2_145
-	subtopic2_146 [label="Strengthening Domestic Violence Protection Laws (11, 2.24%)"]
-	subtopic1_126 -> subtopic2_146
-	subtopic2_147 [label="Strengthening Cybercrime Legislation and Enforcement (11, 2.24%)"]
-	subtopic1_126 -> subtopic2_147
-	subtopic2_148 [label="Strengthening Electronic Communications Privacy Rights (9, 1.83%)"]
-	subtopic1_126 -> subtopic2_148
-	subtopic2_149 [label="Increasing Funding for Victim Support Services (9, 1.83%)"]
-	subtopic1_126 -> subtopic2_149
-	subtopic2_150 [label="Supporting Local Police Accountability Reform (8, 1.63%)"]
-	subtopic1_126 -> subtopic2_150
-	subtopic1_151 [label="Drug Policy Reform Controversies (88, 10.56%)"]
-	policy_3 -> subtopic1_151
-	subtopic2_152 [label="Ending the War on Drugs (36, 40.91%)"]
-	subtopic1_151 -> subtopic2_152
-	subtopic2_153 [label="Legalizing Recreational Marijuana Use (22, 25.00%)"]
-	subtopic1_151 -> subtopic2_153
-	subtopic2_154 [label="Regulating Prescription Opioid Distribution (18, 20.45%)"]
-	subtopic1_151 -> subtopic2_154
-	subtopic2_155 [label="Regulating Fentanyl and Its Analogues (6, 6.82%)"]
-	subtopic1_151 -> subtopic2_155
-	subtopic2_156 [label="Regulating Medical Marijuana Use (6, 6.82%)"]
-	subtopic1_151 -> subtopic2_156
-	subtopic1_157 [label="Gun Control Reform (82, 9.84%)"]
-	policy_3 -> subtopic1_157
-	subtopic2_158 [label="Implementing Universal Background Checks (58, 70.73%)"]
-	subtopic1_157 -> subtopic2_158
-	subtopic2_159 [label="Implementing Stricter Gun Control Laws (24, 29.27%)"]
-	subtopic1_157 -> subtopic2_159
-	subtopic1_160 [label="Gun Violence Prevention Measures (63, 7.56%)"]
-	policy_3 -> subtopic1_160
-	subtopic2_161 [label="Supporting Gun Violence Prevention Policies (63, 100.00%)"]
-	subtopic1_160 -> subtopic2_161
-	subtopic1_162 [label="Expanding Civil Rights Protections (50, 6.00%)"]
-	policy_3 -> subtopic1_162
-	subtopic2_163 [label="Restricting Second Amendment Rights (42, 84.00%)"]
-	subtopic1_162 -> subtopic2_163
-	subtopic2_164 [label="Strengthening Civil Rights in Policing (8, 16.00%)"]
-	subtopic1_162 -> subtopic2_164
-	subtopic1_165 [label="Human Trafficking Prevention Measures (31, 3.72%)"]
+	subtopic2_126 [label="Strengthening Voting Rights Protections (52, 100.00%)"]
+	subtopic1_125 -> subtopic2_126
+	subtopic1_127 [label="Increasing Sanctions on Russia (44, 3.54%)"]
+	policy_2 -> subtopic1_127
+	subtopic2_128 [label="Supporting Sanctions Against Russia (44, 100.00%)"]
+	subtopic1_127 -> subtopic2_128
+	subtopic1_129 [label="Increasing Voter ID Requirements (35, 2.82%)"]
+	policy_2 -> subtopic1_129
+	subtopic2_130 [label="Challenging Voter ID Laws (21, 60.00%)"]
+	subtopic1_129 -> subtopic2_130
+	subtopic2_131 [label="Opposing Voter ID Laws (14, 40.00%)"]
+	subtopic1_129 -> subtopic2_131
+	subtopic1_132 [label="Strengthening Election Integrity (34, 2.74%)"]
+	policy_2 -> subtopic1_132
+	subtopic2_133 [label="Strengthening Voter Integrity Laws (34, 100.00%)"]
+	subtopic1_132 -> subtopic2_133
+	subtopic1_134 [label="Increasing Electoral Vote Transparency (34, 2.74%)"]
+	policy_2 -> subtopic1_134
+	subtopic2_135 [label="Enhancing Electoral Vote Integrity (34, 100.00%)"]
+	subtopic1_134 -> subtopic2_135
+	subtopic1_136 [label="Expanding D.C. Statehood Rights (29, 2.33%)"]
+	policy_2 -> subtopic1_136
+	subtopic2_137 [label="Supporting D.C. Statehood (15, 51.72%)"]
+	subtopic1_136 -> subtopic2_137
+	subtopic2_138 [label="Advocating for D.C. Statehood (13, 44.83%)"]
+	subtopic1_136 -> subtopic2_138
+	subtopic2_139 [label="Misc. (1, 3.45%)"]
+	subtopic1_136 -> subtopic2_139
+	subtopic1_140 [label="Strengthening Voting Rights (29, 2.33%)"]
+	policy_2 -> subtopic1_140
+	subtopic2_141 [label="Strengthening Voting Rights Protections (29, 100.00%)"]
+	subtopic1_140 -> subtopic2_141
+	subtopic1_142 [label="Increasing Election Security Measures (26, 2.09%)"]
+	policy_2 -> subtopic1_142
+	subtopic2_143 [label="Strengthening Election Security Measures (26, 100.00%)"]
+	subtopic1_142 -> subtopic2_143
+	policy_3 [label="Crime and Law Enforcement (883, 8.42%)"]
+	subtopic1_144 [label="Law Enforcement Accountability Expansion (448, 50.74%)"]
+	policy_3 -> subtopic1_144
+	subtopic2_145 [label="Eliminating Qualified Immunity (46, 10.27%)"]
+	subtopic1_144 -> subtopic2_145
+	subtopic2_146 [label="Strengthening Law Enforcement Oversight (39, 8.71%)"]
+	subtopic1_144 -> subtopic2_146
+	subtopic2_147 [label="Restricting Assault Weapon Sales (37, 8.26%)"]
+	subtopic1_144 -> subtopic2_147
+	subtopic2_148 [label="Misc. (33, 7.37%)"]
+	subtopic1_144 -> subtopic2_148
+	subtopic2_149 [label="Reducing Police Funding Opportunities (30, 6.70%)"]
+	subtopic1_144 -> subtopic2_149
+	subtopic2_150 [label="Strengthening Child Victims' Rights (29, 6.47%)"]
+	subtopic1_144 -> subtopic2_150
+	subtopic2_151 [label="Increasing Law Enforcement Funding (28, 6.25%)"]
+	subtopic1_144 -> subtopic2_151
+	subtopic2_152 [label="Protecting Second Amendment Rights (25, 5.58%)"]
+	subtopic1_144 -> subtopic2_152
+	subtopic2_153 [label="Ending Mass Incarceration Policies (23, 5.13%)"]
+	subtopic1_144 -> subtopic2_153
+	subtopic2_154 [label="Ending Racial Profiling Practices (22, 4.91%)"]
+	subtopic1_144 -> subtopic2_154
+	subtopic2_155 [label="Strengthening VAWA Protections (18, 4.02%)"]
+	subtopic1_144 -> subtopic2_155
+	subtopic2_156 [label="Strengthening Domestic Violence Protections (17, 3.79%)"]
+	subtopic1_144 -> subtopic2_156
+	subtopic2_157 [label="Enhancing Mental Health Resources (17, 3.79%)"]
+	subtopic1_144 -> subtopic2_157
+	subtopic2_158 [label="Increasing Victim Services Funding (13, 2.90%)"]
+	subtopic1_144 -> subtopic2_158
+	subtopic2_159 [label="Eliminating Mandatory Minimum Sentences (13, 2.90%)"]
+	subtopic1_144 -> subtopic2_159
+	subtopic2_160 [label="Expanding Reentry Services Funding (12, 2.68%)"]
+	subtopic1_144 -> subtopic2_160
+	subtopic2_161 [label="Strengthening Due Process Rights (12, 2.68%)"]
+	subtopic1_144 -> subtopic2_161
+	subtopic2_162 [label="Expanding First Responder Benefits (12, 2.68%)"]
+	subtopic1_144 -> subtopic2_162
+	subtopic2_163 [label="Strengthening Cybercrime Legislation (11, 2.46%)"]
+	subtopic1_144 -> subtopic2_163
+	subtopic2_164 [label="Improving Care for Incarcerated Pregnant Women (11, 2.46%)"]
+	subtopic1_144 -> subtopic2_164
+	subtopic1_165 [label="Misc. (124, 14.04%)"]
 	policy_3 -> subtopic1_165
-	subtopic2_166 [label="Strengthening Human Trafficking Laws (25, 80.65%)"]
-	subtopic1_165 -> subtopic2_166
-	subtopic2_167 [label="Enhancing Missing Persons Reporting Standards (6, 19.35%)"]
-	subtopic1_165 -> subtopic2_167
-	subtopic1_168 [label="Gun Background Check Reforms (28, 3.36%)"]
+	subtopic1_166 [label="Increasing Gun Violence Prevention (56, 6.34%)"]
+	policy_3 -> subtopic1_166
+	subtopic2_167 [label="Implementing Universal Background Checks (56, 100.00%)"]
+	subtopic1_166 -> subtopic2_167
+	subtopic1_168 [label="Expanding Drug Legalization (55, 6.23%)"]
 	policy_3 -> subtopic1_168
-	subtopic2_169 [label="Strengthening Gun Background Check Laws (16, 57.14%)"]
+	subtopic2_169 [label="Legalizing Recreational Marijuana (26, 47.27%)"]
 	subtopic1_168 -> subtopic2_169
-	subtopic2_170 [label="Implementing Universal Background Checks (12, 42.86%)"]
+	subtopic2_170 [label="Legalizing Cannabis Sales (15, 27.27%)"]
 	subtopic1_168 -> subtopic2_170
-	policy_4 [label="Health (624, 6.92%)"]
-	subtopic1_171 [label="Healthcare Access Expansion (384, 61.54%)"]
-	policy_4 -> subtopic1_171
-	subtopic2_172 [label="Expanding Access to Behavioral Healthcare (100, 26.04%)"]
-	subtopic1_171 -> subtopic2_172
-	subtopic2_173 [label="Expanding Healthcare Access Funding (69, 17.97%)"]
-	subtopic1_171 -> subtopic2_173
-	subtopic2_174 [label="Expanding Access to Rural Healthcare Services (25, 6.51%)"]
-	subtopic1_171 -> subtopic2_174
-	subtopic2_175 [label="Expanding Mental Health Funding Initiatives (19, 4.95%)"]
-	subtopic1_171 -> subtopic2_175
-	subtopic2_176 [label="Protecting Reproductive Healthcare Rights (18, 4.69%)"]
-	subtopic1_171 -> subtopic2_176
-	subtopic2_177 [label="Enhancing Trauma Recovery Services (17, 4.43%)"]
-	subtopic1_171 -> subtopic2_177
-	subtopic2_178 [label="Promoting Heart Disease Prevention Programs (17, 4.43%)"]
-	subtopic1_171 -> subtopic2_178
-	subtopic2_179 [label="Mandatory Vaccination for Public Health (16, 4.17%)"]
-	subtopic1_171 -> subtopic2_179
-	subtopic2_180 [label="Strengthening Opioid Crisis Mitigation Policies (15, 3.91%)"]
-	subtopic1_171 -> subtopic2_180
-	subtopic2_181 [label="Reforming Orphan Drug Pricing Policies (14, 3.65%)"]
-	subtopic1_171 -> subtopic2_181
-	subtopic2_182 [label="Misc. (13, 3.39%)"]
-	subtopic1_171 -> subtopic2_182
-	subtopic2_183 [label="Increasing Funding for ALS Research (12, 3.12%)"]
-	subtopic1_171 -> subtopic2_183
-	subtopic2_184 [label="Promoting Mental Health Care Accessibility (11, 2.86%)"]
-	subtopic1_171 -> subtopic2_184
-	subtopic2_185 [label="Protecting Women's Health Rights (10, 2.60%)"]
-	subtopic1_171 -> subtopic2_185
-	subtopic2_186 [label="Expanding Healthcare Access through Immigration Reform (9, 2.34%)"]
-	subtopic1_171 -> subtopic2_186
-	subtopic2_187 [label="Regulating Medical Marijuana Usage (7, 1.82%)"]
-	subtopic1_171 -> subtopic2_187
-	subtopic2_188 [label="Strengthening Food Allergy Labeling Regulations (6, 1.56%)"]
-	subtopic1_171 -> subtopic2_188
-	subtopic2_189 [label="Improving Public Health Literacy (6, 1.56%)"]
-	subtopic1_171 -> subtopic2_189
-	subtopic1_190 [label="Abortion Access and Regulations (83, 13.30%)"]
-	policy_4 -> subtopic1_190
-	subtopic2_191 [label="Expanding Access to Abortion Services (33, 39.76%)"]
-	subtopic1_190 -> subtopic2_191
-	subtopic2_192 [label="Protecting Abortion Access Rights (30, 36.14%)"]
-	subtopic1_190 -> subtopic2_192
-	subtopic2_193 [label="Improving Infant and Maternal Health Services (20, 24.10%)"]
-	subtopic1_190 -> subtopic2_193
-	subtopic1_194 [label="Abortion Rights Controversy (53, 8.49%)"]
+	subtopic2_171 [label="Misc. (14, 25.45%)"]
+	subtopic1_168 -> subtopic2_171
+	subtopic1_172 [label="Expanding Drug Regulation Policies (43, 4.87%)"]
+	policy_3 -> subtopic1_172
+	subtopic2_173 [label="Regulating Opioid Prescriptions (20, 46.51%)"]
+	subtopic1_172 -> subtopic2_173
+	subtopic2_174 [label="Implementing Fentanyl Regulations (12, 27.91%)"]
+	subtopic1_172 -> subtopic2_174
+	subtopic2_175 [label="Ending the War on Drugs (11, 25.58%)"]
+	subtopic1_172 -> subtopic2_175
+	subtopic1_176 [label="Protecting Gun Ownership Rights (39, 4.42%)"]
+	policy_3 -> subtopic1_176
+	subtopic2_177 [label="Strengthening Gun Trafficking Laws (39, 100.00%)"]
+	subtopic1_176 -> subtopic2_177
+	subtopic1_178 [label="Strengthening Gun Control Laws (34, 3.85%)"]
+	policy_3 -> subtopic1_178
+	subtopic2_179 [label="Implementing Universal Background Checks (34, 100.00%)"]
+	subtopic1_178 -> subtopic2_179
+	subtopic1_180 [label="Expanding Human Trafficking Protections (30, 3.40%)"]
+	policy_3 -> subtopic1_180
+	subtopic2_181 [label="Strengthening Human Trafficking Laws (30, 100.00%)"]
+	subtopic1_180 -> subtopic2_181
+	subtopic1_182 [label="Expanding Hate Crime Legislation (27, 3.06%)"]
+	policy_3 -> subtopic1_182
+	subtopic2_183 [label="Strengthening Hate Crime Protections (27, 100.00%)"]
+	subtopic1_182 -> subtopic2_183
+	subtopic1_184 [label="Expanding Domestic Violence Protections (27, 3.06%)"]
+	policy_3 -> subtopic1_184
+	subtopic2_185 [label="Strengthening Domestic Violence Laws (27, 100.00%)"]
+	subtopic1_184 -> subtopic2_185
+	policy_4 [label="Health (720, 6.87%)"]
+	subtopic1_186 [label="Expanding Health Equity Initiatives (329, 45.69%)"]
+	policy_4 -> subtopic1_186
+	subtopic2_187 [label="Expanding Breast Reconstruction Access (127, 38.60%)"]
+	subtopic1_186 -> subtopic2_187
+	subtopic2_188 [label="Increasing Health Equity Funding (48, 14.59%)"]
+	subtopic1_186 -> subtopic2_188
+	subtopic2_189 [label="Misc. (40, 12.16%)"]
+	subtopic1_186 -> subtopic2_189
+	subtopic2_190 [label="Increasing Funding for Food Allergy Research (35, 10.64%)"]
+	subtopic1_186 -> subtopic2_190
+	subtopic2_191 [label="Increasing Mental Health Funding (34, 10.33%)"]
+	subtopic1_186 -> subtopic2_191
+	subtopic2_192 [label="Increasing Addiction Treatment Funding (32, 9.73%)"]
+	subtopic1_186 -> subtopic2_192
+	subtopic2_193 [label="Increasing ALS Therapy Access (13, 3.95%)"]
+	subtopic1_186 -> subtopic2_193
+	subtopic1_194 [label="Expanding Abortion Rights (99, 13.75%)"]
 	policy_4 -> subtopic1_194
-	subtopic2_195 [label="Legalizing Abortion Access Rights (53, 100.00%)"]
+	subtopic2_195 [label="Protecting Abortion Rights (99, 100.00%)"]
 	subtopic1_194 -> subtopic2_195
-	subtopic1_196 [label="Misc. (50, 8.01%)"]
+	subtopic1_196 [label="Misc. (79, 10.97%)"]
 	policy_4 -> subtopic1_196
-	subtopic1_197 [label="Contraception Access Rights (28, 4.49%)"]
+	subtopic1_197 [label="Increasing Healthcare Funding (41, 5.69%)"]
 	policy_4 -> subtopic1_197
-	subtopic2_198 [label="Expanding Access to Contraceptive Services (20, 71.43%)"]
+	subtopic2_198 [label="Increasing Healthcare Funding (41, 100.00%)"]
 	subtopic1_197 -> subtopic2_198
-	subtopic2_199 [label="Expanding Birth Control Access Rights (8, 28.57%)"]
-	subtopic1_197 -> subtopic2_199
-	subtopic1_200 [label="Managing Debt Limit Increases (26, 4.17%)"]
-	policy_4 -> subtopic1_200
-	subtopic2_201 [label="Managing Health Care Debt Limits (14, 53.85%)"]
-	subtopic1_200 -> subtopic2_201
-	subtopic2_202 [label="Increasing Health Care Funding Amid Debt Ceiling (12, 46.15%)"]
-	subtopic1_200 -> subtopic2_202
-	policy_5 [label="International Affairs (483, 5.36%)"]
-	subtopic1_203 [label="Misc. (194, 40.17%)"]
-	policy_5 -> subtopic1_203
-	subtopic1_204 [label="Foreign Aid Funding Controversies (190, 39.34%)"]
-	policy_5 -> subtopic1_204
-	subtopic2_205 [label="Increasing Foreign Aid Accountability Measures (115, 60.53%)"]
+	subtopic1_199 [label="Restricting Reproductive Health Funding (40, 5.56%)"]
+	policy_4 -> subtopic1_199
+	subtopic2_200 [label="Increasing Abortion Funding (40, 100.00%)"]
+	subtopic1_199 -> subtopic2_200
+	subtopic1_201 [label="Expanding Women's Healthcare Rights (39, 5.42%)"]
+	policy_4 -> subtopic1_201
+	subtopic2_202 [label="Protecting Abortion Access (22, 56.41%)"]
+	subtopic1_201 -> subtopic2_202
+	subtopic2_203 [label="Protecting Women's Healthcare Access (17, 43.59%)"]
+	subtopic1_201 -> subtopic2_203
+	subtopic1_204 [label="Improving Maternal and Infant Health (38, 5.28%)"]
+	policy_4 -> subtopic1_204
+	subtopic2_205 [label="Improving Newborn Screening Access (14, 36.84%)"]
 	subtopic1_204 -> subtopic2_205
-	subtopic2_206 [label="Supporting Democratic Movements Abroad (51, 26.84%)"]
+	subtopic2_206 [label="Improving Maternal Health Access (14, 36.84%)"]
 	subtopic1_204 -> subtopic2_206
-	subtopic2_207 [label="International Abortion Funding Controversies (24, 12.63%)"]
+	subtopic2_207 [label="Misc. (10, 26.32%)"]
 	subtopic1_204 -> subtopic2_207
-	subtopic1_208 [label="Human Rights Accountability Measures (41, 8.49%)"]
-	policy_5 -> subtopic1_208
-	subtopic2_209 [label="Strengthening Global Human Rights Protections (22, 53.66%)"]
+	subtopic1_208 [label="Expanding Telehealth Access (28, 3.89%)"]
+	policy_4 -> subtopic1_208
+	subtopic2_209 [label="Expanding Telehealth Services (28, 100.00%)"]
 	subtopic1_208 -> subtopic2_209
-	subtopic2_210 [label="Strengthening International Human Rights Enforcement (19, 46.34%)"]
-	subtopic1_208 -> subtopic2_210
-	subtopic1_211 [label="Combating Islamophobia Legislation (32, 6.63%)"]
-	policy_5 -> subtopic1_211
-	subtopic2_212 [label="Combatting Hate Crime Legislation (22, 68.75%)"]
-	subtopic1_211 -> subtopic2_212
-	subtopic2_213 [label="Combating Anti-Muslim Discrimination Policies (10, 31.25%)"]
-	subtopic1_211 -> subtopic2_213
-	subtopic1_214 [label="Pandemic Preparedness Initiatives (26, 5.38%)"]
+	subtopic1_210 [label="Expanding Contraception Access (27, 3.75%)"]
+	policy_4 -> subtopic1_210
+	subtopic2_211 [label="Protecting Birth Control Access (15, 55.56%)"]
+	subtopic1_210 -> subtopic2_211
+	subtopic2_212 [label="Expanding Contraception Access (12, 44.44%)"]
+	subtopic1_210 -> subtopic2_212
+	policy_5 [label="Science, Technology, Communications (596, 5.69%)"]
+	subtopic1_213 [label="Misc. (267, 44.80%)"]
+	policy_5 -> subtopic1_213
+	subtopic1_214 [label="Expanding Communication Security Standards (128, 21.48%)"]
 	policy_5 -> subtopic1_214
-	subtopic2_215 [label="Enhancing Global Food Security Initiatives (14, 53.85%)"]
+	subtopic2_215 [label="Digital Privacy Regulations (106, 82.81%)"]
 	subtopic1_214 -> subtopic2_215
-	subtopic2_216 [label="Enhancing Global Vaccine Distribution Access (12, 46.15%)"]
+	subtopic2_216 [label="Enhancing Communication Security Standards (22, 17.19%)"]
 	subtopic1_214 -> subtopic2_216
-	policy_6 [label="Labor and Employment (443, 4.91%)"]
-	subtopic1_217 [label="Workers' Rights Protection (217, 48.98%)"]
-	policy_6 -> subtopic1_217
-	subtopic2_218 [label="Supporting Workers' Rights Legislation (61, 28.11%)"]
+	subtopic1_217 [label="Increasing Economic Competitiveness (99, 16.61%)"]
+	policy_5 -> subtopic1_217
+	subtopic2_218 [label="Countering China's Technology Influence (69, 69.70%)"]
 	subtopic1_217 -> subtopic2_218
-	subtopic2_219 [label="Strengthening Workers' Rights Legislation (53, 24.42%)"]
+	subtopic2_219 [label="Enhancing Domestic Manufacturing Incentives (30, 30.30%)"]
 	subtopic1_217 -> subtopic2_219
-	subtopic2_220 [label="Strengthening Labor Union Rights (38, 17.51%)"]
-	subtopic1_217 -> subtopic2_220
-	subtopic2_221 [label="Gender Pay Equity Legislation (25, 11.52%)"]
-	subtopic1_217 -> subtopic2_221
-	subtopic2_222 [label="Strengthening Workplace Pay Equity Laws (14, 6.45%)"]
-	subtopic1_217 -> subtopic2_222
-	subtopic2_223 [label="Ensuring Equal Pay for All Workers (11, 5.07%)"]
-	subtopic1_217 -> subtopic2_223
-	subtopic2_224 [label="Advocating for Equal Pay Legislation (7, 3.23%)"]
-	subtopic1_217 -> subtopic2_224
-	subtopic2_225 [label="Expanding Disability Employment Opportunities (6, 2.76%)"]
-	subtopic1_217 -> subtopic2_225
-	subtopic2_226 [label="Misc. (2, 0.92%)"]
-	subtopic1_217 -> subtopic2_226
-	subtopic1_227 [label="Apprenticeship Program Reform (54, 12.19%)"]
-	policy_6 -> subtopic1_227
-	subtopic2_228 [label="Expanding Apprenticeship Opportunities for Workers (54, 100.00%)"]
+	subtopic1_220 [label="Increasing Research Funding Support (37, 6.21%)"]
+	policy_5 -> subtopic1_220
+	subtopic2_221 [label="Increasing Research Grants (19, 51.35%)"]
+	subtopic1_220 -> subtopic2_221
+	subtopic2_222 [label="Limiting Gain-of-Function Research (15, 40.54%)"]
+	subtopic1_220 -> subtopic2_222
+	subtopic2_223 [label="Misc. (3, 8.11%)"]
+	subtopic1_220 -> subtopic2_223
+	subtopic1_224 [label="Increasing Domestic Manufacturing Investment (35, 5.87%)"]
+	policy_5 -> subtopic1_224
+	subtopic2_225 [label="Supporting Domestic Manufacturing Policies (23, 65.71%)"]
+	subtopic1_224 -> subtopic2_225
+	subtopic2_226 [label="Increasing Semiconductor Manufacturing Incentives (12, 34.29%)"]
+	subtopic1_224 -> subtopic2_226
+	subtopic1_227 [label="Expanding STEM Education Access (30, 5.03%)"]
+	policy_5 -> subtopic1_227
+	subtopic2_228 [label="Increasing Funding for STEM Education (30, 100.00%)"]
 	subtopic1_227 -> subtopic2_228
-	subtopic1_229 [label="Retirement Benefits Reform (48, 10.84%)"]
+	policy_6 [label="International Affairs (564, 5.38%)"]
+	subtopic1_229 [label="Misc. (168, 29.79%)"]
 	policy_6 -> subtopic1_229
-	subtopic2_230 [label="Reforming Social Security Retirement Benefits (32, 66.67%)"]
-	subtopic1_229 -> subtopic2_230
-	subtopic2_231 [label="Pension Bailout Accountability Measures (9, 18.75%)"]
-	subtopic1_229 -> subtopic2_231
-	subtopic2_232 [label="Expanding Retirement Savings Options (7, 14.58%)"]
-	subtopic1_229 -> subtopic2_232
-	subtopic1_233 [label="Workforce Development Reform (45, 10.16%)"]
-	policy_6 -> subtopic1_233
-	subtopic2_234 [label="Enhancing Skilled Workforce Training Programs (26, 57.78%)"]
-	subtopic1_233 -> subtopic2_234
-	subtopic2_235 [label="Promoting Inclusive Workforce Development (19, 42.22%)"]
-	subtopic1_233 -> subtopic2_235
-	subtopic1_236 [label="Strengthening Workplace Safety Regulations (39, 8.80%)"]
-	policy_6 -> subtopic1_236
-	subtopic2_237 [label="Strengthening Occupational Safety Standards (23, 58.97%)"]
-	subtopic1_236 -> subtopic2_237
-	subtopic2_238 [label="Strengthening Workplace Harassment Regulations (16, 41.03%)"]
-	subtopic1_236 -> subtopic2_238
-	subtopic1_239 [label="Strengthening Age Discrimination Protections (39, 8.80%)"]
-	policy_6 -> subtopic1_239
-	subtopic2_240 [label="Strengthening Age Discrimination Laws (25, 64.10%)"]
-	subtopic1_239 -> subtopic2_240
-	subtopic2_241 [label="Strengthening Protections for Older Workers (14, 35.90%)"]
-	subtopic1_239 -> subtopic2_241
-	subtopic1_242 [label="Misc. (1, 0.23%)"]
-	policy_6 -> subtopic1_242
-	policy_7 [label="Science, Technology, Communications (385, 4.27%)"]
-	subtopic1_243 [label="Funding for Scientific Research (347, 90.13%)"]
-	policy_7 -> subtopic1_243
-	subtopic2_244 [label="Increasing National Science Funding Allocation (46, 13.26%)"]
-	subtopic1_243 -> subtopic2_244
-	subtopic2_245 [label="Increasing Federal Research Funding Allocation (38, 10.95%)"]
-	subtopic1_243 -> subtopic2_245
-	subtopic2_246 [label="Misc. (35, 10.09%)"]
-	subtopic1_243 -> subtopic2_246
-	subtopic2_247 [label="Expanding Affordable Broadband Access Programs (22, 6.34%)"]
-	subtopic1_243 -> subtopic2_247
-	subtopic2_248 [label="Promoting Military Technology Innovations (21, 6.05%)"]
-	subtopic1_243 -> subtopic2_248
-	subtopic2_249 [label="Strengthening Cybersecurity Legislation (19, 5.48%)"]
-	subtopic1_243 -> subtopic2_249
-	subtopic2_250 [label="Strengthening National Cybersecurity Standards (18, 5.19%)"]
-	subtopic1_243 -> subtopic2_250
-	subtopic2_251 [label="Increasing Oversight of Government Spending (16, 4.61%)"]
-	subtopic1_243 -> subtopic2_251
-	subtopic2_252 [label="Strengthening Domestic Semiconductor Production (14, 4.03%)"]
-	subtopic1_243 -> subtopic2_252
-	subtopic2_253 [label="Promoting Domestic Supply Chain Resilience (14, 4.03%)"]
-	subtopic1_243 -> subtopic2_253
-	subtopic2_254 [label="Containing Chinese Communist Party Influence (13, 3.75%)"]
-	subtopic1_243 -> subtopic2_254
-	subtopic2_255 [label="Ensuring Communication Access for Marginalized Communities (12, 3.46%)"]
-	subtopic1_243 -> subtopic2_255
-	subtopic2_256 [label="Modernizing Emergency Weather Communication Systems (12, 3.46%)"]
-	subtopic1_243 -> subtopic2_256
-	subtopic2_257 [label="Enhancing Climate Change Mitigation Funding (12, 3.46%)"]
-	subtopic1_243 -> subtopic2_257
-	subtopic2_258 [label="Strengthening Anti-Harassment Policies in Science (9, 2.59%)"]
-	subtopic1_243 -> subtopic2_258
-	subtopic2_259 [label="Restricting Shark Fin Trade Practices (9, 2.59%)"]
-	subtopic1_243 -> subtopic2_259
-	subtopic2_260 [label="Enhancing Cybersecurity for Critical Infrastructure (9, 2.59%)"]
-	subtopic1_243 -> subtopic2_260
-	subtopic2_261 [label="Increasing Cybersecurity Investment in Education (8, 2.31%)"]
-	subtopic1_243 -> subtopic2_261
-	subtopic2_262 [label="Improving Inmate Communication Access (7, 2.02%)"]
-	subtopic1_243 -> subtopic2_262
-	subtopic2_263 [label="Improving Accessibility in Communication Technologies (7, 2.02%)"]
-	subtopic1_243 -> subtopic2_263
-	subtopic2_264 [label="Implementing Carbon Emission Reduction Policies (6, 1.73%)"]
-	subtopic1_243 -> subtopic2_264
-	subtopic1_265 [label="STEM Education Accessibility Reform (36, 9.35%)"]
+	subtopic1_230 [label="Expanding Human Rights Protections (94, 16.67%)"]
+	policy_6 -> subtopic1_230
+	subtopic2_231 [label="Strengthening Foreign Human Rights Sanctions (53, 56.38%)"]
+	subtopic1_230 -> subtopic2_231
+	subtopic2_232 [label="Global Human Rights Enforcement (21, 22.34%)"]
+	subtopic1_230 -> subtopic2_232
+	subtopic2_233 [label="Strengthening Uyghur Rights Legislation (20, 21.28%)"]
+	subtopic1_230 -> subtopic2_233
+	subtopic1_234 [label="Supporting Global Democracy Efforts (83, 14.72%)"]
+	policy_6 -> subtopic1_234
+	subtopic2_235 [label="Increasing Military Aid to Ukraine (39, 46.99%)"]
+	subtopic1_234 -> subtopic2_235
+	subtopic2_236 [label="Military Aid Accountability for Ukraine (24, 28.92%)"]
+	subtopic1_234 -> subtopic2_236
+	subtopic2_237 [label="Supporting Democracy in Burma (20, 24.10%)"]
+	subtopic1_234 -> subtopic2_237
+	subtopic1_238 [label="Increasing Foreign Aid Accountability (77, 13.65%)"]
+	policy_6 -> subtopic1_238
+	subtopic2_239 [label="Increasing Refugee Aid Allocation (39, 50.65%)"]
+	subtopic1_238 -> subtopic2_239
+	subtopic2_240 [label="Global Vaccine Funding Oversight (38, 49.35%)"]
+	subtopic1_238 -> subtopic2_240
+	subtopic1_241 [label="Increasing Economic Sanctions (67, 11.88%)"]
+	policy_6 -> subtopic1_241
+	subtopic2_242 [label="Strengthening Economic Sanctions Enforcement (29, 43.28%)"]
+	subtopic1_241 -> subtopic2_242
+	subtopic2_243 [label="Strengthening Economic Sanctions on Russia (29, 43.28%)"]
+	subtopic1_241 -> subtopic2_243
+	subtopic2_244 [label="Misc. (9, 13.43%)"]
+	subtopic1_241 -> subtopic2_244
+	subtopic1_245 [label="Limiting Military Engagements (41, 7.27%)"]
+	policy_6 -> subtopic1_245
+	subtopic2_246 [label="Repealing Military Authorizations (41, 100.00%)"]
+	subtopic1_245 -> subtopic2_246
+	subtopic1_247 [label="Combating Islamophobia and Anti-Muslim Sentiment (34, 6.03%)"]
+	policy_6 -> subtopic1_247
+	subtopic2_248 [label="Enacting Anti-Islamophobia Laws (22, 64.71%)"]
+	subtopic1_247 -> subtopic2_248
+	subtopic2_249 [label="Combating Anti-Muslim Bigotry (12, 35.29%)"]
+	subtopic1_247 -> subtopic2_249
+	policy_7 [label="Labor and Employment (449, 4.28%)"]
+	subtopic1_250 [label="Expanding Workforce Development Initiatives (143, 31.85%)"]
+	policy_7 -> subtopic1_250
+	subtopic2_251 [label="Increasing Minimum Wage (67, 46.85%)"]
+	subtopic1_250 -> subtopic2_251
+	subtopic2_252 [label="Promoting Workforce Development Equity (28, 19.58%)"]
+	subtopic1_250 -> subtopic2_252
+	subtopic2_253 [label="Increasing Workforce Development Funding (24, 16.78%)"]
+	subtopic1_250 -> subtopic2_253
+	subtopic2_254 [label="Protecting Older Workers' Rights (14, 9.79%)"]
+	subtopic1_250 -> subtopic2_254
+	subtopic2_255 [label="Misc. (10, 6.99%)"]
+	subtopic1_250 -> subtopic2_255
+	subtopic1_256 [label="Expanding Apprenticeship Access (53, 11.80%)"]
+	policy_7 -> subtopic1_256
+	subtopic2_257 [label="Expanding Apprenticeship Opportunities (53, 100.00%)"]
+	subtopic1_256 -> subtopic2_257
+	subtopic1_258 [label="Expanding Pay Equity Legislation (52, 11.58%)"]
+	policy_7 -> subtopic1_258
+	subtopic2_259 [label="Promoting Salary Transparency Laws (27, 51.92%)"]
+	subtopic1_258 -> subtopic2_259
+	subtopic2_260 [label="Supporting Pay Equity Legislation (25, 48.08%)"]
+	subtopic1_258 -> subtopic2_260
+	subtopic1_261 [label="Expanding Retirement Benefits Access (52, 11.58%)"]
+	policy_7 -> subtopic1_261
+	subtopic2_262 [label="Protecting Pension Benefits (19, 36.54%)"]
+	subtopic1_261 -> subtopic2_262
+	subtopic2_263 [label="Expanding Retirement Benefit Access (17, 32.69%)"]
+	subtopic1_261 -> subtopic2_263
+	subtopic2_264 [label="Enhancing Retirement Savings Options (16, 30.77%)"]
+	subtopic1_261 -> subtopic2_264
+	subtopic1_265 [label="Expanding Union Rights (49, 10.91%)"]
 	policy_7 -> subtopic1_265
-	subtopic2_266 [label="Expanding Access to STEM Education (22, 61.11%)"]
+	subtopic2_266 [label="Strengthening Unionization Protections (49, 100.00%)"]
 	subtopic1_265 -> subtopic2_266
-	subtopic2_267 [label="Promoting Diversity in STEM Education (14, 38.89%)"]
-	subtopic1_265 -> subtopic2_267
-	subtopic1_268 [label="Misc. (2, 0.52%)"]
-	policy_7 -> subtopic1_268
-	policy_8 [label="Transportation and Public Works (356, 3.95%)"]
-	subtopic1_269 [label="Infrastructure Investment Priorities (356, 100.00%)"]
-	policy_8 -> subtopic1_269
-	subtopic2_270 [label="Equitable Rural Infrastructure Investment Policies (111, 31.18%)"]
+	subtopic1_267 [label="Strengthening Worker Rights (39, 8.69%)"]
+	policy_7 -> subtopic1_267
+	subtopic2_268 [label="Strengthening Union Organizing Rights (39, 100.00%)"]
+	subtopic1_267 -> subtopic2_268
+	subtopic1_269 [label="Increasing Workplace Safety Measures (35, 7.80%)"]
+	policy_7 -> subtopic1_269
+	subtopic2_270 [label="Strengthening Workplace Safety Regulations (35, 100.00%)"]
 	subtopic1_269 -> subtopic2_270
-	subtopic2_271 [label="Enhancing Airport Security Measures (35, 9.83%)"]
-	subtopic1_269 -> subtopic2_271
-	subtopic2_272 [label="Enhancing Transportation Security Measures (35, 9.83%)"]
-	subtopic1_269 -> subtopic2_272
-	subtopic2_273 [label="Prioritizing Infrastructure Investment Funding (27, 7.58%)"]
-	subtopic1_269 -> subtopic2_273
-	subtopic2_274 [label="Increasing Public Transit Funding Transparency (19, 5.34%)"]
-	subtopic1_269 -> subtopic2_274
-	subtopic2_275 [label="Reducing Transportation Emissions Standards (19, 5.34%)"]
-	subtopic1_269 -> subtopic2_275
-	subtopic2_276 [label="Misc. (17, 4.78%)"]
-	subtopic1_269 -> subtopic2_276
-	subtopic2_277 [label="Promoting Equitable Infrastructure Investments (16, 4.49%)"]
-	subtopic1_269 -> subtopic2_277
-	subtopic2_278 [label="Water Infrastructure Investment Strategies (15, 4.21%)"]
-	subtopic1_269 -> subtopic2_278
-	subtopic2_279 [label="Improving Safety Standards in Transportation (12, 3.37%)"]
-	subtopic1_269 -> subtopic2_279
-	subtopic2_280 [label="Reforming Maritime Shipping Regulations (12, 3.37%)"]
-	subtopic1_269 -> subtopic2_280
-	subtopic2_281 [label="Regulating Drone Airspace and Operations (9, 2.53%)"]
-	subtopic1_269 -> subtopic2_281
-	subtopic2_282 [label="Increasing Infrastructure Investment Funding (9, 2.53%)"]
-	subtopic1_269 -> subtopic2_282
-	subtopic2_283 [label="Regulating Agricultural Freight Transport (7, 1.97%)"]
-	subtopic1_269 -> subtopic2_283
-	subtopic2_284 [label="Enhancing Transit Safety Measures (7, 1.97%)"]
-	subtopic1_269 -> subtopic2_284
-	subtopic2_285 [label="Regulating Advanced Air Mobility Systems (6, 1.69%)"]
-	subtopic1_269 -> subtopic2_285
-	policy_9 [label="Commerce (348, 3.86%)"]
-	subtopic1_286 [label="Small Business Support Initiatives (160, 45.98%)"]
-	policy_9 -> subtopic1_286
-	subtopic2_287 [label="Enhancing Small Business Support Programs (66, 41.25%)"]
-	subtopic1_286 -> subtopic2_287
-	subtopic2_288 [label="Strengthening Cybersecurity Regulations for Small Businesses (33, 20.62%)"]
-	subtopic1_286 -> subtopic2_288
-	subtopic2_289 [label="Expanding Small Business Support Programs (14, 8.75%)"]
-	subtopic1_286 -> subtopic2_289
-	subtopic2_290 [label="Strengthening Domestic Manufacturing Competitiveness (12, 7.50%)"]
-	subtopic1_286 -> subtopic2_290
-	subtopic2_291 [label="Supporting Veteran Small Business Initiatives (12, 7.50%)"]
-	subtopic1_286 -> subtopic2_291
-	subtopic2_292 [label="Supporting Women-Owned Business Initiatives (8, 5.00%)"]
-	subtopic1_286 -> subtopic2_292
-	subtopic2_293 [label="Increasing Small Business Funding Accessibility (7, 4.38%)"]
-	subtopic1_286 -> subtopic2_293
-	subtopic2_294 [label="Enhancing Small Business Research Funding (6, 3.75%)"]
-	subtopic1_286 -> subtopic2_294
-	subtopic2_295 [label="Misc. (2, 1.25%)"]
-	subtopic1_286 -> subtopic2_295
-	subtopic1_296 [label="Misc. (154, 44.25%)"]
-	policy_9 -> subtopic1_296
-	subtopic1_297 [label="Strengthening Consumer Protection Laws (34, 9.77%)"]
+	subtopic1_271 [label="Increasing Age Discrimination Protections (26, 5.79%)"]
+	policy_7 -> subtopic1_271
+	subtopic2_272 [label="Strengthening Age Discrimination Laws (26, 100.00%)"]
+	subtopic1_271 -> subtopic2_272
+	policy_8 [label="Transportation and Public Works (425, 4.05%)"]
+	subtopic1_273 [label="Aviation Safety Oversight Expansions (213, 50.12%)"]
+	policy_8 -> subtopic1_273
+	subtopic2_274 [label="Enhancing Aviation Safety Regulations (167, 78.40%)"]
+	subtopic1_273 -> subtopic2_274
+	subtopic2_275 [label="Strengthening Aviation Safety Regulations (46, 21.60%)"]
+	subtopic1_273 -> subtopic2_275
+	subtopic1_276 [label="Increasing Transportation Funding (68, 16.00%)"]
+	policy_8 -> subtopic1_276
+	subtopic2_277 [label="Increasing Bikeshare Program Funding (37, 54.41%)"]
+	subtopic1_276 -> subtopic2_277
+	subtopic2_278 [label="Misc. (21, 30.88%)"]
+	subtopic1_276 -> subtopic2_278
+	subtopic2_279 [label="Increasing Electric Vehicle Infrastructure (10, 14.71%)"]
+	subtopic1_276 -> subtopic2_279
+	subtopic1_280 [label="Increasing Infrastructure Investment (58, 13.65%)"]
+	policy_8 -> subtopic1_280
+	subtopic2_281 [label="Increasing Infrastructure Funding (58, 100.00%)"]
+	subtopic1_280 -> subtopic2_281
+	subtopic1_282 [label="Increasing Infrastructure Funding (45, 10.59%)"]
+	policy_8 -> subtopic1_282
+	subtopic2_283 [label="Infrastructure Funding Accountability (45, 100.00%)"]
+	subtopic1_282 -> subtopic2_283
+	subtopic1_284 [label="Misc. (41, 9.65%)"]
+	policy_8 -> subtopic1_284
+	policy_9 [label="Commerce (377, 3.60%)"]
+	subtopic1_285 [label="Expanding Small Business Funding (301, 79.84%)"]
+	policy_9 -> subtopic1_285
+	subtopic2_286 [label="Increasing Small Business Grants (92, 30.56%)"]
+	subtopic1_285 -> subtopic2_286
+	subtopic2_287 [label="Strengthening Small Business Oversight (36, 11.96%)"]
+	subtopic1_285 -> subtopic2_287
+	subtopic2_288 [label="Strengthening Consumer Protection Laws (29, 9.63%)"]
+	subtopic1_285 -> subtopic2_288
+	subtopic2_289 [label="Restricting Violence Funding (25, 8.31%)"]
+	subtopic1_285 -> subtopic2_289
+	subtopic2_290 [label="Strengthening Fraud Prevention Measures (22, 7.31%)"]
+	subtopic1_285 -> subtopic2_290
+	subtopic2_291 [label="Expanding Microloan Access Rights (21, 6.98%)"]
+	subtopic1_285 -> subtopic2_291
+	subtopic2_292 [label="Strengthening Consumer Safety Regulations (19, 6.31%)"]
+	subtopic1_285 -> subtopic2_292
+	subtopic2_293 [label="Misc. (19, 6.31%)"]
+	subtopic1_285 -> subtopic2_293
+	subtopic2_294 [label="Enhancing Cybersecurity Regulations (13, 4.32%)"]
+	subtopic1_285 -> subtopic2_294
+	subtopic2_295 [label="Enhancing Patent Protections for Artists (13, 4.32%)"]
+	subtopic1_285 -> subtopic2_295
+	subtopic2_296 [label="Increasing Funding for Women-Owned Businesses (12, 3.99%)"]
+	subtopic1_285 -> subtopic2_296
+	subtopic1_297 [label="Increasing Small Business Support (45, 11.94%)"]
 	policy_9 -> subtopic1_297
-	subtopic2_298 [label="Strengthening Consumer Fraud Protections (27, 79.41%)"]
+	subtopic2_298 [label="Supporting Small Business Funding (45, 100.00%)"]
 	subtopic1_297 -> subtopic2_298
-	subtopic2_299 [label="Strengthening Consumer Protection Laws (7, 20.59%)"]
-	subtopic1_297 -> subtopic2_299
-	policy_10 [label="Public Lands and Natural Resources (301, 3.34%)"]
-	subtopic1_300 [label="Public Lands Protection Policies (245, 81.40%)"]
+	subtopic1_299 [label="Misc. (31, 8.22%)"]
+	policy_9 -> subtopic1_299
+	policy_10 [label="Public Lands and Natural Resources (306, 2.92%)"]
+	subtopic1_300 [label="Expanding Wilderness Protections (145, 47.39%)"]
 	policy_10 -> subtopic1_300
-	subtopic2_301 [label="Advocating for Equitable Public Land Access (30, 12.24%)"]
+	subtopic2_301 [label="Restricting Uranium Mining Operations (45, 31.03%)"]
 	subtopic1_300 -> subtopic2_301
-	subtopic2_302 [label="Expanding Historic Site Preservation Initiatives (24, 9.80%)"]
+	subtopic2_302 [label="Strengthening Wildlife Protection Laws (34, 23.45%)"]
 	subtopic1_300 -> subtopic2_302
-	subtopic2_303 [label="Protecting Indigenous Rights on Public Lands (21, 8.57%)"]
+	subtopic2_303 [label="Strengthening Wilderness Protections (31, 21.38%)"]
 	subtopic1_300 -> subtopic2_303
-	subtopic2_304 [label="Preserving National Heritage Areas (17, 6.94%)"]
+	subtopic2_304 [label="Strengthening Wildlife Conservation Laws (20, 13.79%)"]
 	subtopic1_300 -> subtopic2_304
-	subtopic2_305 [label="Regulating Uranium Mining Practices (15, 6.12%)"]
+	subtopic2_305 [label="Increasing Forest Fire Prevention Funding (11, 7.59%)"]
 	subtopic1_300 -> subtopic2_305
-	subtopic2_306 [label="Expanding Wilderness Area Access for Recreation (14, 5.71%)"]
+	subtopic2_306 [label="Misc. (4, 2.76%)"]
 	subtopic1_300 -> subtopic2_306
-	subtopic2_307 [label="Strengthening Endangered Species Protections (12, 4.90%)"]
-	subtopic1_300 -> subtopic2_307
-	subtopic2_308 [label="Supporting Inclusive Education Policies (12, 4.90%)"]
-	subtopic1_300 -> subtopic2_308
-	subtopic2_309 [label="Renaming Controversial Public Memorials (11, 4.49%)"]
-	subtopic1_300 -> subtopic2_309
-	subtopic2_310 [label="Misc. (11, 4.49%)"]
-	subtopic1_300 -> subtopic2_310
-	subtopic2_311 [label="Increasing Funding for Forest Restoration (11, 4.49%)"]
-	subtopic1_300 -> subtopic2_311
-	subtopic2_312 [label="Enhancing National Park Access Funding (11, 4.49%)"]
-	subtopic1_300 -> subtopic2_312
-	subtopic2_313 [label="Reforming Public Lands Management Policies (9, 3.67%)"]
-	subtopic1_300 -> subtopic2_313
-	subtopic2_314 [label="Enhancing Public Access to Recreational Lands (9, 3.67%)"]
-	subtopic1_300 -> subtopic2_314
-	subtopic2_315 [label="Expanding Veterans' Access to Public Parks (9, 3.67%)"]
-	subtopic1_300 -> subtopic2_315
-	subtopic2_316 [label="Expanding National Heritage Area Designations (8, 3.27%)"]
-	subtopic1_300 -> subtopic2_316
-	subtopic2_317 [label="Enhancing Fisheries Conservation Policies (7, 2.86%)"]
-	subtopic1_300 -> subtopic2_317
-	subtopic2_318 [label="Improving Wildlife Refuge Management Practices (7, 2.86%)"]
-	subtopic1_300 -> subtopic2_318
-	subtopic2_319 [label="Protecting Wild Rivers from Development (7, 2.86%)"]
-	subtopic1_300 -> subtopic2_319
-	subtopic1_320 [label="Wildfire Management Funding (46, 15.28%)"]
-	policy_10 -> subtopic1_320
-	subtopic2_321 [label="Increasing Wildfire Management Funding (21, 45.65%)"]
-	subtopic1_320 -> subtopic2_321
-	subtopic2_322 [label="Wildfire Management Regulatory Reforms (18, 39.13%)"]
-	subtopic1_320 -> subtopic2_322
-	subtopic2_323 [label="Enhancing Drought Management Strategies (7, 15.22%)"]
-	subtopic1_320 -> subtopic2_323
-	subtopic1_324 [label="Misc. (10, 3.32%)"]
-	policy_10 -> subtopic1_324
-	policy_11 [label="Finance and Financial Sector (287, 3.18%)"]
-	subtopic1_325 [label="Consumer Financial Protection Laws (240, 83.62%)"]
-	policy_11 -> subtopic1_325
-	subtopic2_326 [label="Strengthening Consumer Financial Protections (240, 100.00%)"]
-	subtopic1_325 -> subtopic2_326
-	subtopic1_327 [label="Debt Collection Reform Efforts (33, 11.50%)"]
+	subtopic1_307 [label="Expanding National Heritage Protections (50, 16.34%)"]
+	policy_10 -> subtopic1_307
+	subtopic2_308 [label="Expanding National Heritage Areas (26, 52.00%)"]
+	subtopic1_307 -> subtopic2_308
+	subtopic2_309 [label="Expanding Historic Preservation Funding (24, 48.00%)"]
+	subtopic1_307 -> subtopic2_309
+	subtopic1_310 [label="Expanding Commemorative Recognition (49, 16.01%)"]
+	policy_10 -> subtopic1_310
+	subtopic2_311 [label="Removing Confederate Monuments (19, 38.78%)"]
+	subtopic1_310 -> subtopic2_311
+	subtopic2_312 [label="Misc. (19, 38.78%)"]
+	subtopic1_310 -> subtopic2_312
+	subtopic2_313 [label="Expanding Veteran Access to Parks (11, 22.45%)"]
+	subtopic1_310 -> subtopic2_313
+	subtopic1_314 [label="Increasing Wildfire Management Funding (43, 14.05%)"]
+	policy_10 -> subtopic1_314
+	subtopic2_315 [label="Increasing Wildfire Prevention Funding (43, 100.00%)"]
+	subtopic1_314 -> subtopic2_315
+	subtopic1_316 [label="Misc. (19, 6.21%)"]
+	policy_10 -> subtopic1_316
+	policy_11 [label="Civil Rights and Liberties, Minority Issues (305, 2.91%)"]
+	subtopic1_317 [label="Expanding Minority Civil Rights (175, 57.38%)"]
+	policy_11 -> subtopic1_317
+	subtopic2_318 [label="Misc. (46, 26.29%)"]
+	subtopic1_317 -> subtopic2_318
+	subtopic2_319 [label="Strengthening Voting Rights Access (42, 24.00%)"]
+	subtopic1_317 -> subtopic2_319
+	subtopic2_320 [label="Expanding LGBTQ Non-Discrimination Laws (37, 21.14%)"]
+	subtopic1_317 -> subtopic2_320
+	subtopic2_321 [label="Prohibiting Hair Discrimination Laws (21, 12.00%)"]
+	subtopic1_317 -> subtopic2_321
+	subtopic2_322 [label="Strengthening Minority Civil Rights (16, 9.14%)"]
+	subtopic1_317 -> subtopic2_322
+	subtopic2_323 [label="Restricting Abortion Funding (13, 7.43%)"]
+	subtopic1_317 -> subtopic2_323
+	subtopic1_324 [label="Expanding Marriage Equality Rights (68, 22.30%)"]
+	policy_11 -> subtopic1_324
+	subtopic2_325 [label="Promoting Housing Discrimination Laws (57, 83.82%)"]
+	subtopic1_324 -> subtopic2_325
+	subtopic2_326 [label="Legalizing Same-Sex Marriage (11, 16.18%)"]
+	subtopic1_324 -> subtopic2_326
+	subtopic1_327 [label="Expanding Religious Freedom Protections (31, 10.16%)"]
 	policy_11 -> subtopic1_327
-	subtopic2_328 [label="Reforming Debt Collection Practices (22, 66.67%)"]
+	subtopic2_328 [label="Strengthening Religious Freedom Laws (18, 58.06%)"]
 	subtopic1_327 -> subtopic2_328
-	subtopic2_329 [label="Reforming Debt Collection Regulations (11, 33.33%)"]
+	subtopic2_329 [label="Enhancing Religious Liberty Protections (13, 41.94%)"]
 	subtopic1_327 -> subtopic2_329
-	subtopic1_330 [label="Misc. (14, 4.88%)"]
+	subtopic1_330 [label="Expanding Juneteenth Holiday Recognition (31, 10.16%)"]
 	policy_11 -> subtopic1_330
-	policy_12 [label="Immigration (259, 2.87%)"]
-	subtopic1_331 [label="Immigration Enforcement Policies (112, 43.24%)"]
-	policy_12 -> subtopic1_331
-	subtopic2_332 [label="Reforming Immigration Enforcement Practices (93, 83.04%)"]
-	subtopic1_331 -> subtopic2_332
-	subtopic2_333 [label="Restricting Immigration from High-Risk Countries (14, 12.50%)"]
-	subtopic1_331 -> subtopic2_333
-	subtopic2_334 [label="Misc. (5, 4.46%)"]
-	subtopic1_331 -> subtopic2_334
-	subtopic1_335 [label="Dreamer Legalization Controversy (96, 37.07%)"]
-	policy_12 -> subtopic1_335
-	subtopic2_336 [label="Expanding Agricultural Labor Legalization (37, 38.54%)"]
-	subtopic1_335 -> subtopic2_336
-	subtopic2_337 [label="Legalizing Deferred Action for Dreamers (26, 27.08%)"]
-	subtopic1_335 -> subtopic2_337
-	subtopic2_338 [label="Reforming Visa Processes for Immigrants (17, 17.71%)"]
-	subtopic1_335 -> subtopic2_338
-	subtopic2_339 [label="Expanding Special Immigrant Visas for Afghans (16, 16.67%)"]
-	subtopic1_335 -> subtopic2_339
-	subtopic1_340 [label="Strengthening Border Security Measures (51, 19.69%)"]
-	policy_12 -> subtopic1_340
-	subtopic2_341 [label="Enhancing Border Security Measures (51, 100.00%)"]
-	subtopic1_340 -> subtopic2_341
-	policy_13 [label="Civil Rights and Liberties, Minority Issues (252, 2.79%)"]
-	subtopic1_342 [label="LGBTQ Rights Protection (216, 85.71%)"]
-	policy_13 -> subtopic1_342
-	subtopic2_343 [label="Advocating for Comprehensive LGBTQ Rights (76, 35.19%)"]
-	subtopic1_342 -> subtopic2_343
-	subtopic2_344 [label="Strengthening LGBTQ Rights Protections (50, 23.15%)"]
-	subtopic1_342 -> subtopic2_344
-	subtopic2_345 [label="Protecting Natural Hair Rights at Work (16, 7.41%)"]
-	subtopic1_342 -> subtopic2_345
-	subtopic2_346 [label="Protecting Abortion Rights Accessibility (10, 4.63%)"]
-	subtopic1_342 -> subtopic2_346
-	subtopic2_347 [label="Recognizing Juneteenth as a National Holiday (10, 4.63%)"]
-	subtopic1_342 -> subtopic2_347
-	subtopic2_348 [label="Advancing Marriage Equality Rights (9, 4.17%)"]
-	subtopic1_342 -> subtopic2_348
-	subtopic2_349 [label="Strengthening Religious Liberty Protections (9, 4.17%)"]
-	subtopic1_342 -> subtopic2_349
-	subtopic2_350 [label="Misc. (9, 4.17%)"]
-	subtopic1_342 -> subtopic2_350
-	subtopic2_351 [label="Strengthening Justice for Racial Violence Victims (8, 3.70%)"]
-	subtopic1_342 -> subtopic2_351
-	subtopic2_352 [label="Recognizing Juneteenth as a Federal Holiday (7, 3.24%)"]
-	subtopic1_342 -> subtopic2_352
-	subtopic2_353 [label="Establishing Juneteenth as a National Holiday (6, 2.78%)"]
-	subtopic1_342 -> subtopic2_353
-	subtopic2_354 [label="Acknowledging Slavery's Historical Impact (6, 2.78%)"]
-	subtopic1_342 -> subtopic2_354
-	subtopic1_355 [label="Marriage Equality Legislation (36, 14.29%)"]
-	policy_13 -> subtopic1_355
-	subtopic2_356 [label="Recognizing Same-Sex Marriages Nationwide (29, 80.56%)"]
-	subtopic1_355 -> subtopic2_356
-	subtopic2_357 [label="Legalizing Same-Sex Marriage Nationwide (7, 19.44%)"]
-	subtopic1_355 -> subtopic2_357
-	policy_14 [label="Congress (206, 2.28%)"]
-	subtopic1_358 [label="Misc. (106, 51.46%)"]
+	subtopic2_331 [label="Establishing Juneteenth as Federal Holiday (20, 64.52%)"]
+	subtopic1_330 -> subtopic2_331
+	subtopic2_332 [label="Establishing Juneteenth as a Holiday (11, 35.48%)"]
+	subtopic1_330 -> subtopic2_332
+	policy_12 [label="Finance and Financial Sector (290, 2.77%)"]
+	subtopic1_333 [label="Financial Accountability Expansion (259, 89.31%)"]
+	policy_12 -> subtopic1_333
+	subtopic2_334 [label="Expanding Consumer Fraud Protections (158, 61.00%)"]
+	subtopic1_333 -> subtopic2_334
+	subtopic2_335 [label="Enhancing Corporate Disclosure Standards (36, 13.90%)"]
+	subtopic1_333 -> subtopic2_335
+	subtopic2_336 [label="Strengthening Corporate Accountability (35, 13.51%)"]
+	subtopic1_333 -> subtopic2_336
+	subtopic2_337 [label="Misc. (18, 6.95%)"]
+	subtopic1_333 -> subtopic2_337
+	subtopic2_338 [label="Implementing Inflation Relief Measures (12, 4.63%)"]
+	subtopic1_333 -> subtopic2_338
+	subtopic1_339 [label="Strengthening Debt Collection Protections (31, 10.69%)"]
+	policy_12 -> subtopic1_339
+	subtopic2_340 [label="Strengthening Debt Collection Protections (31, 100.00%)"]
+	subtopic1_339 -> subtopic2_340
+	policy_13 [label="Immigration (281, 2.68%)"]
+	subtopic1_341 [label="Expanding Immigration Protections (165, 58.72%)"]
+	policy_13 -> subtopic1_341
+	subtopic2_342 [label="Strengthening DACA Protections (42, 25.45%)"]
+	subtopic1_341 -> subtopic2_342
+	subtopic2_343 [label="Reforming Afghan Special Immigrant Visas (27, 16.36%)"]
+	subtopic1_341 -> subtopic2_343
+	subtopic2_344 [label="Legalizing Undocumented Farmworkers (22, 13.33%)"]
+	subtopic1_341 -> subtopic2_344
+	subtopic2_345 [label="Supporting Immigration Reform (20, 12.12%)"]
+	subtopic1_341 -> subtopic2_345
+	subtopic2_346 [label="Supporting Dreamer Legalization (17, 10.30%)"]
+	subtopic1_341 -> subtopic2_346
+	subtopic2_347 [label="Visa Program Access Reform (13, 7.88%)"]
+	subtopic1_341 -> subtopic2_347
+	subtopic2_348 [label="Abolishing the Muslim Travel Ban (11, 6.67%)"]
+	subtopic1_341 -> subtopic2_348
+	subtopic2_349 [label="Restoring Citizenship for Veterans (11, 6.67%)"]
+	subtopic1_341 -> subtopic2_349
+	subtopic2_350 [label="Misc. (2, 1.21%)"]
+	subtopic1_341 -> subtopic2_350
+	subtopic1_351 [label="Expanding Immigration Amnesty (58, 20.64%)"]
+	policy_13 -> subtopic1_351
+	subtopic2_352 [label="Comprehensive Immigration Pathway (34, 58.62%)"]
+	subtopic1_351 -> subtopic2_352
+	subtopic2_353 [label="Implementing Immigration Amnesty (24, 41.38%)"]
+	subtopic1_351 -> subtopic2_353
+	subtopic1_354 [label="Increasing Border Security Measures (58, 20.64%)"]
+	policy_13 -> subtopic1_354
+	subtopic2_355 [label="Enhancing Border Surveillance Technology (36, 62.07%)"]
+	subtopic1_354 -> subtopic2_355
+	subtopic2_356 [label="Strengthening Border Security Laws (22, 37.93%)"]
+	subtopic1_354 -> subtopic2_356
+	policy_14 [label="Congress (227, 2.17%)"]
+	subtopic1_357 [label="Misc. (133, 58.59%)"]
+	policy_14 -> subtopic1_357
+	subtopic1_358 [label="Increasing Government Accountability (54, 23.79%)"]
 	policy_14 -> subtopic1_358
-	subtopic1_359 [label="Government Accountability Reforms (64, 31.07%)"]
-	policy_14 -> subtopic1_359
-	subtopic2_360 [label="Strengthening Government Oversight Measures (20, 31.25%)"]
-	subtopic1_359 -> subtopic2_360
-	subtopic2_361 [label="Enhancing Congressional Transparency Standards (14, 21.88%)"]
-	subtopic1_359 -> subtopic2_361
-	subtopic2_362 [label="Enhancing Fiscal Responsibility in Congress (10, 15.62%)"]
-	subtopic1_359 -> subtopic2_362
-	subtopic2_363 [label="Defending Electoral Integrity in Democracy (7, 10.94%)"]
-	subtopic1_359 -> subtopic2_363
-	subtopic2_364 [label="Implementing Comprehensive Democracy Reforms (7, 10.94%)"]
-	subtopic1_359 -> subtopic2_364
-	subtopic2_365 [label="Misc. (6, 9.38%)"]
-	subtopic1_359 -> subtopic2_365
-	subtopic1_366 [label="Capitol Security Funding Reform (36, 17.48%)"]
-	policy_14 -> subtopic1_366
-	subtopic2_367 [label="Reforming Capitol Security Measures (29, 80.56%)"]
+	subtopic2_359 [label="Reforming Government Accountability Standards (22, 40.74%)"]
+	subtopic1_358 -> subtopic2_359
+	subtopic2_360 [label="Misc. (22, 40.74%)"]
+	subtopic1_358 -> subtopic2_360
+	subtopic2_361 [label="Defending Constitutional Rights (10, 18.52%)"]
+	subtopic1_358 -> subtopic2_361
+	subtopic1_362 [label="Strengthening Capitol Security Measures (40, 17.62%)"]
+	policy_14 -> subtopic1_362
+	subtopic2_363 [label="Enhancing Capitol Security Oversight (20, 50.00%)"]
+	subtopic1_362 -> subtopic2_363
+	subtopic2_364 [label="Establishing Independent Investigative Commissions (18, 45.00%)"]
+	subtopic1_362 -> subtopic2_364
+	subtopic2_365 [label="Misc. (2, 5.00%)"]
+	subtopic1_362 -> subtopic2_365
+	policy_15 [label="Emergency Management (180, 1.72%)"]
+	subtopic1_366 [label="Increasing Homeland Security Accountability (143, 79.44%)"]
+	policy_15 -> subtopic1_366
+	subtopic2_367 [label="Disaster Aid Transparency Reform (82, 57.34%)"]
 	subtopic1_366 -> subtopic2_367
-	subtopic2_368 [label="Reforming Emergency Security Funding (7, 19.44%)"]
+	subtopic2_368 [label="Strengthening School Safety Regulations (33, 23.08%)"]
 	subtopic1_366 -> subtopic2_368
-	policy_15 [label="Emergency Management (172, 1.91%)"]
-	subtopic1_369 [label="Misc. (111, 64.53%)"]
-	policy_15 -> subtopic1_369
-	subtopic1_370 [label="Homeland Security Oversight Reform (32, 18.60%)"]
-	policy_15 -> subtopic1_370
-	subtopic2_371 [label="Misc. (13, 40.62%)"]
-	subtopic1_370 -> subtopic2_371
-	subtopic2_372 [label="Increasing Federal Emergency Powers Oversight (10, 31.25%)"]
-	subtopic1_370 -> subtopic2_372
-	subtopic2_373 [label="Reforming Homeland Security Funding Allocation (9, 28.12%)"]
-	subtopic1_370 -> subtopic2_373
-	subtopic1_374 [label="Disaster Mitigation Funding Controversy (29, 16.86%)"]
-	policy_15 -> subtopic1_374
-	subtopic2_375 [label="Increasing Federal Disaster Funding Allocation (17, 58.62%)"]
+	subtopic2_369 [label="Misc. (17, 11.89%)"]
+	subtopic1_366 -> subtopic2_369
+	subtopic2_370 [label="Enhancing Terrorism Response Oversight (11, 7.69%)"]
+	subtopic1_366 -> subtopic2_370
+	subtopic1_371 [label="Expanding Disaster Recovery Assistance (28, 15.56%)"]
+	policy_15 -> subtopic1_371
+	subtopic2_372 [label="Improving Disaster Recovery Equity (28, 100.00%)"]
+	subtopic1_371 -> subtopic2_372
+	subtopic1_373 [label="Misc. (9, 5.00%)"]
+	policy_15 -> subtopic1_373
+	policy_16 [label="Environmental Protection (151, 1.44%)"]
+	subtopic1_374 [label="Strengthening Water Protection Policies (75, 49.67%)"]
+	policy_16 -> subtopic1_374
+	subtopic2_375 [label="Strengthening Ocean Acidification Policies (35, 46.67%)"]
 	subtopic1_374 -> subtopic2_375
-	subtopic2_376 [label="Improving Disaster Assistance Efficiency (12, 41.38%)"]
+	subtopic2_376 [label="Misc. (23, 30.67%)"]
 	subtopic1_374 -> subtopic2_376
-	policy_16 [label="Law (143, 1.59%)"]
-	subtopic1_377 [label="Arbitration Reform and Accountability (79, 55.24%)"]
-	policy_16 -> subtopic1_377
-	subtopic2_378 [label="Reforming Mandatory Arbitration Clauses (26, 32.91%)"]
-	subtopic1_377 -> subtopic2_378
-	subtopic2_379 [label="Regulating Employment Arbitration Agreements (22, 27.85%)"]
-	subtopic1_377 -> subtopic2_379
-	subtopic2_380 [label="Judicial Accountability Reforms (17, 21.52%)"]
-	subtopic1_377 -> subtopic2_380
-	subtopic2_381 [label="Strengthening Puerto Rico Debt Relief Policies (12, 15.19%)"]
-	subtopic1_377 -> subtopic2_381
-	subtopic2_382 [label="Misc. (2, 2.53%)"]
-	subtopic1_377 -> subtopic2_382
-	subtopic1_383 [label="Sexual Harassment Legislation Reform (37, 25.87%)"]
-	policy_16 -> subtopic1_383
-	subtopic2_384 [label="Reforming Sexual Harassment Laws (37, 100.00%)"]
-	subtopic1_383 -> subtopic2_384
-	subtopic1_385 [label="Misc. (27, 18.88%)"]
-	policy_16 -> subtopic1_385
-	policy_17 [label="Environmental Protection (143, 1.59%)"]
-	subtopic1_386 [label="Clean Water Regulation Controversy (113, 79.02%)"]
+	subtopic2_377 [label="Strengthening Clean Water Standards (17, 22.67%)"]
+	subtopic1_374 -> subtopic2_377
+	subtopic1_378 [label="Increasing Wildlife Protection Funding (40, 26.49%)"]
+	policy_16 -> subtopic1_378
+	subtopic2_379 [label="Increasing Wildlife Conservation Funding (25, 62.50%)"]
+	subtopic1_378 -> subtopic2_379
+	subtopic2_380 [label="Increased Wildlife Protection Funding (15, 37.50%)"]
+	subtopic1_378 -> subtopic2_380
+	subtopic1_381 [label="Strengthening PFAS Regulations (36, 23.84%)"]
+	policy_16 -> subtopic1_381
+	subtopic2_382 [label="Regulating PFAS Chemicals (36, 100.00%)"]
+	subtopic1_381 -> subtopic2_382
+	policy_17 [label="Law (150, 1.43%)"]
+	subtopic1_383 [label="Misc. (92, 61.33%)"]
+	policy_17 -> subtopic1_383
+	subtopic1_384 [label="Increasing Judicial Transparency (30, 20.00%)"]
+	policy_17 -> subtopic1_384
+	subtopic2_385 [label="Judicial Accountability Measures (30, 100.00%)"]
+	subtopic1_384 -> subtopic2_385
+	subtopic1_386 [label="Cutting Forced Arbitration Rights (28, 18.67%)"]
 	policy_17 -> subtopic1_386
-	subtopic2_387 [label="Strengthening Water Quality Regulations (41, 36.28%)"]
+	subtopic2_387 [label="Restricting Forced Arbitration (28, 100.00%)"]
 	subtopic1_386 -> subtopic2_387
-	subtopic2_388 [label="Strengthening Endangered Species Protections (33, 29.20%)"]
-	subtopic1_386 -> subtopic2_388
-	subtopic2_389 [label="Strengthening Pesticide Regulation Standards (16, 14.16%)"]
-	subtopic1_386 -> subtopic2_389
-	subtopic2_390 [label="Promoting Wetland and Watershed Restoration (11, 9.73%)"]
-	subtopic1_386 -> subtopic2_390
-	subtopic2_391 [label="Accountability for Environmental Spending (8, 7.08%)"]
-	subtopic1_386 -> subtopic2_391
-	subtopic2_392 [label="Misc. (4, 3.54%)"]
-	subtopic1_386 -> subtopic2_392
-	subtopic1_393 [label="Regulating PFAS Contaminants (30, 20.98%)"]
-	policy_17 -> subtopic1_393
-	subtopic2_394 [label="Regulating Harmful Chemical Exposures (21, 70.00%)"]
-	subtopic1_393 -> subtopic2_394
-	subtopic2_395 [label="Regulating PFAS Chemicals in Environment (9, 30.00%)"]
-	subtopic1_393 -> subtopic2_395
-	policy_18 [label="Education (124, 1.37%)"]
-	subtopic1_396 [label="Teacher Compensation Reform (59, 47.58%)"]
+	policy_18 [label="Education (128, 1.22%)"]
+	subtopic1_388 [label="Expanding Mental Health Services (60, 46.88%)"]
+	policy_18 -> subtopic1_388
+	subtopic2_389 [label="Enhancing Mental Health Services (34, 56.67%)"]
+	subtopic1_388 -> subtopic2_389
+	subtopic2_390 [label="Banning Corporal Punishment in Schools (13, 21.67%)"]
+	subtopic1_388 -> subtopic2_390
+	subtopic2_391 [label="Student Loan Forgiveness Programs (13, 21.67%)"]
+	subtopic1_388 -> subtopic2_391
+	subtopic1_392 [label="Increasing Education Funding (55, 42.97%)"]
+	policy_18 -> subtopic1_392
+	subtopic2_393 [label="Enhancing STEM Diversity Initiatives (35, 63.64%)"]
+	subtopic1_392 -> subtopic2_393
+	subtopic2_394 [label="Increasing Teacher Salary Funding (11, 20.00%)"]
+	subtopic1_392 -> subtopic2_394
+	subtopic2_395 [label="Misc. (9, 16.36%)"]
+	subtopic1_392 -> subtopic2_395
+	subtopic1_396 [label="Misc. (13, 10.16%)"]
 	policy_18 -> subtopic1_396
-	subtopic2_397 [label="Funding for STEM Education Initiatives (26, 44.07%)"]
-	subtopic1_396 -> subtopic2_397
-	subtopic2_398 [label="Reforming Teacher Compensation Structures (26, 44.07%)"]
-	subtopic1_396 -> subtopic2_398
-	subtopic2_399 [label="Reducing Educational Funding Inequities (7, 11.86%)"]
-	subtopic1_396 -> subtopic2_399
-	subtopic1_400 [label="Mental Health Support in Education (34, 27.42%)"]
-	policy_18 -> subtopic1_400
-	subtopic2_401 [label="Expanding Mental Health Support in Schools (21, 61.76%)"]
+	policy_19 [label="Agriculture and Food (101, 0.96%)"]
+	subtopic1_397 [label="Increasing Food Accessibility (101, 100.00%)"]
+	policy_19 -> subtopic1_397
+	subtopic2_398 [label="Cattle Market Transparency Reform (79, 78.22%)"]
+	subtopic1_397 -> subtopic2_398
+	subtopic2_399 [label="Increasing Infant Formula Access (22, 21.78%)"]
+	subtopic1_397 -> subtopic2_399
+	policy_20 [label="Native Americans (93, 0.89%)"]
+	subtopic1_400 [label="Expanding Native American Land Rights (93, 100.00%)"]
+	policy_20 -> subtopic1_400
+	subtopic2_401 [label="Restoring Indigenous Land Rights (54, 58.06%)"]
 	subtopic1_400 -> subtopic2_401
-	subtopic2_402 [label="Expanding Mental Health Services in Schools (7, 20.59%)"]
+	subtopic2_402 [label="Strengthening Tribal Self-Determination Rights (39, 41.94%)"]
 	subtopic1_400 -> subtopic2_402
-	subtopic2_403 [label="Misc. (6, 17.65%)"]
-	subtopic1_400 -> subtopic2_403
-	subtopic1_404 [label="Misc. (31, 25.00%)"]
-	policy_18 -> subtopic1_404
-	policy_19 [label="Agriculture and Food (96, 1.06%)"]
-	subtopic1_405 [label="Cattle Market Transparency Reforms (96, 100.00%)"]
-	policy_19 -> subtopic1_405
-	subtopic2_406 [label="Regulating Livestock Emissions for Sustainability (22, 22.92%)"]
-	subtopic1_405 -> subtopic2_406
-	subtopic2_407 [label="Improving Infant Formula Accessibility Policies (20, 20.83%)"]
-	subtopic1_405 -> subtopic2_407
-	subtopic2_408 [label="Expanding Child Nutrition Benefits (15, 15.62%)"]
-	subtopic1_405 -> subtopic2_408
-	subtopic2_409 [label="Enhancing Meat Market Transparency Regulations (12, 12.50%)"]
-	subtopic1_405 -> subtopic2_409
-	subtopic2_410 [label="Rising Biofuel Production Costs (11, 11.46%)"]
-	subtopic1_405 -> subtopic2_410
-	subtopic2_411 [label="Strengthening Food Security Initiatives (9, 9.38%)"]
-	subtopic1_405 -> subtopic2_411
-	subtopic2_412 [label="Misc. (7, 7.29%)"]
-	subtopic1_405 -> subtopic2_412
-	policy_20 [label="Native Americans (86, 0.95%)"]
-	subtopic1_413 [label="Native American Land Rights (86, 100.00%)"]
-	policy_20 -> subtopic1_413
-	subtopic2_414 [label="Protecting Native American Land Rights (57, 66.28%)"]
-	subtopic1_413 -> subtopic2_414
-	subtopic2_415 [label="Strengthening Tribal Child Protection Laws (29, 33.72%)"]
-	subtopic1_413 -> subtopic2_415
-	policy_21 [label="Foreign Trade and International Finance (82, 0.91%)"]
-	subtopic1_416 [label="Sanctions Against Russia (82, 100.00%)"]
-	policy_21 -> subtopic1_416
-	subtopic2_417 [label="Strengthening Sanctions Against Russian Trade (72, 87.80%)"]
+	policy_21 [label="Foreign Trade and International Finance (89, 0.85%)"]
+	subtopic1_403 [label="Increasing Sanctions on Russia (89, 100.00%)"]
+	policy_21 -> subtopic1_403
+	subtopic2_404 [label="Strengthening Sanctions on Russia (36, 40.45%)"]
+	subtopic1_403 -> subtopic2_404
+	subtopic2_405 [label="Supporting Economic Sanctions on Russia (25, 28.09%)"]
+	subtopic1_403 -> subtopic2_405
+	subtopic2_406 [label="Suspending Infant Formula Tariffs (16, 17.98%)"]
+	subtopic1_403 -> subtopic2_406
+	subtopic2_407 [label="Imposing Energy Sanctions on Russia (12, 13.48%)"]
+	subtopic1_403 -> subtopic2_407
+	policy_22 [label="Families (56, 0.53%)"]
+	subtopic1_408 [label="Expanding Support for Families (56, 100.00%)"]
+	policy_22 -> subtopic1_408
+	subtopic2_409 [label="Increasing Domestic Violence Funding (35, 62.50%)"]
+	subtopic1_408 -> subtopic2_409
+	subtopic2_410 [label="Increased Child Protection Funding (21, 37.50%)"]
+	subtopic1_408 -> subtopic2_410
+	policy_23 [label="Taxation (49, 0.47%)"]
+	subtopic1_411 [label="Expanding Tax Incentives Accountability (49, 100.00%)"]
+	policy_23 -> subtopic1_411
+	subtopic2_412 [label="Eliminating Oil and Gas Subsidies (33, 67.35%)"]
+	subtopic1_411 -> subtopic2_412
+	subtopic2_413 [label="Strengthening Tax Audit Policies (16, 32.65%)"]
+	subtopic1_411 -> subtopic2_413
+	policy_24 [label="Social Welfare (45, 0.43%)"]
+	subtopic1_414 [label="Expanding Social Welfare Programs (45, 100.00%)"]
+	policy_24 -> subtopic1_414
+	subtopic2_415 [label="Community Services Funding Reform (45, 100.00%)"]
+	subtopic1_414 -> subtopic2_415
+	policy_25 [label="Animals (41, 0.39%)"]
+	subtopic1_416 [label="Strengthening Animal Protection Laws (41, 100.00%)"]
+	policy_25 -> subtopic1_416
+	subtopic2_417 [label="Strengthening Animal Protection Laws (28, 68.29%)"]
 	subtopic1_416 -> subtopic2_417
-	subtopic2_418 [label="Regulating Infant Formula Imports (10, 12.20%)"]
+	subtopic2_418 [label="Strengthening Big Cat Protections (13, 31.71%)"]
 	subtopic1_416 -> subtopic2_418
-	policy_22 [label="Families (56, 0.62%)"]
-	subtopic1_419 [label="Child Abuse Prevention Funding (56, 100.00%)"]
-	policy_22 -> subtopic1_419
-	subtopic2_420 [label="Strengthening Child Abuse Prevention Policies (29, 51.79%)"]
+	policy_26 [label="Energy (29, 0.28%)"]
+	subtopic1_419 [label="Increasing Energy Security Measures (29, 100.00%)"]
+	policy_26 -> subtopic1_419
+	subtopic2_420 [label="Enhancing Energy Cybersecurity Measures (14, 48.28%)"]
 	subtopic1_419 -> subtopic2_420
-	subtopic2_421 [label="Strengthening Domestic Violence Prevention Programs (19, 33.93%)"]
+	subtopic2_421 [label="Enhancing Cybersecurity Funding (11, 37.93%)"]
 	subtopic1_419 -> subtopic2_421
-	subtopic2_422 [label="Increasing Family Violence Prevention Funding (8, 14.29%)"]
+	subtopic2_422 [label="Misc. (4, 13.79%)"]
 	subtopic1_419 -> subtopic2_422
-	policy_23 [label="Taxation (43, 0.48%)"]
-	subtopic1_423 [label="Tax Incentives and Subsidies (43, 100.00%)"]
-	policy_23 -> subtopic1_423
-	subtopic2_424 [label="Enhancing IRS Tax Accountability Measures (25, 58.14%)"]
+	policy_27 [label="Water Resources Development (29, 0.28%)"]
+	subtopic1_423 [label="Expanding Water Infrastructure Investment (29, 100.00%)"]
+	policy_27 -> subtopic1_423
+	subtopic2_424 [label="Equitable Water Infrastructure Funding (29, 100.00%)"]
 	subtopic1_423 -> subtopic2_424
-	subtopic2_425 [label="Eliminating Fossil Fuel Tax Subsidies (18, 41.86%)"]
-	subtopic1_423 -> subtopic2_425
-	policy_24 [label="Social Welfare (43, 0.48%)"]
-	subtopic1_426 [label="Social Welfare Reform Debate (43, 100.00%)"]
-	policy_24 -> subtopic1_426
-	subtopic2_427 [label="Expanding Veteran Support Services (29, 67.44%)"]
-	subtopic1_426 -> subtopic2_427
-	subtopic2_428 [label="Reforming Community Services Funding (7, 16.28%)"]
-	subtopic1_426 -> subtopic2_428
-	subtopic2_429 [label="Expanding Community Services Block Grants (7, 16.28%)"]
-	subtopic1_426 -> subtopic2_429
-	policy_25 [label="Animals (38, 0.42%)"]
-	subtopic1_430 [label="Big Cat Ownership Regulations (38, 100.00%)"]
-	policy_25 -> subtopic1_430
-	subtopic2_431 [label="Regulating Private Big Cat Ownership (20, 52.63%)"]
-	subtopic1_430 -> subtopic2_431
-	subtopic2_432 [label="Regulating Horse Soring Practices (18, 47.37%)"]
-	subtopic1_430 -> subtopic2_432
-	policy_26 [label="Energy (27, 0.30%)"]
-	subtopic1_433 [label="Energy Security Vulnerabilities (27, 100.00%)"]
-	policy_26 -> subtopic1_433
-	subtopic2_434 [label="Enhancing Energy Security Measures (13, 48.15%)"]
-	subtopic1_433 -> subtopic2_434
-	subtopic2_435 [label="Strengthening Electric Grid Cybersecurity Policies (8, 29.63%)"]
-	subtopic1_433 -> subtopic2_435
-	subtopic2_436 [label="Misc. (6, 22.22%)"]
-	subtopic1_433 -> subtopic2_436
-	policy_27 [label="Housing and Community Development (27, 0.30%)"]
-	subtopic1_437 [label="Mortgage Accessibility Reforms (27, 100.00%)"]
-	policy_27 -> subtopic1_437
-	subtopic2_438 [label="Enhancing Mortgage Access for Low-Income Families (11, 40.74%)"]
-	subtopic1_437 -> subtopic2_438
-	subtopic2_439 [label="Improving Fire and Safety Regulations (8, 29.63%)"]
-	subtopic1_437 -> subtopic2_439
-	subtopic2_440 [label="Expanding Mortgage Assistance Programs (7, 25.93%)"]
-	subtopic1_437 -> subtopic2_440
-	subtopic2_441 [label="Misc. (1, 3.70%)"]
-	subtopic1_437 -> subtopic2_441
-	policy_28 [label="Arts, Culture, Religion (19, 0.21%)"]
-	subtopic1_442 [label="Cultural Heritage and Pandemic Response (19, 100.00%)"]
-	policy_28 -> subtopic1_442
-	subtopic2_443 [label="Recognizing Asian American Cultural Heritage (10, 52.63%)"]
-	subtopic1_442 -> subtopic2_443
-	subtopic2_444 [label="Public Health Measures for Cultural Events (8, 42.11%)"]
-	subtopic1_442 -> subtopic2_444
-	subtopic2_445 [label="Misc. (1, 5.26%)"]
-	subtopic1_442 -> subtopic2_445
-	policy_29 [label="Sports and Recreation (12, 0.13%)"]
-	subtopic1_446 [label="Promoting Diversity in Sports (12, 100.00%)"]
-	policy_29 -> subtopic1_446
-	subtopic2_447 [label="Promoting Diversity in Professional Sports (12, 100.00%)"]
-	subtopic1_446 -> subtopic2_447
-	parent [label="Parent Node (9019, 100%)"]
+	policy_28 [label="Housing and Community Development (27, 0.26%)"]
+	subtopic1_425 [label="Expanding Affordable Housing Access (27, 100.00%)"]
+	policy_28 -> subtopic1_425
+	subtopic2_426 [label="Increasing Affordable Housing Access (27, 100.00%)"]
+	subtopic1_425 -> subtopic2_426
+	policy_29 [label="Arts, Culture, Religion (19, 0.18%)"]
+	subtopic1_427 [label="Increasing Cultural Memory Initiatives (19, 100.00%)"]
+	policy_29 -> subtopic1_427
+	subtopic2_428 [label="Promoting Pandemic Memory Projects (19, 100.00%)"]
+	subtopic1_427 -> subtopic2_428
+	policy_30 [label="Sports and Recreation (13, 0.12%)"]
+	subtopic1_429 [label="Increasing Equity for Athletes (13, 100.00%)"]
+	policy_30 -> subtopic1_429
+	subtopic2_430 [label="Promoting Equal Pay for Athletes (13, 100.00%)"]
+	subtopic1_429 -> subtopic2_430
+	parent [label="Parent Node (10481, 100%)"]
 	parent -> policy_0
 	parent -> policy_1
 	parent -> policy_2
@@ -958,4 +926,5 @@ digraph {
 	parent -> policy_27
 	parent -> policy_28
 	parent -> policy_29
+	parent -> policy_30
 }

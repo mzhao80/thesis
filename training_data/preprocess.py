@@ -1,3 +1,23 @@
+#!/usr/bin/env python
+"""
+Congressional Record and Bill Data Preprocessing Module
+
+This script performs the following key tasks:
+1. Fetches Congressional Record speech data from local files
+2. Processes and filters speech text to identify those related to bills
+3. Retrieves detailed bill information from the Congress.gov API
+4. Matches speeches to their corresponding bills
+5. Enriches the dataset with bill metadata (policy areas, summaries, committees)
+6. Outputs a processed dataset for further analysis
+
+Usage:
+    python preprocess.py [--data-dir DATA_DIR] [--output-file OUTPUT_FILE]
+
+For this to work, you'll need:
+1. Valid Congress.gov API keys in api_keys.py
+2. Input Congressional Record files in CSV format
+"""
+
 import pandas as pd
 import requests
 from datetime import datetime
@@ -9,54 +29,77 @@ import api_keys
 import os
 import time
 import logging
+import argparse
 
+# Configuration
 API_KEY = api_keys.CONGRESS_API_KEY
-ALT_API_KEY = api_keys.ALT_CONGRESS_API_KEY
+ALT_API_KEY = api_keys.ALT_CONGRESS_API_KEY  # Backup API key
 BASE_URL = "https://api.congress.gov/v3"
 CONGRESS_NUMBER = 117
 
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(message)s',
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
         logging.FileHandler('preprocess.log'),
-        logging.StreamHandler()  # This will maintain console output
+        logging.StreamHandler()
     ]
 )
+logger = logging.getLogger(__name__)
 
 def preprocess_text(text):
+    """
+    Clean and standardize speech text from the Congressional Record.
+    
+    This function performs several text normalization steps:
+    1. Standardizes whitespace
+    2. Normalizes forms of address (e.g., 'Madam Speaker' -> 'Mr. Speaker')
+    3. Removes common procedural text and formalities
+    
+    Args:
+        text (str): Raw speech text from the Congressional Record
+        
+    Returns:
+        str: Preprocessed text with normalized formatting
+    """
     # Replace all consecutive whitespaces with a single whitespace
     text = re.sub(r'\s+', ' ', text)
-    # Replace Madam Speaker, Mr. President, Madam President with Mr. Speaker
-    text = re.sub(r'Mr\. President', 'Mr. Speaker', text)
-    text = re.sub(r'Mr\. Clerk', 'Mr. Speaker', text)
-    text = re.sub(r'Mr\. Chair', 'Mr. Speaker', text)
-    text = re.sub(r'Mr\. Chairman', 'Mr. Speaker', text)
-    text = re.sub(r'Mr\. Speakerman', 'Mr. Speaker', text)
-    text = re.sub(r'Madam President', 'Mr. Speaker', text)
-    text = re.sub(r'Madam Speaker', 'Mr. Speaker', text)
-    text = re.sub(r'Madam Clerk', 'Mr. Speaker', text)
-    text = re.sub(r'Madam Chair', 'Mr. Speaker', text)
-    text = re.sub(r'Madam Chairman', 'Mr. Speaker', text)
-    text = re.sub(r'Madam Chairwoman', 'Mr. Speaker', text)
+    
+    # Replace various forms of address with standardized "Mr. Speaker"
+    address_patterns = [
+        (r'Mr\. President', 'Mr. Speaker'),
+        (r'Mr\. Clerk', 'Mr. Speaker'),
+        (r'Mr\. Chair', 'Mr. Speaker'),
+        (r'Mr\. Chairman', 'Mr. Speaker'),
+        (r'Mr\. Speakerman', 'Mr. Speaker'),
+        (r'Madam President', 'Mr. Speaker'),
+        (r'Madam Speaker', 'Mr. Speaker'),
+        (r'Madam Clerk', 'Mr. Speaker'),
+        (r'Madam Chair', 'Mr. Speaker'),
+        (r'Madam Chairman', 'Mr. Speaker'),
+        (r'Madam Chairwoman', 'Mr. Speaker')
+    ]
+    
+    for pattern, replacement in address_patterns:
+        text = re.sub(pattern, replacement, text)
 
-    # "Mr. Speaker, " 
+    # Remove common speech opening formalities
     text = re.sub(r'^Mr\. Speaker, ', '', text)
-    # Strike starting sentence that starts with "I yield"
     text = re.sub(r'^I yield.*?\. *', '', text)
-    # Remove second "Mr. Speaker, " that sometimes follows
-    text = re.sub(r'^Mr\. Speaker, ', '', text)
+    text = re.sub(r'^Mr\. Speaker, ', '', text)  # Check again for sequential patterns
 
     return text
 
 def standardize_bill_title(title):
     """
-    Standardize a bill title by:
+    Standardize a bill title for consistent matching.
+    
+    This function normalizes bill titles by:
     1. Converting to lowercase
-    2. Combining multiple spaces into single space
-    3. Removing specific prefixes and suffixes
-    4. Removing specific procedural phrases
+    2. Standardizing whitespace
+    3. Removing procedural prefixes and suffixes
+    4. Removing special characters
     
     Args:
         title (str): Original bill title
@@ -65,8 +108,7 @@ def standardize_bill_title(title):
         str: Standardized bill title, or None if input is None/empty
     """
     def strip_special_chars(s):
-        # [^A-Za-z0-9\s] = any character that is not:
-        #   A–Z, a–z, 0–9, or whitespace
+        """Remove non-alphanumeric characters except spaces."""
         return re.sub(r'[^A-Za-z0-9\s]+', '', s)
     
     if not title:
@@ -115,42 +157,42 @@ def standardize_bill_title(title):
         if title.startswith(prefix):
             title = title[len(prefix):]
             
-    # If title ends contains "--", remove everything including and after it
+    # Remove everything after double dash
     if "--" in title:
         title = title.split("--")[0].strip()
 
-    # Remove trailing period
+    # Remove trailing punctuation
     if title.endswith(".") or title.endswith(",") or title.endswith(";"):
         title = title[:-1]
 
-    # if title ends with " (executive session)" remove it
-    if title.endswith(" (executive session)"):
-        title = title[:-20]
-
-    # if title ends with " (executive calendar)" remove it
-    if title.endswith(" (executive calendar)"):
-        title = title[:-21]
-
-    # if title ends with "; and for other purposes" remove it
-    if title.endswith("; and for other purposes") or title.endswith(", and for other purposes"):
-        title = title[:-24]
-
-    # Remove ", 20xx" from end of act if it exists
-    title = re.sub(r', \d{4}$', '', title)
+    # Remove common trailing phrases
+    trailing_phrases = [
+        " (executive session)",
+        " (executive calendar)",
+        "; and for other purposes",
+        ", and for other purposes"
+    ]
     
+    for phrase in trailing_phrases:
+        if title.endswith(phrase):
+            title = title[:-len(phrase)]
+
+    # Remove year patterns
+    title = re.sub(r', \d{4}$', '', title)
     title = re.sub(r'act of \d{4}$', 'act', title)
+    title = re.sub(r'act of$', 'act', title)  # Remove "of" from end of act
 
-    # Remove "of" from end of act if it exists
-    title = re.sub(r'act of$', 'act', title)
-
+    # Remove special characters
     title = strip_special_chars(title)
     
     return title if title else None
 
 def get_bill_data(title, all_bills_dict):
     """
-    Get the bill data (policy area, legislative subjects, summary, committees).
-    Date checks removed - will return most recent data regardless of speech date.
+    Get the bill data for a given title.
+    
+    Retrieves metadata for a bill including policy area, legislative subjects,
+    summary, and committee information from the previously built dictionary.
     
     Args:
         title (str): Title of the bill
@@ -237,39 +279,36 @@ def get_bill_data(title, all_bills_dict):
 
 def get_bill_subjects_and_policy_area(api_key, congress, bill_type, bill_number):
     """
+    Fetch policy area and legislative subjects for a bill from the Congress API.
+    
+    Args:
+        api_key (str): Congress API key
+        congress (int): Congress number (e.g., 117)
+        bill_type (str): Type of bill (e.g., 'hr', 's')
+        bill_number (str): Bill number
+        
     Returns:
-        {
-           "policy_area": {
-               "name": str,
-               "updateDate": str or None
-           },
-           "legislative_subjects": [
-               {
-                 "name": str,
-                 "updateDate": str or None
-               },
-               ...
-           ]
-        }
-    or an empty dict if no data is found or request fails.
+        dict: Dictionary containing policy area and legislative subjects, or empty dict if request fails
     """
     url = f"{BASE_URL}/bill/{congress}/{bill_type.lower()}/{bill_number}/subjects"
     params = {"api_key": api_key, "format": "json"}
+    
     resp = requests.get(url, params=params)
+    # Try with alternate API key if first request fails
     if resp.status_code != 200:
         params = {"api_key": ALT_API_KEY, "format": "json"}
         resp = requests.get(url, params=params)
         if resp.status_code != 200:
-            logging.info(f"Failed to get bill subjects for {congress}, {bill_type}, {bill_number}: {resp.status_code}")
+            logger.info(f"Failed to get bill subjects for {congress}, {bill_type}, {bill_number}: {resp.status_code}")
             return {}
-    data = resp.json()
     
+    data = resp.json()
     subjects_data = data.get("subjects", {})
     
-    # Policy area
+    # Extract policy area
     policy_area = subjects_data.get("policyArea", {})
     
-    # Legislative subjects (list)
+    # Extract legislative subjects
     legislative_subjects = subjects_data.get("legislativeSubjects", [])
     
     return {
@@ -288,95 +327,106 @@ def get_bill_subjects_and_policy_area(api_key, congress, bill_type, bill_number)
 
 def get_bill_summaries_all(api_key, congress, bill_type, bill_number):
     """
-    Returns a list of all summaries, each item:
-        {
-          "actionDate": str (YYYY-MM-DD),
-          "actionDesc": str,
-          "text": str,
-          "updateDate": str,
-          "versionCode": str
-        }
+    Fetch all summaries for a bill from the Congress API.
+    
+    Args:
+        api_key (str): Congress API key
+        congress (int): Congress number (e.g., 117)
+        bill_type (str): Type of bill (e.g., 'hr', 's')
+        bill_number (str): Bill number
+        
+    Returns:
+        list: List of summary dictionaries, or empty list if request fails
     """
     url = f"{BASE_URL}/bill/{congress}/{bill_type.lower()}/{bill_number}/summaries"
     params = {"api_key": api_key, "format": "json"}
+    
     resp = requests.get(url, params=params)
+    # Try with alternate API key if first request fails
     if resp.status_code != 200:
         params = {"api_key": ALT_API_KEY, "format": "json"}
         resp = requests.get(url, params=params)
         if resp.status_code != 200:
-            logging.info(f"Failed to get bill summaries for {congress}, {bill_type}, {bill_number}: {resp.status_code}")
+            logger.info(f"Failed to get bill summaries for {congress}, {bill_type}, {bill_number}: {resp.status_code}")
             return []
+    
     data = resp.json()
     return data.get("summaries", [])
 
 def get_bill_committees_all(api_key, congress, bill_type, bill_number):
     """
-    Returns a list of committees. Each committee looks like:
-        {
-            "name": str,
-            "chamber": str,
-            "type": str,
-            "activities": [
-               {"date": "2023-05-29T18:00:30Z", "name": "Referred To"}, ...
-            ],
-            "subcommittees": [
-               {
-                  "name": "...",
-                  "activities": [...],
-                  ...
-               },
-               ...
-            ]
-        }
+    Fetch all committees for a bill from the Congress API.
+    
+    Args:
+        api_key (str): Congress API key
+        congress (int): Congress number (e.g., 117)
+        bill_type (str): Type of bill (e.g., 'hr', 's')
+        bill_number (str): Bill number
+        
+    Returns:
+        list: List of committee dictionaries, or empty list if request fails
     """
     url = f"{BASE_URL}/bill/{congress}/{bill_type.lower()}/{bill_number}/committees"
     params = {"api_key": api_key, "format": "json"}
+    
     resp = requests.get(url, params=params)
+    # Try with alternate API key if first request fails
     if resp.status_code != 200:
         params = {"api_key": ALT_API_KEY, "format": "json"}
         resp = requests.get(url, params=params)
         if resp.status_code != 200:
-            logging.info(f"Failed to get bill committees for {congress}, {bill_type}, {bill_number}: {resp.status_code}")
+            logger.info(f"Failed to get bill committees for {congress}, {bill_type}, {bill_number}: {resp.status_code}")
             return []
+    
     data = resp.json()
     return data.get("committees", [])
 
 def fetch_and_cache_bill_data(api_key, congress, bill_type, bill_number):
     """
-    Fetches all the relevant data for a single bill
-    (subjects, policy area, all summaries, committees, etc.)
-    Returns a dict with keys:
-        "bill_type", "bill_number", "subjects_policy", "summaries", "committees"
+    Fetch and combine all relevant data for a single bill.
+    
+    This is a convenience function that fetches subjects, policy area, summaries,
+    and committees for a bill and returns them in a single dictionary.
+    
+    Args:
+        api_key (str): Congress API key
+        congress (int): Congress number (e.g., 117)
+        bill_type (str): Type of bill (e.g., 'hr', 's')
+        bill_number (str): Bill number
+        
+    Returns:
+        dict: Combined bill data
     """
     result = {}
-    # subjects & policy area
+    # Fetch subjects & policy area
     result["subjects_policy"] = get_bill_subjects_and_policy_area(api_key, congress, bill_type, bill_number)
-    # committees
+    # Fetch committees
     result["committees"] = get_bill_committees_all(api_key, congress, bill_type, bill_number)
+    
     return result
 
 def build_bill_data_dict(api_key, all_bills, congress=117, limit_per_page=250, offset=0):
     """
-    Returns a dictionary: 
-      { 
-          <lowercase bill title> : {
-               "title": str,
-               "bill_type": str,
-               "bill_number": str,
-               "url": str,
-               "updateDate": str,
-               # plus the deeper fetched data:
-               "subjects_policy": {...},
-               "summaries": [...],
-               "committees": [...]
-          },
-          ...
-      }
+    Build a dictionary of bill data from the Congress API.
+    
+    This function fetches bills in pages and adds them to the provided dictionary.
+    For each bill, it also fetches the latest summary and other metadata.
+    
+    Args:
+        api_key (str): Congress API key
+        all_bills (dict): Dictionary to store bill data (modified in-place)
+        congress (int): Congress number (e.g., 117)
+        limit_per_page (int): Number of bills to fetch per page
+        offset (int): Starting offset for pagination
+        
+    Returns:
+        None: The input dictionary is modified in-place
     """
     start_time = time.time()
     while True:
-        logging.info(f"Fetching bills at offset {offset}, {offset/19315 * 100:.2f}% of the way done!")
-        logging.info(f"Time elapsed in minutes: {(time.time() - start_time) / 60:.2f}")
+        logger.info(f"Fetching bills at offset {offset}, {offset/19315 * 100:.2f}% of the way done!")
+        logger.info(f"Time elapsed in minutes: {(time.time() - start_time) / 60:.2f}")
+        
         params = {
             "api_key": api_key,
             "format": "json",
@@ -384,35 +434,35 @@ def build_bill_data_dict(api_key, all_bills, congress=117, limit_per_page=250, o
             "limit": limit_per_page
         }
         url = f"{BASE_URL}/bill/{congress}"
+        
         resp = requests.get(url, params=params)
+        # Try with alternate API key if first request fails
         if resp.status_code != 200:
-            params = {
-                "api_key": ALT_API_KEY,
-                "format": "json",
-                "offset": offset,
-                "limit": limit_per_page
-            }
+            params["api_key"] = ALT_API_KEY
             resp = requests.get(url, params=params)
             if resp.status_code != 200:
-                logging.info(f"Failed to get bills at offset {offset}: {resp.status_code}")
+                logger.info(f"Failed to get bills at offset {offset}: {resp.status_code}")
                 break
-        data = resp.json()
         
+        data = resp.json()
         bills_page = data.get("bills", [])
+        
         if not bills_page:
             break
         
-        # For each bill in this page, store minimal metadata
+        # Process each bill in this page
         for b in bills_page:
             offset += 1
             b_title_lower = standardize_bill_title(b.get("title", ""))
             bill_type = b.get("type", "")
             bill_number = b.get("number", "")
 
+            # Get summaries to find the latest one
             summaries = get_bill_summaries_all(api_key, congress, bill_type, bill_number)
             latest_summary = ""
             latest_summary_date = ""
             updateDate = b.get("updateDateIncludingText", "")
+            
             if summaries:
                 # Get the most recent summary
                 latest_summary_item = max(summaries, key=lambda x: parser.parse(x['actionDate']).date() if x.get('actionDate') else parser.parse('1900-01-01').date())
@@ -420,129 +470,204 @@ def build_bill_data_dict(api_key, all_bills, congress=117, limit_per_page=250, o
                 if latest_summary_item.get('actionDate', ""):
                     latest_summary_date = parser.parse(latest_summary_item['actionDate']).date().isoformat()
 
-            toAdd = {
-                    "title": b.get("title", "").strip("."),
-                    "bill_type": b.get("type", ""),
-                    "bill_number": b.get("number", ""),
-                    "url": b.get("url", ""),
-                    "updateDate": updateDate,
-                    "latest_summary": latest_summary,
-                    "latest_summary_date": latest_summary_date
-                }
+            bill_info = {
+                "title": b.get("title", "").strip("."),
+                "bill_type": b.get("type", ""),
+                "bill_number": b.get("number", ""),
+                "url": b.get("url", ""),
+                "updateDate": updateDate,
+                "latest_summary": latest_summary,
+                "latest_summary_date": latest_summary_date
+            }
 
+            # Get all alias titles for this bill
             all_titles = get_alias_titles(api_key, congress, bill_type, bill_number)
             all_titles = set(all_titles + [b_title_lower])
 
+            # Add bill to dictionary under each of its titles
             for title in all_titles:
-                # we have not seen this bill before
-                predicate = title not in all_bills
-                if not predicate:
-                    # we have seen this bill before, but the summary is outdated
+                # Determine if we should add/update this bill in our dictionary
+                should_update = title not in all_bills
+                
+                if not should_update:
+                    # We have seen this bill before, decide if we should update it
                     if latest_summary_date:
                         if all_bills[title]['latest_summary_date']:
-                            # we have seen both summary dates, take the more recent one
-                            predicate = (datetime.strptime(all_bills[title]['latest_summary_date'], "%Y-%m-%d").date() < datetime.strptime(latest_summary_date, "%Y-%m-%d").date())
+                            # Compare dates if both have summary dates
+                            should_update = (datetime.strptime(all_bills[title]['latest_summary_date'], "%Y-%m-%d").date() < 
+                                          datetime.strptime(latest_summary_date, "%Y-%m-%d").date())
                         else:
-                            # default to taking the new one with the summary date
-                            predicate = True
+                            # Prefer entries with summary dates
+                            should_update = True
                     else:
-                        # default to taking the old one with the summary date
+                        # Current bill has no summary date
                         if all_bills[title]['latest_summary_date']:
-                            predicate = False
+                            # Keep existing entry if it has a summary date
+                            should_update = False
                         else:
-                            # take the one with the more recent update date
-                            predicate = datetime.strptime(all_bills[title]['updateDate'], "%Y-%m-%d").date() < datetime.strptime(updateDate, "%Y-%m-%d").date()
+                            # Compare update dates if neither has summary date
+                            should_update = (datetime.strptime(all_bills[title]['updateDate'], "%Y-%m-%d").date() < 
+                                          datetime.strptime(updateDate, "%Y-%m-%d").date())
 
-                if predicate:
-                    all_bills[title] = toAdd
+                if should_update:
+                    all_bills[title] = bill_info
 
 def get_alias_titles(api_key, congress, bill_type, bill_number):
     """
-    Returns a list of aliases for the bill
+    Get alternative titles for a bill from the Congress API.
+    
+    Args:
+        api_key (str): Congress API key
+        congress (int): Congress number (e.g., 117)
+        bill_type (str): Type of bill (e.g., 'hr', 's')
+        bill_number (str): Bill number
+        
+    Returns:
+        list: List of standardized alias titles
     """
     url = f"{BASE_URL}/bill/{congress}/{bill_type.lower()}/{bill_number}/titles"
     params = {"api_key": api_key, "format": "json"}
+    
     resp = requests.get(url, params=params)
+    # Try with alternate API key if first request fails
     if resp.status_code != 200:
         params = {"api_key": ALT_API_KEY, "format": "json"}
         resp = requests.get(url, params=params)
         if resp.status_code != 200:
-            logging.info(f"Failed to get bill titles for {congress}, {bill_type}, {bill_number}: {resp.status_code}")
+            logger.info(f"Failed to get bill titles for {congress}, {bill_type}, {bill_number}: {resp.status_code}")
             return []
+    
     data = resp.json().get("titles", [])
     ret = []
+    
     for title in data:
         alias = standardize_bill_title(title.get("title", ""))
         if alias:
             ret.append(alias)
+    
     return ret
 
-def main():
+def parse_arguments():
+    """
+    Parse command line arguments.
+    
+    Returns:
+        argparse.Namespace: Parsed command line arguments
+    """
+    parser = argparse.ArgumentParser(description="Preprocess Congressional Record data and match with bill information")
+    parser.add_argument('--data-dir', type=str, default="/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao",
+                        help="Directory containing input files and where to save output files")
+    parser.add_argument('--output-file', type=str, default="df_bills.csv",
+                        help="Name of output CSV file")
+    
+    return parser.parse_args()
 
+def main():
+    """
+    Main function to execute the preprocessing pipeline.
+    """
+    args = parse_arguments()
+    data_dir = args.data_dir
+    output_file = args.output_file
+    
+    logger.info('Starting preprocessing pipeline')
+    
     # -----------------------------------
-    # 1. Read the CSV data
+    # 1. Read and preprocess the Congressional Record data
     # -----------------------------------
-    logging.info('Starting')
-    df_bills_2021 = pd.read_csv("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/crec/crec2021.csv")
-    df_bills_2022 = pd.read_csv("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/crec/crec2022.csv")
+    crec_path_2021 = os.path.join(data_dir, "crec", "crec2021.csv")
+    crec_path_2022 = os.path.join(data_dir, "crec", "crec2022.csv")
+    
+    logger.info(f'Loading Congressional Record data from {crec_path_2021} and {crec_path_2022}')
+    df_bills_2021 = pd.read_csv(crec_path_2021)
+    df_bills_2022 = pd.read_csv(crec_path_2022)
     df_bills = pd.concat([df_bills_2021, df_bills_2022], ignore_index=True)
 
-    # Remove rows where speaker starts with any of The CLERK, The SPEAKER, The PRESIDENT, The PRESIDING OFFICER, The Acting CHAIR, The CHAIR, The ACTING PRESIDENT case-insensitive
-    df_bills = df_bills[~df_bills["speaker"].str.lower().str.startswith(("the clerk", "the speaker", "the president", "the presiding officer", "the acting chair", "the chair", "the acting president"), na=False)]
-
-    # Filter out rows where speech is less than 250 characters, to filter out procedural speecges
+    # Remove procedural speakers and filter for substantial speeches
+    logger.info('Filtering out procedural speeches and short contributions')
+    procedural_speakers = ["the clerk", "the speaker", "the president", "the presiding officer", 
+                          "the acting chair", "the chair", "the acting president"]
+    df_bills = df_bills[~df_bills["speaker"].str.lower().str.startswith(tuple(procedural_speakers), na=False)]
     df_bills = df_bills[df_bills['speech'].str.len() >= 250]
+    
     # -----------------------------------
     # 2. Identify potential bills
-    #    Simple criterion: title contains the word 'ACT'or 'RESOLUTION'
     # -----------------------------------
-
-    # Drop or fill missing values in the 'title' column
+    logger.info('Identifying speeches related to bills')
     df_bills = df_bills.dropna(subset=["doc_title"])
-
-    # Filter rows where 'title' contains ' ACT' or 'RESOLUTION'
-    df_bills = df_bills[df_bills['doc_title'].str.contains(' ACT', na=False, case=False) | df_bills['doc_title'].str.contains(' RESOLUTION', na=False, case=False)]
-    # does not contain "acting chair"
+    
+    # Filter for documents likely to be about bills
+    bill_indicators = [' ACT', ' RESOLUTION']
+    df_bills = df_bills[df_bills['doc_title'].str.contains('|'.join(bill_indicators), na=False, case=False)]
     df_bills = df_bills[~df_bills["doc_title"].str.contains("acting chair", na=False, case=False)]
+    
+    # Preprocess speech text
+    logger.info('Preprocessing speech text')
     df_bills['speech'] = df_bills.apply(lambda x: preprocess_text(x['speech']), axis=1)
-    if not os.path.exists("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/all_bills_dict.json"):
+    
+    # -----------------------------------
+    # 3. Fetch bill data from Congress API
+    # -----------------------------------
+    bills_dict_path = os.path.join(data_dir, "all_bills_dict.json")
+    cache_path = os.path.join(data_dir, "cache.json")
+    
+    # Load or build the bills dictionary
+    if not os.path.exists(bills_dict_path):
+        logger.info('Building bills dictionary from Congress API')
         all_bills_dict = {}
         build_bill_data_dict(API_KEY, all_bills_dict, CONGRESS_NUMBER, offset=0)
-        with open("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/all_bills_dict.json", "w") as f:
+        
+        with open(bills_dict_path, "w") as f:
             json.dump(all_bills_dict, f, indent=2)
+        logger.info(f'Saved bills dictionary to {bills_dict_path}')
     else:
-        print("all bills json loaded.")
-        with open("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/all_bills_dict.json", "r") as f:
+        logger.info(f'Loading bills dictionary from {bills_dict_path}')
+        with open(bills_dict_path, "r") as f:
             all_bills_dict = json.load(f)
-    # Now for each stored bill, fetch deeper data (subjects, committees, etc.)
-    cache = {}
-    if os.path.exists("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/cache.json"):
-        print("Cache loaded.")
-        with open("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/cache.json", "r") as f:
+    
+    # Load or build the cache for bill metadata
+    if os.path.exists(cache_path):
+        logger.info(f'Loading bill metadata cache from {cache_path}')
+        with open(cache_path, "r") as f:
             cache = json.load(f)
+    else:
+        logger.info('Creating new bill metadata cache')
+        cache = {}
+    
+    # Fetch detailed bill data
+    logger.info('Fetching detailed bill data for each bill')
     for title_lower, info in tqdm(all_bills_dict.items()):
         bt = info["bill_type"]
         bn = info["bill_number"]
         key = f"{bt},{bn}"
-        # fetch the deeper data
+        
+        # Fetch data if not in cache
         if key in cache:
             fetched = cache[key]
         else:
             fetched = fetch_and_cache_bill_data(API_KEY, CONGRESS_NUMBER, bt, bn)
             cache[key] = fetched
+        
+        # Update bill info with detailed data
         info.update(fetched)
 
-    with open("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/cache.json", "w") as f:
+    # Save updated cache
+    with open(cache_path, "w") as f:
         json.dump(cache, f, indent=2)
-
-    # Apply the function to each row in df_bills
-    logging.info("Adding bill data columns...")
+    logger.info(f'Saved updated bill metadata cache to {cache_path}')
+    
+    # -----------------------------------
+    # 4. Match speeches with bill data
+    # -----------------------------------
+    logger.info("Matching speeches with bill data")
     bill_data_list = []
+    
     for _, row in tqdm(df_bills.iterrows(), total=len(df_bills)):
         bill_data = get_bill_data(row['doc_title'], all_bills_dict)
         bill_data_list.append(bill_data if bill_data else {})
 
-    # Add new columns to df_bills
+    # Add bill data to the dataframe
+    logger.info("Adding bill data columns to dataframe")
     df_bills['standardized_title'] = df_bills['doc_title'].apply(standardize_bill_title)
     df_bills['matched_title'] = [data.get('matched_title', None) for data in bill_data_list]
     df_bills['bill_type'] = [data.get('bill_type', None) for data in bill_data_list]
@@ -554,9 +679,10 @@ def main():
     df_bills['latest_summary_date'] = [data.get('latest_summary_date', None) for data in bill_data_list]
     df_bills['committees'] = [data.get('committees', []) for data in bill_data_list]
 
-    logging.info("Done!")
-
-    df_bills.to_csv("/n/holylabs/LABS/arielpro_lab/Lab/michaelzhao/df_bills.csv")
+    # Save the final processed dataframe
+    output_path = os.path.join(data_dir, output_file)
+    df_bills.to_csv(output_path, index=False)
+    logger.info(f"Done! Processed data saved to {output_path}")
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,3212 @@
+// Taxonomy Tree
+digraph {
+	graph [nodesep=0.5 ranksep=2.0 ratio=expand]
+	node [fontsize=14 height=0.4 margin=0.1 width=0.6]
+	edge [penwidth=0.8]
+	dpi=1200 rankdir=LR size="60,50"
+	policy_0 [label="Government Operations and Politics (938, 11.75%)"]
+	subtopic1_0 [label="beyer_pallone_correa_tx_fl (226, 24.09%)"]
+	policy_0 -> subtopic1_0
+	subtopic2_1 [label="0_voting_voter_election_elections (225, 99.56%)"]
+	subtopic1_0 -> subtopic2_1
+	subtopic2_2 [label="188_veterans_minot_sinn_kiwanis (1, 0.44%)"]
+	subtopic1_0 -> subtopic2_2
+	subtopic1_3 [label="cybersecurity_cyber_ransomware_cybercrime_attacks (68, 7.25%)"]
+	policy_0 -> subtopic1_3
+	subtopic2_4 [label="27_election_pennsylvania_electors_constitution (68, 100.00%)"]
+	subtopic1_3 -> subtopic2_4
+	subtopic1_5 [label="bill_would_act_support_people (59, 6.29%)"]
+	policy_0 -> subtopic1_5
+	subtopic2_6 [label="129_democracy_election_constitution_electors (19, 32.20%)"]
+	subtopic1_5 -> subtopic2_6
+	subtopic2_7 [label="135_schedule_employees_patronage_civil (16, 27.12%)"]
+	subtopic1_5 -> subtopic2_7
+	subtopic2_8 [label="138_whistleblower_whistleblowers_retaliation_protection (14, 23.73%)"]
+	subtopic1_5 -> subtopic2_8
+	subtopic2_9 [label="133_cuban_cuba_havana_intelligence (6, 10.17%)"]
+	subtopic1_5 -> subtopic2_9
+	subtopic2_10 [label="137_recommit_motion_insert_immediately (2, 3.39%)"]
+	subtopic1_5 -> subtopic2_10
+	subtopic2_11 [label="146_till_emmett_lynching_mamie (1, 1.69%)"]
+	subtopic1_5 -> subtopic2_11
+	subtopic2_12 [label="132_appropriations_majority_appropriation_fiscal (1, 1.69%)"]
+	subtopic1_5 -> subtopic2_12
+	subtopic1_13 [label="abortion_women_contraception_roe_right (57, 6.08%)"]
+	policy_0 -> subtopic1_13
+	subtopic2_14 [label="36_postal_service_mail_reform (57, 100.00%)"]
+	subtopic1_13 -> subtopic2_14
+	subtopic1_15 [label="bill_act_would_support_mr (55, 5.86%)"]
+	policy_0 -> subtopic1_15
+	subtopic2_16 [label="149_object_reserving_multibillion_gift (17, 30.91%)"]
+	subtopic1_15 -> subtopic2_16
+	subtopic2_17 [label="173_votes_received_therefrom_pence (12, 21.82%)"]
+	subtopic1_15 -> subtopic2_17
+	subtopic2_18 [label="179_received_therefrom_votes_authentic (12, 21.82%)"]
+	subtopic1_15 -> subtopic2_18
+	subtopic2_19 [label="174_cares_republicans_relief_capitol (5, 9.09%)"]
+	subtopic1_15 -> subtopic2_19
+	subtopic2_20 [label="170_democracy_aapi_founders_thank (4, 7.27%)"]
+	subtopic1_15 -> subtopic2_20
+	subtopic2_21 [label="172_yeas_nays_pursuant_xx (3, 5.45%)"]
+	subtopic1_15 -> subtopic2_21
+	subtopic2_22 [label="151_tubman_statue_harriet_enslaved (1, 1.82%)"]
+	subtopic1_15 -> subtopic2_22
+	subtopic2_23 [label="184_clarke_judge_ms_gupta (1, 1.82%)"]
+	subtopic1_15 -> subtopic2_23
+	subtopic1_24 [label="lgbtq_lgbtqi_equality_gender_data (51, 5.44%)"]
+	policy_0 -> subtopic1_24
+	subtopic2_25 [label="45_certificate_annexed_ascertain_parliamentarians (51, 100.00%)"]
+	subtopic1_24 -> subtopic2_25
+	subtopic1_26 [label="bill_would_act_people_support (42, 4.48%)"]
+	policy_0 -> subtopic1_26
+	subtopic2_27 [label="113_lgbtqi_data_surveys_lgbtq (20, 47.62%)"]
+	subtopic1_26 -> subtopic2_27
+	subtopic2_28 [label="124_physician_nurse_practitioners_assistants (19, 45.24%)"]
+	subtopic1_26 -> subtopic2_28
+	subtopic2_29 [label="121_purpose_yielded_customary_debate (2, 4.76%)"]
+	subtopic1_26 -> subtopic2_29
+	subtopic2_30 [label="125_antitrust_merger_mergers_filing (1, 2.38%)"]
+	subtopic1_26 -> subtopic2_30
+	subtopic1_31 [label="meadows_subpoena_privilege_select_contempt (36, 3.84%)"]
+	policy_0 -> subtopic1_31
+	subtopic2_32 [label="68_statehood_representation_district_residents (36, 100.00%)"]
+	subtopic1_31 -> subtopic2_32
+	subtopic1_33 [label="bill_would_people_mr_speaker (33, 3.52%)"]
+	policy_0 -> subtopic1_33
+	subtopic2_34 [label="80_democracy_president_trump_paper (33, 100.00%)"]
+	subtopic1_33 -> subtopic2_34
+	subtopic1_35 [label="bill_would_people_mr_support (31, 3.30%)"]
+	policy_0 -> subtopic1_35
+	subtopic2_36 [label="81_justices_court_supreme_leak (17, 54.84%)"]
+	subtopic1_35 -> subtopic2_36
+	subtopic2_37 [label="85_district_columbia_authority_cfo (14, 45.16%)"]
+	subtopic1_35 -> subtopic2_37
+	subtopic1_38 [label="considered_substitute_reconsider_agreed_laid (26, 2.77%)"]
+	policy_0 -> subtopic1_38
+	subtopic2_39 [label="1_ukraine_russia_putin_russian (26, 100.00%)"]
+	subtopic1_38 -> subtopic2_39
+	subtopic1_40 [label="people_bill_would_veterans_american (25, 2.67%)"]
+	policy_0 -> subtopic1_40
+	subtopic2_41 [label="59_dhs_acquisition_homeland_department (22, 88.00%)"]
+	subtopic1_40 -> subtopic2_41
+	subtopic2_42 [label="66_commission_capitol_january_attack (3, 12.00%)"]
+	subtopic1_40 -> subtopic2_42
+	subtopic1_43 [label="people_bill_veterans_would_american (25, 2.67%)"]
+	policy_0 -> subtopic1_43
+	subtopic2_44 [label="56_puerto_rico_status_rican (25, 100.00%)"]
+	subtopic1_43 -> subtopic2_44
+	subtopic1_45 [label="bill_would_act_support_mr (18, 1.92%)"]
+	policy_0 -> subtopic1_45
+	subtopic2_46 [label="161_money_dark_disclose_secret (12, 66.67%)"]
+	subtopic1_45 -> subtopic2_46
+	subtopic2_47 [label="163_corporate_campaigns_money_campaign (6, 33.33%)"]
+	subtopic1_45 -> subtopic2_47
+	subtopic1_48 [label="capitol_commission_january_attack_police (15, 1.60%)"]
+	policy_0 -> subtopic1_48
+	subtopic2_49 [label="22_cybersecurity_cyber_ransomware_cybercrime (15, 100.00%)"]
+	subtopic1_48 -> subtopic2_49
+	subtopic1_50 [label="bill_would_people_act_mr (14, 1.49%)"]
+	policy_0 -> subtopic1_50
+	subtopic2_51 [label="96_yield_speakers_balance_close (11, 78.57%)"]
+	subtopic1_50 -> subtopic2_51
+	subtopic2_52 [label="101_returns_audit_tax_trump (3, 21.43%)"]
+	subtopic1_50 -> subtopic2_52
+	subtopic1_53 [label="bill_act_would_support_people (14, 1.49%)"]
+	policy_0 -> subtopic1_53
+	subtopic2_54 [label="148_ambassador_panama_belize_calendar (14, 100.00%)"]
+	subtopic1_53 -> subtopic2_54
+	subtopic1_55 [label="democracy_president_trump_paper_ballot (12, 1.28%)"]
+	policy_0 -> subtopic1_55
+	subtopic2_56 [label="49_guidance_reports_transparency_regulators (12, 100.00%)"]
+	subtopic1_55 -> subtopic2_56
+	subtopic1_57 [label="suspend_purposes_move_rules_amend (12, 1.28%)"]
+	policy_0 -> subtopic1_57
+	subtopic2_58 [label="6_beyer_pallone_correa_tx (12, 100.00%)"]
+	subtopic1_57 -> subtopic2_58
+	subtopic1_59 [label="ukraine_election_russia_people_energy (11, 1.17%)"]
+	policy_0 -> subtopic1_59
+	subtopic2_60 [label="43_suspend_purposes_move_rules (11, 100.00%)"]
+	subtopic1_59 -> subtopic2_60
+	subtopic1_61 [label="marriage_religious_respect_sex_equality (11, 1.17%)"]
+	policy_0 -> subtopic1_61
+	subtopic2_62 [label="9_thank_capitol_staff_mr (11, 100.00%)"]
+	subtopic1_61 -> subtopic2_62
+	subtopic1_63 [label="bill_would_people_act_support (9, 0.96%)"]
+	policy_0 -> subtopic1_63
+	subtopic2_64 [label="91_csbg_community_poverty_action (9, 100.00%)"]
+	subtopic1_63 -> subtopic2_64
+	subtopic1_65 [label="homeless_veterans_va_homelessness_housing (7, 0.75%)"]
+	policy_0 -> subtopic1_65
+	subtopic2_66 [label="50_unanimous_consent_ask_senate (7, 100.00%)"]
+	subtopic1_65 -> subtopic2_66
+	subtopic1_67 [label="build_better_back_childcare_families (6, 0.64%)"]
+	policy_0 -> subtopic1_67
+	subtopic2_68 [label="26_en_bloc_amendments_amendment (4, 66.67%)"]
+	subtopic1_67 -> subtopic2_68
+	subtopic2_69 [label="25_funding_appropriations_continuing_omnibus (2, 33.33%)"]
+	subtopic1_67 -> subtopic2_69
+	subtopic1_70 [label="veterans_ukraine_people_american_bill (6, 0.64%)"]
+	policy_0 -> subtopic1_70
+	subtopic2_71 [label="48_fentanyl_drug_border_methamphetamine (6, 100.00%)"]
+	subtopic1_70 -> subtopic2_71
+	subtopic1_72 [label="union_workers_pro_unions_organize (6, 0.64%)"]
+	policy_0 -> subtopic1_72
+	subtopic2_73 [label="7_border_crisis_illegal_immigration (5, 83.33%)"]
+	subtopic1_72 -> subtopic2_73
+	subtopic2_74 [label="89_beyer_pallone_correa_tx (1, 16.67%)"]
+	subtopic1_72 -> subtopic2_74
+	subtopic1_75 [label="military_ndaa_defense_delaware_servicemembers (6, 0.64%)"]
+	policy_0 -> subtopic1_75
+	subtopic2_76 [label="42_considered_substitute_reconsider_agreed (6, 100.00%)"]
+	subtopic1_75 -> subtopic2_76
+	subtopic1_77 [label="inflation_energy_tax_billion_china (5, 0.53%)"]
+	policy_0 -> subtopic1_77
+	subtopic2_78 [label="33_suspend_affairs_purposes_move (5, 100.00%)"]
+	subtopic1_77 -> subtopic2_78
+	subtopic1_79 [label="veterans_people_ukraine_bill_american (5, 0.53%)"]
+	policy_0 -> subtopic1_79
+	subtopic2_80 [label="52_trafficking_human_victims_sex (4, 80.00%)"]
+	subtopic1_79 -> subtopic2_80
+	subtopic2_81 [label="51_israel_hamas_dome_iron (1, 20.00%)"]
+	subtopic1_79 -> subtopic2_81
+	subtopic1_82 [label="ukraine_people_election_russia_energy (5, 0.53%)"]
+	policy_0 -> subtopic1_82
+	subtopic2_83 [label="44_pursuant_immediate_resolution_consideration (5, 100.00%)"]
+	subtopic1_82 -> subtopic2_83
+	subtopic1_84 [label="appropriations_funding_omnibus_continuing_government (5, 0.53%)"]
+	policy_0 -> subtopic1_84
+	subtopic2_85 [label="16_disaster_fema_disasters_mitigation (5, 100.00%)"]
+	subtopic1_84 -> subtopic2_85
+	subtopic1_86 [label="nan (4, 0.43%)"]
+	policy_0 -> subtopic1_86
+	subtopic1_87 [label="guidance_reports_transparency_regulators_agency (4, 0.43%)"]
+	policy_0 -> subtopic1_87
+	subtopic2_88 [label="69_officers_enforcement_responders_safety (4, 100.00%)"]
+	subtopic1_87 -> subtopic2_88
+	subtopic1_89 [label="suspend_move_rules_amend_purposes (4, 0.43%)"]
+	policy_0 -> subtopic1_89
+	subtopic2_90 [label="4_mental_health_students_suicide (4, 100.00%)"]
+	subtopic1_89 -> subtopic2_90
+	subtopic1_91 [label="veterans_va_toxic_veteran_burn (3, 0.32%)"]
+	policy_0 -> subtopic1_91
+	subtopic2_92 [label="34_sexual_harassment_arbitration_assault (2, 66.67%)"]
+	subtopic1_91 -> subtopic2_92
+	subtopic2_93 [label="47_species_wildlife_conservation_endangered (1, 33.33%)"]
+	subtopic1_91 -> subtopic2_93
+	subtopic1_94 [label="ukraine_people_election_russia_american (3, 0.32%)"]
+	policy_0 -> subtopic1_94
+	subtopic2_95 [label="46_va_veterans_records_automation (3, 100.00%)"]
+	subtopic1_94 -> subtopic2_95
+	subtopic1_96 [label="dhs_acquisition_homeland_department_security (2, 0.21%)"]
+	policy_0 -> subtopic1_96
+	subtopic2_97 [label="107_guard_gi_active_duty (2, 100.00%)"]
+	subtopic1_96 -> subtopic2_97
+	subtopic1_98 [label="inflation_tax_reduction_taxes_prices (2, 0.21%)"]
+	policy_0 -> subtopic1_98
+	subtopic2_99 [label="24_china_chinese_communist_taiwan (1, 50.00%)"]
+	subtopic1_98 -> subtopic2_99
+	subtopic2_100 [label="12_insulin_drug_price_drugs (1, 50.00%)"]
+	subtopic1_98 -> subtopic2_100
+	subtopic1_101 [label="cattle_farmers_producers_food_agriculture (2, 0.21%)"]
+	policy_0 -> subtopic1_101
+	subtopic2_102 [label="73_meadows_subpoena_privilege_select (2, 100.00%)"]
+	subtopic1_101 -> subtopic2_102
+	subtopic1_103 [label="election_american_people_democrats_voting (2, 0.21%)"]
+	policy_0 -> subtopic1_103
+	subtopic2_104 [label="38_energy_oil_gas_prices (2, 100.00%)"]
+	subtopic1_103 -> subtopic2_104
+	subtopic1_105 [label="election_voting_elections_voter_vote (2, 0.21%)"]
+	policy_0 -> subtopic1_105
+	subtopic2_106 [label="13_inflation_tax_democrats_spending (2, 100.00%)"]
+	subtopic1_105 -> subtopic2_106
+	subtopic1_107 [label="bill_people_would_american_mr (1, 0.11%)"]
+	policy_0 -> subtopic1_107
+	subtopic2_108 [label="71_covid_global_pandemic_immunization (1, 100.00%)"]
+	subtopic1_107 -> subtopic2_108
+	subtopic1_109 [label="received_votes_therefrom_authentic_appears (1, 0.11%)"]
+	policy_0 -> subtopic1_109
+	subtopic2_110 [label="2_gun_guns_background_firearms (1, 100.00%)"]
+	subtopic1_109 -> subtopic2_110
+	subtopic1_111 [label="fentanyl_drug_border_methamphetamine_drugs (1, 0.11%)"]
+	policy_0 -> subtopic1_111
+	subtopic2_112 [label="106_equality_lgbtq_discrimination_transgender (1, 100.00%)"]
+	subtopic1_111 -> subtopic2_112
+	subtopic1_113 [label="people_veterans_bill_would_ukraine (1, 0.11%)"]
+	policy_0 -> subtopic1_113
+	subtopic2_114 [label="55_police_enforcement_officers_defund (1, 100.00%)"]
+	subtopic1_113 -> subtopic2_114
+	subtopic1_115 [label="bill_would_act_people_mr (1, 0.11%)"]
+	policy_0 -> subtopic1_115
+	subtopic2_116 [label="111_sba_small_cyber_cybersecurity (1, 100.00%)"]
+	subtopic1_115 -> subtopic2_116
+	subtopic1_117 [label="inflation_tax_billion_china_american (1, 0.11%)"]
+	policy_0 -> subtopic1_117
+	subtopic2_118 [label="23_abortion_roe_women_wade (1, 100.00%)"]
+	subtopic1_117 -> subtopic2_118
+	subtopic1_119 [label="abortion_roe_women_wade_abortions (1, 0.11%)"]
+	policy_0 -> subtopic1_119
+	subtopic2_120 [label="5_small_businesses_business_sba (1, 100.00%)"]
+	subtopic1_119 -> subtopic2_120
+	subtopic1_121 [label="officers_enforcement_police_law_safety (1, 0.11%)"]
+	policy_0 -> subtopic1_121
+	subtopic2_122 [label="18_violence_domestic_survivors_vawa (1, 100.00%)"]
+	subtopic1_121 -> subtopic2_122
+	subtopic1_123 [label="wilderness_lands_land_colorado_uranium (1, 0.11%)"]
+	policy_0 -> subtopic1_123
+	subtopic2_124 [label="79_retirement_savings_plans_secure (1, 100.00%)"]
+	subtopic1_123 -> subtopic2_124
+	policy_1 [label="Armed Forces and National Security (937, 11.73%)"]
+	subtopic1_125 [label="inflation_energy_tax_billion_china (89, 9.50%)"]
+	policy_1 -> subtopic1_125
+	subtopic2_126 [label="33_suspend_affairs_purposes_move (49, 55.06%)"]
+	subtopic1_125 -> subtopic2_126
+	subtopic2_127 [label="37_army_war_ii_ghost (40, 44.94%)"]
+	subtopic1_125 -> subtopic2_127
+	subtopic1_128 [label="small_businesses_business_sba_program (87, 9.28%)"]
+	policy_1 -> subtopic1_128
+	subtopic2_129 [label="15_veterans_toxic_burn_pact (87, 100.00%)"]
+	subtopic1_128 -> subtopic2_129
+	subtopic1_130 [label="rescue_funding_plan_relief_billion (63, 6.72%)"]
+	policy_1 -> subtopic1_130
+	subtopic2_131 [label="21_veterans_va_veteran_care (63, 100.00%)"]
+	subtopic1_130 -> subtopic2_131
+	subtopic1_132 [label="bill_would_act_support_people (57, 6.08%)"]
+	policy_1 -> subtopic1_132
+	subtopic2_133 [label="128_tsa_security_employees_workforce (22, 38.60%)"]
+	subtopic1_132 -> subtopic2_133
+	subtopic2_134 [label="134_coast_guard_alaska_young (16, 28.07%)"]
+	subtopic1_132 -> subtopic2_134
+	subtopic2_135 [label="145_saudi_arabia_yemen_dissidents (9, 15.79%)"]
+	subtopic1_132 -> subtopic2_135
+	subtopic2_136 [label="138_whistleblower_whistleblowers_retaliation_protection (4, 7.02%)"]
+	subtopic1_132 -> subtopic2_136
+	subtopic2_137 [label="135_schedule_employees_patronage_civil (3, 5.26%)"]
+	subtopic1_132 -> subtopic2_137
+	subtopic2_138 [label="137_recommit_motion_insert_immediately (1, 1.75%)"]
+	subtopic1_132 -> subtopic2_138
+	subtopic2_139 [label="153_suspend_purposes_move_rules (1, 1.75%)"]
+	subtopic1_132 -> subtopic2_139
+	subtopic2_140 [label="152_cybersecurity_energy_grid_electric (1, 1.75%)"]
+	subtopic1_132 -> subtopic2_140
+	subtopic1_141 [label="inflation_tax_billion_china_american (56, 5.98%)"]
+	policy_1 -> subtopic1_141
+	subtopic2_142 [label="31_military_ndaa_defense_delaware (51, 91.07%)"]
+	subtopic1_141 -> subtopic2_142
+	subtopic2_143 [label="23_abortion_roe_women_wade (5, 8.93%)"]
+	subtopic1_141 -> subtopic2_143
+	subtopic1_144 [label="bill_would_people_act_mr (49, 5.23%)"]
+	policy_1 -> subtopic1_144
+	subtopic2_145 [label="94_veterans_student_gi_benefits (30, 61.22%)"]
+	subtopic1_144 -> subtopic2_145
+	subtopic2_146 [label="100_maternal_mortality_moms_women (17, 34.69%)"]
+	subtopic1_144 -> subtopic2_146
+	subtopic2_147 [label="99_arpa_als_nih_research (1, 2.04%)"]
+	subtopic1_144 -> subtopic2_147
+	subtopic2_148 [label="96_yield_speakers_balance_close (1, 2.04%)"]
+	subtopic1_144 -> subtopic2_148
+	subtopic1_149 [label="ukraine_people_election_russia_american (44, 4.70%)"]
+	policy_1 -> subtopic1_149
+	subtopic2_150 [label="46_va_veterans_records_automation (44, 100.00%)"]
+	subtopic1_149 -> subtopic2_150
+	subtopic1_151 [label="appropriations_funding_omnibus_continuing_government (34, 3.63%)"]
+	policy_1 -> subtopic1_151
+	subtopic2_152 [label="17_cannabis_marijuana_banking_legalization (27, 79.41%)"]
+	subtopic1_151 -> subtopic2_152
+	subtopic2_153 [label="16_disaster_fema_disasters_mitigation (7, 20.59%)"]
+	subtopic1_151 -> subtopic2_153
+	subtopic1_154 [label="veterans_people_ukraine_bill_american (33, 3.52%)"]
+	policy_1 -> subtopic1_154
+	subtopic2_155 [label="51_israel_hamas_dome_iron (32, 96.97%)"]
+	subtopic1_154 -> subtopic2_155
+	subtopic2_156 [label="52_trafficking_human_victims_sex (1, 3.03%)"]
+	subtopic1_154 -> subtopic2_156
+	subtopic1_157 [label="disaster_fema_disasters_mitigation_recovery (33, 3.52%)"]
+	policy_1 -> subtopic1_157
+	subtopic2_158 [label="72_nuclear_defense_iran_budget (33, 100.00%)"]
+	subtopic1_157 -> subtopic2_158
+	subtopic1_159 [label="suspend_purposes_move_rules_amend (28, 2.99%)"]
+	policy_1 -> subtopic1_159
+	subtopic2_160 [label="6_beyer_pallone_correa_tx (20, 71.43%)"]
+	subtopic1_159 -> subtopic2_160
+	subtopic2_161 [label="8_debt_credit_collection_financial (7, 25.00%)"]
+	subtopic1_159 -> subtopic2_161
+	subtopic2_162 [label="3_infrastructure_transportation_transit_rail (1, 3.57%)"]
+	subtopic1_159 -> subtopic2_162
+	subtopic1_163 [label="bill_would_act_people_mr (28, 2.99%)"]
+	policy_1 -> subtopic1_163
+	subtopic2_164 [label="112_military_amendment_evidence_unlawfully (25, 89.29%)"]
+	subtopic1_163 -> subtopic2_164
+	subtopic2_165 [label="108_tsa_airports_security_traveler (2, 7.14%)"]
+	subtopic1_163 -> subtopic2_165
+	subtopic2_166 [label="111_sba_small_cyber_cybersecurity (1, 3.57%)"]
+	subtopic1_163 -> subtopic2_166
+	subtopic1_167 [label="considered_substitute_reconsider_agreed_laid (27, 2.88%)"]
+	policy_1 -> subtopic1_167
+	subtopic2_168 [label="1_ukraine_russia_putin_russian (27, 100.00%)"]
+	subtopic1_167 -> subtopic2_168
+	subtopic1_169 [label="dhs_acquisition_homeland_department_security (25, 2.67%)"]
+	policy_1 -> subtopic1_169
+	subtopic2_170 [label="107_guard_gi_active_duty (25, 100.00%)"]
+	subtopic1_169 -> subtopic2_170
+	subtopic1_171 [label="bill_would_act_support_mr (25, 2.67%)"]
+	policy_1 -> subtopic1_171
+	subtopic2_172 [label="157_homeless_veterans_va_homelessness (13, 52.00%)"]
+	subtopic1_171 -> subtopic2_172
+	subtopic2_173 [label="159_merchant_marines_amendment_veterans (9, 36.00%)"]
+	subtopic1_171 -> subtopic2_173
+	subtopic2_174 [label="160_missing_unidentified_cold_cases (1, 4.00%)"]
+	subtopic1_171 -> subtopic2_174
+	subtopic2_175 [label="163_corporate_campaigns_money_campaign (1, 4.00%)"]
+	subtopic1_171 -> subtopic2_175
+	subtopic2_176 [label="162_alaska_daylight_saving_alaskan (1, 4.00%)"]
+	subtopic1_171 -> subtopic2_176
+	subtopic1_177 [label="bill_would_act_people_support (25, 2.67%)"]
+	policy_1 -> subtopic1_177
+	subtopic2_178 [label="131_contraception_veterans_va_women (21, 84.00%)"]
+	subtopic1_177 -> subtopic2_178
+	subtopic2_179 [label="117_terrorism_domestic_white_violent (1, 4.00%)"]
+	subtopic1_177 -> subtopic2_179
+	subtopic2_180 [label="119_capitol_police_security_january (1, 4.00%)"]
+	subtopic1_177 -> subtopic2_180
+	subtopic2_181 [label="121_purpose_yielded_customary_debate (1, 4.00%)"]
+	subtopic1_177 -> subtopic2_181
+	subtopic2_182 [label="115_aviation_pilots_aam_air (1, 4.00%)"]
+	subtopic1_177 -> subtopic2_182
+	subtopic1_183 [label="bill_act_would_support_mr (18, 1.92%)"]
+	policy_1 -> subtopic1_183
+	subtopic2_184 [label="180_breast_cancer_mammography_screenings (11, 61.11%)"]
+	subtopic1_183 -> subtopic2_184
+	subtopic2_185 [label="172_yeas_nays_pursuant_xx (6, 33.33%)"]
+	subtopic1_183 -> subtopic2_185
+	subtopic2_186 [label="176_blackwell_school_marfa_site (1, 5.56%)"]
+	subtopic1_183 -> subtopic2_186
+	subtopic1_187 [label="election_american_people_democrats_voting (17, 1.81%)"]
+	policy_1 -> subtopic1_187
+	subtopic2_188 [label="38_energy_oil_gas_prices (17, 100.00%)"]
+	subtopic1_187 -> subtopic2_188
+	subtopic1_189 [label="contraception_contraceptives_birth_control_women (14, 1.49%)"]
+	policy_1 -> subtopic1_189
+	subtopic2_190 [label="19_wilderness_lands_land_colorado (14, 100.00%)"]
+	subtopic1_189 -> subtopic2_190
+	subtopic1_191 [label="marriage_religious_respect_sex_equality (13, 1.39%)"]
+	policy_1 -> subtopic1_191
+	subtopic2_192 [label="9_thank_capitol_staff_mr (13, 100.00%)"]
+	subtopic1_191 -> subtopic2_192
+	subtopic1_193 [label="arbitration_sexual_harassment_forced_assault (12, 1.28%)"]
+	policy_1 -> subtopic1_193
+	subtopic2_194 [label="30_pfas_chemicals_water_epa (12, 100.00%)"]
+	subtopic1_193 -> subtopic2_194
+	subtopic1_195 [label="homeless_veterans_va_homelessness_housing (11, 1.17%)"]
+	policy_1 -> subtopic1_195
+	subtopic2_196 [label="50_unanimous_consent_ask_senate (11, 100.00%)"]
+	subtopic1_195 -> subtopic2_196
+	subtopic1_197 [label="haiti_caribbean_haitian_islands_virgin (11, 1.17%)"]
+	policy_1 -> subtopic1_197
+	subtopic2_198 [label="156_burma_burmese_coup_military (7, 63.64%)"]
+	subtopic1_197 -> subtopic2_198
+	subtopic2_199 [label="155_haiti_caribbean_haitian_islands (4, 36.36%)"]
+	subtopic1_197 -> subtopic2_199
+	subtopic1_200 [label="people_bill_would_american_veterans (10, 1.07%)"]
+	policy_1 -> subtopic1_200
+	subtopic2_201 [label="70_taliban_afghan_afghanistan_journalists (5, 50.00%)"]
+	subtopic1_200 -> subtopic2_201
+	subtopic2_202 [label="67_aumf_iraq_repeal_authorization (5, 50.00%)"]
+	subtopic1_200 -> subtopic2_202
+	subtopic1_203 [label="corporate_campaigns_money_campaign_fines (9, 0.96%)"]
+	policy_1 -> subtopic1_203
+	subtopic2_204 [label="58_contraception_contraceptives_birth_control (9, 100.00%)"]
+	subtopic1_203 -> subtopic2_204
+	subtopic1_205 [label="union_workers_pro_unions_organize (8, 0.85%)"]
+	policy_1 -> subtopic1_205
+	subtopic2_206 [label="89_beyer_pallone_correa_tx (6, 75.00%)"]
+	subtopic1_205 -> subtopic2_206
+	subtopic2_207 [label="7_border_crisis_illegal_immigration (2, 25.00%)"]
+	subtopic1_205 -> subtopic2_207
+	subtopic1_208 [label="pregnant_pregnancy_accommodations_workers_fairness (8, 0.85%)"]
+	policy_1 -> subtopic1_208
+	subtopic2_209 [label="60_ocean_shipping_maritime_coast (8, 100.00%)"]
+	subtopic1_208 -> subtopic2_209
+	subtopic1_210 [label="bill_people_would_american_mr (7, 0.75%)"]
+	policy_1 -> subtopic1_210
+	subtopic2_211 [label="71_covid_global_pandemic_immunization (7, 100.00%)"]
+	subtopic1_210 -> subtopic2_211
+	subtopic1_212 [label="inflation_tax_reduction_taxes_prices (7, 0.75%)"]
+	policy_1 -> subtopic1_212
+	subtopic2_213 [label="24_china_chinese_communist_taiwan (6, 85.71%)"]
+	subtopic1_212 -> subtopic2_213
+	subtopic2_214 [label="12_insulin_drug_price_drugs (1, 14.29%)"]
+	subtopic1_212 -> subtopic2_214
+	subtopic1_215 [label="build_better_back_childcare_families (7, 0.75%)"]
+	policy_1 -> subtopic1_215
+	subtopic2_216 [label="26_en_bloc_amendments_amendment (6, 85.71%)"]
+	subtopic1_215 -> subtopic2_216
+	subtopic2_217 [label="25_funding_appropriations_continuing_omnibus (1, 14.29%)"]
+	subtopic1_215 -> subtopic2_217
+	subtopic1_218 [label="military_ndaa_defense_delaware_servicemembers (6, 0.64%)"]
+	policy_1 -> subtopic1_218
+	subtopic2_219 [label="42_considered_substitute_reconsider_agreed (6, 100.00%)"]
+	subtopic1_218 -> subtopic2_219
+	subtopic1_220 [label="beyer_pallone_correa_tx_fl (6, 0.64%)"]
+	policy_1 -> subtopic1_220
+	subtopic2_221 [label="188_veterans_minot_sinn_kiwanis (6, 100.00%)"]
+	subtopic1_220 -> subtopic2_221
+	subtopic1_222 [label="ukraine_people_election_russia_energy (6, 0.64%)"]
+	policy_1 -> subtopic1_222
+	subtopic2_223 [label="44_pursuant_immediate_resolution_consideration (6, 100.00%)"]
+	subtopic1_222 -> subtopic2_223
+	subtopic1_224 [label="juneteenth_holiday_slavery_slaves_day (6, 0.64%)"]
+	policy_1 -> subtopic1_224
+	subtopic2_225 [label="122_loan_loans_borrowers_consolidation (6, 100.00%)"]
+	subtopic1_224 -> subtopic2_225
+	subtopic1_226 [label="veterans_people_ukraine_bill_would (6, 0.64%)"]
+	policy_1 -> subtopic1_226
+	subtopic2_227 [label="53_water_drinking_wastewater_infrastructure (6, 100.00%)"]
+	subtopic1_226 -> subtopic2_227
+	subtopic1_228 [label="bill_would_people_mr_support (5, 0.53%)"]
+	policy_1 -> subtopic1_228
+	subtopic2_229 [label="85_district_columbia_authority_cfo (3, 60.00%)"]
+	subtopic1_228 -> subtopic2_229
+	subtopic2_230 [label="81_justices_court_supreme_leak (2, 40.00%)"]
+	subtopic1_228 -> subtopic2_230
+	subtopic1_231 [label="bill_would_people_act_support (4, 0.43%)"]
+	policy_1 -> subtopic1_231
+	subtopic2_232 [label="88_arbitration_forced_agreements_contract (3, 75.00%)"]
+	subtopic1_231 -> subtopic2_232
+	subtopic2_233 [label="91_csbg_community_poverty_action (1, 25.00%)"]
+	subtopic1_231 -> subtopic2_233
+	subtopic1_234 [label="abortion_roe_women_wade_abortions (4, 0.43%)"]
+	policy_1 -> subtopic1_234
+	subtopic2_235 [label="5_small_businesses_business_sba (4, 100.00%)"]
+	subtopic1_234 -> subtopic2_235
+	subtopic1_236 [label="stem_science_research_nsf_students (4, 0.43%)"]
+	policy_1 -> subtopic1_236
+	subtopic2_237 [label="28_abortion_life_abortions_unborn (4, 100.00%)"]
+	subtopic1_236 -> subtopic2_237
+	subtopic1_238 [label="capitol_commission_january_attack_police (3, 0.32%)"]
+	policy_1 -> subtopic1_238
+	subtopic2_239 [label="22_cybersecurity_cyber_ransomware_cybercrime (3, 100.00%)"]
+	subtopic1_238 -> subtopic2_239
+	subtopic1_240 [label="bill_people_would_mr_american (3, 0.32%)"]
+	policy_1 -> subtopic1_240
+	subtopic2_241 [label="74_forest_wildfire_wildfires_forests (2, 66.67%)"]
+	subtopic1_240 -> subtopic2_241
+	subtopic2_242 [label="77_debt_ceiling_trillion_spending (1, 33.33%)"]
+	subtopic1_240 -> subtopic2_242
+	subtopic1_243 [label="democracy_president_trump_paper_ballot (3, 0.32%)"]
+	policy_1 -> subtopic1_243
+	subtopic2_244 [label="49_guidance_reports_transparency_regulators (3, 100.00%)"]
+	subtopic1_243 -> subtopic2_244
+	subtopic1_245 [label="va_veterans_veteran_care_affairs (3, 0.32%)"]
+	policy_1 -> subtopic1_245
+	subtopic2_246 [label="11_apprenticeship_apprenticeships_registered_workforce (3, 100.00%)"]
+	subtopic1_245 -> subtopic2_246
+	subtopic1_247 [label="election_voting_elections_voter_vote (3, 0.32%)"]
+	policy_1 -> subtopic1_247
+	subtopic2_248 [label="13_inflation_tax_democrats_spending (3, 100.00%)"]
+	subtopic1_247 -> subtopic2_248
+	subtopic1_249 [label="workplace_violence_osha_nurses_social (3, 0.32%)"]
+	policy_1 -> subtopic1_249
+	subtopic2_250 [label="97_fire_fires_wildfire_monoxide (3, 100.00%)"]
+	subtopic1_249 -> subtopic2_250
+	subtopic1_251 [label="people_bill_would_veterans_american (3, 0.32%)"]
+	policy_1 -> subtopic1_251
+	subtopic2_252 [label="63_acidification_ocean_coastal_lakes (2, 66.67%)"]
+	subtopic1_251 -> subtopic2_252
+	subtopic2_253 [label="66_commission_capitol_january_attack (1, 33.33%)"]
+	subtopic1_251 -> subtopic2_253
+	subtopic1_254 [label="officers_enforcement_police_law_safety (3, 0.32%)"]
+	policy_1 -> subtopic1_254
+	subtopic2_255 [label="18_violence_domestic_survivors_vawa (3, 100.00%)"]
+	subtopic1_254 -> subtopic2_255
+	subtopic1_256 [label="bill_would_people_mr_speaker (2, 0.21%)"]
+	policy_1 -> subtopic1_256
+	subtopic2_257 [label="80_democracy_president_trump_paper (2, 100.00%)"]
+	subtopic1_256 -> subtopic2_257
+	subtopic1_258 [label="considered_unanimous_consent_reconsider_laid (2, 0.21%)"]
+	policy_1 -> subtopic1_258
+	subtopic2_259 [label="29_manufacturing_chips_semiconductor_innovation (2, 100.00%)"]
+	subtopic1_258 -> subtopic2_259
+	subtopic1_260 [label="veterans_ukraine_people_american_bill (1, 0.11%)"]
+	policy_1 -> subtopic1_260
+	subtopic2_261 [label="48_fentanyl_drug_border_methamphetamine (1, 100.00%)"]
+	subtopic1_260 -> subtopic2_261
+	subtopic1_262 [label="bill_act_would_support_people (1, 0.11%)"]
+	policy_1 -> subtopic1_262
+	subtopic2_263 [label="148_ambassador_panama_belize_calendar (1, 100.00%)"]
+	subtopic1_262 -> subtopic2_263
+	subtopic1_264 [label="meadows_subpoena_privilege_select_contempt (1, 0.11%)"]
+	policy_1 -> subtopic1_264
+	subtopic2_265 [label="68_statehood_representation_district_residents (1, 100.00%)"]
+	subtopic1_264 -> subtopic2_265
+	subtopic1_266 [label="guidance_reports_transparency_regulators_agency (1, 0.11%)"]
+	policy_1 -> subtopic1_266
+	subtopic2_267 [label="69_officers_enforcement_responders_safety (1, 100.00%)"]
+	subtopic1_266 -> subtopic2_267
+	subtopic1_268 [label="suspend_move_rules_amend_purposes (1, 0.11%)"]
+	policy_1 -> subtopic1_268
+	subtopic2_269 [label="4_mental_health_students_suicide (1, 100.00%)"]
+	subtopic1_268 -> subtopic2_269
+	subtopic1_270 [label="received_votes_therefrom_authentic_appears (1, 0.11%)"]
+	policy_1 -> subtopic1_270
+	subtopic2_271 [label="2_gun_guns_background_firearms (1, 100.00%)"]
+	subtopic1_270 -> subtopic2_271
+	subtopic1_272 [label="fire_wildfire_fires_wildfires_forest (1, 0.11%)"]
+	policy_1 -> subtopic1_272
+	subtopic2_273 [label="35_hyde_consideration_taxpayer_abortion (1, 100.00%)"]
+	subtopic1_272 -> subtopic2_273
+	policy_2 [label="Economics and Public Finance (921, 11.53%)"]
+	subtopic1_274 [label="tsa_security_transportation_workforce_employees (94, 10.21%)"]
+	policy_2 -> subtopic1_274
+	subtopic2_275 [label="14_reduction_climate_inflation_energy (94, 100.00%)"]
+	subtopic1_274 -> subtopic2_275
+	subtopic1_276 [label="election_pennsylvania_electors_constitution_electoral (93, 10.10%)"]
+	policy_2 -> subtopic1_276
+	subtopic2_277 [label="10_rescue_plan_relief_covid (93, 100.00%)"]
+	subtopic1_276 -> subtopic2_277
+	subtopic1_278 [label="inflation_tax_reduction_taxes_prices (78, 8.47%)"]
+	policy_2 -> subtopic1_278
+	subtopic2_279 [label="12_insulin_drug_price_drugs (74, 94.87%)"]
+	subtopic1_278 -> subtopic2_279
+	subtopic2_280 [label="24_china_chinese_communist_taiwan (4, 5.13%)"]
+	subtopic1_278 -> subtopic2_280
+	subtopic1_281 [label="build_better_back_childcare_families (70, 7.60%)"]
+	policy_2 -> subtopic1_281
+	subtopic2_282 [label="25_funding_appropriations_continuing_omnibus (56, 80.00%)"]
+	subtopic1_281 -> subtopic2_282
+	subtopic2_283 [label="26_en_bloc_amendments_amendment (14, 20.00%)"]
+	subtopic1_281 -> subtopic2_283
+	subtopic1_284 [label="election_voting_elections_voter_vote (67, 7.27%)"]
+	policy_2 -> subtopic1_284
+	subtopic2_285 [label="13_inflation_tax_democrats_spending (67, 100.00%)"]
+	subtopic1_284 -> subtopic2_285
+	subtopic1_286 [label="veterans_va_toxic_burn_exposure (58, 6.30%)"]
+	policy_2 -> subtopic1_286
+	subtopic2_287 [label="32_build_better_back_childcare (58, 100.00%)"]
+	subtopic1_286 -> subtopic2_287
+	subtopic1_288 [label="bill_would_act_people_support (48, 5.21%)"]
+	policy_2 -> subtopic1_288
+	subtopic2_289 [label="125_antitrust_merger_mergers_filing (20, 41.67%)"]
+	subtopic1_288 -> subtopic2_289
+	subtopic2_290 [label="120_jackie_visiting_cancer_walorski (17, 35.42%)"]
+	subtopic1_288 -> subtopic2_290
+	subtopic2_291 [label="121_purpose_yielded_customary_debate (8, 16.67%)"]
+	subtopic1_288 -> subtopic2_291
+	subtopic2_292 [label="124_physician_nurse_practitioners_assistants (2, 4.17%)"]
+	subtopic1_288 -> subtopic2_292
+	subtopic2_293 [label="115_aviation_pilots_aam_air (1, 2.08%)"]
+	subtopic1_288 -> subtopic2_293
+	subtopic1_294 [label="bill_would_act_support_people (45, 4.89%)"]
+	policy_2 -> subtopic1_294
+	subtopic2_295 [label="132_appropriations_majority_appropriation_fiscal (15, 33.33%)"]
+	subtopic1_294 -> subtopic2_295
+	subtopic2_296 [label="133_cuban_cuba_havana_intelligence (12, 26.67%)"]
+	subtopic1_294 -> subtopic2_296
+	subtopic2_297 [label="143_noaa_precipitation_scientist_flooding (7, 15.56%)"]
+	subtopic1_294 -> subtopic2_297
+	subtopic2_298 [label="137_recommit_motion_insert_immediately (5, 11.11%)"]
+	subtopic1_294 -> subtopic2_298
+	subtopic2_299 [label="139_religious_faith_charitable_csbg (4, 8.89%)"]
+	subtopic1_294 -> subtopic2_299
+	subtopic2_300 [label="135_schedule_employees_patronage_civil (1, 2.22%)"]
+	subtopic1_294 -> subtopic2_300
+	subtopic2_301 [label="150_cocaine_crack_sentencing_powder (1, 2.22%)"]
+	subtopic1_294 -> subtopic2_301
+	subtopic1_302 [label="suspend_move_rules_amend_purposes (44, 4.78%)"]
+	policy_2 -> subtopic1_302
+	subtopic2_303 [label="4_mental_health_students_suicide (44, 100.00%)"]
+	subtopic1_302 -> subtopic2_303
+	subtopic1_304 [label="bill_people_would_mr_american (42, 4.56%)"]
+	policy_2 -> subtopic1_304
+	subtopic2_305 [label="76_pregnant_pregnancy_accommodations_workers (36, 85.71%)"]
+	subtopic1_304 -> subtopic2_305
+	subtopic2_306 [label="77_debt_ceiling_trillion_spending (6, 14.29%)"]
+	subtopic1_304 -> subtopic2_306
+	subtopic1_307 [label="bill_would_people_act_mr (34, 3.69%)"]
+	policy_2 -> subtopic1_307
+	subtopic2_308 [label="93_nursing_breastfeeding_mothers_pump (29, 85.29%)"]
+	subtopic1_307 -> subtopic2_308
+	subtopic2_309 [label="96_yield_speakers_balance_close (3, 8.82%)"]
+	subtopic1_307 -> subtopic2_309
+	subtopic2_310 [label="95_restaurants_restaurant_revitalization_businesses (1, 2.94%)"]
+	subtopic1_307 -> subtopic2_310
+	subtopic2_311 [label="99_arpa_als_nih_research (1, 2.94%)"]
+	subtopic1_307 -> subtopic2_311
+	subtopic1_312 [label="suspend_purposes_move_rules_amend (30, 3.26%)"]
+	policy_2 -> subtopic1_312
+	subtopic2_313 [label="6_beyer_pallone_correa_tx (23, 76.67%)"]
+	subtopic1_312 -> subtopic2_313
+	subtopic2_314 [label="3_infrastructure_transportation_transit_rail (4, 13.33%)"]
+	subtopic1_312 -> subtopic2_314
+	subtopic2_315 [label="8_debt_credit_collection_financial (3, 10.00%)"]
+	subtopic1_312 -> subtopic2_315
+	subtopic1_316 [label="bill_would_people_mr_speaker (24, 2.61%)"]
+	policy_2 -> subtopic1_316
+	subtopic2_317 [label="78_irs_agents_audits_tax (24, 100.00%)"]
+	subtopic1_316 -> subtopic2_317
+	subtopic1_318 [label="union_workers_pro_unions_organize (15, 1.63%)"]
+	policy_2 -> subtopic1_318
+	subtopic2_319 [label="7_border_crisis_illegal_immigration (13, 86.67%)"]
+	subtopic1_318 -> subtopic2_319
+	subtopic2_320 [label="89_beyer_pallone_correa_tx (2, 13.33%)"]
+	subtopic1_318 -> subtopic2_320
+	subtopic1_321 [label="bill_act_would_support_mr (13, 1.41%)"]
+	policy_2 -> subtopic1_321
+	subtopic2_322 [label="181_gentleman_remind_minute_yield (10, 76.92%)"]
+	subtopic1_321 -> subtopic2_322
+	subtopic2_323 [label="174_cares_republicans_relief_capitol (2, 15.38%)"]
+	subtopic1_321 -> subtopic2_323
+	subtopic2_324 [label="175_incarcerated_pregnant_women_custody (1, 7.69%)"]
+	subtopic1_321 -> subtopic2_324
+	subtopic1_325 [label="marriage_religious_respect_sex_equality (11, 1.19%)"]
+	policy_2 -> subtopic1_325
+	subtopic2_326 [label="9_thank_capitol_staff_mr (11, 100.00%)"]
+	subtopic1_325 -> subtopic2_326
+	subtopic1_327 [label="ukraine_people_election_russia_energy (10, 1.09%)"]
+	policy_2 -> subtopic1_327
+	subtopic2_328 [label="44_pursuant_immediate_resolution_consideration (10, 100.00%)"]
+	subtopic1_327 -> subtopic2_328
+	subtopic1_329 [label="bill_would_act_support_mr (10, 1.09%)"]
+	policy_2 -> subtopic1_329
+	subtopic2_330 [label="164_victims_voca_victim_fund (6, 60.00%)"]
+	subtopic1_329 -> subtopic2_330
+	subtopic2_331 [label="157_homeless_veterans_va_homelessness (1, 10.00%)"]
+	subtopic1_329 -> subtopic2_331
+	subtopic2_332 [label="162_alaska_daylight_saving_alaskan (1, 10.00%)"]
+	subtopic1_329 -> subtopic2_332
+	subtopic2_333 [label="161_money_dark_disclose_secret (1, 10.00%)"]
+	subtopic1_329 -> subtopic2_333
+	subtopic2_334 [label="163_corporate_campaigns_money_campaign (1, 10.00%)"]
+	subtopic1_329 -> subtopic2_334
+	subtopic1_335 [label="bill_would_people_mr_support (9, 0.98%)"]
+	policy_2 -> subtopic1_335
+	subtopic2_336 [label="84_vaccine_vaccinated_hpv_mask (9, 100.00%)"]
+	subtopic1_335 -> subtopic2_336
+	subtopic1_337 [label="arbitration_sexual_harassment_forced_assault (8, 0.87%)"]
+	policy_2 -> subtopic1_337
+	subtopic2_338 [label="87_ftc_scams_consumers_fraud (8, 100.00%)"]
+	subtopic1_337 -> subtopic2_338
+	subtopic1_339 [label="rescue_funding_plan_relief_billion (8, 0.87%)"]
+	policy_2 -> subtopic1_339
+	subtopic2_340 [label="21_veterans_va_veteran_care (8, 100.00%)"]
+	subtopic1_339 -> subtopic2_340
+	subtopic1_341 [label="returns_audit_tax_trump_irs (7, 0.76%)"]
+	policy_2 -> subtopic1_341
+	subtopic2_342 [label="65_education_teachers_students_learning (7, 100.00%)"]
+	subtopic1_341 -> subtopic2_342
+	subtopic1_343 [label="democracy_president_trump_paper_ballot (6, 0.65%)"]
+	policy_2 -> subtopic1_343
+	subtopic2_344 [label="49_guidance_reports_transparency_regulators (6, 100.00%)"]
+	subtopic1_343 -> subtopic2_344
+	subtopic1_345 [label="bill_people_would_american_mr (6, 0.65%)"]
+	policy_2 -> subtopic1_345
+	subtopic2_346 [label="71_covid_global_pandemic_immunization (6, 100.00%)"]
+	subtopic1_345 -> subtopic2_346
+	subtopic1_347 [label="bill_would_people_act_support (6, 0.65%)"]
+	policy_2 -> subtopic1_347
+	subtopic2_348 [label="91_csbg_community_poverty_action (2, 33.33%)"]
+	subtopic1_347 -> subtopic2_348
+	subtopic2_349 [label="92_hair_crown_hairstyles_black (2, 33.33%)"]
+	subtopic1_347 -> subtopic2_349
+	subtopic2_350 [label="98_investors_companies_sec_insider (2, 33.33%)"]
+	subtopic1_347 -> subtopic2_350
+	subtopic1_351 [label="haiti_caribbean_haitian_islands_virgin (6, 0.65%)"]
+	policy_2 -> subtopic1_351
+	subtopic2_352 [label="155_haiti_caribbean_haitian_islands (6, 100.00%)"]
+	subtopic1_351 -> subtopic2_352
+	subtopic1_353 [label="appropriations_funding_omnibus_continuing_government (6, 0.65%)"]
+	policy_2 -> subtopic1_353
+	subtopic2_354 [label="16_disaster_fema_disasters_mitigation (6, 100.00%)"]
+	subtopic1_353 -> subtopic2_354
+	subtopic1_355 [label="china_manufacturing_chips_chinese_innovation (5, 0.54%)"]
+	policy_2 -> subtopic1_355
+	subtopic2_356 [label="20_indian_tribe_tribal_native (5, 100.00%)"]
+	subtopic1_355 -> subtopic2_356
+	subtopic1_357 [label="capitol_commission_january_attack_police (5, 0.54%)"]
+	policy_2 -> subtopic1_357
+	subtopic2_358 [label="22_cybersecurity_cyber_ransomware_cybercrime (5, 100.00%)"]
+	subtopic1_357 -> subtopic2_358
+	subtopic1_359 [label="people_bill_would_veterans_american (5, 0.54%)"]
+	policy_2 -> subtopic1_359
+	subtopic2_360 [label="64_cattle_farmers_producers_food (2, 40.00%)"]
+	subtopic1_359 -> subtopic2_360
+	subtopic2_361 [label="66_commission_capitol_january_attack (2, 40.00%)"]
+	subtopic1_359 -> subtopic2_361
+	subtopic2_362 [label="63_acidification_ocean_coastal_lakes (1, 20.00%)"]
+	subtopic1_359 -> subtopic2_362
+	subtopic1_363 [label="considered_substitute_reconsider_agreed_laid (5, 0.54%)"]
+	policy_2 -> subtopic1_363
+	subtopic2_364 [label="1_ukraine_russia_putin_russian (5, 100.00%)"]
+	subtopic1_363 -> subtopic2_364
+	subtopic1_365 [label="workplace_violence_osha_nurses_social (4, 0.43%)"]
+	policy_2 -> subtopic1_365
+	subtopic2_366 [label="97_fire_fires_wildfire_monoxide (4, 100.00%)"]
+	subtopic1_365 -> subtopic2_366
+	subtopic1_367 [label="homeless_veterans_va_homelessness_housing (4, 0.43%)"]
+	policy_2 -> subtopic1_367
+	subtopic2_368 [label="50_unanimous_consent_ask_senate (4, 100.00%)"]
+	subtopic1_367 -> subtopic2_368
+	subtopic1_369 [label="ukraine_people_election_russia_american (3, 0.33%)"]
+	policy_2 -> subtopic1_369
+	subtopic2_370 [label="46_va_veterans_records_automation (3, 100.00%)"]
+	subtopic1_369 -> subtopic2_370
+	subtopic1_371 [label="ocean_shipping_maritime_coast_vessels (3, 0.33%)"]
+	policy_2 -> subtopic1_371
+	subtopic2_372 [label="104_elder_seniors_scams_fraud (2, 66.67%)"]
+	subtopic1_371 -> subtopic2_372
+	subtopic2_373 [label="103_shooter_alert_active_alerts (1, 33.33%)"]
+	subtopic1_371 -> subtopic2_373
+	subtopic1_374 [label="military_ndaa_defense_delaware_servicemembers (3, 0.33%)"]
+	policy_2 -> subtopic1_374
+	subtopic2_375 [label="42_considered_substitute_reconsider_agreed (3, 100.00%)"]
+	subtopic1_374 -> subtopic2_375
+	subtopic1_376 [label="election_american_people_democrats_voting (3, 0.33%)"]
+	policy_2 -> subtopic1_376
+	subtopic2_377 [label="38_energy_oil_gas_prices (3, 100.00%)"]
+	subtopic1_376 -> subtopic2_377
+	subtopic1_378 [label="veterans_ukraine_people_american_bill (3, 0.33%)"]
+	policy_2 -> subtopic1_378
+	subtopic2_379 [label="48_fentanyl_drug_border_methamphetamine (3, 100.00%)"]
+	subtopic1_378 -> subtopic2_379
+	subtopic1_380 [label="considered_unanimous_consent_reconsider_laid (3, 0.33%)"]
+	policy_2 -> subtopic1_380
+	subtopic2_381 [label="29_manufacturing_chips_semiconductor_innovation (3, 100.00%)"]
+	subtopic1_380 -> subtopic2_381
+	subtopic1_382 [label="stem_science_research_nsf_students (2, 0.22%)"]
+	policy_2 -> subtopic1_382
+	subtopic2_383 [label="28_abortion_life_abortions_unborn (2, 100.00%)"]
+	subtopic1_382 -> subtopic2_383
+	subtopic1_384 [label="ukraine_election_russia_people_energy (2, 0.22%)"]
+	policy_2 -> subtopic1_384
+	subtopic2_385 [label="43_suspend_purposes_move_rules (2, 100.00%)"]
+	subtopic1_384 -> subtopic2_385
+	subtopic1_386 [label="veterans_people_ukraine_bill_american (2, 0.22%)"]
+	policy_2 -> subtopic1_386
+	subtopic2_387 [label="51_israel_hamas_dome_iron (2, 100.00%)"]
+	subtopic1_386 -> subtopic2_387
+	subtopic1_388 [label="disaster_fema_disasters_mitigation_recovery (2, 0.22%)"]
+	policy_2 -> subtopic1_388
+	subtopic2_389 [label="72_nuclear_defense_iran_budget (2, 100.00%)"]
+	subtopic1_388 -> subtopic2_389
+	subtopic1_390 [label="small_businesses_business_sba_program (2, 0.22%)"]
+	policy_2 -> subtopic1_390
+	subtopic2_391 [label="15_veterans_toxic_burn_pact (2, 100.00%)"]
+	subtopic1_390 -> subtopic2_391
+	subtopic1_392 [label="veterans_people_ukraine_bill_would (2, 0.22%)"]
+	policy_2 -> subtopic1_392
+	subtopic2_393 [label="53_water_drinking_wastewater_infrastructure (2, 100.00%)"]
+	subtopic1_392 -> subtopic2_393
+	subtopic1_394 [label="va_veterans_veteran_care_affairs (2, 0.22%)"]
+	policy_2 -> subtopic1_394
+	subtopic2_395 [label="11_apprenticeship_apprenticeships_registered_workforce (2, 100.00%)"]
+	subtopic1_394 -> subtopic2_395
+	subtopic1_396 [label="jackie_visiting_cancer_walorski_childhood (1, 0.11%)"]
+	policy_2 -> subtopic1_396
+	subtopic2_397 [label="141_pension_delphi_pbgc_pensions (1, 100.00%)"]
+	subtopic1_396 -> subtopic2_397
+	subtopic1_398 [label="people_bill_would_american_veterans (1, 0.11%)"]
+	policy_2 -> subtopic1_398
+	subtopic2_399 [label="70_taliban_afghan_afghanistan_journalists (1, 100.00%)"]
+	subtopic1_398 -> subtopic2_399
+	subtopic1_400 [label="inflation_tax_billion_china_american (1, 0.11%)"]
+	policy_2 -> subtopic1_400
+	subtopic2_401 [label="31_military_ndaa_defense_delaware (1, 100.00%)"]
+	subtopic1_400 -> subtopic2_401
+	subtopic1_402 [label="abortion_roe_women_wade_abortions (1, 0.11%)"]
+	policy_2 -> subtopic1_402
+	subtopic2_403 [label="5_small_businesses_business_sba (1, 100.00%)"]
+	subtopic1_402 -> subtopic2_403
+	subtopic1_404 [label="fire_wildfire_fires_wildfires_forest (1, 0.11%)"]
+	policy_2 -> subtopic1_404
+	subtopic2_405 [label="35_hyde_consideration_taxpayer_abortion (1, 100.00%)"]
+	subtopic1_404 -> subtopic2_405
+	subtopic1_406 [label="received_votes_therefrom_authentic_appears (1, 0.11%)"]
+	policy_2 -> subtopic1_406
+	subtopic2_407 [label="2_gun_guns_background_firearms (1, 100.00%)"]
+	subtopic1_406 -> subtopic2_407
+	subtopic1_408 [label="bill_would_act_people_mr (1, 0.11%)"]
+	policy_2 -> subtopic1_408
+	subtopic2_409 [label="109_telehealth_patients_medicare_flexibilities (1, 100.00%)"]
+	subtopic1_408 -> subtopic2_409
+	subtopic1_410 [label="guidance_reports_transparency_regulators_agency (1, 0.11%)"]
+	policy_2 -> subtopic1_410
+	subtopic2_411 [label="69_officers_enforcement_responders_safety (1, 100.00%)"]
+	subtopic1_410 -> subtopic2_411
+	subtopic1_412 [label="abortion_women_contraception_roe_right (1, 0.11%)"]
+	policy_2 -> subtopic1_412
+	subtopic2_413 [label="36_postal_service_mail_reform (1, 100.00%)"]
+	subtopic1_412 -> subtopic2_413
+	subtopic1_414 [label="bill_act_would_support_people (1, 0.11%)"]
+	policy_2 -> subtopic1_414
+	subtopic2_415 [label="148_ambassador_panama_belize_calendar (1, 100.00%)"]
+	subtopic1_414 -> subtopic2_415
+	subtopic1_416 [label="cybersecurity_cyber_ransomware_cybercrime_attacks (1, 0.11%)"]
+	policy_2 -> subtopic1_416
+	subtopic2_417 [label="27_election_pennsylvania_electors_constitution (1, 100.00%)"]
+	subtopic1_416 -> subtopic2_417
+	subtopic1_418 [label="veterans_va_toxic_veteran_burn (1, 0.11%)"]
+	policy_2 -> subtopic1_418
+	subtopic2_419 [label="34_sexual_harassment_arbitration_assault (1, 100.00%)"]
+	subtopic1_418 -> subtopic2_419
+	subtopic1_420 [label="beyer_pallone_correa_tx_fl (1, 0.11%)"]
+	policy_2 -> subtopic1_420
+	subtopic2_421 [label="0_voting_voter_election_elections (1, 100.00%)"]
+	subtopic1_420 -> subtopic2_421
+	policy_3 [label="Crime and Law Enforcement (765, 9.58%)"]
+	subtopic1_422 [label="received_votes_therefrom_authentic_appears (210, 27.45%)"]
+	policy_3 -> subtopic1_422
+	subtopic2_423 [label="2_gun_guns_background_firearms (210, 100.00%)"]
+	subtopic1_422 -> subtopic2_423
+	subtopic1_424 [label="appropriations_funding_omnibus_continuing_government (52, 6.80%)"]
+	policy_3 -> subtopic1_424
+	subtopic2_425 [label="17_cannabis_marijuana_banking_legalization (51, 98.08%)"]
+	subtopic1_424 -> subtopic2_425
+	subtopic2_426 [label="16_disaster_fema_disasters_mitigation (1, 1.92%)"]
+	subtopic1_424 -> subtopic2_426
+	subtopic1_427 [label="bill_would_act_people_support (49, 6.41%)"]
+	policy_3 -> subtopic1_427
+	subtopic2_428 [label="127_defendants_incarcerated_trial_juveniles (22, 44.90%)"]
+	subtopic1_427 -> subtopic2_428
+	subtopic2_429 [label="117_terrorism_domestic_white_violent (22, 44.90%)"]
+	subtopic1_427 -> subtopic2_429
+	subtopic2_430 [label="123_suspend_move_rules_amend (4, 8.16%)"]
+	subtopic1_427 -> subtopic2_430
+	subtopic2_431 [label="121_purpose_yielded_customary_debate (1, 2.04%)"]
+	subtopic1_427 -> subtopic2_431
+	subtopic1_432 [label="officers_enforcement_police_law_safety (46, 6.01%)"]
+	policy_3 -> subtopic1_432
+	subtopic2_433 [label="18_violence_domestic_survivors_vawa (46, 100.00%)"]
+	subtopic1_432 -> subtopic2_433
+	subtopic1_434 [label="bill_would_act_support_people (45, 5.88%)"]
+	policy_3 -> subtopic1_434
+	subtopic2_435 [label="136_abuse_child_children_icac (19, 42.22%)"]
+	subtopic1_434 -> subtopic2_435
+	subtopic2_436 [label="150_cocaine_crack_sentencing_powder (16, 35.56%)"]
+	subtopic1_434 -> subtopic2_436
+	subtopic2_437 [label="146_till_emmett_lynching_mamie (8, 17.78%)"]
+	subtopic1_434 -> subtopic2_437
+	subtopic2_438 [label="139_religious_faith_charitable_csbg (1, 2.22%)"]
+	subtopic1_434 -> subtopic2_438
+	subtopic2_439 [label="137_recommit_motion_insert_immediately (1, 2.22%)"]
+	subtopic1_434 -> subtopic2_439
+	subtopic1_440 [label="people_veterans_bill_would_ukraine (37, 4.84%)"]
+	policy_3 -> subtopic1_440
+	subtopic2_441 [label="55_police_enforcement_officers_defund (37, 100.00%)"]
+	subtopic1_440 -> subtopic2_441
+	subtopic1_442 [label="bill_would_people_mr_support (36, 4.71%)"]
+	policy_3 -> subtopic1_442
+	subtopic2_443 [label="83_hate_asian_crimes_anti (26, 72.22%)"]
+	subtopic1_442 -> subtopic2_443
+	subtopic2_444 [label="85_district_columbia_authority_cfo (5, 13.89%)"]
+	subtopic1_442 -> subtopic2_444
+	subtopic2_445 [label="81_justices_court_supreme_leak (5, 13.89%)"]
+	subtopic1_442 -> subtopic2_445
+	subtopic1_446 [label="ocean_shipping_maritime_coast_vessels (36, 4.71%)"]
+	policy_3 -> subtopic1_446
+	subtopic2_447 [label="103_shooter_alert_active_alerts (27, 75.00%)"]
+	subtopic1_446 -> subtopic2_447
+	subtopic2_448 [label="104_elder_seniors_scams_fraud (9, 25.00%)"]
+	subtopic1_446 -> subtopic2_448
+	subtopic1_449 [label="bill_would_act_support_mr (32, 4.18%)"]
+	policy_3 -> subtopic1_449
+	subtopic2_450 [label="160_missing_unidentified_cold_cases (13, 40.62%)"]
+	subtopic1_449 -> subtopic2_450
+	subtopic2_451 [label="166_reentry_jail_mesa_prison (11, 34.38%)"]
+	subtopic1_449 -> subtopic2_451
+	subtopic2_452 [label="164_victims_voca_victim_fund (7, 21.88%)"]
+	subtopic1_449 -> subtopic2_452
+	subtopic2_453 [label="159_merchant_marines_amendment_veterans (1, 3.12%)"]
+	subtopic1_449 -> subtopic2_453
+	subtopic1_454 [label="bill_would_act_people_mr (28, 3.66%)"]
+	policy_3 -> subtopic1_454
+	subtopic2_455 [label="105_withheld_police_floyd_name (27, 96.43%)"]
+	subtopic1_454 -> subtopic2_455
+	subtopic2_456 [label="111_sba_small_cyber_cybersecurity (1, 3.57%)"]
+	subtopic1_454 -> subtopic2_456
+	subtopic1_457 [label="guidance_reports_transparency_regulators_agency (27, 3.53%)"]
+	policy_3 -> subtopic1_457
+	subtopic2_458 [label="69_officers_enforcement_responders_safety (27, 100.00%)"]
+	subtopic1_457 -> subtopic2_458
+	subtopic1_459 [label="veterans_people_ukraine_bill_american (26, 3.40%)"]
+	policy_3 -> subtopic1_459
+	subtopic2_460 [label="52_trafficking_human_victims_sex (26, 100.00%)"]
+	subtopic1_459 -> subtopic2_460
+	subtopic1_461 [label="bill_act_would_support_mr (23, 3.01%)"]
+	policy_3 -> subtopic1_461
+	subtopic2_462 [label="175_incarcerated_pregnant_women_custody (10, 43.48%)"]
+	subtopic1_461 -> subtopic2_462
+	subtopic2_463 [label="184_clarke_judge_ms_gupta (6, 26.09%)"]
+	subtopic1_461 -> subtopic2_463
+	subtopic2_464 [label="189_notarization_remote_notarizations_orders (4, 17.39%)"]
+	subtopic1_461 -> subtopic2_464
+	subtopic2_465 [label="170_democracy_aapi_founders_thank (2, 8.70%)"]
+	subtopic1_461 -> subtopic2_465
+	subtopic2_466 [label="182_hockey_willie_ree_nhl (1, 4.35%)"]
+	subtopic1_461 -> subtopic2_466
+	subtopic1_467 [label="veterans_ukraine_people_american_bill (20, 2.61%)"]
+	policy_3 -> subtopic1_467
+	subtopic2_468 [label="48_fentanyl_drug_border_methamphetamine (20, 100.00%)"]
+	subtopic1_467 -> subtopic2_468
+	subtopic1_469 [label="suspend_move_rules_amend_purposes (16, 2.09%)"]
+	policy_3 -> subtopic1_469
+	subtopic2_470 [label="4_mental_health_students_suicide (16, 100.00%)"]
+	subtopic1_469 -> subtopic2_470
+	subtopic1_471 [label="capitol_commission_january_attack_police (11, 1.44%)"]
+	policy_3 -> subtopic1_471
+	subtopic2_472 [label="22_cybersecurity_cyber_ransomware_cybercrime (11, 100.00%)"]
+	subtopic1_471 -> subtopic2_472
+	subtopic1_473 [label="suspend_purposes_move_rules_amend (10, 1.31%)"]
+	policy_3 -> subtopic1_473
+	subtopic2_474 [label="6_beyer_pallone_correa_tx (7, 70.00%)"]
+	subtopic1_473 -> subtopic2_474
+	subtopic2_475 [label="3_infrastructure_transportation_transit_rail (2, 20.00%)"]
+	subtopic1_473 -> subtopic2_475
+	subtopic2_476 [label="8_debt_credit_collection_financial (1, 10.00%)"]
+	subtopic1_473 -> subtopic2_476
+	subtopic1_477 [label="military_ndaa_defense_delaware_servicemembers (9, 1.18%)"]
+	policy_3 -> subtopic1_477
+	subtopic2_478 [label="42_considered_substitute_reconsider_agreed (9, 100.00%)"]
+	subtopic1_477 -> subtopic2_478
+	subtopic1_479 [label="ukraine_people_election_russia_energy (7, 0.92%)"]
+	policy_3 -> subtopic1_479
+	subtopic2_480 [label="44_pursuant_immediate_resolution_consideration (7, 100.00%)"]
+	subtopic1_479 -> subtopic2_480
+	subtopic1_481 [label="union_workers_pro_unions_organize (7, 0.92%)"]
+	policy_3 -> subtopic1_481
+	subtopic2_482 [label="7_border_crisis_illegal_immigration (6, 85.71%)"]
+	subtopic1_481 -> subtopic2_482
+	subtopic2_483 [label="89_beyer_pallone_correa_tx (1, 14.29%)"]
+	subtopic1_481 -> subtopic2_483
+	subtopic1_484 [label="build_better_back_childcare_families (7, 0.92%)"]
+	policy_3 -> subtopic1_484
+	subtopic2_485 [label="26_en_bloc_amendments_amendment (7, 100.00%)"]
+	subtopic1_484 -> subtopic2_485
+	subtopic1_486 [label="marriage_religious_respect_sex_equality (5, 0.65%)"]
+	policy_3 -> subtopic1_486
+	subtopic2_487 [label="9_thank_capitol_staff_mr (5, 100.00%)"]
+	subtopic1_486 -> subtopic2_487
+	subtopic1_488 [label="rescue_funding_plan_relief_billion (5, 0.65%)"]
+	policy_3 -> subtopic1_488
+	subtopic2_489 [label="21_veterans_va_veteran_care (5, 100.00%)"]
+	subtopic1_488 -> subtopic2_489
+	subtopic1_490 [label="ukraine_election_russia_people_energy (4, 0.52%)"]
+	policy_3 -> subtopic1_490
+	subtopic2_491 [label="43_suspend_purposes_move_rules (4, 100.00%)"]
+	subtopic1_490 -> subtopic2_491
+	subtopic1_492 [label="inflation_tax_reduction_taxes_prices (3, 0.39%)"]
+	policy_3 -> subtopic1_492
+	subtopic2_493 [label="12_insulin_drug_price_drugs (2, 66.67%)"]
+	subtopic1_492 -> subtopic2_493
+	subtopic2_494 [label="24_china_chinese_communist_taiwan (1, 33.33%)"]
+	subtopic1_492 -> subtopic2_494
+	subtopic1_495 [label="inflation_tax_billion_china_american (2, 0.26%)"]
+	policy_3 -> subtopic1_495
+	subtopic2_496 [label="31_military_ndaa_defense_delaware (2, 100.00%)"]
+	subtopic1_495 -> subtopic2_496
+	subtopic1_497 [label="bill_would_people_act_support (2, 0.26%)"]
+	policy_3 -> subtopic1_497
+	subtopic2_498 [label="91_csbg_community_poverty_action (2, 100.00%)"]
+	subtopic1_497 -> subtopic2_498
+	subtopic1_499 [label="considered_substitute_reconsider_agreed_laid (1, 0.13%)"]
+	policy_3 -> subtopic1_499
+	subtopic2_500 [label="1_ukraine_russia_putin_russian (1, 100.00%)"]
+	subtopic1_499 -> subtopic2_500
+	subtopic1_501 [label="beyer_pallone_correa_tx_fl (1, 0.13%)"]
+	policy_3 -> subtopic1_501
+	subtopic2_502 [label="0_voting_voter_election_elections (1, 100.00%)"]
+	subtopic1_501 -> subtopic2_502
+	subtopic1_503 [label="election_pennsylvania_electors_constitution_electoral (1, 0.13%)"]
+	policy_3 -> subtopic1_503
+	subtopic2_504 [label="10_rescue_plan_relief_covid (1, 100.00%)"]
+	subtopic1_503 -> subtopic2_504
+	subtopic1_505 [label="bill_people_would_mr_american (1, 0.13%)"]
+	policy_3 -> subtopic1_505
+	subtopic2_506 [label="75_juneteenth_holiday_slavery_slaves (1, 100.00%)"]
+	subtopic1_505 -> subtopic2_506
+	subtopic1_507 [label="nan (1, 0.13%)"]
+	policy_3 -> subtopic1_507
+	subtopic1_508 [label="stem_science_research_nsf_students (1, 0.13%)"]
+	policy_3 -> subtopic1_508
+	subtopic2_509 [label="28_abortion_life_abortions_unborn (1, 100.00%)"]
+	subtopic1_508 -> subtopic2_509
+	subtopic1_510 [label="bill_would_people_act_mr (1, 0.13%)"]
+	policy_3 -> subtopic1_510
+	subtopic2_511 [label="94_veterans_student_gi_benefits (1, 100.00%)"]
+	subtopic1_510 -> subtopic2_511
+	subtopic1_512 [label="homeless_veterans_va_homelessness_housing (1, 0.13%)"]
+	policy_3 -> subtopic1_512
+	subtopic2_513 [label="50_unanimous_consent_ask_senate (1, 100.00%)"]
+	subtopic1_512 -> subtopic2_513
+	subtopic1_514 [label="veterans_va_toxic_veteran_burn (1, 0.13%)"]
+	policy_3 -> subtopic1_514
+	subtopic2_515 [label="34_sexual_harassment_arbitration_assault (1, 100.00%)"]
+	subtopic1_514 -> subtopic2_515
+	subtopic1_516 [label="inflation_energy_tax_billion_china (1, 0.13%)"]
+	policy_3 -> subtopic1_516
+	subtopic2_517 [label="33_suspend_affairs_purposes_move (1, 100.00%)"]
+	subtopic1_516 -> subtopic2_517
+	policy_4 [label="Health (546, 6.84%)"]
+	subtopic1_518 [label="inflation_tax_billion_china_american (67, 12.27%)"]
+	policy_4 -> subtopic1_518
+	subtopic2_519 [label="23_abortion_roe_women_wade (67, 100.00%)"]
+	subtopic1_518 -> subtopic2_519
+	subtopic1_520 [label="bill_would_people_act_mr (63, 11.54%)"]
+	policy_4 -> subtopic1_520
+	subtopic2_521 [label="99_arpa_als_nih_research (26, 41.27%)"]
+	subtopic1_520 -> subtopic2_521
+	subtopic2_522 [label="102_stillbirth_congenital_defects_newborn (23, 36.51%)"]
+	subtopic1_520 -> subtopic2_522
+	subtopic2_523 [label="100_maternal_mortality_moms_women (12, 19.05%)"]
+	subtopic1_520 -> subtopic2_523
+	subtopic2_524 [label="96_yield_speakers_balance_close (2, 3.17%)"]
+	subtopic1_520 -> subtopic2_524
+	subtopic1_525 [label="stem_science_research_nsf_students (58, 10.62%)"]
+	policy_4 -> subtopic1_525
+	subtopic2_526 [label="28_abortion_life_abortions_unborn (58, 100.00%)"]
+	subtopic1_525 -> subtopic2_526
+	subtopic1_527 [label="suspend_move_rules_amend_purposes (56, 10.26%)"]
+	policy_4 -> subtopic1_527
+	subtopic2_528 [label="4_mental_health_students_suicide (56, 100.00%)"]
+	subtopic1_527 -> subtopic2_528
+	subtopic1_529 [label="fire_wildfire_fires_wildfires_forest (53, 9.71%)"]
+	policy_4 -> subtopic1_529
+	subtopic2_530 [label="35_hyde_consideration_taxpayer_abortion (53, 100.00%)"]
+	subtopic1_529 -> subtopic2_530
+	subtopic1_531 [label="bill_would_act_people_support (52, 9.52%)"]
+	policy_4 -> subtopic1_531
+	subtopic2_532 [label="116_heart_carol_disease_andy (25, 48.08%)"]
+	subtopic1_531 -> subtopic2_532
+	subtopic2_533 [label="123_suspend_move_rules_amend (18, 34.62%)"]
+	subtopic1_531 -> subtopic2_533
+	subtopic2_534 [label="120_jackie_visiting_cancer_walorski (8, 15.38%)"]
+	subtopic1_531 -> subtopic2_534
+	subtopic2_535 [label="121_purpose_yielded_customary_debate (1, 1.92%)"]
+	subtopic1_531 -> subtopic2_535
+	subtopic1_536 [label="corporate_campaigns_money_campaign_fines (35, 6.41%)"]
+	policy_4 -> subtopic1_536
+	subtopic2_537 [label="58_contraception_contraceptives_birth_control (32, 91.43%)"]
+	subtopic1_536 -> subtopic2_537
+	subtopic2_538 [label="57_formula_infant_baby_fda (3, 8.57%)"]
+	subtopic1_536 -> subtopic2_538
+	subtopic1_539 [label="bill_would_act_people_mr (26, 4.76%)"]
+	policy_4 -> subtopic1_539
+	subtopic2_540 [label="109_telehealth_patients_medicare_flexibilities (26, 100.00%)"]
+	subtopic1_539 -> subtopic2_540
+	subtopic1_541 [label="bill_people_would_mr_american (25, 4.58%)"]
+	policy_4 -> subtopic1_541
+	subtopic2_542 [label="77_debt_ceiling_trillion_spending (25, 100.00%)"]
+	subtopic1_541 -> subtopic2_542
+	subtopic1_543 [label="inflation_tax_reduction_taxes_prices (21, 3.85%)"]
+	policy_4 -> subtopic1_543
+	subtopic2_544 [label="12_insulin_drug_price_drugs (21, 100.00%)"]
+	subtopic1_543 -> subtopic2_544
+	subtopic1_545 [label="bill_would_people_mr_support (12, 2.20%)"]
+	policy_4 -> subtopic1_545
+	subtopic2_546 [label="84_vaccine_vaccinated_hpv_mask (10, 83.33%)"]
+	subtopic1_545 -> subtopic2_546
+	subtopic2_547 [label="81_justices_court_supreme_leak (2, 16.67%)"]
+	subtopic1_545 -> subtopic2_547
+	subtopic1_548 [label="appropriations_funding_omnibus_continuing_government (11, 2.01%)"]
+	policy_4 -> subtopic1_548
+	subtopic2_549 [label="17_cannabis_marijuana_banking_legalization (10, 90.91%)"]
+	subtopic1_548 -> subtopic2_549
+	subtopic2_550 [label="16_disaster_fema_disasters_mitigation (1, 9.09%)"]
+	subtopic1_548 -> subtopic2_550
+	subtopic1_551 [label="suspend_purposes_move_rules_amend (8, 1.47%)"]
+	policy_4 -> subtopic1_551
+	subtopic2_552 [label="6_beyer_pallone_correa_tx (7, 87.50%)"]
+	subtopic1_551 -> subtopic2_552
+	subtopic2_553 [label="8_debt_credit_collection_financial (1, 12.50%)"]
+	subtopic1_551 -> subtopic2_553
+	subtopic1_554 [label="guidance_reports_transparency_regulators_agency (7, 1.28%)"]
+	policy_4 -> subtopic1_554
+	subtopic2_555 [label="69_officers_enforcement_responders_safety (7, 100.00%)"]
+	subtopic1_554 -> subtopic2_555
+	subtopic1_556 [label="marriage_religious_respect_sex_equality (6, 1.10%)"]
+	policy_4 -> subtopic1_556
+	subtopic2_557 [label="9_thank_capitol_staff_mr (6, 100.00%)"]
+	subtopic1_556 -> subtopic2_557
+	subtopic1_558 [label="ukraine_people_election_russia_energy (6, 1.10%)"]
+	policy_4 -> subtopic1_558
+	subtopic2_559 [label="44_pursuant_immediate_resolution_consideration (6, 100.00%)"]
+	subtopic1_558 -> subtopic2_559
+	subtopic1_560 [label="bill_people_would_american_mr (5, 0.92%)"]
+	policy_4 -> subtopic1_560
+	subtopic2_561 [label="71_covid_global_pandemic_immunization (5, 100.00%)"]
+	subtopic1_560 -> subtopic2_561
+	subtopic1_562 [label="people_bill_would_veterans_american (4, 0.73%)"]
+	policy_4 -> subtopic1_562
+	subtopic2_563 [label="61_food_meals_malnutrition_nutrition (4, 100.00%)"]
+	subtopic1_562 -> subtopic2_563
+	subtopic1_564 [label="union_workers_pro_unions_organize (4, 0.73%)"]
+	policy_4 -> subtopic1_564
+	subtopic2_565 [label="89_beyer_pallone_correa_tx (3, 75.00%)"]
+	subtopic1_564 -> subtopic2_565
+	subtopic2_566 [label="7_border_crisis_illegal_immigration (1, 25.00%)"]
+	subtopic1_564 -> subtopic2_566
+	subtopic1_567 [label="small_businesses_business_sba_program (4, 0.73%)"]
+	policy_4 -> subtopic1_567
+	subtopic2_568 [label="15_veterans_toxic_burn_pact (4, 100.00%)"]
+	subtopic1_567 -> subtopic2_568
+	subtopic1_569 [label="bill_act_would_support_mr (3, 0.55%)"]
+	policy_4 -> subtopic1_569
+	subtopic2_570 [label="180_breast_cancer_mammography_screenings (1, 33.33%)"]
+	subtopic1_569 -> subtopic2_570
+	subtopic2_571 [label="174_cares_republicans_relief_capitol (1, 33.33%)"]
+	subtopic1_569 -> subtopic2_571
+	subtopic2_572 [label="181_gentleman_remind_minute_yield (1, 33.33%)"]
+	subtopic1_569 -> subtopic2_572
+	subtopic1_573 [label="veterans_ukraine_people_american_bill (3, 0.55%)"]
+	policy_4 -> subtopic1_573
+	subtopic2_574 [label="48_fentanyl_drug_border_methamphetamine (3, 100.00%)"]
+	subtopic1_573 -> subtopic2_574
+	subtopic1_575 [label="military_ndaa_defense_delaware_servicemembers (3, 0.55%)"]
+	policy_4 -> subtopic1_575
+	subtopic2_576 [label="42_considered_substitute_reconsider_agreed (3, 100.00%)"]
+	subtopic1_575 -> subtopic2_576
+	subtopic1_577 [label="veterans_people_ukraine_bill_american (2, 0.37%)"]
+	policy_4 -> subtopic1_577
+	subtopic2_578 [label="52_trafficking_human_victims_sex (1, 50.00%)"]
+	subtopic1_577 -> subtopic2_578
+	subtopic2_579 [label="51_israel_hamas_dome_iron (1, 50.00%)"]
+	subtopic1_577 -> subtopic2_579
+	subtopic1_580 [label="election_voting_elections_voter_vote (2, 0.37%)"]
+	policy_4 -> subtopic1_580
+	subtopic2_581 [label="13_inflation_tax_democrats_spending (2, 100.00%)"]
+	subtopic1_580 -> subtopic2_581
+	subtopic1_582 [label="considered_substitute_reconsider_agreed_laid (2, 0.37%)"]
+	policy_4 -> subtopic1_582
+	subtopic2_583 [label="1_ukraine_russia_putin_russian (2, 100.00%)"]
+	subtopic1_582 -> subtopic2_583
+	subtopic1_584 [label="people_veterans_bill_would_ukraine (2, 0.37%)"]
+	policy_4 -> subtopic1_584
+	subtopic2_585 [label="55_police_enforcement_officers_defund (2, 100.00%)"]
+	subtopic1_584 -> subtopic2_585
+	subtopic1_586 [label="considered_unanimous_consent_reconsider_laid (1, 0.18%)"]
+	policy_4 -> subtopic1_586
+	subtopic2_587 [label="29_manufacturing_chips_semiconductor_innovation (1, 100.00%)"]
+	subtopic1_586 -> subtopic2_587
+	subtopic1_588 [label="returns_audit_tax_trump_irs (1, 0.18%)"]
+	policy_4 -> subtopic1_588
+	subtopic2_589 [label="65_education_teachers_students_learning (1, 100.00%)"]
+	subtopic1_588 -> subtopic2_589
+	subtopic1_590 [label="democracy_president_trump_paper_ballot (1, 0.18%)"]
+	policy_4 -> subtopic1_590
+	subtopic2_591 [label="49_guidance_reports_transparency_regulators (1, 100.00%)"]
+	subtopic1_590 -> subtopic2_591
+	subtopic1_592 [label="inflation_energy_tax_billion_china (1, 0.18%)"]
+	policy_4 -> subtopic1_592
+	subtopic2_593 [label="33_suspend_affairs_purposes_move (1, 100.00%)"]
+	subtopic1_592 -> subtopic2_593
+	subtopic1_594 [label="election_pennsylvania_electors_constitution_electoral (1, 0.18%)"]
+	policy_4 -> subtopic1_594
+	subtopic2_595 [label="10_rescue_plan_relief_covid (1, 100.00%)"]
+	subtopic1_594 -> subtopic2_595
+	subtopic1_596 [label="china_manufacturing_chips_chinese_innovation (1, 0.18%)"]
+	policy_4 -> subtopic1_596
+	subtopic2_597 [label="20_indian_tribe_tribal_native (1, 100.00%)"]
+	subtopic1_596 -> subtopic2_597
+	policy_5 [label="International Affairs (421, 5.27%)"]
+	subtopic1_598 [label="considered_substitute_reconsider_agreed_laid (95, 22.57%)"]
+	policy_5 -> subtopic1_598
+	subtopic2_599 [label="1_ukraine_russia_putin_russian (95, 100.00%)"]
+	subtopic1_598 -> subtopic2_599
+	subtopic1_600 [label="people_bill_would_veterans_american (55, 13.06%)"]
+	policy_5 -> subtopic1_600
+	subtopic2_601 [label="62_uyghur_xinjiang_forced_china (40, 72.73%)"]
+	subtopic1_600 -> subtopic2_601
+	subtopic2_602 [label="61_food_meals_malnutrition_nutrition (15, 27.27%)"]
+	subtopic1_600 -> subtopic2_602
+	subtopic1_603 [label="people_bill_would_american_veterans (37, 8.79%)"]
+	policy_5 -> subtopic1_603
+	subtopic2_604 [label="67_aumf_iraq_repeal_authorization (35, 94.59%)"]
+	subtopic1_603 -> subtopic2_604
+	subtopic2_605 [label="70_taliban_afghan_afghanistan_journalists (2, 5.41%)"]
+	subtopic1_603 -> subtopic2_605
+	subtopic1_606 [label="bill_would_people_act_support (35, 8.31%)"]
+	policy_5 -> subtopic1_606
+	subtopic2_607 [label="90_islamophobia_muslim_muslims_anti (32, 91.43%)"]
+	subtopic1_606 -> subtopic2_607
+	subtopic2_608 [label="82_workplace_violence_osha_nurses (3, 8.57%)"]
+	subtopic1_606 -> subtopic2_608
+	subtopic1_609 [label="bill_would_act_support_people (24, 5.70%)"]
+	policy_5 -> subtopic1_609
+	subtopic2_610 [label="144_telecommunications_itu_huawei_networks (14, 58.33%)"]
+	subtopic1_609 -> subtopic2_610
+	subtopic2_611 [label="145_saudi_arabia_yemen_dissidents (8, 33.33%)"]
+	subtopic1_609 -> subtopic2_611
+	subtopic2_612 [label="133_cuban_cuba_havana_intelligence (2, 8.33%)"]
+	subtopic1_609 -> subtopic2_612
+	subtopic1_613 [label="blackwell_school_marfa_site_historic (15, 3.56%)"]
+	policy_5 -> subtopic1_613
+	subtopic2_614 [label="154_libya_mozambique_ethiopia_terrorist (15, 100.00%)"]
+	subtopic1_613 -> subtopic2_614
+	subtopic1_615 [label="build_better_back_childcare_families (14, 3.33%)"]
+	policy_5 -> subtopic1_615
+	subtopic2_616 [label="25_funding_appropriations_continuing_omnibus (8, 57.14%)"]
+	subtopic1_615 -> subtopic2_616
+	subtopic2_617 [label="26_en_bloc_amendments_amendment (6, 42.86%)"]
+	subtopic1_615 -> subtopic2_617
+	subtopic1_618 [label="haiti_caribbean_haitian_islands_virgin (13, 3.09%)"]
+	policy_5 -> subtopic1_618
+	subtopic2_619 [label="156_burma_burmese_coup_military (8, 61.54%)"]
+	subtopic1_618 -> subtopic2_619
+	subtopic2_620 [label="155_haiti_caribbean_haitian_islands (5, 38.46%)"]
+	subtopic1_618 -> subtopic2_620
+	subtopic1_621 [label="ukraine_election_russia_people_energy (13, 3.09%)"]
+	policy_5 -> subtopic1_621
+	subtopic2_622 [label="43_suspend_purposes_move_rules (13, 100.00%)"]
+	subtopic1_621 -> subtopic2_622
+	subtopic1_623 [label="union_workers_pro_unions_organize (13, 3.09%)"]
+	policy_5 -> subtopic1_623
+	subtopic2_624 [label="7_border_crisis_illegal_immigration (9, 69.23%)"]
+	subtopic1_623 -> subtopic2_624
+	subtopic2_625 [label="89_beyer_pallone_correa_tx (4, 30.77%)"]
+	subtopic1_623 -> subtopic2_625
+	subtopic1_626 [label="bill_act_would_support_mr (12, 2.85%)"]
+	policy_5 -> subtopic1_626
+	subtopic2_627 [label="169_magnitsky_human_lgbtqi_torture (11, 91.67%)"]
+	subtopic1_626 -> subtopic2_627
+	subtopic2_628 [label="170_democracy_aapi_founders_thank (1, 8.33%)"]
+	subtopic1_626 -> subtopic2_628
+	subtopic1_629 [label="returns_audit_tax_trump_irs (10, 2.38%)"]
+	policy_5 -> subtopic1_629
+	subtopic2_630 [label="65_education_teachers_students_learning (10, 100.00%)"]
+	subtopic1_629 -> subtopic2_630
+	subtopic1_631 [label="bill_people_would_american_mr (9, 2.14%)"]
+	policy_5 -> subtopic1_631
+	subtopic2_632 [label="71_covid_global_pandemic_immunization (9, 100.00%)"]
+	subtopic1_631 -> subtopic2_632
+	subtopic1_633 [label="marriage_religious_respect_sex_equality (8, 1.90%)"]
+	policy_5 -> subtopic1_633
+	subtopic2_634 [label="9_thank_capitol_staff_mr (8, 100.00%)"]
+	subtopic1_633 -> subtopic2_634
+	subtopic1_635 [label="veterans_people_ukraine_bill_american (8, 1.90%)"]
+	policy_5 -> subtopic1_635
+	subtopic2_636 [label="52_trafficking_human_victims_sex (6, 75.00%)"]
+	subtopic1_635 -> subtopic2_636
+	subtopic2_637 [label="51_israel_hamas_dome_iron (2, 25.00%)"]
+	subtopic1_635 -> subtopic2_637
+	subtopic1_638 [label="inflation_tax_reduction_taxes_prices (6, 1.43%)"]
+	policy_5 -> subtopic1_638
+	subtopic2_639 [label="24_china_chinese_communist_taiwan (6, 100.00%)"]
+	subtopic1_638 -> subtopic2_639
+	subtopic1_640 [label="people_bill_veterans_would_american (6, 1.43%)"]
+	policy_5 -> subtopic1_640
+	subtopic2_641 [label="56_puerto_rico_status_rican (6, 100.00%)"]
+	subtopic1_640 -> subtopic2_641
+	subtopic1_642 [label="suspend_purposes_move_rules_amend (5, 1.19%)"]
+	policy_5 -> subtopic1_642
+	subtopic2_643 [label="6_beyer_pallone_correa_tx (5, 100.00%)"]
+	subtopic1_642 -> subtopic2_643
+	subtopic1_644 [label="bill_would_act_people_support (5, 1.19%)"]
+	policy_5 -> subtopic1_644
+	subtopic2_645 [label="121_purpose_yielded_customary_debate (2, 40.00%)"]
+	subtopic1_644 -> subtopic2_645
+	subtopic2_646 [label="123_suspend_move_rules_amend (1, 20.00%)"]
+	subtopic1_644 -> subtopic2_646
+	subtopic2_647 [label="113_lgbtqi_data_surveys_lgbtq (1, 20.00%)"]
+	subtopic1_644 -> subtopic2_647
+	subtopic2_648 [label="124_physician_nurse_practitioners_assistants (1, 20.00%)"]
+	subtopic1_644 -> subtopic2_648
+	subtopic1_649 [label="veterans_va_toxic_veteran_burn (5, 1.19%)"]
+	policy_5 -> subtopic1_649
+	subtopic2_650 [label="47_species_wildlife_conservation_endangered (5, 100.00%)"]
+	subtopic1_649 -> subtopic2_650
+	subtopic1_651 [label="election_american_people_democrats_voting (5, 1.19%)"]
+	policy_5 -> subtopic1_651
+	subtopic2_652 [label="38_energy_oil_gas_prices (5, 100.00%)"]
+	subtopic1_651 -> subtopic2_652
+	subtopic1_653 [label="corporate_campaigns_money_campaign_fines (3, 0.71%)"]
+	policy_5 -> subtopic1_653
+	subtopic2_654 [label="58_contraception_contraceptives_birth_control (2, 66.67%)"]
+	subtopic1_653 -> subtopic2_654
+	subtopic2_655 [label="57_formula_infant_baby_fda (1, 33.33%)"]
+	subtopic1_653 -> subtopic2_655
+	subtopic1_656 [label="capitol_commission_january_attack_police (3, 0.71%)"]
+	policy_5 -> subtopic1_656
+	subtopic2_657 [label="22_cybersecurity_cyber_ransomware_cybercrime (3, 100.00%)"]
+	subtopic1_656 -> subtopic2_657
+	subtopic1_658 [label="ukraine_people_election_russia_energy (3, 0.71%)"]
+	policy_5 -> subtopic1_658
+	subtopic2_659 [label="44_pursuant_immediate_resolution_consideration (3, 100.00%)"]
+	subtopic1_658 -> subtopic2_659
+	subtopic1_660 [label="beyer_pallone_correa_tx_fl (2, 0.48%)"]
+	policy_5 -> subtopic1_660
+	subtopic2_661 [label="188_veterans_minot_sinn_kiwanis (1, 50.00%)"]
+	subtopic1_660 -> subtopic2_661
+	subtopic2_662 [label="0_voting_voter_election_elections (1, 50.00%)"]
+	subtopic1_660 -> subtopic2_662
+	subtopic1_663 [label="fire_wildfire_fires_wildfires_forest (2, 0.48%)"]
+	policy_5 -> subtopic1_663
+	subtopic2_664 [label="35_hyde_consideration_taxpayer_abortion (2, 100.00%)"]
+	subtopic1_663 -> subtopic2_664
+	subtopic1_665 [label="bill_would_people_act_mr (2, 0.48%)"]
+	policy_5 -> subtopic1_665
+	subtopic2_666 [label="96_yield_speakers_balance_close (2, 100.00%)"]
+	subtopic1_665 -> subtopic2_666
+	subtopic1_667 [label="officers_enforcement_police_law_safety (1, 0.24%)"]
+	policy_5 -> subtopic1_667
+	subtopic2_668 [label="18_violence_domestic_survivors_vawa (1, 100.00%)"]
+	subtopic1_667 -> subtopic2_668
+	subtopic1_669 [label="inflation_tax_billion_china_american (1, 0.24%)"]
+	policy_5 -> subtopic1_669
+	subtopic2_670 [label="31_military_ndaa_defense_delaware (1, 100.00%)"]
+	subtopic1_669 -> subtopic2_670
+	subtopic1_671 [label="veterans_people_ukraine_bill_would (1, 0.24%)"]
+	policy_5 -> subtopic1_671
+	subtopic2_672 [label="53_water_drinking_wastewater_infrastructure (1, 100.00%)"]
+	subtopic1_671 -> subtopic2_672
+	subtopic1_673 [label="nursing_breastfeeding_mothers_pump_milk (1, 0.24%)"]
+	policy_5 -> subtopic1_673
+	subtopic2_674 [label="140_ban_muslim_countries_president (1, 100.00%)"]
+	subtopic1_673 -> subtopic2_674
+	subtopic1_675 [label="bill_would_people_mr_support (1, 0.24%)"]
+	policy_5 -> subtopic1_675
+	subtopic2_676 [label="83_hate_asian_crimes_anti (1, 100.00%)"]
+	subtopic1_675 -> subtopic2_676
+	subtopic1_677 [label="election_voting_elections_voter_vote (1, 0.24%)"]
+	policy_5 -> subtopic1_677
+	subtopic2_678 [label="13_inflation_tax_democrats_spending (1, 100.00%)"]
+	subtopic1_677 -> subtopic2_678
+	subtopic1_679 [label="arbitration_sexual_harassment_forced_assault (1, 0.24%)"]
+	policy_5 -> subtopic1_679
+	subtopic2_680 [label="30_pfas_chemicals_water_epa (1, 100.00%)"]
+	subtopic1_679 -> subtopic2_680
+	subtopic1_681 [label="fentanyl_drug_border_methamphetamine_drugs (1, 0.24%)"]
+	policy_5 -> subtopic1_681
+	subtopic2_682 [label="106_equality_lgbtq_discrimination_transgender (1, 100.00%)"]
+	subtopic1_681 -> subtopic2_682
+	subtopic1_683 [label="considered_unanimous_consent_reconsider_laid (1, 0.24%)"]
+	policy_5 -> subtopic1_683
+	subtopic2_684 [label="29_manufacturing_chips_semiconductor_innovation (1, 100.00%)"]
+	subtopic1_683 -> subtopic2_684
+	subtopic1_685 [label="veterans_ukraine_people_american_bill (1, 0.24%)"]
+	policy_5 -> subtopic1_685
+	subtopic2_686 [label="48_fentanyl_drug_border_methamphetamine (1, 100.00%)"]
+	subtopic1_685 -> subtopic2_686
+	subtopic1_687 [label="bill_would_act_support_mr (1, 0.24%)"]
+	policy_5 -> subtopic1_687
+	subtopic2_688 [label="163_corporate_campaigns_money_campaign (1, 100.00%)"]
+	subtopic1_687 -> subtopic2_688
+	subtopic1_689 [label="military_ndaa_defense_delaware_servicemembers (1, 0.24%)"]
+	policy_5 -> subtopic1_689
+	subtopic2_690 [label="42_considered_substitute_reconsider_agreed (1, 100.00%)"]
+	subtopic1_689 -> subtopic2_690
+	subtopic1_691 [label="bill_act_would_support_people (1, 0.24%)"]
+	policy_5 -> subtopic1_691
+	subtopic2_692 [label="147_suspend_amend_purposes_rules (1, 100.00%)"]
+	subtopic1_691 -> subtopic2_692
+	policy_6 [label="Science, Technology, Communications (385, 4.82%)"]
+	subtopic1_693 [label="bill_would_act_people_support (54, 14.03%)"]
+	policy_6 -> subtopic1_693
+	subtopic2_694 [label="114_science_nsf_research_stem (26, 48.15%)"]
+	subtopic1_693 -> subtopic2_694
+	subtopic2_695 [label="118_spectrum_wireless_ntia_communications (23, 42.59%)"]
+	subtopic1_693 -> subtopic2_695
+	subtopic2_696 [label="119_capitol_police_security_january (3, 5.56%)"]
+	subtopic1_693 -> subtopic2_696
+	subtopic2_697 [label="117_terrorism_domestic_white_violent (1, 1.85%)"]
+	subtopic1_693 -> subtopic2_697
+	subtopic2_698 [label="125_antitrust_merger_mergers_filing (1, 1.85%)"]
+	subtopic1_693 -> subtopic2_698
+	subtopic1_699 [label="considered_unanimous_consent_reconsider_laid (54, 14.03%)"]
+	policy_6 -> subtopic1_699
+	subtopic2_700 [label="29_manufacturing_chips_semiconductor_innovation (54, 100.00%)"]
+	subtopic1_699 -> subtopic2_700
+	subtopic1_701 [label="inflation_tax_reduction_taxes_prices (49, 12.73%)"]
+	policy_6 -> subtopic1_701
+	subtopic2_702 [label="24_china_chinese_communist_taiwan (48, 97.96%)"]
+	subtopic1_701 -> subtopic2_702
+	subtopic2_703 [label="12_insulin_drug_price_drugs (1, 2.04%)"]
+	subtopic1_701 -> subtopic2_703
+	subtopic1_704 [label="capitol_commission_january_attack_police (30, 7.79%)"]
+	policy_6 -> subtopic1_704
+	subtopic2_705 [label="22_cybersecurity_cyber_ransomware_cybercrime (30, 100.00%)"]
+	subtopic1_704 -> subtopic2_705
+	subtopic1_706 [label="bill_would_act_support_mr (22, 5.71%)"]
+	policy_6 -> subtopic1_706
+	subtopic2_707 [label="167_weather_nwr_noaa_nws (13, 59.09%)"]
+	subtopic1_706 -> subtopic2_707
+	subtopic2_708 [label="162_alaska_daylight_saving_alaskan (7, 31.82%)"]
+	subtopic1_706 -> subtopic2_708
+	subtopic2_709 [label="163_corporate_campaigns_money_campaign (1, 4.55%)"]
+	subtopic1_706 -> subtopic2_709
+	subtopic2_710 [label="161_money_dark_disclose_secret (1, 4.55%)"]
+	subtopic1_706 -> subtopic2_710
+	subtopic1_711 [label="bill_would_act_people_mr (15, 3.90%)"]
+	policy_6 -> subtopic1_711
+	subtopic2_712 [label="110_stem_students_science_msis (15, 100.00%)"]
+	subtopic1_711 -> subtopic2_712
+	subtopic1_713 [label="bill_would_act_support_people (12, 3.12%)"]
+	policy_6 -> subtopic1_713
+	subtopic2_714 [label="143_noaa_precipitation_scientist_flooding (6, 50.00%)"]
+	subtopic1_713 -> subtopic2_714
+	subtopic2_715 [label="144_telecommunications_itu_huawei_networks (2, 16.67%)"]
+	subtopic1_713 -> subtopic2_715
+	subtopic2_716 [label="132_appropriations_majority_appropriation_fiscal (1, 8.33%)"]
+	subtopic1_713 -> subtopic2_716
+	subtopic2_717 [label="137_recommit_motion_insert_immediately (1, 8.33%)"]
+	subtopic1_713 -> subtopic2_717
+	subtopic2_718 [label="138_whistleblower_whistleblowers_retaliation_protection (1, 8.33%)"]
+	subtopic1_713 -> subtopic2_718
+	subtopic2_719 [label="136_abuse_child_children_icac (1, 8.33%)"]
+	subtopic1_713 -> subtopic2_719
+	subtopic1_720 [label="build_better_back_childcare_families (11, 2.86%)"]
+	policy_6 -> subtopic1_720
+	subtopic2_721 [label="26_en_bloc_amendments_amendment (8, 72.73%)"]
+	subtopic1_720 -> subtopic2_721
+	subtopic2_722 [label="25_funding_appropriations_continuing_omnibus (3, 27.27%)"]
+	subtopic1_720 -> subtopic2_722
+	subtopic1_723 [label="people_bill_would_veterans_american (9, 2.34%)"]
+	policy_6 -> subtopic1_723
+	subtopic2_724 [label="63_acidification_ocean_coastal_lakes (5, 55.56%)"]
+	subtopic1_723 -> subtopic2_724
+	subtopic2_725 [label="66_commission_capitol_january_attack (3, 33.33%)"]
+	subtopic1_723 -> subtopic2_725
+	subtopic2_726 [label="62_uyghur_xinjiang_forced_china (1, 11.11%)"]
+	subtopic1_723 -> subtopic2_726
+	subtopic1_727 [label="veterans_people_ukraine_bill_american (9, 2.34%)"]
+	policy_6 -> subtopic1_727
+	subtopic2_728 [label="51_israel_hamas_dome_iron (9, 100.00%)"]
+	subtopic1_727 -> subtopic2_728
+	subtopic1_729 [label="suspend_purposes_move_rules_amend (9, 2.34%)"]
+	policy_6 -> subtopic1_729
+	subtopic2_730 [label="6_beyer_pallone_correa_tx (5, 55.56%)"]
+	subtopic1_729 -> subtopic2_730
+	subtopic2_731 [label="3_infrastructure_transportation_transit_rail (3, 33.33%)"]
+	subtopic1_729 -> subtopic2_731
+	subtopic2_732 [label="8_debt_credit_collection_financial (1, 11.11%)"]
+	subtopic1_729 -> subtopic2_732
+	subtopic1_733 [label="bill_act_would_support_mr (8, 2.08%)"]
+	policy_6 -> subtopic1_733
+	subtopic2_734 [label="184_clarke_judge_ms_gupta (3, 37.50%)"]
+	subtopic1_733 -> subtopic2_734
+	subtopic2_735 [label="174_cares_republicans_relief_capitol (2, 25.00%)"]
+	subtopic1_733 -> subtopic2_735
+	subtopic2_736 [label="170_democracy_aapi_founders_thank (2, 25.00%)"]
+	subtopic1_733 -> subtopic2_736
+	subtopic2_737 [label="172_yeas_nays_pursuant_xx (1, 12.50%)"]
+	subtopic1_733 -> subtopic2_737
+	subtopic1_738 [label="homeless_veterans_va_homelessness_housing (8, 2.08%)"]
+	policy_6 -> subtopic1_738
+	subtopic2_739 [label="50_unanimous_consent_ask_senate (8, 100.00%)"]
+	subtopic1_738 -> subtopic2_739
+	subtopic1_740 [label="marriage_religious_respect_sex_equality (7, 1.82%)"]
+	policy_6 -> subtopic1_740
+	subtopic2_741 [label="9_thank_capitol_staff_mr (7, 100.00%)"]
+	subtopic1_740 -> subtopic2_741
+	subtopic1_742 [label="bill_would_people_mr_support (7, 1.82%)"]
+	policy_6 -> subtopic1_742
+	subtopic2_743 [label="84_vaccine_vaccinated_hpv_mask (5, 71.43%)"]
+	subtopic1_742 -> subtopic2_743
+	subtopic2_744 [label="83_hate_asian_crimes_anti (2, 28.57%)"]
+	subtopic1_742 -> subtopic2_744
+	subtopic1_745 [label="election_voting_elections_voter_vote (6, 1.56%)"]
+	policy_6 -> subtopic1_745
+	subtopic2_746 [label="13_inflation_tax_democrats_spending (6, 100.00%)"]
+	subtopic1_745 -> subtopic2_746
+	subtopic1_747 [label="ukraine_election_russia_people_energy (6, 1.56%)"]
+	policy_6 -> subtopic1_747
+	subtopic2_748 [label="43_suspend_purposes_move_rules (6, 100.00%)"]
+	subtopic1_747 -> subtopic2_748
+	subtopic1_749 [label="bill_people_would_american_mr (5, 1.30%)"]
+	policy_6 -> subtopic1_749
+	subtopic2_750 [label="71_covid_global_pandemic_immunization (5, 100.00%)"]
+	subtopic1_749 -> subtopic2_750
+	subtopic1_751 [label="veterans_va_toxic_veteran_burn (5, 1.30%)"]
+	policy_6 -> subtopic1_751
+	subtopic2_752 [label="34_sexual_harassment_arbitration_assault (4, 80.00%)"]
+	subtopic1_751 -> subtopic2_752
+	subtopic2_753 [label="47_species_wildlife_conservation_endangered (1, 20.00%)"]
+	subtopic1_751 -> subtopic2_753
+	subtopic1_754 [label="inflation_energy_tax_billion_china (5, 1.30%)"]
+	policy_6 -> subtopic1_754
+	subtopic2_755 [label="37_army_war_ii_ghost (5, 100.00%)"]
+	subtopic1_754 -> subtopic2_755
+	subtopic1_756 [label="inflation_tax_billion_china_american (5, 1.30%)"]
+	policy_6 -> subtopic1_756
+	subtopic2_757 [label="31_military_ndaa_defense_delaware (5, 100.00%)"]
+	subtopic1_756 -> subtopic2_757
+	subtopic1_758 [label="considered_substitute_reconsider_agreed_laid (4, 1.04%)"]
+	policy_6 -> subtopic1_758
+	subtopic2_759 [label="1_ukraine_russia_putin_russian (4, 100.00%)"]
+	subtopic1_758 -> subtopic2_759
+	subtopic1_760 [label="va_veterans_veteran_care_affairs (4, 1.04%)"]
+	policy_6 -> subtopic1_760
+	subtopic2_761 [label="11_apprenticeship_apprenticeships_registered_workforce (4, 100.00%)"]
+	subtopic1_760 -> subtopic2_761
+	subtopic1_762 [label="china_manufacturing_chips_chinese_innovation (3, 0.78%)"]
+	policy_6 -> subtopic1_762
+	subtopic2_763 [label="20_indian_tribe_tribal_native (3, 100.00%)"]
+	subtopic1_762 -> subtopic2_763
+	subtopic1_764 [label="bill_would_people_act_mr (3, 0.78%)"]
+	policy_6 -> subtopic1_764
+	subtopic2_765 [label="96_yield_speakers_balance_close (3, 100.00%)"]
+	subtopic1_764 -> subtopic2_765
+	subtopic1_766 [label="pregnant_pregnancy_accommodations_workers_fairness (3, 0.78%)"]
+	policy_6 -> subtopic1_766
+	subtopic2_767 [label="60_ocean_shipping_maritime_coast (3, 100.00%)"]
+	subtopic1_766 -> subtopic2_767
+	subtopic1_768 [label="people_bill_would_american_veterans (3, 0.78%)"]
+	policy_6 -> subtopic1_768
+	subtopic2_769 [label="70_taliban_afghan_afghanistan_journalists (3, 100.00%)"]
+	subtopic1_768 -> subtopic2_769
+	subtopic1_770 [label="election_american_people_democrats_voting (3, 0.78%)"]
+	policy_6 -> subtopic1_770
+	subtopic2_771 [label="38_energy_oil_gas_prices (3, 100.00%)"]
+	subtopic1_770 -> subtopic2_771
+	subtopic1_772 [label="bill_would_people_act_support (2, 0.52%)"]
+	policy_6 -> subtopic1_772
+	subtopic2_773 [label="91_csbg_community_poverty_action (1, 50.00%)"]
+	subtopic1_772 -> subtopic2_773
+	subtopic2_774 [label="98_investors_companies_sec_insider (1, 50.00%)"]
+	subtopic1_772 -> subtopic2_774
+	subtopic1_775 [label="meadows_subpoena_privilege_select_contempt (2, 0.52%)"]
+	policy_6 -> subtopic1_775
+	subtopic2_776 [label="68_statehood_representation_district_residents (2, 100.00%)"]
+	subtopic1_775 -> subtopic2_776
+	subtopic1_777 [label="beyer_pallone_correa_tx_fl (2, 0.52%)"]
+	policy_6 -> subtopic1_777
+	subtopic2_778 [label="0_voting_voter_election_elections (1, 50.00%)"]
+	subtopic1_777 -> subtopic2_778
+	subtopic2_779 [label="188_veterans_minot_sinn_kiwanis (1, 50.00%)"]
+	subtopic1_777 -> subtopic2_779
+	subtopic1_780 [label="military_ndaa_defense_delaware_servicemembers (2, 0.52%)"]
+	policy_6 -> subtopic1_780
+	subtopic2_781 [label="42_considered_substitute_reconsider_agreed (2, 100.00%)"]
+	subtopic1_780 -> subtopic2_781
+	subtopic1_782 [label="bill_people_would_mr_american (2, 0.52%)"]
+	policy_6 -> subtopic1_782
+	subtopic2_783 [label="77_debt_ceiling_trillion_spending (1, 50.00%)"]
+	subtopic1_782 -> subtopic2_783
+	subtopic2_784 [label="75_juneteenth_holiday_slavery_slaves (1, 50.00%)"]
+	subtopic1_782 -> subtopic2_784
+	subtopic1_785 [label="ukraine_people_election_russia_energy (2, 0.52%)"]
+	policy_6 -> subtopic1_785
+	subtopic2_786 [label="44_pursuant_immediate_resolution_consideration (2, 100.00%)"]
+	subtopic1_785 -> subtopic2_786
+	subtopic1_787 [label="bill_act_would_support_people (2, 0.52%)"]
+	policy_6 -> subtopic1_787
+	subtopic2_788 [label="148_ambassador_panama_belize_calendar (1, 50.00%)"]
+	subtopic1_787 -> subtopic2_788
+	subtopic2_789 [label="147_suspend_amend_purposes_rules (1, 50.00%)"]
+	subtopic1_787 -> subtopic2_789
+	subtopic1_790 [label="election_pennsylvania_electors_constitution_electoral (1, 0.26%)"]
+	policy_6 -> subtopic1_790
+	subtopic2_791 [label="10_rescue_plan_relief_covid (1, 100.00%)"]
+	subtopic1_790 -> subtopic2_791
+	subtopic1_792 [label="blackwell_school_marfa_site_historic (1, 0.26%)"]
+	policy_6 -> subtopic1_792
+	subtopic2_793 [label="154_libya_mozambique_ethiopia_terrorist (1, 100.00%)"]
+	subtopic1_792 -> subtopic2_793
+	subtopic1_794 [label="veterans_people_ukraine_bill_would (1, 0.26%)"]
+	policy_6 -> subtopic1_794
+	subtopic2_795 [label="53_water_drinking_wastewater_infrastructure (1, 100.00%)"]
+	subtopic1_794 -> subtopic2_795
+	subtopic1_796 [label="disaster_fema_disasters_mitigation_recovery (1, 0.26%)"]
+	policy_6 -> subtopic1_796
+	subtopic2_797 [label="72_nuclear_defense_iran_budget (1, 100.00%)"]
+	subtopic1_796 -> subtopic2_797
+	subtopic1_798 [label="arbitration_sexual_harassment_forced_assault (1, 0.26%)"]
+	policy_6 -> subtopic1_798
+	subtopic2_799 [label="86_dreamers_dream_daca_tps (1, 100.00%)"]
+	subtopic1_798 -> subtopic2_799
+	subtopic1_800 [label="union_workers_pro_unions_organize (1, 0.26%)"]
+	policy_6 -> subtopic1_800
+	subtopic2_801 [label="89_beyer_pallone_correa_tx (1, 100.00%)"]
+	subtopic1_800 -> subtopic2_801
+	subtopic1_802 [label="veterans_va_toxic_burn_exposure (1, 0.26%)"]
+	policy_6 -> subtopic1_802
+	subtopic2_803 [label="32_build_better_back_childcare (1, 100.00%)"]
+	subtopic1_802 -> subtopic2_803
+	subtopic1_804 [label="contraception_contraceptives_birth_control_women (1, 0.26%)"]
+	policy_6 -> subtopic1_804
+	subtopic2_805 [label="19_wilderness_lands_land_colorado (1, 100.00%)"]
+	subtopic1_804 -> subtopic2_805
+	subtopic1_806 [label="nan (1, 0.26%)"]
+	policy_6 -> subtopic1_806
+	subtopic1_807 [label="cybersecurity_cyber_ransomware_cybercrime_attacks (1, 0.26%)"]
+	policy_6 -> subtopic1_807
+	subtopic2_808 [label="27_election_pennsylvania_electors_constitution (1, 100.00%)"]
+	subtopic1_807 -> subtopic2_808
+	subtopic1_809 [label="tsa_security_transportation_workforce_employees (1, 0.26%)"]
+	policy_6 -> subtopic1_809
+	subtopic2_810 [label="14_reduction_climate_inflation_energy (1, 100.00%)"]
+	subtopic1_809 -> subtopic2_810
+	subtopic1_811 [label="small_businesses_business_sba_program (1, 0.26%)"]
+	policy_6 -> subtopic1_811
+	subtopic2_812 [label="15_veterans_toxic_burn_pact (1, 100.00%)"]
+	subtopic1_811 -> subtopic2_812
+	policy_7 [label="Labor and Employment (377, 4.72%)"]
+	subtopic1_813 [label="border_crisis_illegal_immigration_southern (109, 28.91%)"]
+	policy_7 -> subtopic1_813
+	subtopic2_814 [label="40_pay_women_equal_paycheck (55, 50.46%)"]
+	subtopic1_813 -> subtopic2_814
+	subtopic2_815 [label="41_older_discrimination_age_workers (54, 49.54%)"]
+	subtopic1_813 -> subtopic2_815
+	subtopic1_816 [label="va_veterans_veteran_care_affairs (88, 23.34%)"]
+	policy_7 -> subtopic1_816
+	subtopic2_817 [label="11_apprenticeship_apprenticeships_registered_workforce (88, 100.00%)"]
+	subtopic1_816 -> subtopic2_817
+	subtopic1_818 [label="people_veterans_bill_would_ukraine (48, 12.73%)"]
+	policy_7 -> subtopic1_818
+	subtopic2_819 [label="54_union_workers_pro_organize (47, 97.92%)"]
+	subtopic1_818 -> subtopic2_819
+	subtopic2_820 [label="55_police_enforcement_officers_defund (1, 2.08%)"]
+	subtopic1_818 -> subtopic2_820
+	subtopic1_821 [label="wilderness_lands_land_colorado_uranium (34, 9.02%)"]
+	policy_7 -> subtopic1_821
+	subtopic2_822 [label="79_retirement_savings_plans_secure (34, 100.00%)"]
+	subtopic1_821 -> subtopic2_822
+	subtopic1_823 [label="bill_would_people_act_support (29, 7.69%)"]
+	policy_7 -> subtopic1_823
+	subtopic2_824 [label="82_workplace_violence_osha_nurses (29, 100.00%)"]
+	subtopic1_823 -> subtopic2_824
+	subtopic1_825 [label="jackie_visiting_cancer_walorski_childhood (18, 4.77%)"]
+	policy_7 -> subtopic1_825
+	subtopic2_826 [label="141_pension_delphi_pbgc_pensions (18, 100.00%)"]
+	subtopic1_825 -> subtopic2_826
+	subtopic1_827 [label="bill_would_act_support_mr (16, 4.24%)"]
+	policy_7 -> subtopic1_827
+	subtopic2_828 [label="158_union_unions_workers_labor (14, 87.50%)"]
+	subtopic1_827 -> subtopic2_828
+	subtopic2_829 [label="166_reentry_jail_mesa_prison (2, 12.50%)"]
+	subtopic1_827 -> subtopic2_829
+	subtopic1_830 [label="build_better_back_childcare_families (7, 1.86%)"]
+	policy_7 -> subtopic1_830
+	subtopic2_831 [label="26_en_bloc_amendments_amendment (7, 100.00%)"]
+	subtopic1_830 -> subtopic2_831
+	subtopic1_832 [label="suspend_purposes_move_rules_amend (6, 1.59%)"]
+	policy_7 -> subtopic1_832
+	subtopic2_833 [label="6_beyer_pallone_correa_tx (5, 83.33%)"]
+	subtopic1_832 -> subtopic2_833
+	subtopic2_834 [label="3_infrastructure_transportation_transit_rail (1, 16.67%)"]
+	subtopic1_832 -> subtopic2_834
+	subtopic1_835 [label="bill_would_people_act_mr (6, 1.59%)"]
+	policy_7 -> subtopic1_835
+	subtopic2_836 [label="102_stillbirth_congenital_defects_newborn (5, 83.33%)"]
+	subtopic1_835 -> subtopic2_836
+	subtopic2_837 [label="93_nursing_breastfeeding_mothers_pump (1, 16.67%)"]
+	subtopic1_835 -> subtopic2_837
+	subtopic1_838 [label="marriage_religious_respect_sex_equality (3, 0.80%)"]
+	policy_7 -> subtopic1_838
+	subtopic2_839 [label="9_thank_capitol_staff_mr (3, 100.00%)"]
+	subtopic1_838 -> subtopic2_839
+	subtopic1_840 [label="union_workers_pro_unions_organize (2, 0.53%)"]
+	policy_7 -> subtopic1_840
+	subtopic2_841 [label="89_beyer_pallone_correa_tx (2, 100.00%)"]
+	subtopic1_840 -> subtopic2_841
+	subtopic1_842 [label="bill_would_act_support_people (2, 0.53%)"]
+	policy_7 -> subtopic1_842
+	subtopic2_843 [label="137_recommit_motion_insert_immediately (1, 50.00%)"]
+	subtopic1_842 -> subtopic2_843
+	subtopic2_844 [label="138_whistleblower_whistleblowers_retaliation_protection (1, 50.00%)"]
+	subtopic1_842 -> subtopic2_844
+	subtopic1_845 [label="homeless_veterans_va_homelessness_housing (2, 0.53%)"]
+	policy_7 -> subtopic1_845
+	subtopic2_846 [label="50_unanimous_consent_ask_senate (2, 100.00%)"]
+	subtopic1_845 -> subtopic2_846
+	subtopic1_847 [label="ukraine_people_election_russia_energy (1, 0.27%)"]
+	policy_7 -> subtopic1_847
+	subtopic2_848 [label="44_pursuant_immediate_resolution_consideration (1, 100.00%)"]
+	subtopic1_847 -> subtopic2_848
+	subtopic1_849 [label="fentanyl_drug_border_methamphetamine_drugs (1, 0.27%)"]
+	policy_7 -> subtopic1_849
+	subtopic2_850 [label="106_equality_lgbtq_discrimination_transgender (1, 100.00%)"]
+	subtopic1_849 -> subtopic2_850
+	subtopic1_851 [label="veterans_va_toxic_veteran_burn (1, 0.27%)"]
+	policy_7 -> subtopic1_851
+	subtopic2_852 [label="34_sexual_harassment_arbitration_assault (1, 100.00%)"]
+	subtopic1_851 -> subtopic2_852
+	subtopic1_853 [label="veterans_va_toxic_burn_exposure (1, 0.27%)"]
+	policy_7 -> subtopic1_853
+	subtopic2_854 [label="32_build_better_back_childcare (1, 100.00%)"]
+	subtopic1_853 -> subtopic2_854
+	subtopic1_855 [label="bill_would_act_people_mr (1, 0.27%)"]
+	policy_7 -> subtopic1_855
+	subtopic2_856 [label="110_stem_students_science_msis (1, 100.00%)"]
+	subtopic1_855 -> subtopic2_856
+	subtopic1_857 [label="returns_audit_tax_trump_irs (1, 0.27%)"]
+	policy_7 -> subtopic1_857
+	subtopic2_858 [label="65_education_teachers_students_learning (1, 100.00%)"]
+	subtopic1_857 -> subtopic2_858
+	subtopic1_859 [label="fire_wildfire_fires_wildfires_forest (1, 0.27%)"]
+	policy_7 -> subtopic1_859
+	subtopic2_860 [label="35_hyde_consideration_taxpayer_abortion (1, 100.00%)"]
+	subtopic1_859 -> subtopic2_860
+	policy_8 [label="Transportation and Public Works (327, 4.09%)"]
+	subtopic1_861 [label="suspend_purposes_move_rules_amend (159, 48.62%)"]
+	policy_8 -> subtopic1_861
+	subtopic2_862 [label="3_infrastructure_transportation_transit_rail (151, 94.97%)"]
+	subtopic1_861 -> subtopic2_862
+	subtopic2_863 [label="6_beyer_pallone_correa_tx (7, 4.40%)"]
+	subtopic1_861 -> subtopic2_863
+	subtopic2_864 [label="8_debt_credit_collection_financial (1, 0.63%)"]
+	subtopic1_861 -> subtopic2_864
+	subtopic1_865 [label="bill_would_act_people_support (27, 8.26%)"]
+	policy_8 -> subtopic1_865
+	subtopic2_866 [label="115_aviation_pilots_aam_air (24, 88.89%)"]
+	subtopic1_865 -> subtopic2_866
+	subtopic2_867 [label="121_purpose_yielded_customary_debate (2, 7.41%)"]
+	subtopic1_865 -> subtopic2_867
+	subtopic2_868 [label="118_spectrum_wireless_ntia_communications (1, 3.70%)"]
+	subtopic1_865 -> subtopic2_868
+	subtopic1_869 [label="bill_would_act_people_mr (25, 7.65%)"]
+	policy_8 -> subtopic1_869
+	subtopic2_870 [label="108_tsa_airports_security_traveler (25, 100.00%)"]
+	subtopic1_869 -> subtopic2_870
+	subtopic1_871 [label="pregnant_pregnancy_accommodations_workers_fairness (24, 7.34%)"]
+	policy_8 -> subtopic1_871
+	subtopic2_872 [label="60_ocean_shipping_maritime_coast (24, 100.00%)"]
+	subtopic1_871 -> subtopic2_872
+	subtopic1_873 [label="veterans_people_ukraine_bill_would (14, 4.28%)"]
+	policy_8 -> subtopic1_873
+	subtopic2_874 [label="53_water_drinking_wastewater_infrastructure (14, 100.00%)"]
+	subtopic1_873 -> subtopic2_874
+	subtopic1_875 [label="election_american_people_democrats_voting (8, 2.45%)"]
+	policy_8 -> subtopic1_875
+	subtopic2_876 [label="38_energy_oil_gas_prices (8, 100.00%)"]
+	subtopic1_875 -> subtopic2_876
+	subtopic1_877 [label="homeless_veterans_va_homelessness_housing (7, 2.14%)"]
+	policy_8 -> subtopic1_877
+	subtopic2_878 [label="50_unanimous_consent_ask_senate (7, 100.00%)"]
+	subtopic1_877 -> subtopic2_878
+	subtopic1_879 [label="bill_would_act_support_mr (5, 1.53%)"]
+	policy_8 -> subtopic1_879
+	subtopic2_880 [label="162_alaska_daylight_saving_alaskan (3, 60.00%)"]
+	subtopic1_879 -> subtopic2_880
+	subtopic2_881 [label="163_corporate_campaigns_money_campaign (1, 20.00%)"]
+	subtopic1_879 -> subtopic2_881
+	subtopic2_882 [label="159_merchant_marines_amendment_veterans (1, 20.00%)"]
+	subtopic1_879 -> subtopic2_882
+	subtopic1_883 [label="build_better_back_childcare_families (5, 1.53%)"]
+	policy_8 -> subtopic1_883
+	subtopic2_884 [label="26_en_bloc_amendments_amendment (5, 100.00%)"]
+	subtopic1_883 -> subtopic2_884
+	subtopic1_885 [label="bill_act_would_support_mr (5, 1.53%)"]
+	policy_8 -> subtopic1_885
+	subtopic2_886 [label="177_horse_horses_soring_tennessee (2, 40.00%)"]
+	subtopic1_885 -> subtopic2_886
+	subtopic2_887 [label="186_tip_furniture_overs_crib (1, 20.00%)"]
+	subtopic1_885 -> subtopic2_887
+	subtopic2_888 [label="182_hockey_willie_ree_nhl (1, 20.00%)"]
+	subtopic1_885 -> subtopic2_888
+	subtopic2_889 [label="184_clarke_judge_ms_gupta (1, 20.00%)"]
+	subtopic1_885 -> subtopic2_889
+	subtopic1_890 [label="veterans_people_ukraine_bill_american (5, 1.53%)"]
+	policy_8 -> subtopic1_890
+	subtopic2_891 [label="52_trafficking_human_victims_sex (5, 100.00%)"]
+	subtopic1_890 -> subtopic2_891
+	subtopic1_892 [label="arbitration_sexual_harassment_forced_assault (4, 1.22%)"]
+	policy_8 -> subtopic1_892
+	subtopic2_893 [label="30_pfas_chemicals_water_epa (4, 100.00%)"]
+	subtopic1_892 -> subtopic2_893
+	subtopic1_894 [label="marriage_religious_respect_sex_equality (4, 1.22%)"]
+	policy_8 -> subtopic1_894
+	subtopic2_895 [label="9_thank_capitol_staff_mr (4, 100.00%)"]
+	subtopic1_894 -> subtopic2_895
+	subtopic1_896 [label="bill_would_people_act_mr (3, 0.92%)"]
+	policy_8 -> subtopic1_896
+	subtopic2_897 [label="96_yield_speakers_balance_close (3, 100.00%)"]
+	subtopic1_896 -> subtopic2_897
+	subtopic1_898 [label="bill_would_people_mr_support (3, 0.92%)"]
+	policy_8 -> subtopic1_898
+	subtopic2_899 [label="84_vaccine_vaccinated_hpv_mask (3, 100.00%)"]
+	subtopic1_898 -> subtopic2_899
+	subtopic1_900 [label="inflation_tax_reduction_taxes_prices (3, 0.92%)"]
+	policy_8 -> subtopic1_900
+	subtopic2_901 [label="24_china_chinese_communist_taiwan (3, 100.00%)"]
+	subtopic1_900 -> subtopic2_901
+	subtopic1_902 [label="people_bill_would_veterans_american (3, 0.92%)"]
+	policy_8 -> subtopic1_902
+	subtopic2_903 [label="63_acidification_ocean_coastal_lakes (2, 66.67%)"]
+	subtopic1_902 -> subtopic2_903
+	subtopic2_904 [label="59_dhs_acquisition_homeland_department (1, 33.33%)"]
+	subtopic1_902 -> subtopic2_904
+	subtopic1_905 [label="ukraine_election_russia_people_energy (3, 0.92%)"]
+	policy_8 -> subtopic1_905
+	subtopic2_906 [label="43_suspend_purposes_move_rules (3, 100.00%)"]
+	subtopic1_905 -> subtopic2_906
+	subtopic1_907 [label="union_workers_pro_unions_organize (2, 0.61%)"]
+	policy_8 -> subtopic1_907
+	subtopic2_908 [label="7_border_crisis_illegal_immigration (1, 50.00%)"]
+	subtopic1_907 -> subtopic2_908
+	subtopic2_909 [label="89_beyer_pallone_correa_tx (1, 50.00%)"]
+	subtopic1_907 -> subtopic2_909
+	subtopic1_910 [label="inflation_tax_billion_china_american (2, 0.61%)"]
+	policy_8 -> subtopic1_910
+	subtopic2_911 [label="31_military_ndaa_defense_delaware (2, 100.00%)"]
+	subtopic1_910 -> subtopic2_911
+	subtopic1_912 [label="election_pennsylvania_electors_constitution_electoral (1, 0.31%)"]
+	policy_8 -> subtopic1_912
+	subtopic2_913 [label="10_rescue_plan_relief_covid (1, 100.00%)"]
+	subtopic1_912 -> subtopic2_913
+	subtopic1_914 [label="people_veterans_bill_would_ukraine (1, 0.31%)"]
+	policy_8 -> subtopic1_914
+	subtopic2_915 [label="55_police_enforcement_officers_defund (1, 100.00%)"]
+	subtopic1_914 -> subtopic2_915
+	subtopic1_916 [label="veterans_va_toxic_burn_exposure (1, 0.31%)"]
+	policy_8 -> subtopic1_916
+	subtopic2_917 [label="32_build_better_back_childcare (1, 100.00%)"]
+	subtopic1_916 -> subtopic2_917
+	subtopic1_918 [label="beyer_pallone_correa_tx_fl (1, 0.31%)"]
+	policy_8 -> subtopic1_918
+	subtopic2_919 [label="0_voting_voter_election_elections (1, 100.00%)"]
+	subtopic1_918 -> subtopic2_919
+	subtopic1_920 [label="considered_unanimous_consent_reconsider_laid (1, 0.31%)"]
+	policy_8 -> subtopic1_920
+	subtopic2_921 [label="29_manufacturing_chips_semiconductor_innovation (1, 100.00%)"]
+	subtopic1_920 -> subtopic2_921
+	subtopic1_922 [label="nan (1, 0.31%)"]
+	policy_8 -> subtopic1_922
+	subtopic1_923 [label="ukraine_people_election_russia_energy (1, 0.31%)"]
+	policy_8 -> subtopic1_923
+	subtopic2_924 [label="44_pursuant_immediate_resolution_consideration (1, 100.00%)"]
+	subtopic1_923 -> subtopic2_924
+	subtopic1_925 [label="bill_would_people_act_support (1, 0.31%)"]
+	policy_8 -> subtopic1_925
+	subtopic2_926 [label="82_workplace_violence_osha_nurses (1, 100.00%)"]
+	subtopic1_925 -> subtopic2_926
+	subtopic1_927 [label="election_voting_elections_voter_vote (1, 0.31%)"]
+	policy_8 -> subtopic1_927
+	subtopic2_928 [label="13_inflation_tax_democrats_spending (1, 100.00%)"]
+	subtopic1_927 -> subtopic2_928
+	subtopic1_929 [label="officers_enforcement_police_law_safety (1, 0.31%)"]
+	policy_8 -> subtopic1_929
+	subtopic2_930 [label="18_violence_domestic_survivors_vawa (1, 100.00%)"]
+	subtopic1_929 -> subtopic2_930
+	subtopic1_931 [label="people_bill_would_american_veterans (1, 0.31%)"]
+	policy_8 -> subtopic1_931
+	subtopic2_932 [label="70_taliban_afghan_afghanistan_journalists (1, 100.00%)"]
+	subtopic1_931 -> subtopic2_932
+	subtopic1_933 [label="disaster_fema_disasters_mitigation_recovery (1, 0.31%)"]
+	policy_8 -> subtopic1_933
+	subtopic2_934 [label="72_nuclear_defense_iran_budget (1, 100.00%)"]
+	subtopic1_933 -> subtopic2_934
+	subtopic1_935 [label="va_veterans_veteran_care_affairs (1, 0.31%)"]
+	policy_8 -> subtopic1_935
+	subtopic2_936 [label="11_apprenticeship_apprenticeships_registered_workforce (1, 100.00%)"]
+	subtopic1_935 -> subtopic2_936
+	subtopic1_937 [label="military_ndaa_defense_delaware_servicemembers (1, 0.31%)"]
+	policy_8 -> subtopic1_937
+	subtopic2_938 [label="42_considered_substitute_reconsider_agreed (1, 100.00%)"]
+	subtopic1_937 -> subtopic2_938
+	subtopic1_939 [label="inflation_energy_tax_billion_china (1, 0.31%)"]
+	policy_8 -> subtopic1_939
+	subtopic2_940 [label="33_suspend_affairs_purposes_move (1, 100.00%)"]
+	subtopic1_939 -> subtopic2_940
+	subtopic1_941 [label="bill_would_act_support_people (1, 0.31%)"]
+	policy_8 -> subtopic1_941
+	subtopic2_942 [label="153_suspend_purposes_move_rules (1, 100.00%)"]
+	subtopic1_941 -> subtopic2_942
+	policy_9 [label="Commerce (323, 4.04%)"]
+	subtopic1_943 [label="abortion_roe_women_wade_abortions (136, 42.11%)"]
+	policy_9 -> subtopic1_943
+	subtopic2_944 [label="5_small_businesses_business_sba (136, 100.00%)"]
+	subtopic1_943 -> subtopic2_944
+	subtopic1_945 [label="bill_would_people_act_mr (32, 9.91%)"]
+	policy_9 -> subtopic1_945
+	subtopic2_946 [label="95_restaurants_restaurant_revitalization_businesses (30, 93.75%)"]
+	subtopic1_945 -> subtopic2_946
+	subtopic2_947 [label="96_yield_speakers_balance_close (2, 6.25%)"]
+	subtopic1_945 -> subtopic2_947
+	subtopic1_948 [label="bill_act_would_support_mr (27, 8.36%)"]
+	policy_9 -> subtopic1_948
+	subtopic2_949 [label="185_sbir_sttr_programs_small (11, 40.74%)"]
+	subtopic1_948 -> subtopic2_949
+	subtopic2_950 [label="186_tip_furniture_overs_crib (10, 37.04%)"]
+	subtopic1_948 -> subtopic2_950
+	subtopic2_951 [label="183_digital_amazon_assets_google (4, 14.81%)"]
+	subtopic1_948 -> subtopic2_951
+	subtopic2_952 [label="189_notarization_remote_notarizations_orders (2, 7.41%)"]
+	subtopic1_948 -> subtopic2_952
+	subtopic1_953 [label="bill_would_act_people_mr (23, 7.12%)"]
+	policy_9 -> subtopic1_953
+	subtopic2_954 [label="111_sba_small_cyber_cybersecurity (23, 100.00%)"]
+	subtopic1_953 -> subtopic2_954
+	subtopic1_955 [label="arbitration_sexual_harassment_forced_assault (21, 6.50%)"]
+	policy_9 -> subtopic1_955
+	subtopic2_956 [label="87_ftc_scams_consumers_fraud (21, 100.00%)"]
+	subtopic1_955 -> subtopic2_956
+	subtopic1_957 [label="bill_would_act_support_mr (13, 4.02%)"]
+	policy_9 -> subtopic1_957
+	subtopic2_958 [label="168_copyright_intellectual_property_patents (13, 100.00%)"]
+	subtopic1_957 -> subtopic2_958
+	subtopic1_959 [label="bill_act_would_support_people (7, 2.17%)"]
+	policy_9 -> subtopic1_959
+	subtopic2_960 [label="147_suspend_amend_purposes_rules (7, 100.00%)"]
+	subtopic1_959 -> subtopic2_960
+	subtopic1_961 [label="election_american_people_democrats_voting (7, 2.17%)"]
+	policy_9 -> subtopic1_961
+	subtopic2_962 [label="38_energy_oil_gas_prices (7, 100.00%)"]
+	subtopic1_961 -> subtopic2_962
+	subtopic1_963 [label="suspend_purposes_move_rules_amend (6, 1.86%)"]
+	policy_9 -> subtopic1_963
+	subtopic2_964 [label="6_beyer_pallone_correa_tx (6, 100.00%)"]
+	subtopic1_963 -> subtopic2_964
+	subtopic1_965 [label="ocean_shipping_maritime_coast_vessels (5, 1.55%)"]
+	policy_9 -> subtopic1_965
+	subtopic2_966 [label="104_elder_seniors_scams_fraud (5, 100.00%)"]
+	subtopic1_965 -> subtopic2_966
+	subtopic1_967 [label="marriage_religious_respect_sex_equality (5, 1.55%)"]
+	policy_9 -> subtopic1_967
+	subtopic2_968 [label="9_thank_capitol_staff_mr (5, 100.00%)"]
+	subtopic1_967 -> subtopic2_968
+	subtopic1_969 [label="union_workers_pro_unions_organize (4, 1.24%)"]
+	policy_9 -> subtopic1_969
+	subtopic2_970 [label="89_beyer_pallone_correa_tx (3, 75.00%)"]
+	subtopic1_969 -> subtopic2_970
+	subtopic2_971 [label="7_border_crisis_illegal_immigration (1, 25.00%)"]
+	subtopic1_969 -> subtopic2_971
+	subtopic1_972 [label="inflation_energy_tax_billion_china (4, 1.24%)"]
+	policy_9 -> subtopic1_972
+	subtopic2_973 [label="33_suspend_affairs_purposes_move (4, 100.00%)"]
+	subtopic1_972 -> subtopic2_973
+	subtopic1_974 [label="military_ndaa_defense_delaware_servicemembers (4, 1.24%)"]
+	policy_9 -> subtopic1_974
+	subtopic2_975 [label="42_considered_substitute_reconsider_agreed (4, 100.00%)"]
+	subtopic1_974 -> subtopic2_975
+	subtopic1_976 [label="election_voting_elections_voter_vote (4, 1.24%)"]
+	policy_9 -> subtopic1_976
+	subtopic2_977 [label="13_inflation_tax_democrats_spending (4, 100.00%)"]
+	subtopic1_976 -> subtopic2_977
+	subtopic1_978 [label="considered_unanimous_consent_reconsider_laid (4, 1.24%)"]
+	policy_9 -> subtopic1_978
+	subtopic2_979 [label="29_manufacturing_chips_semiconductor_innovation (4, 100.00%)"]
+	subtopic1_978 -> subtopic2_979
+	subtopic1_980 [label="ukraine_people_election_russia_energy (3, 0.93%)"]
+	policy_9 -> subtopic1_980
+	subtopic2_981 [label="44_pursuant_immediate_resolution_consideration (3, 100.00%)"]
+	subtopic1_980 -> subtopic2_981
+	subtopic1_982 [label="bill_would_act_support_people (3, 0.93%)"]
+	policy_9 -> subtopic1_982
+	subtopic2_983 [label="144_telecommunications_itu_huawei_networks (2, 66.67%)"]
+	subtopic1_982 -> subtopic2_983
+	subtopic2_984 [label="137_recommit_motion_insert_immediately (1, 33.33%)"]
+	subtopic1_982 -> subtopic2_984
+	subtopic1_985 [label="va_veterans_veteran_care_affairs (3, 0.93%)"]
+	policy_9 -> subtopic1_985
+	subtopic2_986 [label="11_apprenticeship_apprenticeships_registered_workforce (3, 100.00%)"]
+	subtopic1_985 -> subtopic2_986
+	subtopic1_987 [label="appropriations_funding_omnibus_continuing_government (3, 0.93%)"]
+	policy_9 -> subtopic1_987
+	subtopic2_988 [label="16_disaster_fema_disasters_mitigation (3, 100.00%)"]
+	subtopic1_987 -> subtopic2_988
+	subtopic1_989 [label="bill_people_would_mr_american (2, 0.62%)"]
+	policy_9 -> subtopic1_989
+	subtopic2_990 [label="77_debt_ceiling_trillion_spending (2, 100.00%)"]
+	subtopic1_989 -> subtopic2_990
+	subtopic1_991 [label="ukraine_election_russia_people_energy (2, 0.62%)"]
+	policy_9 -> subtopic1_991
+	subtopic2_992 [label="43_suspend_purposes_move_rules (2, 100.00%)"]
+	subtopic1_991 -> subtopic2_992
+	subtopic1_993 [label="election_pennsylvania_electors_constitution_electoral (1, 0.31%)"]
+	policy_9 -> subtopic1_993
+	subtopic2_994 [label="10_rescue_plan_relief_covid (1, 100.00%)"]
+	subtopic1_993 -> subtopic2_994
+	subtopic1_995 [label="people_bill_would_veterans_american (1, 0.31%)"]
+	policy_9 -> subtopic1_995
+	subtopic2_996 [label="64_cattle_farmers_producers_food (1, 100.00%)"]
+	subtopic1_995 -> subtopic2_996
+	subtopic1_997 [label="build_better_back_childcare_families (1, 0.31%)"]
+	policy_9 -> subtopic1_997
+	subtopic2_998 [label="26_en_bloc_amendments_amendment (1, 100.00%)"]
+	subtopic1_997 -> subtopic2_998
+	subtopic1_999 [label="returns_audit_tax_trump_irs (1, 0.31%)"]
+	policy_9 -> subtopic1_999
+	subtopic2_1000 [label="65_education_teachers_students_learning (1, 100.00%)"]
+	subtopic1_999 -> subtopic2_1000
+	subtopic1_1001 [label="considered_substitute_reconsider_agreed_laid (1, 0.31%)"]
+	policy_9 -> subtopic1_1001
+	subtopic2_1002 [label="1_ukraine_russia_putin_russian (1, 100.00%)"]
+	subtopic1_1001 -> subtopic2_1002
+	policy_10 [label="Finance and Financial Sector (238, 2.98%)"]
+	subtopic1_1003 [label="suspend_purposes_move_rules_amend (92, 38.66%)"]
+	policy_10 -> subtopic1_1003
+	subtopic2_1004 [label="8_debt_credit_collection_financial (88, 95.65%)"]
+	subtopic1_1003 -> subtopic2_1004
+	subtopic2_1005 [label="6_beyer_pallone_correa_tx (3, 3.26%)"]
+	subtopic1_1003 -> subtopic2_1005
+	subtopic2_1006 [label="3_infrastructure_transportation_transit_rail (1, 1.09%)"]
+	subtopic1_1003 -> subtopic2_1006
+	subtopic1_1007 [label="bill_would_people_act_support (27, 11.34%)"]
+	policy_10 -> subtopic1_1007
+	subtopic2_1008 [label="98_investors_companies_sec_insider (27, 100.00%)"]
+	subtopic1_1007 -> subtopic2_1008
+	subtopic1_1009 [label="bill_act_would_support_mr (15, 6.30%)"]
+	policy_10 -> subtopic1_1009
+	subtopic2_1010 [label="183_digital_amazon_assets_google (7, 46.67%)"]
+	subtopic1_1009 -> subtopic2_1010
+	subtopic2_1011 [label="151_tubman_statue_harriet_enslaved (6, 40.00%)"]
+	subtopic1_1009 -> subtopic2_1011
+	subtopic2_1012 [label="172_yeas_nays_pursuant_xx (1, 6.67%)"]
+	subtopic1_1009 -> subtopic2_1012
+	subtopic2_1013 [label="170_democracy_aapi_founders_thank (1, 6.67%)"]
+	subtopic1_1009 -> subtopic2_1013
+	subtopic1_1014 [label="democracy_president_trump_paper_ballot (15, 6.30%)"]
+	policy_10 -> subtopic1_1014
+	subtopic2_1015 [label="49_guidance_reports_transparency_regulators (15, 100.00%)"]
+	subtopic1_1014 -> subtopic2_1015
+	subtopic1_1016 [label="ocean_shipping_maritime_coast_vessels (12, 5.04%)"]
+	policy_10 -> subtopic1_1016
+	subtopic2_1017 [label="104_elder_seniors_scams_fraud (12, 100.00%)"]
+	subtopic1_1016 -> subtopic2_1017
+	subtopic1_1018 [label="abortion_roe_women_wade_abortions (12, 5.04%)"]
+	policy_10 -> subtopic1_1018
+	subtopic2_1019 [label="5_small_businesses_business_sba (12, 100.00%)"]
+	subtopic1_1018 -> subtopic2_1019
+	subtopic1_1020 [label="election_voting_elections_voter_vote (10, 4.20%)"]
+	policy_10 -> subtopic1_1020
+	subtopic2_1021 [label="13_inflation_tax_democrats_spending (10, 100.00%)"]
+	subtopic1_1020 -> subtopic2_1021
+	subtopic1_1022 [label="bill_act_would_support_people (7, 2.94%)"]
+	policy_10 -> subtopic1_1022
+	subtopic2_1023 [label="147_suspend_amend_purposes_rules (7, 100.00%)"]
+	subtopic1_1022 -> subtopic2_1023
+	subtopic1_1024 [label="bill_would_act_people_support (6, 2.52%)"]
+	policy_10 -> subtopic1_1024
+	subtopic2_1025 [label="113_lgbtqi_data_surveys_lgbtq (4, 66.67%)"]
+	subtopic1_1024 -> subtopic2_1025
+	subtopic2_1026 [label="121_purpose_yielded_customary_debate (1, 16.67%)"]
+	subtopic1_1024 -> subtopic2_1026
+	subtopic2_1027 [label="125_antitrust_merger_mergers_filing (1, 16.67%)"]
+	subtopic1_1024 -> subtopic2_1027
+	subtopic1_1028 [label="marriage_religious_respect_sex_equality (6, 2.52%)"]
+	policy_10 -> subtopic1_1028
+	subtopic2_1029 [label="9_thank_capitol_staff_mr (6, 100.00%)"]
+	subtopic1_1028 -> subtopic2_1029
+	subtopic1_1030 [label="considered_substitute_reconsider_agreed_laid (5, 2.10%)"]
+	policy_10 -> subtopic1_1030
+	subtopic2_1031 [label="1_ukraine_russia_putin_russian (5, 100.00%)"]
+	subtopic1_1030 -> subtopic2_1031
+	subtopic1_1032 [label="inflation_energy_tax_billion_china (4, 1.68%)"]
+	policy_10 -> subtopic1_1032
+	subtopic2_1033 [label="37_army_war_ii_ghost (4, 100.00%)"]
+	subtopic1_1032 -> subtopic2_1033
+	subtopic1_1034 [label="ukraine_people_election_russia_energy (3, 1.26%)"]
+	policy_10 -> subtopic1_1034
+	subtopic2_1035 [label="44_pursuant_immediate_resolution_consideration (3, 100.00%)"]
+	subtopic1_1034 -> subtopic2_1035
+	subtopic1_1036 [label="election_pennsylvania_electors_constitution_electoral (3, 1.26%)"]
+	policy_10 -> subtopic1_1036
+	subtopic2_1037 [label="10_rescue_plan_relief_covid (3, 100.00%)"]
+	subtopic1_1036 -> subtopic2_1037
+	subtopic1_1038 [label="arbitration_sexual_harassment_forced_assault (3, 1.26%)"]
+	policy_10 -> subtopic1_1038
+	subtopic2_1039 [label="87_ftc_scams_consumers_fraud (3, 100.00%)"]
+	subtopic1_1038 -> subtopic2_1039
+	subtopic1_1040 [label="veterans_people_ukraine_bill_american (3, 1.26%)"]
+	policy_10 -> subtopic1_1040
+	subtopic2_1041 [label="52_trafficking_human_victims_sex (3, 100.00%)"]
+	subtopic1_1040 -> subtopic2_1041
+	subtopic1_1042 [label="military_ndaa_defense_delaware_servicemembers (3, 1.26%)"]
+	policy_10 -> subtopic1_1042
+	subtopic2_1043 [label="42_considered_substitute_reconsider_agreed (3, 100.00%)"]
+	subtopic1_1042 -> subtopic2_1043
+	subtopic1_1044 [label="veterans_va_toxic_veteran_burn (2, 0.84%)"]
+	policy_10 -> subtopic1_1044
+	subtopic2_1045 [label="34_sexual_harassment_arbitration_assault (2, 100.00%)"]
+	subtopic1_1044 -> subtopic2_1045
+	subtopic1_1046 [label="build_better_back_childcare_families (2, 0.84%)"]
+	policy_10 -> subtopic1_1046
+	subtopic2_1047 [label="26_en_bloc_amendments_amendment (2, 100.00%)"]
+	subtopic1_1046 -> subtopic2_1047
+	subtopic1_1048 [label="juneteenth_holiday_slavery_slaves_day (1, 0.42%)"]
+	policy_10 -> subtopic1_1048
+	subtopic2_1049 [label="122_loan_loans_borrowers_consolidation (1, 100.00%)"]
+	subtopic1_1048 -> subtopic2_1049
+	subtopic1_1050 [label="returns_audit_tax_trump_irs (1, 0.42%)"]
+	policy_10 -> subtopic1_1050
+	subtopic2_1051 [label="65_education_teachers_students_learning (1, 100.00%)"]
+	subtopic1_1050 -> subtopic2_1051
+	subtopic1_1052 [label="people_bill_would_veterans_american (1, 0.42%)"]
+	policy_10 -> subtopic1_1052
+	subtopic2_1053 [label="64_cattle_farmers_producers_food (1, 100.00%)"]
+	subtopic1_1052 -> subtopic2_1053
+	subtopic1_1054 [label="capitol_commission_january_attack_police (1, 0.42%)"]
+	policy_10 -> subtopic1_1054
+	subtopic2_1055 [label="22_cybersecurity_cyber_ransomware_cybercrime (1, 100.00%)"]
+	subtopic1_1054 -> subtopic2_1055
+	subtopic1_1056 [label="inflation_tax_reduction_taxes_prices (1, 0.42%)"]
+	policy_10 -> subtopic1_1056
+	subtopic2_1057 [label="24_china_chinese_communist_taiwan (1, 100.00%)"]
+	subtopic1_1056 -> subtopic2_1057
+	subtopic1_1058 [label="ukraine_election_russia_people_energy (1, 0.42%)"]
+	policy_10 -> subtopic1_1058
+	subtopic2_1059 [label="43_suspend_purposes_move_rules (1, 100.00%)"]
+	subtopic1_1058 -> subtopic2_1059
+	subtopic1_1060 [label="bill_would_act_support_mr (1, 0.42%)"]
+	policy_10 -> subtopic1_1060
+	subtopic2_1061 [label="157_homeless_veterans_va_homelessness (1, 100.00%)"]
+	subtopic1_1060 -> subtopic2_1061
+	subtopic1_1062 [label="fentanyl_drug_border_methamphetamine_drugs (1, 0.42%)"]
+	policy_10 -> subtopic1_1062
+	subtopic2_1063 [label="106_equality_lgbtq_discrimination_transgender (1, 100.00%)"]
+	subtopic1_1062 -> subtopic2_1063
+	policy_11 [label="Immigration (233, 2.92%)"]
+	subtopic1_1064 [label="union_workers_pro_unions_organize (66, 28.33%)"]
+	policy_11 -> subtopic1_1064
+	subtopic2_1065 [label="7_border_crisis_illegal_immigration (64, 96.97%)"]
+	subtopic1_1064 -> subtopic2_1065
+	subtopic2_1066 [label="89_beyer_pallone_correa_tx (2, 3.03%)"]
+	subtopic1_1064 -> subtopic2_1066
+	subtopic1_1067 [label="arbitration_sexual_harassment_forced_assault (32, 13.73%)"]
+	policy_11 -> subtopic1_1067
+	subtopic2_1068 [label="86_dreamers_dream_daca_tps (32, 100.00%)"]
+	subtopic1_1067 -> subtopic2_1068
+	subtopic1_1069 [label="people_bill_would_american_veterans (27, 11.59%)"]
+	policy_11 -> subtopic1_1069
+	subtopic2_1070 [label="70_taliban_afghan_afghanistan_journalists (27, 100.00%)"]
+	subtopic1_1069 -> subtopic2_1070
+	subtopic1_1071 [label="bill_would_act_support_people (21, 9.01%)"]
+	policy_11 -> subtopic1_1071
+	subtopic2_1072 [label="142_farmworkers_farm_association_growers (18, 85.71%)"]
+	subtopic1_1071 -> subtopic2_1072
+	subtopic2_1073 [label="137_recommit_motion_insert_immediately (3, 14.29%)"]
+	subtopic1_1071 -> subtopic2_1073
+	subtopic1_1074 [label="nursing_breastfeeding_mothers_pump_milk (18, 7.73%)"]
+	policy_11 -> subtopic1_1074
+	subtopic2_1075 [label="140_ban_muslim_countries_president (18, 100.00%)"]
+	subtopic1_1074 -> subtopic2_1075
+	subtopic1_1076 [label="bill_would_act_support_mr (14, 6.01%)"]
+	policy_11 -> subtopic1_1076
+	subtopic2_1077 [label="165_immigrants_portugal_visas_refugees (13, 92.86%)"]
+	subtopic1_1076 -> subtopic2_1077
+	subtopic2_1078 [label="163_corporate_campaigns_money_campaign (1, 7.14%)"]
+	subtopic1_1076 -> subtopic2_1078
+	subtopic1_1079 [label="bill_act_would_support_mr (14, 6.01%)"]
+	policy_11 -> subtopic1_1079
+	subtopic2_1080 [label="171_noncitizen_deported_veterans_veteran (12, 85.71%)"]
+	subtopic1_1079 -> subtopic2_1080
+	subtopic2_1081 [label="170_democracy_aapi_founders_thank (2, 14.29%)"]
+	subtopic1_1079 -> subtopic2_1081
+	subtopic1_1082 [label="veterans_ukraine_people_american_bill (7, 3.00%)"]
+	policy_11 -> subtopic1_1082
+	subtopic2_1083 [label="48_fentanyl_drug_border_methamphetamine (7, 100.00%)"]
+	subtopic1_1082 -> subtopic2_1083
+	subtopic1_1084 [label="bill_would_people_mr_support (6, 2.58%)"]
+	policy_11 -> subtopic1_1084
+	subtopic2_1085 [label="84_vaccine_vaccinated_hpv_mask (5, 83.33%)"]
+	subtopic1_1084 -> subtopic2_1085
+	subtopic2_1086 [label="83_hate_asian_crimes_anti (1, 16.67%)"]
+	subtopic1_1084 -> subtopic2_1086
+	subtopic1_1087 [label="suspend_purposes_move_rules_amend (4, 1.72%)"]
+	policy_11 -> subtopic1_1087
+	subtopic2_1088 [label="6_beyer_pallone_correa_tx (4, 100.00%)"]
+	subtopic1_1087 -> subtopic2_1088
+	subtopic1_1089 [label="pregnant_pregnancy_accommodations_workers_fairness (4, 1.72%)"]
+	policy_11 -> subtopic1_1089
+	subtopic2_1090 [label="60_ocean_shipping_maritime_coast (4, 100.00%)"]
+	subtopic1_1089 -> subtopic2_1090
+	subtopic1_1091 [label="ukraine_people_election_russia_energy (3, 1.29%)"]
+	policy_11 -> subtopic1_1091
+	subtopic2_1092 [label="44_pursuant_immediate_resolution_consideration (3, 100.00%)"]
+	subtopic1_1091 -> subtopic2_1092
+	subtopic1_1093 [label="appropriations_funding_omnibus_continuing_government (3, 1.29%)"]
+	policy_11 -> subtopic1_1093
+	subtopic2_1094 [label="16_disaster_fema_disasters_mitigation (3, 100.00%)"]
+	subtopic1_1093 -> subtopic2_1094
+	subtopic1_1095 [label="ukraine_election_russia_people_energy (2, 0.86%)"]
+	policy_11 -> subtopic1_1095
+	subtopic2_1096 [label="43_suspend_purposes_move_rules (2, 100.00%)"]
+	subtopic1_1095 -> subtopic2_1096
+	subtopic1_1097 [label="marriage_religious_respect_sex_equality (2, 0.86%)"]
+	policy_11 -> subtopic1_1097
+	subtopic2_1098 [label="9_thank_capitol_staff_mr (2, 100.00%)"]
+	subtopic1_1097 -> subtopic2_1098
+	subtopic1_1099 [label="veterans_people_ukraine_bill_american (1, 0.43%)"]
+	policy_11 -> subtopic1_1099
+	subtopic2_1100 [label="52_trafficking_human_victims_sex (1, 100.00%)"]
+	subtopic1_1099 -> subtopic2_1100
+	subtopic1_1101 [label="bill_people_would_mr_american (1, 0.43%)"]
+	policy_11 -> subtopic1_1101
+	subtopic2_1102 [label="75_juneteenth_holiday_slavery_slaves (1, 100.00%)"]
+	subtopic1_1101 -> subtopic2_1102
+	subtopic1_1103 [label="inflation_tax_billion_china_american (1, 0.43%)"]
+	policy_11 -> subtopic1_1103
+	subtopic2_1104 [label="31_military_ndaa_defense_delaware (1, 100.00%)"]
+	subtopic1_1103 -> subtopic2_1104
+	subtopic1_1105 [label="officers_enforcement_police_law_safety (1, 0.43%)"]
+	policy_11 -> subtopic1_1105
+	subtopic2_1106 [label="18_violence_domestic_survivors_vawa (1, 100.00%)"]
+	subtopic1_1105 -> subtopic2_1106
+	subtopic1_1107 [label="considered_substitute_reconsider_agreed_laid (1, 0.43%)"]
+	policy_11 -> subtopic1_1107
+	subtopic2_1108 [label="1_ukraine_russia_putin_russian (1, 100.00%)"]
+	subtopic1_1107 -> subtopic2_1108
+	subtopic1_1109 [label="beyer_pallone_correa_tx_fl (1, 0.43%)"]
+	policy_11 -> subtopic1_1109
+	subtopic2_1110 [label="188_veterans_minot_sinn_kiwanis (1, 100.00%)"]
+	subtopic1_1109 -> subtopic2_1110
+	subtopic1_1111 [label="bill_would_act_people_mr (1, 0.43%)"]
+	policy_11 -> subtopic1_1111
+	subtopic2_1112 [label="112_military_amendment_evidence_unlawfully (1, 100.00%)"]
+	subtopic1_1111 -> subtopic2_1112
+	subtopic1_1113 [label="inflation_tax_reduction_taxes_prices (1, 0.43%)"]
+	policy_11 -> subtopic1_1113
+	subtopic2_1114 [label="24_china_chinese_communist_taiwan (1, 100.00%)"]
+	subtopic1_1113 -> subtopic2_1114
+	subtopic1_1115 [label="bill_would_act_people_support (1, 0.43%)"]
+	policy_11 -> subtopic1_1115
+	subtopic2_1116 [label="124_physician_nurse_practitioners_assistants (1, 100.00%)"]
+	subtopic1_1115 -> subtopic2_1116
+	subtopic1_1117 [label="military_ndaa_defense_delaware_servicemembers (1, 0.43%)"]
+	policy_11 -> subtopic1_1117
+	subtopic2_1118 [label="42_considered_substitute_reconsider_agreed (1, 100.00%)"]
+	subtopic1_1117 -> subtopic2_1118
+	policy_12 [label="Civil Rights and Liberties, Minority Issues (226, 2.83%)"]
+	subtopic1_1119 [label="inflation_energy_tax_billion_china (56, 24.78%)"]
+	policy_12 -> subtopic1_1119
+	subtopic2_1120 [label="39_marriage_respect_equality_couples (55, 98.21%)"]
+	subtopic1_1119 -> subtopic2_1120
+	subtopic2_1121 [label="37_army_war_ii_ghost (1, 1.79%)"]
+	subtopic1_1119 -> subtopic2_1121
+	subtopic1_1122 [label="bill_people_would_mr_american (34, 15.04%)"]
+	policy_12 -> subtopic1_1122
+	subtopic2_1123 [label="75_juneteenth_holiday_slavery_slaves (34, 100.00%)"]
+	subtopic1_1122 -> subtopic2_1123
+	subtopic1_1124 [label="bill_would_people_act_support (30, 13.27%)"]
+	policy_12 -> subtopic1_1124
+	subtopic2_1125 [label="92_hair_crown_hairstyles_black (30, 100.00%)"]
+	subtopic1_1124 -> subtopic2_1125
+	subtopic1_1126 [label="bill_would_act_people_support (25, 11.06%)"]
+	policy_12 -> subtopic1_1126
+	subtopic2_1127 [label="126_marriage_religious_beliefs_obergefell (22, 88.00%)"]
+	subtopic1_1126 -> subtopic2_1127
+	subtopic2_1128 [label="121_purpose_yielded_customary_debate (2, 8.00%)"]
+	subtopic1_1126 -> subtopic2_1128
+	subtopic2_1129 [label="113_lgbtqi_data_surveys_lgbtq (1, 4.00%)"]
+	subtopic1_1126 -> subtopic2_1129
+	subtopic1_1130 [label="fentanyl_drug_border_methamphetamine_drugs (23, 10.18%)"]
+	policy_12 -> subtopic1_1130
+	subtopic2_1131 [label="106_equality_lgbtq_discrimination_transgender (23, 100.00%)"]
+	subtopic1_1130 -> subtopic2_1131
+	subtopic1_1132 [label="bill_would_act_support_people (15, 6.64%)"]
+	policy_12 -> subtopic1_1132
+	subtopic2_1133 [label="146_till_emmett_lynching_mamie (8, 53.33%)"]
+	subtopic1_1132 -> subtopic2_1133
+	subtopic2_1134 [label="139_religious_faith_charitable_csbg (6, 40.00%)"]
+	subtopic1_1132 -> subtopic2_1134
+	subtopic2_1135 [label="152_cybersecurity_energy_grid_electric (1, 6.67%)"]
+	subtopic1_1132 -> subtopic2_1135
+	subtopic1_1136 [label="veterans_ukraine_people_american_bill (8, 3.54%)"]
+	policy_12 -> subtopic1_1136
+	subtopic2_1137 [label="48_fentanyl_drug_border_methamphetamine (8, 100.00%)"]
+	subtopic1_1136 -> subtopic2_1137
+	subtopic1_1138 [label="japanese_amache_confinement_sites_ii (7, 3.10%)"]
+	policy_12 -> subtopic1_1138
+	subtopic2_1139 [label="178_japanese_amache_confinement_sites (7, 100.00%)"]
+	subtopic1_1138 -> subtopic2_1139
+	subtopic1_1140 [label="bill_would_people_mr_support (6, 2.65%)"]
+	policy_12 -> subtopic1_1140
+	subtopic2_1141 [label="81_justices_court_supreme_leak (6, 100.00%)"]
+	subtopic1_1140 -> subtopic2_1141
+	subtopic1_1142 [label="union_workers_pro_unions_organize (4, 1.77%)"]
+	policy_12 -> subtopic1_1142
+	subtopic2_1143 [label="89_beyer_pallone_correa_tx (3, 75.00%)"]
+	subtopic1_1142 -> subtopic2_1143
+	subtopic2_1144 [label="7_border_crisis_illegal_immigration (1, 25.00%)"]
+	subtopic1_1142 -> subtopic2_1144
+	subtopic1_1145 [label="stem_science_research_nsf_students (3, 1.33%)"]
+	policy_12 -> subtopic1_1145
+	subtopic2_1146 [label="28_abortion_life_abortions_unborn (3, 100.00%)"]
+	subtopic1_1145 -> subtopic2_1146
+	subtopic1_1147 [label="marriage_religious_respect_sex_equality (3, 1.33%)"]
+	policy_12 -> subtopic1_1147
+	subtopic2_1148 [label="9_thank_capitol_staff_mr (3, 100.00%)"]
+	subtopic1_1147 -> subtopic2_1148
+	subtopic1_1149 [label="considered_substitute_reconsider_agreed_laid (2, 0.88%)"]
+	policy_12 -> subtopic1_1149
+	subtopic2_1150 [label="1_ukraine_russia_putin_russian (2, 100.00%)"]
+	subtopic1_1149 -> subtopic2_1150
+	subtopic1_1151 [label="election_american_people_democrats_voting (1, 0.44%)"]
+	policy_12 -> subtopic1_1151
+	subtopic2_1152 [label="38_energy_oil_gas_prices (1, 100.00%)"]
+	subtopic1_1151 -> subtopic2_1152
+	subtopic1_1153 [label="border_crisis_illegal_immigration_southern (1, 0.44%)"]
+	policy_12 -> subtopic1_1153
+	subtopic2_1154 [label="41_older_discrimination_age_workers (1, 100.00%)"]
+	subtopic1_1153 -> subtopic2_1154
+	subtopic1_1155 [label="contraception_contraceptives_birth_control_women (1, 0.44%)"]
+	policy_12 -> subtopic1_1155
+	subtopic2_1156 [label="19_wilderness_lands_land_colorado (1, 100.00%)"]
+	subtopic1_1155 -> subtopic2_1156
+	subtopic1_1157 [label="suspend_purposes_move_rules_amend (1, 0.44%)"]
+	policy_12 -> subtopic1_1157
+	subtopic2_1158 [label="6_beyer_pallone_correa_tx (1, 100.00%)"]
+	subtopic1_1157 -> subtopic2_1158
+	subtopic1_1159 [label="veterans_va_toxic_veteran_burn (1, 0.44%)"]
+	policy_12 -> subtopic1_1159
+	subtopic2_1160 [label="34_sexual_harassment_arbitration_assault (1, 100.00%)"]
+	subtopic1_1159 -> subtopic2_1160
+	subtopic1_1161 [label="appropriations_funding_omnibus_continuing_government (1, 0.44%)"]
+	policy_12 -> subtopic1_1161
+	subtopic2_1162 [label="17_cannabis_marijuana_banking_legalization (1, 100.00%)"]
+	subtopic1_1161 -> subtopic2_1162
+	subtopic1_1163 [label="small_businesses_business_sba_program (1, 0.44%)"]
+	policy_12 -> subtopic1_1163
+	subtopic2_1164 [label="15_veterans_toxic_burn_pact (1, 100.00%)"]
+	subtopic1_1163 -> subtopic2_1164
+	subtopic1_1165 [label="bill_act_would_support_mr (1, 0.44%)"]
+	policy_12 -> subtopic1_1165
+	subtopic2_1166 [label="170_democracy_aapi_founders_thank (1, 100.00%)"]
+	subtopic1_1165 -> subtopic2_1166
+	subtopic1_1167 [label="homeless_veterans_va_homelessness_housing (1, 0.44%)"]
+	policy_12 -> subtopic1_1167
+	subtopic2_1168 [label="50_unanimous_consent_ask_senate (1, 100.00%)"]
+	subtopic1_1167 -> subtopic2_1168
+	subtopic1_1169 [label="build_better_back_childcare_families (1, 0.44%)"]
+	policy_12 -> subtopic1_1169
+	subtopic2_1170 [label="26_en_bloc_amendments_amendment (1, 100.00%)"]
+	subtopic1_1169 -> subtopic2_1170
+	policy_13 [label="Public Lands and Natural Resources (209, 2.62%)"]
+	subtopic1_1171 [label="contraception_contraceptives_birth_control_women (71, 33.97%)"]
+	policy_13 -> subtopic1_1171
+	subtopic2_1172 [label="19_wilderness_lands_land_colorado (71, 100.00%)"]
+	subtopic1_1171 -> subtopic2_1172
+	subtopic1_1173 [label="bill_people_would_mr_american (33, 15.79%)"]
+	policy_13 -> subtopic1_1173
+	subtopic2_1174 [label="74_forest_wildfire_wildfires_forests (33, 100.00%)"]
+	subtopic1_1173 -> subtopic2_1174
+	subtopic1_1175 [label="bill_act_would_support_mr (32, 15.31%)"]
+	policy_13 -> subtopic1_1175
+	subtopic2_1176 [label="187_heritage_area_areas_neck (11, 34.38%)"]
+	subtopic1_1175 -> subtopic2_1176
+	subtopic2_1177 [label="176_blackwell_school_marfa_site (11, 34.38%)"]
+	subtopic1_1175 -> subtopic2_1177
+	subtopic2_1178 [label="151_tubman_statue_harriet_enslaved (9, 28.12%)"]
+	subtopic1_1175 -> subtopic2_1178
+	subtopic2_1179 [label="172_yeas_nays_pursuant_xx (1, 3.12%)"]
+	subtopic1_1175 -> subtopic2_1179
+	subtopic1_1180 [label="bill_would_act_support_people (17, 8.13%)"]
+	policy_13 -> subtopic1_1180
+	subtopic2_1181 [label="153_suspend_purposes_move_rules (11, 64.71%)"]
+	subtopic1_1180 -> subtopic2_1181
+	subtopic2_1182 [label="143_noaa_precipitation_scientist_flooding (5, 29.41%)"]
+	subtopic1_1180 -> subtopic2_1182
+	subtopic2_1183 [label="137_recommit_motion_insert_immediately (1, 5.88%)"]
+	subtopic1_1180 -> subtopic2_1183
+	subtopic1_1184 [label="inflation_energy_tax_billion_china (9, 4.31%)"]
+	policy_13 -> subtopic1_1184
+	subtopic2_1185 [label="37_army_war_ii_ghost (8, 88.89%)"]
+	subtopic1_1184 -> subtopic2_1185
+	subtopic2_1186 [label="33_suspend_affairs_purposes_move (1, 11.11%)"]
+	subtopic1_1184 -> subtopic2_1186
+	subtopic1_1187 [label="marriage_religious_respect_sex_equality (8, 3.83%)"]
+	policy_13 -> subtopic1_1187
+	subtopic2_1188 [label="9_thank_capitol_staff_mr (8, 100.00%)"]
+	subtopic1_1187 -> subtopic2_1188
+	subtopic1_1189 [label="japanese_amache_confinement_sites_ii (5, 2.39%)"]
+	policy_13 -> subtopic1_1189
+	subtopic2_1190 [label="178_japanese_amache_confinement_sites (5, 100.00%)"]
+	subtopic1_1189 -> subtopic2_1190
+	subtopic1_1191 [label="veterans_va_toxic_veteran_burn (5, 2.39%)"]
+	policy_13 -> subtopic1_1191
+	subtopic2_1192 [label="47_species_wildlife_conservation_endangered (5, 100.00%)"]
+	subtopic1_1191 -> subtopic2_1192
+	subtopic1_1193 [label="veterans_people_ukraine_bill_would (5, 2.39%)"]
+	policy_13 -> subtopic1_1193
+	subtopic2_1194 [label="53_water_drinking_wastewater_infrastructure (5, 100.00%)"]
+	subtopic1_1193 -> subtopic2_1194
+	subtopic1_1195 [label="suspend_purposes_move_rules_amend (4, 1.91%)"]
+	policy_13 -> subtopic1_1195
+	subtopic2_1196 [label="6_beyer_pallone_correa_tx (3, 75.00%)"]
+	subtopic1_1195 -> subtopic2_1196
+	subtopic2_1197 [label="3_infrastructure_transportation_transit_rail (1, 25.00%)"]
+	subtopic1_1195 -> subtopic2_1197
+	subtopic1_1198 [label="people_bill_would_veterans_american (4, 1.91%)"]
+	policy_13 -> subtopic1_1198
+	subtopic2_1199 [label="63_acidification_ocean_coastal_lakes (4, 100.00%)"]
+	subtopic1_1198 -> subtopic2_1199
+	subtopic1_1200 [label="election_american_people_democrats_voting (3, 1.44%)"]
+	policy_13 -> subtopic1_1200
+	subtopic2_1201 [label="38_energy_oil_gas_prices (3, 100.00%)"]
+	subtopic1_1200 -> subtopic2_1201
+	subtopic1_1202 [label="workplace_violence_osha_nurses_social (3, 1.44%)"]
+	policy_13 -> subtopic1_1202
+	subtopic2_1203 [label="97_fire_fires_wildfire_monoxide (3, 100.00%)"]
+	subtopic1_1202 -> subtopic2_1203
+	subtopic1_1204 [label="nan (2, 0.96%)"]
+	policy_13 -> subtopic1_1204
+	subtopic1_1205 [label="considered_substitute_reconsider_agreed_laid (2, 0.96%)"]
+	policy_13 -> subtopic1_1205
+	subtopic2_1206 [label="1_ukraine_russia_putin_russian (2, 100.00%)"]
+	subtopic1_1205 -> subtopic2_1206
+	subtopic1_1207 [label="military_ndaa_defense_delaware_servicemembers (2, 0.96%)"]
+	policy_13 -> subtopic1_1207
+	subtopic2_1208 [label="42_considered_substitute_reconsider_agreed (2, 100.00%)"]
+	subtopic1_1207 -> subtopic2_1208
+	subtopic1_1209 [label="inflation_tax_reduction_taxes_prices (1, 0.48%)"]
+	policy_13 -> subtopic1_1209
+	subtopic2_1210 [label="24_china_chinese_communist_taiwan (1, 100.00%)"]
+	subtopic1_1209 -> subtopic2_1210
+	subtopic1_1211 [label="bill_would_act_people_support (1, 0.48%)"]
+	policy_13 -> subtopic1_1211
+	subtopic2_1212 [label="121_purpose_yielded_customary_debate (1, 100.00%)"]
+	subtopic1_1211 -> subtopic2_1212
+	subtopic1_1213 [label="build_better_back_childcare_families (1, 0.48%)"]
+	policy_13 -> subtopic1_1213
+	subtopic2_1214 [label="26_en_bloc_amendments_amendment (1, 100.00%)"]
+	subtopic1_1213 -> subtopic2_1214
+	subtopic1_1215 [label="appropriations_funding_omnibus_continuing_government (1, 0.48%)"]
+	policy_13 -> subtopic1_1215
+	subtopic2_1216 [label="16_disaster_fema_disasters_mitigation (1, 100.00%)"]
+	subtopic1_1215 -> subtopic2_1216
+	policy_14 [label="Congress (153, 1.92%)"]
+	subtopic1_1217 [label="cattle_farmers_producers_food_agriculture (36, 23.53%)"]
+	policy_14 -> subtopic1_1217
+	subtopic2_1218 [label="73_meadows_subpoena_privilege_select (36, 100.00%)"]
+	subtopic1_1217 -> subtopic2_1218
+	subtopic1_1219 [label="people_bill_would_veterans_american (31, 20.26%)"]
+	policy_14 -> subtopic1_1219
+	subtopic2_1220 [label="66_commission_capitol_january_attack (31, 100.00%)"]
+	subtopic1_1219 -> subtopic2_1220
+	subtopic1_1221 [label="bill_would_act_people_support (23, 15.03%)"]
+	policy_14 -> subtopic1_1221
+	subtopic2_1222 [label="119_capitol_police_security_january (21, 91.30%)"]
+	subtopic1_1221 -> subtopic2_1222
+	subtopic2_1223 [label="121_purpose_yielded_customary_debate (2, 8.70%)"]
+	subtopic1_1221 -> subtopic2_1223
+	subtopic1_1224 [label="union_workers_pro_unions_organize (13, 8.50%)"]
+	policy_14 -> subtopic1_1224
+	subtopic2_1225 [label="7_border_crisis_illegal_immigration (13, 100.00%)"]
+	subtopic1_1224 -> subtopic2_1225
+	subtopic1_1226 [label="bill_would_act_support_people (10, 6.54%)"]
+	policy_14 -> subtopic1_1226
+	subtopic2_1227 [label="132_appropriations_majority_appropriation_fiscal (4, 40.00%)"]
+	subtopic1_1226 -> subtopic2_1227
+	subtopic2_1228 [label="129_democracy_election_constitution_electors (3, 30.00%)"]
+	subtopic1_1226 -> subtopic2_1228
+	subtopic2_1229 [label="137_recommit_motion_insert_immediately (2, 20.00%)"]
+	subtopic1_1226 -> subtopic2_1229
+	subtopic2_1230 [label="145_saudi_arabia_yemen_dissidents (1, 10.00%)"]
+	subtopic1_1226 -> subtopic2_1230
+	subtopic1_1231 [label="bill_would_people_mr_speaker (10, 6.54%)"]
+	policy_14 -> subtopic1_1231
+	subtopic2_1232 [label="78_irs_agents_audits_tax (10, 100.00%)"]
+	subtopic1_1231 -> subtopic2_1232
+	subtopic1_1233 [label="suspend_purposes_move_rules_amend (5, 3.27%)"]
+	policy_14 -> subtopic1_1233
+	subtopic2_1234 [label="6_beyer_pallone_correa_tx (5, 100.00%)"]
+	subtopic1_1233 -> subtopic2_1234
+	subtopic1_1235 [label="democracy_president_trump_paper_ballot (5, 3.27%)"]
+	policy_14 -> subtopic1_1235
+	subtopic2_1236 [label="49_guidance_reports_transparency_regulators (5, 100.00%)"]
+	subtopic1_1235 -> subtopic2_1236
+	subtopic1_1237 [label="marriage_religious_respect_sex_equality (3, 1.96%)"]
+	policy_14 -> subtopic1_1237
+	subtopic2_1238 [label="9_thank_capitol_staff_mr (3, 100.00%)"]
+	subtopic1_1237 -> subtopic2_1238
+	subtopic1_1239 [label="homeless_veterans_va_homelessness_housing (2, 1.31%)"]
+	policy_14 -> subtopic1_1239
+	subtopic2_1240 [label="50_unanimous_consent_ask_senate (2, 100.00%)"]
+	subtopic1_1239 -> subtopic2_1240
+	subtopic1_1241 [label="people_veterans_bill_would_ukraine (2, 1.31%)"]
+	policy_14 -> subtopic1_1241
+	subtopic2_1242 [label="55_police_enforcement_officers_defund (2, 100.00%)"]
+	subtopic1_1241 -> subtopic2_1242
+	subtopic1_1243 [label="bill_act_would_support_mr (2, 1.31%)"]
+	policy_14 -> subtopic1_1243
+	subtopic2_1244 [label="174_cares_republicans_relief_capitol (1, 50.00%)"]
+	subtopic1_1243 -> subtopic2_1244
+	subtopic2_1245 [label="182_hockey_willie_ree_nhl (1, 50.00%)"]
+	subtopic1_1243 -> subtopic2_1245
+	subtopic1_1246 [label="bill_would_people_mr_support (2, 1.31%)"]
+	policy_14 -> subtopic1_1246
+	subtopic2_1247 [label="84_vaccine_vaccinated_hpv_mask (1, 50.00%)"]
+	subtopic1_1246 -> subtopic2_1247
+	subtopic2_1248 [label="81_justices_court_supreme_leak (1, 50.00%)"]
+	subtopic1_1246 -> subtopic2_1248
+	subtopic1_1249 [label="beyer_pallone_correa_tx_fl (1, 0.65%)"]
+	policy_14 -> subtopic1_1249
+	subtopic2_1250 [label="0_voting_voter_election_elections (1, 100.00%)"]
+	subtopic1_1249 -> subtopic2_1250
+	subtopic1_1251 [label="military_ndaa_defense_delaware_servicemembers (1, 0.65%)"]
+	policy_14 -> subtopic1_1251
+	subtopic2_1252 [label="42_considered_substitute_reconsider_agreed (1, 100.00%)"]
+	subtopic1_1251 -> subtopic2_1252
+	subtopic1_1253 [label="build_better_back_childcare_families (1, 0.65%)"]
+	policy_14 -> subtopic1_1253
+	subtopic2_1254 [label="25_funding_appropriations_continuing_omnibus (1, 100.00%)"]
+	subtopic1_1253 -> subtopic2_1254
+	subtopic1_1255 [label="veterans_people_ukraine_bill_american (1, 0.65%)"]
+	policy_14 -> subtopic1_1255
+	subtopic2_1256 [label="51_israel_hamas_dome_iron (1, 100.00%)"]
+	subtopic1_1255 -> subtopic2_1256
+	subtopic1_1257 [label="inflation_tax_billion_china_american (1, 0.65%)"]
+	policy_14 -> subtopic1_1257
+	subtopic2_1258 [label="31_military_ndaa_defense_delaware (1, 100.00%)"]
+	subtopic1_1257 -> subtopic2_1258
+	subtopic1_1259 [label="disaster_fema_disasters_mitigation_recovery (1, 0.65%)"]
+	policy_14 -> subtopic1_1259
+	subtopic2_1260 [label="72_nuclear_defense_iran_budget (1, 100.00%)"]
+	subtopic1_1259 -> subtopic2_1260
+	subtopic1_1261 [label="bill_would_act_support_mr (1, 0.65%)"]
+	policy_14 -> subtopic1_1261
+	subtopic2_1262 [label="162_alaska_daylight_saving_alaskan (1, 100.00%)"]
+	subtopic1_1261 -> subtopic2_1262
+	subtopic1_1263 [label="election_voting_elections_voter_vote (1, 0.65%)"]
+	policy_14 -> subtopic1_1263
+	subtopic2_1264 [label="13_inflation_tax_democrats_spending (1, 100.00%)"]
+	subtopic1_1263 -> subtopic2_1264
+	subtopic1_1265 [label="bill_would_people_act_mr (1, 0.65%)"]
+	policy_14 -> subtopic1_1265
+	subtopic2_1266 [label="96_yield_speakers_balance_close (1, 100.00%)"]
+	subtopic1_1265 -> subtopic2_1266
+	policy_15 [label="Law (132, 1.65%)"]
+	subtopic1_1267 [label="veterans_va_toxic_veteran_burn (51, 38.64%)"]
+	policy_15 -> subtopic1_1267
+	subtopic2_1268 [label="34_sexual_harassment_arbitration_assault (51, 100.00%)"]
+	subtopic1_1267 -> subtopic2_1268
+	subtopic1_1269 [label="bill_would_people_act_support (29, 21.97%)"]
+	policy_15 -> subtopic1_1269
+	subtopic2_1270 [label="88_arbitration_forced_agreements_contract (29, 100.00%)"]
+	subtopic1_1269 -> subtopic2_1270
+	subtopic1_1271 [label="people_bill_veterans_would_american (13, 9.85%)"]
+	policy_15 -> subtopic1_1271
+	subtopic2_1272 [label="56_puerto_rico_status_rican (13, 100.00%)"]
+	subtopic1_1271 -> subtopic2_1272
+	subtopic1_1273 [label="bill_would_people_mr_support (10, 7.58%)"]
+	policy_15 -> subtopic1_1273
+	subtopic2_1274 [label="85_district_columbia_authority_cfo (9, 90.00%)"]
+	subtopic1_1273 -> subtopic2_1274
+	subtopic2_1275 [label="81_justices_court_supreme_leak (1, 10.00%)"]
+	subtopic1_1273 -> subtopic2_1275
+	subtopic1_1276 [label="bill_act_would_support_mr (6, 4.55%)"]
+	policy_15 -> subtopic1_1276
+	subtopic2_1277 [label="189_notarization_remote_notarizations_orders (5, 83.33%)"]
+	subtopic1_1276 -> subtopic2_1277
+	subtopic2_1278 [label="181_gentleman_remind_minute_yield (1, 16.67%)"]
+	subtopic1_1276 -> subtopic2_1278
+	subtopic1_1279 [label="democracy_president_trump_paper_ballot (5, 3.79%)"]
+	policy_15 -> subtopic1_1279
+	subtopic2_1280 [label="49_guidance_reports_transparency_regulators (5, 100.00%)"]
+	subtopic1_1279 -> subtopic2_1280
+	subtopic1_1281 [label="abortion_roe_women_wade_abortions (3, 2.27%)"]
+	policy_15 -> subtopic1_1281
+	subtopic2_1282 [label="5_small_businesses_business_sba (3, 100.00%)"]
+	subtopic1_1281 -> subtopic2_1282
+	subtopic1_1283 [label="suspend_purposes_move_rules_amend (3, 2.27%)"]
+	policy_15 -> subtopic1_1283
+	subtopic2_1284 [label="6_beyer_pallone_correa_tx (3, 100.00%)"]
+	subtopic1_1283 -> subtopic2_1284
+	subtopic1_1285 [label="military_ndaa_defense_delaware_servicemembers (2, 1.52%)"]
+	policy_15 -> subtopic1_1285
+	subtopic2_1286 [label="42_considered_substitute_reconsider_agreed (2, 100.00%)"]
+	subtopic1_1285 -> subtopic2_1286
+	subtopic1_1287 [label="election_pennsylvania_electors_constitution_electoral (1, 0.76%)"]
+	policy_15 -> subtopic1_1287
+	subtopic2_1288 [label="10_rescue_plan_relief_covid (1, 100.00%)"]
+	subtopic1_1287 -> subtopic2_1288
+	subtopic1_1289 [label="ukraine_people_election_russia_energy (1, 0.76%)"]
+	policy_15 -> subtopic1_1289
+	subtopic2_1290 [label="44_pursuant_immediate_resolution_consideration (1, 100.00%)"]
+	subtopic1_1289 -> subtopic2_1290
+	subtopic1_1291 [label="marriage_religious_respect_sex_equality (1, 0.76%)"]
+	policy_15 -> subtopic1_1291
+	subtopic2_1292 [label="9_thank_capitol_staff_mr (1, 100.00%)"]
+	subtopic1_1291 -> subtopic2_1292
+	subtopic1_1293 [label="election_voting_elections_voter_vote (1, 0.76%)"]
+	policy_15 -> subtopic1_1293
+	subtopic2_1294 [label="13_inflation_tax_democrats_spending (1, 100.00%)"]
+	subtopic1_1293 -> subtopic2_1294
+	subtopic1_1295 [label="pregnant_pregnancy_accommodations_workers_fairness (1, 0.76%)"]
+	policy_15 -> subtopic1_1295
+	subtopic2_1296 [label="60_ocean_shipping_maritime_coast (1, 100.00%)"]
+	subtopic1_1295 -> subtopic2_1296
+	subtopic1_1297 [label="considered_unanimous_consent_reconsider_laid (1, 0.76%)"]
+	policy_15 -> subtopic1_1297
+	subtopic2_1298 [label="29_manufacturing_chips_semiconductor_innovation (1, 100.00%)"]
+	subtopic1_1297 -> subtopic2_1298
+	subtopic1_1299 [label="meadows_subpoena_privilege_select_contempt (1, 0.76%)"]
+	policy_15 -> subtopic1_1299
+	subtopic2_1300 [label="68_statehood_representation_district_residents (1, 100.00%)"]
+	subtopic1_1299 -> subtopic2_1300
+	subtopic1_1301 [label="bill_would_people_act_mr (1, 0.76%)"]
+	policy_15 -> subtopic1_1301
+	subtopic2_1302 [label="93_nursing_breastfeeding_mothers_pump (1, 100.00%)"]
+	subtopic1_1301 -> subtopic2_1302
+	subtopic1_1303 [label="nan (1, 0.76%)"]
+	policy_15 -> subtopic1_1303
+	subtopic1_1304 [label="ukraine_election_russia_people_energy (1, 0.76%)"]
+	policy_15 -> subtopic1_1304
+	subtopic2_1305 [label="43_suspend_purposes_move_rules (1, 100.00%)"]
+	subtopic1_1304 -> subtopic2_1305
+	policy_16 [label="Emergency Management (132, 1.65%)"]
+	subtopic1_1306 [label="appropriations_funding_omnibus_continuing_government (66, 50.00%)"]
+	policy_16 -> subtopic1_1306
+	subtopic2_1307 [label="16_disaster_fema_disasters_mitigation (66, 100.00%)"]
+	subtopic1_1306 -> subtopic2_1307
+	subtopic1_1308 [label="people_bill_would_veterans_american (20, 15.15%)"]
+	policy_16 -> subtopic1_1308
+	subtopic2_1309 [label="59_dhs_acquisition_homeland_department (20, 100.00%)"]
+	subtopic1_1308 -> subtopic2_1309
+	subtopic1_1310 [label="workplace_violence_osha_nurses_social (13, 9.85%)"]
+	policy_16 -> subtopic1_1310
+	subtopic2_1311 [label="97_fire_fires_wildfire_monoxide (13, 100.00%)"]
+	subtopic1_1310 -> subtopic2_1311
+	subtopic1_1312 [label="arbitration_sexual_harassment_forced_assault (11, 8.33%)"]
+	policy_16 -> subtopic1_1312
+	subtopic2_1313 [label="30_pfas_chemicals_water_epa (11, 100.00%)"]
+	subtopic1_1312 -> subtopic2_1313
+	subtopic1_1314 [label="military_ndaa_defense_delaware_servicemembers (6, 4.55%)"]
+	policy_16 -> subtopic1_1314
+	subtopic2_1315 [label="42_considered_substitute_reconsider_agreed (6, 100.00%)"]
+	subtopic1_1314 -> subtopic2_1315
+	subtopic1_1316 [label="ukraine_election_russia_people_energy (5, 3.79%)"]
+	policy_16 -> subtopic1_1316
+	subtopic2_1317 [label="43_suspend_purposes_move_rules (5, 100.00%)"]
+	subtopic1_1316 -> subtopic2_1317
+	subtopic1_1318 [label="bill_would_act_support_people (4, 3.03%)"]
+	policy_16 -> subtopic1_1318
+	subtopic2_1319 [label="130_cats_big_animals_cat (4, 100.00%)"]
+	subtopic1_1318 -> subtopic2_1319
+	subtopic1_1320 [label="capitol_commission_january_attack_police (3, 2.27%)"]
+	policy_16 -> subtopic1_1320
+	subtopic2_1321 [label="22_cybersecurity_cyber_ransomware_cybercrime (3, 100.00%)"]
+	subtopic1_1320 -> subtopic2_1321
+	subtopic1_1322 [label="returns_audit_tax_trump_irs (2, 1.52%)"]
+	policy_16 -> subtopic1_1322
+	subtopic2_1323 [label="65_education_teachers_students_learning (2, 100.00%)"]
+	subtopic1_1322 -> subtopic2_1323
+	subtopic1_1324 [label="suspend_purposes_move_rules_amend (1, 0.76%)"]
+	policy_16 -> subtopic1_1324
+	subtopic2_1325 [label="6_beyer_pallone_correa_tx (1, 100.00%)"]
+	subtopic1_1324 -> subtopic2_1325
+	subtopic1_1326 [label="bill_would_act_people_support (1, 0.76%)"]
+	policy_16 -> subtopic1_1326
+	subtopic2_1327 [label="117_terrorism_domestic_white_violent (1, 100.00%)"]
+	subtopic1_1326 -> subtopic2_1327
+	policy_17 [label="Environmental Protection (116, 1.45%)"]
+	subtopic1_1328 [label="arbitration_sexual_harassment_forced_assault (37, 31.90%)"]
+	policy_17 -> subtopic1_1328
+	subtopic2_1329 [label="30_pfas_chemicals_water_epa (37, 100.00%)"]
+	subtopic1_1328 -> subtopic2_1329
+	subtopic1_1330 [label="veterans_va_toxic_veteran_burn (35, 30.17%)"]
+	policy_17 -> subtopic1_1330
+	subtopic2_1331 [label="47_species_wildlife_conservation_endangered (35, 100.00%)"]
+	subtopic1_1330 -> subtopic2_1331
+	subtopic1_1332 [label="people_bill_would_veterans_american (28, 24.14%)"]
+	policy_17 -> subtopic1_1332
+	subtopic2_1333 [label="63_acidification_ocean_coastal_lakes (27, 96.43%)"]
+	subtopic1_1332 -> subtopic2_1333
+	subtopic2_1334 [label="61_food_meals_malnutrition_nutrition (1, 3.57%)"]
+	subtopic1_1332 -> subtopic2_1334
+	subtopic1_1335 [label="veterans_people_ukraine_bill_would (4, 3.45%)"]
+	policy_17 -> subtopic1_1335
+	subtopic2_1336 [label="53_water_drinking_wastewater_infrastructure (4, 100.00%)"]
+	subtopic1_1335 -> subtopic2_1336
+	subtopic1_1337 [label="bill_would_act_support_people (3, 2.59%)"]
+	policy_17 -> subtopic1_1337
+	subtopic2_1338 [label="153_suspend_purposes_move_rules (2, 66.67%)"]
+	subtopic1_1337 -> subtopic2_1338
+	subtopic2_1339 [label="134_coast_guard_alaska_young (1, 33.33%)"]
+	subtopic1_1337 -> subtopic2_1339
+	subtopic1_1340 [label="bill_people_would_mr_american (3, 2.59%)"]
+	policy_17 -> subtopic1_1340
+	subtopic2_1341 [label="74_forest_wildfire_wildfires_forests (2, 66.67%)"]
+	subtopic1_1340 -> subtopic2_1341
+	subtopic2_1342 [label="77_debt_ceiling_trillion_spending (1, 33.33%)"]
+	subtopic1_1340 -> subtopic2_1342
+	subtopic1_1343 [label="military_ndaa_defense_delaware_servicemembers (2, 1.72%)"]
+	policy_17 -> subtopic1_1343
+	subtopic2_1344 [label="42_considered_substitute_reconsider_agreed (2, 100.00%)"]
+	subtopic1_1343 -> subtopic2_1344
+	subtopic1_1345 [label="bill_would_people_act_mr (1, 0.86%)"]
+	policy_17 -> subtopic1_1345
+	subtopic2_1346 [label="96_yield_speakers_balance_close (1, 100.00%)"]
+	subtopic1_1345 -> subtopic2_1346
+	subtopic1_1347 [label="bill_act_would_support_people (1, 0.86%)"]
+	policy_17 -> subtopic1_1347
+	subtopic2_1348 [label="147_suspend_amend_purposes_rules (1, 100.00%)"]
+	subtopic1_1347 -> subtopic2_1348
+	subtopic1_1349 [label="build_better_back_childcare_families (1, 0.86%)"]
+	policy_17 -> subtopic1_1349
+	subtopic2_1350 [label="26_en_bloc_amendments_amendment (1, 100.00%)"]
+	subtopic1_1349 -> subtopic2_1350
+	subtopic1_1351 [label="union_workers_pro_unions_organize (1, 0.86%)"]
+	policy_17 -> subtopic1_1351
+	subtopic2_1352 [label="89_beyer_pallone_correa_tx (1, 100.00%)"]
+	subtopic1_1351 -> subtopic2_1352
+	policy_18 [label="Education (106, 1.33%)"]
+	subtopic1_1353 [label="suspend_move_rules_amend_purposes (36, 33.96%)"]
+	policy_18 -> subtopic1_1353
+	subtopic2_1354 [label="4_mental_health_students_suicide (36, 100.00%)"]
+	subtopic1_1353 -> subtopic2_1354
+	subtopic1_1355 [label="returns_audit_tax_trump_irs (18, 16.98%)"]
+	policy_18 -> subtopic1_1355
+	subtopic2_1356 [label="65_education_teachers_students_learning (18, 100.00%)"]
+	subtopic1_1355 -> subtopic2_1356
+	subtopic1_1357 [label="juneteenth_holiday_slavery_slaves_day (17, 16.04%)"]
+	policy_18 -> subtopic1_1357
+	subtopic2_1358 [label="122_loan_loans_borrowers_consolidation (17, 100.00%)"]
+	subtopic1_1357 -> subtopic2_1358
+	subtopic1_1359 [label="bill_would_act_people_mr (11, 10.38%)"]
+	policy_18 -> subtopic1_1359
+	subtopic2_1360 [label="110_stem_students_science_msis (11, 100.00%)"]
+	subtopic1_1359 -> subtopic2_1360
+	subtopic1_1361 [label="capitol_commission_january_attack_police (4, 3.77%)"]
+	policy_18 -> subtopic1_1361
+	subtopic2_1362 [label="22_cybersecurity_cyber_ransomware_cybercrime (4, 100.00%)"]
+	subtopic1_1361 -> subtopic2_1362
+	subtopic1_1363 [label="suspend_purposes_move_rules_amend (4, 3.77%)"]
+	policy_18 -> subtopic1_1363
+	subtopic2_1364 [label="6_beyer_pallone_correa_tx (4, 100.00%)"]
+	subtopic1_1363 -> subtopic2_1364
+	subtopic1_1365 [label="election_american_people_democrats_voting (4, 3.77%)"]
+	policy_18 -> subtopic1_1365
+	subtopic2_1366 [label="38_energy_oil_gas_prices (4, 100.00%)"]
+	subtopic1_1365 -> subtopic2_1366
+	subtopic1_1367 [label="union_workers_pro_unions_organize (2, 1.89%)"]
+	policy_18 -> subtopic1_1367
+	subtopic2_1368 [label="89_beyer_pallone_correa_tx (2, 100.00%)"]
+	subtopic1_1367 -> subtopic2_1368
+	subtopic1_1369 [label="bill_would_people_mr_support (1, 0.94%)"]
+	policy_18 -> subtopic1_1369
+	subtopic2_1370 [label="83_hate_asian_crimes_anti (1, 100.00%)"]
+	subtopic1_1369 -> subtopic2_1370
+	subtopic1_1371 [label="veterans_va_toxic_burn_exposure (1, 0.94%)"]
+	policy_18 -> subtopic1_1371
+	subtopic2_1372 [label="32_build_better_back_childcare (1, 100.00%)"]
+	subtopic1_1371 -> subtopic2_1372
+	subtopic1_1373 [label="democracy_president_trump_paper_ballot (1, 0.94%)"]
+	policy_18 -> subtopic1_1373
+	subtopic2_1374 [label="49_guidance_reports_transparency_regulators (1, 100.00%)"]
+	subtopic1_1373 -> subtopic2_1374
+	subtopic1_1375 [label="inflation_energy_tax_billion_china (1, 0.94%)"]
+	policy_18 -> subtopic1_1375
+	subtopic2_1376 [label="39_marriage_respect_equality_couples (1, 100.00%)"]
+	subtopic1_1375 -> subtopic2_1376
+	subtopic1_1377 [label="bill_would_act_support_people (1, 0.94%)"]
+	policy_18 -> subtopic1_1377
+	subtopic2_1378 [label="137_recommit_motion_insert_immediately (1, 100.00%)"]
+	subtopic1_1377 -> subtopic2_1378
+	subtopic1_1379 [label="election_voting_elections_voter_vote (1, 0.94%)"]
+	policy_18 -> subtopic1_1379
+	subtopic2_1380 [label="13_inflation_tax_democrats_spending (1, 100.00%)"]
+	subtopic1_1379 -> subtopic2_1380
+	subtopic1_1381 [label="marriage_religious_respect_sex_equality (1, 0.94%)"]
+	policy_18 -> subtopic1_1381
+	subtopic2_1382 [label="9_thank_capitol_staff_mr (1, 100.00%)"]
+	subtopic1_1381 -> subtopic2_1382
+	subtopic1_1383 [label="bill_would_act_people_support (1, 0.94%)"]
+	policy_18 -> subtopic1_1383
+	subtopic2_1384 [label="124_physician_nurse_practitioners_assistants (1, 100.00%)"]
+	subtopic1_1383 -> subtopic2_1384
+	subtopic1_1385 [label="election_pennsylvania_electors_constitution_electoral (1, 0.94%)"]
+	policy_18 -> subtopic1_1385
+	subtopic2_1386 [label="10_rescue_plan_relief_covid (1, 100.00%)"]
+	subtopic1_1385 -> subtopic2_1386
+	subtopic1_1387 [label="bill_would_people_act_support (1, 0.94%)"]
+	policy_18 -> subtopic1_1387
+	subtopic2_1388 [label="82_workplace_violence_osha_nurses (1, 100.00%)"]
+	subtopic1_1387 -> subtopic2_1388
+	policy_19 [label="Agriculture and Food (92, 1.15%)"]
+	subtopic1_1389 [label="people_bill_would_veterans_american (58, 63.04%)"]
+	policy_19 -> subtopic1_1389
+	subtopic2_1390 [label="64_cattle_farmers_producers_food (37, 63.79%)"]
+	subtopic1_1389 -> subtopic2_1390
+	subtopic2_1391 [label="61_food_meals_malnutrition_nutrition (21, 36.21%)"]
+	subtopic1_1389 -> subtopic2_1391
+	subtopic1_1392 [label="corporate_campaigns_money_campaign_fines (23, 25.00%)"]
+	policy_19 -> subtopic1_1392
+	subtopic2_1393 [label="57_formula_infant_baby_fda (23, 100.00%)"]
+	subtopic1_1392 -> subtopic2_1393
+	subtopic1_1394 [label="ukraine_people_election_russia_energy (2, 2.17%)"]
+	policy_19 -> subtopic1_1394
+	subtopic2_1395 [label="44_pursuant_immediate_resolution_consideration (2, 100.00%)"]
+	subtopic1_1394 -> subtopic2_1395
+	subtopic1_1396 [label="election_american_people_democrats_voting (2, 2.17%)"]
+	policy_19 -> subtopic1_1396
+	subtopic2_1397 [label="38_energy_oil_gas_prices (2, 100.00%)"]
+	subtopic1_1396 -> subtopic2_1397
+	subtopic1_1398 [label="veterans_va_toxic_veteran_burn (1, 1.09%)"]
+	policy_19 -> subtopic1_1398
+	subtopic2_1399 [label="47_species_wildlife_conservation_endangered (1, 100.00%)"]
+	subtopic1_1398 -> subtopic2_1399
+	subtopic1_1400 [label="build_better_back_childcare_families (1, 1.09%)"]
+	policy_19 -> subtopic1_1400
+	subtopic2_1401 [label="25_funding_appropriations_continuing_omnibus (1, 100.00%)"]
+	subtopic1_1400 -> subtopic2_1401
+	subtopic1_1402 [label="bill_would_people_mr_support (1, 1.09%)"]
+	policy_19 -> subtopic1_1402
+	subtopic2_1403 [label="85_district_columbia_authority_cfo (1, 100.00%)"]
+	subtopic1_1402 -> subtopic2_1403
+	subtopic1_1404 [label="considered_substitute_reconsider_agreed_laid (1, 1.09%)"]
+	policy_19 -> subtopic1_1404
+	subtopic2_1405 [label="1_ukraine_russia_putin_russian (1, 100.00%)"]
+	subtopic1_1404 -> subtopic2_1405
+	subtopic1_1406 [label="bill_would_act_support_people (1, 1.09%)"]
+	policy_19 -> subtopic1_1406
+	subtopic2_1407 [label="137_recommit_motion_insert_immediately (1, 100.00%)"]
+	subtopic1_1406 -> subtopic2_1407
+	subtopic1_1408 [label="inflation_energy_tax_billion_china (1, 1.09%)"]
+	policy_19 -> subtopic1_1408
+	subtopic2_1409 [label="33_suspend_affairs_purposes_move (1, 100.00%)"]
+	subtopic1_1408 -> subtopic2_1409
+	subtopic1_1410 [label="received_votes_therefrom_authentic_appears (1, 1.09%)"]
+	policy_19 -> subtopic1_1410
+	subtopic2_1411 [label="2_gun_guns_background_firearms (1, 100.00%)"]
+	subtopic1_1410 -> subtopic2_1411
+	policy_20 [label="Native Americans (87, 1.09%)"]
+	subtopic1_1412 [label="china_manufacturing_chips_chinese_innovation (72, 82.76%)"]
+	policy_20 -> subtopic1_1412
+	subtopic2_1413 [label="20_indian_tribe_tribal_native (72, 100.00%)"]
+	subtopic1_1412 -> subtopic2_1413
+	subtopic1_1414 [label="marriage_religious_respect_sex_equality (5, 5.75%)"]
+	policy_20 -> subtopic1_1414
+	subtopic2_1415 [label="9_thank_capitol_staff_mr (5, 100.00%)"]
+	subtopic1_1414 -> subtopic2_1415
+	subtopic1_1416 [label="bill_would_act_support_people (4, 4.60%)"]
+	policy_20 -> subtopic1_1416
+	subtopic2_1417 [label="134_coast_guard_alaska_young (3, 75.00%)"]
+	subtopic1_1416 -> subtopic2_1417
+	subtopic2_1418 [label="153_suspend_purposes_move_rules (1, 25.00%)"]
+	subtopic1_1416 -> subtopic2_1418
+	subtopic1_1419 [label="suspend_purposes_move_rules_amend (3, 3.45%)"]
+	policy_20 -> subtopic1_1419
+	subtopic2_1420 [label="6_beyer_pallone_correa_tx (3, 100.00%)"]
+	subtopic1_1419 -> subtopic2_1420
+	subtopic1_1421 [label="homeless_veterans_va_homelessness_housing (2, 2.30%)"]
+	policy_20 -> subtopic1_1421
+	subtopic2_1422 [label="50_unanimous_consent_ask_senate (2, 100.00%)"]
+	subtopic1_1421 -> subtopic2_1422
+	subtopic1_1423 [label="military_ndaa_defense_delaware_servicemembers (1, 1.15%)"]
+	policy_20 -> subtopic1_1423
+	subtopic2_1424 [label="42_considered_substitute_reconsider_agreed (1, 100.00%)"]
+	subtopic1_1423 -> subtopic2_1424
+	policy_21 [label="Foreign Trade and International Finance (84, 1.05%)"]
+	subtopic1_1425 [label="considered_substitute_reconsider_agreed_laid (53, 63.10%)"]
+	policy_21 -> subtopic1_1425
+	subtopic2_1426 [label="1_ukraine_russia_putin_russian (53, 100.00%)"]
+	subtopic1_1425 -> subtopic2_1426
+	subtopic1_1427 [label="corporate_campaigns_money_campaign_fines (16, 19.05%)"]
+	policy_21 -> subtopic1_1427
+	subtopic2_1428 [label="57_formula_infant_baby_fda (16, 100.00%)"]
+	subtopic1_1427 -> subtopic2_1428
+	subtopic1_1429 [label="election_american_people_democrats_voting (3, 3.57%)"]
+	policy_21 -> subtopic1_1429
+	subtopic2_1430 [label="38_energy_oil_gas_prices (3, 100.00%)"]
+	subtopic1_1429 -> subtopic2_1430
+	subtopic1_1431 [label="bill_act_would_support_mr (3, 3.57%)"]
+	policy_21 -> subtopic1_1431
+	subtopic2_1432 [label="169_magnitsky_human_lgbtqi_torture (2, 66.67%)"]
+	subtopic1_1431 -> subtopic2_1432
+	subtopic2_1433 [label="174_cares_republicans_relief_capitol (1, 33.33%)"]
+	subtopic1_1431 -> subtopic2_1433
+	subtopic1_1434 [label="suspend_purposes_move_rules_amend (2, 2.38%)"]
+	policy_21 -> subtopic1_1434
+	subtopic2_1435 [label="6_beyer_pallone_correa_tx (2, 100.00%)"]
+	subtopic1_1434 -> subtopic2_1435
+	subtopic1_1436 [label="pregnant_pregnancy_accommodations_workers_fairness (1, 1.19%)"]
+	policy_21 -> subtopic1_1436
+	subtopic2_1437 [label="60_ocean_shipping_maritime_coast (1, 100.00%)"]
+	subtopic1_1436 -> subtopic2_1437
+	subtopic1_1438 [label="bill_would_act_people_support (1, 1.19%)"]
+	policy_21 -> subtopic1_1438
+	subtopic2_1439 [label="121_purpose_yielded_customary_debate (1, 100.00%)"]
+	subtopic1_1438 -> subtopic2_1439
+	subtopic1_1440 [label="people_bill_would_veterans_american (1, 1.19%)"]
+	policy_21 -> subtopic1_1440
+	subtopic2_1441 [label="61_food_meals_malnutrition_nutrition (1, 100.00%)"]
+	subtopic1_1440 -> subtopic2_1441
+	subtopic1_1442 [label="marriage_religious_respect_sex_equality (1, 1.19%)"]
+	policy_21 -> subtopic1_1442
+	subtopic2_1443 [label="9_thank_capitol_staff_mr (1, 100.00%)"]
+	subtopic1_1442 -> subtopic2_1443
+	subtopic1_1444 [label="election_voting_elections_voter_vote (1, 1.19%)"]
+	policy_21 -> subtopic1_1444
+	subtopic2_1445 [label="13_inflation_tax_democrats_spending (1, 100.00%)"]
+	subtopic1_1444 -> subtopic2_1445
+	subtopic1_1446 [label="rescue_funding_plan_relief_billion (1, 1.19%)"]
+	policy_21 -> subtopic1_1446
+	subtopic2_1447 [label="21_veterans_va_veteran_care (1, 100.00%)"]
+	subtopic1_1446 -> subtopic2_1447
+	subtopic1_1448 [label="ukraine_election_russia_people_energy (1, 1.19%)"]
+	policy_21 -> subtopic1_1448
+	subtopic2_1449 [label="43_suspend_purposes_move_rules (1, 100.00%)"]
+	subtopic1_1448 -> subtopic2_1449
+	policy_22 [label="Families (49, 0.61%)"]
+	subtopic1_1450 [label="officers_enforcement_police_law_safety (35, 71.43%)"]
+	policy_22 -> subtopic1_1450
+	subtopic2_1451 [label="18_violence_domestic_survivors_vawa (35, 100.00%)"]
+	subtopic1_1450 -> subtopic2_1451
+	subtopic1_1452 [label="build_better_back_childcare_families (3, 6.12%)"]
+	policy_22 -> subtopic1_1452
+	subtopic2_1453 [label="26_en_bloc_amendments_amendment (3, 100.00%)"]
+	subtopic1_1452 -> subtopic2_1453
+	subtopic1_1454 [label="bill_would_people_act_support (3, 6.12%)"]
+	policy_22 -> subtopic1_1454
+	subtopic2_1455 [label="91_csbg_community_poverty_action (3, 100.00%)"]
+	subtopic1_1454 -> subtopic2_1455
+	subtopic1_1456 [label="veterans_va_toxic_burn_exposure (2, 4.08%)"]
+	policy_22 -> subtopic1_1456
+	subtopic2_1457 [label="32_build_better_back_childcare (2, 100.00%)"]
+	subtopic1_1456 -> subtopic2_1457
+	subtopic1_1458 [label="bill_would_act_support_people (2, 4.08%)"]
+	policy_22 -> subtopic1_1458
+	subtopic2_1459 [label="139_religious_faith_charitable_csbg (2, 100.00%)"]
+	subtopic1_1458 -> subtopic2_1459
+	subtopic1_1460 [label="fire_wildfire_fires_wildfires_forest (1, 2.04%)"]
+	policy_22 -> subtopic1_1460
+	subtopic2_1461 [label="35_hyde_consideration_taxpayer_abortion (1, 100.00%)"]
+	subtopic1_1460 -> subtopic2_1461
+	subtopic1_1462 [label="bill_act_would_support_mr (1, 2.04%)"]
+	policy_22 -> subtopic1_1462
+	subtopic2_1463 [label="175_incarcerated_pregnant_women_custody (1, 100.00%)"]
+	subtopic1_1462 -> subtopic2_1463
+	subtopic1_1464 [label="suspend_purposes_move_rules_amend (1, 2.04%)"]
+	policy_22 -> subtopic1_1464
+	subtopic2_1465 [label="6_beyer_pallone_correa_tx (1, 100.00%)"]
+	subtopic1_1464 -> subtopic2_1465
+	subtopic1_1466 [label="bill_would_act_people_support (1, 2.04%)"]
+	policy_22 -> subtopic1_1466
+	subtopic2_1467 [label="123_suspend_move_rules_amend (1, 100.00%)"]
+	subtopic1_1466 -> subtopic2_1467
+	policy_23 [label="Taxation (44, 0.55%)"]
+	subtopic1_1468 [label="bill_would_people_act_mr (26, 59.09%)"]
+	policy_23 -> subtopic1_1468
+	subtopic2_1469 [label="101_returns_audit_tax_trump (26, 100.00%)"]
+	subtopic1_1468 -> subtopic2_1469
+	subtopic1_1470 [label="tsa_security_transportation_workforce_employees (4, 9.09%)"]
+	policy_23 -> subtopic1_1470
+	subtopic2_1471 [label="14_reduction_climate_inflation_energy (4, 100.00%)"]
+	subtopic1_1470 -> subtopic2_1471
+	subtopic1_1472 [label="suspend_purposes_move_rules_amend (3, 6.82%)"]
+	policy_23 -> subtopic1_1472
+	subtopic2_1473 [label="3_infrastructure_transportation_transit_rail (3, 100.00%)"]
+	subtopic1_1472 -> subtopic2_1473
+	subtopic1_1474 [label="bill_would_act_people_support (1, 2.27%)"]
+	policy_23 -> subtopic1_1474
+	subtopic2_1475 [label="118_spectrum_wireless_ntia_communications (1, 100.00%)"]
+	subtopic1_1474 -> subtopic2_1475
+	subtopic1_1476 [label="homeless_veterans_va_homelessness_housing (1, 2.27%)"]
+	policy_23 -> subtopic1_1476
+	subtopic2_1477 [label="50_unanimous_consent_ask_senate (1, 100.00%)"]
+	subtopic1_1476 -> subtopic2_1477
+	subtopic1_1478 [label="inflation_tax_billion_china_american (1, 2.27%)"]
+	policy_23 -> subtopic1_1478
+	subtopic2_1479 [label="31_military_ndaa_defense_delaware (1, 100.00%)"]
+	subtopic1_1478 -> subtopic2_1479
+	subtopic1_1480 [label="bill_would_act_support_mr (1, 2.27%)"]
+	policy_23 -> subtopic1_1480
+	subtopic2_1481 [label="162_alaska_daylight_saving_alaskan (1, 100.00%)"]
+	subtopic1_1480 -> subtopic2_1481
+	subtopic1_1482 [label="received_votes_therefrom_authentic_appears (1, 2.27%)"]
+	policy_23 -> subtopic1_1482
+	subtopic2_1483 [label="2_gun_guns_background_firearms (1, 100.00%)"]
+	subtopic1_1482 -> subtopic2_1483
+	subtopic1_1484 [label="election_pennsylvania_electors_constitution_electoral (1, 2.27%)"]
+	policy_23 -> subtopic1_1484
+	subtopic2_1485 [label="10_rescue_plan_relief_covid (1, 100.00%)"]
+	subtopic1_1484 -> subtopic2_1485
+	subtopic1_1486 [label="pregnant_pregnancy_accommodations_workers_fairness (1, 2.27%)"]
+	policy_23 -> subtopic1_1486
+	subtopic2_1487 [label="60_ocean_shipping_maritime_coast (1, 100.00%)"]
+	subtopic1_1486 -> subtopic2_1487
+	subtopic1_1488 [label="ukraine_people_election_russia_energy (1, 2.27%)"]
+	policy_23 -> subtopic1_1488
+	subtopic2_1489 [label="44_pursuant_immediate_resolution_consideration (1, 100.00%)"]
+	subtopic1_1488 -> subtopic2_1489
+	subtopic1_1490 [label="marriage_religious_respect_sex_equality (1, 2.27%)"]
+	policy_23 -> subtopic1_1490
+	subtopic2_1491 [label="9_thank_capitol_staff_mr (1, 100.00%)"]
+	subtopic1_1490 -> subtopic2_1491
+	subtopic1_1492 [label="bill_would_people_mr_speaker (1, 2.27%)"]
+	policy_23 -> subtopic1_1492
+	subtopic2_1493 [label="78_irs_agents_audits_tax (1, 100.00%)"]
+	subtopic1_1492 -> subtopic2_1493
+	subtopic1_1494 [label="beyer_pallone_correa_tx_fl (1, 2.27%)"]
+	policy_23 -> subtopic1_1494
+	subtopic2_1495 [label="188_veterans_minot_sinn_kiwanis (1, 100.00%)"]
+	subtopic1_1494 -> subtopic2_1495
+	policy_24 [label="Social Welfare (37, 0.46%)"]
+	subtopic1_1496 [label="bill_would_people_act_support (14, 37.84%)"]
+	policy_24 -> subtopic1_1496
+	subtopic2_1497 [label="91_csbg_community_poverty_action (14, 100.00%)"]
+	subtopic1_1496 -> subtopic2_1497
+	subtopic1_1498 [label="bill_would_act_support_people (6, 16.22%)"]
+	policy_24 -> subtopic1_1498
+	subtopic2_1499 [label="139_religious_faith_charitable_csbg (6, 100.00%)"]
+	subtopic1_1498 -> subtopic2_1499
+	subtopic1_1500 [label="build_better_back_childcare_families (5, 13.51%)"]
+	policy_24 -> subtopic1_1500
+	subtopic2_1501 [label="26_en_bloc_amendments_amendment (5, 100.00%)"]
+	subtopic1_1500 -> subtopic2_1501
+	subtopic1_1502 [label="bill_would_act_support_mr (4, 10.81%)"]
+	policy_24 -> subtopic1_1502
+	subtopic2_1503 [label="159_merchant_marines_amendment_veterans (3, 75.00%)"]
+	subtopic1_1502 -> subtopic2_1503
+	subtopic2_1504 [label="163_corporate_campaigns_money_campaign (1, 25.00%)"]
+	subtopic1_1502 -> subtopic2_1504
+	subtopic1_1505 [label="inflation_tax_reduction_taxes_prices (1, 2.70%)"]
+	policy_24 -> subtopic1_1505
+	subtopic2_1506 [label="12_insulin_drug_price_drugs (1, 100.00%)"]
+	subtopic1_1505 -> subtopic2_1506
+	subtopic1_1507 [label="homeless_veterans_va_homelessness_housing (1, 2.70%)"]
+	policy_24 -> subtopic1_1507
+	subtopic2_1508 [label="50_unanimous_consent_ask_senate (1, 100.00%)"]
+	subtopic1_1507 -> subtopic2_1508
+	subtopic1_1509 [label="bill_would_people_act_mr (1, 2.70%)"]
+	policy_24 -> subtopic1_1509
+	subtopic2_1510 [label="102_stillbirth_congenital_defects_newborn (1, 100.00%)"]
+	subtopic1_1509 -> subtopic2_1510
+	subtopic1_1511 [label="suspend_move_rules_amend_purposes (1, 2.70%)"]
+	policy_24 -> subtopic1_1511
+	subtopic2_1512 [label="4_mental_health_students_suicide (1, 100.00%)"]
+	subtopic1_1511 -> subtopic2_1512
+	subtopic1_1513 [label="arbitration_sexual_harassment_forced_assault (1, 2.70%)"]
+	policy_24 -> subtopic1_1513
+	subtopic2_1514 [label="87_ftc_scams_consumers_fraud (1, 100.00%)"]
+	subtopic1_1513 -> subtopic2_1514
+	subtopic1_1515 [label="appropriations_funding_omnibus_continuing_government (1, 2.70%)"]
+	policy_24 -> subtopic1_1515
+	subtopic2_1516 [label="16_disaster_fema_disasters_mitigation (1, 100.00%)"]
+	subtopic1_1515 -> subtopic2_1516
+	subtopic1_1517 [label="inflation_tax_billion_china_american (1, 2.70%)"]
+	policy_24 -> subtopic1_1517
+	subtopic2_1518 [label="23_abortion_roe_women_wade (1, 100.00%)"]
+	subtopic1_1517 -> subtopic2_1518
+	subtopic1_1519 [label="rescue_funding_plan_relief_billion (1, 2.70%)"]
+	policy_24 -> subtopic1_1519
+	subtopic2_1520 [label="21_veterans_va_veteran_care (1, 100.00%)"]
+	subtopic1_1519 -> subtopic2_1520
+	policy_25 [label="Animals (32, 0.40%)"]
+	subtopic1_1521 [label="bill_would_act_support_people (17, 53.12%)"]
+	policy_25 -> subtopic1_1521
+	subtopic2_1522 [label="130_cats_big_animals_cat (17, 100.00%)"]
+	subtopic1_1521 -> subtopic2_1522
+	subtopic1_1523 [label="bill_act_would_support_mr (10, 31.25%)"]
+	policy_25 -> subtopic1_1523
+	subtopic2_1524 [label="177_horse_horses_soring_tennessee (10, 100.00%)"]
+	subtopic1_1523 -> subtopic2_1524
+	subtopic1_1525 [label="marriage_religious_respect_sex_equality (2, 6.25%)"]
+	policy_25 -> subtopic1_1525
+	subtopic2_1526 [label="9_thank_capitol_staff_mr (2, 100.00%)"]
+	subtopic1_1525 -> subtopic2_1526
+	subtopic1_1527 [label="bill_would_people_act_mr (1, 3.12%)"]
+	policy_25 -> subtopic1_1527
+	subtopic2_1528 [label="99_arpa_als_nih_research (1, 100.00%)"]
+	subtopic1_1527 -> subtopic2_1528
+	subtopic1_1529 [label="veterans_va_toxic_veteran_burn (1, 3.12%)"]
+	policy_25 -> subtopic1_1529
+	subtopic2_1530 [label="47_species_wildlife_conservation_endangered (1, 100.00%)"]
+	subtopic1_1529 -> subtopic2_1530
+	subtopic1_1531 [label="people_veterans_bill_would_ukraine (1, 3.12%)"]
+	policy_25 -> subtopic1_1531
+	subtopic2_1532 [label="55_police_enforcement_officers_defund (1, 100.00%)"]
+	subtopic1_1531 -> subtopic2_1532
+	policy_26 [label="Energy (21, 0.26%)"]
+	subtopic1_1533 [label="bill_would_act_support_people (14, 66.67%)"]
+	policy_26 -> subtopic1_1533
+	subtopic2_1534 [label="152_cybersecurity_energy_grid_electric (14, 100.00%)"]
+	subtopic1_1533 -> subtopic2_1534
+	subtopic1_1535 [label="ukraine_election_russia_people_energy (3, 14.29%)"]
+	policy_26 -> subtopic1_1535
+	subtopic2_1536 [label="43_suspend_purposes_move_rules (3, 100.00%)"]
+	subtopic1_1535 -> subtopic2_1536
+	subtopic1_1537 [label="bill_would_people_act_mr (2, 9.52%)"]
+	policy_26 -> subtopic1_1537
+	subtopic2_1538 [label="96_yield_speakers_balance_close (2, 100.00%)"]
+	subtopic1_1537 -> subtopic2_1538
+	subtopic1_1539 [label="pregnant_pregnancy_accommodations_workers_fairness (1, 4.76%)"]
+	policy_26 -> subtopic1_1539
+	subtopic2_1540 [label="60_ocean_shipping_maritime_coast (1, 100.00%)"]
+	subtopic1_1539 -> subtopic2_1540
+	subtopic1_1541 [label="veterans_people_ukraine_bill_would (1, 4.76%)"]
+	policy_26 -> subtopic1_1541
+	subtopic2_1542 [label="53_water_drinking_wastewater_infrastructure (1, 100.00%)"]
+	subtopic1_1541 -> subtopic2_1542
+	policy_27 [label="Housing and Community Development (21, 0.26%)"]
+	subtopic1_1543 [label="suspend_purposes_move_rules_amend (9, 42.86%)"]
+	policy_27 -> subtopic1_1543
+	subtopic2_1544 [label="8_debt_credit_collection_financial (9, 100.00%)"]
+	subtopic1_1543 -> subtopic2_1544
+	subtopic1_1545 [label="workplace_violence_osha_nurses_social (8, 38.10%)"]
+	policy_27 -> subtopic1_1545
+	subtopic2_1546 [label="97_fire_fires_wildfire_monoxide (8, 100.00%)"]
+	subtopic1_1545 -> subtopic2_1546
+	subtopic1_1547 [label="marriage_religious_respect_sex_equality (2, 9.52%)"]
+	policy_27 -> subtopic1_1547
+	subtopic2_1548 [label="9_thank_capitol_staff_mr (2, 100.00%)"]
+	subtopic1_1547 -> subtopic2_1548
+	subtopic1_1549 [label="appropriations_funding_omnibus_continuing_government (1, 4.76%)"]
+	policy_27 -> subtopic1_1549
+	subtopic2_1550 [label="17_cannabis_marijuana_banking_legalization (1, 100.00%)"]
+	subtopic1_1549 -> subtopic2_1550
+	subtopic1_1551 [label="homeless_veterans_va_homelessness_housing (1, 4.76%)"]
+	policy_27 -> subtopic1_1551
+	subtopic2_1552 [label="50_unanimous_consent_ask_senate (1, 100.00%)"]
+	subtopic1_1551 -> subtopic2_1552
+	policy_28 [label="Water Resources Development (18, 0.23%)"]
+	subtopic1_1553 [label="veterans_people_ukraine_bill_would (13, 72.22%)"]
+	policy_28 -> subtopic1_1553
+	subtopic2_1554 [label="53_water_drinking_wastewater_infrastructure (13, 100.00%)"]
+	subtopic1_1553 -> subtopic2_1554
+	subtopic1_1555 [label="bill_would_people_mr_support (2, 11.11%)"]
+	policy_28 -> subtopic1_1555
+	subtopic2_1556 [label="83_hate_asian_crimes_anti (2, 100.00%)"]
+	subtopic1_1555 -> subtopic2_1556
+	subtopic1_1557 [label="contraception_contraceptives_birth_control_women (1, 5.56%)"]
+	policy_28 -> subtopic1_1557
+	subtopic2_1558 [label="19_wilderness_lands_land_colorado (1, 100.00%)"]
+	subtopic1_1557 -> subtopic2_1558
+	subtopic1_1559 [label="military_ndaa_defense_delaware_servicemembers (1, 5.56%)"]
+	policy_28 -> subtopic1_1559
+	subtopic2_1560 [label="42_considered_substitute_reconsider_agreed (1, 100.00%)"]
+	subtopic1_1559 -> subtopic2_1560
+	subtopic1_1561 [label="arbitration_sexual_harassment_forced_assault (1, 5.56%)"]
+	policy_28 -> subtopic1_1561
+	subtopic2_1562 [label="30_pfas_chemicals_water_epa (1, 100.00%)"]
+	subtopic1_1561 -> subtopic2_1562
+	policy_29 [label="Sports and Recreation (9, 0.11%)"]
+	subtopic1_1563 [label="bill_act_would_support_mr (9, 100.00%)"]
+	policy_29 -> subtopic1_1563
+	subtopic2_1564 [label="182_hockey_willie_ree_nhl (9, 100.00%)"]
+	subtopic1_1563 -> subtopic2_1564
+	policy_30 [label="Arts, Culture, Religion (7, 0.09%)"]
+	subtopic1_1565 [label="bill_people_would_american_mr (5, 71.43%)"]
+	policy_30 -> subtopic1_1565
+	subtopic2_1566 [label="71_covid_global_pandemic_immunization (5, 100.00%)"]
+	subtopic1_1565 -> subtopic2_1566
+	subtopic1_1567 [label="bill_would_people_mr_support (1, 14.29%)"]
+	policy_30 -> subtopic1_1567
+	subtopic2_1568 [label="85_district_columbia_authority_cfo (1, 100.00%)"]
+	subtopic1_1567 -> subtopic2_1568
+	subtopic1_1569 [label="marriage_religious_respect_sex_equality (1, 14.29%)"]
+	policy_30 -> subtopic1_1569
+	subtopic2_1570 [label="9_thank_capitol_staff_mr (1, 100.00%)"]
+	subtopic1_1569 -> subtopic2_1570
+	parent [label="Parent Node (7986, 100%)"]
+	parent -> policy_0
+	parent -> policy_1
+	parent -> policy_2
+	parent -> policy_3
+	parent -> policy_4
+	parent -> policy_5
+	parent -> policy_6
+	parent -> policy_7
+	parent -> policy_8
+	parent -> policy_9
+	parent -> policy_10
+	parent -> policy_11
+	parent -> policy_12
+	parent -> policy_13
+	parent -> policy_14
+	parent -> policy_15
+	parent -> policy_16
+	parent -> policy_17
+	parent -> policy_18
+	parent -> policy_19
+	parent -> policy_20
+	parent -> policy_21
+	parent -> policy_22
+	parent -> policy_23
+	parent -> policy_24
+	parent -> policy_25
+	parent -> policy_26
+	parent -> policy_27
+	parent -> policy_28
+	parent -> policy_29
+	parent -> policy_30
+}
